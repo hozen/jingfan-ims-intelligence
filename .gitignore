@@ -1,6 +1,44 @@
-node_modules/
+# Generated outputs (never commit)
 *.pptx
-*.pyc
+
+# Python/pptx generation scripts (keep only gen_vN.js)
+create_*.js
+create_*.py
+gen_v*.js
+!gen_v16.js
+
+# Raw exhibitior images (source for OCR, large binary)
+exhibitor_*.jpg
+exhibitor_*.png
+exhibitor_*.jpeg
+
+# Node/npm
+node_modules/
+package-lock.json
+
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment/system dirs
+.cache/
+.camolush-venv/
+.camofox/
+.config/
+.local/
+.npm/
+.openclaw/
+.skillhub/
+.viminfo
 .DS_Store
 *.log
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc analysis doc in root (belongs in wiki raw/ or not at all)
+IMS竞争分析_环博会后行动方案.md
