@@ -1,7 +1,11 @@
 # Wiki Index
 
 > 2026环博会市场观察知识库。
-> Last updated: 2026-04-19 | Total pages: 15
+> Last updated: 2026-04-19 | Total pages: 17
+
+## Projects / 项目
+- [[PROJECT|环博会市场观察项目]] — 主项目：环博会PPT + wiki知识库
+  - [[SESSION-2026-04-19|2026-04-19工作记录]] — 完整会话日志、PPT迭代、决策记录
 
 ## Entities / 实体
 
