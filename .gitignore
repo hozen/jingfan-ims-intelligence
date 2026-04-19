@@ -7,6 +7,7 @@ create_*.py
 gen_v*.js
 !gen_v16.js
 !gen_v17.js
+!gen_v19.js
 
 # Raw exhibitior images (source for OCR, large binary)
 exhibitor_*.jpg
