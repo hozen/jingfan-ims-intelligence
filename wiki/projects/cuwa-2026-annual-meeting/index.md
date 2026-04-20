@@ -1,6 +1,6 @@
 # 中国城镇供水排水协会2026年会
 
-> Last updated: 2026-04-19
+> Last updated: 2026-04-20
 
 ## 项目
 - [[PROJECT|项目总览]] — 基本信息、六大议题、日程、关键信息
@@ -11,6 +11,10 @@
 ### 机构 / Organizations
 - [[cuwa-2026-meeting|中国城镇供水排水协会2026年会]]
 - [[sz-water-group|深圳市环境水务集团有限公司]] — 年会东道主之一，开放11条参观线路
+- [[hanwei-tech|汉威科技集团]] — C馆C203，近红外光谱传感模块，无试剂检测技术
+- [[shenzhen-env-water-huanhuijiance|深圳环水·环水智检]] — 机器人+AI全自动水质检测实验室
+- [[sanchuan-smart-meter|三川智慧]] — A-205，超声/电磁水表全矩阵
+- [[wanlong-group|万朗集团]] — AI+水务四大硬核，二供AI大脑
 
 ### 政策 / Policy
 - [[15th-five-year-water|"十五五"规划 — 水务相关]] — 规划落实是本届年会核心议题之一
