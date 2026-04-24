@@ -62,7 +62,7 @@ Every email must include this section with three sub-dimensions:
 | 三川智慧 (300066) | AI+物联网水表 | 竞争：智能表计 |
 | 万朗集团 | AI+智慧水务全流程 | 竞争：智慧水务平台 |
 | 汉威科技 | 传感器+物联网 | 潜在竞争：传感器 |
-| 开发科技 | 水计量全自主知识产权（住宅/商业端） | 参考：住宅计量自主可控趋势 |
+| 赛莱默 | 传统水泵+监测 | 参考：高端水质 |
 | 聚光/谱育 | 在线水质监测 | 核心竞争：COD/氨氮 |
 
 ## Key Dates
@@ -70,42 +70,15 @@ Every email must include this section with three sub-dimensions:
 - 《供水条例》施行: 2026-06-01
 - Cron job: every 360min × 28 iterations
 
-## ⚠️ Bash Script Shebang Bug (Found 2026-04-23)
-
-The shebang line and the first comment **must be on separate lines**:
-
-```bash
-# ← blank line required after shebang
-# 中国水协2026年会信息追踪脚本
-```
-
-Putting the comment on the same line as `#!/bin/bash` (i.e. `#!/bin/bash# comment`) makes the shebang invalid, causing the kernel to ignore it and the cron runner to fall back to `python3`, which then fails on line 7 (`TIMESTAMP=$(date ...)`) with `SyntaxError: invalid syntax`.
-
-Current broken script header (line 1):
-```
-#!/bin/bash|# 中国水协2026年会信息追踪脚本
-```
-
-Correct header:
-```
-#!/bin/bash
-# 中国水协2026年会信息追踪脚本
-```
-
 ## Cron Setup
-**⚠️ Bash scripts must be invoked with `bash` explicitly** — the cron runner defaults to `python3`, which parses bash `$()` substitutions as Python syntax and throws `SyntaxError`. See `cron-bash-script-syntaxerror` skill.
-
 ```python
 cronjob(action='create',
-        prompt='''Run: bash /home/agentuser/.hermes/scripts/cuwa-2026-watch.sh 2>&1
-Then compare against ~/.hermes/scripts/cuwa_watch_prev.txt — if new content found, save to wiki, send email via send_email.py, update prev file, and git commit.''',
+        prompt='''...cuwa-2026-watch.sh...compare against cuwa_watch_prev.txt...send_email.py...IMS cross-validation...''',
         schedule='every 360m',
         repeat=28,
         name='cuwa-2026-watch',
         script='cuwa-2026-watch.sh')
 ```
-
-**Important**: In the prompt, always say `bash /home/agentuser/.hermes/scripts/cuwa-2026-watch.sh` — never just `./cuwa-2026-watch.sh` or `python3 cuwa-2026-watch.sh`.
 
 ## Wiki Structure
 ```

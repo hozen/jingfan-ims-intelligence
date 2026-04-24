@@ -1,9 +1,6 @@
 # Generated outputs (never commit)
 *.pptx
 
-# Exception: tracked PPTX in wiki/projects
-!wiki/**/*.pptx
-
 # Python/pptx generation scripts (keep only gen_vN.js)
 create_*.js
 create_*.py

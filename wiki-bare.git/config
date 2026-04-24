@@ -1,6 +1,0 @@
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = true
-[remote "origin"]
-	url = git@bitbucket.org:fts227_swift_taylor/jingfan-ims-intelligence.git
