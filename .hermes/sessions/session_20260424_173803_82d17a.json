@@ -1,0 +1,30 @@
+{
+  "session_id": "20260424_173803_82d17a",
+  "model": "MiniMax-M2.7-highspeed",
+  "base_url": "https://api.minimaxi.com/anthropic",
+  "platform": "weixin",
+  "session_start": "2026-04-24T17:38:03.513291",
+  "last_updated": "2026-04-24T17:38:06.629036",
+  "system_prompt": "You are Hermes Agent, an intelligent AI assistant created by Nous Research. You are helpful, knowledgeable, and direct. You assist users with a wide range of tasks including answering questions, writing and editing code, analyzing information, creative work, and executing actions via your tools. You communicate clearly, admit uncertainty when appropriate, and prioritize being genuinely useful over being verbose unless otherwise directed below. Be targeted and efficient in your exploration and investigations.\n\nConversation started: Friday, April 24, 2026 05:38 PM\nModel: MiniMax-M2.7-highspeed\nProvider: minimax-cn\n\nYou are on Weixin/WeChat. Markdown formatting is supported, so you may use it when it improves readability, but keep the message compact and chat-friendly. You can send media files natively: include MEDIA:/absolute/path/to/file in your response. Images are sent as native photos, videos play inline when supported, and other files arrive as downloadable documents. You can also include image URLs in markdown format ![alt](url) and they will be downloaded and sent as native media when possible.",
+  "tools": [],
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Search for information about 上海三高 智慧水务管控平台 AI大模型. Try baidu search, sogou, and web searches. Find company website, products, recent news, and any presence at water industry events like 环博会 or 中国水协年会."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll search for information about 上海三高 智慧水务管控平台 AI大模型 using multiple search methods.\n<minimax:tool_call>\n<invoke name=\"BingSearch\">\n<parameter name=\"query\">上海三高 智慧水务管控平台 AI大模型</parameter>\n<parameter name=\"limit\">20</parameter>\n</invoke>\n</minimax:tool_call>",
+      "reasoning": "I need to search for information about 上海三高 (Shanghai SanGao) and their 智慧水务管控平台 AI大模型 (Smart Water Management Control Platform AI Big Model). I should try multiple search engines and look for company websites, products, recent news, and water industry event presence.\n\nLet me start by searching the web for this information.",
+      "finish_reason": "stop",
+      "reasoning_details": [
+        {
+          "signature": "1ccc15be3273e5f12e05241eb2e00347790b24a9c2d7c365ca16b97f33e88677",
+          "thinking": "I need to search for information about 上海三高 (Shanghai SanGao) and their 智慧水务管控平台 AI大模型 (Smart Water Management Control Platform AI Big Model). I should try multiple search engines and look for company websites, products, recent news, and water industry event presence.\n\nLet me start by searching the web for this information.",
+          "type": "thinking"
+        }
+      ]
+    }
+  ]
+}

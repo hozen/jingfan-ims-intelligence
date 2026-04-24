@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>靖帆IMS Agent 架构图</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #007EB5;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: white;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-left: 1.75rem;
+    }
+
+    .badge-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: 1.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .badge {
+      background: rgba(0, 126, 181, 0.2);
+      border: 1px solid rgba(0, 126, 181, 0.4);
+      color: #22d3ee;
+      font-size: 0.65rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    svg {
+      width: 100%;
+      min-width: 900px;
+      display: block;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.orange { background: #fb923c; }
+
+    .card h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .card ul {
+      list-style: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+    }
+
+    .card li {
+      margin-bottom: 0.375rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>靖帆IMS · 本地Agent架构方案</h1>
+      </div>
+      <p class="subtitle">Hach中国IMS产品线 · 轻量级AI助手 · 异步报告生成</p>
+      <div class="badge-row">
+        <span class="badge">MCP协议</span>
+        <span class="badge">Qwen-7B INT4</span>
+        <span class="badge">工控机本地部署</span>
+        <span class="badge">异步推理</span>
+      </div>
+    </div>
+
+    <!-- Main Diagram -->
+    <div class="diagram-container">
+      <svg viewBox="0 0 1100 620">
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+          </marker>
+          <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#fb923c" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- ========== BOUNDARY: 边缘设备层 ========== -->
+        <rect x="20" y="20" width="240" height="260" rx="10" fill="rgba(251, 191, 36, 0.04)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="32" y="40" fill="#fbbf24" font-size="9" font-weight="600">边缘设备层</text>
+
+        <!-- Hach 仪表 -->
+        <rect x="40" y="65" width="100" height="70" rx="6" fill="rgba(120, 53, 15, 0.35)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="90" y="88" fill="white" font-size="10" font-weight="600" text-anchor="middle">Hach 仪表</text>
+        <text x="90" y="103" fill="#94a3b8" font-size="8" text-anchor="middle">在线分析仪</text>
+        <text x="90" y="117" fill="#94a3b8" font-size="8" text-anchor="middle">SCADA数据</text>
+
+        <!-- IMS Server -->
+        <rect x="160" y="65" width="80" height="70" rx="6" fill="rgba(76, 29, 149, 0.5)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="200" y="88" fill="white" font-size="10" font-weight="600" text-anchor="middle">IMS Server</text>
+        <text x="200" y="103" fill="#94a3b8" font-size="8" text-anchor="middle">靖帆数据库</text>
+        <text x="200" y="117" fill="#94a3b8" font-size="8" text-anchor="middle">时序数据</text>
+
+        <!-- 工业PC (工控机) -->
+        <rect x="40" y="170" width="200" height="90" rx="8" fill="rgba(30, 41, 59, 0.6)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="140" y="192" fill="white" font-size="10" font-weight="600" text-anchor="middle">工业PC (工控机)</text>
+        <text x="140" y="210" fill="#94a3b8" font-size="8" text-anchor="middle">8GB RAM · INT4量化</text>
+        <text x="140" y="225" fill="#94a3b8" font-size="8" text-anchor="middle">本地部署 · 无需外网</text>
+        <text x="140" y="247" fill="#fbbf24" font-size="8" text-anchor="middle">← 全部组件运行在此 →</text>
+
+        <!-- ========== BOUNDARY: AI推理层 ========== -->
+        <rect x="290" y="20" width="500" height="580" rx="10" fill="rgba(6, 78, 59, 0.06)" stroke="#34d399" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="302" y="40" fill="#34d399" font-size="9" font-weight="600">AI推理层 · 本地部署</text>
+
+        <!-- MCP Server -->
+        <rect x="310" y="65" width="140" height="90" rx="8" fill="rgba(6, 78, 59, 0.5)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="380" y="92" fill="white" font-size="11" font-weight="600" text-anchor="middle">MCP Server</text>
+        <text x="380" y="110" fill="#94a3b8" font-size="8" text-anchor="middle">IoT-Edge-MCP</text>
+        <text x="380" y="125" fill="#94a3b8" font-size="8" text-anchor="middle">数据接口适配</text>
+        <text x="380" y="140" fill="#94a3b8" font-size="8" text-anchor="middle">协议转换</text>
+
+        <!-- Local LLM -->
+        <rect x="480" y="65" width="140" height="90" rx="8" fill="rgba(8, 51, 68, 0.6)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="550" y="92" fill="white" font-size="11" font-weight="600" text-anchor="middle">Qwen-7B (INT4)</text>
+        <text x="550" y="110" fill="#94a3b8" font-size="8" text-anchor="middle">本地LLM推理</text>
+        <text x="550" y="125" fill="#94a3b8" font-size="8" text-anchor="middle">~4GB 内存占用</text>
+        <text x="550" y="140" fill="#94a3b8" font-size="8" text-anchor="middle">无外网依赖</text>
+
+        <!-- Agent Framework -->
+        <rect x="660" y="65" width="120" height="90" rx="8" fill="rgba(6, 78, 59, 0.5)" stroke="#34d399" stroke-width="1.5"/>
+        <text x="720" y="92" fill="white" font-size="11" font-weight="600" text-anchor="middle">Agent 框架</text>
+        <text x="720" y="110" fill="#94a3b8" font-size="8" text-anchor="middle">LangGraph /</text>
+        <text x="720" y="125" fill="#94a3b8" font-size="8" text-anchor="middle">轻量编排</text>
+        <text x="720" y="140" fill="#94a3b8" font-size="8" text-anchor="middle">MCP Client</text>
+
+        <!-- MCP → LLM arrow -->
+        <line x1="450" y1="110" x2="478" y2="110" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="464" y="104" fill="#94a3b8" font-size="8" text-anchor="middle">MCP</text>
+
+        <!-- LLM → Agent arrow -->
+        <line x1="620" y1="110" x2="658" y2="110" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="639" y="104" fill="#94a3b8" font-size="8" text-anchor="middle">调用</text>
+
+        <!-- ========== 应用场景模块 ========== -->
+
+        <!-- 模块1: 仪表健康分析 -->
+        <rect x="310" y="185" width="140" height="70" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="380" y="208" fill="white" font-size="10" font-weight="600" text-anchor="middle">仪表健康分析</text>
+        <text x="380" y="225" fill="#94a3b8" font-size="8" text-anchor="middle">故障预警 · 精度评估</text>
+        <text x="380" y="240" fill="#94a3b8" font-size="8" text-anchor="middle">寿命预测</text>
+
+        <!-- 模块2: 数据趋势预测 -->
+        <rect x="480" y="185" width="140" height="70" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="550" y="208" fill="white" font-size="10" font-weight="600" text-anchor="middle">数据趋势预测</text>
+        <text x="550" y="225" fill="#94a3b8" font-size="8" text-anchor="middle">水质预警 · 异常检测</text>
+        <text x="550" y="240" fill="#94a3b8" font-size="8" text-anchor="middle">调度优化建议</text>
+
+        <!-- 模块3: 整厂运维看板 -->
+        <rect x="660" y="185" width="120" height="70" rx="6" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+        <text x="720" y="208" fill="white" font-size="10" font-weight="600" text-anchor="middle">整厂运维看板</text>
+        <text x="720" y="225" fill="#94a3b8" font-size="8" text-anchor="middle">仪表覆盖率</text>
+        <text x="720" y="240" fill="#94a3b8" font-size="8" text-anchor="middle">运行状态总览</text>
+
+        <!-- 应用场景模块 → Agent 虚线 -->
+        <line x1="380" y1="185" x2="720" y2="155" stroke="#34d399" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="550" y1="185" x2="720" y2="155" stroke="#34d399" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="720" y1="185" x2="720" y2="155" stroke="#34d399" stroke-width="1" stroke-dasharray="4,4"/>
+
+        <!-- ========== 异步报告生成 ========== -->
+        <rect x="310" y="290" width="470" height="90" rx="8" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="545" y="318" fill="#22d3ee" font-size="11" font-weight="600" text-anchor="middle">异步报告生成引擎</text>
+        <text x="545" y="338" fill="#94a3b8" font-size="8" text-anchor="middle">Agent自动汇总IMS数据 · 生成周期性报告（日报/周报/月报）</text>
+        <text x="545" y="354" fill="#94a3b8" font-size="8" text-anchor="middle">按客户需求模板定制 · 支持数据对比/趋势分析/异常汇总</text>
+        <text x="545" y="370" fill="#94a3b8" font-size="8" text-anchor="middle">推送方式：微信/邮件/文件服务器</text>
+
+        <!-- 报告引擎 → Agent -->
+        <line x1="545" y1="290" x2="720" y2="155" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4,4"/>
+
+        <!-- ========== 数据流连接 ========== -->
+        <!-- 仪表 → IMS Server -->
+        <line x1="140" y1="100" x2="158" y2="100" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="149" y="94" fill="#94a3b8" font-size="8" text-anchor="middle">采集</text>
+
+        <!-- IMS Server → MCP Server -->
+        <line x1="240" y1="100" x2="308" y2="100" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="274" y="94" fill="#94a3b8" font-size="8" text-anchor="middle">SQL / API</text>
+        <text x="274" y="112" fill="#94a3b8" font-size="8" text-anchor="middle">IMS原始数据</text>
+
+        <!-- ========== BOUNDARY: 客户交互层 ========== -->
+        <rect x="820" y="20" width="260" height="260" rx="10" fill="rgba(251, 146, 60, 0.04)" stroke="#fb923c" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="832" y="40" fill="#fb923c" font-size="9" font-weight="600">客户交互层</text>
+
+        <!-- 看板 Dashboard -->
+        <rect x="840" y="65" width="100" height="80" rx="6" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+        <text x="890" y="90" fill="white" font-size="10" font-weight="600" text-anchor="middle">运维看板</text>
+        <text x="890" y="108" fill="#94a3b8" font-size="8" text-anchor="middle">Web / 移动端</text>
+        <text x="890" y="123" fill="#94a3b8" font-size="8" text-anchor="middle">实时仪表状态</text>
+        <text x="890" y="135" fill="#94a3b8" font-size="8" text-anchor="middle">整厂视图</text>
+
+        <!-- 异步报告 -->
+        <rect x="960" y="65" width="100" height="80" rx="6" fill="rgba(251, 146, 60, 0.3)" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="1010" y="90" fill="white" font-size="10" font-weight="600" text-anchor="middle">异步报告</text>
+        <text x="1010" y="108" fill="#94a3b8" font-size="8" text-anchor="middle">微信 / 邮件</text>
+        <text x="1010" y="123" fill="#94a3b8" font-size="8" text-anchor="middle">日报 / 周报</text>
+        <text x="1010" y="135" fill="#94a3b8" font-size="8" text-anchor="middle">按需生成</text>
+
+        <!-- 客户 → 看板/报告箭头 -->
+        <line x1="780" y1="100" x2="838" y2="100" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrowhead-orange)"/>
+        <line x1="780" y1="120" x2="958" y2="100" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrowhead-orange)"/>
+
+        <!-- 看板 ← Agent报告引擎 -->
+        <line x1="780" y1="170" x2="840" y2="105" stroke="#22d3ee" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="780" y1="170" x2="958" y2="105" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,4"/>
+
+        <!-- ========== 客户 ========== -->
+        <rect x="20" y="350" width="220" height="60" rx="8" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+        <text x="130" y="374" fill="white" font-size="11" font-weight="600" text-anchor="middle">水务集团客户</text>
+        <text x="130" y="394" fill="#94a3b8" font-size="8" text-anchor="middle">运维人员 / 管理层 / 设备科</text>
+
+        <!-- 客户 → 边缘设备层 (部署) -->
+        <line x1="130" y1="350" x2="130" y2="270" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="130" y1="270" x2="140" y2="270" stroke="#94a3b8" stroke-width="1"/>
+        <text x="110" y="310" fill="#94a3b8" font-size="8" text-anchor="middle">部署</text>
+
+        <!-- 客户 → 客户交互层 -->
+        <line x1="240" y1="380" x2="820" y2="100" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="780" y="100" fill="#94a3b8" font-size="8">使用</text>
+
+        <!-- ========== Legend ========== -->
+        <text x="840" y="180" fill="white" font-size="9" font-weight="600">图例</text>
+
+        <rect x="840" y="194" width="14" height="9" rx="2" fill="rgba(120, 53, 15, 0.35)" stroke="#fbbf24" stroke-width="1"/>
+        <text x="860" y="201" fill="#94a3b8" font-size="8">边缘/仪表设备</text>
+
+        <rect x="840" y="210" width="14" height="9" rx="2" fill="rgba(76, 29, 149, 0.5)" stroke="#a78bfa" stroke-width="1"/>
+        <text x="860" y="217" fill="#94a3b8" font-size="8">数据存储</text>
+
+        <rect x="840" y="226" width="14" height="9" rx="2" fill="rgba(6, 78, 59, 0.5)" stroke="#34d399" stroke-width="1"/>
+        <text x="860" y="233" fill="#94a3b8" font-size="8">AI推理/Agent</text>
+
+        <rect x="840" y="242" width="14" height="9" rx="2" fill="rgba(8, 51, 68, 0.6)" stroke="#22d3ee" stroke-width="1"/>
+        <text x="860" y="249" fill="#94a3b8" font-size="8">本地LLM / 应用</text>
+
+        <rect x="840" y="258" width="14" height="9" rx="2" fill="rgba(251, 146, 60, 0.3)" stroke="#fb923c" stroke-width="1"/>
+        <text x="860" y="265" fill="#94a3b8" font-size="8">客户交互</text>
+
+        <line x1="840" y1="282" x2="854" y2="282" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <text x="860" y="285" fill="#94a3b8" font-size="8">数据流</text>
+
+        <line x1="840" y1="296" x2="854" y2="296" stroke="#34d399" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="860" y="299" fill="#94a3b8" font-size="8">编排/控制流</text>
+
+        <line x1="840" y1="310" x2="854" y2="310" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="860" y="313" fill="#94a3b8" font-size="8">客户交互流</text>
+
+      </svg>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot violet"></div>
+          <h3>数据层</h3>
+        </div>
+        <ul>
+          <li>• IMS Server：靖帆原始时序数据</li>
+          <li>• 仪表元数据：型号/标定参数/位置</li>
+          <li>• 历史记录：故障代码/校准日志</li>
+          <li>• 通过SQL/API接口对接MCP Server</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot emerald"></div>
+          <h3>AI推理层</h3>
+        </div>
+        <ul>
+          <li>• MCP Server：IoT-Edge-MCP开源框架</li>
+          <li>• 本地LLM：Qwen-7B INT4量化（~4GB）</li>
+          <li>• Agent框架：LangGraph工作流编排</li>
+          <li>• 全部运行在工控机，零外网依赖</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot cyan"></div>
+          <h3>客户价值</h3>
+        </div>
+        <ul>
+          <li>• 仪表健康量化：故障预警/精度评估</li>
+          <li>• 趋势预测：水质异常/调度优化</li>
+          <li>• 整厂运维看板：覆盖率/运行状态</li>
+          <li>• 异步报告：微信/邮件日报/周报/月报</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-dot amber"></div>
+          <h3>技术选型</h3>
+        </div>
+        <ul>
+          <li>• MCP协议：poly-mcp/IoT-Edge-MCP-Server</li>
+          <li>• 小模型：Qwen-7B INT4 / Phi-3-mini</li>
+          <li>• 工控机：8GB RAM · Linux</li>
+          <li>• 竞品对比：首创也在做，但尚未落地</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">
+      靖帆IMS · 本地Agent架构方案 · Hach中国IMS产品线 · 2026-04-24
+    </p>
+  </div>
+</body>
+</html>

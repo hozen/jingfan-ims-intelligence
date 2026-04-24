@@ -1,0 +1,30 @@
+{
+  "session_id": "20260418_125941_0ded36",
+  "model": "MiniMax-M2.7-highspeed",
+  "base_url": "https://api.minimaxi.com/anthropic",
+  "platform": "weixin",
+  "session_start": "2026-04-18T12:59:41.182598",
+  "last_updated": "2026-04-18T12:59:45.394661",
+  "system_prompt": "You are Hermes Agent, an intelligent AI assistant created by Nous Research. You are helpful, knowledgeable, and direct. You assist users with a wide range of tasks including answering questions, writing and editing code, analyzing information, creative work, and executing actions via your tools. You communicate clearly, admit uncertainty when appropriate, and prioritize being genuinely useful over being verbose unless otherwise directed below. Be targeted and efficient in your exploration and investigations.\n\nConversation started: Saturday, April 18, 2026 12:59 PM\nModel: MiniMax-M2.7-highspeed\nProvider: minimax-cn\n\nYou are on Weixin/WeChat. Markdown formatting is supported, so you may use it when it improves readability, but keep the message compact and chat-friendly. You can send media files natively: include MEDIA:/absolute/path/to/file in your response. Images are sent as native photos, videos play inline when supported, and other files arrive as downloadable documents. You can also include image URLs in markdown format ![alt](url) and they will be downloaded and sent as native media when possible.",
+  "tools": [],
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "请帮我搜索以下信息并返回结果：\n1. 2026年环博会（IFAT/中国环保博览会）相关信息 - 时间、地点、主题、参展商类型\n2. 哈希靖帆IMS相关信息 - 公司背景、产品介绍、IMS是什么\n\n请使用Web搜索功能，关键词：\n- 2026环博会\n- 哈希靖帆 IMS\n- 哈希靖帆公司\n\n返回你找到的关键信息摘要。"
+    },
+    {
+      "role": "assistant",
+      "content": "我来帮你搜索这些信息。\n<minimax:tool_call>\n<invoke name=\"web_search\">\n<parameter name=\"keywords\">[\"2026环博会 IFAT中国环保博览会\", \"哈希靖帆 IMS\", \"哈希靖帆公司\"]</parameter>\n<parameter name=\"url\">https://www.google.com</parameter>\n</invoke>\n</minimax:tool_call>",
+      "reasoning": "The user wants me to search for information about:\n1. 2026年环博会（IFAT/中国环保博览会）- time, location, theme, exhibitor types\n2. 哈希靖帆IMS - company background, product introduction, what is IMS\n\nLet me use web search to find this information.",
+      "finish_reason": "stop",
+      "reasoning_details": [
+        {
+          "signature": "e8f7bcb8f49aa319b190d4a88e485686a0f92c8b45d3406a0221517a9e001540",
+          "thinking": "The user wants me to search for information about:\n1. 2026年环博会（IFAT/中国环保博览会）- time, location, theme, exhibitor types\n2. 哈希靖帆IMS - company background, product introduction, what is IMS\n\nLet me use web search to find this information.",
+          "type": "thinking"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "session_id": "20260418_181656_ffb444",
+  "model": "MiniMax-M2.7-highspeed",
+  "base_url": "https://api.minimaxi.com/anthropic",
+  "platform": "weixin",
+  "session_start": "2026-04-18T18:16:56.933535",
+  "last_updated": "2026-04-18T18:17:01.779583",
+  "system_prompt": "You are Hermes Agent, an intelligent AI assistant created by Nous Research. You are helpful, knowledgeable, and direct. You assist users with a wide range of tasks including answering questions, writing and editing code, analyzing information, creative work, and executing actions via your tools. You communicate clearly, admit uncertainty when appropriate, and prioritize being genuinely useful over being verbose unless otherwise directed below. Be targeted and efficient in your exploration and investigations.\n\nConversation started: Saturday, April 18, 2026 06:16 PM\nModel: MiniMax-M2.7-highspeed\nProvider: minimax-cn\n\nYou are on Weixin/WeChat. Markdown formatting is supported, so you may use it when it improves readability, but keep the message compact and chat-friendly. You can send media files natively: include MEDIA:/absolute/path/to/file in your response. Images are sent as native photos, videos play inline when supported, and other files arrive as downloadable documents. You can also include image URLs in markdown format ![alt](url) and they will be downloaded and sent as native media when possible.",
+  "tools": [],
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Search for Hach booth number at 2026 Shanghai Environmental Expo"
+    },
+    {
+      "role": "assistant",
+      "content": "[TOOL_CALL]\n{tool => \"web\", args => {\n  --prompt \"Find the booth number for Hach at the 2026 Shanghai Environmental Expo (China Environmental Expo/中国环博会). Look for exhibitor list, floor plan, or booth assignment information.\"\n  --url \"https://www.google.com/search?q=Hach+booth+number+2026+Shanghai+Environmental+Expo\"\n}}\n[/TOOL_CALL]",
+      "reasoning": "The user wants me to find the booth number for Hach at the 2026 Shanghai Environmental Expo. Let me search for this information online.\n\nThe 2026 Shanghai Environmental Expo would likely be held in 2026 (since the current date is April 2026). Let me search for this information.",
+      "finish_reason": "stop",
+      "reasoning_details": [
+        {
+          "signature": "78e19edd254162d56f715c784c61e3386b1b8002bb7104befa2c2328aa6e8b66",
+          "thinking": "The user wants me to find the booth number for Hach at the 2026 Shanghai Environmental Expo. Let me search for this information online.\n\nThe 2026 Shanghai Environmental Expo would likely be held in 2026 (since the current date is April 2026). Let me search for this information.",
+          "type": "thinking"
+        }
+      ]
+    }
+  ]
+}
