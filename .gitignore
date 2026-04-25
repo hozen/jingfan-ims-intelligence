@@ -2,6 +2,11 @@ node_modules/
 *.log
 .DS_Store
 
+# Hermes managed by git
+.hermes/skills/
+.hermes/SOUL.md
+.hermes/config.yaml
+
 # Hermes runtime (excluded from git)
 .hermes/cache/
 .hermes/logs/
@@ -13,4 +18,8 @@ node_modules/
 .hermes/image_cache/
 .hermes/models_dev_cache.json
 .hermes/auth.lock
+.hermes/auth.json
+.hermes/channel_directory.json
+.hermes/cron/
+.hermes/scripts/
 
