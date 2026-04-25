@@ -1,4 +1,16 @@
-.hermes/
-jingfan-ims-intelligence/
+node_modules/
 *.log
 .DS_Store
+
+# Hermes runtime (excluded from git)
+.hermes/cache/
+.hermes/logs/
+.hermes/sessions/
+.hermes/state.db*
+.hermes/weixin/
+.hermes/whatsapp/
+.hermes/audio_cache/
+.hermes/image_cache/
+.hermes/models_dev_cache.json
+.hermes/auth.lock
+
