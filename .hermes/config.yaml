@@ -1,4 +1,7 @@
-model: ''
+model:
+  default: MiniMax-M2.7-highspeed
+  provider: minimax-cn
+  base_url: https://api.minimaxi.com/anthropic
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}
@@ -38,6 +41,8 @@ browser:
   allow_private_urls: false
   camofox:
     managed_persistence: false
+  cloud_provider: camofox
+  use_gateway: false
 checkpoints:
   enabled: true
   max_snapshots: 50
@@ -135,7 +140,7 @@ dashboard:
 privacy:
   redact_pii: false
 tts:
-  provider: edge
+  provider: gemini
   edge:
     voice: en-US-AriaNeural
   elevenlabs:
@@ -157,6 +162,7 @@ tts:
     ref_text: ''
     model: neuphonic/neutts-air-q4-gguf
     device: cpu
+  use_gateway: false
 stt:
   enabled: true
   provider: local
@@ -240,6 +246,29 @@ session_reset:
   mode: both
   idle_minutes: 1440
   at_hour: 4
+image_gen:
+  model: fal-ai/flux-2/klein/9b
+web:
+  backend: tavily
+  use_gateway: false
+platform_toolsets:
+  cli:
+  - browser
+  - clarify
+  - code_execution
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - memory
+  - messaging
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - vision
+  - web
 
 # ── Fallback Model ────────────────────────────────────────────────────
 # Automatic provider failover when primary is unavailable.

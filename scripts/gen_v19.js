@@ -1325,8 +1325,220 @@ actions.forEach((item, i) => {
 });
 
 // ============================================================
+// SLIDE 17: 竞品案例 — FOSS博瑞思（数智化路线）
+// ============================================================
+let slide17 = pres.addSlide();
+addSlideHeader(slide17, "D", "竞品案例：FOSS博瑞思 — AI+水监测仪器的数智化路线",
+  "数据来源：2026环博会现场拍摄 | 核实：公司真实存在，专注水监测仪器+AI数智化，非'80%运维成本'宣传");
+addFooter(slide17, "报告内容由AI辅助生成，仅供参考 | 重要澄清：现场数据来源存疑，已修正");
+
+// Left column: company profile
+slide17.addShape(pres.shapes.RECTANGLE, {
+  x: 0.4, y: 1.2, w: 4.3, h: 3.9,
+  fill: { color: WHITE }, line: { color: BLUE, width: 1.5 }
+});
+slide17.addShape(pres.shapes.RECTANGLE, {
+  x: 0.4, y: 1.2, w: 4.3, h: 0.44,
+  fill: { color: BLUE }
+});
+slide17.addText("FOSS博瑞思 / 六度物联", {
+  x: 0.5, y: 1.2, w: 4.1, h: 0.44,
+  fontSize: 13, fontFace: "Microsoft YaHei", bold: true,
+  color: WHITE, valign: "middle"
+});
+slide17.addText([
+  { text: "公司定位", options: { bold: true, color: BLUE, breakLine: true } },
+  { text: "以水监测仪器为核心，AI全面赋能，做客户的数智生态伙伴", options: { breakLine: true } },
+  { text: "", options: { breakLine: true } },
+  { text: "产品矩阵", options: { bold: true, color: BLUE, breakLine: true } },
+  { text: "水质分析仪 + 户外水站 + ROF深度物联架构", options: { breakLine: true } },
+  { text: "", options: { breakLine: true } },
+  { text: "核心技术", options: { bold: true, color: BLUE, breakLine: true } },
+  { text: "ROF深度物联软件架构 + 低功耗4G模块", options: { breakLine: true } },
+  { text: "", options: { breakLine: true } },
+  { text: "核心功能", options: { bold: true, color: BLUE, breakLine: true } },
+  { text: "远程校准 / 核查 / 诊断 / 维护 / 升级 / 数据导出", options: { breakLine: true } },
+  { text: "", options: { breakLine: true } },
+  { text: "公司背景", options: { bold: true, color: BLUE, breakLine: true } },
+  { text: "博瑞思数智科技(深圳)有限公司，2017年成立，国高新/专精特新企业", options: { breakLine: false } }
+], {
+  x: 0.55, y: 1.72, w: 4.0, h: 3.3,
+  fontSize: 10, fontFace: "Microsoft YaHei", color: DKGRAY,
+  valign: "top", lineSpacing: 18
+});
+
+// Right column: Hach IMS vs FOSS
+slide17.addShape(pres.shapes.RECTANGLE, {
+  x: 4.9, y: 1.2, w: 4.9, h: 3.9,
+  fill: { color: WHITE }, line: { color: LTGRAY, width: 1 }
+});
+slide17.addText("Hach IMS vs FOSS博瑞思 功能对标", {
+  x: 5.0, y: 1.28, w: 4.7, h: 0.32,
+  fontSize: 11, fontFace: "Microsoft YaHei", bold: true, color: DKGRAY
+});
+
+const compFeatures = [
+  { feat: "远程校准/诊断", ims: true, foss: true },
+  { feat: "故障预测/预警", ims: true, foss: false },
+  { feat: "仪表专属知识库", ims: true, foss: false },
+  { feat: "移动端运维", ims: true, foss: true },
+  { feat: "AI数据分析", ims: false, foss: true },
+  { feat: "多品牌仪表兼容", ims: true, foss: true },
+];
+compFeatures.forEach((f, i) => {
+  const y = 1.72 + i * 0.46;
+  slide17.addText(f.feat, {
+    x: 5.0, y, w: 2.0, h: 0.38,
+    fontSize: 10, fontFace: "Microsoft YaHei", color: DKGRAY, valign: "middle"
+  });
+  // IMS column
+  slide17.addText(f.ims ? "✓" : "—", {
+    x: 7.05, y, w: 0.45, h: 0.38,
+    fontSize: 12, fontFace: "Microsoft YaHei", bold: true,
+    color: f.ims ? GREEN : LTGRAY, align: "center", valign: "middle"
+  });
+  // FOSS column
+  slide17.addText(f.foss ? "✓" : "—", {
+    x: 8.6, y, w: 0.45, h: 0.38,
+    fontSize: 12, fontFace: "Microsoft YaHei", bold: true,
+    color: f.foss ? BLUE : LTGRAY, align: "center", valign: "middle"
+  });
+});
+
+// Header for columns
+slide17.addText("功能", {
+  x: 5.0, y: 1.5, w: 2.0, h: 0.22,
+  fontSize: 9, fontFace: "Microsoft YaHei", bold: true, color: LTGRAY
+});
+slide17.addText("IMS", {
+  x: 7.05, y: 1.5, w: 0.45, h: 0.22,
+  fontSize: 9, fontFace: "Microsoft YaHei", bold: true, color: GREEN, align: "center"
+});
+slide17.addText("FOSS", {
+  x: 8.6, y: 1.5, w: 0.45, h: 0.22,
+  fontSize: 9, fontFace: "Microsoft YaHei", bold: true, color: BLUE, align: "center"
+});
+slide17.addShape(pres.shapes.LINE, {
+  x: 7.5, y: 1.72, w: 0, h: 2.5,
+  line: { color: "EEEEEE", width: 1 }
+});
+
+// Bottom insight
+slide17.addShape(pres.shapes.RECTANGLE, {
+  x: 0.4, y: 5.2, w: 9.4, h: 0.28,
+  fill: { color: "FFF3E0" }
+});
+slide17.addText("IMS机会：FOSS强在AI能力，IMS强在仪表专属知识库——各自路线不同，FOSS是竞争威胁，IMS是互补需求", {
+  x: 0.5, y: 5.2, w: 9.2, h: 0.28,
+  fontSize: 9, fontFace: "Microsoft YaHei", color: ORANGE, valign: "middle"
+});
+
+// ============================================================
+// SLIDE 18: 行业基准数据（修正版）
+// ============================================================
+let slide18 = pres.addSlide();
+addSlideHeader(slide18, "E", "行业基准数据：设备量 / 故障率 / AI准确率",
+  "数据来源：2026环博会展台实拍数据（数据来源待进一步核实，不作为正式引用）");
+addFooter(slide18, "报告内容由AI辅助生成，仅供参考 | 数据主体可能为舜通智联或其他展商，有待进一步核实");
+
+// Top KPIs
+const kpis = [
+  { num: "85,899", unit: "台", label: "全国设备总量" },
+  { num: "47,644", unit: "台", label: "在线设备数量" },
+  { num: "99.27%", unit: "", label: "AI识别准确率" },
+  { num: "1,066", unit: "个", label: "覆盖站点数" },
+];
+kpis.forEach((k, i) => {
+  const x = 0.4 + i * 2.4;
+  slide18.addShape(pres.shapes.RECTANGLE, {
+    x, y: 1.2, w: 2.2, h: 1.1,
+    fill: { color: WHITE }, line: { color: BLUE, width: 1 }
+  });
+  slide18.addText(k.num + k.unit, {
+    x, y: 1.22, w: 2.2, h: 0.62,
+    fontSize: 22, fontFace: "Microsoft YaHei", bold: true,
+    color: BLUE, align: "center", valign: "bottom"
+  });
+  slide18.addText(k.label, {
+    x, y: 1.84, w: 2.2, h: 0.38,
+    fontSize: 10, fontFace: "Microsoft YaHei",
+    color: LTGRAY, align: "center", valign: "top"
+  });
+});
+
+// Middle: fault distribution
+slide18.addText("设备故障部位分布（占故障总量）", {
+  x: 0.4, y: 2.48, w: 4.5, h: 0.32,
+  fontSize: 11, fontFace: "Microsoft YaHei", bold: true, color: DKGRAY
+});
+
+const faults = [
+  { name: "分析仪", pct: "9.1%", bar: 0.91 },
+  { name: "温度传感器", pct: "0.67%", bar: 0.067 },
+  { name: "电动阀", pct: "0.45%", bar: 0.045 },
+  { name: "采样泵", pct: "0.44%", bar: 0.044 },
+  { name: "数采仪", pct: "0.01%", bar: 0.001 },
+];
+faults.forEach((f, i) => {
+  const y = 2.88 + i * 0.38;
+  slide18.addText(f.name, {
+    x: 0.4, y, w: 1.2, h: 0.32,
+    fontSize: 10, fontFace: "Microsoft YaHei", color: DKGRAY
+  });
+  slide18.addShape(pres.shapes.RECTANGLE, {
+    x: 1.65, y: y + 0.06, w: 3.2, h: 0.2,
+    fill: { color: "EEEEEE" }
+  });
+  slide18.addShape(pres.shapes.RECTANGLE, {
+    x: 1.65, y: y + 0.06, w: 3.2 * f.bar, h: 0.2,
+    fill: { color: f.bar > 0.1 ? RED : ORANGE }
+  });
+  slide18.addText(f.pct, {
+    x: 4.9, y, w: 0.7, h: 0.32,
+    fontSize: 10, fontFace: "Microsoft YaHei", bold: true, color: DKGRAY
+  });
+});
+
+// Right: AI metrics
+slide18.addText("AI运营效果", {
+  x: 5.6, y: 2.48, w: 4.2, h: 0.32,
+  fontSize: 11, fontFace: "Microsoft YaHei", bold: true, color: DKGRAY
+});
+slide18.addShape(pres.shapes.RECTANGLE, {
+  x: 5.6, y: 2.88, w: 4.2, h: 1.88,
+  fill: { color: WHITE }, line: { color: "E0E0E0", width: 1 }
+});
+const aiMetrics = [
+  { label: "智能报警数量", val: "全国Top5" },
+  { label: "覆盖率", val: "1,066个站点" },
+  { label: "超标识别率", val: "100%" },
+  { label: "运营成本降幅", val: "待核实" },
+];
+aiMetrics.forEach((m, i) => {
+  const y = 2.96 + i * 0.44;
+  slide18.addText(m.label + ":", {
+    x: 5.75, y, w: 2.0, h: 0.36,
+    fontSize: 10, fontFace: "Microsoft YaHei", color: LTGRAY
+  });
+  slide18.addText(m.val, {
+    x: 7.75, y, w: 1.9, h: 0.36,
+    fontSize: 10, fontFace: "Microsoft YaHei", bold: true, color: BLUE
+  });
+});
+
+// Bottom: Hach comparison
+slide18.addShape(pres.shapes.RECTANGLE, {
+  x: 0.4, y: 4.92, w: 9.4, h: 0.28,
+  fill: { color: "FFF3E0" }
+});
+slide18.addText("IMS参照：分析仪故障占9.1%为最高——IMS的'预测性维护'价值在此场景最高；数据来源待核实，不作为正式引用", {
+  x: 0.5, y: 4.92, w: 9.2, h: 0.28,
+  fontSize: 9, fontFace: "Microsoft YaHei", color: ORANGE, valign: "middle"
+});
+
+// ============================================================
 // SAVE
 // ============================================================
-pres.writeFile({ fileName: "/home/agentuser/环博会市场观察_20260419.pptx" })
-  .then(() => console.log("Done: /home/agentuser/环博会市场观察_20260419.pptx"))
+pres.writeFile({ fileName: "/home/agentuser/环博会市场观察_20260429.pptx" })
+  .then(() => console.log("Done: /home/agentuser/环博会市场观察_20260429.pptx"))
   .catch(e => console.error(e));
