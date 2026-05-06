@@ -2,7 +2,7 @@ node_modules/
 *.log
 .DS_Store
 
-# Hermes config - tracked for backup (完整恢复所需)
+# Hermes config - 完整恢复所需
 !.hermes/config.yaml
 !.hermes/SOUL.md
 !.hermes/skills/
@@ -12,7 +12,7 @@ node_modules/
 !.hermes/cron/jobs.json
 !.hermes/.env
 
-# Hermes runtime (excluded from git)
+# Hermes runtime (不要追踪)
 .hermes/cache/
 .hermes/logs/
 .hermes/sessions/
@@ -28,3 +28,12 @@ node_modules/
 .hermes/cron/output/
 .hermes/cron/processed_emails*.json
 .hermes/scripts/
+
+# Workspace (不备份)
+*.pptx
+*.pdf
+*.jpg
+*.png
+wiki/
+wiki-mdbook/
+works/
