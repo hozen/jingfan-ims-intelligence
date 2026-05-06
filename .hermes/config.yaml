@@ -3,7 +3,6 @@ model:
   provider: minimax-cn
   base_url: https://api.minimaxi.com/anthropic
 providers: {}
-fallback_providers: []
 credential_pool_strategies: {}
 toolsets:
 - hermes-cli
@@ -63,11 +62,6 @@ bedrock:
     guardrail_version: ''
     stream_processing_mode: async
     trace: disabled
-smart_model_routing:
-  enabled: false
-  max_simple_chars: 160
-  max_simple_words: 28
-  cheap_model: {}
 auxiliary:
   vision:
     provider: auto
@@ -220,7 +214,10 @@ mattermost:
 approvals:
   mode: manual
   timeout: 60
-command_allowlist: []
+command_allowlist:
+- script execution via heredoc
+- start gateway outside systemd (use 'systemctl --user restart hermes-gateway')
+- script execution via -e/-c flag
 quick_commands: {}
 personalities: {}
 security:
@@ -269,6 +266,13 @@ platform_toolsets:
   - tts
   - vision
   - web
+mcp_servers:
+  playwright:
+    command: npx
+    args:
+    - -y
+    - '@playwright/mcp@latest'
+    timeout: 120
 
 # ── Fallback Model ────────────────────────────────────────────────────
 # Automatic provider failover when primary is unavailable.

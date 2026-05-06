@@ -55,22 +55,11 @@ mcporter list --stdio "npx -y @modelcontextprotocol/server-filesystem" --name fs
 ## Calling Tools
 
 ```bash
-# Key=value syntax
-mcporter call linear.list_issues team=ENG limit:5
+# Key=value syntax (NO quotes around value)
+mcporter call <server>.<tool> key=value key2=value2
 
-# Function syntax
-mcporter call "linear.create_issue(title: \"Bug fix needed\")"
-
-# Ad-hoc HTTP server (no config needed)
-mcporter call https://api.example.com/mcp.fetch url=https://example.com
-
-# Ad-hoc stdio server
-mcporter call --stdio "bun run ./server.ts" scrape url=https://example.com
-
-# JSON payload
-mcporter call <server.tool> --args '{"limit": 5}'
-
-# Machine-readable output (recommended for Hermes)
+# Stdio server — MUST use --name to distinguish instance
+mcporter call --stdio "npx -y @playwright/..."
 mcporter call <server.tool> key=value --output json
 ```
 
@@ -116,7 +105,21 @@ mcporter emit-ts <server> --mode types
 ```
 
 ## Notes
+## Playwright MCP (`@playwright/mcp`) — real browser automation
+```bash
+# Install Chrome first: npx playwright install chrome
 
-- Use `--output json` for structured output that's easier to parse
-- Ad-hoc servers (HTTP URL or `--stdio` command) work without any config — useful for one-off calls
-- OAuth auth may require interactive browser flow — use `terminal(command="mcporter auth <server>", pty=true)` if needed
+# Navigate + inspect (each mcporter call spawns a new server — no page state persistence)
+mcporter call --stdio "npx -y @playwright/..." browser_navigate url=http://example.com
+
+# Get snapshot (run after navigate in same command chain)
+mcporter call --stdio "npx -y @playwright/..." browser_navigate url=http://example.com && mcporter call --stdio "npx -y @playwright/..." browser_snapshot
+
+# Screenshot: save to ~/.hermes/hermes-agent/.playwright-mcp/ dir (allowed root)
+mcporter call --stdio "npx -y @playwright/..." browser_evaluate code="page. goto('http://example.com')" && mcporter call --stdio "npx -y @playwright/..." browser_take_screenshot filename=.playwright-mcp/screen.png
+
+# List available tools
+mcporter list --stdio "npx -y @playwright/..." --name pw
+```
+NOTE: `@executeautomation/playwright-mcp-server` has better tooling but requires `--allow-unrestricted-file-access`. Use `@playwright/mcp` from the official Playwright org.
+## Notes

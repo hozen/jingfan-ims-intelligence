@@ -2,10 +2,15 @@ node_modules/
 *.log
 .DS_Store
 
-# Hermes managed by git
-.hermes/skills/
-.hermes/SOUL.md
-.hermes/config.yaml
+# Hermes config - tracked for backup (完整恢复所需)
+!.hermes/config.yaml
+!.hermes/SOUL.md
+!.hermes/skills/
+!.hermes/skills/**
+!.hermes/memories/
+!.hermes/memories/**
+!.hermes/cron/jobs.json
+!.hermes/.env
 
 # Hermes runtime (excluded from git)
 .hermes/cache/
@@ -20,6 +25,6 @@ node_modules/
 .hermes/auth.lock
 .hermes/auth.json
 .hermes/channel_directory.json
-.hermes/cron/
+.hermes/cron/output/
+.hermes/cron/processed_emails*.json
 .hermes/scripts/
-
