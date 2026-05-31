@@ -19,6 +19,20 @@
 - Structure created: SCHEMA.md, index.md, log.md
 - Directory structure: wiki/raw/{articles,transcripts,assets}, wiki/entities/companies/, wiki/concepts/, wiki/comparisons/, wiki/queries/
 
+## [2026-05-04] update | MQL线索日常滚动更新
+- 威海SZB-2026-004：已核实，5/19截止，¥33,000仪器检定校准服务，需CMA+CNAS资质
+- 深圳环水：2026年度配件二次采购已完成¥73,600（爱乐尼特仪器），关注新一轮
+- 宁夏吴忠/灵武：待确认
+- 四川广安：待核实
+
+## [2026-05-04] update | 丹纳赫Q2公众号监控
+- Q2暂无新文章（截至5月初），最新为2026-04-08 CACLP 2026报道
+- 新增：中国医学诊断平台换帅信息——Rosa Chen于2026年1月13日离职，于婧接任
+
+## [2026-05-04] query | Wiki项目状态正常
+- mdbook build工具未安装，但已生成的book/静态文件可用
+- wiki静态文件：/home/agentuser/wiki-mdbook/book/
+
 ## [2026-04-19] ingest | Complete session documentation
 - Created: projects/ie-expo-2026-market-watch/PROJECT.md (项目总览)
 - Created: projects/ie-expo-2026-market-watch/SESSION-2026-04-19.md (完整工作记录)
