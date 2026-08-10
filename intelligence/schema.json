@@ -1,0 +1,418 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "iMS Public Market Radar Daily Report",
+  "description": "Hach iMS GTM Work Book - Public Market Opportunity Radar v3.1",
+  "type": "object",
+  "required": [
+    "report_id",
+    "date",
+    "version",
+    "scanner_summary",
+    "top_5_match",
+    "opportunities",
+    "industry_triggers",
+    "ecosystem_triggers",
+    "policy_triggers",
+    "competitive_triggers",
+    "strategic_accounts",
+    "rejected_signals"
+  ],
+  "properties": {
+    "report_id": {
+      "type": "string",
+      "description": "唯一标识符"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "报告日期"
+    },
+    "version": {
+      "type": "string",
+      "description": "雷达版本号"
+    },
+    "scanner_summary": {
+      "type": "object",
+      "required": [
+        "total_scanned",
+        "valid_triggers",
+        "p1_count",
+        "p2_count",
+        "p3_count",
+        "trigger_breakdown"
+      ],
+      "properties": {
+        "total_scanned": {
+          "type": "integer",
+          "description": "今日扫描条目总数"
+        },
+        "valid_triggers": {
+          "type": "integer",
+          "description": "有效公开信号数"
+        },
+        "p1_count": {
+          "type": "integer",
+          "description": "一级机会数（80-100分）"
+        },
+        "p2_count": {
+          "type": "integer",
+          "description": "二级机会数（60-79分）"
+        },
+        "p3_count": {
+          "type": "integer",
+          "description": "三级机会数（40-59分）"
+        },
+        "industry_trigger_count": {
+          "type": "integer"
+        },
+        "ecosystem_trigger_count": {
+          "type": "integer"
+        },
+        "policy_trigger_count": {
+          "type": "integer"
+        },
+        "competitive_trigger_count": {
+          "type": "integer"
+        },
+        "trigger_breakdown": {
+          "type": "object",
+          "description": "各类型信号数量"
+        }
+      }
+    },
+    "top_5_match": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/top_match"
+      },
+      "description": "今日最值得公司Agent匹配的5个对象"
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/opportunity"
+      },
+      "description": "客户变化/项目信号"
+    },
+    "industry_triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/industry_trigger"
+      },
+      "description": "行业级变化信号"
+    },
+    "ecosystem_triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ecosystem_trigger"
+      },
+      "description": "设计院/EPC/集成商信号"
+    },
+    "policy_triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/policy_trigger"
+      },
+      "description": "政策/法规/资金信号"
+    },
+    "competitive_triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/competitive_trigger"
+      },
+      "description": "竞争对手信号"
+    },
+    "strategic_accounts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/strategic_account"
+      },
+      "description": "长期跟踪的战略客户"
+    },
+    "rejected_signals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rejected_signal"
+      },
+      "description": "今日不要浪费销售时间的信息"
+    },
+    "data_source": {
+      "type": "object",
+      "description": "数据来源说明"
+    },
+    "disclaimer": {
+      "type": "string",
+      "description": "免责声明"
+    }
+  },
+  "$defs": {
+    "top_match": {
+      "type": "object",
+      "required": ["rank", "name", "trigger_type", "score", "priority", "match_priority", "match_reason", "agent_checklist"],
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "description": "匹配优先级排名"
+        },
+        "name": {
+          "type": "string",
+          "description": "客户/组织名称"
+        },
+        "trigger_type": {
+          "type": "string",
+          "enum": [
+            "客户变化",
+            "项目",
+            "行业",
+            "生态",
+            "政策",
+            "竞争"
+          ]
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["一级", "二级", "三级", "背景"]
+        },
+        "match_priority": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"],
+          "description": "A=最高（直接匹配SFDC/Account/Installed Base），B=中，C=批量匹配，D=归档"
+        },
+        "match_reason": {
+          "type": "string",
+          "description": "为什么值得内部匹配"
+        },
+        "agent_checklist": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "公司Agent建议检查项"
+        }
+      }
+    },
+    "opportunity": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "trigger_type",
+        "priority",
+        "score",
+        "match_priority",
+        "public_facts",
+        "ai_judgment",
+        "to_verify",
+        "score_breakdown",
+        "source_url",
+        "source_type",
+        "confidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "机会编号"
+        },
+        "name": {
+          "type": "string"
+        },
+        "trigger_type": {
+          "type": "string",
+          "enum": ["客户变化", "项目"]
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["一级", "二级", "三级"]
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "match_priority": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"]
+        },
+        "public_facts": {
+          "type": "string",
+          "description": "仅来自公开信息源的事实"
+        },
+        "ai_judgment": {
+          "type": "string",
+          "description": "AI判断（有边界，有假设）"
+        },
+        "to_verify": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "必须通过内部数据验证的信息"
+        },
+        "score_breakdown": {
+          "type": "string",
+          "description": "评分依据"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["高", "中", "低"]
+        }
+      }
+    },
+    "industry_trigger": {
+      "type": "object",
+      "required": ["industry", "event", "public_facts", "ims_relevance", "current_status", "agent_action", "match_priority", "source_url", "source_type"],
+      "properties": {
+        "industry": {
+          "type": "string"
+        },
+        "event": {
+          "type": "string"
+        },
+        "public_facts": {
+          "type": "string"
+        },
+        "ims_relevance": {
+          "type": "string",
+          "description": "iMS关联度"
+        },
+        "current_status": {
+          "type": "string",
+          "description": "行业级机会，不属于具体客户Opportunity"
+        },
+        "agent_action": {
+          "type": "string",
+          "description": "公司Agent建议动作"
+        },
+        "match_priority": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"]
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source_type": {
+          "type": "string"
+        }
+      }
+    },
+    "ecosystem_trigger": {
+      "type": "object",
+      "required": ["organization", "role", "related_projects", "ims_relevance", "agent_suggestion"],
+      "properties": {
+        "organization": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "related_projects": {
+          "type": "string"
+        },
+        "ims_relevance": {
+          "type": "string"
+        },
+        "agent_suggestion": {
+          "type": "string"
+        },
+        "ai_judgment": {
+          "type": "string"
+        }
+      }
+    },
+    "policy_trigger": {
+      "type": "object",
+      "required": ["name", "date", "public_facts", "ims_demand", "source_url"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "public_facts": {
+          "type": "string"
+        },
+        "ims_demand": {
+          "type": "string",
+          "description": "产生仪表需求 vs 产生iMS需求的区分"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "competitive_trigger": {
+      "type": "object",
+      "required": ["competitor", "threat_level", "public_facts", "threat_assessment", "action_suggestion", "source_url"],
+      "properties": {
+        "competitor": {
+          "type": "string"
+        },
+        "threat_level": {
+          "type": "string",
+          "enum": ["高", "中", "低"]
+        },
+        "public_facts": {
+          "type": "string"
+        },
+        "threat_assessment": {
+          "type": "string"
+        },
+        "action_suggestion": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "strategic_account": {
+      "type": "object",
+      "required": ["account_name", "new_signals", "current_assessment"],
+      "properties": {
+        "account_name": {
+          "type": "string"
+        },
+        "new_signals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "current_assessment": {
+          "type": "string"
+        }
+      }
+    },
+    "rejected_signal": {
+      "type": "object",
+      "required": ["description", "type", "reason"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
