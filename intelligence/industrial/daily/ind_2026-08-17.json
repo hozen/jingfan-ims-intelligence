@@ -1,0 +1,958 @@
+{
+  "report_id": "ind-radar-2026-08-17",
+  "date": "2026-08-17",
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "experiment_week": 1,
+  "version": "v1.0",
+  "scanner_summary": {
+    "total_scanned": 52,
+    "total_signals": 15,
+    "engine_a_count": 5,
+    "engine_b_count": 10,
+    "p1_count": 0,
+    "p2_count": 7,
+    "p3_count": 8,
+    "signal_count": 3,
+    "potential_count": 12,
+    "ims_opportunity_count": 0,
+    "industry_breakdown": {
+      "battery": 5,
+      "pharma": 4,
+      "food_beverage": 1,
+      "semiconductor": 1,
+      "petrochemical": 1,
+      "cross_industry": 3
+    },
+    "engine_breakdown": {
+      "A_compliance": 5,
+      "B_project_capex": 10
+    },
+    "timing_breakdown": {
+      "Early Trigger": 2,
+      "Planning/Feasibility": 4,
+      "Design": 4,
+      "EPC/Project Prep": 2,
+      "Tender/Procurement": 1,
+      "Execution": 1,
+      "Completed/Too Late": 0
+    }
+  },
+  "top_5_match": [
+    {
+      "rank": 1,
+      "id": "IND-20260814-001",
+      "name": "生态环境法典施行+排污许可重点管理制度统一 — 全国名录更新",
+      "engine": "A",
+      "industry": "cross_industry",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "法典8/15正式施行，第184条将自动监测设备安装+联网+运维写入法定义务。'重点排污单位'统一并入'排污许可重点管理'。国务院令843号修改12部行政法规。16种自动监测违法情形明确。绵阳等多地名录持续发布。9-11月为6个月合规建设窗口期。",
+      "agent_checklist": [
+        "对比2025 vs 2026名录，识别5大重点行业中的新增水环境重点排污单位",
+        "交叉匹配新增企业是否为Hach客户（SFDC Account）",
+        "确认新增企业的Hach装机情况及是否已有在线监测仪表",
+        "评估法典第184条法定自动监测义务对IMS合规引擎场景的推动",
+        "关注'排污许可重点管理'统一后与旧'重点排污单位'名录的映射关系"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "IND-20260817-003",
+      "name": "浙江工业园区污水零直排+'自动关阀'在线监测机制",
+      "engine": "A",
+      "industry": "cross_industry",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "浙江推动4万+工业企业'一企一策'，安吉县临港工业园实现废水出厂在线监测+数据达标才能进入管网+不达标自动关阀。瓯江口园区在22个点位布设在线监测设备。这是工业市场'污水零直排'驱动在线仪表+数据管理的强信号。",
+      "agent_checklist": [
+        "确认浙江工业园区（安吉/瓯江口等）是否为Hach客户",
+        "评估'自动关阀'在线监测场景的IMS适用性（分户计量+合规记录）",
+        "追踪浙江'污水零直排'模式的全国推广情况",
+        "确认园区内化工/电池/制药企业的Hach装机情况"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "IND-20260814-004",
+      "name": "卫蓝海博(淄博)4GWh固态锂电池项目",
+      "engine": "B",
+      "industry": "battery",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "环评已批复，配套水处理站，废水执行GB 30484-2013。4.2亿投资新建固态电池产线。环评阶段信息明确含水系统建设需求。No new fact today — no material change.",
+      "agent_checklist": [
+        "确认卫蓝海博(淄博)是否为Hach客户",
+        "确认项目水处理站设计方/EPC方",
+        "评估电池行业废水监测的Hach仪表适用性（氟/锂/重金属）",
+        "追踪项目从环评批复进入设计/采购阶段的时间节点"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "IND-20260814-005",
+      "name": "云南裕能新能源电池材料二期扩建",
+      "engine": "B",
+      "industry": "battery",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "7.5亿投资，新增16万吨磷酸铁生产线。环评公示中，环保投资2710万含废水设施。大型企业自建水系统。No new fact today.",
+      "agent_checklist": [
+        "确认云南裕能是否为Hach客户（湖南裕能子公司）",
+        "确认一期项目水处理设施及Hach仪表装机情况",
+        "评估二期扩建的增量仪表需求"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "IND-20260814-010",
+      "name": "长兴煤山污水处理厂（服务电池产业园区）",
+      "engine": "B",
+      "industry": "battery",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "新建1.5万t/d工业污水处理厂，服务国家级绿色制造产业园。尾水氟离子执行GB 30484-2013。园区集中处理模式（B类），是IMS潜在入口。No new fact today.",
+      "agent_checklist": [
+        "确认长兴清泉排水有限公司是否为Hach客户",
+        "确认园区内电池企业及Hach装机情况",
+        "评估园区污水厂分户计量/数据管理需求的IMS适用性"
+      ]
+    }
+  ],
+  "market_background": [
+    {
+      "id": "IND-20260814-000",
+      "title": "《中华人民共和国生态环境法典》2026-08-15正式施行 — 排污许可制度7大变化",
+      "description": "法典5编1242条正式施行。排污许可管理专章（第174-186条）核心变化：①'重点排污单位'统一并入'排污许可重点管理'，两套名目合为一证；②第184条将自动监测设备安装+联网+运维写入法定义务（非政策倡导）；③第183条所有持证企业须自行监测，台账保存≥5年；④第185条信息公开法定化；⑤16种自动监测违法情形明确，罚款上限近100万；⑥双罚制常态化（企业+个人）；⑦全流程监管（从废水产生到排放末端）。国务院令843号同步修改12部行政法规、废止3部。多地方法规（中山/无锡/江苏等）同步修订。",
+      "ims_relevance": "法典将自动监测从政策层面提升至法定义务层面。重点管理单位的自动监测设备安装+联网+数据管理需求将成为法律硬性要求。IMS合规引擎场景（合规记录自动化/数据管理/远程监控）在工业市场的政策驱动力显著增强。但需转化为具体公司级机会。",
+      "priority": "P2",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzAwNTAyMzczMw==&mid=2654551477&idx=1&sn=78e479adbe01163cf270e6701f236865",
+        "https://zhuanlan.zhihu.com/p/2071619876725207130",
+        "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b",
+        "https://www.sohu.com/a/1063263764_121123737",
+        "https://baijiahao.baidu.com/s?id=1873570445709411342"
+      ]
+    },
+    {
+      "id": "IND-20260817-000",
+      "title": "生态环境部通知加强工业污水污染风险防范 保障农业灌溉用水安全",
+      "description": "生态环境部2026年8月5日发布通知，要求排查农田周边工业企业及园区污水排放，2026年底前完成整治方案。禁止向农田灌溉渠道排放工业废水。指导开展地方水污染物排放标准制修订，特征污染物依法载入排污许可证。工业园区污水集中处理设施建设改造加速。",
+      "ims_relevance": "工业废水排放管控进一步收紧，特征污染物监测要求扩大。对工业园区污水集中处理设施的在线监测需求有推动作用。间接利好工业市场仪表+数据管理需求。",
+      "priority": "P3",
+      "source_urls": [
+        "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk05/202608/t20260805_1163609.html"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260814-001",
+      "market_segment": "industrial",
+      "company": "多地工业企业（武汉525家/晋江419家/浦东271家/北京326家/宁夏686家/绵阳等）",
+      "industry": "cross_industry",
+      "location": "全国多地",
+      "opportunity": "2026年环境监管重点单位名录大规模更新+生态环境法典8/15正式施行，法定自动监测义务落地",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "法典第184条：排污许可重点管理单位须安装/使用/维护自动监测设备+联网+保存原始记录（法定义务，非政策倡导）",
+          "法典统一'重点排污单位'为'排污许可重点管理'，两套名目合为一证",
+          "16种自动监测违法情形明确，恶意违法罚款上限近100万，双罚制常态化",
+          "国务院令843号同步修改12部行政法规（含生态环境监测条例）、废止3部",
+          "绵阳市2026名录政策解读确认'纳入重点监管的企事业单位应安装自动监测设备并联网'",
+          "浦东新区明确6个月自动监控建设窗口，9-11月为合规建设期",
+          "中山/无锡/江苏等地方法规同步修订以对齐法典"
+        ],
+        "inferences": [
+          "法典施行后，自动监测从政策驱动升级为法律驱动，工业企业合规建设紧迫性增强",
+          "'重点排污单位'统一为'排污许可重点管理'后，监管对象范围可能扩大"
+        ],
+        "unknowns": [
+          "无法从公开信息确定哪些企业是'新增'（vs 沿用2025年），需对比去年名录",
+          "法典第184条'自动监测设备'是否包含数据管理系统/远程监控的具体技术要求尚不明确",
+          "具体企业的仪表采购需求和时间线"
+        ]
+      },
+      "potential_ims_use_case": "法定自动监测义务→仪表安装+数据联网→合规记录自动化/数据管理/远程监控（IMS合规引擎场景）",
+      "logic_rationale": "法典施行 → 第184条法定自动监测义务 → 重点管理单位须安装+联网+保存记录 → 仪表采购+数据管理需求 → IMS潜在机会",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "2026年9-11月（6个月合规窗口）+ 法典施行后持续推动",
+      "priority": "P2",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "对比2025 vs 2026名录，识别5大重点行业新增水环境重点排污单位；交叉匹配SFDC Account",
+        "installed_base": "新增企业的Hach仪表装机情况及是否已有在线监测仪表",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？",
+        "ims": "法典第184条法定自动监测义务对IMS合规引擎场景的推动评估",
+        "account_sales": "受影响企业的Account Owner？"
+      },
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzAwNTAyMzczMw==&mid=2654551477&idx=1&sn=78e479adbe01163cf270e6701f236865",
+        "https://zhuanlan.zhihu.com/p/2071619876725207130",
+        "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b",
+        "https://sthjj.my.gov.cn/myssthjj/c105844/202604/0825c33651074f8f8267f5f3aa3d30b9.shtml",
+        "https://www.sohu.com/a/1063263764_121123737",
+        "https://www.jinjiang.gov.cn/xxgk/zdxxgk/hjbh/zdwryxx/202605/t20260511_3290677.htm",
+        "https://sthj.sh.gov.cn/cmsres/1e/1e042ba8f2254f449a91904fa9ca4a44/4f642cc1a548ae5244f449a91904fa9ca4a44.pdf"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [
+          "法典8/15正式施行，第184条自动监测成为法定义务",
+          "'重点排污单位'统一并入'排污许可重点管理'",
+          "16种自动监测违法情形明确，双罚制常态化",
+          "国务院令843号修改12部行政法规",
+          "绵阳市2026名录政策解读确认自动监测义务",
+          "中山/无锡/江苏等地方法规同步修订"
+        ],
+        "changed": true
+      }
+    },
+    {
+      "id": "IND-20260814-002",
+      "market_segment": "industrial",
+      "company": "华润双鹤药业股份有限公司沧州分公司",
+      "industry": "pharma",
+      "location": "河北沧州",
+      "opportunity": "2026年7月发布排污许可证自行监测服务采购公告（2026.8-2027.7年度）",
+      "signal_tier": "Tier 2",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "采购范围包括废水/废气/无组织/噪声检测+VOC进口监测+在线设备比对监测",
+          "采购公告编号SHXYGG202607110002",
+          "依据HJ 883-2017"
+        ],
+        "inferences": [
+          "已有在线设备但需比对监测，说明已安装自动监测设备"
+        ],
+        "unknowns": [
+          "具体在线仪表品牌和数量",
+          "是否已有数据管理系统"
+        ]
+      },
+      "potential_ims_use_case": "已有在线仪表→比对监测服务需求→可能存在数据管理/维护需求",
+      "logic_rationale": "自行监测义务 → 已有在线设备需比对 → 仪表数据管理/维护需求 → IMS潜在机会（间接）",
+      "opportunity_stage": "Tender/Procurement",
+      "estimated_time_window": "已进入采购阶段，领先性弱",
+      "priority": "P3",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "华润双鹤药业沧州分公司是否为Hach客户？",
+        "installed_base": "现有在线仪表品牌/型号/数量？是否有Hach仪表？",
+        "commercial_history": "历史销售/服务合同？",
+        "ims": "是否已有数据管理系统？",
+        "account_sales": "Account Owner？"
+      },
+      "source_urls": [
+        "https://www.dowater.com/zhaobiao/2026-07-13/12398946.asp"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-003",
+      "market_segment": "industrial",
+      "company": "中药类制药工业企业（全国）",
+      "industry": "pharma",
+      "location": "全国",
+      "opportunity": "2026年5月生态环境部发布《中药类制药工业水污染物排放标准》征求意见稿",
+      "signal_tier": "Tier 2",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "标准修订中，收紧排放限值",
+          "征求意见稿阶段"
+        ],
+        "inferences": [
+          "标准正式发布后，中药制药企业可能需要升级监测能力"
+        ],
+        "unknowns": [
+          "标准正式发布时间",
+          "具体收紧了哪些限值",
+          "是否新增在线监测要求"
+        ]
+      },
+      "potential_ims_use_case": "排放标准收紧 → 监测能力升级 → 在线仪表需求 → IMS潜在机会",
+      "logic_rationale": "排放标准修订 → 收紧限值 → 企业需升级监测 → 在线仪表需求 → IMS潜在机会（尚早）",
+      "opportunity_stage": "Early Trigger",
+      "estimated_time_window": "标准仍在征求意见阶段，正式实施可能6-12个月后",
+      "priority": "P3",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "Hach中药制药客户有哪些？",
+        "installed_base": "现有中药制药客户的在线仪表情况？",
+        "commercial_history": "N/A",
+        "ims": "N/A",
+        "account_sales": "N/A"
+      },
+      "source_urls": [
+        "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202605/W020260520597627129689.pdf"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-004",
+      "market_segment": "industrial",
+      "company": "卫蓝海博(淄博)新能源科技有限公司",
+      "industry": "battery",
+      "location": "山东淄博高新区",
+      "opportunity": "4.2亿投资，年产4GWh固态锂离子电池建设项目，环评已批复，配套水处理站",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "http://www.china-zibo.gov.cn/gongkai/site_gxqhbj/channel_6076a2721887a377796bb7cf/doc_69dca3593dc79e8438c7ac18.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-005",
+      "market_segment": "industrial",
+      "company": "云南裕能新能源电池材料有限公司",
+      "industry": "battery",
+      "location": "云南安宁高新技术产业开发区",
+      "opportunity": "7.5亿投资，新增16万吨磷酸铁生产线二期扩建，环评公示中",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Planning/Feasibility",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P2",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "https://sthjj.km.gov.cn/c/2026-06-03/5086688.shtml"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-006",
+      "market_segment": "industrial",
+      "company": "当卓(衢州)电池科技有限公司",
+      "industry": "battery",
+      "location": "浙江衢州龙游高新区",
+      "opportunity": "年产60GWh新型电池项目，环评报告表审查公告",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Planning/Feasibility",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "https://stjj.qz.gov.cn/"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-007",
+      "market_segment": "industrial",
+      "company": "清蓝(广东)食品饮料有限公司",
+      "industry": "food_beverage",
+      "location": "广东惠州博罗县",
+      "opportunity": "新建3条饮料无菌冷灌装生产线，年产30万吨饮料，明确自建污水处理站",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P2",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "https://shj.huizhou.gov.cn/gkmlpt/content/5/5763/mpost_5763768.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-008",
+      "market_segment": "industrial",
+      "company": "格林美(无锡)能源材料有限公司",
+      "industry": "battery",
+      "location": "江苏无锡新吴区",
+      "opportunity": "扩建2.5万吨/年超比能正极材料，第三次环评公示",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "EPC/Project Prep",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1871493580702226610"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-009",
+      "market_segment": "industrial",
+      "company": "中铝乾星(成都)科技有限责任公司",
+      "industry": "semiconductor",
+      "location": "四川成都新材料产业化工园区",
+      "opportunity": "新建大尺寸先进化合物半导体衬底及高纯材料中试平台，投资3500万元",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Planning/Feasibility",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "https://www.scjjrb.com/2026/06/02/99465243.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260814-010",
+      "market_segment": "industrial",
+      "company": "长兴清泉排水有限公司",
+      "industry": "battery",
+      "location": "浙江湖州长兴县",
+      "opportunity": "新建1.5万t/d工业污水处理厂，服务国家级绿色制造产业园（电池产业），尾水氟离子执行GB 30484-2013",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "详见2026-08-14报告"
+        ],
+        "inferences": [
+          "详见2026-08-14报告"
+        ],
+        "unknowns": [
+          "详见2026-08-14报告"
+        ]
+      },
+      "potential_ims_use_case": "详见2026-08-14报告",
+      "logic_rationale": "详见2026-08-14报告",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "详见2026-08-14报告",
+      "priority": "P2",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "详见2026-08-14报告",
+        "installed_base": "详见2026-08-14报告",
+        "commercial_history": "详见2026-08-14报告",
+        "ims": "详见2026-08-14报告",
+        "account_sales": "详见2026-08-14报告"
+      },
+      "source_urls": [
+        "http://hbj.huzhou.gov.cn/col/col1229208555/art/2026/art_58f5a6f1692f4423b728f1de75646f1d.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-14",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260817-001",
+      "market_segment": "industrial",
+      "company": "安徽渠源药业有限公司",
+      "industry": "pharma",
+      "location": "安徽蚌埠精细化工高新技术产业基地",
+      "opportunity": "原料药产业化基地二期项目环评审批通过（蚌环许〔2026〕87号），新增原料药17吨/年产能",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "2026年环评审批意见函（蚌环许〔2026〕87号）",
+          "依托一期基础设施和生产线，新增设备新建二期生产线",
+          "项目建成后新增原料药17吨/年生产能力",
+          "环评要求污水处理站废气经'碱洗+活性炭吸附装置'处理",
+          "项目代码：2310-340311-04-01-826155"
+        ],
+        "inferences": [
+          "原料药生产产生工艺废水，需配套废水处理设施",
+          "二期扩建可能增加废水排放量，需评估增量监测需求"
+        ],
+        "unknowns": [
+          "二期废水处理是否依托一期设施还是新建",
+          "具体仪表增量需求",
+          "是否已有在线监测系统"
+        ]
+      },
+      "potential_ims_use_case": "原料药扩建→废水增量→在线仪表增量→数据管理扩展",
+      "logic_rationale": "CapEx扩建 → 原料药产线增加 → 废水量增加 → 仪表增量需求 → IMS潜在机会",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "环评已批复，进入设计/建设阶段",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "安徽渠源药业是否为Hach客户？",
+        "installed_base": "一期项目水处理设施及Hach仪表装机情况？",
+        "commercial_history": "历史销售/Opportunity？",
+        "ims": "是否已有iMS或类似系统？",
+        "account_sales": "Account Owner？"
+      },
+      "source_urls": [
+        "https://sthjj.bengbu.gov.cn/hbyw/hpsp/hjyxpj/pzxmgg/141084969.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-17",
+        "new_facts_today": [
+          "首次发现：安徽渠源药业原料药二期环评审批"
+        ],
+        "changed": true
+      }
+    },
+    {
+      "id": "IND-20260817-002",
+      "market_segment": "industrial",
+      "company": "江苏康宁杰瑞生物制药有限公司",
+      "industry": "pharma",
+      "location": "江苏苏州工业园区",
+      "opportunity": "生物抗体药物及ADC药物研究及生产扩建项目环评批复，年产抗体原液3000千克+制剂406.7万支",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "江苏省生态环境厅环评批复",
+          "项目位于苏州工业园区方洲路175号，依托现有厂房",
+          "年产抗体原液3000千克、制剂水针和冻干粉针406.7万支",
+          "年研发生物药物样品1000批次",
+          "环评要求按'清污分流、雨污分流、一水多用、分质处理'设计给排水系统",
+          "分离纯化高盐废水经调节蒸发、低盐含细胞培养废水经细胞灭活后处理"
+        ],
+        "inferences": [
+          "生物制药废水含高盐/细胞培养/研发实验废水，需分类处理+在线监测",
+          "扩建项目可能增加废水处理负荷"
+        ],
+        "unknowns": [
+          "废水处理设施是否已有或需新建",
+          "具体仪表配置",
+          "是否已有在线监测系统"
+        ]
+      },
+      "potential_ims_use_case": "生物制药扩建→分质废水处理→在线监测仪表→数据管理",
+      "logic_rationale": "CapEx扩建 → 抗体药物产线增加 → 分质废水处理需求 → 在线仪表需求 → IMS潜在机会",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "环评已批复，进入设计阶段",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "江苏康宁杰瑞是否为Hach客户？母公司康宁杰瑞(09966.HK)？",
+        "installed_base": "现有厂房水处理设施及Hach仪表装机？",
+        "commercial_history": "历史销售/Opportunity？",
+        "ims": "生物制药行业IMS relevance评估",
+        "account_sales": "Account Owner？"
+      },
+      "source_urls": [
+        "http://sthjt.jiangsu.gov.cn/art/2026/4/23/art_83568_11761468.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-17",
+        "new_facts_today": [
+          "首次发现：康宁杰瑞生物抗体药物扩建项目环评批复"
+        ],
+        "changed": true
+      }
+    },
+    {
+      "id": "IND-20260817-003",
+      "market_segment": "industrial",
+      "company": "浙江省工业园区（安吉县梅溪镇临港工业园/瓯江口高新技术园区等）",
+      "industry": "cross_industry",
+      "location": "浙江省",
+      "opportunity": "浙江工业园区'污水零直排'建设：4万+企业'一企一策'，废水出厂在线监测+不达标自动关阀，园区污水管网在线监测全覆盖",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "浙江推动4万多家工业企业编制'一企一策'，强化源头雨污分流",
+          "安吉县梅溪镇临港工业园：废水出厂先经在线监测，数据达标才能进入管网，否则自动关阀",
+          "瓯江口高新技术园区：在2个企业污水排口、3个雨水排口、14个污水管网节点、3个雨水管网节点及4条重点河道布设在线监测设备",
+          "瓯江口园区实现重点企业生产废水明管化建设100%",
+          "浙江67个省级星级工业园区完成'污水零直排区'建设",
+          "纳入省委省政府年度'五水共治'考核"
+        ],
+        "inferences": [
+          "'自动关阀'机制要求企业排口安装在线监测仪表+数据联网+自动控制——这是IMS分户计量+合规记录的强应用场景",
+          "浙江模式若向全国推广，将产生大量工业排口在线仪表+数据管理需求"
+        ],
+        "unknowns": [
+          "浙江模式是否已向其他省份推广",
+          "具体使用了哪些品牌的在线仪表",
+          "园区企业的仪表采购决策链（企业自购/园区统购/政府要求）"
+        ]
+      },
+      "potential_ims_use_case": "工业园区'污水零直排'→企业排口在线监测+自动关阀→分户计量+合规记录+数据管理（IMS核心场景）",
+      "logic_rationale": "污水零直排政策 → 企业排口须安装在线监测+数据联网 → 不达标自动关阀 → 仪表+数据管理+远程监控需求 → IMS潜在机会",
+      "opportunity_stage": "Execution",
+      "estimated_time_window": "浙江正在执行中，全国推广时间未知",
+      "priority": "P2",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "安吉县/瓯江口工业园区内企业是否为Hach客户？园区管委会是否为Hach客户？",
+        "installed_base": "现有在线仪表品牌/型号？是否有Hach仪表？",
+        "commercial_history": "浙江工业园区Hach历史项目？",
+        "ims": "'自动关阀'+分户计量场景的IMS适用性评估（强相关）",
+        "account_sales": "浙江区域Account Owner？"
+      },
+      "source_urls": [
+        "https://sthjt.zj.gov.cn/col/col1201344/art/2026/art_2182109e50aa47398cb145bbe43bae39.html",
+        "http://csj.xinhuanet.com/20260807/c34e044802c3479db5a24b053497467f/c.html",
+        "https://ojk.wenzhou.gov.cn/col/col1231186/art/2026/art_928ce3a7cdf54fbf8d0a86600a85afc1.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-17",
+        "new_facts_today": [
+          "首次发现：浙江工业园区污水零直排+自动关阀在线监测机制"
+        ],
+        "changed": true
+      }
+    },
+    {
+      "id": "IND-20260817-004",
+      "market_segment": "industrial",
+      "company": "化学合成类制药工业企业（全国）",
+      "industry": "pharma",
+      "location": "全国",
+      "opportunity": "2026年5月生态环境部发布《化学合成类制药工业水污染物排放标准》征求意见稿+编制说明",
+      "signal_tier": "Tier 2",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "标准修订征求意见稿已发布",
+          "编制说明详细分析行业产排污情况及污染控制技术",
+          "标准收紧排放限值"
+        ],
+        "inferences": [
+          "标准正式发布后，化学合成类制药企业可能需要升级监测能力",
+          "与中药类制药标准（IND-20260814-003）同步推进，制药行业整体排放标准在收紧"
+        ],
+        "unknowns": [
+          "标准正式发布时间",
+          "具体收紧了哪些限值",
+          "是否新增在线监测要求"
+        ]
+      },
+      "potential_ims_use_case": "排放标准收紧 → 监测能力升级 → 在线仪表需求 → IMS潜在机会",
+      "logic_rationale": "排放标准修订 → 收紧限值 → 化学合成制药企业需升级监测 → 在线仪表需求 → IMS潜在机会（尚早）",
+      "opportunity_stage": "Early Trigger",
+      "estimated_time_window": "标准仍在征求意见阶段，正式实施可能6-12个月后",
+      "priority": "P3",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "Hach化学合成类制药客户有哪些？",
+        "installed_base": "现有制药客户的在线仪表情况？",
+        "commercial_history": "N/A",
+        "ims": "N/A",
+        "account_sales": "N/A"
+      },
+      "source_urls": [
+        "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202605/W020260520597623859365.pdf"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-17",
+        "new_facts_today": [
+          "首次发现：化学合成类制药工业水污染物排放标准修订征求意见稿"
+        ],
+        "changed": true
+      }
+    },
+    {
+      "id": "IND-20260817-005",
+      "market_segment": "industrial",
+      "company": "山东嘉虹化工有限公司",
+      "industry": "petrochemical",
+      "location": "山东淄博高青县高青化工产业园",
+      "opportunity": "铝镍合金氢化催化剂及铝酸钠自动化改造项目，环评公示中（8/17-8/21），新增多种产品产能",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "2026年8月14日淄博市生态环境局环评公示，公示期8/17-8/21",
+          "改扩建项目，新增铝镍合金粉7500t/a、铝镍合金氢化催化剂2500t/a、液体铝酸钠10000t/a、固体铝酸钠7000t/a",
+          "废水包括水洗废水、湿式除尘器废水、活化废气水箱废水、循环排污水、纯水制备浓水、初期雨水",
+          "水洗废水处理设施外排废水须满足GB31573-2015《无机化学工业污染物排放标准》",
+          "废水经厂区污水中和池处理后排入淄博南岳水务有限公司污水处理厂"
+        ],
+        "inferences": [
+          "改扩建项目增加废水排放量，需评估在线监测增量需求",
+          "废水排入第三方污水处理厂（C类），企业本身的直接仪表机会可能有限"
+        ],
+        "unknowns": [
+          "现有在线监测仪表配置",
+          "扩建部分的增量废水处理需求",
+          "企业是否已有数据管理系统"
+        ]
+      },
+      "potential_ims_use_case": "化工改扩建→废水增量→在线仪表增量→数据管理",
+      "logic_rationale": "改扩建 → 催化剂产能增加 → 废水排放量增加 → 在线仪表增量 → IMS潜在机会（增量可能有限）",
+      "opportunity_stage": "Design",
+      "estimated_time_window": "环评公示中，即将批复",
+      "priority": "P3",
+      "water_system_ownership": "C",
+      "incrementality_status": "unknown",
+      "to_verify": {
+        "customer_identity": "山东嘉虹化工是否为Hach客户？",
+        "installed_base": "现有在线仪表配置？",
+        "commercial_history": "历史销售？",
+        "ims": "化工行业IMS relevance评估",
+        "account_sales": "Account Owner？"
+      },
+      "source_urls": [
+        "https://epb.zibo.gov.cn/gongkai/channel_c_5f9fa491ab327f36e4c13066_n_1605682664.7259/doc_6a7ec8244165e07167b79823.html"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-17",
+        "new_facts_today": [
+          "首次发现：山东嘉虹化工催化剂改扩建项目环评公示"
+        ],
+        "changed": true
+      }
+    }
+  ],
+  "source_effectiveness": [
+    {
+      "source_type": "生态环境局网站（环评公示+名录发布+执法通报）",
+      "signals_produced": 8,
+      "effectiveness": "最有效"
+    },
+    {
+      "source_type": "排污许可平台",
+      "signals_produced": 1,
+      "effectiveness": "次有效"
+    },
+    {
+      "source_type": "行业媒体/公众号",
+      "signals_produced": 3,
+      "effectiveness": "噪声大"
+    },
+    {
+      "source_type": "搜索引擎综合",
+      "signals_produced": 2,
+      "effectiveness": "中等"
+    },
+    {
+      "source_type": "法律解读/知乎专栏（法典分析）",
+      "signals_produced": 1,
+      "effectiveness": "次有效"
+    }
+  ],
+  "experiment_observations": {
+    "engine_a_findings": "法典8/15正式施行是本周最大Engine A事件。法典将自动监测从政策倡导提升至法定义务（第184条），统一'重点排污单位'为'排污许可重点管理'，16种违法情形明确，双罚制落地。绵阳等多地名录持续发布。浙江工业园区'污水零直排'+'自动关阀'是在线监测在工业市场的强应用场景。合规信号的可发现性从'中等偏强'提升至'强'。",
+    "engine_b_findings": "本周Engine B新增3个制药行业信号（渠源药业/康宁杰瑞/嘉虹化工），制药行业活跃度上升。新能源/电池行业未发现新的高价值项目信号（与8/14首日发现的5个电池项目一致）。半导体仍偏少。石化化工出现1个信号（嘉虹化工）。",
+    "ims_relevance_assessment": "法典施行显著增强了IMS合规引擎场景的政策驱动力。浙江'自动关阀'模式展示了在线监测+数据管理在工业园区的实际应用。但Water System → Instrumentation → IMS环节的证据gap仍存在——环评文件描述水处理工艺但不详细描述仪表配置和数字化管理需求。",
+    "key_unresolved_questions": [
+      "法典第184条'自动监测设备'的具体技术要求？是否包含数据管理/远程监控？",
+      "浙江'污水零直排'+'自动关阀'模式是否向全国推广？",
+      "工业企业自建水系统的仪表采购决策链？",
+      "IMS在工业市场的value proposition与市政市场有何不同？",
+      "如何高效识别名录中新增重点单位（vs 沿用2025年）？"
+    ],
+    "municipal_vs_industrial_differentiation": {
+      "market_segment": "industrial vs municipal — 两个雷达覆盖不同市场",
+      "customer_type": "工业企业（电池/半导体/制药/食品/化工）vs 水务公司（自来水/污水/供水）",
+      "trigger_logic": "工业：CapEx/合规触发→水系统影响→仪表需求 vs 市政：数字化转型/政策驱动→智慧水务平台→仪表+数据管理",
+      "water_system_ownership": "工业特有字段：A自建/B园区/C第三方/D未知 — 市政默认为水务公司自有",
+      "decision_chain": "工业：企业EHS/工程部/园区管委会 vs 市政：水务公司技术部/设计院/EPC",
+      "ims_value_proposition": "工业：合规记录+设备监控+分户计量 vs 市政：Multi-site Management+Data Quality+智慧水务",
+      "law_code_impact": "工业：第184条法定自动监测+16种违法+双罚制 vs 市政：天然为重点管理单位，直接影响较小",
+      "sales_cycle": "工业：可能更短（合规驱动+项目制）vs 市政：较长（预算审批+设计院+招投标）"
+    }
+  },
+  "rejected_signals": [
+    {
+      "description": "设备供应商营销文章/SEO推荐内容",
+      "reason": "SEO营销内容，非机会信号"
+    },
+    {
+      "description": "已完工验收项目",
+      "reason": "时机太晚，已过Tender/Procurement阶段"
+    },
+    {
+      "description": "市政污水处理厂（非工业市场）",
+      "reason": "属于Municipal Radar覆盖范围"
+    },
+    {
+      "description": "TOC分析仪选型指南/超纯水设备选购指南",
+      "reason": "行业媒体营销内容，非具体公司机会"
+    },
+    {
+      "description": "半导体超纯水树脂行业分析（蓝晓科技/争光股份等）",
+      "reason": "产业链分析而非具体项目机会，Tier 3背景信号"
+    }
+  ],
+  "data_source": {
+    "search_engine": "Baidu",
+    "search_date": "2026-08-17",
+    "search_queries": [
+      "2026年 排污许可 重点管理 工业企业 自动监测 自行监测 新增",
+      "新能源电池 扩产 环评 水处理 污水处理 2026年8月",
+      "半导体 新建工厂 环评 水处理 超纯水 废水 2026",
+      "制药企业 化工 排污许可 环评 污水处理 在线监测 2026年",
+      "2026年8月 环评公示 工业企业 新建 污水处理 排污许可 重点管理",
+      "半导体 晶圆厂 扩产 2026 超纯水 废水处理 在线监测",
+      "化工园区 污水集中处理 零直排 2026 工业企业 监测"
+    ],
+    "sources_checked": 52,
+    "sources_rejected": 5,
+    "sources_used": 16
+  },
+  "disclaimer": "本报告基于中国大陆公开互联网信息生成，不包含Hach内部数据。所有facts来自公开来源，inferences为AI分析判断（已标注），unknowns为无法验证的信息。to_verify中的问题需由Company Agent使用内部数据验证。Industrial Signal Priority不等于Hach Opportunity Score。本雷达与Municipal Radar独立运行，market_segment=industrial。"
+}
