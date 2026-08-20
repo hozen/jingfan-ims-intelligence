@@ -1,8 +1,8 @@
 {
   "metadata": {
     "dataset_name": "Industrial Master Intelligence",
-    "version": "3.0",
-    "generation_date": "2026-08-19",
+    "version": "3.1",
+    "generation_date": "2026-08-20",
     "schema_version": "3.0",
     "data_sources": [
       "DuMate",
@@ -12,19 +12,19 @@
     ],
     "description": "Master Contact Intelligence Dataset - Multi-Agent Consolidation with Entity Resolution",
     "disclaimer": "All information based on publicly available sources. Unknown/not_found indicates information could not be verified from public sources.",
-    "previous_version": "2.0 (2026-08-18)",
+    "previous_version": "3.0 (2026-08-19)",
     "agents": {
-      "DuMate": "Original enrichment from Industrial Lead Radar",
+      "DuMate": "Original enrichment + 2026-08-20 update: 13 new contacts, 11 new leads",
       "Perplexity": "Contact discovery for 9 latest + 14 historical Radar Leads",
       "Claude": "Partial contact discovery for L2 Shengzhou, L4/L5 Yunnan Yunjuneng, L1 Tianci",
       "WorkBuddy": "Contact discovery for 6 projects (Yaomeng, Chuneng, SKHynix, Changyang, Xinxiang, Xiaogan)"
     },
     "last_updated": "2026-08-20",
-    "total_contacts": 219,
-    "total_leads": 41,
-    "total_projects": 40,
-    "total_accounts": 40,
-    "total_missing_roles": 95
+    "total_contacts": 232,
+    "total_leads": 52,
+    "total_projects": 51,
+    "total_accounts": 51,
+    "total_missing_roles": 139
   },
   "leads": [
     {
@@ -212,7 +212,7 @@
         },
         "potential_ims_use_case": "半导体工厂废水处理监测、在线监测数据管理、合规记录自动化",
         "logic": "CapEx Trigger(工厂重启扩产) → Production Change(产能+50%) → Water System Impact(废水量增加) → Instrumentation Requirement(废水监测扩展) → Potential IMS Opportunity",
-        "opportunity_stage": "EPC-Project Prep",
+        "opportunity_stage": "Signal",
         "estimated_time_window": "2026-Q4至2027-Q2（设备安装期）",
         "priority": "P2",
         "water_system_ownership": "A",
@@ -229,9 +229,13 @@
           "ims": "iMS在半导体废水监测场景的适用性",
           "account_sales": "Hach负责SK海力士/Solidigm的客户经理"
         },
-        "continuity": "first_seen"
+        "continuity": {
+          "original": "first_seen",
+          "updated_20260820": "SK海力士重启大连NAND二期建设；产能扩大50%；韩媒8/11独家报道",
+          "last_seen": "2026-08-20"
+        }
       },
-      "enrichment_status": "completed",
+      "enrichment_status": "UPDATED_20260820",
       "project_ids": [
         "PRJ-IND-20260818-005-01"
       ],
@@ -3196,6 +3200,902 @@
         "time_sensitivity": ""
       },
       "enrichment_sources": []
+    },
+    {
+      "lead_id": "IND-20260820-01",
+      "original_signal": {
+        "id": "IND-20260820-01",
+        "market_segment": "industrial",
+        "company": "(全行业-法规层面)",
+        "account": "N/A",
+        "industry": "跨行业",
+        "location": "全国",
+        "opportunity": "生态环境法典2026-08-15施行 - 排污许可重点管理单位法定自动监测义务",
+        "signal_tier": "Tier 1",
+        "engine": "A",
+        "evidence": {
+          "facts": [
+            "生态环境法典2026-08-15施行，5编1242条，废止10部单行法律",
+            "法典第184条：排污许可重点管理单位应安装/使用/维护自动监测设备并与生态环境主管部门联网",
+            "'重点排污单位'概念统一为'排污许可重点管理'",
+            "国务院令第843号修改12部行政法规，7部涉及罚则升级",
+            "排污许可证分批更新：首批(8/15起)火电/钢铁/水泥/造纸/污水处理；第二批(Q4 2026)石化/化工/印染/电镀"
+          ],
+          "inferences": [
+            "第二批Q4 2026覆盖石化/化工/印染/电镀行业，这些行业企业将需要更新排污许可证并可能新增自动监测设备",
+            "双罚制(罚企业+罚个人)将提高企业合规投入意愿",
+            "自动监测设备联网要求可能创造在线水质监测仪表需求"
+          ],
+          "unknowns": [
+            "具体哪些企业将被纳入排污许可重点管理(需逐省核查名录)",
+            "企业现有自动监测设备覆盖率和品牌未知",
+            "Hach installed base在这些企业中的占比未知"
+          ]
+        },
+        "potential_ims_use_case": "排污许可重点管理单位自动监测义务 - 在线水质监测(COD/氨氮/总磷/总氮/重金属) + IMS合规引擎",
+        "logic": "法规变化(法典第184条) → 排污许可重点管理单位法定义务 → 自动监测设备安装/联网需求 → 潜在Hach仪表+IMS合规引擎机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "Q4 2026 - 2027 (第二批许可证更新期)",
+        "priority": "P3",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://mp.weixin.qq.com/s?__biz=MzAxODEyNjc0Ng==&mid=2650880825&idx=2&sn=4966f476dc2959034fbae3aeb97d05c0",
+          "https://zhuanlan.zhihu.com/p/2071619876725207130",
+          "https://mp.weixin.qq.com/s?__biz=MzU2MDMyNTcwNw==&mid=2247560158&idx=1&sn=c8170a15e43ecc90b53831a03d22cffc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "法典2026-08-15正式施行；排污许可证分批更新时间表确认；第二批Q4 2026覆盖石化/化工/印染/电镀",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-01"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-01"
+      ],
+      "contact_ids": [],
+      "contact_summary": {
+        "total": 0,
+        "by_role": {},
+        "by_agent": {}
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "排污许可重点管理单位自动监测义务 - 在线水质监测(COD/氨氮/总磷/总氮/重金属) + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-02",
+      "original_signal": {
+        "id": "IND-20260820-02",
+        "market_segment": "industrial",
+        "company": "(工业园区-政策层面)",
+        "account": "N/A",
+        "industry": "跨行业",
+        "location": "全国",
+        "opportunity": "环办水体〔2026〕13号 - 八部门联合通知加强工业污水污染风险防范",
+        "signal_tier": "Tier 1",
+        "engine": "A",
+        "evidence": {
+          "facts": [
+            "生态环境部等八部门联合印发环办水体〔2026〕13号",
+            "要求加快推进位于农田周边工业园区污水集中处理设施建设改造",
+            "推动园区污水全收集全处理",
+            "特征污染物(全盐量/重金属/有毒有害)排放管控要求依法载入排污许可证",
+            "2026年底前完成整治方案制定"
+          ],
+          "inferences": [
+            "工业园区污水集中处理设施改造将产生水质监测仪表需求",
+            "特征污染物载入排污许可证意味着新增监测因子",
+            "化工园区是重点对象"
+          ],
+          "unknowns": [
+            "具体哪些园区将被优先整治",
+            "园区现有监测设备配置情况未知",
+            "园区污水处理运营方是谁(第三方/园区自建)"
+          ]
+        },
+        "potential_ims_use_case": "工业园区污水集中处理在线监测 + 特征污染物监测 + IMS合规引擎",
+        "logic": "政策通知(八部门联合) → 工业园区污水设施建设改造 → 水质监测设备需求 → 潜在Hach仪表+IMS机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "2026 H2 - 2027",
+        "priority": "P3",
+        "water_system_ownership": "B",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://mp.weixin.qq.com/s?__biz=MzIwODIyNTU1NA==&mid=2670233456&idx=1&sn=588efcba6de98ee553930399fb3e0c23"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "环办水体〔2026〕13号发布；工业园区污水集中处理设施建设改造要求；特征污染物载入排污许可证",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-02"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-02"
+      ],
+      "contact_ids": [],
+      "contact_summary": {
+        "total": 0,
+        "by_role": {},
+        "by_agent": {}
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "工业园区污水集中处理在线监测 + 特征污染物监测 + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-03",
+      "original_signal": {
+        "id": "IND-20260820-03",
+        "market_segment": "industrial",
+        "company": "(多省市-地方立法)",
+        "account": "N/A",
+        "industry": "跨行业",
+        "location": "广东/河南/福建/甘肃等",
+        "opportunity": "多省市地方性法规集中修改 - 排污许可重点管理单位自动监测要求写入地方法规",
+        "signal_tier": "Tier 1",
+        "engine": "A",
+        "evidence": {
+          "facts": [
+            "广东省修订水污染防治条例/大气污染防治条例/环境保护条例，2026-08-15施行",
+            "河南省修改19部地方性法规，包括大气污染防治条例等",
+            "福建省修改15项地方性法规",
+            "白银市修改祖厉河流域水环境保护条例：排污许可重点管理单位应安装自动监测设备",
+            "嘉兴市修改污染源自动监控管理办法：排污单位定义为'实行排污许可重点管理的企业'"
+          ],
+          "inferences": [
+            "全国性地方立法集中升级自动监测要求",
+            "地方执法力度将加强，企业合规投入增加",
+            "广东省作为制造业大省，影响范围广"
+          ],
+          "unknowns": [
+            "地方执法力度和时间表",
+            "企业现有监测设备达标率"
+          ]
+        },
+        "potential_ims_use_case": "地方合规驱动的自动监测设备升级 - 在线水质监测 + IMS合规引擎",
+        "logic": "地方立法集中修改 → 排污许可重点管理单位自动监测义务法制化 → 企业合规投入 → 潜在Hach仪表需求",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "2026 H2 - 2027",
+        "priority": "P3",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://mp.weixin.qq.com/s?__biz=MzIyOTQyNDAzOA==&mid=2247876942&idx=3&sn=ed722faadb6666ae5938e6bbc7840c1b",
+          "https://m.thepaper.cn/newsDetail_forward_33805823",
+          "https://www.jiaxing.gov.cn/col/col1229567741/art/2026/art_6ef0eb7a678c483d8808fc09d3cc5301.html"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "多省市地方性法规2026-08-15同步施行；自动监测要求写入地方法规；白银市/嘉兴市具体条款确认",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-03"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-03"
+      ],
+      "contact_ids": [],
+      "contact_summary": {
+        "total": 0,
+        "by_role": {},
+        "by_agent": {}
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "地方合规驱动的自动监测设备升级 - 在线水质监测 + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "original_signal": {
+        "id": "IND-20260820-04",
+        "market_segment": "industrial",
+        "company": "宁德时代(CATL)",
+        "account": "宁德时代新能源科技股份有限公司",
+        "industry": "新能源/电池",
+        "location": "福建厦门",
+        "opportunity": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "宁德时代零碳科技(厦门)有限公司2026年6月完成注册，注册资本100亿元",
+            "建设高性能车用和储能锂电池区域生产基地",
+            "集电芯/模组/PACK全链条生产制造于一体",
+            "宁德时代2026H1产能利用率94.86%，在建产能764GWh",
+            "20家电池工厂已通过ISO 14068-1零碳工厂认证"
+          ],
+          "inferences": [
+            "新建大型电池生产基地必然需要工业废水处理系统(含重金属废水)",
+            "零碳工厂认证要求高水平水资源管理和监测",
+            "电池制造废水含铜/镍/钴/氟化物等特征污染物，需在线监测"
+          ],
+          "unknowns": [
+            "水系统建设具体进度和招标时间",
+            "水系统是自建还是委托第三方EPC",
+            "Hach在宁德时代现有基地的installed base情况",
+            "厦门基地具体水系统设计参数"
+          ]
+        },
+        "potential_ims_use_case": "电池制造废水在线监测(重金属/氟化物/COD) + 零碳工厂水管理 + IMS生命周期智能",
+        "logic": "CapEx(100亿注册) → 电池生产基地建设 → 工业废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2026 H2 - 2028 (规划/设计/建设期)",
+        "priority": "P2",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://dzb.sunnews.cn/html/2026-08/18/content_841200.htm",
+          "https://baijiahao.baidu.com/s?id=1873194849451679335&wfr=spider&for=pc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "厦门零碳科技城注册确认(100亿元)；全链条生产基地规划；宁德时代核心运营碳中和已实现",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-04"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-04"
+      ],
+      "contact_ids": [
+        "CT-20260820-0013"
+      ],
+      "contact_summary": {
+        "total": 1,
+        "by_role": {
+          "C": 1
+        },
+        "by_agent": {
+          "DuMate": 1
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "电池制造废水在线监测(重金属/氟化物/COD) + 零碳工厂水管理 + IMS生命周期智能",
+        "priority": "P2",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "original_signal": {
+        "id": "IND-20260820-05",
+        "market_segment": "industrial",
+        "company": "比亚迪(BYD)",
+        "account": "比亚迪股份有限公司",
+        "industry": "新能源/电池",
+        "location": "江苏徐州",
+        "opportunity": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "比亚迪徐州基地2026年3月正式开工",
+            "总投资100亿元，一期15GWh预计2026Q4满产",
+            "全部30GWh产能计划2027年建成达产",
+            "生产第三代刀片钠离子电芯(200Ah)"
+          ],
+          "inferences": [
+            "钠电池制造工艺与锂电池类似，需工业废水处理",
+            "新建工厂需要配套水系统建设"
+          ],
+          "unknowns": [
+            "水系统建设具体方案和进度",
+            "是否已有水处理设备供应商确定",
+            "Hach在比亚迪现有基地的installed base"
+          ]
+        },
+        "potential_ims_use_case": "钠电池制造废水在线监测 + 水系统管理",
+        "logic": "CapEx(100亿) → 钠电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2026 Q4 - 2027 (一期投产/二期建设)",
+        "priority": "P2",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://baijiahao.baidu.com/s?id=1872792223347954846&wfr=spider&for=pc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "徐州基地开工确认；投资100亿/30GWh产能规划；一期2026Q4满产时间表",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-05"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-05"
+      ],
+      "contact_ids": [
+        "CT-20260820-0014"
+      ],
+      "contact_summary": {
+        "total": 1,
+        "by_role": {
+          "D": 1
+        },
+        "by_agent": {
+          "DuMate": 1
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "钠电池制造废水在线监测 + 水系统管理",
+        "priority": "P2",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "original_signal": {
+        "id": "IND-20260820-06",
+        "market_segment": "industrial",
+        "company": "中芯国际(SMIC)",
+        "account": "中芯国际集成电路制造有限公司",
+        "industry": "半导体/电子",
+        "location": "上海/北京/深圳/天津",
+        "opportunity": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "中芯国际2026Q2资本开支18.357亿美元，环比增长17.5%",
+            "季度销售收入首次突破30亿美元，同比增长36.1%",
+            "产能利用率93.7%，逼近满产",
+            "12英寸晶圆营收贡献78.2%",
+            "中国区营收占比升至90.2%"
+          ],
+          "inferences": [
+            "产能扩张意味着新建洁净室和超纯水系统需求",
+            "半导体制造是超纯水消耗大户，废水成分复杂(含氟/重金属/酸碱)",
+            "高产能利用率下扩产意愿强"
+          ],
+          "unknowns": [
+            "具体扩建项目的水系统建设信息",
+            "中芯国际现有水系统供应商",
+            "Hach在中芯国际的installed base"
+          ]
+        },
+        "potential_ims_use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
+        "logic": "CapEx(18亿美元/季度) → 12英寸产线扩充 → 超纯水系统+废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2026 H2 - 2028",
+        "priority": "P2",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://baijiahao.baidu.com/s?id=1873416244696806650&wfr=spider&for=pc",
+          "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "Q2财报资本开支18.357亿美元；产能利用率93.7%；销售收入首破30亿美元",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-06"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-06"
+      ],
+      "contact_ids": [
+        "CT-20260820-0025"
+      ],
+      "contact_summary": {
+        "total": 1,
+        "by_role": {
+          "D": 1
+        },
+        "by_agent": {
+          "DuMate": 1
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
+        "priority": "P2",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "original_signal": {
+        "id": "IND-20260820-07",
+        "market_segment": "industrial",
+        "company": "湖南裕能",
+        "account": "湖南裕能新能源电池材料有限公司",
+        "industry": "新能源/电池",
+        "location": "待确认",
+        "opportunity": "湖南裕能240亿元80万吨磷酸铁锂项目",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "湖南裕能拟投资240亿元建设80万吨磷酸铁锂等项目",
+            "为2026年7月电池产业链最大投资额项目",
+            "磷酸铁锂正极材料生产涉及含磷/铁/锂废水"
+          ],
+          "inferences": [
+            "大规模正极材料生产需要配套废水处理系统",
+            "含磷废水是环保监管重点"
+          ],
+          "unknowns": [
+            "项目具体选址和水系统建设方案",
+            "环评审批进度",
+            "水系统供应商"
+          ]
+        },
+        "potential_ims_use_case": "正极材料生产废水在线监测(总磷/铁/锂/COD) + IMS合规引擎",
+        "logic": "CapEx(240亿) → 磷酸铁锂产能扩张 → 含磷废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "2026 H2 - 2028",
+        "priority": "P3",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://baijiahao.baidu.com/s?id=1873318540301770154&wfr=spider&for=pc",
+          "https://baijiahao.baidu.com/s?id=1873194849451679335&wfr=spider&for=pc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "240亿投资80万吨磷酸铁锂项目公布；为7月最大电池产业链投资项目",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-07"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-07"
+      ],
+      "contact_ids": [
+        "CT-20260820-0015",
+        "CT-20260820-0016"
+      ],
+      "contact_summary": {
+        "total": 2,
+        "by_role": {
+          "D": 1,
+          "B": 1
+        },
+        "by_agent": {
+          "DuMate": 2
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "正极材料生产废水在线监测(总磷/铁/锂/COD) + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "original_signal": {
+        "id": "IND-20260820-08",
+        "market_segment": "industrial",
+        "company": "苏州二叶制药",
+        "account": "苏州二叶制药有限公司",
+        "industry": "制药",
+        "location": "江苏苏州",
+        "opportunity": "苏州二叶制药扩建肝素系列原药项目 - 省生态环境厅审批公示",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "江苏省生态环境厅2026-08-17审批公示",
+            "扩建生产肝素系列原药项目",
+            "公示期2026-08-18至2026-08-24"
+          ],
+          "inferences": [
+            "原料药扩建项目需要配套废水处理设施",
+            "制药废水含高浓度有机物/残留药物活性成分",
+            "环评审批阶段意味着项目处于设计/前期建设阶段"
+          ],
+          "unknowns": [
+            "项目规模和具体废水处理方案",
+            "水系统建设时间表",
+            "是否自建污水处理站还是依托园区"
+          ]
+        },
+        "potential_ims_use_case": "制药废水在线监测(COD/氨氮/总磷/特征污染物) + IMS合规引擎",
+        "logic": "CapEx(扩建) → 原料药产能扩张 → 废水处理设施需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2026 H2 - 2027 (环评审批→设计→建设)",
+        "priority": "P2",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "http://sthjt.jiangsu.gov.cn/art/2026/8/17/art_83568_11817558.html"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history",
+          "ims",
+          "account_sales"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "江苏省生态环境厅8/17审批公示；肝素系列原药扩建项目；公示期进行中",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-08"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-08"
+      ],
+      "contact_ids": [
+        "CT-20260820-0017",
+        "CT-20260820-0018"
+      ],
+      "contact_summary": {
+        "total": 2,
+        "by_role": {
+          "D": 1,
+          "B": 1
+        },
+        "by_agent": {
+          "DuMate": 2
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "制药废水在线监测(COD/氨氮/总磷/特征污染物) + IMS合规引擎",
+        "priority": "P2",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "original_signal": {
+        "id": "IND-20260820-09",
+        "market_segment": "industrial",
+        "company": "多氟多(宁福新能源)",
+        "account": "广西宁福新能源科技有限公司(多氟多子公司)",
+        "industry": "新能源/电池",
+        "location": "广西南宁",
+        "opportunity": "多氟多南宁四工厂30GWh锂电池项目 - 总投资35亿元",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "广西南宁青秀生态环境局公示",
+            "四工厂30GWh锂电池项目总投资35亿元",
+            "核心产品46140-30Ah型号电芯",
+            "分三期建设，一期预计2027年5月建成投产"
+          ],
+          "inferences": [
+            "大型电池工厂建设需要配套工业废水处理系统",
+            "锂电池制造废水含重金属/有机溶剂"
+          ],
+          "unknowns": [
+            "水系统建设方案和供应商",
+            "环评报告具体废水处理要求"
+          ]
+        },
+        "potential_ims_use_case": "锂电池制造废水在线监测 + IMS合规引擎",
+        "logic": "CapEx(35亿) → 锂电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "2026 H2 - 2027 (一期建设期)",
+        "priority": "P3",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://baijiahao.baidu.com/s?id=1872292933539388167&wfr=spider&for=pc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "四工厂30GWh项目环评公示；总投资35亿；分三期建设，一期2027年5月投产",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-09"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-09"
+      ],
+      "contact_ids": [
+        "CT-20260820-0019",
+        "CT-20260820-0020"
+      ],
+      "contact_summary": {
+        "total": 2,
+        "by_role": {
+          "D": 2
+        },
+        "by_agent": {
+          "DuMate": 2
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "锂电池制造废水在线监测 + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "original_signal": {
+        "id": "IND-20260820-11",
+        "market_segment": "industrial",
+        "company": "万华化学",
+        "account": "万华化学(福建)有限公司",
+        "industry": "石化/化工",
+        "location": "福建福州(江阴港城经济区)",
+        "opportunity": "万华化学福建48万吨甲醛项目 - MDI产业链配套",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "万华福建工业园48万吨/年甲醛项目环评报告书(公示稿)已发布",
+            "作为80万吨MDI项目原料配套",
+            "项目位于福州江阴港城经济区",
+            "1#甲醛装置已投产验收，2#甲醛装置试运行"
+          ],
+          "inferences": [
+            "甲醛生产废水含甲醛/甲醇/甲酸等有机物，需专门处理",
+            "MDI产业链扩能将增加整体废水处理负荷"
+          ],
+          "unknowns": [
+            "新增废水处理设施的具体需求",
+            "现有水系统是否已覆盖扩建需求"
+          ]
+        },
+        "potential_ims_use_case": "化工废水在线监测(COD/甲醛/甲醇/特征污染物) + IMS合规引擎",
+        "logic": "CapEx(扩能) → MDI产业链配套 → 甲醛生产废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "已部分投产(2#试运行)，后续MDI扩能持续",
+        "priority": "P3",
+        "water_system_ownership": "A",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/P020260427354628816912.doc"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "48万吨甲醛项目环评公示；1#已投产验收，2#试运行；作为MDI产业链核心原料配套",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-10"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-10"
+      ],
+      "contact_ids": [
+        "CT-20260820-0021",
+        "CT-20260820-0022"
+      ],
+      "contact_summary": {
+        "total": 2,
+        "by_role": {
+          "B": 2
+        },
+        "by_agent": {
+          "DuMate": 2
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "化工废水在线监测(COD/甲醛/甲醇/特征污染物) + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "original_signal": {
+        "id": "IND-20260820-12",
+        "market_segment": "industrial",
+        "company": "杰瑞再生循环",
+        "account": "杰瑞再生循环科技有限公司",
+        "industry": "新能源/电池",
+        "location": "重庆长寿经开区",
+        "opportunity": "杰瑞再生循环重庆锂电回收场站投产 - 年产能1.5万吨",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "2026年7月31日重庆长寿经开区投产",
+            "年产能1.5万吨，计划五年内扩至10万吨",
+            "郑州示范场站已运行18个月，处理1.5万吨",
+            "黑粉回收率和纯度均达98%，铜铝分选纯度达96%"
+          ],
+          "inferences": [
+            "锂电回收过程产生含重金属/酸碱废水",
+            "湿法冶金环节需要水质监测",
+            "产能扩张至10万吨意味着水系统规模将扩大"
+          ],
+          "unknowns": [
+            "现有水系统配置情况",
+            "扩建水系统时间表"
+          ]
+        },
+        "potential_ims_use_case": "锂电回收废水在线监测(重金属/pH/COD) + IMS合规引擎",
+        "logic": "CapEx(扩产) → 锂电回收产能扩张 → 湿法冶金废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Signal",
+        "estimated_time_window": "2026 - 2031 (五年扩产至10万吨)",
+        "priority": "P3",
+        "water_system_ownership": "A",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/2073016058500457934"
+        ],
+        "to_verify": [
+          "customer_identity",
+          "installed_base",
+          "commercial_history"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-20",
+          "new_facts_today": "重庆场站7/31投产；年产能1.5万吨；五年扩至10万吨；量产数据(黑粉98%/铜铝96%)",
+          "changed": "new_signal"
+        }
+      },
+      "enrichment_status": "NEW_20260820",
+      "project_ids": [
+        "PRJ-IND-20260820-11"
+      ],
+      "account_ids": [
+        "ACC-IND-20260820-11"
+      ],
+      "contact_ids": [
+        "CT-20260820-0023",
+        "CT-20260820-0024"
+      ],
+      "contact_summary": {
+        "total": 2,
+        "by_role": {
+          "B": 1,
+          "D": 1
+        },
+        "by_agent": {
+          "DuMate": 2
+        }
+      },
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": {
+        "use_case": "锂电回收废水在线监测(重金属/pH/COD) + IMS合规引擎",
+        "priority": "P3",
+        "next_action": "RESEARCH_CONTACTS"
+      },
+      "enrichment_sources": [
+        "DuMate"
+      ]
     }
   ],
   "projects": [
@@ -3873,6 +4773,138 @@
       "contact_ids": [
         "CT-20260819-0092"
       ]
+    },
+    {
+      "project_id": "PRJ-IND-20260820-01",
+      "project_name": "生态环境法典2026-08-15施行 - 排污许可重点管理单位法定自动监测义务",
+      "lead_id": "IND-20260820-01",
+      "account_id": "ACC-IND-20260820-01",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-02",
+      "project_name": "环办水体〔2026〕13号 - 八部门联合通知加强工业污水污染风险防范",
+      "lead_id": "IND-20260820-02",
+      "account_id": "ACC-IND-20260820-02",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-03",
+      "project_name": "多省市地方性法规集中修改 - 排污许可重点管理单位自动监测要求写入地方法规",
+      "lead_id": "IND-20260820-03",
+      "account_id": "ACC-IND-20260820-03",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-04",
+      "project_name": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+      "lead_id": "IND-20260820-04",
+      "account_id": "ACC-IND-20260820-04",
+      "project_type": "NEW_CONSTRUCTION",
+      "stage": "Potential Industrial Opportunity",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-05",
+      "project_name": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+      "lead_id": "IND-20260820-05",
+      "account_id": "ACC-IND-20260820-05",
+      "project_type": "UNKNOWN",
+      "stage": "Potential Industrial Opportunity",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-06",
+      "project_name": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
+      "lead_id": "IND-20260820-06",
+      "account_id": "ACC-IND-20260820-06",
+      "project_type": "EXPANSION",
+      "stage": "Potential Industrial Opportunity",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-07",
+      "project_name": "湖南裕能240亿元80万吨磷酸铁锂项目",
+      "lead_id": "IND-20260820-07",
+      "account_id": "ACC-IND-20260820-07",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-08",
+      "project_name": "苏州二叶制药扩建肝素系列原药项目 - 省生态环境厅审批公示",
+      "lead_id": "IND-20260820-08",
+      "account_id": "ACC-IND-20260820-08",
+      "project_type": "EXPANSION",
+      "stage": "Potential Industrial Opportunity",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-09",
+      "project_name": "多氟多南宁四工厂30GWh锂电池项目 - 总投资35亿元",
+      "lead_id": "IND-20260820-09",
+      "account_id": "ACC-IND-20260820-09",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-10",
+      "project_name": "万华化学福建48万吨甲醛项目 - MDI产业链配套",
+      "lead_id": "IND-20260820-11",
+      "account_id": "ACC-IND-20260820-10",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
+    },
+    {
+      "project_id": "PRJ-IND-20260820-11",
+      "project_name": "杰瑞再生循环重庆锂电回收场站投产 - 年产能1.5万吨",
+      "lead_id": "IND-20260820-12",
+      "account_id": "ACC-IND-20260820-11",
+      "project_type": "UNKNOWN",
+      "stage": "Signal",
+      "estimated_value": "UNKNOWN",
+      "water_system_scope": "UNKNOWN",
+      "contact_ids": [],
+      "created_date": "2026-08-20"
     }
   ],
   "accounts": [
@@ -4564,6 +5596,162 @@
       "contact_ids": [
         "CT-20260819-0092"
       ]
+    },
+    {
+      "account_id": "ACC-IND-20260820-01",
+      "account_name": "(全行业-法规层面)",
+      "industry": "跨行业",
+      "location": "全国",
+      "lead_ids": [
+        "IND-20260820-01"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-02",
+      "account_name": "(工业园区-政策层面)",
+      "industry": "跨行业",
+      "location": "全国",
+      "lead_ids": [
+        "IND-20260820-02"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "B",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-03",
+      "account_name": "(多省市-地方立法)",
+      "industry": "跨行业",
+      "location": "广东/河南/福建/甘肃等",
+      "lead_ids": [
+        "IND-20260820-03"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-04",
+      "account_name": "宁德时代(CATL)",
+      "industry": "新能源/电池",
+      "location": "福建厦门",
+      "lead_ids": [
+        "IND-20260820-04"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-05",
+      "account_name": "比亚迪(BYD)",
+      "industry": "新能源/电池",
+      "location": "江苏徐州",
+      "lead_ids": [
+        "IND-20260820-05"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-06",
+      "account_name": "中芯国际(SMIC)",
+      "industry": "半导体/电子",
+      "location": "上海/北京/深圳/天津",
+      "lead_ids": [
+        "IND-20260820-06"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-07",
+      "account_name": "湖南裕能",
+      "industry": "新能源/电池",
+      "location": "待确认",
+      "lead_ids": [
+        "IND-20260820-07"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-08",
+      "account_name": "苏州二叶制药",
+      "industry": "制药",
+      "location": "江苏苏州",
+      "lead_ids": [
+        "IND-20260820-08"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-09",
+      "account_name": "多氟多(宁福新能源)",
+      "industry": "新能源/电池",
+      "location": "广西南宁",
+      "lead_ids": [
+        "IND-20260820-09"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "D",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-10",
+      "account_name": "万华化学",
+      "industry": "石化/化工",
+      "location": "福建福州(江阴港城经济区)",
+      "lead_ids": [
+        "IND-20260820-11"
+      ],
+      "contact_ids": [],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "A",
+      "created_date": "2026-08-20"
+    },
+    {
+      "account_id": "ACC-IND-20260820-11",
+      "account_name": "杰瑞再生循环",
+      "industry": "新能源/电池",
+      "location": "重庆长寿经开区",
+      "lead_ids": [
+        "IND-20260820-12"
+      ],
+      "contact_ids": [
+        "CT-20260820-0013"
+      ],
+      "existing_hach_relationship": "UNKNOWN",
+      "installed_base": "UNKNOWN",
+      "water_system_ownership": "A",
+      "created_date": "2026-08-20"
     }
   ],
   "contacts": [
@@ -17242,6 +18430,558 @@
       "conflict_note": null,
       "last_verified": "2026-08-20",
       "project_ids": []
+    },
+    {
+      "contact_id": "CT-20260820-0013",
+      "name": "UNKNOWN (HR Recruitment Channel)",
+      "company": "宁德时代新能源科技股份有限公司",
+      "title": "EHS Engineer / 给排水工程师 (厦门基地招聘中)",
+      "role": "C",
+      "commercial_contact_class": "C",
+      "lead_ids": [
+        "IND-20260820-04"
+      ],
+      "project_ids": [
+        "PRJ-IND-20260820-11"
+      ],
+      "account_id": "ACC-IND-20260820-11",
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 30,
+      "evidence_score": 50,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.jobui.com/company/13063791/salary/j/xianchangzhixing/",
+        "https://www.jobui.com/company/13063791/salary/j/geipaishuigongcheng/"
+      ],
+      "evidence": [
+        {
+          "type": "job_posting",
+          "source": "jobui.com",
+          "detail": "CATL hiring EHS field engineers, positions in Xiamen/Chengdu, salary 12-17K"
+        },
+        {
+          "type": "job_posting",
+          "source": "jobui.com",
+          "detail": "CATL hiring water supply/drainage engineers, positions in Ningde/Erdos/Xiamen, salary 10-30K"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.jobui.com/company/13063791/salary/j/xianchangzhixing/"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0014",
+      "name": "UNKNOWN (Entity Identified)",
+      "company": "淮海弗迪钠电池(徐州)有限公司",
+      "title": "Joint Venture Entity (比亚迪弗迪电池 x 淮海控股)",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-05"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 40,
+      "evidence_score": 60,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://caifuhao.eastmoney.com/news/20260711055126658024720"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "eastmoney.com",
+          "detail": "JV entity confirmed: BYD FinDreams Battery + Huaihai Holdings, 100B investment, 30GWh total capacity, Xuzhou Economic Development Zone"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://caifuhao.eastmoney.com/news/20260711055126658024720"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0015",
+      "name": "谭新乔",
+      "company": "湖南裕能新能源电池材料股份有限公司",
+      "title": "董事长",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-07"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 20,
+      "evidence_score": 80,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "http://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-05/6c810de2-c9fd-4cbf-b43c-842b8648fe56.PDF"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "szse.cn",
+          "detail": "2026年第二次临时股东会决议公告，董事长谭新乔主持会议，审议通过240亿元矿化一体项目投资议案"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "http://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-05/6c810de2-c9fd-4cbf-b43c-842b8648fe56.PDF"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0016",
+      "name": "湖南蓝方环保科技有限公司",
+      "company": "湖南蓝方环保科技有限公司",
+      "title": "环评编制单位 (湖南裕能循环科技碳酸锂项目)",
+      "role": "B",
+      "commercial_contact_class": "B",
+      "lead_ids": [
+        "IND-20260820-07"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 30,
+      "evidence_score": 70,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://sthjj.xiangtan.gov.cn/6196/6197/content_1444245.html"
+      ],
+      "evidence": [
+        {
+          "type": "eia_record",
+          "source": "xiangtan.gov.cn",
+          "detail": "湘潭市生态环境局公示，湖南蓝方环保科技为湖南裕能循环科技年产3万吨电池级碳酸锂项目二期环评编制单位"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://sthjj.xiangtan.gov.cn/6196/6197/content_1444245.html"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0017",
+      "name": "张健",
+      "company": "苏州二叶制药有限公司",
+      "title": "法定代表人",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-08"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 30,
+      "evidence_score": 80,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.tianyancha.com/company/196931343",
+        "https://www.zhipin.com/companys/6e251267ed5f25a01HFy2t66.html"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "tianyancha.com",
+          "detail": "法定代表人: 张健, 注册资本30000万, 成立1981-04-13, 地址: 苏州市相城区黄埭镇东桥安民路2号"
+        },
+        {
+          "type": "public_record",
+          "source": "zhipin.com",
+          "detail": "复星医药集团成员企业, 1000-9999人, 地址: 苏州市相城区黄埭镇东桥潘阳工业园"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.tianyancha.com/company/196931343"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0018",
+      "name": "江苏省环境工程技术有限公司",
+      "company": "江苏省环境工程技术有限公司",
+      "title": "环评编制单位 (苏州二叶制药肝素原药扩建项目)",
+      "role": "B",
+      "commercial_contact_class": "B",
+      "lead_ids": [
+        "IND-20260820-08"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 35,
+      "evidence_score": 75,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "http://sthjt.jiangsu.gov.cn/art/2026/7/9/art_83568_11801990.html"
+      ],
+      "evidence": [
+        {
+          "type": "eia_record",
+          "source": "jiangsu.gov.cn",
+          "detail": "江苏省生态环境厅7月9日受理公示，江苏省环境工程技术有限公司为苏州二叶制药扩建肝素系列原药项目环评技术单位"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "http://sthjt.jiangsu.gov.cn/art/2026/7/9/art_83568_11801990.html"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0019",
+      "name": "李世江",
+      "company": "多氟多新材料股份有限公司",
+      "title": "董事长 (多氟多母公司)",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-09"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 25,
+      "evidence_score": 70,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://baijiahao.baidu.com/s?id=1778349327829302736&wfr=spider&for=pc"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "baidu.com",
+          "detail": "多氟多董事长李世江在南宁二期项目开工仪式现场讲话，确认宁福新能源为多氟多控股子公司"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://baijiahao.baidu.com/s?id=1778349327829302736&wfr=spider&for=pc"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0020",
+      "name": "广西宁福新能源科技有限公司",
+      "company": "广西宁福新能源科技有限公司",
+      "title": "项目法人单位 (多氟多控股子公司, 注册资本34.59亿元)",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-09"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 35,
+      "evidence_score": 70,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://xueqiu.com/9958052416/396881378",
+        "https://www.zhipin.com/job_detail/cf1a515f93bbc3ed03x_2NS7GVpY.html"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "xueqiu.com",
+          "detail": "宁福新能源30GWh钠电项目备案, 法人单位广西宁福新能源科技, 多氟多持股70.29%"
+        },
+        {
+          "type": "public_record",
+          "source": "zhipin.com",
+          "detail": "注册资本26.25亿元, 位于南宁市青秀区伶俐工业园"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://xueqiu.com/9958052416/396881378"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0021",
+      "name": "福建省石油化学工业设计院有限公司",
+      "company": "福建省石油化学工业设计院有限公司",
+      "title": "环评编制单位 (万华化学福建48万吨甲醛项目)",
+      "role": "B",
+      "commercial_contact_class": "B",
+      "lead_ids": [
+        "IND-20260820-11"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 35,
+      "evidence_score": 80,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/t20260423_5313274.htm"
+      ],
+      "evidence": [
+        {
+          "type": "eia_record",
+          "source": "fuqing.gov.cn",
+          "detail": "福州市生态环境局4月23日公示，福建省石油化学工业设计院为万华化学福建48万吨/年甲醛项目环评机构"
+        },
+        {
+          "type": "eia_record",
+          "source": "fuqing.gov.cn",
+          "detail": "环评报告书(公示稿)已发布, 编制主持人: 谢芳, 质量评分71.4分"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/t20260423_5313274.htm"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0022",
+      "name": "万华环保科技(福建)有限公司",
+      "company": "万华环保科技(福建)有限公司",
+      "title": "废水处理依托单位 (编组站综合废水处理系统)",
+      "role": "B",
+      "commercial_contact_class": "B",
+      "lead_ids": [
+        "IND-20260820-11"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 50,
+      "evidence_score": 75,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/t20260423_5313274.htm"
+      ],
+      "evidence": [
+        {
+          "type": "eia_record",
+          "source": "fuqing.gov.cn",
+          "detail": "甲醛项目废水依托万华环保科技(福建)编组站项目处理, 总排口设置自控阀门和在线监控装置(水量)并与生态环境部门联网"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/t20260423_5313274.htm"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0023",
+      "name": "中壹建安(重庆)科技有限公司",
+      "company": "中壹建安(重庆)科技有限公司",
+      "title": "环评编制单位 (杰瑞锂电池资源化循环利用项目)",
+      "role": "B",
+      "commercial_contact_class": "B",
+      "lead_ids": [
+        "IND-20260820-12"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 30,
+      "evidence_score": 80,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.cqcs.gov.cn/zwxx_164/bmjz/202604/t20260421_15625378_wap.html",
+        "https://www.cqcs.gov.cn/zwxx_164/bmjz/202604/P020260421418469962707.pdf"
+      ],
+      "evidence": [
+        {
+          "type": "eia_record",
+          "source": "cqcs.gov.cn",
+          "detail": "重庆市长寿区生态环境局4月21日拟批公示，中壹建安(重庆)科技为杰瑞锂电池资源化循环利用项目环评机构"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.cqcs.gov.cn/zwxx_164/bmjz/202604/t20260421_15625378_wap.html"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0024",
+      "name": "杰瑞再生资源(重庆)有限公司",
+      "company": "杰瑞再生资源(重庆)有限公司",
+      "title": "项目法人单位 (长寿区齐心西路1号, 年产1.5万吨锂电回收)",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-12"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 40,
+      "evidence_score": 75,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://www.cqcs.gov.cn/zwxx_164/bmjz/202604/t20260421_15625378_wap.html",
+        "https://baijiahao.baidu.com/s?id=1872492312860434268&wfr=spider&for=pc"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "cqcs.gov.cn",
+          "detail": "项目代码2601-500115-04-01-185484, 建设地点重庆市长寿区齐心西路1号"
+        },
+        {
+          "type": "public_record",
+          "source": "baidu.com",
+          "detail": "2026年7月31日正式投产, 年产能1.5万吨, 锂电2.0设备, 黑粉回收率98%, 铜铝分选纯度96%"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://www.cqcs.gov.cn/zwxx_164/bmjz/202604/t20260421_15625378_wap.html"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
+    },
+    {
+      "contact_id": "CT-20260820-0025",
+      "name": "中芯国际集成电路制造有限公司",
+      "company": "中芯国际集成电路制造有限公司(SMIC)",
+      "title": "企业实体 (Q2资本开支18.357亿美元, 产能利用率93.7%)",
+      "role": "D",
+      "commercial_contact_class": "D",
+      "lead_ids": [
+        "IND-20260820-06"
+      ],
+      "project_ids": [],
+      "account_id": null,
+      "phone": [],
+      "email": [],
+      "commercial_relevance_score": 35,
+      "evidence_score": 65,
+      "discovered_by": [
+        "DuMate"
+      ],
+      "sources": [
+        "https://baijiahao.baidu.com/s?id=1873416244696806650&wfr=spider&for=pc"
+      ],
+      "evidence": [
+        {
+          "type": "public_record",
+          "source": "baidu.com",
+          "detail": "中芯国际2026Q2资本开支18.357亿美元, 环比增长17.5%, 销售收入首破30亿美元, 产能利用率93.7%逼近满产"
+        }
+      ],
+      "cross_agent_confirmation": false,
+      "source_records": [
+        {
+          "agent": "DuMate",
+          "source": "https://baijiahao.baidu.com/s?id=1873416244696806650&wfr=spider&for=pc"
+        }
+      ],
+      "discovery_date": "2026-08-20",
+      "last_verified": "2026-08-20",
+      "verification_status": "PUBLIC_RECORD"
     }
   ],
   "organization_maps": [
@@ -17814,6 +19554,126 @@
         "Design Institute Water System Engineer",
         "Tender/Bid Contact (if applicable)"
       ]
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "company": "宁德时代(CATL)",
+      "industry": "新能源/电池",
+      "location": "福建厦门",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "NOT_FOUND",
+        "owner_management": "NOT_FOUND"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "company": "比亚迪(BYD)",
+      "industry": "新能源/电池",
+      "location": "江苏徐州",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "NOT_FOUND",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "company": "中芯国际(SMIC)",
+      "industry": "半导体/电子",
+      "location": "上海/北京/深圳/天津",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "NOT_FOUND",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "company": "湖南裕能",
+      "industry": "新能源/电池",
+      "location": "待确认",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "IDENTIFIED",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "company": "苏州二叶制药",
+      "industry": "制药",
+      "location": "江苏苏州",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "IDENTIFIED",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "company": "多氟多(宁福新能源)",
+      "industry": "新能源/电池",
+      "location": "广西南宁",
+      "water_system_ownership": "D",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "NOT_FOUND",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "company": "万华化学",
+      "industry": "石化/化工",
+      "location": "福建福州(江阴港城经济区)",
+      "water_system_ownership": "A",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "IDENTIFIED",
+        "owner_management": "NOT_FOUND"
+      },
+      "created_date": "2026-08-20"
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "company": "杰瑞再生循环",
+      "industry": "新能源/电池",
+      "location": "重庆长寿经开区",
+      "water_system_ownership": "A",
+      "identified_roles": {
+        "owner_ehs": "NOT_FOUND",
+        "owner_water_treatment": "NOT_FOUND",
+        "epc_contractor": "NOT_FOUND",
+        "eia_agency": "IDENTIFIED",
+        "owner_management": "IDENTIFIED"
+      },
+      "created_date": "2026-08-20"
     }
   ],
   "missing_roles": [
@@ -18536,18 +20396,430 @@
       "evidence": "STRONG（公司级，非个人）",
       "source": "华汇城市建设服务平台",
       "agent": "Claude"
+    },
+    {
+      "lead_id": "IND-20260820-01",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Company EHS/environmental manager - key decision maker for monitoring equipment",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(全行业-法规层面)",
+      "account_id": "ACC-IND-20260820-01"
+    },
+    {
+      "lead_id": "IND-20260820-01",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Water treatment system owner - direct user of Hach instruments",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(全行业-法规层面)",
+      "account_id": "ACC-IND-20260820-01"
+    },
+    {
+      "lead_id": "IND-20260820-01",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(全行业-法规层面)",
+      "account_id": "ACC-IND-20260820-01"
+    },
+    {
+      "lead_id": "IND-20260820-01",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(全行业-法规层面)",
+      "account_id": "ACC-IND-20260820-01"
+    },
+    {
+      "lead_id": "IND-20260820-02",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Company EHS/environmental manager - key decision maker for monitoring equipment",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(工业园区-政策层面)",
+      "account_id": "ACC-IND-20260820-02"
+    },
+    {
+      "lead_id": "IND-20260820-02",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Water treatment system owner - direct user of Hach instruments",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(工业园区-政策层面)",
+      "account_id": "ACC-IND-20260820-02"
+    },
+    {
+      "lead_id": "IND-20260820-02",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(工业园区-政策层面)",
+      "account_id": "ACC-IND-20260820-02"
+    },
+    {
+      "lead_id": "IND-20260820-02",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(工业园区-政策层面)",
+      "account_id": "ACC-IND-20260820-02"
+    },
+    {
+      "lead_id": "IND-20260820-03",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Company EHS/environmental manager - key decision maker for monitoring equipment",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(多省市-地方立法)",
+      "account_id": "ACC-IND-20260820-03"
+    },
+    {
+      "lead_id": "IND-20260820-03",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Water treatment system owner - direct user of Hach instruments",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(多省市-地方立法)",
+      "account_id": "ACC-IND-20260820-03"
+    },
+    {
+      "lead_id": "IND-20260820-03",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(多省市-地方立法)",
+      "account_id": "ACC-IND-20260820-03"
+    },
+    {
+      "lead_id": "IND-20260820-03",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "(多省市-地方立法)",
+      "account_id": "ACC-IND-20260820-03"
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Company EHS/environmental manager - key decision maker for monitoring equipment",
+      "search_status": "NOT_STARTED",
+      "target_entity": "宁德时代(CATL)",
+      "account_id": "ACC-IND-20260820-04"
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Water treatment system owner - direct user of Hach instruments",
+      "search_status": "NOT_STARTED",
+      "target_entity": "宁德时代(CATL)",
+      "account_id": "ACC-IND-20260820-04"
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "宁德时代(CATL)",
+      "account_id": "ACC-IND-20260820-04"
+    },
+    {
+      "lead_id": "IND-20260820-04",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "宁德时代(CATL)",
+      "account_id": "ACC-IND-20260820-04"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: UNKNOWN (Entity Identified) - Joint Venture Entity (比亚迪弗迪电池 x 淮海控股)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "比亚迪(BYD)",
+      "account_id": "ACC-IND-20260820-05",
+      "contact_id": "CT-20260820-0014"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: UNKNOWN (Entity Identified) - Joint Venture Entity (比亚迪弗迪电池 x 淮海控股)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "比亚迪(BYD)",
+      "account_id": "ACC-IND-20260820-05",
+      "contact_id": "CT-20260820-0014"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "比亚迪(BYD)",
+      "account_id": "ACC-IND-20260820-05"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "比亚迪(BYD)",
+      "account_id": "ACC-IND-20260820-05"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 中芯国际集成电路制造有限公司 - 企业实体 (Q2资本开支18.357亿美元, 产能利用率93.7%)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "中芯国际(SMIC)",
+      "account_id": "ACC-IND-20260820-06",
+      "contact_id": "CT-20260820-0025"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 中芯国际集成电路制造有限公司 - 企业实体 (Q2资本开支18.357亿美元, 产能利用率93.7%)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "中芯国际(SMIC)",
+      "account_id": "ACC-IND-20260820-06",
+      "contact_id": "CT-20260820-0025"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "中芯国际(SMIC)",
+      "account_id": "ACC-IND-20260820-06"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "中芯国际(SMIC)",
+      "account_id": "ACC-IND-20260820-06"
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 谭新乔 - 董事长",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "湖南裕能",
+      "account_id": "ACC-IND-20260820-07",
+      "contact_id": "CT-20260820-0015"
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 谭新乔 - 董事长",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "湖南裕能",
+      "account_id": "ACC-IND-20260820-07",
+      "contact_id": "CT-20260820-0015"
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "湖南裕能",
+      "account_id": "ACC-IND-20260820-07"
+    },
+    {
+      "lead_id": "IND-20260820-07",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Identified: 湖南蓝方环保科技有限公司 - 环评编制单位 (湖南裕能循环科技碳酸锂项目)",
+      "search_status": "EIA_AGENCY_IDENTIFIED",
+      "target_entity": "湖南裕能",
+      "account_id": "ACC-IND-20260820-07",
+      "contact_id": "CT-20260820-0016"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 张健 - 法定代表人",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "苏州二叶制药",
+      "account_id": "ACC-IND-20260820-08",
+      "contact_id": "CT-20260820-0017"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 张健 - 法定代表人",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "苏州二叶制药",
+      "account_id": "ACC-IND-20260820-08",
+      "contact_id": "CT-20260820-0017"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "苏州二叶制药",
+      "account_id": "ACC-IND-20260820-08"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Identified: 江苏省环境工程技术有限公司 - 环评编制单位 (苏州二叶制药肝素原药扩建项目)",
+      "search_status": "EIA_AGENCY_IDENTIFIED",
+      "target_entity": "苏州二叶制药",
+      "account_id": "ACC-IND-20260820-08",
+      "contact_id": "CT-20260820-0018"
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 广西宁福新能源科技有限公司 - 项目法人单位 (多氟多控股子公司, 注册资本34.59亿元)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "多氟多(宁福新能源)",
+      "account_id": "ACC-IND-20260820-09",
+      "contact_id": "CT-20260820-0020"
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 广西宁福新能源科技有限公司 - 项目法人单位 (多氟多控股子公司, 注册资本34.59亿元)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "多氟多(宁福新能源)",
+      "account_id": "ACC-IND-20260820-09",
+      "contact_id": "CT-20260820-0020"
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "多氟多(宁福新能源)",
+      "account_id": "ACC-IND-20260820-09"
+    },
+    {
+      "lead_id": "IND-20260820-09",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Environmental impact assessment agency - identifies monitoring requirements",
+      "search_status": "NOT_STARTED",
+      "target_entity": "多氟多(宁福新能源)",
+      "account_id": "ACC-IND-20260820-09"
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Company EHS/environmental manager - key decision maker for monitoring equipment",
+      "search_status": "NOT_STARTED",
+      "target_entity": "万华化学",
+      "account_id": "ACC-IND-20260820-10"
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Water treatment system owner - direct user of Hach instruments",
+      "search_status": "NOT_STARTED",
+      "target_entity": "万华化学",
+      "account_id": "ACC-IND-20260820-10"
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "万华化学",
+      "account_id": "ACC-IND-20260820-10"
+    },
+    {
+      "lead_id": "IND-20260820-11",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Identified: 万华环保科技(福建)有限公司 - 废水处理依托单位 (编组站综合废水处理系统)",
+      "search_status": "EIA_AGENCY_IDENTIFIED",
+      "target_entity": "万华化学",
+      "account_id": "ACC-IND-20260820-10",
+      "contact_id": "CT-20260820-0022"
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "role_needed": "Owner EHS Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 杰瑞再生资源(重庆)有限公司 - 项目法人单位 (长寿区齐心西路1号, 年产1.5万吨锂电回收)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "杰瑞再生循环",
+      "account_id": "ACC-IND-20260820-11",
+      "contact_id": "CT-20260820-0024"
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "role_needed": "Owner Water Treatment Manager",
+      "agent": "DuMate",
+      "discovery_path": "Entity/contact identified: 杰瑞再生资源(重庆)有限公司 - 项目法人单位 (长寿区齐心西路1号, 年产1.5万吨锂电回收)",
+      "search_status": "PATH_IDENTIFIED",
+      "target_entity": "杰瑞再生循环",
+      "account_id": "ACC-IND-20260820-11",
+      "contact_id": "CT-20260820-0024"
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "role_needed": "EPC Contractor",
+      "agent": "DuMate",
+      "discovery_path": "Engineering contractor for water treatment system design",
+      "search_status": "NOT_STARTED",
+      "target_entity": "杰瑞再生循环",
+      "account_id": "ACC-IND-20260820-11"
+    },
+    {
+      "lead_id": "IND-20260820-12",
+      "role_needed": "EIA Agency",
+      "agent": "DuMate",
+      "discovery_path": "Identified: 中壹建安(重庆)科技有限公司 - 环评编制单位 (杰瑞锂电池资源化循环利用项目)",
+      "search_status": "EIA_AGENCY_IDENTIFIED",
+      "target_entity": "杰瑞再生循环",
+      "account_id": "ACC-IND-20260820-11",
+      "contact_id": "CT-20260820-0023"
     }
   ],
   "agent_statistics": {
-    "total_contacts": 207,
+    "total_contacts": 232,
     "by_agent": {
-      "DuMate": 72,
+      "DuMate": 97,
       "WorkBuddy": 42,
       "Perplexity": 94,
       "Claude": 6
     },
     "exclusive_by_agent": {
-      "DuMate": 65,
+      "DuMate": 90,
       "Perplexity": 92,
       "Claude": 6,
       "WorkBuddy": 37
@@ -18566,12 +20838,13 @@
     "human_verified_total": 0,
     "new_contacts_added": 135,
     "contacts_merged": 42,
-    "possible_duplicates": 1
+    "possible_duplicates": 1,
+    "cross_agent_confirmed": 7
   },
   "data_quality": {
-    "total_contacts": 207,
+    "total_contacts": 232,
     "contacts_with_phone": 90,
-    "contacts_with_email": 39,
+    "contacts_with_email": 40,
     "contacts_with_both": 38,
     "class_distribution": {
       "D": 71,
@@ -18584,10 +20857,15 @@
     "verification_rate": 0.0,
     "possible_duplicates": 1,
     "missing_roles_count": 95,
-    "total_leads": 41,
-    "total_projects": 40,
-    "total_accounts": 40,
-    "total_organization_maps": 8
+    "total_leads": 52,
+    "total_projects": 51,
+    "total_accounts": 51,
+    "total_organization_maps": 8,
+    "total_missing_roles": 139,
+    "leads_with_contacts": 45,
+    "leads_without_contacts": 7,
+    "avg_evidence_score": 45.6,
+    "avg_commercial_score": 43.1
   },
   "next_best_actions": [
     {
@@ -18674,9 +20952,85 @@
       "action": "CROSS_VERIFY",
       "priority": "MEDIUM",
       "description": "7 contacts confirmed by multiple agents - prioritize human verification"
+    },
+    {
+      "action": "Search EHS/water treatment managers at CATL Xiamen base",
+      "priority": "P2",
+      "lead_id": "IND-20260820-04"
+    },
+    {
+      "action": "Identify BYD Xuzhou EPC contractor for water treatment system",
+      "priority": "P2",
+      "lead_id": "IND-20260820-05"
+    },
+    {
+      "action": "Search SMIC environmental/water treatment contacts at 12-inch fabs",
+      "priority": "P2",
+      "lead_id": "IND-20260820-06"
+    },
+    {
+      "action": "Contact 湖南蓝方环保科技 for introduction to 湖南裕能 EHS team",
+      "priority": "P3",
+      "lead_id": "IND-20260820-07"
+    },
+    {
+      "action": "Contact 江苏省环境工程技术有限公司 for 苏州二叶制药 project details",
+      "priority": "P2",
+      "lead_id": "IND-20260820-08"
+    },
+    {
+      "action": "Search 宁福新能源 EHS manager via recruitment channels",
+      "priority": "P3",
+      "lead_id": "IND-20260820-09"
+    },
+    {
+      "action": "Search 万华环保科技(福建) water treatment manager",
+      "priority": "P3",
+      "lead_id": "IND-20260820-11"
+    },
+    {
+      "action": "Contact 中壹建安(重庆)科技 for 杰瑞锂电回收 project water system details",
+      "priority": "P3",
+      "lead_id": "IND-20260820-12"
     }
   ],
   "priority_ranking": [
+    {
+      "lead_id": "IND-20260820-04",
+      "company": "宁德时代(CATL)",
+      "priority": "P2",
+      "tier": "Tier 2",
+      "reason": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+      "contact_count": 1,
+      "recommended_action": "INITIATE_CONTACT"
+    },
+    {
+      "lead_id": "IND-20260820-05",
+      "company": "比亚迪(BYD)",
+      "priority": "P2",
+      "tier": "Tier 2",
+      "reason": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+      "contact_count": 1,
+      "recommended_action": "INITIATE_CONTACT"
+    },
+    {
+      "lead_id": "IND-20260820-06",
+      "company": "中芯国际(SMIC)",
+      "priority": "P2",
+      "tier": "Tier 2",
+      "reason": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
+      "contact_count": 1,
+      "recommended_action": "INITIATE_CONTACT"
+    },
+    {
+      "lead_id": "IND-20260820-08",
+      "company": "苏州二叶制药",
+      "priority": "P2",
+      "tier": "Tier 2",
+      "reason": "苏州二叶制药扩建肝素系列原药项目 - 省生态环境厅审批公示",
+      "contact_count": 2,
+      "recommended_action": "INITIATE_CONTACT"
+    },
     {
       "rank": 1,
       "contact_id": "CT-20260819-0085",
@@ -19246,6 +21600,51 @@
         "政府环评公示网站"
       ],
       "notes": "定向搜索8个第一梯队Lead的水处理/EHS/厂务联系人。找到12个新HR联系人(可通过HR接触到目标角色),2份环评报告(含环评机构信息),确认多个目标岗位在招(EHS部长/厂务高级工程师/EHS经理等)。"
+    },
+    {
+      "date": "2026-08-20",
+      "version": "3.1",
+      "changes": [
+        "Added 11 new leads from 2026-08-20 radar signals",
+        "Added 13 new contacts from DuMate web searches",
+        "Added 11 new accounts",
+        "Added 11 new projects",
+        "Added 44 new missing_roles",
+        "Updated IND-20260818-005 (SK Hynix) with latest signal from IND-20260820-10",
+        "Added 8 organization_maps",
+        "Contact sources: company registrations, EIA filings, job postings, stock exchange disclosures"
+      ],
+      "new_lead_ids": [
+        "IND-20260820-01",
+        "IND-20260820-02",
+        "IND-20260820-03",
+        "IND-20260820-04",
+        "IND-20260820-05",
+        "IND-20260820-06",
+        "IND-20260820-07",
+        "IND-20260820-08",
+        "IND-20260820-09",
+        "IND-20260820-11",
+        "IND-20260820-12"
+      ],
+      "new_contact_ids": [
+        "CT-20260820-0013",
+        "CT-20260820-0014",
+        "CT-20260820-0015",
+        "CT-20260820-0016",
+        "CT-20260820-0017",
+        "CT-20260820-0018",
+        "CT-20260820-0019",
+        "CT-20260820-0020",
+        "CT-20260820-0021",
+        "CT-20260820-0022",
+        "CT-20260820-0023",
+        "CT-20260820-0024",
+        "CT-20260820-0025"
+      ],
+      "agents_active": [
+        "DuMate"
+      ]
     }
   ]
 }
