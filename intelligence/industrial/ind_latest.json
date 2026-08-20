@@ -1,0 +1,728 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "run_date": "2026-08-20",
+  "experiment_week": 1,
+  "scanner_summary": {
+    "total_signals": 12,
+    "engine_a_count": 3,
+    "engine_b_count": 9,
+    "industry_breakdown": {
+      "跨行业": 3,
+      "新能源/电池": 5,
+      "半导体/电子": 2,
+      "制药": 1,
+      "石化/化工": 1
+    },
+    "trigger_breakdown": {
+      "regulatory_change": 3,
+      "capex_project": 9
+    },
+    "priority_breakdown": {
+      "P1": 0,
+      "P2": 4,
+      "P3": 8
+    },
+    "stage_breakdown": {
+      "Signal": 8,
+      "Potential Industrial Opportunity": 4
+    },
+    "new_signals_today": 12,
+    "continuity_note": "Previous session data unavailable (GitHub clone timeout). All signals marked as new."
+  },
+  "top_5_match": [
+    {
+      "id": "IND-20260820-01",
+      "company": "(全行业-法规层面)",
+      "opportunity": "生态环境法典2026-08-15施行 - 排污许可重点管理单位法定自动监测义务",
+      "priority": "P3",
+      "agent_checklist": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ]
+    },
+    {
+      "id": "IND-20260820-02",
+      "company": "(工业园区-政策层面)",
+      "opportunity": "环办水体〔2026〕13号 - 八部门联合通知加强工业污水污染风险防范",
+      "priority": "P3",
+      "agent_checklist": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ]
+    },
+    {
+      "id": "IND-20260820-03",
+      "company": "(多省市-地方立法)",
+      "opportunity": "多省市地方性法规集中修改 - 排污许可重点管理单位自动监测要求写入地方法规",
+      "priority": "P3",
+      "agent_checklist": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ]
+    },
+    {
+      "id": "IND-20260820-04",
+      "company": "宁德时代(CATL)",
+      "opportunity": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+      "priority": "P2",
+      "agent_checklist": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ]
+    },
+    {
+      "id": "IND-20260820-05",
+      "company": "比亚迪(BYD)",
+      "opportunity": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+      "priority": "P2",
+      "agent_checklist": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260820-01",
+      "market_segment": "industrial",
+      "company": "(全行业-法规层面)",
+      "account": "N/A",
+      "industry": "跨行业",
+      "location": "全国",
+      "opportunity": "生态环境法典2026-08-15施行 - 排污许可重点管理单位法定自动监测义务",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "生态环境法典2026-08-15施行，5编1242条，废止10部单行法律",
+          "法典第184条：排污许可重点管理单位应安装/使用/维护自动监测设备并与生态环境主管部门联网",
+          "'重点排污单位'概念统一为'排污许可重点管理'",
+          "国务院令第843号修改12部行政法规，7部涉及罚则升级",
+          "排污许可证分批更新：首批(8/15起)火电/钢铁/水泥/造纸/污水处理；第二批(Q4 2026)石化/化工/印染/电镀"
+        ],
+        "inferences": [
+          "第二批Q4 2026覆盖石化/化工/印染/电镀行业，这些行业企业将需要更新排污许可证并可能新增自动监测设备",
+          "双罚制(罚企业+罚个人)将提高企业合规投入意愿",
+          "自动监测设备联网要求可能创造在线水质监测仪表需求"
+        ],
+        "unknowns": [
+          "具体哪些企业将被纳入排污许可重点管理(需逐省核查名录)",
+          "企业现有自动监测设备覆盖率和品牌未知",
+          "Hach installed base在这些企业中的占比未知"
+        ]
+      },
+      "potential_ims_use_case": "排污许可重点管理单位自动监测义务 - 在线水质监测(COD/氨氮/总磷/总氮/重金属) + IMS合规引擎",
+      "logic": "法规变化(法典第184条) → 排污许可重点管理单位法定义务 → 自动监测设备安装/联网需求 → 潜在Hach仪表+IMS合规引擎机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "Q4 2026 - 2027 (第二批许可证更新期)",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzAxODEyNjc0Ng==&mid=2650880825&idx=2&sn=4966f476dc2959034fbae3aeb97d05c0",
+        "https://zhuanlan.zhihu.com/p/2071619876725207130",
+        "https://mp.weixin.qq.com/s?__biz=MzU2MDMyNTcwNw==&mid=2247560158&idx=1&sn=c8170a15e43ecc90b53831a03d22cffc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "法典2026-08-15正式施行；排污许可证分批更新时间表确认；第二批Q4 2026覆盖石化/化工/印染/电镀",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-02",
+      "market_segment": "industrial",
+      "company": "(工业园区-政策层面)",
+      "account": "N/A",
+      "industry": "跨行业",
+      "location": "全国",
+      "opportunity": "环办水体〔2026〕13号 - 八部门联合通知加强工业污水污染风险防范",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "生态环境部等八部门联合印发环办水体〔2026〕13号",
+          "要求加快推进位于农田周边工业园区污水集中处理设施建设改造",
+          "推动园区污水全收集全处理",
+          "特征污染物(全盐量/重金属/有毒有害)排放管控要求依法载入排污许可证",
+          "2026年底前完成整治方案制定"
+        ],
+        "inferences": [
+          "工业园区污水集中处理设施改造将产生水质监测仪表需求",
+          "特征污染物载入排污许可证意味着新增监测因子",
+          "化工园区是重点对象"
+        ],
+        "unknowns": [
+          "具体哪些园区将被优先整治",
+          "园区现有监测设备配置情况未知",
+          "园区污水处理运营方是谁(第三方/园区自建)"
+        ]
+      },
+      "potential_ims_use_case": "工业园区污水集中处理在线监测 + 特征污染物监测 + IMS合规引擎",
+      "logic": "政策通知(八部门联合) → 工业园区污水设施建设改造 → 水质监测设备需求 → 潜在Hach仪表+IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 H2 - 2027",
+      "priority": "P3",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzIwODIyNTU1NA==&mid=2670233456&idx=1&sn=588efcba6de98ee553930399fb3e0c23"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "环办水体〔2026〕13号发布；工业园区污水集中处理设施建设改造要求；特征污染物载入排污许可证",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-03",
+      "market_segment": "industrial",
+      "company": "(多省市-地方立法)",
+      "account": "N/A",
+      "industry": "跨行业",
+      "location": "广东/河南/福建/甘肃等",
+      "opportunity": "多省市地方性法规集中修改 - 排污许可重点管理单位自动监测要求写入地方法规",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "广东省修订水污染防治条例/大气污染防治条例/环境保护条例，2026-08-15施行",
+          "河南省修改19部地方性法规，包括大气污染防治条例等",
+          "福建省修改15项地方性法规",
+          "白银市修改祖厉河流域水环境保护条例：排污许可重点管理单位应安装自动监测设备",
+          "嘉兴市修改污染源自动监控管理办法：排污单位定义为'实行排污许可重点管理的企业'"
+        ],
+        "inferences": [
+          "全国性地方立法集中升级自动监测要求",
+          "地方执法力度将加强，企业合规投入增加",
+          "广东省作为制造业大省，影响范围广"
+        ],
+        "unknowns": [
+          "地方执法力度和时间表",
+          "企业现有监测设备达标率"
+        ]
+      },
+      "potential_ims_use_case": "地方合规驱动的自动监测设备升级 - 在线水质监测 + IMS合规引擎",
+      "logic": "地方立法集中修改 → 排污许可重点管理单位自动监测义务法制化 → 企业合规投入 → 潜在Hach仪表需求",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 H2 - 2027",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzIyOTQyNDAzOA==&mid=2247876942&idx=3&sn=ed722faadb6666ae5938e6bbc7840c1b",
+        "https://m.thepaper.cn/newsDetail_forward_33805823",
+        "https://www.jiaxing.gov.cn/col/col1229567741/art/2026/art_6ef0eb7a678c483d8808fc09d3cc5301.html"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "多省市地方性法规2026-08-15同步施行；自动监测要求写入地方法规；白银市/嘉兴市具体条款确认",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-04",
+      "market_segment": "industrial",
+      "company": "宁德时代(CATL)",
+      "account": "宁德时代新能源科技股份有限公司",
+      "industry": "新能源/电池",
+      "location": "福建厦门",
+      "opportunity": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "宁德时代零碳科技(厦门)有限公司2026年6月完成注册，注册资本100亿元",
+          "建设高性能车用和储能锂电池区域生产基地",
+          "集电芯/模组/PACK全链条生产制造于一体",
+          "宁德时代2026H1产能利用率94.86%，在建产能764GWh",
+          "20家电池工厂已通过ISO 14068-1零碳工厂认证"
+        ],
+        "inferences": [
+          "新建大型电池生产基地必然需要工业废水处理系统(含重金属废水)",
+          "零碳工厂认证要求高水平水资源管理和监测",
+          "电池制造废水含铜/镍/钴/氟化物等特征污染物，需在线监测"
+        ],
+        "unknowns": [
+          "水系统建设具体进度和招标时间",
+          "水系统是自建还是委托第三方EPC",
+          "Hach在宁德时代现有基地的installed base情况",
+          "厦门基地具体水系统设计参数"
+        ]
+      },
+      "potential_ims_use_case": "电池制造废水在线监测(重金属/氟化物/COD) + 零碳工厂水管理 + IMS生命周期智能",
+      "logic": "CapEx(100亿注册) → 电池生产基地建设 → 工业废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "estimated_time_window": "2026 H2 - 2028 (规划/设计/建设期)",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://dzb.sunnews.cn/html/2026-08/18/content_841200.htm",
+        "https://baijiahao.baidu.com/s?id=1873194849451679335&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "厦门零碳科技城注册确认(100亿元)；全链条生产基地规划；宁德时代核心运营碳中和已实现",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-05",
+      "market_segment": "industrial",
+      "company": "比亚迪(BYD)",
+      "account": "比亚迪股份有限公司",
+      "industry": "新能源/电池",
+      "location": "江苏徐州",
+      "opportunity": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "比亚迪徐州基地2026年3月正式开工",
+          "总投资100亿元，一期15GWh预计2026Q4满产",
+          "全部30GWh产能计划2027年建成达产",
+          "生产第三代刀片钠离子电芯(200Ah)"
+        ],
+        "inferences": [
+          "钠电池制造工艺与锂电池类似，需工业废水处理",
+          "新建工厂需要配套水系统建设"
+        ],
+        "unknowns": [
+          "水系统建设具体方案和进度",
+          "是否已有水处理设备供应商确定",
+          "Hach在比亚迪现有基地的installed base"
+        ]
+      },
+      "potential_ims_use_case": "钠电池制造废水在线监测 + 水系统管理",
+      "logic": "CapEx(100亿) → 钠电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "estimated_time_window": "2026 Q4 - 2027 (一期投产/二期建设)",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1872792223347954846&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "徐州基地开工确认；投资100亿/30GWh产能规划；一期2026Q4满产时间表",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-06",
+      "market_segment": "industrial",
+      "company": "中芯国际(SMIC)",
+      "account": "中芯国际集成电路制造有限公司",
+      "industry": "半导体/电子",
+      "location": "上海/北京/深圳/天津",
+      "opportunity": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "中芯国际2026Q2资本开支18.357亿美元，环比增长17.5%",
+          "季度销售收入首次突破30亿美元，同比增长36.1%",
+          "产能利用率93.7%，逼近满产",
+          "12英寸晶圆营收贡献78.2%",
+          "中国区营收占比升至90.2%"
+        ],
+        "inferences": [
+          "产能扩张意味着新建洁净室和超纯水系统需求",
+          "半导体制造是超纯水消耗大户，废水成分复杂(含氟/重金属/酸碱)",
+          "高产能利用率下扩产意愿强"
+        ],
+        "unknowns": [
+          "具体扩建项目的水系统建设信息",
+          "中芯国际现有水系统供应商",
+          "Hach在中芯国际的installed base"
+        ]
+      },
+      "potential_ims_use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
+      "logic": "CapEx(18亿美元/季度) → 12英寸产线扩充 → 超纯水系统+废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "estimated_time_window": "2026 H2 - 2028",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1873416244696806650&wfr=spider&for=pc",
+        "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "Q2财报资本开支18.357亿美元；产能利用率93.7%；销售收入首破30亿美元",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-07",
+      "market_segment": "industrial",
+      "company": "湖南裕能",
+      "account": "湖南裕能新能源电池材料有限公司",
+      "industry": "新能源/电池",
+      "location": "待确认",
+      "opportunity": "湖南裕能240亿元80万吨磷酸铁锂项目",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "湖南裕能拟投资240亿元建设80万吨磷酸铁锂等项目",
+          "为2026年7月电池产业链最大投资额项目",
+          "磷酸铁锂正极材料生产涉及含磷/铁/锂废水"
+        ],
+        "inferences": [
+          "大规模正极材料生产需要配套废水处理系统",
+          "含磷废水是环保监管重点"
+        ],
+        "unknowns": [
+          "项目具体选址和水系统建设方案",
+          "环评审批进度",
+          "水系统供应商"
+        ]
+      },
+      "potential_ims_use_case": "正极材料生产废水在线监测(总磷/铁/锂/COD) + IMS合规引擎",
+      "logic": "CapEx(240亿) → 磷酸铁锂产能扩张 → 含磷废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 H2 - 2028",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1873318540301770154&wfr=spider&for=pc",
+        "https://baijiahao.baidu.com/s?id=1873194849451679335&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "240亿投资80万吨磷酸铁锂项目公布；为7月最大电池产业链投资项目",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-08",
+      "market_segment": "industrial",
+      "company": "苏州二叶制药",
+      "account": "苏州二叶制药有限公司",
+      "industry": "制药",
+      "location": "江苏苏州",
+      "opportunity": "苏州二叶制药扩建肝素系列原药项目 - 省生态环境厅审批公示",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "江苏省生态环境厅2026-08-17审批公示",
+          "扩建生产肝素系列原药项目",
+          "公示期2026-08-18至2026-08-24"
+        ],
+        "inferences": [
+          "原料药扩建项目需要配套废水处理设施",
+          "制药废水含高浓度有机物/残留药物活性成分",
+          "环评审批阶段意味着项目处于设计/前期建设阶段"
+        ],
+        "unknowns": [
+          "项目规模和具体废水处理方案",
+          "水系统建设时间表",
+          "是否自建污水处理站还是依托园区"
+        ]
+      },
+      "potential_ims_use_case": "制药废水在线监测(COD/氨氮/总磷/特征污染物) + IMS合规引擎",
+      "logic": "CapEx(扩建) → 原料药产能扩张 → 废水处理设施需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "estimated_time_window": "2026 H2 - 2027 (环评审批→设计→建设)",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "http://sthjt.jiangsu.gov.cn/art/2026/8/17/art_83568_11817558.html"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history",
+        "ims",
+        "account_sales"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "江苏省生态环境厅8/17审批公示；肝素系列原药扩建项目；公示期进行中",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-09",
+      "market_segment": "industrial",
+      "company": "多氟多(宁福新能源)",
+      "account": "广西宁福新能源科技有限公司(多氟多子公司)",
+      "industry": "新能源/电池",
+      "location": "广西南宁",
+      "opportunity": "多氟多南宁四工厂30GWh锂电池项目 - 总投资35亿元",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "广西南宁青秀生态环境局公示",
+          "四工厂30GWh锂电池项目总投资35亿元",
+          "核心产品46140-30Ah型号电芯",
+          "分三期建设，一期预计2027年5月建成投产"
+        ],
+        "inferences": [
+          "大型电池工厂建设需要配套工业废水处理系统",
+          "锂电池制造废水含重金属/有机溶剂"
+        ],
+        "unknowns": [
+          "水系统建设方案和供应商",
+          "环评报告具体废水处理要求"
+        ]
+      },
+      "potential_ims_use_case": "锂电池制造废水在线监测 + IMS合规引擎",
+      "logic": "CapEx(35亿) → 锂电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 H2 - 2027 (一期建设期)",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1872292933539388167&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "四工厂30GWh项目环评公示；总投资35亿；分三期建设，一期2027年5月投产",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-10",
+      "market_segment": "industrial",
+      "company": "SK海力士(SK Hynix)",
+      "account": "SK海力士",
+      "industry": "半导体/电子",
+      "location": "辽宁大连",
+      "opportunity": "SK海力士重启大连NAND二期工厂建设 - 产能扩大50%",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "韩国首尔经济日报8月11日独家报道",
+          "SK海力士重启大连NAND闪存生产基地二期工厂建设",
+          "产能将扩大约50%",
+          "工厂四年前动工，后因存储器市场低迷停工"
+        ],
+        "inferences": [
+          "半导体工厂复工建设需要超纯水系统和废水处理",
+          "NAND制造废水和CMOS逻辑类似，含氟/酸碱/重金属"
+        ],
+        "unknowns": [
+          "复工具体时间表和水系统建设进度",
+          "原有水系统是否可复用",
+          "水系统供应商"
+        ]
+      },
+      "potential_ims_use_case": "半导体超纯水系统监测 + 含氟废水在线监测 + IMS生命周期智能",
+      "logic": "CapEx(复工) → NAND二期工厂建设 → 超纯水+废水系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 H2 - 2028 (复工→建设→投产)",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1873230710196102941&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "SK海力士重启大连NAND二期建设；产能扩大50%；韩媒8/11独家报道",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-11",
+      "market_segment": "industrial",
+      "company": "万华化学",
+      "account": "万华化学(福建)有限公司",
+      "industry": "石化/化工",
+      "location": "福建福州(江阴港城经济区)",
+      "opportunity": "万华化学福建48万吨甲醛项目 - MDI产业链配套",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "万华福建工业园48万吨/年甲醛项目环评报告书(公示稿)已发布",
+          "作为80万吨MDI项目原料配套",
+          "项目位于福州江阴港城经济区",
+          "1#甲醛装置已投产验收，2#甲醛装置试运行"
+        ],
+        "inferences": [
+          "甲醛生产废水含甲醛/甲醇/甲酸等有机物，需专门处理",
+          "MDI产业链扩能将增加整体废水处理负荷"
+        ],
+        "unknowns": [
+          "新增废水处理设施的具体需求",
+          "现有水系统是否已覆盖扩建需求"
+        ]
+      },
+      "potential_ims_use_case": "化工废水在线监测(COD/甲醛/甲醇/特征污染物) + IMS合规引擎",
+      "logic": "CapEx(扩能) → MDI产业链配套 → 甲醛生产废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "已部分投产(2#试运行)，后续MDI扩能持续",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.fuqing.gov.cn/xjwz/zwgk/zfxxgkzdgz/xzcf/202604/P020260427354628816912.doc"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "48万吨甲醛项目环评公示；1#已投产验收，2#试运行；作为MDI产业链核心原料配套",
+        "changed": "new_signal"
+      }
+    },
+    {
+      "id": "IND-20260820-12",
+      "market_segment": "industrial",
+      "company": "杰瑞再生循环",
+      "account": "杰瑞再生循环科技有限公司",
+      "industry": "新能源/电池",
+      "location": "重庆长寿经开区",
+      "opportunity": "杰瑞再生循环重庆锂电回收场站投产 - 年产能1.5万吨",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "2026年7月31日重庆长寿经开区投产",
+          "年产能1.5万吨，计划五年内扩至10万吨",
+          "郑州示范场站已运行18个月，处理1.5万吨",
+          "黑粉回收率和纯度均达98%，铜铝分选纯度达96%"
+        ],
+        "inferences": [
+          "锂电回收过程产生含重金属/酸碱废水",
+          "湿法冶金环节需要水质监测",
+          "产能扩张至10万吨意味着水系统规模将扩大"
+        ],
+        "unknowns": [
+          "现有水系统配置情况",
+          "扩建水系统时间表"
+        ]
+      },
+      "potential_ims_use_case": "锂电回收废水在线监测(重金属/pH/COD) + IMS合规引擎",
+      "logic": "CapEx(扩产) → 锂电回收产能扩张 → 湿法冶金废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+      "opportunity_stage": "Signal",
+      "estimated_time_window": "2026 - 2031 (五年扩产至10万吨)",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2073016058500457934"
+      ],
+      "to_verify": [
+        "customer_identity",
+        "installed_base",
+        "commercial_history"
+      ],
+      "continuity": {
+        "first_seen": "2026-08-20",
+        "new_facts_today": "重庆场站7/31投产；年产能1.5万吨；五年扩至10万吨；量产数据(黑粉98%/铜铝96%)",
+        "changed": "new_signal"
+      }
+    }
+  ],
+  "market_background": [
+    "生态环境法典2026-08-15正式施行 - 排污许可制度7大变化，自动监测义务法制化",
+    "环办水体〔2026〕13号 - 八部门联合加强工业污水风险防范",
+    "锂电产业链2026H1公开投资项目超170个，总投资近4000亿元",
+    "中芯国际Q2销售收入首破30亿美元，半导体行业景气上行",
+    "宁德时代核心运营碳中和已实现，20家工厂通过零碳认证"
+  ],
+  "source_effectiveness": {
+    "government_websites": "高效 - 环评公示/排污许可平台提供最早且可验证信息",
+    "industry_media": "中等 - 提供行业趋势但缺乏具体水系统信息",
+    "company_announcements": "高效 - 上市公司财报/公告提供可验证CapEx数据",
+    "wechat_articles": "中等 - 政策解读有价值但需交叉验证",
+    "excluded_noise": [
+      "纯产品营销文章",
+      "泛行业研究报告(无具体企业)",
+      "非目标行业环评"
+    ]
+  },
+  "experiment_observations": {
+    "municipal_vs_industrial_differentiation": "本雷达聚焦工业企业(电池/半导体/制药/化工)的客户类型和工业废水场景，与Municipal Radar(水务公司/市政污水)独立运行",
+    "engine_a_vs_b": "Engine A(3信号)产出以法规层面Signal为主，缺乏具体企业落地；Engine B(9信号)产出更多Potential Opportunity，但水系统信息普遍缺失",
+    "key_gap": "Engine B信号普遍缺少水系统建设的具体信息(方案/进度/供应商)，这是从Signal升级为Opportunity的主要障碍",
+    "qualification_rate": "12个Signal中，4个升级为Potential Opportunity，8个仍为Signal级别",
+    "early_vs_late": "大部分Engine B信号处于Planning/Design阶段(环评公示/开工初期)，时间窗口较好",
+    "methodology_note": "Week 1最后一天运行。法规层面变化(法典施行)是本周最大发现，但需要转化为具体企业级机会。Engine B的CapEx信号丰富但水系统证据链不完整。"
+  }
+}
