@@ -3603,8 +3603,8 @@
         "account": "中芯国际集成电路制造有限公司",
         "industry": "半导体/电子",
         "location": "上海/北京/深圳/天津",
-        "opportunity": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
-        "signal_tier": "Tier 2",
+        "opportunity": "中芯国际临港Fab9二期新建厂房(29.57亿元/357,141m²) + Q2 CapEx 18.357亿美元12英寸产线扩充",
+        "signal_tier": "Tier 1",
         "engine": "B",
         "evidence": {
           "facts": [
@@ -3612,44 +3612,57 @@
             "季度销售收入首次突破30亿美元，同比增长36.1%",
             "产能利用率93.7%，逼近满产",
             "12英寸晶圆营收贡献78.2%",
-            "中国区营收占比升至90.2%"
+            "中国区营收占比升至90.2%",
+            "中芯国际临港12英寸晶圆代工生产线项目二期I标总包工程已招标，总投资29.57亿元，建筑面积357,141.39平方米(来源：招标公示)",
+            "二期I标包含Fab9-P3厂房土建和Fab9-P4厂房桩基两大核心工程(来源：招标公示)",
+            "中国建筑第八工程局中标二期I标总包工程，中标价26.91亿元(来源：招标公示)",
+            "中芯国际在上海、北京、深圳、天津各有一座12英寸晶圆厂在建(来源：BOSS直聘招聘信息)",
+            "一座12英寸晶圆厂每天消耗约1.82万吨超纯水(来源：知乎产业分析)",
+            "参考案例：长鑫集电(北京)纯废水项目由中电环境承建，超纯水产能490T/H，废水处理规模47540T/D(来源：百度百家号)"
           ],
           "inferences": [
-            "产能扩张意味着新建洁净室和超纯水系统需求",
-            "半导体制造是超纯水消耗大户，废水成分复杂(含氟/重金属/酸碱)",
-            "高产能利用率下扩产意愿强"
+            "CapEx 18.357亿美元/季度是财务指标，实际月产能仅增1.7%(107.83→109.65万片)，说明大部分CapEx用于设备采购和先进制程研发，非全部用于新建厂房",
+            "但临港Fab9二期工程是明确的新建厂房项目(29.57亿元/357,141m²/P3土建+P4桩基)，必然需要新建超纯水系统和废水处理系统",
+            "半导体晶圆制造每道工序(硅片清洗/光刻显影/刻蚀后清洗/CMP抛光/湿法清洗)均依赖超纯水，新建Fab=新建水系统基础设施",
+            "长鑫集电案例证明半导体新建厂房的超纯水+废水EPC项目规模可达490T/H+47540T/D级别"
           ],
           "unknowns": [
-            "具体扩建项目的水系统建设信息",
-            "中芯国际现有水系统供应商",
-            "Hach在中芯国际的installed base"
+            "临港Fab9二期水系统EPC由谁承建(是否已招标)",
+            "中芯国际现有基地(上海/北京/天津/深圳)水系统供应商",
+            "Hach在中芯国际的installed base(无法从公开信息确认)",
+            "Fab9二期水系统具体技术规格和监测仪表需求清单",
+            "水系统招标时间窗口(目前处于厂房土建阶段)"
           ]
         },
         "potential_ims_use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
-        "logic": "CapEx(18亿美元/季度) → 12英寸产线扩充 → 超纯水系统+废水处理需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "logic": "临港Fab9二期总包工程已招标(29.57亿元/P3土建+P4桩基) → 新建Fab厂房 → 必然新建超纯水系统(UPW)+废水处理系统 → 水质监测仪表需求 → 参考长鑫案例(490T/H UPW + 47540T/D废水) → 潜在IMS机会(超纯水监测+含氟/重金属废水在线监测)",
         "opportunity_stage": "Potential Industrial Opportunity",
         "estimated_time_window": "2026 H2 - 2028",
         "priority": "P2",
-        "water_system_ownership": "D",
+        "water_system_ownership": "A",
         "incrementality_status": "unknown",
         "source_urls": [
           "https://baijiahao.baidu.com/s?id=1873416244696806650&wfr=spider&for=pc",
-          "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc"
+          "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc",
+          "https://zhuanlan.zhihu.com/p/2058697357294827474",
+          "https://zhuanlan.zhihu.com/p/2062117486665979468",
+          "https://baijiahao.baidu.com/s?id=1867623250849467661&wfr=spider&for=pc",
+          "https://www.zhipin.com/job_detail/360226d185531436031739S-E1dY.html"
         ],
         "to_verify": [
-          "customer_identity",
-          "installed_base",
-          "commercial_history",
-          "ims",
-          "account_sales"
+          "临港Fab9二期水系统EPC承建方和招标状态",
+          "Fab9二期水系统监测仪表需求清单和技术规格",
+          "中芯国际现有基地水系统供应商和Hach installed base",
+          "Fab9二期水系统招标时间窗口(目前处于土建阶段)",
+          "SMIC水系统决策链(设施部/环保部/EPC方)"
         ],
         "continuity": {
           "first_seen": "2026-08-20",
-          "new_facts_today": "Q2财报资本开支18.357亿美元；产能利用率93.7%；销售收入首破30亿美元",
-          "changed": "new_signal"
+          "new_facts_today": "验证确认：产线扩充确实关联水系统。临港Fab9二期总包工程已招标(29.57亿元/357,141m²/P3土建+P4桩基/中建八局26.91亿)。半导体晶圆厂日均1.82万吨超纯水。长鑫案例参考490T/H UPW+47540T/D废水。Signal Tier从Tier2升级为Tier1。",
+          "changed": "tier_upgrade_T2_to_T1, evidence_expanded, water_system_ownership_D_to_A, source_urls_added_4"
         }
       },
-      "enrichment_status": "NEW_20260820",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [
         "PRJ-IND-20260820-06"
       ],
@@ -3673,7 +3686,7 @@
       "ims_recommendation": {
         "use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
         "priority": "P2",
-        "next_action": "RESEARCH_CONTACTS"
+        "next_action": "WATER_SYSTEM_EPC_TRACKING"
       },
       "enrichment_sources": [
         "DuMate"
