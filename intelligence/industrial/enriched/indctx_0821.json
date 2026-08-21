@@ -2,15 +2,17 @@
   "metadata": {
     "version": "v3.1",
     "generated_date": "2026-08-21",
-    "last_update": "2026-08-21T10:05:00+08:00",
-    "description": "iMS Industrial Master Intelligence - Contact Intelligence Update",
+    "last_update": "2026-08-21T10:30:00+08:00",
+    "description": "iMS Industrial Master Intelligence - Contact Completion for IND-20260817 batch",
     "data_sources": [
       "DuMate websearch",
       "BOSS直聘",
       "猎聘",
+      "企查查",
       "天眼查",
-      "Jobui",
-      "百度新闻"
+      "政府官网",
+      "招标网",
+      "企信宝"
     ],
     "previous_version": "20260820"
   },
@@ -4083,6 +4085,169 @@
       },
       "enrichment_sources": [
         "DuMate"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "original_signal": {
+        "opportunity": "原料药产业化基地二期项目环评审批通过（蚌环许〔2026〕87号），新增原料药17吨/年产能",
+        "company_name": "安徽渠源药业有限公司",
+        "industry": "pharma",
+        "province": "安徽蚌埠精细化工高新技术产业基地"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0014",
+        "CT-20260821-0015",
+        "CT-20260821-0016"
+      ],
+      "contact_summary": "3 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "安徽渠源药业有限公司 - pharma - Design",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "original_signal": {
+        "opportunity": "原料药建设项目环评公示 (1.93亿投资)",
+        "company_name": "奥锐特药业有限公司",
+        "industry": "pharma",
+        "province": "浙江台州天台县"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0017",
+        "CT-20260821-0018",
+        "CT-20260821-0019",
+        "CT-20260821-0020"
+      ],
+      "contact_summary": "4 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "奥锐特药业有限公司 - pharma - Planning",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "original_signal": {
+        "opportunity": "芦荟大黄素+双醋瑞因原料药项目环评 (8500万投资)",
+        "company_name": "台州达辰药业有限公司",
+        "industry": "pharma",
+        "province": "浙江台州湾经济技术开发区"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0021",
+        "CT-20260821-0022"
+      ],
+      "contact_summary": "2 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "台州达辰药业有限公司 - pharma - Planning",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "original_signal": {
+        "opportunity": "5-氟胞嘧啶技改扩建项目 (150t/a -> 450t/a)",
+        "company_name": "新乡华康制药有限公司",
+        "industry": "pharma",
+        "province": "河南新乡延津县"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0023"
+      ],
+      "contact_summary": "1 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "新乡华康制药有限公司 - pharma - Design",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "original_signal": {
+        "opportunity": "860吨医药中间体技改项目环评",
+        "company_name": "河南鼎新医药科技有限公司",
+        "industry": "pharma",
+        "province": "河南新乡高新区"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0025"
+      ],
+      "contact_summary": "1 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "河南鼎新医药科技有限公司 - pharma - Planning",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "original_signal": {
+        "opportunity": "第二污水处理厂EPC项目 (2.07亿，暂停中)",
+        "company_name": "云南泸西产业园区",
+        "industry": "cross_industry",
+        "province": "云南红河泸西县"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0026",
+        "CT-20260821-0027",
+        "CT-20260821-0028"
+      ],
+      "contact_summary": "3 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "云南泸西产业园区 - cross_industry - Paused",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
+      ]
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "original_signal": {
+        "opportunity": "稀土工业园区污水零直排建设",
+        "company_name": "福建龙岩稀土工业园区",
+        "industry": "petrochemical",
+        "province": "福建龙岩"
+      },
+      "enrichment_status": "agent_discovered",
+      "project_ids": [],
+      "account_ids": [],
+      "contact_ids": [
+        "CT-20260821-0029",
+        "CT-20260821-0030"
+      ],
+      "contact_summary": "2 contacts found",
+      "organization_map_id": null,
+      "missing_roles": [],
+      "ims_recommendation": "福建龙岩稀土工业园区 - petrochemical - Execution",
+      "enrichment_sources": [
+        "DuMate websearch 2026-08-21"
       ]
     }
   ],
@@ -19308,6 +19473,438 @@
       "cross_agent_confirmation": false,
       "human_verified": false,
       "notes": "万华化学董事长，福建48万吨甲醛项目决策层"
+    },
+    {
+      "contact_id": "CT-20260821-0014",
+      "name": "彭家仕",
+      "company": "安徽渠源药业有限公司",
+      "title": "法定代表人",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "安徽渠源药业法定代表人，注册资本9000万元",
+      "phone": null,
+      "email": null,
+      "source": "qcc/tianyancha",
+      "source_url": "https://www.qcc.com/firm/fd138ee4357633037601f5ac1c0c56a7.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-001"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 3,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "渠源药业法人，2026年入选省级清洁生产审核重点企业名单"
+    },
+    {
+      "contact_id": "CT-20260821-0015",
+      "name": "张善春",
+      "company": "合肥合源药业有限公司",
+      "title": "法定代表人",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "合肥合源药业法定代表人，渠源药业母公司",
+      "phone": null,
+      "email": null,
+      "source": "qixin",
+      "source_url": "http://qixin.com/company/5ddda608-d4a3-44e7-92f4-5f62a7dd7f7c",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-001"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 3,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "母公司合源药业法人，注册资本1亿元，高新区，256人"
+    },
+    {
+      "contact_id": "CT-20260821-0016",
+      "name": "UNKNOWN_EIA_AGENCY",
+      "company": "安徽省柏瑞环保科技咨询有限公司",
+      "title": "环评编制单位",
+      "role": "B",
+      "role_class": "B",
+      "role_description": "渠源药业二期环评编制单位(2024-11-26公示)",
+      "phone": null,
+      "email": null,
+      "source": "tianyancha",
+      "source_url": "https://www.tianyancha.com/steam/3362051974-bf70",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-001"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 5,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "渠源药业环评供应商，EIA机构已确认，需进一步找具体联系人"
+    },
+    {
+      "contact_id": "CT-20260821-0017",
+      "name": "彭志恩",
+      "company": "奥锐特药业股份有限公司",
+      "title": "董事长/法定代表人",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "奥锐特药业(605116.SH)董事长，注册资本4.06亿元，2025年营收16.97亿元",
+      "phone": null,
+      "email": "ir@aurisco.com",
+      "source": "qcc/tianyancha",
+      "source_url": "https://www.qcc.com/firm/d324daf15153624b8d20ceb724d8f635.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-006"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 3,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "上市公司董事长，ir@aurisco.com为投资者关系邮箱(非个人)"
+    },
+    {
+      "contact_id": "CT-20260821-0018",
+      "name": "徐先生",
+      "company": "奥锐特药业股份有限公司",
+      "title": "HR经理",
+      "role": "C",
+      "role_class": "C",
+      "role_description": "BOSS直聘HR经理，负责生产管理储备等岗位招聘",
+      "phone": null,
+      "email": null,
+      "source": "zhipin",
+      "source_url": "https://www.zhipin.com/gongsi/job/0505ce7ff7e1d3f21XR63d-6Elc~.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-006"
+      ],
+      "evidence_score": 4,
+      "commercial_relevance_score": 5,
+      "contact_status": "PATH_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "HR经理，可请求引荐EHS/安全技术团队"
+    },
+    {
+      "contact_id": "CT-20260821-0019",
+      "name": "夏先生",
+      "company": "奥锐特药业股份有限公司",
+      "title": "人事管理员",
+      "role": "C",
+      "role_class": "C",
+      "role_description": "BOSS直聘人事管理员，负责安全技术员/EHS工程师/工艺研发员招聘",
+      "phone": null,
+      "email": null,
+      "source": "zhipin",
+      "source_url": "https://www.zhipin.com/job_detail/6db5f9c1f7ffaa2303Nz3t--E1NR.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-006"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 6,
+      "contact_status": "PATH_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "直接负责安全技术员和EHS工程师招聘，说明有EHS团队和需求"
+    },
+    {
+      "contact_id": "CT-20260821-0020",
+      "name": "罗女士",
+      "company": "奥锐特药业股份有限公司",
+      "title": "招聘主管",
+      "role": "C",
+      "role_class": "C",
+      "role_description": "BOSS直聘招聘主管，负责生产QA和制剂研发QA主管招聘",
+      "phone": null,
+      "email": null,
+      "source": "zhipin",
+      "source_url": "https://www.zhipin.com/gongsi/job/0505ce7ff7e1d3f21XR63d-6Elc~.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-006"
+      ],
+      "evidence_score": 4,
+      "commercial_relevance_score": 4,
+      "contact_status": "PATH_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "招聘主管，负责QA岗位，可切入质量/合规话题"
+    },
+    {
+      "contact_id": "CT-20260821-0021",
+      "name": "姜礼进",
+      "company": "台州达辰药业有限公司",
+      "title": "法定代表人",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "台州达辰药业法定代表人，注册资本1.2亿元，参保330人",
+      "phone": null,
+      "email": "office@dachenpharm.com",
+      "source": "qcc",
+      "source_url": "https://www.qcc.com/firm/a0abb3cb99bf681651fc530fa7453349.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-007"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 4,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "office@dachenpharm.com为公司通用邮箱(非个人)，国家级高新技术企业"
+    },
+    {
+      "contact_id": "CT-20260821-0022",
+      "name": "郑国定",
+      "company": "台州达辰药业有限公司",
+      "title": "董事长",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "台州达辰药业董事长",
+      "phone": null,
+      "email": null,
+      "source": "qcc",
+      "source_url": "https://www.qcc.com/firm/a0abb3cb99bf681651fc530fa7453349.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-007"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 3,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "董事长，专精特新中小企业，省级企业技术中心"
+    },
+    {
+      "contact_id": "CT-20260821-0023",
+      "name": "UNKNOWN_EIA_AGENCY",
+      "company": "河南蓝天环境工程有限公司",
+      "title": "环评编制单位",
+      "role": "B",
+      "role_class": "B",
+      "role_description": "新乡华康制药原料药及医药中间体技改项目环评编制单位",
+      "phone": null,
+      "email": null,
+      "source": "government",
+      "source_url": "http://sthjj.xinxiang.gov.cn/zwgk/public/6638717/9705185.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-008"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 5,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "环评编制机构已确认，废水依托新乡制药3500m3/d污水处理站，排入延津县第二污水处理厂"
+    },
+    {
+      "contact_id": "CT-20260821-0025",
+      "name": "杨邵华",
+      "company": "新乡拓新药业股份有限公司",
+      "title": "拓新集团总裁",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "拓新集团总裁，鼎新医药母公司(301089.SZ)高管",
+      "phone": null,
+      "email": null,
+      "source": "xxu.edu.cn",
+      "source_url": "https://www.xxu.edu.cn/info/1029/17741.htm",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-009"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 4,
+      "contact_status": "IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "拓新集团总裁，鼎新医药母公司决策层，创业板上市"
+    },
+    {
+      "contact_id": "CT-20260821-0026",
+      "name": "UNKNOWN_EPC_BIDDER_1",
+      "company": "中国建筑第五工程局有限公司",
+      "title": "EPC中标第一候选人",
+      "role": "B",
+      "role_class": "B",
+      "role_description": "云南泸西第二污水处理厂EPC总承包第一中标候选人，联合体: 云南省设计院集团",
+      "phone": null,
+      "email": null,
+      "source": "bidizhaobiao/toutiao",
+      "source_url": "https://www.toutiao.com/article/7670105449840017955/",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-012"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 7,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "EPC第一中标候选人(2026-07-31公示)，项目8/11暂停。规模9000m3/d工业污水厂。联合体: 云南省设计院集团。仪表采购由EPC总包方决策"
+    },
+    {
+      "contact_id": "CT-20260821-0027",
+      "name": "UNKNOWN_EPC_BIDDER_2",
+      "company": "云南建投红河建设有限公司",
+      "title": "EPC中标第二候选人",
+      "role": "B",
+      "role_class": "B",
+      "role_description": "第二中标候选人，联合体: 麦王环境技术+中国市政工程华北设计研究总院",
+      "phone": null,
+      "email": null,
+      "source": "toutiao",
+      "source_url": "https://www.toutiao.com/article/7670105449840017955/",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-012"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 5,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "EPC第二候选人，联合体含麦王环境技术(专业水处理)和中国市政工程华北设计研究总院"
+    },
+    {
+      "contact_id": "CT-20260821-0028",
+      "name": "UNKNOWN_OWNER",
+      "company": "泸西净源水务有限公司",
+      "title": "招标人/业主",
+      "role": "A",
+      "role_class": "A",
+      "role_description": "云南泸西产业园区第二污水处理厂项目招标人/业主方",
+      "phone": null,
+      "email": null,
+      "source": "bidizhaobiao",
+      "source_url": "https://m.bidizhaobiao.com/company_564703437044273152.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-012"
+      ],
+      "evidence_score": 5,
+      "commercial_relevance_score": 7,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "项目业主方，A类销售目标。项目当前暂停(8/11公告)，恢复后产生仪表采购需求"
+    },
+    {
+      "contact_id": "CT-20260821-0029",
+      "name": "UNKNOWN_BID_AGENCY",
+      "company": "福建省闽招咨询管理有限公司",
+      "title": "招标代理",
+      "role": "C",
+      "role_class": "C",
+      "role_description": "龙岩稀土工业园区污水零直排建设项目招标代理",
+      "phone": null,
+      "email": null,
+      "source": "ggzy.longyan.gov.cn",
+      "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/007002003001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-013"
+      ],
+      "evidence_score": 4,
+      "commercial_relevance_score": 4,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "招标代理，污水零直排项目(一期)8/12答疑纪要，信息窗口"
+    },
+    {
+      "contact_id": "CT-20260821-0030",
+      "name": "UNKNOWN_OWNER",
+      "company": "福建省金龙稀土股份有限公司",
+      "title": "园区核心企业",
+      "role": "D",
+      "role_class": "D",
+      "role_description": "龙岩稀土工业园区核心企业，稀土冶炼分离+永磁材料",
+      "phone": null,
+      "email": null,
+      "source": "ggzy.longyan.gov.cn",
+      "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/007002003001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "discovered_date": "2026-08-21",
+      "lead_ids": [
+        "IND-20260817-013"
+      ],
+      "evidence_score": 4,
+      "commercial_relevance_score": 4,
+      "contact_status": "ENTITY_IDENTIFIED",
+      "cross_agent_confirmation": false,
+      "human_verified": false,
+      "current_historical": "CURRENT",
+      "notes": "园区核心企业，5000吨节能电机用高性能稀土永磁材料项目，园区污水零直排建设相关方"
     }
   ],
   "organization_maps": [
@@ -21134,18 +21731,258 @@
       "target_entity": "杰瑞再生循环",
       "account_id": "ACC-IND-20260820-11",
       "contact_id": "CT-20260820-0023"
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "Owner Water/Wastewater Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "Owner Facilities/Plant Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "Owner Instrumentation Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-001",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "Owner Water/Wastewater Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "CONTACT_IDENTIFIED",
+      "discovery_path": "DuMate websearch 2026-08-21"
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "Owner Facilities/Plant Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "Owner Instrumentation Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-006",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "Owner Water/Wastewater Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "Owner Facilities/Plant Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "Owner Instrumentation Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-007",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "Owner Water/Wastewater Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "Owner Facilities/Plant Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "Owner Instrumentation Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-008",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "Owner Water/Wastewater Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "Owner Facilities/Plant Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "Owner Instrumentation Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-009",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "role_needed": "Owner Water Treatment Manager",
+      "search_status": "ENTITY_IDENTIFIED",
+      "discovery_path": "DuMate websearch 2026-08-21"
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "role_needed": "EPC Project Manager",
+      "search_status": "ENTITY_IDENTIFIED",
+      "discovery_path": "DuMate websearch 2026-08-21"
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "role_needed": "EPC Technical Lead",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-012",
+      "role_needed": "Tender/Bid Contact",
+      "search_status": "ENTITY_IDENTIFIED",
+      "discovery_path": "DuMate websearch 2026-08-21"
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "role_needed": "Owner Water Treatment Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "role_needed": "Owner EHS Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "role_needed": "EPC Project Manager",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "role_needed": "Design Institute Water System Engineer",
+      "search_status": "NOT_STARTED",
+      "discovery_path": ""
+    },
+    {
+      "lead_id": "IND-20260817-013",
+      "role_needed": "Tender/Bid Contact",
+      "search_status": "ENTITY_IDENTIFIED",
+      "discovery_path": "DuMate websearch 2026-08-21"
     }
   ],
   "agent_statistics": {
-    "total_contacts": 245,
+    "total_contacts": 261,
     "by_agent": {
-      "DuMate": 110,
+      "DuMate": 126,
       "WorkBuddy": 42,
       "Perplexity": 94,
       "Claude": 6
     },
     "exclusive_by_agent": {
-      "DuMate": 103,
+      "DuMate": 119,
       "Perplexity": 92,
       "Claude": 6,
       "WorkBuddy": 37
@@ -21162,7 +21999,7 @@
     "quad_agent_confirmed": 0,
     "cross_agent_confirmed_total": 7,
     "human_verified_total": 0,
-    "new_contacts_added": 148,
+    "new_contacts_added": 164,
     "contacts_merged": 42,
     "possible_duplicates": 1,
     "cross_agent_confirmed": 7
@@ -21170,7 +22007,7 @@
   "data_quality": {
     "total_contacts": 232,
     "contacts_with_phone": 90,
-    "contacts_with_email": 41,
+    "contacts_with_email": 43,
     "contacts_with_both": 38,
     "class_distribution": {
       "D": 71,
@@ -21983,6 +22820,17 @@
         "websearch: 楚能/贝特瑞/中芯国际/多氟多/杰瑞/万华化学 EHS+HR+管理层"
       ],
       "notes": "定向搜索PATH_IDENTIFIED和NOT_STARTED的missing roles，发现13个新联系人，更新6个lead的missing roles状态"
+    },
+    {
+      "date": "2026-08-21",
+      "action": "Contact Completion - IND-20260817 batch (7 leads)",
+      "new_contacts_added": 16,
+      "new_leads_added": 7,
+      "new_missing_roles": 40,
+      "sources": [
+        "websearch: 渠源药业/奥锐特药业/达辰药业/华康制药/鼎新医药/泸西污水厂/龙岩稀土园"
+      ],
+      "notes": "7个IND-20260817批次Lead联系人补全: 16个新联系人, 7个新Lead加入Master"
     }
   ]
 }
