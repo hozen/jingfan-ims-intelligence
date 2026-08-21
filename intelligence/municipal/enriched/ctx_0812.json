@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "report_id": "municipal-contact-intel-20260812",
+    "date": "2026-08-12",
+    "version": "1.0",
+    "description": "Municipal Water Project & Account Contact Intelligence (Backfill)",
+    "total_leads": 5,
+    "total_accounts": 5,
+    "total_contacts": 8,
+    "named_contacts": 6,
+    "a_class_contacts": 2,
+    "b_class_contacts": 2,
+    "c_class_contacts": 1,
+    "d_class_contacts": 3,
+    "total_missing_roles": 0,
+    "discovered_by": [
+      "DuMate"
+    ],
+    "source_radar": "radar-20260812",
+    "backfill": true
+  },
+  "leads": [
+    {
+      "id": "ML-20260812-0001",
+      "name": "固镇县汉兴水利建设投资(集团)有限公司",
+      "score": 65,
+      "match_priority": "A",
+      "opportunity_stage": "雷达发现-待验证",
+      "iMS_use_case": "4.4亿城乡供排水一体化工程，明确含水质在线监测站点+县域统一智慧水务管控平台。四大子项目覆盖供水+污水+管网+智慧水务全链条。9月7日公开招标，设计院尚未锁定。多站点+在线监测+平台建设三重叠加，iMS Use Case逻辑链完整。",
+      "contact_count": 3,
+      "a_class_count": 0,
+      "agent_checklist": [
+        "Customer Identity: 固镇县汉兴水利建投是否为Hach客户？Salesforce Account是否存在？",
+        "Installed Base: 固镇县现有水厂/污水厂的Hach仪表装机情况？",
+        "Commercial History: 历史销售/Opportunity？",
+        "iMS: 是否已有iMS或类似数字化产品？是否存在扩展机会？",
+        "Account/Sales: Account Owner？Regional Owner？"
+      ],
+      "source_radar_date": "2026-08-12"
+    },
+    {
+      "id": "ML-20260812-0002",
+      "name": "滑县城市供水有限公司",
+      "score": 50,
+      "match_priority": "B",
+      "opportunity_stage": "雷达发现-待验证",
+      "iMS_use_case": "5.5万m3/d水厂提升改造+84.42km管网+智慧水务系统建设。初步设计刚成交（中设建联工程设计），下一步进入施工招标。iMS逻辑链：智慧水务系统→需在线仪表→仪表数据管理。但单县域单水厂，多站点逻辑弱。",
+      "contact_count": 2,
+      "a_class_count": 0,
+      "agent_checklist": [
+        "Customer Identity: 滑县城市供水有限公司是否为Hach客户？",
+        "Installed Base: 是否有Hach仪表装机？",
+        "iMS: 是否已有数字化产品？",
+        "Ecosystem: 设计院（中设建联）是否可研编？"
+      ],
+      "source_radar_date": "2026-08-12"
+    },
+    {
+      "id": "ML-20260812-0003",
+      "name": "清水河县住房和城乡建设局",
+      "score": 47,
+      "match_priority": "B",
+      "opportunity_stage": "雷达发现-待验证",
+      "iMS_use_case": "智慧供水平台EPC智能化工程招标。明确含监测感知设施建设+数据资源中心+智慧水务系统开发。标书发售截止8月12日（今日），投标截止8月17日。招标在即，需求已固化，价值在于追溯设计院为下一个同类项目布局。",
+      "contact_count": 1,
+      "a_class_count": 1,
+      "agent_checklist": [
+        "Customer Identity: 清水河县是否为Hach客户？",
+        "Installed Base: 是否有Hach仪表装机？",
+        "Ecosystem: EPC总承包方（中铁一局）的智能化工程分包方是谁？"
+      ],
+      "source_radar_date": "2026-08-12"
+    },
+    {
+      "id": "ML-20260812-0004",
+      "name": "联合水务科技(603291)",
+      "score": 45,
+      "match_priority": "B",
+      "opportunity_stage": "雷达发现-待验证",
+      "iMS_use_case": "连续第二天跟踪。8月7日与上海交大AI实验室签约。今日无新增事实。AI合作仍聚焦工艺调度层，iMS Use Case=Unknown。持续关注是否从工艺AI延伸到设备运维层。",
+      "contact_count": 1,
+      "a_class_count": 0,
+      "agent_checklist": [
+        "Customer Identity: 是否为Hach客户？27家运营公司的仪表装机？",
+        "iMS: 是否已有iMS或类似数字化产品？"
+      ],
+      "source_radar_date": "2026-08-12"
+    },
+    {
+      "id": "ML-20260812-0005",
+      "name": "魏县水利局",
+      "score": 44,
+      "match_priority": "B",
+      "opportunity_stage": "雷达发现-待验证",
+      "iMS_use_case": "3.26亿管网改造项目，含868套感知设施+102套智慧泵房。预计8月18日发布招标公告（距今6天）。仍处于招标前阶段，无新增事实。持续跟踪招标发布。",
+      "contact_count": 1,
+      "a_class_count": 1,
+      "agent_checklist": [
+        "Customer Identity: 魏县是否为Hach客户？",
+        "Ecosystem: 可研编制方/设计院是谁？"
+      ],
+      "source_radar_date": "2026-08-12"
+    }
+  ],
+  "projects": [],
+  "accounts": [
+    {
+      "account_id": "AC-20260812-0001",
+      "account_name": "固镇县汉兴水利建设投资(集团)有限公司",
+      "account_type": "项目Lead",
+      "is_strategic": false,
+      "contact_ids": [
+        "CT-20260812-0001",
+        "CT-20260812-0002",
+        "CT-20260812-0003"
+      ],
+      "organization_map": {},
+      "missing_roles": []
+    },
+    {
+      "account_id": "AC-20260812-0002",
+      "account_name": "滑县城市供水有限公司",
+      "account_type": "项目Lead",
+      "is_strategic": false,
+      "contact_ids": [
+        "CT-20260812-0004",
+        "CT-20260812-0005"
+      ],
+      "organization_map": {},
+      "missing_roles": []
+    },
+    {
+      "account_id": "AC-20260812-0003",
+      "account_name": "清水河县住房和城乡建设局",
+      "account_type": "项目Lead",
+      "is_strategic": false,
+      "contact_ids": [
+        "CT-20260812-0006"
+      ],
+      "organization_map": {},
+      "missing_roles": []
+    },
+    {
+      "account_id": "AC-20260812-0004",
+      "account_name": "联合水务科技(603291)",
+      "account_type": "战略账户",
+      "is_strategic": true,
+      "contact_ids": [
+        "CT-20260812-0007"
+      ],
+      "organization_map": {},
+      "missing_roles": []
+    },
+    {
+      "account_id": "AC-20260812-0005",
+      "account_name": "魏县水利局",
+      "account_type": "战略账户",
+      "is_strategic": true,
+      "contact_ids": [
+        "CT-20260812-0008"
+      ],
+      "organization_map": {},
+      "missing_roles": []
+    }
+  ],
+  "contacts": [
+    {
+      "contact_id": "CT-20260812-0001",
+      "name": "陈宏发",
+      "company": "固镇县汉兴水利建设投资(集团)有限公司",
+      "department": null,
+      "title": "董事长、总经理、法定代表人",
+      "role": "D",
+      "phone": null,
+      "email": null,
+      "source_url": "https://m.tianyancha.com/sstaff/3480620782-23b8",
+      "evidence_score": 85,
+      "commercial_relevance_score": 65,
+      "commercial_contact_class": "D",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "注册资本3亿，国有独资，参与招投标1051次。邮箱951084094@qq.com"
+    },
+    {
+      "contact_id": "CT-20260812-0002",
+      "name": "王珂",
+      "company": "固镇县汉兴水利建设投资(集团)有限公司",
+      "department": null,
+      "title": "董事",
+      "role": "D",
+      "phone": null,
+      "email": null,
+      "source_url": "https://m.tianyancha.com/sstaff/3480620782-23b8",
+      "evidence_score": 65,
+      "commercial_relevance_score": 40,
+      "commercial_contact_class": "D",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "汉兴建投董事"
+    },
+    {
+      "contact_id": "CT-20260812-0003",
+      "name": "张磊",
+      "company": "固镇县汉兴水利建设投资(集团)有限公司",
+      "department": null,
+      "title": "监事",
+      "role": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://aiqicha.baidu.com/human_lTM-TogKuTwU1B122QZUZY1VyZy4EAfpG0SsQQtcnDQ",
+      "evidence_score": 60,
+      "commercial_relevance_score": 35,
+      "commercial_contact_class": "C",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "汉兴建投监事"
+    },
+    {
+      "contact_id": "CT-20260812-0004",
+      "name": "耿育林",
+      "company": "滑县城市供水有限公司",
+      "department": null,
+      "title": "副经理",
+      "role": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://heze.dzwww.com/qx/jc/202604/t20260429_17687696.htm",
+      "evidence_score": 75,
+      "commercial_relevance_score": 60,
+      "commercial_contact_class": "B",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "2026年4月赴鄄城考察智慧水务。关注管网漏损管控和智慧水务平台搭建"
+    },
+    {
+      "contact_id": "CT-20260812-0005",
+      "name": "卢飞",
+      "company": "滑县城市供水有限公司",
+      "department": null,
+      "title": "副经理",
+      "role": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://heze.dzwww.com/qx/jc/202604/t20260429_17687696.htm",
+      "evidence_score": 70,
+      "commercial_relevance_score": 55,
+      "commercial_contact_class": "B",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "2026年4月赴鄄城考察智慧水务"
+    },
+    {
+      "contact_id": "CT-20260812-0006",
+      "name": null,
+      "company": "清水河县住房和城乡建设局",
+      "department": null,
+      "title": "项目业主/招标人",
+      "role": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "radar-20260812",
+      "evidence_score": 65,
+      "commercial_relevance_score": 55,
+      "commercial_contact_class": "A",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "智慧供水平台EPC智能化工程。含监测感知+数据资源中心+智慧水务系统。投标截止8/17"
+    },
+    {
+      "contact_id": "CT-20260812-0007",
+      "name": "俞伟景",
+      "company": "江苏联合水务科技股份有限公司",
+      "department": null,
+      "title": "董事长、总裁",
+      "role": "D",
+      "phone": null,
+      "email": null,
+      "source_url": "https://baijiahao.baidu.com/s?id=1873933654093568680",
+      "evidence_score": 90,
+      "commercial_relevance_score": 65,
+      "commercial_contact_class": "D",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "联合水务创始人。27个运营公司，约300万m³/日规模。'智慧水务+AI+机器人'战略"
+    },
+    {
+      "contact_id": "CT-20260812-0008",
+      "name": null,
+      "company": "魏县水利局",
+      "department": null,
+      "title": "项目业主/招标人",
+      "role": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "http://ssl.hebpr.cn/hbggfwpt/jydt/003001/003001002/003001002001/20250116/d867acdc-3636-4013-a3aa-1161304b65c2.html",
+      "evidence_score": 70,
+      "commercial_relevance_score": 70,
+      "commercial_contact_class": "A",
+      "current_relevance": "CURRENT",
+      "discovered_by": [
+        "DuMate"
+      ],
+      "notes": "3.26亿管网改造项目业主。含868套感知设施+102套智慧泵房。勘察设计已完成，施工招标待发"
+    }
+  ],
+  "missing_roles": [],
+  "data_quality": {
+    "total_contacts": 8,
+    "named_contacts": 6,
+    "coverage_rate": 75.0,
+    "a_class": 2,
+    "b_class": 2,
+    "c_class": 1,
+    "d_class": 3
+  },
+  "next_best_actions": []
+}
