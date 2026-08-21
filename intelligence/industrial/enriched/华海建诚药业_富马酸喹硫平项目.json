@@ -1,0 +1,155 @@
+{
+  "lead_id": "ZJ-3",
+  "signal_id": "0819-005",
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "date_verified": "2026-08-21",
+  "verification_status": "VERIFIED",
+  "company": {
+    "name": "浙江华海建诚药业有限公司",
+    "parent_company": "华海药业（600521.SH）",
+    "relationship": "全资子公司",
+    "registered_capital": "3.5亿元人民币",
+    "location": "浙江省台州市台州湾经济技术开发区化工园区（南洋区块）东海第六大道三号",
+    "industry": "制药",
+    "baike_url": "https://baike.baidu.com/item/浙江华海建诚药业有限公司/51353574",
+    "company_website": "https://www.huahaipharm.com"
+  },
+  "project": {
+    "name": "年产550吨富马酸喹硫平项目",
+    "type": "原料药扩产",
+    "product": "富马酸喹硫平（Quetiapine Fumarate）",
+    "product_description": "第二代非典型抗精神病药物原料药",
+    "capacity": "550吨/年",
+    "location": "现有厂区内实施（非新建）",
+    "status": "环评报告书公示阶段",
+    "eia_announcement_date": "2026-08-13",
+    "eia_agency": "浙江泰诚环境科技有限公司"
+  },
+  "evidence": {
+    "facts": [
+      {
+        "type": "Fact",
+        "content": "台州市生态环境局2026年8月13日受理浙江华海建诚药业有限公司年产550吨富马酸喹硫平项目环境影响报告书并公示",
+        "source": "台州市生态环境局",
+        "url": "https://sthjj.zjtz.gov.cn/col/col1229896756/art/2026/art_91fc8a6c22a14d3a92f07841db3abc4e.html"
+      },
+      {
+        "type": "Fact",
+        "content": "浙江华海建诚药业位于台州湾经济技术开发区化工园区（南洋区块），本次项目在现有厂区内实施",
+        "source": "环评报告书公示",
+        "url": "https://www.huahaipharm.com/mtzx.html"
+      },
+      {
+        "type": "Fact",
+        "content": "项目建成形成年产550吨富马酸喹硫平生产能力",
+        "source": "环评报告书公示",
+        "url": "https://www.huahaipharm.com/mtzx.html"
+      },
+      {
+        "type": "Fact",
+        "content": "华海药业（600521.SH）2026年7月29日首款创新药IL-36R单抗获批上市，显示公司持续扩张",
+        "source": "华海药业官网",
+        "url": "https://www.huahaipharm.com/mtzx.html"
+      },
+      {
+        "type": "Fact",
+        "content": "华海药业临海川南分公司年产200吨替米沙坦等7个原料药建设项目已获得台州市生态环境局批复（台环建[2025]59号），2026年7月10日试生产信息公开",
+        "source": "华海药业官网",
+        "url": "https://www.huahaipharm.com/news/1180.html"
+      },
+      {
+        "type": "Fact",
+        "content": "浙江华海建诚药业另有140吨苯磺酸氨氯地平、20吨沙库巴曲钠、40吨沙库巴曲缬沙坦钠、70吨盐酸舍曲林项目环评一次公示（2026年8月18日）",
+        "source": "华海药业官网",
+        "url": "https://www.huahaipharm.com/news/1180.html"
+      },
+      {
+        "type": "Fact",
+        "content": "现有厂区废水经分质分类预处理，再经厂内废水处理设施处理后，出水水质能达到纳管标准",
+        "source": "环评一次公示",
+        "url": "https://www.huahaipharm.com/news/1180.html"
+      }
+    ],
+    "inferences": [
+      {
+        "type": "Inference",
+        "content": "550吨/年富马酸喹硫平为新增产能，现有废水处理设施可能需要升级或扩容以处理增加的废水量"
+      },
+      {
+        "type": "Inference",
+        "content": "制药废水（原料药生产）含高浓度有机物、特征污染物（含氮/含硫化合物），在线监测需求明确"
+      },
+      {
+        "type": "Inference",
+        "content": "华海药业集团持续扩产（临海川南+建诚+创新药），多基地多站点仪表统一管理需求可能上升"
+      },
+      {
+        "type": "Inference",
+        "content": "环评报告书公示阶段是早期介入窗口——项目尚未建设，仪表采购决策可能在设计阶段"
+      }
+    ],
+    "unknowns": [
+      {
+        "type": "Unknown",
+        "content": "现有废水处理设施的在线监测仪表品牌和数量"
+      },
+      {
+        "type": "Unknown",
+        "content": "550吨新增产能对应的废水量增量"
+      },
+      {
+        "type": "Unknown",
+        "content": "废水处理设施是否需要扩建"
+      },
+      {
+        "type": "Unknown",
+        "content": "华海药业集团是否已有Hach仪表装机"
+      }
+    ]
+  },
+  "logic": "制药原料药扩产（550吨/年）→ 废水量增加 → 现有废水处理设施可能需升级监测 → 在线监测仪表需求 → Hach/iMS机会",
+  "potential_ims_use_case": "Compliance Monitoring + Instrument Health Diagnostics — 制药废水处理站进出水水质在线监测（COD/氨氮/特征污染物），多基地统一数据管理",
+  "use_cases": ["Compliance Monitoring", "Instrument Health Diagnostics", "Multi-site Management"],
+  "stage": "环评",
+  "estimated_time_window": "6-12 months（环评报告书公示中，预计2027年建设投产）",
+  "priority": "P2",
+  "score": 65,
+  "confidence": "High — 环评公示已确认，企业实体已验证，项目内容明确",
+  "water_system_ownership": "A",
+  "incrementality_status": "unknown",
+  "to_verify": {
+    "customer_identity": "华海药业集团（600521.SH）是否为Hach现有客户？",
+    "installed_base": "华海建诚药业现有废水处理站是否已安装在线监测仪表？仪表品牌？",
+    "commercial_history": "华海药业集团历史采购记录？",
+    "ims": "华海药业集团是否已有数字化水管理平台？",
+    "account_sales": "台州建诚药业厂务/环保负责人？华海药业集团采购决策链？"
+  },
+  "continuity": {
+    "first_seen": "2026-08-19",
+    "status": "VERIFIED",
+    "previous_status": "agent_discovered (empty evidence)",
+    "changed": "2026-08-21: 从empty evidence回填完整证据链，验证通过"
+  },
+  "source_urls": [
+    "https://sthjj.zjtz.gov.cn/col/col1229896756/art/2026/art_91fc8a6c22a14d3a92f07841db3abc4e.html",
+    "https://www.huahaipharm.com/mtzx.html",
+    "https://www.huahaipharm.com/news/1180.html",
+    "https://baike.baidu.com/item/浙江华海建诚药业有限公司/51353574"
+  ],
+  "additional_projects": [
+    {
+      "name": "年产140吨苯磺酸氨氯地平、20吨沙库巴曲钠、40吨沙库巴曲缬沙坦钠、70吨盐酸舍曲林项目",
+      "status": "环评一次公示（2026-08-18）",
+      "location": "同一厂区",
+      "note": "4个原料药品种同时扩产，废水增量可能叠加"
+    },
+    {
+      "name": "临海川南分公司年产200吨替米沙坦等7个原料药建设项目",
+      "status": "试生产阶段（2026-07-10信息公开）",
+      "location": "临海头门港新区",
+      "note": "华海药业集团另一基地，多基地管理需求"
+    }
+  ],
+  "data_quality_note": "此Lead最初由enrichment agent于2026-08-19发现，但evidence/source_urls均为空。2026-08-21由主Agent搜索验证，确认信号真实且高价值。建议enrichment agent回填时必须包含source_urls和至少1条Fact。"
+}
