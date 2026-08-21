@@ -3517,54 +3517,69 @@
       "original_signal": {
         "id": "IND-20260820-05",
         "market_segment": "industrial",
-        "company": "比亚迪(BYD)",
-        "account": "比亚迪股份有限公司",
+        "company": "比亚迪(BYD)/淮海弗迪",
+        "account": "淮海弗迪钠电池科技(徐州)有限公司(比亚迪弗迪电池+淮海控股合资)",
         "industry": "新能源/电池",
-        "location": "江苏徐州",
-        "opportunity": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+        "location": "江苏徐州经开区",
+        "opportunity": "淮海弗迪钠电池(徐州)基地 — 总投资100亿元，一期15GWh已量产，二期15GWh建设中",
         "signal_tier": "Tier 2",
         "engine": "B",
         "evidence": {
           "facts": [
-            "比亚迪徐州基地2026年3月正式开工",
-            "总投资100亿元，一期15GWh预计2026Q4满产",
-            "全部30GWh产能计划2027年建成达产",
-            "生产第三代刀片钠离子电芯(200Ah)"
+            "比亚迪与淮海控股2023年6月签署战略合作协议，以合资公司方式在徐州经开区建设钠离子电池生产基地(来源：OFweek锂电)",
+            "项目全称：淮海弗迪钠电池(徐州)钠离子电池基地(来源：东方财富股吧)",
+            "总投资100亿元，规划总产能30GWh，分两期建设，一期15GWh(来源：多个公开报道)",
+            "2024年1月4日正式开工奠基；一期厂房主体建筑全部完工，设备安装调试完成(来源：东方财富股吧/2026年7月更新)",
+            "2026年2月首批钠离子电芯正式下线量产，已进入规模化出货阶段(来源：东方财富股吧)",
+            "当前月产能85MWh，处于爬坡阶段；2026全年规划出货量1.1GWh；一期15GWh预计2026Q4满产(来源：东方财富股吧)",
+            "全部30GWh产能计划2027年全面建成达产(来源：东方财富股吧)",
+            "生产第三代刀片钠离子电芯(200Ah)(来源：原始信号)",
+            "徐州经开区2026年6月发布污水处理厂污泥处置服务项目招标(预算657万元)，但属市政污泥处置，非工业废水(来源：江苏政府采购网)"
           ],
           "inferences": [
-            "钠电池制造工艺与锂电池类似，需工业废水处理",
-            "新建工厂需要配套水系统建设"
+            "项目已进入规模化出货阶段(2026年2月首批下线)，一期厂房和设备已完成，水系统建设大概率已完成",
+            "二期15GWh仍在建设中(计划2027年达产)，可能存在水系统扩容或新增需求",
+            "钠电池制造工艺与锂电池类似，涉及电解液配制、电极涂布、化成等环节，产生含氟/有机溶剂废水",
+            "但一期已量产意味着一期水系统已建成并运行，二期才是增量机会窗口",
+            "徐州经开区污泥处置招标属市政项目，与BYD徐州基地无直接关联"
           ],
           "unknowns": [
-            "水系统建设具体方案和进度",
-            "是否已有水处理设备供应商确定",
-            "Hach在比亚迪现有基地的installed base"
+            "一期水系统的具体承建方、技术方案、监测仪表配置",
+            "二期水系统是否已设计/招标/建设",
+            "比亚迪徐州基地水系统供应商",
+            "Hach在比亚迪任何基地(深圳/西安/长沙/徐州等)的installed base",
+            "二期水系统监测仪表的采购时间窗口",
+            "钠电池制造废水与锂电池废水的具体成分差异及对监测仪表的影响"
           ]
         },
-        "potential_ims_use_case": "钠电池制造废水在线监测 + 水系统管理",
-        "logic": "CapEx(100亿) → 钠电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "potential_ims_use_case": "钠电池制造废水在线监测(二期扩容) + 水系统生命周期智能管理(一期存量机会)",
+        "logic": "BYD徐州钠电池基地一期已量产(2026年2月) → 一期水系统大概率已完成 → 机会窗口在二期15GWh(2027年达产)或一期存量仪表维护升级。→ 不是新建项目的水系统机会，而是扩容/增量/存量机会。",
         "opportunity_stage": "Potential Industrial Opportunity",
-        "estimated_time_window": "2026 Q4 - 2027 (一期投产/二期建设)",
+        "estimated_time_window": "2026-2027 (二期水系统设计和建设阶段)",
         "priority": "P2",
-        "water_system_ownership": "D",
+        "water_system_ownership": "A",
         "incrementality_status": "unknown",
         "source_urls": [
-          "https://baijiahao.baidu.com/s?id=1872792223347954846&wfr=spider&for=pc"
+          "https://libattery.ofweek.com/2023-06/ART-36008-8120-30599684.html",
+          "https://guba.eastmoney.com/news,0.002594,1741887790.html",
+          "https://www.yoojia.com/article/9159100466745574555.html",
+          "https://baijiahao.baidu.com/s?id=1783255096368518835&wfr=spider&for=pc",
+          "http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202606/t20260611_26730506.htm"
         ],
         "to_verify": [
-          "customer_identity",
-          "installed_base",
-          "commercial_history",
-          "ims",
-          "account_sales"
+          "二期15GWh水系统的设计进度和招标状态",
+          "一期水系统承建方和技术方案",
+          "Hach在比亚迪集团的installed base(任何基地)",
+          "钠电池制造废水的具体监测参数和仪表规格",
+          "二期水系统监测仪表采购时间窗口"
         ],
         "continuity": {
           "first_seen": "2026-08-20",
-          "new_facts_today": "徐州基地开工确认；投资100亿/30GWh产能规划；一期2026Q4满产时间表",
-          "changed": "new_signal"
+          "new_facts_today": "验证确认：一期已量产(2026年2月首批下线/当前月产能85MWh/2026Q4满产)。二期15GWh仍在建设中(2027年达产)。一期水系统大概率已完成，机会窗口在二期或存量维护。项目为BYD+淮海控股合资。Signal保持Tier2。",
+          "changed": "evidence_expanded, facts_added_5, logic_refined, time_window_clarified, opportunity_narrowed_to_phase2_or_installed_base"
         }
       },
-      "enrichment_status": "NEW_20260820",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [
         "PRJ-IND-20260820-05"
       ],
@@ -4127,12 +4142,68 @@
     {
       "lead_id": "IND-20260817-006",
       "original_signal": {
-        "opportunity": "原料药建设项目环评公示 (1.93亿投资)",
+        "opportunity": "年产100吨特色原料药生产线项目(投资1.93亿) + 年产5亿片司美格鲁肽片项目(投资7283万) + 扬州5个原料药项目(投资1.57亿)",
         "company_name": "奥锐特药业有限公司",
-        "industry": "pharma",
-        "province": "浙江台州天台县"
+        "industry": "制药",
+        "province": "浙江台州天台县",
+        "id": "IND-20260817-006",
+        "market_segment": "industrial",
+        "company": "奥锐特药业股份有限公司",
+        "account": "奥锐特药业股份有限公司(605116.SH)",
+        "location": "浙江台州天台县/江苏扬州",
+        "signal_tier": "Tier 2",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "奥锐特药业(605116.SH)成立于1998年，2020年9月上市，注册资本4.01亿元",
+            "台州天台八都厂区占地5.3万m²，建筑面积4.1万m²，职工约500人",
+            "新建年产100吨特色原料药生产线项目：总投资18,928.18万元，环保投资360万元，位于天台县苍山产业集聚区(来源：雪球/原料药情报局)",
+            "新建年产5亿片司美格鲁肽片及5亿片口服固体制剂生产线项目：总投资7,282.92万元，位于天台经济开发区化工园区苍山区块，环评2025年3月受理(来源：天台县政府公示)",
+            "废水处理：厂内已建处理能力600m³/d的废水处理设施，采用水解酸化+厌氧+两级A/O+混凝沉淀工艺，处理达标后纳入污水管网，最终由苍山污水处理厂处理(来源：环评公示)",
+            "扬州奥锐特(全资子公司)新建维贝格隆等5个原料药项目：投资15,700万元(环保投资145万元)，利用扬州生物科技园健安路28号现有厂房+新征地33亩，总建筑面积约12,000m²，2024年获环评批复(来源：扬州生态环境局)",
+            "天台县对奥锐特环评实施包办制，从报告编制到专家评审仅用14天，比正常审批提速近2个半月(来源：天台县政府)"
+          ],
+          "inferences": [
+            "多个项目同时进行(台州100吨原料药+司美格鲁肽片+扬州5个原料药)，表明企业在扩张期",
+            "废水处理设施600m³/d已运行，新增生产线可能产生增量废水，存在扩容或改造需求",
+            "环保投资占比仅1.9%(360万/1.93亿)，在制药行业属正常比例，但不能直接推导出大量新增仪表需求",
+            "扬州项目利用现有厂房+新征地，可能涉及新建或扩建水系统"
+          ],
+          "unknowns": [
+            "100吨特色原料药项目的具体建设进度(是否已开工/投产)",
+            "新增产能对现有600m³/d废水处理设施的负荷影响，是否需要扩容",
+            "奥锐特药业现有水系统监测仪表配置和供应商",
+            "Hach在奥锐特的installed base",
+            "水系统扩容或改造的招标计划和预算"
+          ]
+        },
+        "potential_ims_use_case": "制药废水处理系统扩容监测 + 新增生产线水质监测 + 在线COD/氨氮监测",
+        "logic": "原料药扩产项目(1.93亿+0.73亿+1.57亿) → 新增生产线 → 废水增量 → 现有600m³/d设施可能面临扩容或监测升级需求 → 潜在IMS机会(废水在线监测仪表)",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2025-2027 (台州项目可能已建设/扬州项目在建)",
+        "priority": "P3",
+        "water_system_ownership": "A",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://xueqiu.com/9212812525/356248247",
+          "https://www.zjtt.gov.cn/art/2025/3/11/art_1229824533_59178362.html",
+          "https://www.zjtt.gov.cn/art/2025/3/13/art_1229824533_59178440.html",
+          "https://hj.yangzhou.gov.cn/zfxxgk/bmzfxxgk/sthjj/fdzdgknr/ywgz/pfgg/art/2024/art_45c16977a1954a1abeab5017dc0ec02f.html",
+          "https://www.zjtz.gov.cn/art/2022/7/5/art_1229049735_59060415.html"
+        ],
+        "to_verify": [
+          "100吨原料药项目和司美格鲁肽片项目的具体建设进度",
+          "现有600m³/d废水处理设施的实际运行负荷和扩容计划",
+          "水系统监测仪表配置清单和现有供应商",
+          "Hach在奥锐特的installed base情况"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-17",
+          "new_facts_today": "验证确认：奥锐特药业有多个在建/拟建项目(100吨原料药1.93亿+司美格鲁肽片7283万+扬州5个原料药1.57亿)。废水处理设施600m³/d已运行。环评已通过。但具体水系统建设进度和仪表需求无法从公开信息确认。",
+          "changed": "evidence_expanded, facts_added_7, source_urls_added_5, logic_refined, priority_P2_to_P3"
+        }
       },
-      "enrichment_status": "agent_discovered",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [],
       "account_ids": [],
       "contact_ids": [
@@ -4175,12 +4246,63 @@
     {
       "lead_id": "IND-20260817-008",
       "original_signal": {
-        "opportunity": "5-氟胞嘧啶技改扩建项目 (150t/a -> 450t/a)",
+        "opportunity": "搜索未找到5-氟胞嘧啶150t/a→450t/a项目；发现其他项目：年产100吨辅酶Q10及300吨阿昔洛韦项目",
         "company_name": "新乡华康制药有限公司",
-        "industry": "pharma",
-        "province": "河南新乡延津县"
+        "industry": "制药",
+        "province": "河南新乡延津县",
+        "id": "IND-20260817-008",
+        "market_segment": "industrial",
+        "company": "新乡华康制药有限公司",
+        "account": "新乡华康制药有限公司(拓新药业集团关联)",
+        "location": "河南新乡延津县产业集聚区北区建文路16号",
+        "signal_tier": "Tier 3",
+        "engine": "B",
+        "evidence": {
+          "facts": [
+            "新乡华康制药有限公司：注册资本100万元，成立日期2023-05-16，法定代表人张志强，位于延津县产业集聚区北区建文路16号(来源：BOSS直聘)",
+            "新乡制药股份有限公司(关联企业)：注册资本1.25亿元，成立于1996年，位于延津县产业集聚区北区建文路16号，属拓新药业集团，员工633人(2025年)(来源：天眼查)",
+            "新乡华康制药与新乡制药股份注册地址相同(延津县产业集聚区北区建文路16号)",
+            "搜索未找到\"5-氟胞嘧啶 技改扩建 150t/a→450t/a\"项目的公开信息",
+            "发现新乡华康/新乡制药有\"年产100吨辅酶Q10及300吨阿昔洛韦项目\"环评批复(来源：bidchance)"
+          ],
+          "inferences": [
+            "5-氟胞嘧啶150t/a→450t/a项目信息可能来自非公开渠道或内部信息，无法公开验证",
+            "新乡华康制药作为2023年新成立的公司，注册资本仅100万元，可能是拓新药业的项目公司或子公司",
+            "延津县产业集聚区北区建文路16号地址同时注册新乡制药股份(1.25亿资本)和新乡华康(100万资本)，可能存在集团内部项目分工"
+          ],
+          "unknowns": [
+            "5-氟胞嘧啶150t/a→450t/a项目是否存在(原始信号可能基于非公开信息)",
+            "如项目存在，具体建设内容、投资规模、环保投资金额",
+            "水系统建设方案和监测仪表需求",
+            "新乡华康制药与新乡制药股份的具体关系(母子公司/兄弟公司)",
+            "Hach在拓新药业集团的installed base"
+          ]
+        },
+        "potential_ims_use_case": "制药废水在线监测(如项目存在且涉及水系统建设)",
+        "logic": "原始信号声称5-氟胞嘧啶技改扩建150t/a→450t/a，但公开搜索无法验证此项目。→ 信号降级为Tier 3 Watchlist。→ 如需继续跟进，需通过非公开渠道(如直接联系企业或行业内部信息)确认项目真实性。",
+        "opportunity_stage": "Industrial Signal",
+        "estimated_time_window": "Unknown",
+        "priority": "P3",
+        "water_system_ownership": "D",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "https://www.zhipin.com/gongsis/b014dbe207b40154i3V93NS4F1JSwA~~.html",
+          "https://www.tianyancha.com/company/2320477776",
+          "https://www.bidchance.com/info-freezjxm-80b968f11d537a9ea6892e492fb6c750.html"
+        ],
+        "to_verify": [
+          "5-氟胞嘧啶150t/a→450t/a项目是否真实存在(需非公开渠道验证)",
+          "如项目存在，获取具体环评文件和建设内容",
+          "新乡华康制药与新乡制药股份/拓新药业集团的股权关系",
+          "企业现有水系统配置和供应商"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-17",
+          "new_facts_today": "验证结果：5-氟胞嘧啶项目公开搜索无结果。发现企业关联关系(新乡华康=100万注册资本/2023年成立；新乡制药股份=1.25亿/拓新药业集团/633员工)。信号降级为Tier 3 Watchlist。",
+          "changed": "signal_tier_downgraded_to_T3, opportunity_stage_downgraded, evidence_added_unverified_status, source_urls_added_3"
+        }
       },
-      "enrichment_status": "agent_discovered",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [],
       "account_ids": [],
       "contact_ids": [
@@ -4243,12 +4365,71 @@
     {
       "lead_id": "IND-20260817-013",
       "original_signal": {
-        "opportunity": "稀土工业园区污水零直排建设",
+        "opportunity": "福建(龙岩)稀土工业园区污水零直排建设项目(一期) — 园区级基础设施",
         "company_name": "福建龙岩稀土工业园区",
-        "industry": "petrochemical",
-        "province": "福建龙岩"
+        "industry": "石化/化工",
+        "province": "福建龙岩",
+        "id": "IND-20260817-013",
+        "market_segment": "industrial",
+        "company": "福建龙岩稀土工业园区(福建龙岩稀土工业园开发建设有限公司)",
+        "account": "福建龙岩稀土工业园开发建设有限公司(国有独资)",
+        "location": "福建龙岩长汀县策武镇",
+        "signal_tier": "Tier 1",
+        "engine": "A",
+        "evidence": {
+          "facts": [
+            "福建(龙岩)稀土工业园区污水零直排建设项目用地控制性详细规划(草案)已于2026年3月5日通过审查并批前公告，公告期15天(来源：长汀县自然资源局)",
+            "项目一期已于2026年8月在龙岩市公共资源交易中心发布招标公告和答疑纪要(来源：龙岩市公共资源交易中心)",
+            "2026年8月12日，中稀金龙(长汀)稀土有限公司年产5000吨稀土冶炼分离技改搬迁项目在园区内奠基，总投资49,654.82万元(近5亿)，预计2027年6月建成投产(来源：百度百家号)",
+            "搬迁项目包含焙烧窑、酸溶槽、萃取槽、沉淀槽、灼烧设备、蒸发浓缩系统、氯化钙喷雾造粒系统等，工艺废水零排放(来源：环评批复)",
+            "金龙稀土公司长汀稀土园区110千伏输变电工程EPC已于2026年4月招标(来源：龙岩市公共资源交易中心)",
+            "福建龙岩稀土工业园开发建设有限公司：国有独资，注册资本5.8亿元，实缴5.8亿元，成立于2010年，参与招投标415次(来源：天眼查)",
+            "2026年5月20日，福建省金龙稀土股份有限公司3400吨稀土功能材料项目环评获批，配套建设废水处理间，采用汽提脱氨+MVR蒸发工艺，实现工艺废水零排放(来源：龙岩市生态环境局)"
+          ],
+          "inferences": [
+            "污水零直排建设项目(一期)已从规划阶段进入招标/执行阶段，是明确的园区级环保基础设施项目",
+            "5000吨稀土冶炼分离技改搬迁项目(近5亿投资)在园区内奠基，必然产生工业废水处理需求",
+            "稀土冶炼分离工艺(焙烧→酸溶→萃取→沉淀→灼烧)产生含重金属/酸碱废水，需要监测仪表",
+            "3400吨稀土功能材料项目配套废水处理间(汽提脱氨+MVR蒸发)，表明园区内企业自建水系统+园区集中管理的混合模式",
+            "这是一个园区级项目，不是单个企业项目，IMS机会形式可能是园区集中采购或企业分散采购"
+          ],
+          "unknowns": [
+            "污水零直排建设项目(一期)的具体建设内容、投资规模、技术方案",
+            "园区污水处理厂/废水处理设施的建设主体和运营主体",
+            "水系统监测仪表的具体需求和采购方式(园区统一招标/各企业分别采购)",
+            "Hach在龙岩稀土工业园或金龙稀土的installed base",
+            "项目招标进度和时间窗口"
+          ]
+        },
+        "potential_ims_use_case": "园区工业废水集中处理监测 + 稀土冶炼废水在线监测(重金属/酸碱/pH/COD) + 零排放系统监测",
+        "logic": "园区污水零直排建设项目招标(2026年8月) + 5000吨稀土冶炼搬迁项目奠基(近5亿投资/2027年6月投产) + 3400吨稀土功能材料项目配套废水处理间 → 园区级+企业级双重水系统建设需求 → 工业废水在线监测仪表需求 → 潜在IMS机会",
+        "opportunity_stage": "Potential Industrial Opportunity",
+        "estimated_time_window": "2026-2027 (零直排一期招标中/5000吨项目2027年6月投产)",
+        "priority": "P2",
+        "water_system_ownership": "B/C",
+        "incrementality_status": "unknown",
+        "source_urls": [
+          "http://www.changting.gov.cn/xwzx/gsgg/202603/t20260309_2280146.htm",
+          "https://ggzy.longyan.gov.cn/lyztb/gcjs/007005/moreinfo.html",
+          "https://baijiahao.baidu.com/s?id=1873426710061627850&wfr=spider&for=pc",
+          "https://ggzy.longyan.gov.cn/lyztb/gcjs/007009/007009001/007009001001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+          "https://www.tianyancha.com/company/754131859",
+          "https://sthjj.longyan.gov.cn/zwgk/xzsp/nspgs/202605/t20260520_2293065.htm"
+        ],
+        "to_verify": [
+          "污水零直排建设项目(一期)的具体招标内容和中标情况",
+          "园区废水处理设施的建设/运营主体和技术方案",
+          "5000吨稀土冶炼搬迁项目的水系统EPC承建方",
+          "Hach在金龙稀土或园区其他企业的installed base",
+          "园区是否有统一的水系统监测仪表采购计划"
+        ],
+        "continuity": {
+          "first_seen": "2026-08-17",
+          "new_facts_today": "验证确认：污水零直排项目已从规划进入招标阶段(2026年8月)。5000吨稀土冶炼搬迁项目奠基(近5亿/2027年6月投产)。3400吨稀土功能材料项目配套废水处理间(汽提脱氨+MVR蒸发)。园区开发公司国有独资/5.8亿注册资本/415次招投标。Signal Tier升级为Tier1。",
+          "changed": "signal_tier_upgraded, evidence_expanded, facts_added_7, source_urls_added_6, water_system_ownership_D_to_BC, opportunity_stage_defined"
+        }
       },
-      "enrichment_status": "agent_discovered",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [],
       "account_ids": [],
       "contact_ids": [

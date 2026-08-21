@@ -3527,54 +3527,69 @@
       "original_signal": {
         "id": "IND-20260820-05",
         "market_segment": "industrial",
-        "company": "比亚迪(BYD)",
-        "account": "比亚迪股份有限公司",
+        "company": "比亚迪(BYD)/淮海弗迪",
+        "account": "淮海弗迪钠电池科技(徐州)有限公司(比亚迪弗迪电池+淮海控股合资)",
         "industry": "新能源/电池",
-        "location": "江苏徐州",
-        "opportunity": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+        "location": "江苏徐州经开区",
+        "opportunity": "淮海弗迪钠电池(徐州)基地 — 总投资100亿元，一期15GWh已量产，二期15GWh建设中",
         "signal_tier": "Tier 2",
         "engine": "B",
         "evidence": {
           "facts": [
-            "比亚迪徐州基地2026年3月正式开工",
-            "总投资100亿元，一期15GWh预计2026Q4满产",
-            "全部30GWh产能计划2027年建成达产",
-            "生产第三代刀片钠离子电芯(200Ah)"
+            "比亚迪与淮海控股2023年6月签署战略合作协议，以合资公司方式在徐州经开区建设钠离子电池生产基地(来源：OFweek锂电)",
+            "项目全称：淮海弗迪钠电池(徐州)钠离子电池基地(来源：东方财富股吧)",
+            "总投资100亿元，规划总产能30GWh，分两期建设，一期15GWh(来源：多个公开报道)",
+            "2024年1月4日正式开工奠基；一期厂房主体建筑全部完工，设备安装调试完成(来源：东方财富股吧/2026年7月更新)",
+            "2026年2月首批钠离子电芯正式下线量产，已进入规模化出货阶段(来源：东方财富股吧)",
+            "当前月产能85MWh，处于爬坡阶段；2026全年规划出货量1.1GWh；一期15GWh预计2026Q4满产(来源：东方财富股吧)",
+            "全部30GWh产能计划2027年全面建成达产(来源：东方财富股吧)",
+            "生产第三代刀片钠离子电芯(200Ah)(来源：原始信号)",
+            "徐州经开区2026年6月发布污水处理厂污泥处置服务项目招标(预算657万元)，但属市政污泥处置，非工业废水(来源：江苏政府采购网)"
           ],
           "inferences": [
-            "钠电池制造工艺与锂电池类似，需工业废水处理",
-            "新建工厂需要配套水系统建设"
+            "项目已进入规模化出货阶段(2026年2月首批下线)，一期厂房和设备已完成，水系统建设大概率已完成",
+            "二期15GWh仍在建设中(计划2027年达产)，可能存在水系统扩容或新增需求",
+            "钠电池制造工艺与锂电池类似，涉及电解液配制、电极涂布、化成等环节，产生含氟/有机溶剂废水",
+            "但一期已量产意味着一期水系统已建成并运行，二期才是增量机会窗口",
+            "徐州经开区污泥处置招标属市政项目，与BYD徐州基地无直接关联"
           ],
           "unknowns": [
-            "水系统建设具体方案和进度",
-            "是否已有水处理设备供应商确定",
-            "Hach在比亚迪现有基地的installed base"
+            "一期水系统的具体承建方、技术方案、监测仪表配置",
+            "二期水系统是否已设计/招标/建设",
+            "比亚迪徐州基地水系统供应商",
+            "Hach在比亚迪任何基地(深圳/西安/长沙/徐州等)的installed base",
+            "二期水系统监测仪表的采购时间窗口",
+            "钠电池制造废水与锂电池废水的具体成分差异及对监测仪表的影响"
           ]
         },
-        "potential_ims_use_case": "钠电池制造废水在线监测 + 水系统管理",
-        "logic": "CapEx(100亿) → 钠电池工厂建设 → 废水处理系统需求 → 水质监测仪表需求 → 潜在IMS机会",
+        "potential_ims_use_case": "钠电池制造废水在线监测(二期扩容) + 水系统生命周期智能管理(一期存量机会)",
+        "logic": "BYD徐州钠电池基地一期已量产(2026年2月) → 一期水系统大概率已完成 → 机会窗口在二期15GWh(2027年达产)或一期存量仪表维护升级。→ 不是新建项目的水系统机会，而是扩容/增量/存量机会。",
         "opportunity_stage": "Potential Industrial Opportunity",
-        "estimated_time_window": "2026 Q4 - 2027 (一期投产/二期建设)",
+        "estimated_time_window": "2026-2027 (二期水系统设计和建设阶段)",
         "priority": "P2",
-        "water_system_ownership": "D",
+        "water_system_ownership": "A",
         "incrementality_status": "unknown",
         "source_urls": [
-          "https://baijiahao.baidu.com/s?id=1872792223347954846&wfr=spider&for=pc"
+          "https://libattery.ofweek.com/2023-06/ART-36008-8120-30599684.html",
+          "https://guba.eastmoney.com/news,0.002594,1741887790.html",
+          "https://www.yoojia.com/article/9159100466745574555.html",
+          "https://baijiahao.baidu.com/s?id=1783255096368518835&wfr=spider&for=pc",
+          "http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202606/t20260611_26730506.htm"
         ],
         "to_verify": [
-          "customer_identity",
-          "installed_base",
-          "commercial_history",
-          "ims",
-          "account_sales"
+          "二期15GWh水系统的设计进度和招标状态",
+          "一期水系统承建方和技术方案",
+          "Hach在比亚迪集团的installed base(任何基地)",
+          "钠电池制造废水的具体监测参数和仪表规格",
+          "二期水系统监测仪表采购时间窗口"
         ],
         "continuity": {
           "first_seen": "2026-08-20",
-          "new_facts_today": "徐州基地开工确认；投资100亿/30GWh产能规划；一期2026Q4满产时间表",
-          "changed": "new_signal"
+          "new_facts_today": "验证确认：一期已量产(2026年2月首批下线/当前月产能85MWh/2026Q4满产)。二期15GWh仍在建设中(2027年达产)。一期水系统大概率已完成，机会窗口在二期或存量维护。项目为BYD+淮海控股合资。Signal保持Tier2。",
+          "changed": "evidence_expanded, facts_added_5, logic_refined, time_window_clarified, opportunity_narrowed_to_phase2_or_installed_base"
         }
       },
-      "enrichment_status": "NEW_20260820",
+      "enrichment_status": "VERIFIED_20260822",
       "project_ids": [
         "PRJ-IND-20260820-05"
       ],
