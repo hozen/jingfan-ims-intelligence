@@ -1,0 +1,11 @@
+{
+  "contract_version": "1.0", "lead_id": "OPP-2026-08-21-0109", "lead_type": "municipal", "created_at": "2026-08-21T08:00:00+08:00", "updated_at": "2026-08-21T09:00:00+08:00", "pipeline_stage": "RADAR",
+  "signal": { "signal_type": "MULTI_SOURCE_DISCOVERY", "signal_description": "The same opportunity appeared in two public sources.", "signal_date": "2026-08-21" },
+  "evidence": [
+    { "evidence_id": "ev-i-1", "source_name": "示例采购平台", "source_url": "https://example.gov.cn/procurement/109", "source_type": "procurement", "published_at": "2026-08-21", "retrieved_at": "2026-08-21T08:00:00+08:00", "evidence_text": null, "evidence_summary": "采购平台披露项目。", "confidence": "HIGH", "contributed_by": "run-i" },
+    { "evidence_id": "ev-i-2", "source_name": "示例行业媒体", "source_url": "https://example.com/news/109", "source_type": "industry_media", "published_at": "2026-08-21", "retrieved_at": "2026-08-21T08:05:00+08:00", "evidence_text": null, "evidence_summary": "行业媒体报道同一项目。", "confidence": "MEDIUM", "contributed_by": "run-i" }
+  ],
+  "duplicate_of": ["OP-20260820-099"],
+  "provenance": [{ "contribution_id": "run-i", "generated_by": "AI", "agent": "synthetic-radar-agent", "model": "synthetic", "run_id": "fixture-i", "generated_at": "2026-08-21T09:00:00+08:00", "prompt_version": null, "evidence_refs": ["ev-i-1", "ev-i-2"], "notes": "Potential duplicate link is preserved; no automatic merge." }],
+  "pipeline_history": [{ "from": null, "to": "RADAR", "at": "2026-08-21T08:00:00+08:00", "reason": null, "provenance_ref": "run-i" }]
+}
