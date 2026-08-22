@@ -1,0 +1,159 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-H-001",
+  "vertical": "industrial",
+  "pipeline_stage": "ENRICHED",
+  "company": "Synthetic Electronics Manufacturer",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-H-001"
+  },
+  "evidence": {
+    "facts": [
+      "Company manufactures electronic components",
+      "New production facility announced in Zhejiang"
+    ],
+    "inferences": [
+      "Facility will require precision manufacturing water treatment"
+    ],
+    "unknowns": []
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-15T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-15T14:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-16T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-18T10:00:00Z"
+    },
+    {
+      "stage": "ENRICHED",
+      "entered_at": "2026-08-22T10:00:00Z",
+      "notes": "Multi-agent enrichment: DuMate and WorkBuddy both contributed"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-16T09:00:00Z",
+    "confidence": "HIGH"
+  },
+  "enrichment": {
+    "status": "COMPLETED",
+    "company_intelligence": {
+      "legal_name": "Synthetic Electronics Manufacturer Co., Ltd.",
+      "industry": "Electronics",
+      "location": "Zhejiang Province, China"
+    },
+    "contacts": [
+      {
+        "contact_id": "CT-FIXTURE-H-0001",
+        "name": "Liu Chen",
+        "company": "Synthetic Electronics Manufacturer",
+        "title": "Director of Operations",
+        "role": "A",
+        "discovered_by": [
+          "DuMate"
+        ],
+        "sources": [
+          "Company website"
+        ],
+        "evidence": [
+          {
+            "type": "PUBLIC_RECORD",
+            "detail": "Listed as Director of Operations on company website",
+            "source": "Official website",
+            "source_agent": "DuMate"
+          }
+        ],
+        "human_verified": false,
+        "verification_status": "PUBLIC_RECORD",
+        "cross_agent_confirmation": false
+      },
+      {
+        "contact_id": "CT-FIXTURE-H-0002",
+        "name": "Xu Fang",
+        "company": "Synthetic Electronics Manufacturer",
+        "title": "Chief Engineer",
+        "role": "B",
+        "discovered_by": [
+          "DuMate",
+          "WorkBuddy"
+        ],
+        "sources": [
+          "LinkedIn profile",
+          "Industry database"
+        ],
+        "evidence": [
+          {
+            "type": "PUBLIC_RECORD",
+            "detail": "LinkedIn profile confirms Chief Engineer role",
+            "source": "LinkedIn",
+            "source_agent": "DuMate",
+            "date": "2026-08-20T10:00:00Z"
+          },
+          {
+            "type": "PUBLIC_RECORD",
+            "detail": "Industry database lists as key technical personnel",
+            "source": "Industry research database",
+            "source_agent": "WorkBuddy",
+            "date": "2026-08-21T14:00:00Z"
+          }
+        ],
+        "human_verified": false,
+        "verification_status": "PUBLIC_RECORD",
+        "cross_agent_confirmation": true,
+        "notes": "Independently discovered by two agents, confirming contact reliability"
+      },
+      {
+        "contact_id": "CT-FIXTURE-H-0003",
+        "name": "Zhang Hui",
+        "company": "Synthetic Electronics Manufacturer",
+        "title": "Manufacturing Manager",
+        "role": "C",
+        "discovered_by": [
+          "WorkBuddy"
+        ],
+        "sources": [
+          "Company org directory"
+        ],
+        "human_verified": false,
+        "verification_status": "UNVERIFIED",
+        "cross_agent_confirmation": false
+      }
+    ],
+    "enrichment_sources": [
+      "DuMate web search",
+      "WorkBuddy research platform",
+      "LinkedIn"
+    ],
+    "agent_contributions": [
+      {
+        "agent_name": "DuMate",
+        "contributed_fields": [
+          "company_intelligence",
+          "contacts"
+        ],
+        "contributed_at": "2026-08-20T14:00:00Z",
+        "record_count": 2
+      },
+      {
+        "agent_name": "WorkBuddy",
+        "contributed_fields": [
+          "contacts"
+        ],
+        "contributed_at": "2026-08-21T14:00:00Z",
+        "record_count": 2
+      }
+    ]
+  }
+}

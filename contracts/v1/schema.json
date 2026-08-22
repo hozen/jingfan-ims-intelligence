@@ -1,0 +1,800 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jingfan-ims.local/contracts/v1/lead.schema.json",
+  "title": "iMS GTM Intelligence Lead Contract v1",
+  "description": "Unified Lead contract for qualification, enrichment, orchestration, and engagement stages. Designed to be additive on top of industrial/municipal radar schemas, not replace them. Supports backward-compatible legacy lead IDs and evidence-first architecture.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "lead_id",
+    "vertical",
+    "pipeline_stage",
+    "company",
+    "source",
+    "evidence",
+    "pipeline_history"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "v1",
+      "description": "Version of this contract. Enables additive evolution to v2, v3, etc."
+    },
+    "lead_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable unique identifier for this lead. Recommended formats: IND-YYYYMMDD-NNN (industrial, 3-digit suffix), IND-YYYYMMDD-NN (2-digit, legacy 2026-08-20 batch), OP-YYYYMMDD-NNN or ML-YYYYMMDD-NNNN (municipal), or H-N (agent-sourced). Format conformance is a validator WARNING, never a schema-level error, to preserve backward compatibility with existing IDs."
+    },
+    "vertical": {
+      "type": "string",
+      "enum": ["industrial", "municipal"],
+      "description": "Which market vertical this lead belongs to. Closed enum; adding a vertical is a deliberate schema change."
+    },
+    "pipeline_stage": {
+      "type": "string",
+      "enum": [
+        "RADAR",
+        "QUALIFICATION",
+        "QUALIFIED",
+        "REVIEW",
+        "REJECTED",
+        "ENRICHMENT",
+        "ENRICHED",
+        "ORCHESTRATION",
+        "SALES_READY",
+        "ENGAGEMENT"
+      ],
+      "description": "Current stage in the GTM pipeline. Transitions are governed by pipeline_history and validator rules (not expressible as a pure JSON Schema constraint). See docs/PIPELINE.md for the transition graph."
+    },
+    "company": {
+      "type": "string",
+      "description": "Company/account name. May be 'UNKNOWN' if genuinely not determinable."
+    },
+    "source": {
+      "$ref": "#/$defs/source_reference",
+      "description": "Traceability: where this Lead was derived from (which legacy radar file and signal/opportunity ID)."
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence",
+      "description": "Core evidence supporting this lead: facts (confirmed), inferences (AI-derived), unknowns (deliberately unresolved). Matches existing industrial schema exactly."
+    },
+    "pipeline_history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/pipeline_transition"
+      },
+      "description": "Append-only log of how this Lead reached its current pipeline_stage. Must have at least one entry (the initial RADAR entry). Used by the validator to check for valid state transitions."
+    },
+    "qualification": {
+      "$ref": "#/$defs/qualification",
+      "description": "Qualification-stage decision. Conditionally required (required if pipeline_stage >= QUALIFICATION, enforced by the root-level allOf/if/then below). Stores only the *decision* (PASS/REVIEW/REJECT), not the *mechanism* for reaching it — scoring model design is out of scope for Week 1."
+    },
+    "enrichment": {
+      "$ref": "#/$defs/enrichment",
+      "description": "Enrichment-stage intelligence: company, project, EPC/design-institute ecosystem, contacts, missing roles. Conditionally required (required if pipeline_stage >= ENRICHMENT, enforced by the root-level allOf/if/then below)."
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/provenance_entry"
+      },
+      "description": "General audit log of actor/action/timestamp. Distinct from pipeline_history (which tracks stage transitions). Optional; use for recording enrichment contributions, human reviews, system updates."
+    },
+    "sales_feedback": {
+      "$ref": "#/$defs/sales_feedback",
+      "description": "Sales engagement outcome, filled in after ENGAGEMENT stage. Optional; never required even at ENGAGEMENT — captures feedback when available."
+    },
+    "possible_duplicate": {
+      "type": "boolean",
+      "description": "Flag indicating this lead may be a duplicate of another (set during orchestration/dedup pass). Precedent: industrial enriched contacts have this field."
+    },
+    "duplicate_of": {
+      "type": "string",
+      "minLength": 1,
+      "description": "If possible_duplicate is true, the lead_id of the canonical lead this is a duplicate of."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this Lead was first created."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this Lead was last updated."
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Sanctioned escape hatch for experimental or vertical-specific fields. Contents here are unvalidated by the schema and not part of the official contract. Use this instead of forking the schema."
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "description": "qualification is required once pipeline_stage has advanced past RADAR/QUALIFICATION-in-progress.",
+      "if": {
+        "properties": {
+          "pipeline_stage": {
+            "enum": [
+              "QUALIFICATION",
+              "QUALIFIED",
+              "REVIEW",
+              "REJECTED",
+              "ENRICHMENT",
+              "ENRICHED",
+              "ORCHESTRATION",
+              "SALES_READY",
+              "ENGAGEMENT"
+            ]
+          }
+        },
+        "required": ["pipeline_stage"]
+      },
+      "then": {
+        "required": ["qualification"]
+      }
+    },
+    {
+      "description": "enrichment is required once pipeline_stage has reached ENRICHMENT or later.",
+      "if": {
+        "properties": {
+          "pipeline_stage": {
+            "enum": [
+              "ENRICHMENT",
+              "ENRICHED",
+              "ORCHESTRATION",
+              "SALES_READY",
+              "ENGAGEMENT"
+            ]
+          }
+        },
+        "required": ["pipeline_stage"]
+      },
+      "then": {
+        "required": ["enrichment"]
+      }
+    }
+  ],
+  "$defs": {
+    "source_reference": {
+      "type": "object",
+      "required": ["vertical", "source_report_id", "source_signal_id"],
+      "properties": {
+        "vertical": {
+          "type": "string",
+          "enum": ["industrial", "municipal"],
+          "description": "Radar vertical (industrial/municipal) where this lead was sourced."
+        },
+        "source_report_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "report_id from the source radar file (e.g., 'ind-radar-20260821', 'radar-20260821')."
+        },
+        "source_signal_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Lead/signal/opportunity ID from the source radar file (e.g., 'IND-20260821-001', 'OP-20260821-005')."
+        },
+        "source_file": {
+          "type": "string",
+          "description": "Optional: relative path to the source radar file (e.g., 'intelligence/industrial/daily/ind_2026-08-21.json')."
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Optional: timestamp when this Lead was extracted from the source file."
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["facts", "inferences", "unknowns"],
+      "properties": {
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Confirmed facts about the opportunity. May be empty if no facts yet confirmed."
+        },
+        "inferences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "AI-derived inferences from available sources. May be empty."
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Explicitly unresolved questions or missing information. Preferred over fabricating data."
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_item"
+          },
+          "description": "Optional: richer structured evidence with source/agent/confidence metadata per item. Can coexist with facts/inferences/unknowns."
+        },
+        "source_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Optional: supporting URLs."
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_item": {
+      "type": "object",
+      "required": ["type", "detail"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["FACT", "INFERENCE", "UNKNOWN", "AGENT_DISCOVERY", "PUBLIC_RECORD", "HUMAN_VERIFIED"],
+          "description": "Classification of this evidence item."
+        },
+        "detail": {
+          "type": "string",
+          "description": "The actual evidence text/claim."
+        },
+        "source": {
+          "type": "string",
+          "description": "Optional: source name (e.g., 'Eastmoney', 'enterprise registry', 'field visit')."
+        },
+        "source_agent": {
+          "type": "string",
+          "description": "Optional: which Cloud Agent or AI system contributed this (e.g., 'DuMate', 'Claude')."
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional: link to source."
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Optional: when this evidence was collected/discovered."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"],
+          "description": "Optional: confidence level in this evidence item."
+        }
+      },
+      "additionalProperties": false
+    },
+    "qualification": {
+      "type": "object",
+      "required": ["decision"],
+      "properties": {
+        "decision": {
+          "type": "string",
+          "enum": ["PASS", "REVIEW", "REJECT"],
+          "description": "The qualification decision: PASS (qualified for enrichment), REVIEW (needs manual review or reassessment), REJECT (disqualified)."
+        },
+        "decided_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the decision was made."
+        },
+        "decided_by": {
+          "type": "string",
+          "description": "Who/what made the decision (agent name, username, system identifier)."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Explanation for the decision. Required if decision is REJECT."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"],
+          "description": "How confident in this decision."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional additional commentary."
+        }
+      },
+      "additionalProperties": false
+    },
+    "enrichment": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_STARTED", "IN_PROGRESS", "COMPLETED", "AGENT_DISCOVERED"],
+          "description": "Current enrichment status. AGENT_DISCOVERED: lead was sourced directly by an agent outside the main pipeline (e.g., direct agent exploration, may have minimal structured fields)."
+        },
+        "company_intelligence": {
+          "$ref": "#/$defs/company_intelligence",
+          "description": "Company/account level intelligence."
+        },
+        "project_intelligence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/project"
+          },
+          "description": "One or more projects associated with this lead."
+        },
+        "organization_relationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/organization_relationship"
+          },
+          "description": "EPC, design institute, owner organizational relationships."
+        },
+        "contacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contact"
+          },
+          "description": "Contacts discovered for this lead (owner-side, EPC-side, design-side roles)."
+        },
+        "missing_roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Roles/positions still needed but not yet discovered."
+        },
+        "next_best_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Recommended next enrichment steps."
+        },
+        "enrichment_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Tools/sources used during enrichment (e.g., 'DuMate', 'enterprise registry', 'field visit')."
+        },
+        "agent_contributions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/agent_contribution"
+          },
+          "description": "Which agents contributed to this enrichment and what they added."
+        }
+      },
+      "additionalProperties": false
+    },
+    "company_intelligence": {
+      "type": "object",
+      "required": ["legal_name"],
+      "properties": {
+        "legal_name": {
+          "type": "string",
+          "description": "Official company name."
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other names by which this company is known."
+        },
+        "industry": {
+          "type": "string",
+          "description": "Industry classification (free text; no unified taxonomy yet)."
+        },
+        "location": {
+          "type": "string",
+          "description": "Company headquarters or main facility location."
+        },
+        "ownership_type": {
+          "type": "string",
+          "description": "Type of ownership (e.g., 'State-owned enterprise', 'Private', 'Foreign')."
+        },
+        "water_system_ownership": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D", "N/A"],
+          "description": "Indicates whether the company owns its own water treatment system (A=yes, clear ownership; B=possible; C=unlikely; D=no; N/A=not applicable)."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional context."
+        }
+      },
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "required": ["project_id", "name", "status"],
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique project identifier within the lead (e.g., 'PRJ-IND-20260821-001-01')."
+        },
+        "name": {
+          "type": "string",
+          "description": "Project name/title."
+        },
+        "status": {
+          "type": "string",
+          "description": "Current project stage (free text; each vertical may use different vocabularies). Examples: 'Planning', '设计阶段', 'Tender', '已建成运营'."
+        },
+        "normalized_stage": {
+          "type": "string",
+          "enum": [
+            "Early Trigger",
+            "Planning/Feasibility",
+            "Design",
+            "EPC/Project Prep",
+            "Tender/Procurement",
+            "Execution",
+            "Completed/Too Late"
+          ],
+          "description": "Optional: an attempt to normalize the free-text status into a common vocabulary. Left unpopulated by default since municipal and industrial use different native stage vocabularies — future decision whether to compute this."
+        },
+        "epc_contractor": {
+          "type": "string",
+          "description": "Engineering, Procurement, Construction contractor."
+        },
+        "design_institute": {
+          "type": "string",
+          "description": "Design institute (if separate from EPC)."
+        },
+        "estimated_time_window": {
+          "type": "string",
+          "description": "Expected project timeline or phase start/end."
+        },
+        "source_lead_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "If this project is suspected to be a duplicate of another discovered via different lead(s), reference the other lead_ids here."
+        }
+      },
+      "additionalProperties": false
+    },
+    "organization_relationship": {
+      "type": "object",
+      "required": ["relationship_id"],
+      "properties": {
+        "relationship_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for this organizational relationship (e.g., 'ORG-IND-20260821-001-01')."
+        },
+        "project_id": {
+          "type": "string",
+          "description": "Which project this relationship maps to."
+        },
+        "owner": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/org_role"
+          },
+          "description": "Roles on the owner/client side (e.g., project manager, EHS, water treatment, procurement)."
+        },
+        "epc": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/org_role"
+          },
+          "description": "Roles on the EPC contractor side."
+        },
+        "design_institute": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/org_role"
+          },
+          "description": "Roles at the design institute (if separate entity)."
+        },
+        "other": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/org_role"
+          },
+          "description": "Other stakeholders (system integrators, component suppliers, etc.)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "org_role": {
+      "type": "object",
+      "required": ["role_exists"],
+      "properties": {
+        "role_exists": {
+          "type": "boolean",
+          "description": "Does this role exist in this organizational context?"
+        },
+        "role_title": {
+          "type": "string",
+          "description": "Title of the role (e.g., 'Project Manager', '水处理主管', 'EHS Director')."
+        },
+        "person": {
+          "type": "string",
+          "description": "Name of the person holding this role, or 'UNKNOWN' if role exists but person is not yet identified."
+        },
+        "contact_id": {
+          "type": "string",
+          "description": "Reference to the contact object if this person is in the contacts[] array."
+        },
+        "organization_name": {
+          "type": "string",
+          "description": "Name of the organization (owner/EPC/design institute) this role belongs to."
+        }
+      },
+      "additionalProperties": false
+    },
+    "contact": {
+      "type": "object",
+      "required": ["contact_id", "name", "discovered_by"],
+      "properties": {
+        "contact_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique contact identifier (e.g., 'CT-20260821-0001')."
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name. May be 'UNKNOWN' if role is confirmed but person is not yet identified."
+        },
+        "company": {
+          "type": "string",
+          "description": "Organization where this contact works."
+        },
+        "title": {
+          "type": "string",
+          "description": "Job title."
+        },
+        "department": {
+          "type": "string",
+          "description": "Department or business unit."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"],
+          "description": "Classification of this contact's role in the buying process. A=decision-maker/budget holder; B=project influencer; C=information gatekeeper; D=account context/observer."
+        },
+        "phone": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contact_channel"
+          },
+          "description": "Phone contact channels."
+        },
+        "email": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contact_channel"
+          },
+          "description": "Email contact channels."
+        },
+        "evidence_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "How confident we are in the accuracy of this contact's information (0-100)."
+        },
+        "commercial_relevance_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "How relevant this contact is to the commercial opportunity (0-100)."
+        },
+        "discovered_by": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "description": "Which Cloud Agent(s) discovered this contact. Mandatory array (v1 normalizes the legacy string/array inconsistency across verticals to always be an array)."
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Source tools/databases where this contact was found (e.g., 'DuMate', 'BOSS直聘', '企查查')."
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_item"
+          },
+          "description": "Structured evidence supporting this contact (same as lead-level evidence)."
+        },
+        "human_verified": {
+          "type": "boolean",
+          "description": "Has a human confirmed the accuracy of this contact?"
+        },
+        "verified_by": {
+          "type": "string",
+          "description": "Who verified this contact (username or agent name)."
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": ["UNVERIFIED", "PUBLIC_RECORD", "HUMAN_VERIFIED"],
+          "description": "How this contact was verified."
+        },
+        "cross_agent_confirmation": {
+          "type": "boolean",
+          "description": "Has this contact been independently discovered by multiple agents?"
+        },
+        "possible_duplicate": {
+          "type": "boolean",
+          "description": "Is this contact a possible duplicate of another contact?"
+        },
+        "conflict_note": {
+          "type": "string",
+          "description": "If there are conflicting details about this person (e.g., different titles from different sources), note them here rather than auto-resolving."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional context."
+        }
+      },
+      "additionalProperties": false
+    },
+    "contact_channel": {
+      "type": "object",
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The actual contact value (phone number or email address)."
+        },
+        "channel_type": {
+          "type": "string",
+          "enum": ["PHONE_MOBILE", "PHONE_LANDLINE", "EMAIL", "OTHER"],
+          "description": "Type of channel."
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Where this contact was found."
+        },
+        "verified": {
+          "type": "boolean",
+          "description": "Has this specific channel been verified as working?"
+        }
+      },
+      "additionalProperties": false
+    },
+    "agent_contribution": {
+      "type": "object",
+      "required": ["agent_name"],
+      "properties": {
+        "agent_name": {
+          "type": "string",
+          "description": "Name of the Cloud Agent or AI system (e.g., 'DuMate', 'Claude', 'Perplexity')."
+        },
+        "contributed_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Which enrichment fields this agent contributed to (e.g., ['contacts', 'company_intelligence'])."
+        },
+        "contributed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this contribution was made."
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many records (contacts, projects, etc.) this agent added."
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance_entry": {
+      "type": "object",
+      "required": ["actor", "actor_type", "action", "timestamp"],
+      "properties": {
+        "actor": {
+          "type": "string",
+          "description": "Who/what performed the action (agent name, username, system)."
+        },
+        "actor_type": {
+          "type": "string",
+          "enum": ["AGENT", "HUMAN", "SYSTEM"],
+          "description": "Type of actor."
+        },
+        "action": {
+          "type": "string",
+          "description": "What action was performed (free text, e.g., 'enriched contacts', 'verified company name', 'qualified PASS')."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this action occurred."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional additional detail."
+        }
+      },
+      "additionalProperties": false
+    },
+    "pipeline_transition": {
+      "type": "object",
+      "required": ["stage", "entered_at"],
+      "properties": {
+        "stage": {
+          "type": "string",
+          "enum": [
+            "RADAR",
+            "QUALIFICATION",
+            "QUALIFIED",
+            "REVIEW",
+            "REJECTED",
+            "ENRICHMENT",
+            "ENRICHED",
+            "ORCHESTRATION",
+            "SALES_READY",
+            "ENGAGEMENT"
+          ],
+          "description": "The pipeline stage."
+        },
+        "entered_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this stage was entered."
+        },
+        "actor": {
+          "type": "string",
+          "description": "Optional: who/what triggered this transition."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional: reason or context for the transition."
+        }
+      },
+      "additionalProperties": false
+    },
+    "sales_feedback": {
+      "type": "object",
+      "properties": {
+        "engaged_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When sales engagement began."
+        },
+        "sales_owner": {
+          "type": "string",
+          "description": "Sales representative or account owner."
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "IN_PROGRESS",
+            "WON",
+            "LOST",
+            "NO_RESPONSE",
+            "DISQUALIFIED_BY_SALES",
+            "OTHER"
+          ],
+          "description": "Engagement outcome."
+        },
+        "feedback_notes": {
+          "type": "string",
+          "description": "Why the outcome occurred, or notes for future efforts."
+        },
+        "next_step": {
+          "type": "string",
+          "description": "Recommended next action if outcome is IN_PROGRESS or LOST but reachable."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
