@@ -1,0 +1,45 @@
+{
+  "contract_version": "v1",
+  "lead_id": "OP-FIXTURE-E-001",
+  "vertical": "municipal",
+  "pipeline_stage": "REJECTED",
+  "company": "Synthetic Regional Water Utility",
+  "source": {
+    "vertical": "municipal",
+    "source_report_id": "radar-fixture",
+    "source_signal_id": "OP-FIXTURE-E-001"
+  },
+  "evidence": {
+    "facts": [
+      "Water utility operates in rural area with 50k population",
+      "Current system is gravity-fed, no active treatment facilities"
+    ],
+    "inferences": [],
+    "unknowns": [
+      "Likelihood of infrastructure upgrade funding"
+    ]
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-10T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-10T14:00:00Z"
+    },
+    {
+      "stage": "REJECTED",
+      "entered_at": "2026-08-11T09:00:00Z",
+      "actor": "qualification_agent",
+      "notes": "Disqualified: insufficient budget, minimal IMS fit"
+    }
+  ],
+  "qualification": {
+    "decision": "REJECT",
+    "decided_at": "2026-08-11T09:00:00Z",
+    "decided_by": "qualification_agent",
+    "reason": "Market size too small; current capex budget insufficient for instrumentation systems; limited growth signals; low commercial potential",
+    "confidence": "HIGH"
+  }
+}

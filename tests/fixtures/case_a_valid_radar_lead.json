@@ -1,0 +1,32 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-A-001",
+  "vertical": "industrial",
+  "pipeline_stage": "RADAR",
+  "company": "Synthetic Battery Manufacturer Corp",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-A-001",
+    "retrieved_at": "2026-08-22T10:00:00Z"
+  },
+  "evidence": {
+    "facts": [
+      "Company announced new battery manufacturing facility in Jiangsu province"
+    ],
+    "inferences": [
+      "New facility will require significant water treatment infrastructure"
+    ],
+    "unknowns": [
+      "Current wastewater treatment capacity",
+      "Procurement timeline for equipment"
+    ]
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-22T10:00:00Z",
+      "notes": "Initial discovery via public announcement"
+    }
+  ]
+}

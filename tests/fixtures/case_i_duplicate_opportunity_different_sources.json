@@ -1,0 +1,86 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-I-001",
+  "vertical": "industrial",
+  "pipeline_stage": "ORCHESTRATION",
+  "company": "Synthetic Petrochemical Complex",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-I-001"
+  },
+  "evidence": {
+    "facts": [
+      "Petrochemical complex announced capacity expansion",
+      "EPC contractor selected for engineering phase",
+      "Project timeline: Q1 2027 start"
+    ],
+    "inferences": [
+      "Water treatment system upgrade required",
+      "Same opportunity may have been sourced from alternative data feeds"
+    ],
+    "unknowns": []
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-12T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-12T14:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-13T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-15T10:00:00Z"
+    },
+    {
+      "stage": "ENRICHED",
+      "entered_at": "2026-08-20T10:00:00Z"
+    },
+    {
+      "stage": "ORCHESTRATION",
+      "entered_at": "2026-08-22T09:00:00Z",
+      "actor": "orchestration_system",
+      "notes": "Flagged as possible duplicate of IND-FIXTURE-I-SIBLING during dedup pass"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-13T09:00:00Z",
+    "confidence": "HIGH"
+  },
+  "enrichment": {
+    "status": "COMPLETED",
+    "company_intelligence": {
+      "legal_name": "Synthetic Petrochemical Complex Ltd.",
+      "industry": "Petrochemical",
+      "location": "Liaoning Province, China"
+    },
+    "project_intelligence": [
+      {
+        "project_id": "PRJ-IND-FIXTURE-I-001-01",
+        "name": "Capacity Expansion Project 2026-27",
+        "status": "Engineering phase",
+        "source_lead_ids": [
+          "IND-FIXTURE-I-SIBLING"
+        ]
+      }
+    ]
+  },
+  "possible_duplicate": true,
+  "duplicate_of": "IND-FIXTURE-I-SIBLING",
+  "provenance": [
+    {
+      "actor": "orchestration_system",
+      "actor_type": "SYSTEM",
+      "action": "Marked as possible duplicate during dedup pass",
+      "timestamp": "2026-08-22T09:00:00Z",
+      "notes": "Two leads refer to the same petrochemical capacity expansion project from different radar sources. This is the primary lead; IND-FIXTURE-I-SIBLING should be merged into this one for orchestration phase."
+    }
+  ]
+}

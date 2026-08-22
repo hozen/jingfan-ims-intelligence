@@ -1,0 +1,90 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-F-001",
+  "vertical": "industrial",
+  "pipeline_stage": "ENRICHED",
+  "company": "Synthetic Chemical Plant Alpha",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-F-001"
+  },
+  "evidence": {
+    "facts": [
+      "Company operates chemical production facility in Shandong"
+    ],
+    "inferences": [
+      "Conflicting reports on current wastewater treatment capacity"
+    ],
+    "unknowns": []
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-12T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-12T14:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-13T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-18T10:00:00Z"
+    },
+    {
+      "stage": "ENRICHED",
+      "entered_at": "2026-08-22T10:00:00Z"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-13T09:00:00Z",
+    "confidence": "MEDIUM"
+  },
+  "enrichment": {
+    "status": "COMPLETED",
+    "company_intelligence": {
+      "legal_name": "Synthetic Chemical Plant Alpha",
+      "industry": "Chemical Manufacturing",
+      "location": "Shandong Province, China",
+      "notes": "Multiple conflicting sources on current water treatment status — human review recommended"
+    },
+    "contacts": [
+      {
+        "contact_id": "CT-FIXTURE-F-0001",
+        "name": "Wang Jun",
+        "company": "Synthetic Chemical Plant Alpha",
+        "title": "Environmental Manager",
+        "role": "A",
+        "discovered_by": [
+          "DuMate"
+        ],
+        "evidence": [
+          {
+            "type": "FACT",
+            "detail": "Current facility has 2000 m³/day wastewater treatment capacity",
+            "source": "Company environmental report 2025",
+            "source_agent": "DuMate",
+            "date": "2026-08-20T10:00:00Z",
+            "confidence": "HIGH"
+          },
+          {
+            "type": "FACT",
+            "detail": "Current facility has 1200 m³/day wastewater treatment capacity",
+            "source": "Third-party environmental audit 2026",
+            "source_agent": "Claude",
+            "date": "2026-08-22T09:00:00Z",
+            "confidence": "MEDIUM"
+          }
+        ],
+        "conflict_note": "Two authoritative sources report different current wastewater treatment capacities (2000 vs 1200 m³/day). Company report vs. independent audit. Requires human verification to resolve.",
+        "human_verified": false,
+        "verification_status": "UNVERIFIED"
+      }
+    ]
+  }
+}

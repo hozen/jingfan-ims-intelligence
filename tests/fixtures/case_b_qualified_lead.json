@@ -1,0 +1,46 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-B-001",
+  "vertical": "industrial",
+  "pipeline_stage": "QUALIFIED",
+  "company": "Synthetic Pharmaceutical Plant Ltd",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-B-001"
+  },
+  "evidence": {
+    "facts": [
+      "Company confirmed production of pharmaceutical compounds",
+      "Environmental assessment report mentions wastewater treatment system"
+    ],
+    "inferences": [
+      "Company likely requires specialized water treatment for pharmaceutical waste"
+    ],
+    "unknowns": []
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-21T09:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-21T14:00:00Z",
+      "actor": "qualification_agent"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-22T08:00:00Z",
+      "actor": "qualification_agent",
+      "notes": "Passed ICP fit and pain fit checks"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-22T08:00:00Z",
+    "decided_by": "qualification_agent",
+    "reason": "High ICP fit: pharmaceutical company with confirmed water treatment need; timing alignment with expansion plans",
+    "confidence": "HIGH"
+  }
+}

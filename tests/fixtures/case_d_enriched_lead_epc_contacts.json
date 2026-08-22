@@ -1,0 +1,204 @@
+{
+  "contract_version": "v1",
+  "lead_id": "IND-FIXTURE-D-001",
+  "vertical": "industrial",
+  "pipeline_stage": "ENRICHED",
+  "company": "Synthetic Semiconductors Manufacturing",
+  "source": {
+    "vertical": "industrial",
+    "source_report_id": "ind-radar-fixture",
+    "source_signal_id": "IND-FIXTURE-D-001"
+  },
+  "evidence": {
+    "facts": [
+      "Semiconductor fab expansion announced Q4 2026",
+      "STSMC Engineering confirmed as EPC contractor",
+      "Project investment estimated at 8.5 billion RMB"
+    ],
+    "inferences": [
+      "Expansion requires new water treatment capacity",
+      "High-purity water systems will be critical for fab operations"
+    ],
+    "unknowns": []
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-15T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-15T14:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-16T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-18T10:00:00Z"
+    },
+    {
+      "stage": "ENRICHED",
+      "entered_at": "2026-08-22T10:00:00Z",
+      "actor": "enrichment_agent",
+      "notes": "Enrichment complete with full company, project, and contact intelligence"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-16T09:00:00Z",
+    "confidence": "HIGH"
+  },
+  "enrichment": {
+    "status": "COMPLETED",
+    "company_intelligence": {
+      "legal_name": "Synthetic Semiconductors Manufacturing Co., Ltd.",
+      "aliases": [
+        "SSM Fabs"
+      ],
+      "industry": "Semiconductor Manufacturing",
+      "location": "Zhejiang Province, China",
+      "water_system_ownership": "A"
+    },
+    "project_intelligence": [
+      {
+        "project_id": "PRJ-IND-FIXTURE-D-001-01",
+        "name": "Jiaxing Advanced Semiconductor Fab Expansion",
+        "status": "Design stage",
+        "normalized_stage": "Design",
+        "epc_contractor": "STSMC Engineering",
+        "design_institute": "China Electronic Engineering Design Institute",
+        "estimated_time_window": "Q4 2026 - Q2 2027"
+      }
+    ],
+    "organization_relationships": [
+      {
+        "relationship_id": "ORG-IND-FIXTURE-D-001-01",
+        "project_id": "PRJ-IND-FIXTURE-D-001-01",
+        "owner": [
+          {
+            "role_exists": true,
+            "role_title": "Project Manager",
+            "person": "Li Wei",
+            "contact_id": "CT-FIXTURE-D-0001"
+          },
+          {
+            "role_exists": true,
+            "role_title": "Water Treatment Director",
+            "person": "UNKNOWN",
+            "organization_name": "Synthetic Semiconductors Manufacturing"
+          }
+        ],
+        "epc": [
+          {
+            "role_exists": true,
+            "role_title": "Project Engineering Lead",
+            "person": "Zhang Ming",
+            "contact_id": "CT-FIXTURE-D-0002"
+          }
+        ],
+        "design_institute": [
+          {
+            "role_exists": true,
+            "role_title": "Water Systems Designer",
+            "person": "Chen Xu",
+            "contact_id": "CT-FIXTURE-D-0003"
+          }
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "contact_id": "CT-FIXTURE-D-0001",
+        "name": "Li Wei",
+        "company": "Synthetic Semiconductors Manufacturing",
+        "title": "Project Manager",
+        "role": "A",
+        "discovered_by": [
+          "DuMate",
+          "Claude"
+        ],
+        "sources": [
+          "Company press release",
+          "Baidu Baike"
+        ],
+        "evidence": [
+          {
+            "type": "PUBLIC_RECORD",
+            "detail": "Listed as project lead in press announcement",
+            "source": "SSM official website"
+          }
+        ],
+        "human_verified": false,
+        "verification_status": "PUBLIC_RECORD",
+        "cross_agent_confirmation": true
+      },
+      {
+        "contact_id": "CT-FIXTURE-D-0002",
+        "name": "Zhang Ming",
+        "company": "STSMC Engineering",
+        "title": "Senior Project Engineer",
+        "role": "B",
+        "discovered_by": [
+          "DuMate"
+        ],
+        "sources": [
+          "LinkedIn",
+          "Company org chart"
+        ],
+        "evidence_score": 85,
+        "commercial_relevance_score": 75,
+        "human_verified": false,
+        "verification_status": "UNVERIFIED",
+        "cross_agent_confirmation": false
+      },
+      {
+        "contact_id": "CT-FIXTURE-D-0003",
+        "name": "Chen Xu",
+        "company": "China Electronic Engineering Design Institute",
+        "title": "Senior Water Systems Engineer",
+        "role": "B",
+        "discovered_by": [
+          "Claude"
+        ],
+        "sources": [
+          "Industry database"
+        ],
+        "human_verified": false,
+        "verification_status": "UNVERIFIED"
+      }
+    ],
+    "missing_roles": [
+      "Government environmental liaison",
+      "Equipment procurement lead"
+    ],
+    "enrichment_sources": [
+      "DuMate web search",
+      "Public procurement records",
+      "Company press releases",
+      "Industry research databases"
+    ],
+    "agent_contributions": [
+      {
+        "agent_name": "DuMate",
+        "contributed_fields": [
+          "company_intelligence",
+          "contacts"
+        ],
+        "contributed_at": "2026-08-20T14:00:00Z",
+        "record_count": 2
+      },
+      {
+        "agent_name": "Claude",
+        "contributed_fields": [
+          "company_intelligence",
+          "project_intelligence",
+          "contacts"
+        ],
+        "contributed_at": "2026-08-22T10:00:00Z",
+        "record_count": 3
+      }
+    ]
+  }
+}
