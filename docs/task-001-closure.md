@@ -10,12 +10,13 @@
 - Qualification decisions are consistent with pipeline state: `PASS` follows the qualified path, `REVIEW` maps to `REVIEW`, and `REJECT` maps to `REJECTED`.
 - Enrichment status is consistent with pipeline state; completed enrichment cannot appear before `ENRICHED`.
 - Unknown top-level and supported nested properties are rejected consistently with `additionalProperties: false` in Lead Contract v1.
-- Malformed nested arrays/objects produce human-readable findings rather than Python exceptions.
+- Malformed nested arrays/objects—including unhashable object/array values in transition `from` or `to`—produce human-readable findings rather than Python exceptions.
+- Optional `company`, `project`, and `signal` objects enforce their schema-required nested fields whenever present.
 - Directory input is supported, so `python scripts/validate_intelligence.py intelligence` performs the documented historical compatibility scan while excluding the two schema documents.
 
 ## Verification evidence
 
-- Automated tests: 18 passed.
+- Automated tests: 22 passed, including direct regressions for malformed transition values and empty company/project/signal objects.
 - Canonical/default validation: nine synthetic fixtures and four current latest feeds; 0 errors, 0 warnings.
 - Historical compatibility scan: 35 legacy intelligence files; 23 missing-ID errors and 5 malformed/empty URL warnings.
 - Historical defects are isolated to legacy compatibility reporting and were not silently repaired.
@@ -50,6 +51,6 @@ These decisions do not block the read-only Task 002 adapter because that task mu
 
 ## Task 002 authorization
 
-After merged-main verification passes, Task 002 may start with exactly this scope:
+Task 001 is merged into `main`, the final validator gate is closed, and Task 002 may start with exactly this scope:
 
 > Build a read-only Industrial Radar → Lead Contract v1 adapter with golden fixtures, field mapping/unmappable-field reporting, and customer-readable output. Preserve all original files and Lead IDs. Do not implement qualification scoring, enrichment automation, CRM integration, or outbound workflow.

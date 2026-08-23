@@ -12,7 +12,7 @@ Open the visual summary at [`docs/ims-gtm-mvp-map.html`](ims-gtm-mvp-map.html) f
 - An additive Lead Contract v1 covering identity, pipeline state, evidence, provenance, qualification, enrichment, conflicts, duplicate relationships, and future sales feedback.
 - A lightweight state model for Radar through Engagement.
 - A dependency-free validator with human-readable `ERROR`, `WARNING`, and `INFO` findings.
-- Nine synthetic fixtures and eighteen automated regression tests, including negative contract/state cases.
+- Nine synthetic fixtures and twenty-two automated regression tests, including negative contract/state and malformed-input cases.
 - Compatibility validation for all four current mutable `latest` interfaces.
 - Documentation for architecture, pipeline boundaries, data contracts, risks, Product Owner decisions, and the smallest recommended next task.
 
@@ -46,7 +46,7 @@ python -m unittest discover -s tests -v
 python scripts/validate_intelligence.py
 ```
 
-Expected result: 18 tests pass, and nine synthetic fixtures plus four current latest feeds validate with zero errors and zero warnings. Legacy feeds are reported as compatibility-mode inputs.
+Expected result: 22 tests pass, and nine synthetic fixtures plus four current latest feeds validate with zero errors and zero warnings. Legacy feeds are reported as compatibility-mode inputs.
 
 ## Known historical data issues
 

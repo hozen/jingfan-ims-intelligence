@@ -76,11 +76,11 @@
     <section class="detail" aria-live="polite">
       <div id="task1" class="task-panel">
         <div class="detail-head"><div><h2>Task 001 · Architecture Gate</h2><p>目标：冻结 Lead Contract v1、状态边界和验证基础，同时不破坏现有 Radar / Enrichment / agent handoff。</p></div><span class="status ready">PASS</span></div>
-        <div class="metric-row"><div class="metric"><strong>18/18</strong><span>automated tests passed</span></div><div class="metric"><strong>9</strong><span>synthetic fixtures</span></div><div class="metric"><strong>4</strong><span>latest feeds compatible</span></div><div class="metric"><strong>0/0</strong><span>latest feed errors/warnings</span></div></div>
+        <div class="metric-row"><div class="metric"><strong>22/22</strong><span>automated tests passed</span></div><div class="metric"><strong>9</strong><span>synthetic fixtures</span></div><div class="metric"><strong>4</strong><span>latest feeds compatible</span></div><div class="metric"><strong>0/0</strong><span>latest feed errors/warnings</span></div></div>
         <div class="grid">
           <div class="block customer"><h3>Customer deliverables · 已有价值</h3><ul><li>稳定的 Lead/Opportunity v1 数据交换格式</li><li>证据、来源、Agent provenance 可追溯</li><li>Radar → Qualification → Enrichment 的阶段模型</li><li>旧有 feeds 保持原路径，避免客户流程中断</li></ul></div>
-          <div class="block engineering"><h3>Engineering outputs · 可验证产物</h3><ul><li><code>contracts/lead-v1.schema.json</code></li><li>dependency-free validator</li><li>9 个边界 fixtures + 18 个 regression tests</li><li>architecture / data / pipeline / repository audit docs</li></ul></div>
-          <div class="block customer"><h3>Gate closure · 已修复</h3><ul><li><code>pipeline_history</code> 必填且必须连续</li><li>Qualification / Enrichment 与 pipeline stage 强制一致</li><li>额外字段和畸形嵌套结构会产生 ERROR</li><li><code>.hermes/.env</code> 已通过非披露审查并取消 Git 跟踪</li></ul></div>
+          <div class="block engineering"><h3>Engineering outputs · 可验证产物</h3><ul><li><code>contracts/lead-v1.schema.json</code></li><li>dependency-free validator</li><li>9 个边界 fixtures + 22 个 regression tests</li><li>architecture / data / pipeline / repository audit docs</li></ul></div>
+          <div class="block customer"><h3>Gate closure · 已修复</h3><ul><li><code>pipeline_history</code> 必填且必须连续，畸形 from/to 不会导致崩溃</li><li>Qualification / Enrichment 与 pipeline stage 强制一致</li><li>company、project、signal 存在时会检查各自必填字段</li><li>额外字段和畸形嵌套结构会产生 ERROR</li><li><code>.hermes/.env</code> 已通过非披露审查并取消 Git 跟踪</li></ul></div>
           <div class="block"><h3>Compatibility · 没有引入的东西</h3><ul><li>没有数据库、SaaS、CRM 或 workflow engine</li><li>没有重命名或重写 legacy Radar/Enrichment 文件</li><li>没有自动 outreach 或 provider abstraction</li><li>GitHub Pages / Actions 仍未启用</li></ul></div>
         </div>
         <h3 style="margin-top:20px">Current pipeline gate</h3>
@@ -112,7 +112,7 @@
       </div>
     </section>
   </div>
-  <footer>Snapshot basis: Task 001 closure verification, 2026-08-23. See <code>docs/task-001-closure.md</code> for evidence and remaining Product Owner decisions.</footer>
+  <footer>Snapshot basis: merged <code>main</code> plus final validator gate verification, 2026-08-23. Task 002 authorization is limited to the read-only Industrial Radar adapter. See <code>docs/task-001-closure.md</code>.</footer>
 </main>
 <script>
   const buttons = [...document.querySelectorAll('nav button[data-task]')];
