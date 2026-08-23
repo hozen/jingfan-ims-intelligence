@@ -1,0 +1,13 @@
+{
+  "contract_version": "1.0", "lead_id": "IND-20260821-108", "lead_type": "industrial", "created_at": "2026-08-21T08:00:00+08:00", "updated_at": "2026-08-21T11:00:00+08:00", "pipeline_stage": "ENRICHMENT",
+  "evidence": [
+    { "evidence_id": "ev-h-1", "source_name": "示例项目公告", "source_url": "https://example.gov.cn/projects/108", "source_type": "project_notice", "published_at": "2026-08-20", "retrieved_at": "2026-08-21T08:00:00+08:00", "evidence_text": null, "evidence_summary": "项目业主已确认。", "confidence": "HIGH", "contributed_by": "agent-h-a" },
+    { "evidence_id": "ev-h-2", "source_name": "示例设计院官网", "source_url": "https://example.com/design/108", "source_type": "organization_site", "published_at": null, "retrieved_at": "2026-08-21T10:00:00+08:00", "evidence_text": null, "evidence_summary": "设计院官网列出项目关系。", "confidence": "MEDIUM", "contributed_by": "agent-h-b" }
+  ],
+  "enrichment": { "status": "IN_PROGRESS", "organizations": [{ "organization_id": "org-h-1", "name": "示例设计研究院", "relationship_type": "DESIGN_INSTITUTE", "relationship_description": "项目设计单位", "confidence": "MEDIUM", "evidence_refs": ["ev-h-2"] }], "contacts": [], "notes": null },
+  "provenance": [
+    { "contribution_id": "agent-h-a", "generated_by": "AI", "agent": "company-research-agent", "model": "synthetic-a", "run_id": "fixture-h-a", "generated_at": "2026-08-21T09:00:00+08:00", "prompt_version": "a-v1", "evidence_refs": ["ev-h-1"], "notes": null },
+    { "contribution_id": "agent-h-b", "generated_by": "AI", "agent": "ecosystem-research-agent", "model": "synthetic-b", "run_id": "fixture-h-b", "generated_at": "2026-08-21T11:00:00+08:00", "prompt_version": "b-v1", "evidence_refs": ["ev-h-2"], "notes": null }
+  ],
+  "pipeline_history": [{ "from": null, "to": "RADAR", "at": "2026-08-21T08:00:00+08:00", "reason": null, "provenance_ref": "agent-h-a" }, { "from": "RADAR", "to": "QUALIFICATION", "at": "2026-08-21T08:30:00+08:00", "reason": null, "provenance_ref": "agent-h-a" }, { "from": "QUALIFICATION", "to": "QUALIFIED", "at": "2026-08-21T09:00:00+08:00", "reason": null, "provenance_ref": "agent-h-a" }, { "from": "QUALIFIED", "to": "ENRICHMENT", "at": "2026-08-21T09:30:00+08:00", "reason": null, "provenance_ref": "agent-h-b" }]
+}

@@ -1,6 +1,8 @@
 node_modules/
 *.log
 .DS_Store
+__pycache__/
+*.py[cod]
 
 # Hermes config - 完整恢复所需
 !.hermes/config.yaml
@@ -10,7 +12,7 @@ node_modules/
 !.hermes/memories/
 !.hermes/memories/**
 !.hermes/cron/jobs.json
-!.hermes/.env
+.hermes/.env
 
 # Hermes runtime (不要追踪)
 .hermes/cache/

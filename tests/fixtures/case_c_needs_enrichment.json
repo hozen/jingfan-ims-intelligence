@@ -1,0 +1,10 @@
+{
+  "contract_version": "1.0", "lead_id": "OP-20260821-103", "lead_type": "municipal",
+  "created_at": "2026-08-21T08:00:00+08:00", "updated_at": "2026-08-21T10:00:00+08:00", "pipeline_stage": "ENRICHMENT",
+  "project": { "project_name": "示例多站点水厂改造", "project_type": null, "project_location": "安徽省", "project_stage": "招标前", "estimated_timing": "UNKNOWN" },
+  "evidence": [{ "evidence_id": "ev-c-1", "source_name": "示例公共资源平台", "source_url": "https://example.gov.cn/projects/103", "source_type": "public_resource", "published_at": null, "retrieved_at": "2026-08-21T08:00:00+08:00", "evidence_text": null, "evidence_summary": "项目已列入建设计划。", "confidence": "MEDIUM", "contributed_by": "run-c" }],
+  "qualification": { "decision": "PASS", "reasoning": "Project merits role-oriented contact and ecosystem research.", "evidence_refs": ["ev-c-1"], "confidence": "MEDIUM", "qualified_at": "2026-08-21T09:00:00+08:00", "provenance_ref": "run-c", "rule_version": null, "prompt_version": null },
+  "enrichment": { "status": "PENDING", "organizations": [], "contacts": [], "notes": "EPC and project owner contacts are not yet researched." },
+  "provenance": [{ "contribution_id": "run-c", "generated_by": "AI", "agent": "synthetic-agent", "model": "synthetic", "run_id": "fixture-c", "generated_at": "2026-08-21T08:00:00+08:00", "prompt_version": null, "evidence_refs": ["ev-c-1"], "notes": null }],
+  "pipeline_history": [{ "from": null, "to": "RADAR", "at": "2026-08-21T08:00:00+08:00", "reason": null, "provenance_ref": "run-c" }, { "from": "RADAR", "to": "QUALIFICATION", "at": "2026-08-21T08:30:00+08:00", "reason": null, "provenance_ref": "run-c" }, { "from": "QUALIFICATION", "to": "QUALIFIED", "at": "2026-08-21T09:00:00+08:00", "reason": null, "provenance_ref": "run-c" }, { "from": "QUALIFIED", "to": "ENRICHMENT", "at": "2026-08-21T10:00:00+08:00", "reason": null, "provenance_ref": "run-c" }]
+}
