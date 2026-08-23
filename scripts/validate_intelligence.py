@@ -37,6 +37,23 @@ LEGACY_ID = re.compile(
     r"ML-\d{8}-\d{4}|[A-Z]{1,12}(?:-[A-Za-z0-9]+)+)$"
 )
 EMAIL = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
+TOP_LEVEL_FIELDS = {
+    "contract_version", "lead_id", "lead_type", "created_at", "updated_at",
+    "pipeline_stage", "company", "project", "signal", "evidence",
+    "qualification", "enrichment", "provenance", "pipeline_history",
+    "duplicate_of", "conflicts", "sales_feedback",
+}
+QUALIFICATION_STAGES = {
+    "PASS": {"QUALIFIED", "ENRICHMENT", "ENRICHED", "ORCHESTRATION", "SALES_READY", "ENGAGEMENT"},
+    "REVIEW": {"REVIEW"},
+    "REJECT": {"REJECTED"},
+}
+ENRICHMENT_STAGES = {
+    "PENDING": {"ENRICHMENT", "REVIEW"},
+    "IN_PROGRESS": {"ENRICHMENT", "REVIEW"},
+    "PARTIAL": {"ENRICHMENT", "REVIEW"},
+    "COMPLETE": {"ENRICHED", "ORCHESTRATION", "SALES_READY", "ENGAGEMENT"},
+}
 
 
 @dataclass(frozen=True)
@@ -87,6 +104,18 @@ def require(obj: dict[str, Any], keys: Iterable[str], base: str, out: list[Findi
             out.append(finding("ERROR", f"{base}.{key}".strip("."), "missing required field"))
 
 
+def reject_unknown(obj: dict[str, Any], allowed: set[str], base: str, out: list[Finding]) -> None:
+    for key in sorted(set(obj) - allowed):
+        out.append(finding("ERROR", f"{base}.{key}".strip("."), "unexpected property"))
+
+
+def as_list(value: Any, path: str, out: list[Finding]) -> list[Any]:
+    if isinstance(value, list):
+        return value
+    out.append(finding("ERROR", path, "must be an array"))
+    return []
+
+
 def validate_transition(previous: str | None, current: str) -> bool:
     return current in TRANSITIONS.get(previous, set())
 
@@ -96,6 +125,7 @@ def _validate_contact(contact: Any, index: int, evidence_ids: set[str], provenan
     if not isinstance(contact, dict):
         out.append(finding("ERROR", base, "contact must be an object"))
         return
+    reject_unknown(contact, {"contact_id", "name", "title", "organization", "role_category", "phone", "phone_status", "email", "email_status", "confidence", "evidence_refs", "provenance_ref"}, base, out)
     require(contact, ("contact_id", "name", "title", "organization", "role_category", "phone", "phone_status", "email", "email_status", "confidence", "evidence_refs"), base, out)
     for channel in ("phone", "email"):
         status = contact.get(f"{channel}_status")
@@ -112,7 +142,7 @@ def _validate_contact(contact: Any, index: int, evidence_ids: set[str], provenan
     email = contact.get("email")
     if email and not EMAIL.fullmatch(str(email)):
         out.append(finding("WARNING", f"{base}.email", "email format appears malformed"))
-    for ref in contact.get("evidence_refs", []):
+    for ref in as_list(contact.get("evidence_refs", []), f"{base}.evidence_refs", out):
         if ref not in evidence_ids:
             out.append(finding("ERROR", f"{base}.evidence_refs", f"unknown evidence reference: {ref}"))
     prov = contact.get("provenance_ref")
@@ -124,7 +154,8 @@ def validate_v1(data: Any) -> list[Finding]:
     out: list[Finding] = []
     if not isinstance(data, dict):
         return [finding("ERROR", "", "lead document must be an object")]
-    required = ("contract_version", "lead_id", "lead_type", "created_at", "updated_at", "pipeline_stage", "evidence", "provenance")
+    reject_unknown(data, TOP_LEVEL_FIELDS, "", out)
+    required = ("contract_version", "lead_id", "lead_type", "created_at", "updated_at", "pipeline_stage", "evidence", "provenance", "pipeline_history")
     require(data, required, "", out)
     if data.get("contract_version") != "1.0":
         out.append(finding("ERROR", "contract_version", "must equal 1.0"))
@@ -140,10 +171,19 @@ def validate_v1(data: Any) -> list[Finding]:
     if stage not in STAGES:
         out.append(finding("ERROR", "pipeline_stage", "invalid pipeline stage"))
 
-    evidence = data.get("evidence", [])
-    if not isinstance(evidence, list):
-        out.append(finding("ERROR", "evidence", "must be an array"))
-        evidence = []
+    for key, allowed in (
+        ("company", {"company_name", "normalized_company_name", "location", "industry"}),
+        ("project", {"project_name", "project_type", "project_location", "project_stage", "estimated_timing"}),
+        ("signal", {"signal_type", "signal_description", "signal_date"}),
+    ):
+        value = data.get(key)
+        if value is not None:
+            if not isinstance(value, dict):
+                out.append(finding("ERROR", key, "must be an object"))
+            else:
+                reject_unknown(value, allowed, key, out)
+
+    evidence = as_list(data.get("evidence", []), "evidence", out)
     evidence_ids: set[str] = set()
     fingerprints: set[tuple[str, str]] = set()
     for index, item in enumerate(evidence):
@@ -151,6 +191,7 @@ def validate_v1(data: Any) -> list[Finding]:
         if not isinstance(item, dict):
             out.append(finding("ERROR", base, "must be an object"))
             continue
+        reject_unknown(item, {"evidence_id", "source_name", "source_url", "source_type", "published_at", "retrieved_at", "evidence_text", "evidence_summary", "confidence", "contributed_by"}, base, out)
         require(item, ("evidence_id", "source_name", "source_url", "source_type", "retrieved_at", "evidence_summary", "confidence"), base, out)
         evidence_id = item.get("evidence_id")
         if evidence_id in evidence_ids:
@@ -180,6 +221,7 @@ def validate_v1(data: Any) -> list[Finding]:
         if not isinstance(item, dict):
             out.append(finding("ERROR", base, "must be an object"))
             continue
+        reject_unknown(item, {"contribution_id", "generated_by", "agent", "model", "run_id", "generated_at", "prompt_version", "evidence_refs", "notes"}, base, out)
         require(item, ("contribution_id", "generated_by", "agent", "run_id", "generated_at"), base, out)
         contribution_id = item.get("contribution_id")
         if contribution_id in provenance_ids:
@@ -190,7 +232,7 @@ def validate_v1(data: Any) -> list[Finding]:
             out.append(finding("ERROR", f"{base}.generated_by", "invalid generator type"))
         if "generated_at" in item and not valid_timestamp(item["generated_at"]):
             out.append(finding("ERROR", f"{base}.generated_at", "must be an ISO 8601 date-time"))
-        for ref in item.get("evidence_refs", []):
+        for ref in as_list(item.get("evidence_refs", []), f"{base}.evidence_refs", out):
             if ref not in evidence_ids:
                 out.append(finding("ERROR", f"{base}.evidence_refs", f"unknown evidence reference: {ref}"))
 
@@ -199,12 +241,23 @@ def validate_v1(data: Any) -> list[Finding]:
         if not isinstance(qualification, dict):
             out.append(finding("ERROR", "qualification", "must be an object"))
         else:
+            reject_unknown(qualification, {"decision", "dimensions", "reasoning", "evidence_refs", "confidence", "qualified_at", "provenance_ref", "rule_version", "prompt_version"}, "qualification", out)
             require(qualification, ("decision", "reasoning", "confidence", "qualified_at", "evidence_refs", "provenance_ref"), "qualification", out)
-            if qualification.get("decision") not in {"PASS", "REVIEW", "REJECT"}:
+            decision = qualification.get("decision")
+            if decision not in {"PASS", "REVIEW", "REJECT"}:
                 out.append(finding("ERROR", "qualification.decision", "must be PASS, REVIEW, or REJECT"))
+            elif stage not in QUALIFICATION_STAGES[decision]:
+                allowed = ", ".join(sorted(QUALIFICATION_STAGES[decision]))
+                out.append(finding("ERROR", "qualification.decision", f"{decision} is inconsistent with pipeline stage {stage}; expected one of: {allowed}"))
+            dimensions = qualification.get("dimensions")
+            if dimensions is not None:
+                if not isinstance(dimensions, dict):
+                    out.append(finding("ERROR", "qualification.dimensions", "must be an object"))
+                else:
+                    reject_unknown(dimensions, {"icp_fit", "pain", "timing", "ims_fit", "commercial_relevance"}, "qualification.dimensions", out)
             if "qualified_at" in qualification and not valid_timestamp(qualification["qualified_at"]):
                 out.append(finding("ERROR", "qualification.qualified_at", "must be an ISO 8601 date-time"))
-            for ref in qualification.get("evidence_refs", []):
+            for ref in as_list(qualification.get("evidence_refs", []), "qualification.evidence_refs", out):
                 if ref not in evidence_ids:
                     out.append(finding("ERROR", "qualification.evidence_refs", f"unknown evidence reference: {ref}"))
             if qualification.get("provenance_ref") not in provenance_ids:
@@ -215,21 +268,39 @@ def validate_v1(data: Any) -> list[Finding]:
         if not isinstance(enrichment, dict):
             out.append(finding("ERROR", "enrichment", "must be an object"))
         else:
+            reject_unknown(enrichment, {"status", "organizations", "contacts", "notes"}, "enrichment", out)
             require(enrichment, ("status", "organizations", "contacts"), "enrichment", out)
-            for index, contact in enumerate(enrichment.get("contacts", [])):
+            status = enrichment.get("status")
+            if status not in ENRICHMENT_STAGES:
+                out.append(finding("ERROR", "enrichment.status", "invalid enrichment status"))
+            elif stage not in ENRICHMENT_STAGES[status]:
+                allowed = ", ".join(sorted(ENRICHMENT_STAGES[status]))
+                out.append(finding("ERROR", "enrichment.status", f"{status} is inconsistent with pipeline stage {stage}; expected one of: {allowed}"))
+            contacts = as_list(enrichment.get("contacts", []), "enrichment.contacts", out)
+            organizations = as_list(enrichment.get("organizations", []), "enrichment.organizations", out)
+            for index, contact in enumerate(contacts):
                 _validate_contact(contact, index, evidence_ids, provenance_ids, out)
-            for oi, org in enumerate(enrichment.get("organizations", [])):
-                for ref in org.get("evidence_refs", []) if isinstance(org, dict) else []:
+            for oi, org in enumerate(organizations):
+                base = f"enrichment.organizations[{oi}]"
+                if not isinstance(org, dict):
+                    out.append(finding("ERROR", base, "organization must be an object"))
+                    continue
+                reject_unknown(org, {"organization_id", "name", "relationship_type", "relationship_description", "confidence", "evidence_refs"}, base, out)
+                require(org, ("organization_id", "name", "relationship_type", "confidence", "evidence_refs"), base, out)
+                for ref in as_list(org.get("evidence_refs", []), f"{base}.evidence_refs", out):
                     if ref not in evidence_ids:
-                        out.append(finding("ERROR", f"enrichment.organizations[{oi}].evidence_refs", f"unknown evidence reference: {ref}"))
+                        out.append(finding("ERROR", f"{base}.evidence_refs", f"unknown evidence reference: {ref}"))
 
-    history = data.get("pipeline_history", [])
+    history = as_list(data.get("pipeline_history", []), "pipeline_history", out)
+    if not history:
+        out.append(finding("ERROR", "pipeline_history", "must contain START -> RADAR and all subsequent transitions"))
     previous: str | None = None
     for index, transition in enumerate(history):
         base = f"pipeline_history[{index}]"
         if not isinstance(transition, dict):
             out.append(finding("ERROR", base, "must be an object"))
             continue
+        reject_unknown(transition, {"from", "to", "at", "reason", "provenance_ref"}, base, out)
         require(transition, ("from", "to", "at", "provenance_ref"), base, out)
         source, target = transition.get("from"), transition.get("to")
         if source != previous:
@@ -244,14 +315,30 @@ def validate_v1(data: Any) -> list[Finding]:
     if history and stage in STAGES and previous != stage:
         out.append(finding("ERROR", "pipeline_stage", f"does not match history terminal stage {previous}"))
 
-    for index, conflict in enumerate(data.get("conflicts", [])):
-        if not isinstance(conflict, dict) or len(conflict.get("values", [])) < 2:
+    for index, conflict in enumerate(as_list(data.get("conflicts", []), "conflicts", out)):
+        if not isinstance(conflict, dict):
+            out.append(finding("ERROR", f"conflicts[{index}]", "must be an object"))
+            continue
+        reject_unknown(conflict, {"field", "values", "status", "resolution"}, f"conflicts[{index}]", out)
+        values = as_list(conflict.get("values", []), f"conflicts[{index}].values", out)
+        if len(values) < 2:
             out.append(finding("ERROR", f"conflicts[{index}]", "must preserve at least two conflicting values"))
         else:
-            for vi, value in enumerate(conflict["values"]):
-                for ref in value.get("evidence_refs", []):
+            for vi, value in enumerate(values):
+                if not isinstance(value, dict):
+                    out.append(finding("ERROR", f"conflicts[{index}].values[{vi}]", "must be an object"))
+                    continue
+                reject_unknown(value, {"value", "evidence_refs"}, f"conflicts[{index}].values[{vi}]", out)
+                for ref in as_list(value.get("evidence_refs", []), f"conflicts[{index}].values[{vi}].evidence_refs", out):
                     if ref not in evidence_ids:
                         out.append(finding("ERROR", f"conflicts[{index}].values[{vi}].evidence_refs", f"unknown evidence reference: {ref}"))
+
+    for index, feedback in enumerate(as_list(data.get("sales_feedback", []), "sales_feedback", out)):
+        base = f"sales_feedback[{index}]"
+        if not isinstance(feedback, dict):
+            out.append(finding("ERROR", base, "must be an object"))
+            continue
+        reject_unknown(feedback, {"outcome", "recorded_at", "recorded_by", "notes"}, base, out)
 
     if not evidence:
         out.append(finding("WARNING", "evidence", "lead has no evidence yet"))
@@ -313,12 +400,22 @@ def default_paths() -> list[Path]:
     return paths
 
 
+def expand_paths(paths: Iterable[Path]) -> list[Path]:
+    expanded: list[Path] = []
+    for path in paths:
+        if path.is_dir():
+            expanded.extend(sorted(item for item in path.rglob("*.json") if item.name != "schema.json"))
+        else:
+            expanded.append(path)
+    return expanded
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="*", type=Path, help="JSON files (defaults to fixtures and current latest feeds)")
     parser.add_argument("--strict-warnings", action="store_true", help="return non-zero when warnings exist")
     args = parser.parse_args(argv)
-    paths = args.paths or default_paths()
+    paths = expand_paths(args.paths) if args.paths else default_paths()
     error_count = warning_count = 0
     for path in paths:
         try:

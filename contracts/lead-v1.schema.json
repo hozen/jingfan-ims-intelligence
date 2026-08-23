@@ -5,7 +5,7 @@
   "description": "Canonical, additive exchange contract. Legacy radar and enrichment reports remain supported interfaces.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["contract_version", "lead_id", "lead_type", "created_at", "updated_at", "pipeline_stage", "evidence", "provenance"],
+  "required": ["contract_version", "lead_id", "lead_type", "created_at", "updated_at", "pipeline_stage", "evidence", "provenance", "pipeline_history"],
   "properties": {
     "contract_version": { "const": "1.0" },
     "lead_id": { "$ref": "#/$defs/lead_id" },
@@ -20,7 +20,7 @@
     "qualification": { "$ref": "#/$defs/qualification" },
     "enrichment": { "$ref": "#/$defs/enrichment" },
     "provenance": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance" } },
-    "pipeline_history": { "type": "array", "items": { "$ref": "#/$defs/transition" } },
+    "pipeline_history": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/transition" } },
     "duplicate_of": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/lead_id" } },
     "conflicts": { "type": "array", "items": { "$ref": "#/$defs/conflict" } },
     "sales_feedback": { "type": "array", "items": { "$ref": "#/$defs/sales_feedback" } }
@@ -197,6 +197,7 @@
           "minItems": 2,
           "items": {
             "type": "object",
+            "additionalProperties": false,
             "required": ["value", "evidence_refs"],
             "properties": {
               "value": {},

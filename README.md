@@ -40,3 +40,5 @@ python scripts/validate_intelligence.py path/to/lead.json
 See `docs/architecture.md`, `docs/pipeline.md`, `docs/data-contract.md`, and `docs/repository-audit.md` before changing interfaces or business-stage semantics.
 
 For architecture/product review, start with `docs/task-001-review.md` and open `docs/ims-gtm-mvp-map.html` for the Chinese visual report-out.
+
+For task-by-task customer deliverables, acceptance gates, evidence, and next-step readiness, open `docs/task-delivery-dashboard.html`.

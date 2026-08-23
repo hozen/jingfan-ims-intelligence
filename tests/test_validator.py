@@ -93,6 +93,47 @@ class CanonicalContractTests(unittest.TestCase):
         bad["enrichment"]["contacts"][0]["phone"] = "13800000000"
         self.assertTrue(any("NOT_FOUND requires null" in item.message for item in errors(validate_document(bad))))
 
+    def test_missing_pipeline_history_is_rejected(self):
+        data = load("case_a_valid_radar.json")
+        del data["pipeline_history"]
+        findings = errors(validate_document(data))
+        self.assertTrue(any(item.path == "pipeline_history" for item in findings))
+
+    def test_pass_decision_at_radar_is_rejected(self):
+        data = load("case_b_qualified.json")
+        data["pipeline_stage"] = "RADAR"
+        data["pipeline_history"] = data["pipeline_history"][:1]
+        findings = errors(validate_document(data))
+        self.assertTrue(any(item.path == "qualification.decision" and "inconsistent" in item.message for item in findings))
+
+    def test_reject_decision_without_rejected_state_is_rejected(self):
+        data = load("case_e_rejected.json")
+        data["pipeline_stage"] = "REVIEW"
+        data["pipeline_history"][-1]["to"] = "REVIEW"
+        findings = errors(validate_document(data))
+        self.assertTrue(any(item.path == "qualification.decision" and "inconsistent" in item.message for item in findings))
+
+    def test_enrichment_status_before_enrichment_is_rejected(self):
+        data = load("case_d_enriched_epc_contacts.json")
+        data["pipeline_stage"] = "QUALIFIED"
+        data["pipeline_history"] = data["pipeline_history"][:3]
+        findings = errors(validate_document(data))
+        self.assertTrue(any(item.path == "enrichment.status" and "inconsistent" in item.message for item in findings))
+
+    def test_unexpected_top_level_property_is_rejected(self):
+        data = load("case_a_valid_radar.json")
+        data["unexpected"] = "not in schema"
+        findings = errors(validate_document(data))
+        self.assertTrue(any(item.path == "unexpected" and item.message == "unexpected property" for item in findings))
+
+    def test_malformed_nested_types_produce_findings_without_crashing(self):
+        data = load("case_d_enriched_epc_contacts.json")
+        data["provenance"][0]["evidence_refs"] = 42
+        data["enrichment"]["contacts"] = {"not": "an array"}
+        data["conflicts"] = [{"field": "x", "values": 42, "status": "UNRESOLVED"}]
+        findings = validate_document(data)
+        self.assertGreaterEqual(len(errors(findings)), 3)
+
 
 class LegacyCompatibilityTests(unittest.TestCase):
     def test_current_latest_interfaces_are_accepted(self):

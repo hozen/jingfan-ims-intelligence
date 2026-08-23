@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMS GTM Task Delivery Dashboard</title>
+  <style>
+    :root { --ink:#18212b; --muted:#64727e; --line:#dbe2e7; --paper:#f7f9fb; --card:#fff; --blue:#1261a0; --green:#16734b; --amber:#9a6411; --red:#b13b3b; --blue-soft:#eaf3fb; --green-soft:#e9f7ef; --amber-soft:#fff5df; --red-soft:#fdecec; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:15px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+    main { max-width:1180px; margin:0 auto; padding:34px 22px 56px; }
+    h1,h2,h3,p { margin:0; }
+    h1 { font-size:32px; letter-spacing:-.02em; }
+    h2 { font-size:20px; margin-bottom:12px; }
+    h3 { font-size:16px; margin-bottom:7px; }
+    .eyebrow { color:var(--blue); font-weight:700; letter-spacing:.09em; text-transform:uppercase; font-size:12px; margin-bottom:7px; }
+    .subtitle { color:var(--muted); max-width:800px; margin-top:7px; }
+    .hero { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; margin-bottom:25px; }
+    .overall { min-width:190px; padding:15px 17px; border:1px solid #b9ddc9; background:var(--green-soft); border-radius:12px; }
+    .overall strong { display:block; color:var(--green); font-size:22px; }
+    .overall span { color:var(--green); font-size:13px; }
+    .layout { display:grid; grid-template-columns:250px 1fr; gap:20px; align-items:start; }
+    nav, section { background:var(--card); border:1px solid var(--line); border-radius:14px; }
+    nav { padding:10px; position:sticky; top:16px; }
+    nav button { width:100%; text-align:left; border:0; background:transparent; padding:13px 12px; border-radius:9px; cursor:pointer; color:var(--ink); font:inherit; }
+    nav button:hover, nav button[aria-selected="true"] { background:var(--blue-soft); color:var(--blue); }
+    nav button[aria-selected="true"] { font-weight:700; }
+    .nav-status { display:block; font-size:12px; color:var(--muted); margin-top:2px; }
+    .status { display:inline-block; border-radius:999px; padding:3px 9px; font-size:12px; font-weight:700; }
+    .status.fail { background:var(--red-soft); color:var(--red); }
+    .status.ready { background:var(--green-soft); color:var(--green); }
+    .status.next { background:var(--blue-soft); color:var(--blue); }
+    .detail { padding:22px; }
+    .detail-head { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; padding-bottom:18px; border-bottom:1px solid var(--line); }
+    .detail-head p { color:var(--muted); max-width:720px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px; }
+    .block { border:1px solid var(--line); border-radius:11px; padding:15px; }
+    .block.customer { border-color:#b9ddc9; background:var(--green-soft); }
+    .block.engineering { background:#fbfcfd; }
+    .block.blocker { border-color:#efcaca; background:var(--red-soft); }
+    .block ul { margin:7px 0 0; padding-left:20px; }
+    .block li + li { margin-top:5px; }
+    .metric-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .metric { flex:1 1 130px; border-left:3px solid var(--blue); padding:8px 12px; background:#f4f8fc; }
+    .metric strong { display:block; font-size:23px; }
+    .metric span { color:var(--muted); font-size:12px; }
+    .flow { display:flex; gap:0; flex-wrap:wrap; margin-top:8px; }
+    .flow span { padding:8px 11px; background:#edf2f5; border:1px solid var(--line); color:var(--muted); }
+    .flow span:first-child { border-radius:8px 0 0 8px; }
+    .flow span:last-child { border-radius:0 8px 8px 0; }
+    .flow .active { background:var(--red-soft); border-color:#efcaca; color:var(--red); font-weight:700; }
+    .small { color:var(--muted); font-size:13px; }
+    code { background:#eef2f5; padding:1px 5px; border-radius:4px; font-size:.92em; }
+    footer { margin-top:18px; color:var(--muted); font-size:12px; }
+    @media (max-width:760px) { main { padding:24px 14px 40px; } .hero,.detail-head { display:block; } .overall { margin-top:16px; } .layout { grid-template-columns:1fr; } nav { position:static; } .grid { grid-template-columns:1fr; } .flow span { flex:1 1 45%; border-radius:6px !important; margin:2px; text-align:center; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">IMS GTM · Customer Delivery View</div>
+      <h1>Task Delivery Dashboard</h1>
+      <p class="subtitle">每个 Task 都必须同时产生可验证的工程结果和可直接交付给客户的业务成果。这里展示当前状态、证据、价值和下一步。</p>
+    </div>
+    <div class="overall"><strong>PASS</strong><span>Task 001 architecture gate 已关闭</span></div>
+  </header>
+
+  <div class="layout">
+    <nav aria-label="Tasks">
+      <button type="button" aria-selected="true" data-task="task1">Task 001 · Architecture Gate<span class="nav-status"><span class="status ready">PASS</span> contract foundation</span></button>
+      <button type="button" aria-selected="false" data-task="task2">Task 002 · Industrial Adapter<span class="nav-status"><span class="status next">NEXT</span> planned deliverable</span></button>
+      <button type="button" aria-selected="false" data-task="delivery">Delivery Standard<span class="nav-status"><span class="status ready">RULE</span> definition of done</span></button>
+    </nav>
+
+    <section class="detail" aria-live="polite">
+      <div id="task1" class="task-panel">
+        <div class="detail-head"><div><h2>Task 001 · Architecture Gate</h2><p>目标：冻结 Lead Contract v1、状态边界和验证基础，同时不破坏现有 Radar / Enrichment / agent handoff。</p></div><span class="status ready">PASS</span></div>
+        <div class="metric-row"><div class="metric"><strong>18/18</strong><span>automated tests passed</span></div><div class="metric"><strong>9</strong><span>synthetic fixtures</span></div><div class="metric"><strong>4</strong><span>latest feeds compatible</span></div><div class="metric"><strong>0/0</strong><span>latest feed errors/warnings</span></div></div>
+        <div class="grid">
+          <div class="block customer"><h3>Customer deliverables · 已有价值</h3><ul><li>稳定的 Lead/Opportunity v1 数据交换格式</li><li>证据、来源、Agent provenance 可追溯</li><li>Radar → Qualification → Enrichment 的阶段模型</li><li>旧有 feeds 保持原路径，避免客户流程中断</li></ul></div>
+          <div class="block engineering"><h3>Engineering outputs · 可验证产物</h3><ul><li><code>contracts/lead-v1.schema.json</code></li><li>dependency-free validator</li><li>9 个边界 fixtures + 18 个 regression tests</li><li>architecture / data / pipeline / repository audit docs</li></ul></div>
+          <div class="block customer"><h3>Gate closure · 已修复</h3><ul><li><code>pipeline_history</code> 必填且必须连续</li><li>Qualification / Enrichment 与 pipeline stage 强制一致</li><li>额外字段和畸形嵌套结构会产生 ERROR</li><li><code>.hermes/.env</code> 已通过非披露审查并取消 Git 跟踪</li></ul></div>
+          <div class="block"><h3>Compatibility · 没有引入的东西</h3><ul><li>没有数据库、SaaS、CRM 或 workflow engine</li><li>没有重命名或重写 legacy Radar/Enrichment 文件</li><li>没有自动 outreach 或 provider abstraction</li><li>GitHub Pages / Actions 仍未启用</li></ul></div>
+        </div>
+        <h3 style="margin-top:20px">Current pipeline gate</h3>
+        <div class="flow" aria-label="Pipeline status"><span>Radar</span><span>Qualification</span><span>Enrichment</span><span>Orchestration</span><span>Sales Ready</span><span class="active" style="background:var(--green-soft);border-color:#b9ddc9;color:var(--green)">Gate passed</span></div>
+        <p class="small" style="margin-top:10px">判断：Task 001 已成为稳定工程基线；Task 002 仅获准开始只读 Industrial Radar adapter。</p>
+      </div>
+
+      <div id="task2" class="task-panel" hidden>
+        <div class="detail-head"><div><h2>Task 002 · Industrial Radar Adapter</h2><p>目标：将一个真实 Industrial Radar feed 只读映射到 Lead Contract v1，让客户能看到“一个信号如何变成一个可追踪 Lead”。</p></div><span class="status next">NEXT</span></div>
+        <div class="grid">
+          <div class="block customer"><h3>Customer deliverables · 必须交付</h3><ul><li>一组可审阅的 canonical Leads</li><li>每个 Lead 的证据与来源链接</li><li>字段映射和无法映射字段报告</li><li>一页式“哪些信号值得跟进”摘要</li></ul></div>
+          <div class="block engineering"><h3>Engineering outputs · 必须可验证</h3><ul><li>只读 adapter，不改原始 Radar JSON</li><li>保留原始 Lead ID</li><li>golden fixtures / tests</li><li>重复、缺失、冲突字段的显式报告</li></ul></div>
+          <div class="block"><h3>Out of scope</h3><ul><li>不做 qualification scoring</li><li>不自动 enrich contacts</li><li>不接 CRM 或 outbound channel</li><li>不引入通用 provider/workflow framework</li></ul></div>
+          <div class="block"><h3>Success gate</h3><ul><li>客户能从 Radar signal 点到 Lead</li><li>每个重要判断都有 evidence_ref</li><li>原始 feeds 内容和路径不变</li><li>无法表示的字段不会被静默丢弃</li></ul></div>
+        </div>
+      </div>
+
+      <div id="delivery" class="task-panel" hidden>
+        <div class="detail-head"><div><h2>Delivery Standard · 每个 Task 的 Definition of Done</h2><p>以后不再只交代码或文档；每个阶段必须留下客户可以理解、审阅和继续使用的成果。</p></div><span class="status ready">RULE</span></div>
+        <div class="grid">
+          <div class="block customer"><h3>1 · Customer outcome</h3><p>客户能用一句话说清楚：这一步新增了什么决策能力、节省了什么时间、降低了什么风险。</p></div>
+          <div class="block customer"><h3>2 · Visible artifact</h3><p>至少一个可打开、可阅读、可演示的产物：Lead pack、mapping report、evidence brief、decision summary 或 dashboard。</p></div>
+          <div class="block engineering"><h3>3 · Evidence of correctness</h3><p>测试结果、样例输入输出、兼容性结果、已知限制和失败案例必须可见。</p></div>
+          <div class="block engineering"><h3>4 · Scope honesty</h3><p>明确哪些完成、哪些未完成、哪些不应在本 Task 做，防止“看起来很完整”但不能交付。</p></div>
+        </div>
+        <h3 style="margin-top:20px">Customer-ready output pattern</h3>
+        <div class="flow"><span>Source</span><span>Transformation</span><span>Evidence</span><span>Decision</span><span>Customer action</span></div>
+        <p class="small" style="margin-top:10px">任何 Task 如果不能走完这五步，就只能算 engineering progress，不能算 customer deliverable。</p>
+      </div>
+    </section>
+  </div>
+  <footer>Snapshot basis: Task 001 closure verification, 2026-08-23. See <code>docs/task-001-closure.md</code> for evidence and remaining Product Owner decisions.</footer>
+</main>
+<script>
+  const buttons = [...document.querySelectorAll('nav button[data-task]')];
+  const panels = [...document.querySelectorAll('.task-panel')];
+  buttons.forEach(button => button.addEventListener('click', () => {
+    const id = button.dataset.task;
+    buttons.forEach(item => item.setAttribute('aria-selected', String(item === button)));
+    panels.forEach(panel => { panel.hidden = panel.id !== id; });
+  }));
+</script>
+</body>
+</html>

@@ -64,7 +64,7 @@ Audit basis: `main` at `23fa316` on 2026-08-21, including repository history and
 - Mutable latest snapshots can drift from dated files and have no atomic publishing check.
 - Duplicate opportunity detection and legacy-to-canonical ID mapping remain manual.
 - Legacy contacts and evidence do not consistently carry record-level source/provenance references.
-- `.hermes/.env` is tracked by ignore exception. Its contents were not inspected in this audit; tracking environment files is a security risk that needs a separate, authorized secrets review.
+- `.hermes/.env` was tracked historically. A non-disclosing closure review found seven credential-like assignments, all recognizable placeholders rather than active-looking secrets. Task 001 removes the file from current Git tracking and preserves it only as a local ignored file; old history still requires normal repository access controls.
 - Presentation scripts have no declared dependency lock or automated verification.
 
 ## Recommended Task 002
