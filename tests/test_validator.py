@@ -134,6 +134,36 @@ class CanonicalContractTests(unittest.TestCase):
         findings = validate_document(data)
         self.assertGreaterEqual(len(errors(findings)), 3)
 
+    def test_unhashable_transition_values_produce_findings_without_crashing(self):
+        for source, target in ((None, {}), ([], "RADAR"), ({}, [])):
+            with self.subTest(source=source, target=target):
+                data = load("case_a_valid_radar.json")
+                data["pipeline_history"] = [{
+                    "from": source,
+                    "to": target,
+                    "at": "2026-08-21T08:00:00+08:00",
+                    "provenance_ref": "run-a",
+                }]
+                findings = validate_document(data)
+                self.assertTrue(any("invalid pipeline transition" in item.message for item in errors(findings)))
+
+    def test_company_requires_name_when_present(self):
+        data = load("case_a_valid_radar.json")
+        data["company"] = {}
+        self.assertTrue(any(item.path == "company.company_name" for item in errors(validate_document(data))))
+
+    def test_project_requires_name_when_present(self):
+        data = load("case_a_valid_radar.json")
+        data["project"] = {}
+        self.assertTrue(any(item.path == "project.project_name" for item in errors(validate_document(data))))
+
+    def test_signal_requires_type_and_description_when_present(self):
+        data = load("case_a_valid_radar.json")
+        data["signal"] = {}
+        paths = {item.path for item in errors(validate_document(data))}
+        self.assertIn("signal.signal_type", paths)
+        self.assertIn("signal.signal_description", paths)
+
 
 class LegacyCompatibilityTests(unittest.TestCase):
     def test_current_latest_interfaces_are_accepted(self):

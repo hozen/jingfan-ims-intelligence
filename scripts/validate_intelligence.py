@@ -116,7 +116,11 @@ def as_list(value: Any, path: str, out: list[Finding]) -> list[Any]:
     return []
 
 
-def validate_transition(previous: str | None, current: str) -> bool:
+def validate_transition(previous: Any, current: Any) -> bool:
+    if previous is not None and not isinstance(previous, str):
+        return False
+    if not isinstance(current, str):
+        return False
     return current in TRANSITIONS.get(previous, set())
 
 
@@ -171,10 +175,10 @@ def validate_v1(data: Any) -> list[Finding]:
     if stage not in STAGES:
         out.append(finding("ERROR", "pipeline_stage", "invalid pipeline stage"))
 
-    for key, allowed in (
-        ("company", {"company_name", "normalized_company_name", "location", "industry"}),
-        ("project", {"project_name", "project_type", "project_location", "project_stage", "estimated_timing"}),
-        ("signal", {"signal_type", "signal_description", "signal_date"}),
+    for key, allowed, required_fields in (
+        ("company", {"company_name", "normalized_company_name", "location", "industry"}, ("company_name",)),
+        ("project", {"project_name", "project_type", "project_location", "project_stage", "estimated_timing"}, ("project_name",)),
+        ("signal", {"signal_type", "signal_description", "signal_date"}, ("signal_type", "signal_description")),
     ):
         value = data.get(key)
         if value is not None:
@@ -182,6 +186,7 @@ def validate_v1(data: Any) -> list[Finding]:
                 out.append(finding("ERROR", key, "must be an object"))
             else:
                 reject_unknown(value, allowed, key, out)
+                require(value, required_fields, key, out)
 
     evidence = as_list(data.get("evidence", []), "evidence", out)
     evidence_ids: set[str] = set()
