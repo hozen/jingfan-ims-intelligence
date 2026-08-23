@@ -20,9 +20,13 @@ Each evidence item has a stable `evidence_id`, source metadata, HTTP(S) URL, ret
 
 The required decision is `PASS`, `REVIEW`, or `REJECT`, with reasoning, evidence references, confidence, time, and provenance. The five future dimensions are optional narrative fields. No BANT assumption or opportunity-score formula exists in v1.
 
+Decision and pipeline state are cross-validated: `PASS` requires `QUALIFIED` or a later qualified-path stage, `REVIEW` requires `REVIEW`, and `REJECT` requires `REJECTED`. Every canonical lead must include a non-empty, contiguous `pipeline_history` beginning with `START -> RADAR`; its terminal state must equal `pipeline_stage`.
+
 ## Enrichment
 
 Enrichment holds project-related organizations and role-oriented contacts. Organization relationships include owner, facility, EPC, design institute, system integrator, and engineering contractor. Contact phone and email values pair with explicit availability states. `NOT_FOUND` and `UNKNOWN` require `null`; they are not placeholder strings.
+
+`PENDING`, `IN_PROGRESS`, and `PARTIAL` enrichment are valid only in `ENRICHMENT` or `REVIEW`. `COMPLETE` is valid only from `ENRICHED` onward. The validator also rejects unknown properties consistently with the schema and reports malformed nested structures as findings rather than raising an exception.
 
 ## Merge principles
 

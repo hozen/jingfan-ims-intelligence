@@ -12,7 +12,7 @@ Open the visual summary at [`docs/ims-gtm-mvp-map.html`](ims-gtm-mvp-map.html) f
 - An additive Lead Contract v1 covering identity, pipeline state, evidence, provenance, qualification, enrichment, conflicts, duplicate relationships, and future sales feedback.
 - A lightweight state model for Radar through Engagement.
 - A dependency-free validator with human-readable `ERROR`, `WARNING`, and `INFO` findings.
-- Nine synthetic fixtures and twelve automated regression tests.
+- Nine synthetic fixtures and eighteen automated regression tests, including negative contract/state cases.
 - Compatibility validation for all four current mutable `latest` interfaces.
 - Documentation for architecture, pipeline boundaries, data contracts, risks, Product Owner decisions, and the smallest recommended next task.
 
@@ -37,7 +37,7 @@ This stage does not rename, rewrite, migrate, or delete existing intelligence fi
 - [ ] Review the explicit state transitions and rejection semantics.
 - [ ] Decide whether Task 002 may add a read-only industrial Radar-to-v1 adapter.
 - [ ] Decide whether GitHub Actions validation and branch protection should be enabled.
-- [ ] Schedule a separate secrets review for the tracked `.hermes/.env`; its contents were not inspected in Task 001.
+- [x] Review `.hermes/.env` without exposing values; seven credential-like entries are placeholders. Remove the file from Git tracking while preserving the local ignored copy.
 
 ## How to verify
 
@@ -46,11 +46,13 @@ python -m unittest discover -s tests -v
 python scripts/validate_intelligence.py
 ```
 
-Expected result: 12 tests pass, and nine synthetic fixtures plus four current latest feeds validate with zero errors and zero warnings. Legacy feeds are reported as compatibility-mode inputs.
+Expected result: 18 tests pass, and nine synthetic fixtures plus four current latest feeds validate with zero errors and zero warnings. Legacy feeds are reported as compatibility-mode inputs.
 
 ## Known historical data issues
 
 A broader scan of 35 legacy intelligence files found 23 missing-ID errors and five malformed or empty source URL warnings, concentrated in municipal reports dated 2026-08-10 through 2026-08-18. Task 001 deliberately does not invent replacement IDs or URLs.
+
+The exact closure verification and security result are recorded in [`task-001-closure.md`](task-001-closure.md).
 
 ## Recommended next task — do not execute before review
 
