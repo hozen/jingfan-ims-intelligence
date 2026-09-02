@@ -98,7 +98,7 @@
       "public_facts": "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）。8月19日，西部组团净水二厂获评第五期'双百跨越'智能化标杆污水处理厂。官方信息确认：厂区已上线'设备全生命周期管理'系统、AI视频巡检、电力智能分析等智能协同系统；工艺与设备数据自动采集率100%；核心设备远程控制率88.3%；设备预测性维护命中率93%。8月30日人民日报道合肥水务集团水务一体化改革两年成果，涉水职能归口统一，'原水-供水-排水-净水'全链条协同治理。此前已发现：2026-2028年度阀门采购(预算2450万)、南淝河49处在线监测设施运维(72.2万，9月采购)。",
       "ai_judgment": "合肥水务集团正处于从分散管理向超大规模集中管控转型的成熟期。关键发现：'设备全生命周期管理'系统已在西部组团净水二厂上线运行，且'设备预测性维护命中率93%'——这直接验证了iMS Asset Management和Predictive Maintenance的Use Case在大型水务集团的真实需求。但核心验证问题是：该'设备全生命周期管理'系统是否已覆盖在线水质仪表（Hach核心品类），还是仅覆盖通用机电设备（泵/阀门/风机）？如果仅覆盖通用设备，则在线水质仪表的健康诊断和资产管理仍是数字化白空间。7236km排水管网+250座泵站+169座自来水厂的规模，加上多个正在执行的采购项目，使合肥水务集团成为当前最高优先级的Company Agent验证对象。",
       "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics / Predictive Maintenance",
-      "opportunity_stage": "战略规划+采购并行",
+      "opportunity_stage": "采购",
       "estimated_time_window": "3-6 months",
       "logic_chain_check": "Customer Change(水务一体化改革两年, 投建管运一体化) -> Digital Change(设备全生命周期管理系统已上线, 数据采集率100%) -> Operational Problem(169座水厂+7236km管网+250座泵站统一运维) -> Instrument/Data/Asset Management Need(设备全生命周期管理是否覆盖在线水质仪表待验证) -> Potential iMS Use Case。逻辑链完整，且系统已落地验证需求真实性。",
       "to_verify": {
