@@ -2,785 +2,587 @@
   "radar_type": "industrial",
   "market_segment": "industrial",
   "report_date": "2026-09-08",
-  "experiment_week": 4,
-  "experiment_phase": "Week 4 - Methodology evaluation + final assessment",
+  "experiment_week": 5,
+  "spec_version": "v3.0",
   "scanner_summary": {
-    "total_signals": 10,
-    "engine_a_count": 3,
+    "total_signals": 11,
+    "engine_a_count": 0,
     "engine_b_count": 7,
+    "engine_c_count": 4,
+    "pass_count": 0,
+    "watch_count": 7,
+    "reject_count": 4,
     "industry_breakdown": {
-      "Cross-sector": 1,
-      "Petrochemical/Chemical": 2,
-      "New Energy/Battery": 1,
-      "Pharmaceutical": 1,
-      "Petrochemical/Chemical (Thermal Power)": 2,
-      "Industrial Park (mixed)": 1,
-      "Cross-sector (thermal power focus)": 1,
-      "Equipment Manufacturing": 1
+      "petrochemical": 4,
+      "power": 3,
+      "battery": 1,
+      "pharma": 2,
+      "industrial_park": 1
     },
-    "trigger_breakdown": {
-      "regulatory_compliance": 3,
-      "capex_project": 7
+    "opp_type_breakdown": {
+      "iMS Lead": 1,
+      "Early Strategic Lead": 3,
+      "Tender Monitoring": 4,
+      "Installed Base Future Lead": 1,
+      "Not Qualified": 2
     },
-    "source_breakdown": {
-      "government_official": 5,
-      "tender_platform": 3,
-      "industry_media": 2
+    "entry_window_breakdown": {
+      "EARLY": 4,
+      "LATE": 4,
+      "CLOSED": 2,
+      "UNKNOWN": 1
+    },
+    "influence_window_breakdown": {
+      "HIGH": 2,
+      "MEDIUM": 1,
+      "LOW": 4,
+      "NONE": 4
     },
     "pull_score_distribution": {
-      "0-5": 0,
-      "6-10": 4,
-      "11-15": 6,
-      "16-20": 0
+      "0_5": 2,
+      "6_10": 5,
+      "11_15": 4,
+      "16_20": 0
     },
-    "early_vs_late_distribution": {
-      "early_trigger": 7,
-      "potential_opportunity": 3
-    },
-    "qualification_breakdown": {
-      "PASS": 0,
-      "WATCH": 8,
-      "REJECT": 2
-    },
-    "priority_breakdown": {
-      "P1": 0,
-      "P2": 6,
-      "P3": 4
-    }
+    "search_bias_warning": "Tender+Closed = 7/11 = 64% > 50%. Radar leans toward tender search. Next round: strengthen Engine C Early Signal search (project filing, feasibility study, EIA first announcement, digitalization plans, O&M pain points)."
   },
   "top_5_match": [
     {
-      "id": "IND-20260908-01",
-      "company": "Cross-sector (all key pollution discharge units)",
-      "industry": "Cross-sector",
-      "pull_score": 15,
-      "priority": "P2",
-      "qualification": "WATCH",
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "reason": "自动监测设备故障4日未上报+第三方运维响应不足+合规压力+数据异常无人处理. iMS Demand Signal完整成立.",
       "agent_checklist": [
-        "Which specific enterprises in target industries lack auto-monitoring equipment?",
-        "What is Hach's installed base in key pollution discharge units?",
-        "Are there provincial-level implementation deadlines beyond the national Code?"
+        "确认该厂在线仪表数量+排口数量",
+        "确认是否多厂区/多排口",
+        "确认当前SCADA覆盖范围",
+        "确认环保/EHS部门是否已有预算",
+        "确认法典生效后合规压力是否已转化为行动"
       ]
     },
     {
-      "id": "IND-20260908-03",
-      "company": "Zero-Carbon Industrial Park 50GWh Energy Storage Battery Factory",
-      "industry": "New Energy/Battery",
-      "pull_score": 14,
-      "priority": "P2",
-      "qualification": "WATCH",
+      "id": "IND-20260908-04",
+      "company": "山东鼎皓制药",
+      "reason": "新建污水处理站招标计划阶段, 仪表规格未冻结, 预算550万含仪表, 10月正式招标.",
       "agent_checklist": [
-        "Which company owns the 50GWh factory?",
-        "Are instruments procured separately or within EPC?",
-        "What water quality parameters need monitoring?"
+        "查环评确认废水量和在线监测要求",
+        "确认是否已在Vendor List中",
+        "确认业主决策链"
       ]
     },
     {
-      "id": "IND-20260908-09",
-      "company": "Wulanchabu City - all auto-monitoring equipment discharge units",
-      "industry": "Cross-sector (thermal power focus)",
-      "pull_score": 13,
-      "priority": "P2",
-      "qualification": "WATCH",
+      "id": "IND-20260908-12",
+      "company": "建投准能（施耐德实施）",
+      "reason": "智慧电厂全流程数字化已实施, 但水系统仪表是否纳入施耐德平台未知. 存在Digitalization Trigger+Data Pain.",
       "agent_checklist": [
-        "How many enterprises in Wulanchabu need auto-monitoring upgrades?",
-        "Which enterprises are key pollution discharge permit holders?",
-        "Is there a Hach installed base at Wulanchabu thermal power plants?"
+        "确认水系统仪表是否纳入施耐德数字化平台",
+        "确认Hach装机基数",
+        "确认是否有独立水系统仪表运维痛点"
+      ]
+    },
+    {
+      "id": "IND-20260908-13",
+      "company": "金溪斯普瑞药业",
+      "reason": "环评公示稿阶段, 12种精细化工产品改扩建, 废水成分复杂, 影响窗口HIGH.",
+      "agent_checklist": [
+        "下载环评报告查废水处理章节",
+        "确认在线监测仪表要求",
+        "确认废水量"
       ]
     },
     {
       "id": "IND-20260908-05",
-      "company": "Beijing Guodian Power Dalian Development Zone Thermal Power Plant",
-      "industry": "Petrochemical/Chemical (Thermal Power)",
-      "pull_score": 12,
-      "priority": "P2",
-      "qualification": "WATCH",
+      "company": "大开热电2x350MW",
+      "reason": "脱硫废水ZLD EPC招标中, 含甲供设备通道, 投标截止9/14.",
       "agent_checklist": [
-        "Is there a Hach installed base at this plant?",
-        "How is instrumentation procured within the EPC package?",
-        "What monitoring parameters are required for the ZLD system?"
-      ]
-    },
-    {
-      "id": "IND-20260908-08",
-      "company": "Fujian Shishi Hongshan Thermal Power Plant Phase III",
-      "industry": "Petrochemical/Chemical (Thermal Power)",
-      "pull_score": 12,
-      "priority": "P2",
-      "qualification": "WATCH",
-      "agent_checklist": [
-        "Hach installed base at existing Phase I/II?",
-        "Instrument procurement approach within Longyuan EPC?",
-        "What ZLD technology is selected?"
+        "查EPC招标文件甲供设备清单",
+        "确认甲供仪表是否包含水质分析仪"
       ]
     }
   ],
   "signals": [
     {
-      "id": "IND-20260908-01",
-      "market_segment": "industrial",
-      "company": "Cross-sector (all key pollution discharge units)",
-      "industry": "Cross-sector",
-      "location": "National",
-      "opportunity": "Ecological Environment Code compliance upgrade - auto-monitoring equipment installation, networking, data quality",
-      "signal_tier": "Tier 1",
-      "engine": "A",
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "industry": "petrochemical",
+      "location": "吉林市吉林经开区",
+      "engine": "C",
+      "opp_type": "iMS Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "自动监测设备故障4日+第三方运维响应不足+未上报",
       "evidence": {
         "facts": [
-          "Ecological Environment Code effective 2026-08-15, Article 184 requires key pollution discharge permit holders to install auto-monitoring equipment",
-          "Article 183 requires ALL pollution permit holders to conduct self-monitoring",
-          "Non-compliance penalty: 20k-200k RMB; persistent violation: production suspension",
-          "HJ 1480-2026 standard published for self-monitoring video surveillance system construction"
+          "吉林市生态环境局2026年5月29日现场检查发现4月3-6日自动监测数据连续4日超标异常",
+          "企业已发现数据异常但未依法及时报告",
+          "第三方运维仅4月2日和4月9日完成巡检校准, 异常期间无运维记录",
+          "吉林市生态环境局作出不予处罚决定(吉市环不罚JK5号)"
         ],
         "inferences": [
-          "Many enterprises currently rely on manual inspection, decentralized monitoring, or third-party O&M that may not meet new Code requirements",
-          "Demand for auto-monitoring equipment installation, networking, and data management upgrades is likely to surge post-Code implementation"
+          "企业缺乏自动监测设备实时状态管理能力, 依赖第三方定期巡检",
+          "如果有iMS类型集中监控平台, 4天异常窗口可能缩短到小时级",
+          "此类模式可能在重点排污单位中反复出现"
         ],
         "unknowns": [
-          "Specific enterprise-level procurement plans",
-          "Which enterprises lack auto-monitoring equipment vs need upgrades",
-          "Hach installed base in affected enterprises"
+          "该厂有多少台在线监测仪表?",
+          "是否多排口/多厂区?",
+          "当前是否有SCADA/DCS覆盖监测仪表?"
         ]
       },
-      "potential_ims_use_case": "iMS compliance monitoring dashboard, auto-monitoring data integration, anomaly alerting, regulatory reporting automation",
-      "logic": "Regulatory trigger (Code) -> Monitoring obligation (auto-monitoring) -> Instrumentation requirement (install/network/upgrade) -> Potential iMS opportunity (data management + compliance)",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "2026-Q3 to 2027-Q4 (post-Code implementation rush)",
-      "priority": "P2",
-      "water_system_ownership": "N/A",
-      "incrementality_status": "New regulatory obligation",
-      "source_urls": [
-        "https://www.wulanchabu.gov.cn/sthjzl/2005657.html",
-        "https://news.sohu.com/a/1070068543_121106875",
-        "https://mp.weixin.qq.com/s?__biz=MzUyNjE2NTM1OA==&mid=2247523676&idx=1&sn=f2c6843bdf5cf9a7e674823c4a58dd98"
-      ],
       "to_verify": [
-        "Which specific enterprises in target industries lack auto-monitoring equipment?",
-        "What is Hach's installed base in key pollution discharge units?",
-        "Are there provincial-level implementation deadlines beyond the national Code?",
-        "Do enterprises have budget allocated for compliance upgrades?"
+        "确认该厂在线仪表数量+排口数量",
+        "确认当前SCADA覆盖范围",
+        "确认环保部门是否已有预算和行动计划"
       ],
+      "source_urls": ["https://www.jlcity.gov.cn/bmwz/hbj/hjxxgk/hjcf/202608/t20260831_1334077.html"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 4,
-        "U": 5,
-        "L": 3,
-        "L_leverage": 3,
-        "total": 15
-      },
+      "pull_score": {"project_clarity": 4, "unavoidable": 4, "limitations": 3, "ims_leverage": 3, "total": 14},
       "pull_box": {
-        "P_project": "All key pollution permit holders must install/network auto-monitoring per Ecological Environment Code (FACT)",
-        "U_unavoidable": "Legal mandate effective 2026-08-15, penalties 20k-200k RMB, persistent violation = production suspension (FACT)",
-        "L_limitations": "Many enterprises rely on manual inspection, third-party testing, aging equipment, or un-networked monitors - insufficient for Code compliance (INFERENCE)",
-        "L_leverage": "iMS integrates instrument data -> compliance dashboard -> anomaly alerts -> timely reporting -> meets Code obligations (INFERENCE)",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "Which specific enterprises lack auto-monitoring vs need upgrades, and Hach installed base",
-        "next_validation_question": "Which of your sites currently lack auto-monitoring equipment that meets the new Code networking requirements?"
+        "project": "自动监测设备故障4日未上报, 第三方运维响应不足, 合规风险已发生",
+        "project_confidence": "FACT",
+        "unavoidable": "法典生效后重点排污单位自动监测设备必须正常运行, 数据异常必须上报. 不解决产生明确合规后果",
+        "unavoidable_confidence": "FACT",
+        "limitations": "当前依赖第三方定期巡检(每月2次), 异常期间无任何巡检/数据核验/故障排查记录",
+        "limitations_confidence": "FACT",
+        "leverage": "仪表状态数据->发现异常趋势->及时通知运维->减少合规风险. 但需确认多排口规模",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "该厂有多少台在线监测仪表? 是否多排口?",
+        "next_validation_question": "贵厂目前有多少台在线监测仪表? 分布在几个排口? 当前如何管理这些仪表的运行状态?"
       },
-      "evidence_quality": "MEDIUM",
-      "qualification": "WATCH"
-    },
-    {
-      "id": "IND-20260908-02",
-      "market_segment": "industrial",
-      "company": "Tongling Economic Development Zone Chemical Park (East) Wastewater Treatment Plant",
-      "industry": "Petrochemical/Chemical",
-      "location": "Tongling, Anhui",
-      "opportunity": "Self-monitoring project tender for chemical park wastewater treatment plant - pH, COD, ammonia, TP, etc.",
-      "signal_tier": "Tier 2",
-      "engine": "A",
-      "evidence": {
-        "facts": [
-          "Tender published 2026-09-01, budget 147,553 RMB, opening 2026-09-09",
-          "Scope: wastewater, fugitive emissions, rainwater, groundwater, noise, surface water monitoring",
-          "Requires CMA certification",
-          "Contract: 1-year renewable up to 3 years during transitional operation period"
-        ],
-        "inferences": [
-          "Chemical park WWTP is in transitional operation, may need permanent monitoring solution after transition",
-          "Self-monitoring tender is for third-party testing service, not online instrumentation"
-        ],
-        "unknowns": [
-          "Whether WWTP has online monitoring instruments installed",
-          "Park-level vs enterprise-level monitoring responsibilities"
-        ]
-      },
-      "potential_ims_use_case": "Installed base/lifecycle - if WWTP has Hach instruments, iMS could provide data management for self-monitoring compliance",
-      "logic": "Compliance trigger (self-monitoring obligation) -> Third-party testing tender -> Potential future online monitoring upgrade -> iMS lifecycle opportunity",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "Short-term (tender Sep 2026), long-term (post-transitional operation)",
-      "priority": "P3",
-      "water_system_ownership": "B (park centralized treatment)",
-      "incrementality_status": "Existing facility - transitional operation",
-      "source_urls": [
-        "https://ggzyjyzx.tl.gov.cn/jyxx/003006/003006001/20260901/c0af063d-e0c4-4534-bc11-f55c7930040c.html"
-      ],
-      "to_verify": [
-        "Does the WWTP currently have online monitoring instruments?",
-        "What happens after transitional operation period - permanent monitoring needed?",
-        "Is there a Hach installed base at this WWTP?"
-      ],
-      "continuity": "first_seen",
-      "pull_score": {
-        "P": 3,
-        "U": 3,
-        "L": 2,
-        "L_leverage": 2,
-        "total": 10
-      },
-      "pull_box": {
-        "P_project": "Chemical park WWTP conducting self-monitoring per permit requirements (FACT)",
-        "U_unavoidable": "Discharge permit requires self-monitoring; non-compliance risks penalties (FACT)",
-        "L_limitations": "Currently using third-party testing service for periodic sampling - may not provide real-time data (INFERENCE)",
-        "L_leverage": "iMS could integrate online instruments for real-time compliance monitoring, but current tender is for testing service not instrumentation (INFERENCE)",
-        "evidence_quality": "LOW",
-        "key_unknown": "Whether WWTP has online instruments and what happens after transitional operation",
-        "next_validation_question": "After the transitional operation period ends, will the WWTP need permanent online monitoring capabilities?"
-      },
-      "evidence_quality": "LOW",
-      "qualification": "REJECT"
-    },
-    {
-      "id": "IND-20260908-03",
-      "market_segment": "industrial",
-      "company": "Zero-Carbon Industrial Park 50GWh Energy Storage Battery Factory",
-      "industry": "New Energy/Battery",
-      "location": "China (specific location not publicly disclosed in tender)",
-      "opportunity": "Comprehensive wastewater zero-liquid-discharge (ZLD) water treatment project - tender open 2026-09-23",
-      "signal_tier": "Tier 1",
-      "engine": "B",
-      "evidence": {
-        "facts": [
-          "Tender published for 50GWh battery factory ZLD water treatment project",
-          "Opening date: 2026-09-23 09:30",
-          "Project code: SMZB-2026-HZB0834, duration 60 calendar days",
-          "Requires design + construction qualifications (environmental engineering water pollution prevention design Class B+)"
-        ],
-        "inferences": [
-          "50GWh scale indicates very large battery factory with significant wastewater generation",
-          "ZLD requirement indicates strict environmental standards for battery industry wastewater",
-          "Tender includes process equipment, electrical, control systems, civil works - EPC scope"
-        ],
-        "unknowns": [
-          "Specific company/location (masked in tender)",
-          "Water treatment process details beyond ZLD",
-          "Whether instruments are separately procured or included in EPC",
-          "Hach installed base at this facility"
-        ]
-      },
-      "potential_ims_use_case": "iMS for ZLD system instrument monitoring, water treatment process optimization, compliance data management",
-      "logic": "CapEx trigger (50GWh battery factory) -> Water system impact (ZLD required) -> Instrumentation requirement (process monitoring) -> Potential iMS opportunity (lifecycle management)",
-      "opportunity_stage": "Potential Industrial Opportunity",
-      "estimated_time_window": "Tender Sep 2026, construction Q4 2026, commissioning 2027",
-      "priority": "P2",
-      "water_system_ownership": "A (self-built self-operated)",
-      "incrementality_status": "New facility - new water system",
-      "source_urls": [
-        "https://www.qianlima.com/bid-627623254.html"
-      ],
-      "to_verify": [
-        "Which company owns the 50GWh factory?",
-        "Are instruments procured separately or within EPC?",
-        "What water quality parameters need monitoring?",
-        "Is there a Hach installed base at parent company facilities?"
-      ],
-      "continuity": "first_seen",
-      "pull_score": {
-        "P": 5,
-        "U": 4,
-        "L": 2,
-        "L_leverage": 3,
-        "total": 14
-      },
-      "pull_box": {
-        "P_project": "Building 50GWh battery factory with ZLD water treatment system - tender open Sep 2026 (FACT)",
-        "U_unavoidable": "Battery industry wastewater contains heavy metals, ZLD is environmental requirement for large-scale battery production (FACT)",
-        "L_limitations": "New facility - no existing workaround, but ZLD system complexity requires careful monitoring (UNKNOWN)",
-        "L_leverage": "iMS can monitor ZLD system instruments -> detect performance trends -> enable predictive maintenance -> reduce unplanned downtime in critical water treatment (INFERENCE)",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "Whether instruments are separately procured or within EPC, and which company owns the factory",
-        "next_validation_question": "How will the ZLD water treatment system instruments be procured - within EPC or separately?"
-      },
-      "evidence_quality": "MEDIUM",
-      "qualification": "WATCH"
+      "evidence_quality": "HIGH"
     },
     {
       "id": "IND-20260908-04",
-      "market_segment": "industrial",
-      "company": "Shandong Dinghao Pharmaceutical Co., Ltd.",
-      "industry": "Pharmaceutical",
-      "location": "Shan County, Heze, Shandong",
-      "opportunity": "New wastewater treatment station for 120 tons/year cephalosporin veterinary drug production",
-      "signal_tier": "Tier 2",
-      "engine": "B",
+      "company": "山东鼎皓制药",
+      "industry": "pharma",
+      "location": "山东菏泽单县",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "新建污水处理站招标计划, 含仪表, 10月正式招标",
       "evidence": {
         "facts": [
-          "Tender plan published for wastewater treatment station construction",
-          "Budget: 5.5M RMB, expected tender Oct 2026",
-          "Scope: equipment, electrical, instrumentation, process piping",
-          "Owner: Shandong Danyang Qianqiu Industrial Group Co., Ltd.",
-          "Located in Shengzhiyuan Pharmaceutical Industrial Park"
+          "预算550万元, 预计2026年10月正式招标",
+          "范围: 设备/电气/仪表/工艺管道配套施工",
+          "位于盛之源医药产业园"
         ],
         "inferences": [
-          "Cephalosporin production generates high-COD, high-salt wastewater requiring specialized treatment",
-          "Pharmaceutical industrial park suggests multiple potential customers in vicinity"
+          "制药废水处理站通常需要COD/pH/氨氮在线分析仪",
+          "招标计划阶段技术规格编制尚未完成"
         ],
         "unknowns": [
-          "Specific wastewater treatment process",
-          "Whether instruments are included in equipment scope or separate",
-          "Pharmaceutical park other tenants"
+          "在线仪表占比多少?",
+          "环评是否明确在线监测要求?"
         ]
       },
-      "potential_ims_use_case": "iMS for pharmaceutical wastewater treatment monitoring, compliance reporting, multi-parameter water quality management",
-      "logic": "CapEx trigger (new pharmaceutical production) -> Water system impact (wastewater treatment station) -> Instrumentation requirement (monitoring) -> Potential iMS opportunity (process + compliance monitoring)",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "Tender Oct 2026, construction 2027",
-      "priority": "P2",
-      "water_system_ownership": "A (self-built self-operated)",
-      "incrementality_status": "New facility - new wastewater treatment station",
-      "source_urls": [
-        "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html"
-      ],
-      "to_verify": [
-        "What instrumentation is included in the wastewater treatment station scope?",
-        "Is there a Hach installed base in the pharmaceutical park?",
-        "What are the wastewater quality parameters requiring monitoring?",
-        "Will the station need online monitoring or just manual sampling?"
-      ],
+      "to_verify": ["查环评确认废水量和在线监测要求", "确认仪表是否在甲供清单"],
+      "source_urls": ["http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 4,
-        "U": 4,
-        "L": 1,
-        "L_leverage": 2,
-        "total": 11
-      },
+      "pull_score": {"project_clarity": 4, "unavoidable": 3, "limitations": 2, "ims_leverage": 2, "total": 11},
       "pull_box": {
-        "P_project": "Building new wastewater treatment station for cephalosporin veterinary drug production, budget 5.5M RMB (FACT)",
-        "U_unavoidable": "Pharmaceutical wastewater must meet discharge standards, non-compliance risks production permit revocation (FACT)",
-        "L_limitations": "New facility - no existing workaround, but pharmaceutical wastewater is complex/high-COD/high-salt (UNKNOWN for existing workaround)",
-        "L_leverage": "iMS could monitor wastewater treatment instruments for compliance and process optimization, but primary procurement is water treatment equipment not iMS (INFERENCE)",
-        "evidence_quality": "LOW",
-        "key_unknown": "Whether instrumentation is separately procured and what parameters need online monitoring",
-        "next_validation_question": "Will the wastewater treatment station include online water quality monitoring instruments, and how are they procured?"
+        "project": "新建头孢类兽药废水处理站, 招标计划阶段",
+        "project_confidence": "FACT",
+        "unavoidable": "制药废水必须处理达标排放, 环评要求在线监测",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "新建项目, 无现有解决方案",
+        "limitations_confidence": "FACT",
+        "leverage": "新建污水处理站仪表选型阶段可影响技术规格",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "环评是否明确在线监测仪表要求?",
+        "next_validation_question": "环评报告中废水排放量和在线监测要求是什么?"
       },
-      "evidence_quality": "LOW",
-      "qualification": "WATCH"
+      "evidence_quality": "MEDIUM"
+    },
+    {
+      "id": "IND-20260908-12",
+      "company": "建投准能（施耐德电气实施）",
+      "industry": "power",
+      "location": "内蒙古鄂尔多斯准格尔旗",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "智慧电厂全流程数字化+数据孤岛+远程运维",
+      "evidence": {
+        "facts": [
+          "施耐德电气为建投准能提供一体化智慧电厂方案",
+          "采用AVEVA AIM数字化交付平台, 构建1:1数字孪生",
+          "明确解决痛点: 数据散/找得慢/数据有但用不上",
+          "关键运行参数标准差优化30%"
+        ],
+        "inferences": [
+          "如果水系统仪表未纳入施耐德平台, Hach+iMS有机会作为补充",
+          "建投准能已有数字化意识, 对数据管理平台接受度高"
+        ],
+        "unknowns": [
+          "水系统在线监测仪表是否已纳入施耐德数字化平台?",
+          "Hach在长滩电厂装机基数如何?",
+          "是否有独立的水系统仪表运维痛点?"
+        ]
+      },
+      "to_verify": ["确认水系统仪表是否纳入施耐德平台", "确认Hach装机基数"],
+      "source_urls": ["https://www.csdn.net/article/2026-09-03/164331664"],
+      "continuity": "first_seen",
+      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 3, "ims_leverage": 2, "total": 10},
+      "pull_box": {
+        "project": "智慧电厂全流程数字化升级, 施耐德实施中",
+        "project_confidence": "FACT",
+        "unavoidable": "电厂数字化转型是企业战略, 但水系统仪表是否包含未知",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "传统电厂数据孤岛/信息查找困难/数据完整性难以保障",
+        "limitations_confidence": "FACT",
+        "leverage": "如果水系统仪表未纳入施耐德平台, iMS可作为水系统层补充",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "水系统在线监测仪表是否已纳入施耐德数字化平台?",
+        "next_validation_question": "贵厂水系统在线监测仪表是否已纳入施耐德数字化平台? 如果没有, 当前如何管理?"
+      },
+      "evidence_quality": "LOW-MEDIUM"
+    },
+    {
+      "id": "IND-20260908-13",
+      "company": "金溪斯普瑞药业有限公司",
+      "industry": "pharma",
+      "location": "江西抚州金溪",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "环评公示稿阶段, 12种精细化工产品改扩建",
+      "evidence": {
+        "facts": [
+          "环境影响报告书(公示稿)发布于2026年8月",
+          "年产5699吨共12种精细化工产品改扩建项目",
+          "评价单位: 江西锦名成环保有限公司"
+        ],
+        "inferences": [
+          "环评阶段项目刚通过立项, 距离设备采购还有6-12个月",
+          "精细化工废水通常含高COD/高盐/有机溶剂"
+        ],
+        "unknowns": [
+          "环评报告是否明确在线监测仪表要求?",
+          "废水量是多少?"
+        ]
+      },
+      "to_verify": ["下载环评报告查废水处理章节", "确认在线监测要求"],
+      "source_urls": ["https://max.book118.com/html/2026/0829/8114132112010122.shtm"],
+      "continuity": "first_seen",
+      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 1, "ims_leverage": 1, "total": 7},
+      "pull_box": {
+        "project": "5699吨精细化工产品改扩建, 环评公示阶段",
+        "project_confidence": "FACT",
+        "unavoidable": "化工废水必须处理达标, 但具体在线监测要求未知",
+        "unavoidable_confidence": "UNKNOWN",
+        "limitations": "新建项目, 无现有解决方案信息",
+        "limitations_confidence": "UNKNOWN",
+        "leverage": "环评阶段规格完全未冻结, 理论上可影响选型",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "环评报告是否明确在线监测仪表要求?",
+        "next_validation_question": "环评报告中废水排放量和在线监测要求是什么?"
+      },
+      "evidence_quality": "LOW"
     },
     {
       "id": "IND-20260908-05",
-      "market_segment": "industrial",
-      "company": "Beijing Guodian Power Dalian Development Zone Thermal Power Plant",
-      "industry": "Petrochemical/Chemical (Thermal Power)",
-      "location": "Dalian, Liaoning",
-      "opportunity": "2x350MW unit desulfurization wastewater ZLD retrofit EPC - construction phase",
-      "signal_tier": "Tier 1",
+      "company": "大开热电2x350MW",
+      "industry": "power",
+      "location": "辽宁大连",
       "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "脱硫废水ZLD EPC建安招标",
       "evidence": {
         "facts": [
-          "EPC tender for construction and installation: 12m3/h triple-effect evaporation concentration + 4m3/h旁路烟气干燥",
-          "Tender: CEZB260107615, bid deadline 2026-09-14, construction start 2026-09-15",
-          "Completion: 2027-07-31",
-          "Scope: process systems, electrical, control systems, civil works, instrumentation",
-          "Existing units: 2x350MW commissioned 2012"
+          "2x350MW机组2012年投运, 新建ZLD系统",
+          "招标编号CEZB260107615, 投标截止2026-09-14",
+          "范围含仪表安装, 提到甲供设备"
         ],
-        "inferences": [
-          "ZLD retrofit indicates existing plant lacked desulfurization wastewater treatment",
-          "EPC scope includes instrumentation but within total package",
-          "Plant is 14 years old - may have aging monitoring infrastructure"
-        ],
-        "unknowns": [
-          "Hach installed base at this plant",
-          "Whether instrumentation is separately procured within EPC",
-          "Current monitoring approach for desulfurization wastewater"
-        ]
+        "inferences": [],
+        "unknowns": ["甲供仪表清单是否包含水质分析仪?"]
       },
-      "potential_ims_use_case": "iMS for ZLD system instrument monitoring, evaporation crystallization process optimization, compliance data management for discharge permit",
-      "logic": "CapEx trigger (ZLD retrofit) -> Water system impact (new ZLD system) -> Instrumentation requirement (process monitoring within EPC) -> Potential iMS opportunity (lifecycle/installed base)",
-      "opportunity_stage": "Potential Industrial Opportunity",
-      "estimated_time_window": "Construction Sep 2026 - Jul 2027, commissioning Q3 2027",
-      "priority": "P2",
-      "water_system_ownership": "A (self-built self-operated)",
-      "incrementality_status": "Existing facility - new ZLD system addition",
-      "source_urls": [
-        "https://news.bjx.com.cn/html/20260902/1511131.shtml",
-        "https://www.dowater.com/zhaobiao/2026-09-01/13038687.asp"
-      ],
-      "to_verify": [
-        "Is there a Hach installed base at this plant?",
-        "How is instrumentation procured within the EPC package?",
-        "What monitoring parameters are required for the ZLD system?",
-        "Does the plant have existing SCADA/DCS for water systems?"
-      ],
+      "to_verify": ["查EPC招标文件中甲供设备清单"],
+      "source_urls": ["https://news.bjx.com.cn/html/20260902/1511131.shtml"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 4,
-        "U": 4,
-        "L": 2,
-        "L_leverage": 2,
-        "total": 12
-      },
+      "pull_score": {"project_clarity": 4, "unavoidable": 3, "limitations": 1, "ims_leverage": 1, "total": 9},
       "pull_box": {
-        "P_project": "Retrofitting 2x350MW thermal power plant with desulfurization wastewater ZLD system, EPC construction phase (FACT)",
-        "U_unavoidable": "Environmental regulation requires desulfurization wastewater zero discharge for thermal power (FACT)",
-        "L_limitations": "Existing plant has no ZLD system, desulfurization wastewater currently discharged without treatment (INFERENCE)",
-        "L_leverage": "iMS can monitor ZLD instruments, but EPC total package may include all instrumentation - iMS fit is lifecycle/installed base rather than new procurement (INFERENCE)",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "Whether instrumentation is separately procured and Hach installed base at this plant",
-        "next_validation_question": "How is water quality instrumentation procured within the EPC - is there room for Hach instruments?"
+        "project": "脱硫废水ZLD EPC招标中, 含甲供设备",
+        "project_confidence": "FACT",
+        "unavoidable": "环保要求脱硫废水零排放",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC总包采购, 仪表选型已在招标文件中",
+        "limitations_confidence": "FACT",
+        "leverage": "仅甲供仪表通道, 影响有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "甲供仪表清单是否包含水质分析仪?",
+        "next_validation_question": "EPC招标文件中甲供设备清单是否包含水质分析仪?"
       },
-      "evidence_quality": "MEDIUM",
-      "qualification": "WATCH"
+      "evidence_quality": "MEDIUM"
     },
     {
-      "id": "IND-20260908-06",
-      "market_segment": "industrial",
-      "company": "Daqing Refining & Chemical Company",
-      "industry": "Petrochemical/Chemical",
-      "location": "Daqing, Heilongjiang",
-      "opportunity": "Phosphorus-containing wastewater treatment facility upgrade - equipment replacement, DCS migration, new instrumentation",
-      "signal_tier": "Tier 2",
+      "id": "IND-20260908-03",
+      "company": "50GWh储能电池工厂",
+      "industry": "battery",
+      "location": "内蒙古零碳产业园",
       "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "ZLD水处理EPC招标",
       "evidence": {
-        "facts": [
-          "Project: phosphorus wastewater treatment facility upgrade, construction to Dec 2026",
-          "Scope: replace rotary dryer, pumps, agitators, add DCS migration, new pressure/density instruments",
-          "Includes: new anti-seepage wastewater collection pool, heating ventilation upgrade",
-          "Owned by PetroChina Daqing Refining Branch"
-        ],
-        "inferences": [
-          "Existing facility is being upgraded, not new build - indicates aging infrastructure",
-          "DCS migration and new instrumentation suggest control system modernization",
-          "Phosphorus-containing wastewater indicates specific treatment requirements"
-        ],
-        "unknowns": [
-          "Hach installed base at Daqing Refining",
-          "Whether new instruments are Hach or competitor brand",
-          "Scope of DCS migration and integration needs"
-        ]
+        "facts": ["项目编号SMZB-2026-HZB0834, 9/23开标, 工期60日"],
+        "inferences": [],
+        "unknowns": ["项目业主是谁?", "仪表是EPC内还是甲供?"]
       },
-      "potential_ims_use_case": "iMS for upgraded wastewater treatment instruments, DCS integration, lifecycle management of new equipment",
-      "logic": "CapEx trigger (facility upgrade) -> Water system impact (wastewater treatment modernization) -> Instrumentation requirement (new instruments + DCS) -> Potential iMS opportunity (lifecycle)",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "Construction to Dec 2026",
-      "priority": "P3",
-      "water_system_ownership": "A (self-built self-operated)",
-      "incrementality_status": "Existing facility - upgrade/modification",
-      "source_urls": [
-        "https://daqing.okcis.cn/oeQ4NPLxMA6.bn"
-      ],
-      "to_verify": [
-        "What brand of instruments are being procured?",
-        "Is there a Hach installed base at Daqing Refining?",
-        "What is the DCS migration scope and integration capability?",
-        "Will the upgraded facility need online compliance monitoring?"
-      ],
+      "to_verify": ["确认业主身份"],
+      "source_urls": ["https://www.qianlima.com/bid-627623254.html"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 3,
-        "U": 3,
-        "L": 2,
-        "L_leverage": 2,
-        "total": 10
-      },
+      "pull_score": {"project_clarity": 2, "unavoidable": 3, "limitations": 1, "ims_leverage": 1, "total": 7},
       "pull_box": {
-        "P_project": "Upgrading phosphorus wastewater treatment facility, replacing equipment and adding instruments (FACT)",
-        "U_unavoidable": "Phosphorus wastewater must meet discharge standards, aging equipment needs replacement (INFERENCE)",
-        "L_limitations": "Existing facility equipment aging, DCS needs migration - current monitoring may be insufficient (INFERENCE)",
-        "L_leverage": "iMS could monitor upgraded instruments, but project scope is primarily equipment replacement not digital monitoring (INFERENCE)",
-        "evidence_quality": "LOW",
-        "key_unknown": "Brand of instruments being procured and Hach installed base",
-        "next_validation_question": "What brand of water quality instruments are being procured for the upgraded facility?"
+        "project": "ZLD水处理EPC招标",
+        "project_confidence": "FACT",
+        "unavoidable": "锂电行业规范要求ZLD",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC总包, 规格已定",
+        "limitations_confidence": "FACT",
+        "leverage": "仅通过EPC进入, 影响有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "项目业主是谁?",
+        "next_validation_question": "项目业主是谁? 仪表是EPC内采购还是甲供?"
       },
-      "evidence_quality": "LOW",
-      "qualification": "WATCH"
+      "evidence_quality": "LOW-MEDIUM"
     },
     {
       "id": "IND-20260908-07",
-      "market_segment": "industrial",
-      "company": "Jiangxi Quannan Industrial Park Management Committee",
-      "industry": "Industrial Park (mixed)",
-      "location": "Quannan, Ganzhou, Jiangxi",
-      "opportunity": "Industrial park wastewater treatment facility Phase 1 equipment procurement",
-      "signal_tier": "Tier 2",
+      "company": "全南工业园污水处理一期",
+      "industry": "industrial_park",
+      "location": "江西赣州全南",
       "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "污水处理一期设备采购招标",
       "evidence": {
-        "facts": [
-          "Tender: QNTW2026-QN-G001, opening delayed to 2026-09-29",
-          "Scope: Phase 1 equipment procurement for industrial park wastewater treatment",
-          "Project: Jiangxi Quannan Industrial Park wastewater treatment facility construction"
-        ],
-        "inferences": [
-          "Industrial park centralized treatment - multiple enterprises contributing wastewater",
-          "Phase 1 suggests phased development with future expansion potential"
-        ],
-        "unknowns": [
-          "Specific equipment scope (instruments vs process equipment)",
-          "Park tenant industries",
-          "Whether online monitoring instruments are included"
-        ]
+        "facts": ["招标编号QNTW2026-QN-G001, 开标延期至2026-09-29"],
+        "inferences": [],
+        "unknowns": ["设备范围含不含在线水质仪表?"]
       },
-      "potential_ims_use_case": "iMS for park-level wastewater treatment monitoring, multi-enterprise compliance management",
-      "logic": "CapEx trigger (industrial park development) -> Water system impact (centralized WWTP) -> Instrumentation requirement (monitoring) -> Potential iMS opportunity (park-level data management)",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "Tender Sep 2026, construction 2027",
-      "priority": "P3",
-      "water_system_ownership": "B (park centralized treatment)",
-      "incrementality_status": "New facility - new park WWTP",
-      "source_urls": [
-        "http://www.ccgp.gov.cn/cggg/dfgg/gzgg/202609/t20260904_27271666.htm"
-      ],
-      "to_verify": [
-        "What equipment categories are included in the tender?",
-        "Are online monitoring instruments part of the procurement?",
-        "What industries are the park tenants?",
-        "Is there a Hach installed base in the park?"
-      ],
+      "to_verify": ["获取招标文件确认设备清单"],
+      "source_urls": ["http://www.ccgp.gov.cn/cggg/dfgg/gzgg/202609/t20260904_27271666.htm"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 3,
-        "U": 3,
-        "L": 1,
-        "L_leverage": 2,
-        "total": 9
-      },
+      "pull_score": {"project_clarity": 2, "unavoidable": 2, "limitations": 1, "ims_leverage": 1, "total": 6},
       "pull_box": {
-        "P_project": "Building industrial park wastewater treatment facility Phase 1, equipment procurement (FACT)",
-        "U_unavoidable": "Industrial park must provide centralized wastewater treatment for tenants (FACT)",
-        "L_limitations": "New facility - no existing workaround (UNKNOWN)",
-        "L_leverage": "iMS could monitor park WWTP instruments for multi-enterprise compliance, but unclear if instruments are in scope (INFERENCE)",
-        "evidence_quality": "LOW",
-        "key_unknown": "Whether online monitoring instruments are part of equipment procurement",
-        "next_validation_question": "Does the equipment procurement scope include online water quality monitoring instruments?"
+        "project": "工业园区污水处理一期设备采购",
+        "project_confidence": "FACT",
+        "unavoidable": "工业园区污水必须处理",
+        "unavoidable_confidence": "FACT",
+        "limitations": "设备采购招标已发布",
+        "limitations_confidence": "FACT",
+        "leverage": "仅如果含在线水质仪表且未选型",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "设备范围含不含在线水质仪表?",
+        "next_validation_question": "招标设备清单是否包含在线水质仪表?"
       },
-      "evidence_quality": "LOW",
-      "qualification": "WATCH"
+      "evidence_quality": "LOW"
     },
     {
       "id": "IND-20260908-08",
-      "market_segment": "industrial",
-      "company": "Fujian Shishi Hongshan Thermal Power Plant Phase III",
-      "industry": "Petrochemical/Chemical (Thermal Power)",
-      "location": "Shishi, Fujian",
-      "opportunity": "1x1000MW unit expansion - desulfurization system and desulfurization wastewater ZLD EPC pre-awarded",
-      "signal_tier": "Tier 1",
+      "company": "石狮鸿山三期1x1000MW",
+      "industry": "power",
+      "location": "福建石狮",
       "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "脱硫+ZLD EPC已预中标",
       "evidence": {
-        "facts": [
-          "Pre-awarded: Guoneng Longyuan Environmental Protection, bid 110M RMB",
-          "Scope: desulfurization system + desulfurization wastewater ZLD EPC",
-          "Phase III expansion: 1x1000MW unit"
-        ],
-        "inferences": [
-          "ZLD included in desulfurization EPC indicates regulatory requirement for zero discharge",
-          "Pre-award status means EPC contractor selected, instrument procurement likely within EPC"
-        ],
-        "unknowns": [
-          "Hach installed base at Shishi Hongshan",
-          "Instrument procurement within EPC",
-          "Specific ZLD technology used"
-        ]
+        "facts": ["龙源环保预中标1.1亿元"],
+        "inferences": [],
+        "unknowns": []
       },
-      "potential_ims_use_case": "iMS for ZLD system instrument monitoring, lifecycle management of new desulfurization wastewater treatment",
-      "logic": "CapEx trigger (1000MW expansion + ZLD) -> Water system impact (new ZLD system) -> Instrumentation requirement (within EPC) -> Potential iMS opportunity (lifecycle)",
-      "opportunity_stage": "Potential Industrial Opportunity",
-      "estimated_time_window": "EPC awarded Sep 2026, construction 2026-2028",
-      "priority": "P2",
-      "water_system_ownership": "A (self-built self-operated)",
-      "incrementality_status": "New unit - new ZLD system",
-      "source_urls": [
-        "https://news.bjx.com.cn/html/20260903/1511313.shtml"
-      ],
-      "to_verify": [
-        "Hach installed base at existing Phase I/II?",
-        "Instrument procurement approach within Longyuan EPC?",
-        "What ZLD technology is selected?",
-        "Commissioning timeline?"
-      ],
+      "to_verify": [],
+      "source_urls": ["https://news.bjx.com.cn/html/20260903/1511313.shtml"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 4,
-        "U": 4,
-        "L": 2,
-        "L_leverage": 2,
-        "total": 12
-      },
+      "pull_score": {"project_clarity": 4, "unavoidable": 3, "limitations": 0, "ims_leverage": 0, "total": 7},
       "pull_box": {
-        "P_project": "Building 1x1000MW Phase III with desulfurization ZLD system, EPC pre-awarded (FACT)",
-        "U_unavoidable": "Environmental regulation requires ZLD for desulfurization wastewater in new thermal power units (FACT)",
-        "L_limitations": "New unit - ZLD system is new, no existing workaround for desulfurization wastewater (INFERENCE)",
-        "L_leverage": "iMS can monitor ZLD instruments, but EPC pre-awarded means instrument procurement likely locked within EPC (INFERENCE)",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "Hach installed base at existing phases and instrument procurement within EPC",
-        "next_validation_question": "Does the existing Phase I/II use Hach instruments, and is there a pathway to influence instrument selection in the EPC?"
+        "project": "脱硫废水ZLD EPC已预中标龙源环保",
+        "project_confidence": "FACT",
+        "unavoidable": "环保要求ZLD",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC已预中标, 仪表选型基本完成",
+        "limitations_confidence": "FACT",
+        "leverage": "无影响窗口",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 已关闭"
       },
-      "evidence_quality": "MEDIUM",
-      "qualification": "WATCH"
+      "evidence_quality": "HIGH"
     },
     {
-      "id": "IND-20260908-09",
-      "market_segment": "industrial",
-      "company": "Wulanchabu City - all auto-monitoring equipment discharge units",
-      "industry": "Cross-sector (thermal power focus)",
-      "location": "Wulanchabu, Inner Mongolia",
-      "opportunity": "City-level compliance letter requiring all auto-monitoring units to complete installation, commissioning, acceptance, networking per Code",
-      "signal_tier": "Tier 1",
-      "engine": "A",
+      "id": "IND-20260908-06",
+      "company": "大庆炼化含磷废水设施升级",
+      "industry": "petrochemical",
+      "location": "黑龙江大庆",
+      "engine": "B",
+      "opp_type": "Installed Base Future Lead",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "含磷废水设施升级建设中",
       "evidence": {
-        "facts": [
-          "Wulanchabu ECME published letter to all auto-monitoring equipment discharge units",
-          "Cites: Ecological Environment Code (2026-08-15) + Environmental Monitoring Regulation (2026-01-01)",
-          "Requires: installation, commissioning, acceptance, networking of auto-monitoring equipment",
-          "Requires: video surveillance at sampling points and monitoring stations",
-          "Emphasizes: enterprise primary responsibility even if third-party O&M contracted"
-        ],
-        "inferences": [
-          "City-level enforcement suggests active compliance push, not just national-level policy",
-          "Thermal power is dominant industry in Wulanchabu - likely key target",
-          "Video surveillance requirement is new and may create additional instrumentation needs"
-        ],
-        "unknowns": [
-          "Number of affected enterprises",
-          "Which enterprises lack vs need upgrades",
-          "Hach installed base in Wulanchabu"
-        ]
+        "facts": ["范围: 更换回转干燥机/泵/搅拌器, DCS迁移, 新增压力/密度仪表"],
+        "inferences": [],
+        "unknowns": []
       },
-      "potential_ims_use_case": "iMS for auto-monitoring data networking, video surveillance integration, compliance management",
-      "logic": "Regulatory trigger (city-level Code enforcement) -> Monitoring obligation (auto-monitoring + video) -> Instrumentation requirement (install/network/upgrade) -> Potential iMS opportunity (data management + compliance)",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "2026-Q4 to 2027 (city-level compliance push)",
-      "priority": "P2",
-      "water_system_ownership": "N/A",
-      "incrementality_status": "New regulatory obligation - compliance upgrade",
-      "source_urls": [
-        "https://www.wulanchabu.gov.cn/sthjzl/2005657.html"
-      ],
-      "to_verify": [
-        "How many enterprises in Wulanchabu need auto-monitoring upgrades?",
-        "Which enterprises are key pollution discharge permit holders?",
-        "Is there a Hach installed base at Wulanchabu thermal power plants?",
-        "Are there compliance deadlines set by the city?"
-      ],
+      "to_verify": [],
+      "source_urls": ["https://daqing.okcis.cn/oeQ4NPLxMA6.bn"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 3,
-        "U": 4,
-        "L": 3,
-        "L_leverage": 3,
-        "total": 13
-      },
+      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 0, "ims_leverage": 0, "total": 5},
       "pull_box": {
-        "P_project": "City-level compliance push requiring all auto-monitoring units to complete Code compliance (FACT)",
-        "U_unavoidable": "Legal mandate with penalties, city-level enforcement active (FACT)",
-        "L_limitations": "Enterprises may have aging equipment, un-networked monitors, or insufficient video surveillance (INFERENCE)",
-        "L_leverage": "iMS integrates instrument data + video surveillance -> compliance dashboard -> anomaly alerts -> meets Code + city requirements (INFERENCE)",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "Number of affected enterprises and Hach installed base in Wulanchabu",
-        "next_validation_question": "How many of your sites currently lack auto-monitoring equipment that meets the new Code networking and video surveillance requirements?"
+        "project": "含磷废水设施升级, 建设中",
+        "project_confidence": "FACT",
+        "unavoidable": "设施升级需求",
+        "unavoidable_confidence": "FACT",
+        "limitations": "设备已采购, 新增为压力/密度仪表非水质分析仪",
+        "limitations_confidence": "FACT",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 已关闭"
       },
-      "evidence_quality": "MEDIUM",
-      "qualification": "WATCH"
+      "evidence_quality": "HIGH"
+    },
+    {
+      "id": "IND-20260908-02",
+      "company": "铜陵化工园区污水厂自行监测",
+      "industry": "petrochemical",
+      "location": "安徽铜陵",
+      "engine": "B",
+      "opp_type": "Not Qualified",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "第三方检测服务招标",
+      "evidence": {
+        "facts": ["预算14.76万元, 范围: 废水/雨水/地下水监测, 要求CMA认证"],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [],
+      "source_urls": ["https://ggzyjyzx.tl.gov.cn/jyxx/003006/003006001/20260901/c0af063d-e0c4-4534-bc11-f55c7930040c.html"],
+      "continuity": "first_seen",
+      "pull_score": {"project_clarity": 2, "unavoidable": 2, "limitations": 0, "ims_leverage": 0, "total": 4},
+      "pull_box": {
+        "project": "第三方检测服务招标, 非设备/仪表采购",
+        "project_confidence": "FACT",
+        "unavoidable": "排污许可要求自行监测",
+        "unavoidable_confidence": "FACT",
+        "limitations": "招标是第三方检测服务, 不是设备/仪表/iMS采购",
+        "limitations_confidence": "FACT",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 不符合资格"
+      },
+      "evidence_quality": "HIGH"
     },
     {
       "id": "IND-20260908-10",
-      "market_segment": "industrial",
-      "company": "Feida Environmental Protection / Feida Technology",
-      "industry": "Equipment Manufacturing",
-      "location": "Zhuji, Zhejiang",
-      "opportunity": "Wastewater system procurement - equipment supply, delivery by 2026-11-30",
-      "signal_tier": "Tier 3",
+      "company": "菲达环保废水系统采购",
+      "industry": "equipment",
+      "location": "浙江诸暨",
       "engine": "B",
+      "opp_type": "Not Qualified",
+      "entry_window": "UNKNOWN",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "设备采购",
       "evidence": {
-        "facts": [
-          "Tender: 2026-KHKF-189, deadline 2026-09-08 17:00",
-          "Scope: wastewater system procurement",
-          "Delivery: 2026-11-30, quality guarantee 12 months",
-          "Location: Zhuji, Zhejiang"
-        ],
-        "inferences": [
-          "Equipment manufacturer procuring wastewater system for own facility",
-          "Scope is equipment supply, not instrumentation or digital monitoring"
-        ],
-        "unknowns": [
-          "Specific wastewater system scope",
-          "Whether instruments are included",
-          "Facility details"
-        ]
+        "facts": ["招标编号2026-KHKF-189, 交付2026-11-30"],
+        "inferences": [],
+        "unknowns": []
       },
-      "potential_ims_use_case": "Limited - equipment procurement, no clear iMS leverage",
-      "logic": "CapEx trigger (wastewater system) -> But no clear water monitoring/iMS need identified",
-      "opportunity_stage": "Signal",
-      "estimated_time_window": "Delivery Nov 2026",
-      "priority": "P3",
-      "water_system_ownership": "D (unknown)",
-      "incrementality_status": "unknown",
-      "source_urls": [
-        "https://zhejiang.okcis.cn/oeQ4xRe84WJ.bn"
-      ],
-      "to_verify": [
-        "What is the specific wastewater system being procured?",
-        "Are monitoring instruments included?",
-        "What is the facility's water treatment process?"
-      ],
+      "to_verify": [],
+      "source_urls": ["https://zhejiang.okcis.cn/oeQ4xRe84WJ.bn"],
       "continuity": "first_seen",
-      "pull_score": {
-        "P": 2,
-        "U": 2,
-        "L": 1,
-        "L_leverage": 1,
-        "total": 6
-      },
+      "pull_score": {"project_clarity": 1, "unavoidable": 1, "limitations": 0, "ims_leverage": 0, "total": 2},
       "pull_box": {
-        "P_project": "Procuring wastewater system, delivery Nov 2026 (FACT)",
-        "U_unavoidable": "Reason for procurement unclear - may be regulatory or operational (UNKNOWN)",
-        "L_limitations": "Current workaround unknown (UNKNOWN)",
-        "L_leverage": "iMS relevance unclear - scope appears to be equipment supply not digital monitoring (INFERENCE)",
-        "evidence_quality": "LOW",
-        "key_unknown": "Whether monitoring instruments are part of the procurement",
-        "next_validation_question": "Does the wastewater system procurement include online monitoring instruments?"
+        "project": "设备采购, 无明确水质仪表或iMS需求",
+        "project_confidence": "FACT",
+        "unavoidable": "未知",
+        "unavoidable_confidence": "UNKNOWN",
+        "limitations": "无信息",
+        "limitations_confidence": "UNKNOWN",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 不符合资格"
       },
-      "evidence_quality": "LOW",
-      "qualification": "REJECT"
+      "evidence_quality": "LOW"
     }
   ],
-  "market_background": {
-    "ecological_environment_code": "Effective 2026-08-15, establishes comprehensive auto-monitoring and self-monitoring obligations for all pollution permit holders. Key change: all key permit holders must install, network, and maintain auto-monitoring equipment with video surveillance.",
-    "environmental_monitoring_regulation": "Effective 2026-01-01, establishes legal framework for monitoring data quality and enterprise primary responsibility.",
-    "hj_1480_2026": "New technical standard for self-monitoring video surveillance system construction and networking, published Jul 2026.",
-    "zld_trend": "Multiple ZLD projects in thermal power (desulfurization wastewater) and battery (production wastewater) industries indicate continued regulatory push for zero discharge.",
-    "pharmaceutical_wastewater": "Complex pharmaceutical wastewater treatment remains challenging - 70%+ of projects experience commissioning delays per industry analysis."
-  },
+  "market_background": [
+    "火电脱硫废水ZLD集中爆发但几乎全走EPC总包——GTM关键不是找电厂, 而是建立与ZLD EPC承包商的影响路径。",
+    "康乃尔化学案揭示iMS真实需求: 自动监测设备故障4日未上报, 第三方运维未及时响应, 数据超标异常无人处理——Maintenance Pain+Compliance Pain+Data Pain三重叠加。",
+    "《锂电行业规范条件(2026年本)》要求新建锂电池材料项目须配套ZLD, 2027年底前现有企业完成改造——行业级Forcing Function。"
+  ],
+  "regulatory_triggers": [
+    {
+      "title": "《生态环境法典》2026-08-15生效",
+      "what": "第184条要求重点排污许可持有人安装自动监测设备并联网; 第183条要求所有排污许可持有人开展自行监测。违规罚款2-20万元。",
+      "why": "产生全行业自动监测设备安装/联网/数据管理升级需求",
+      "next_search": "找具体省市执行名单->具体企业->判断监测缺口",
+      "sources": ["https://www.wulanchabu.gov.cn/sthjzl/2005657.html"]
+    },
+    {
+      "title": "HJ 853-2026 石化工业排污许可证技术规范发布",
+      "what": "2026-07-31发布, 2027-01-01实施。修订石化工业排污许可自行监测要求。",
+      "why": "石化企业2027年前需更新排污许可及自行监测方案",
+      "next_search": "石化重点排污企业名单->判断哪些需要监测升级",
+      "sources": ["https://m.bzfxw.com/soft/sort055/huanbao/20260908075639b886638a.html"]
+    },
+    {
+      "title": "《锂电行业规范条件(2026年本)》",
+      "what": "新建锂电池材料项目须配套废水ZLD设施; 2027年底前现有企业完成ZLD改造。",
+      "why": "锂电全产业链面临废水ZLD合规压力",
+      "next_search": "具体锂电材料企业->判断哪些尚未建设ZLD",
+      "sources": ["https://www.cnblogs.com/mmddlz/p/22809239"]
+    }
+  ],
   "source_effectiveness": {
-    "government_websites": "High effectiveness for compliance signals - official Code text, provincial/municipal implementation letters",
-    "tender_platforms": "Medium effectiveness for CapEx signals - qianlima, ccgp, okcis provide project-level details but often mask company names",
-    "industry_media": "Medium - bjx.com.cn effective for power industry water treatment projects",
-    "gaps": "Semiconductor UPW projects not found in public tenders - likely procured through private channels. Food & beverage industry signals weak this cycle."
+    "gov_epa": 3,
+    "tender_platform": 4,
+    "industry_media": 2,
+    "company_announcement": 1,
+    "eia_platform": 1
   },
   "experiment_observations": {
-    "municipal_vs_industrial_differentiation": "Industrial radar successfully differentiated from municipal by focusing on: (1) enterprise-level compliance obligations vs municipal utility obligations, (2) process water treatment vs municipal wastewater, (3) ZLD/UPW specialty systems vs municipal treatment. No municipal WWTP or water supply projects included.",
+    "municipal_vs_industrial_differentiation": "Radar已明确market_segment=industrial, 不覆盖市政污水处理厂/自来水公司/供水管网项目。本轮所有线索均为工业企业或工业园区。",
     "demand_learning_summary": {
-      "new_strong_pull": "Ecological Environment Code compliance (PULL 15/20) is the strongest demand signal discovered. It is a cross-sector regulatory forcing function affecting all key pollution discharge permit holders. However, it is a regulatory-level signal, not enterprise-specific - requires further work to identify specific enterprises with monitoring gaps.",
-      "repeatable_patterns": "Two repeatable patterns identified: (1) ZLD water treatment projects in thermal power and battery industries - recurring environmental requirement but iMS leverage is limited to lifecycle/installed base; (2) Code compliance-driven auto-monitoring upgrades - cross-sector but needs enterprise-level qualification.",
-      "downgraded_signals": "Feida wastewater system procurement (PULL 6/20) downgraded to REJECT - no clear project/pain/forcing function for iMS. Tongling chemical park self-monitoring (PULL 10/20) downgraded to REJECT - tender is for third-party testing service, not instrumentation/iMS.",
-      "gtm_assessment": "The Code compliance signal suggests a potentially larger TAM than single-project water systems - all key pollution permit holders need monitoring upgrades. This may warrant a GTM strategy targeting compliance-driven instrument networking and data management, rather than only project-level water system opportunities."
+      "new_strong_pull": "是。康乃尔化学: 自动监测设备故障4日未上报, 第三方运维响应不足。PULL Score 14/20, 完整Demand->Pain->Leverage链。",
+      "repeatable_pull_pattern": "是。第三方运维响应不足+合规压力+数据异常无人处理模式, 可能在重点排污单位中反复出现。",
+      "downgraded_due_to_demand": "是。建投准能: 数字化触发存在但水系统仪表覆盖未知, iMS Fit=No Evidence, 维持WATCH。",
+      "product_gtm_assumption_change": "是。发现甲供设备通道可能是Hach绕过EPC总包直接进入的路径。法典生效后重点排污单位自动监测运维痛点可能成为Repeatable Demand Signal。"
     },
     "repeatable_demand_signals": [
       {
-        "pattern": "ZLD/Zero Liquid Discharge water treatment projects",
-        "instances": "3 signals (50GWh battery, Dalian thermal power, Shishi thermal power)",
-        "demand_signature": "Environmental regulation drives ZLD requirement for thermal power and battery industries",
-        "ims_relevance": "Medium - ZLD systems need instrument monitoring, but primary procurement is EPC total package. iMS fit is lifecycle/installed base rather than new procurement.",
-        "status": "Accumulating evidence"
-      },
-      {
-        "pattern": "Ecological Environment Code compliance-driven auto-monitoring upgrade",
-        "instances": "2 signals (national Code, Wulanchabu city-level enforcement)",
-        "demand_signature": "Legal mandate forcing all key pollution permit holders to install/network auto-monitoring equipment",
-        "ims_relevance": "High potential - iMS can provide compliance dashboard, data networking, anomaly alerting. But need to identify specific enterprises with gaps.",
-        "status": "Accumulating evidence"
+        "pattern": "Third-party O&M response gap + Compliance pressure + Data anomaly unmanaged",
+        "first_seen": "2026-09-08 康乃尔化学",
+        "confidence": "MEDIUM",
+        "status": "accumulating"
       }
-    ],
-    "methodology_evaluation": "Week 4 assessment: Engine A (compliance) discovered stronger demand signals (Code enforcement) than Engine B (CapEx) this cycle. Engine B signals are mostly EPC total packages where instrument procurement is locked within EPC, limiting iMS leverage. PULL framework successfully prevented over-qualification of EPC-bound signals. Key gap: semiconductor and food & beverage industries underrepresented this cycle.",
-    "pull_framework_validation": "PULL v1 framework effectively filtered out signals where iMS cannot change Decision/Action/Outcome. 2 REJECT decisions made based on insufficient demand evidence despite industry relevance. No signals forced to PASS based on iMS feature match alone."
-  }
+    ]
+  },
+  "cross_lead_insights": [
+    "康乃尔化学案是本轮最重要的iMS Demand Signal——自动监测设备故障4日未上报, 第三方运维响应不足, 数据异常无人处理。非产品推断, 而是从客户问题出发iMS价值链完整成立。",
+    "Radar当前偏向招标搜索(Tender+Closed=64%)。需从招标公告转向项目备案/可研/环评第一次公示/数字化转型规划/运维痛点等Early Signal来源。",
+    "建投准能案揭示: 火电厂数字化已由施耐德等巨头引领进入数据孤岛->数字孪生阶段。Hach+iMS机会在于补充水系统仪表层数字化。"
+  ]
 }
