@@ -635,11 +635,11 @@
       "stage3_enrichment": {
         "contacts": {
           "project_owner_contact": "云南解化绿源化工有限公司; 法定代表人:张兵; 董事/经理:黄鑫; 原法定代表人:王朝文; 电话:0873-716****(部分隐藏); 地址:云南省红河州开远市小龙潭镇小龙潭化工园区; 注册资本17亿元; 成立2025-06-20; 母公司:云南建投集团",
-          "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭贵和; 总经理/董事:赵敏伟; 电话:022-23408826; 邮箱:tccoverseas@cntcc.cn; 地址:天津市北辰区京津路1号; 官网:www.china-tcc.com; 仪表采购关键联系人:孙颖B(17320080380 / sunying9@cncec.cn)-温度仪表询比采购; 张炜(18622208507 / zhangwei64@cncec.cn)-现场仪表接线箱; 安秋宇(022-23406957 / anqiuyu@cncec.cn)-仪表桥架; 裴工(022-23407221 / peijinhao@cncec.cn); 采购部办公室(022-23407379 / zhangfengyun3@cncec.cn); 马猛猛(022-23408114 / mamengmeng@cncec.cn); 国内业务:022-23408999 / tccdomestic@cntcc.cn; 分供方:022-23408886 / caimai@cntcc.cn",
+          "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭贵和; 总经理/董事:赵敏伟; 电话:022-23408826; 邮箱:tccoverseas@cntcc.cn; 地址:天津市北辰区京津路1号; 官网:www.china-tcc.com; 采购部办公室:022-23407379 / zhangfengyun3@cncec.cn; 国内业务:022-23408999 / tccdomestic@cntcc.cn; 分供方:022-23408886 / caimai@cntcc.cn",
           "design_institute_contact": "中国天辰(设计施工总承包); 原化工部第一设计院(1953年成立); 国内业务邮箱:华东hdqyzx@cncec.cn / 西北xbqyzx@cncec.cn / 东北dbqyzx@cncec.cn",
           "operator_contact": "云南解化绿源化工有限公司(搬迁后自营); 老厂运营方:云南解化清洁能源开发有限公司解化化工分公司",
-          "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 关键建议:联系孙颖B/张炜/安秋宇了解仪表采购标准; 招标代理:云南西南咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-65875131 / 13211686971)",
-          "contacts_search_status": "COMPLETE - 业主和EPC方已确认; 天辰仪表采购团队关键联系人已定位(孙颖B/张炜/安秋宇)"
+          "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 仪表采购执行团队:张炜(核心,多项目覆盖)、孙颖B(温度仪表)、安秋宇(仪表桥架); 建议优先联系张炜(18622208507 / zhangwei64@cncec.cn); 招标代理:云南西南咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-65875131 / 13211686971)",
+          "contacts_search_status": "COMPLETE - 业主和EPC方已确认; 天辰仪表采购团队关键联系人已定位,张炜为仪表采购核心执行人"
         },
         "timeline": {
           "project_start": "2025年(项目筹备)",
@@ -661,6 +661,42 @@
           "known_software_platforms": "未确认",
           "epc_water_treatment_contractor": "中国天辰工程有限公司",
           "competition_notes": "EPC已中标,介入窗口收窄。需确认天辰仪表选型标准"
+        },
+        "contact_background": {
+          "张炜": {
+            "role": "中国天辰工程有限公司 仪表类物资采购核心执行人/采购工程师",
+            "evidence": [
+              "2026-09-03 渤化码头库区项目仪表管阀件询比采购联系人(TCC-T25051-EA-022-B)",
+              "2026-07-07 TOC分析仪表(含成套柜)谈判采购联系人(TCC-T25127-EA-007-B)",
+              "2026-07-17 现场仪表接线箱询比采购联系人(TCC-T25051-EA-020-B)",
+              "2026-04-14 仪表管阀件询比采购联系人(TCC-T25011-EA-022-B)",
+              "2026年 恒坤化工项目仪表管阀件谈判采购联系人(TCC-T25090-EA-016-B)"
+            ],
+            "contact": "电话:18622208507 / 022-23407521; 邮箱:zhangwei64@cncec.cn",
+            "scope": "覆盖仪表管阀件、TOC分析仪表、现场仪表接线箱、码头库区仪表等多类仪表物资",
+            "inference": "张炜是天辰公司仪表类物资采购的核心执行人/高级采购工程师，跨多个项目持续负责仪表采购。建议作为首要联系人。",
+            "confidence": "HIGH"
+          },
+          "孙颖B": {
+            "role": "中国天辰工程有限公司 温度仪表采购联系人",
+            "evidence": [
+              "2026-07-16 温度仪表询比采购变更公告联系人(TCC-T25126-EA-019-B)"
+            ],
+            "contact": "电话:17320080380; 邮箱:sunying9@cncec.cn",
+            "scope": "负责温度仪表类采购",
+            "inference": "孙颖B是天辰公司采购部人员，负责温度仪表类物资采购，属于仪表采购专业口执行人员。",
+            "confidence": "MEDIUM"
+          },
+          "安秋宇": {
+            "role": "中国天辰工程有限公司 仪表桥架采购联系人",
+            "evidence": [
+              "2026-09-02 国能准东煤制天然气项目仪表桥架询比采购联系人(TCC-T25117-EA-012-B)"
+            ],
+            "contact": "电话:022-23406957; 邮箱:anqiuyu@cncec.cn",
+            "scope": "负责仪表桥架类采购",
+            "inference": "安秋宇是天辰公司采购部人员，负责仪表桥架类物资采购，属于仪表采购专业口执行人员。",
+            "confidence": "MEDIUM"
+          }
         }
       }
     },
