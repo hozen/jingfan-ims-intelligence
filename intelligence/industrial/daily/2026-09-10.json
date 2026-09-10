@@ -4,7 +4,7 @@
   "report_date": "2026-09-10",
   "scan_timestamp": "2026-09-10T08:27:37+08:00",
   "experiment_week": 5,
-  "spec_version": "PULL_v1",
+  "spec_version": "PULL_v1_Stage3",
   "scanner_summary": {
     "total_signals": 11,
     "engine_a_count": 2,
@@ -56,7 +56,12 @@
       "early": 8,
       "late": 3
     },
-    "search_bias_warning": "Engine A only 2/11 signals. Need more compliance-driven search. Next round: strengthen Engine A (pollution permit database, auto-monitoring requirements)."
+    "search_bias_warning": "Engine A only 2/11 signals. Need more compliance-driven search. Next round: strengthen Engine A (pollution permit database, auto-monitoring requirements).",
+    "stage3_status": {
+      "contacts_complete": 0,
+      "contacts_partial": 5,
+      "contacts_incomplete": 6
+    }
   },
   "top_5_match": [
     {
@@ -203,7 +208,40 @@
       "ims_fit": "Medium",
       "logic": "Compliance Trigger(法典生效+央视曝光) -> Monitoring Obligation(自行监测数据联网+视频监控) -> Instrumentation Requirement(在线监测仪表升级+集中管理) -> Potential iMS Opportunity(仪表状态监控+合规闭环)",
       "potential_ims_use_case": "在线监测仪表集中监控平台+合规数据管理+运维响应闭环",
-      "estimated_time_window": "2026年9月-11月(专项行动期间)至2027年(整改期)"
+      "estimated_time_window": "2026年9月-11月(专项行动期间)至2027年(整改期)",
+      "stage3_enrichment": {
+        "contacts": {
+          "regulatory_contact": "四川省生态环境厅环境监察执法局(专项行动牵头); 成都市成华区生态环境局(具体执法)",
+          "project_owner_contact": "待确认(10月10日自查名单公布后再定位具体企业)",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "不适用",
+          "operator_contact": "各排污单位环保/EHS部门",
+          "procurement_decision_maker": "各排污单位(分散决策)",
+          "contacts_search_status": "PARTIAL - 监管方已确认,具体企业待10月名单公布"
+        },
+        "timeline": {
+          "project_start": "2026-09-07(专项行动通知印发)",
+          "milestone_self_inspection_deadline": "2026-10-10",
+          "milestone_provincial_inspection": "2026-10-11至2026-11-10",
+          "procurement_window_estimate": "2026Q4-2027Q1(整改需求释放)",
+          "project_completion": "2027年(整改完成)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "各排污单位分散采购",
+          "budget_owner": "各排污单位(是否已分配预算未知)",
+          "technical_spec_owner": "各排污单位环保/EHS部门",
+          "influencer": "四川省生态环境厅(强制要求)",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "四川专项行动是批量市场机会,需10月后通过问题企业名单精准定位"
+        }
+      }
     },
     {
       "id": "IND-20260910-02",
@@ -277,7 +315,39 @@
       "ims_fit": "Low",
       "logic": "CapEx Trigger(3000万工艺变更) -> Water System(含银/铜/氰化物多类废水) -> Instrumentation Requirement(GB39731-2020在线监测) -> Potential Hach Opportunity(重金属/氰化物在线分析仪)",
       "potential_ims_use_case": "多排口废水在线监测集中管理(如仪表已选型则为Installed Base/Lifecycle)",
-      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)"
+      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "先进半导体材料(安徽)有限公司(母公司为新企业,无公开联系人)",
+          "epc_contractor_contact": "不适用(环评阶段,未进入EPC)",
+          "design_institute_contact": "待确认(环评报告编制单位未知)",
+          "operator_contact": "待确认",
+          "procurement_decision_maker": "待确认(业主环保/设备部门)",
+          "contacts_search_status": "INCOMPLETE - 无公开联系方式"
+        },
+        "timeline": {
+          "project_start": "2026年(环评重新报批)",
+          "milestone_eia_approval": "2026Q3-Q4(环评批复)",
+          "milestone_design": "2026Q4-2027Q1(设计阶段,仪表选型窗口)",
+          "procurement_window_estimate": "2026Q4-2027Q1",
+          "project_completion": "2027年(预计投产)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采(环评阶段,尚未确定EPC)",
+          "budget_owner": "先进半导体材料(安徽)有限公司",
+          "technical_spec_owner": "待确认(设计院)",
+          "influencer": "环评批复要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用(尚未确定EPC)",
+          "competition_notes": "环评阶段是仪表选型最佳窗口,需在EIA批复后尽快联系业主"
+        }
+      }
     },
     {
       "id": "IND-20260910-03",
@@ -350,7 +420,39 @@
       "ims_fit": "Low",
       "logic": "CapEx Trigger(头孢技改) -> Water System(MVR脱盐+现有WWTP) -> Instrumentation Requirement(全盐量+COD/氨氮在线监测) -> Potential Hach Opportunity(制药废水在线分析仪)",
       "potential_ims_use_case": "MVR+WWTP在线监测集中管理(如仪表新增则为New Opportunity)",
-      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)"
+      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "灿盛制药(淄博)有限公司; 地址:淄博高新区牧龙山路1033号",
+          "epc_contractor_contact": "不适用(技改项目,利用现有设施)",
+          "design_institute_contact": "待确认(MVR系统设计单位未知)",
+          "operator_contact": "灿盛制药(淄博)生产运营部门",
+          "procurement_decision_maker": "待确认",
+          "contacts_search_status": "INCOMPLETE - 有企业地址,无具体联系人"
+        },
+        "timeline": {
+          "project_start": "2026年(环评拟审批公示)",
+          "milestone_eia_approval": "2026-09(预计近期批复)",
+          "milestone_design": "2026Q4(设计阶段)",
+          "procurement_window_estimate": "2026Q4-2027Q1",
+          "project_completion": "2027年(预计技改完成)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采(技改项目)",
+          "budget_owner": "灿盛制药(淄博)",
+          "technical_spec_owner": "待确认(现有污水处理站运营方)",
+          "influencer": "环评批复要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "技改项目仪表选型窗口较窄,需在环评批复后尽快联系"
+        }
+      }
     },
     {
       "id": "IND-20260910-04",
@@ -423,7 +525,38 @@
       "ims_fit": "Low",
       "logic": "Digitalization Trigger(智能化技改) -> Water System(两套WWTP含MBR) -> Possible Instrumentation Requirement(数据集中管理) -> Weak iMS Signal",
       "potential_ims_use_case": "两套废水预处理系统集中监控(如纳入智能化范围)",
-      "estimated_time_window": "技改设计阶段(2026Q4)"
+      "estimated_time_window": "技改设计阶段(2026Q4)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "启东盖天力药业有限公司; 排污许可证编号:91320681608384436X001V",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "待确认",
+          "operator_contact": "启东盖天力药业",
+          "procurement_decision_maker": "待确认",
+          "contacts_search_status": "INCOMPLETE"
+        },
+        "timeline": {
+          "project_start": "2026年(拟批准公示)",
+          "milestone_eia_approval": "2026Q3",
+          "procurement_window_estimate": "2026Q4",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采",
+          "budget_owner": "启东盖天力药业",
+          "technical_spec_owner": "待确认",
+          "influencer": "技改方案",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "智能化技改是否包含水系统未知"
+        }
+      }
     },
     {
       "id": "IND-20260910-05",
@@ -498,7 +631,38 @@
       "ims_fit": "No Evidence",
       "logic": "CapEx Trigger(70亿搬迁项目) -> Water System(完整水系统新建) -> Instrumentation Requirement(在线监测) -> Timing Window Closing(EPC已中标)",
       "potential_ims_use_case": "大型合成氨水系统在线监测(如EPC仪表未选型)",
-      "estimated_time_window": "EPC合同签订后施工阶段(2026Q4-2027) - 采购窗口正在收窄"
+      "estimated_time_window": "EPC合同签订后施工阶段(2026Q4-2027) - 采购窗口正在收窄",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "云南解化绿源化工有限公司; 地址:云南红河州开远市小龙潭化工园区; 2025年7月成立",
+          "epc_contractor_contact": "中国天辰工程有限公司(水处理及配套工程EPC中标)",
+          "design_institute_contact": "中国天辰(设计施工总承包)",
+          "operator_contact": "云南解化绿源化工有限公司(搬迁后自营)",
+          "procurement_decision_maker": "EPC方主导(仪表选型可能已确定)",
+          "contacts_search_status": "PARTIAL - EPC方已知,业主方无公开联系人"
+        },
+        "timeline": {
+          "project_start": "2025年(项目筹备)",
+          "milestone_epc_award": "2026-09-03(水处理EPC中标)",
+          "procurement_window_estimate": "2026Q4-2027(施工阶段,窗口收窄)",
+          "project_completion": "2028年(预计全面投产)",
+          "timeline_confidence": "FACT"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC总承包(中国天辰)",
+          "budget_owner": "云南省煤炭产业集团/云南能投集团",
+          "technical_spec_owner": "中国天辰(主导)",
+          "influencer": "政府搬迁入园要求",
+          "decision_maker": "中国天辰(仪表选型)",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "中国天辰工程有限公司",
+          "competition_notes": "EPC已中标,介入窗口收窄。需确认天辰仪表选型标准"
+        }
+      }
     },
     {
       "id": "IND-20260910-06",
@@ -572,7 +736,39 @@
       "ims_fit": "Low",
       "logic": "CapEx Trigger(BOOT30年特许经营) -> Water System(石化园区工业废水+中水回用) -> Instrumentation Requirement(在线监测) -> Potential Hach Opportunity(通过运营方介入)",
       "potential_ims_use_case": "石化园区工业废水多排口集中监控(如运营方选型未冻结)",
-      "estimated_time_window": "BOOT项目设计阶段(2026Q4-2027Q1)"
+      "estimated_time_window": "BOOT项目设计阶段(2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "中捷产业园区管委会",
+          "epc_contractor_contact": "不适用(BOOT模式,运营方自建)",
+          "design_institute_contact": "节能国祯/麦王环境/山东圣立创联合体",
+          "operator_contact": "节能国祯(牵头运营方); 麦王环境; 山东圣立创",
+          "procurement_decision_maker": "运营方联合体(节能国祯主导)",
+          "contacts_search_status": "PARTIAL - 运营方联合体已知,无具体联系人姓名"
+        },
+        "timeline": {
+          "project_start": "2026-09-03(中标公告)",
+          "milestone_design": "2026Q4-2027Q1(设计建设)",
+          "milestone_construction": "2027-2028",
+          "procurement_window_estimate": "2026Q4-2027Q1(设计阶段)",
+          "project_completion": "2028年(预计投运)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "BOOT特许经营(运营方采购)",
+          "budget_owner": "节能国祯联合体",
+          "technical_spec_owner": "节能国祯(主导)",
+          "influencer": "园区管委会",
+          "decision_maker": "节能国祯(仪表选型)",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "节能国祯+麦王环境+山东圣立创联合体",
+          "competition_notes": "BOOT模式下运营方负责30年,有长期运维动力。需通过节能国祯介入"
+        }
+      }
     },
     {
       "id": "IND-20260910-07",
@@ -641,7 +837,38 @@
       "ims_fit": "No Evidence",
       "logic": "CapEx Trigger(ZLD EPC) -> Water System(全厂废水零排放) -> Instrumentation Requirement(在线监测) -> Timing Window Closing(EPC实施中,本次招标非仪表)",
       "potential_ims_use_case": "火电ZLD在线监测(如有独立仪表包)",
-      "estimated_time_window": "EPC施工阶段(2026Q4-2027) - 采购窗口可能已过"
+      "estimated_time_window": "EPC施工阶段(2026Q4-2027) - 采购窗口可能已过",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "国能长源荆门发电有限公司",
+          "epc_contractor_contact": "科环集团国能水务南京分公司(实施方)",
+          "design_institute_contact": "国能水务(内部)",
+          "operator_contact": "国能长源荆门发电",
+          "procurement_decision_maker": "国能水务(内部)",
+          "contacts_search_status": "PARTIAL - 实施方已知,无具体联系人"
+        },
+        "timeline": {
+          "project_start": "2026年(EPC实施中)",
+          "milestone_electrical_tender": "2026-09-09(低压电气设备中标公示)",
+          "procurement_window_estimate": "EPC实施中,采购窗口可能已过",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC内部采购(国能水务)",
+          "budget_owner": "科环集团",
+          "technical_spec_owner": "国能水务",
+          "influencer": "火电ZLD政策要求",
+          "decision_maker": "国能水务",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "科环集团国能水务",
+          "competition_notes": "EPC内部采购,介入窗口已过或极窄"
+        }
+      }
     },
     {
       "id": "IND-20260908-11",
@@ -707,7 +934,38 @@
       "ims_fit": "Medium",
       "logic": "Compliance Trigger -> Monitoring Obligation -> Instrumentation Requirement -> Potential iMS Opportunity",
       "potential_ims_use_case": "在线监测仪表集中监控平台+合规数据管理+运维响应闭环",
-      "estimated_time_window": "法典生效后(2026-08-15起)"
+      "estimated_time_window": "法典生效后(2026-08-15起)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "康乃尔化学工业股份有限公司; 地址:吉林市吉林经开区",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "不适用",
+          "operator_contact": "康乃尔化学(自营)",
+          "procurement_decision_maker": "待确认",
+          "contacts_search_status": "INCOMPLETE - 有企业名称,无具体联系人"
+        },
+        "timeline": {
+          "project_start": "法典生效后(2026-08-15)",
+          "milestone_inspection": "2026-08(吉林市生态环境局现场检查)",
+          "procurement_window_estimate": "2026Q4-2027(整改期)",
+          "project_completion": "持续合规运营",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采",
+          "budget_owner": "康乃尔化学",
+          "technical_spec_owner": "环保/EHS部门",
+          "influencer": "法典合规要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "合规驱动,需找到具体环保负责人推动"
+        }
+      }
     },
     {
       "id": "IND-20260908-04",
@@ -770,7 +1028,38 @@
       "ims_fit": "No Evidence",
       "logic": "CapEx Trigger(550万新建WWTP) -> Water System(头孢类兽药废水) -> Instrumentation Requirement(招标范围含仪表) -> Potential Hach Opportunity",
       "potential_ims_use_case": "新建WWTP在线监测仪表选型(招标前介入)",
-      "estimated_time_window": "2026年10月正式招标"
+      "estimated_time_window": "2026年10月正式招标",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "山东鼎皓制药; 地址:山东菏泽单县",
+          "epc_contractor_contact": "不适用(业主自建)",
+          "design_institute_contact": "待确认",
+          "operator_contact": "山东鼎皓制药(自营)",
+          "procurement_decision_maker": "待确认",
+          "contacts_search_status": "INCOMPLETE"
+        },
+        "timeline": {
+          "project_start": "2026年(招标计划阶段)",
+          "milestone_tender": "2026-10(正式招标)",
+          "procurement_window_estimate": "2026-10(招标窗口)",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主招标",
+          "budget_owner": "山东鼎皓制药",
+          "technical_spec_owner": "待确认",
+          "influencer": "环评要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "10月招标前是仪表选型最后窗口"
+        }
+      }
     },
     {
       "id": "IND-20260908-05",
@@ -828,7 +1117,38 @@
       "ims_fit": "No Evidence",
       "logic": "CapEx Trigger(ZLD EPC) -> Water System(脱硫废水) -> Instrumentation Requirement(甲供设备) -> Uncertain",
       "potential_ims_use_case": "脱硫废水ZLD在线监测(如有甲供仪表)",
-      "estimated_time_window": "投标截止9/14 - 采购窗口即将关闭"
+      "estimated_time_window": "投标截止9/14 - 采购窗口即将关闭",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "大开热电2x350MW",
+          "epc_contractor_contact": "待确认(EPC方)",
+          "design_institute_contact": "待确认",
+          "operator_contact": "大开热电",
+          "procurement_decision_maker": "待确认",
+          "contacts_search_status": "INCOMPLETE"
+        },
+        "timeline": {
+          "project_start": "2026年(EPC招标)",
+          "milestone_tender_deadline": "2026-09-14(投标截止)",
+          "procurement_window_estimate": "2026-09(投标截止,窗口即将关闭)",
+          "project_completion": "2027年",
+          "timeline_confidence": "FACT"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC总包",
+          "budget_owner": "大开热电",
+          "technical_spec_owner": "EPC方",
+          "influencer": "环保要求",
+          "decision_maker": "EPC方",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "待确认",
+          "competition_notes": "投标截止9/14,窗口即将关闭"
+        }
+      }
     },
     {
       "id": "IND-20260908-12",
@@ -890,7 +1210,38 @@
       "ims_fit": "Low",
       "logic": "Digitalization Trigger -> Water System(全厂水系统含脱硫废水等) -> Possible Instrumentation Gap -> Weak iMS Signal",
       "potential_ims_use_case": "水系统仪表垂直补充(如未纳入施耐德平台)",
-      "estimated_time_window": "运营中(数字化持续升级)"
+      "estimated_time_window": "运营中(数字化持续升级)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "建投准能",
+          "epc_contractor_contact": "施耐德电气(智慧电厂实施方)",
+          "design_institute_contact": "施耐德电气",
+          "operator_contact": "建投准能",
+          "procurement_decision_maker": "施耐德电气(数字化平台)",
+          "contacts_search_status": "PARTIAL - 实施方已知"
+        },
+        "timeline": {
+          "project_start": "2026年(施耐德实施中)",
+          "milestone_digitalization": "2026年(施耐德AVEVA AIM实施)",
+          "procurement_window_estimate": "运营中(数字化持续升级)",
+          "project_completion": "持续",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "数字化总包(施耐德)",
+          "budget_owner": "建投准能",
+          "technical_spec_owner": "施耐德电气",
+          "influencer": "智慧电厂战略",
+          "decision_maker": "施耐德电气",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "施耐德AVEVA AIM(已实施)",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "施耐德已实施数字化平台,水系统是否纳入未知"
+        }
+      }
     }
   ],
   "market_background": {
