@@ -59,8 +59,8 @@
     "search_bias_warning": "Engine A only 2/11 signals. Need more compliance-driven search. Next round: strengthen Engine A (pollution permit database, auto-monitoring requirements).",
     "stage3_status": {
       "contacts_complete": 0,
-      "contacts_partial": 5,
-      "contacts_incomplete": 6
+      "contacts_partial": 6,
+      "contacts_incomplete": 5
     }
   },
   "top_5_match": [
@@ -318,12 +318,12 @@
       "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "先进半导体材料(安徽)有限公司(母公司为新企业,无公开联系人)",
+          "project_owner_contact": "先进半导体材料(安徽)有限公司; 法定代表人/董事:雷国辉; 董事长:何树泉; 电话:0550-7126288; 邮箱:j.song@aam-intl.com; 地址:安徽省滁州市中新苏滁高新技术产业开发区文忠路288号; 官网:www.aam-intl.com; 母公司:AAMI先进封装材料国际有限公司(香港)",
           "epc_contractor_contact": "不适用(环评阶段,未进入EPC)",
-          "design_institute_contact": "待确认(环评报告编制单位未知)",
-          "operator_contact": "待确认",
-          "procurement_decision_maker": "待确认(业主环保/设备部门)",
-          "contacts_search_status": "INCOMPLETE - 无公开联系方式"
+          "design_institute_contact": "待确认(环评报告编制单位未在公开文件中披露)",
+          "operator_contact": "先进半导体材料(安徽)有限公司(自营); HR:宋先生(人力资源部经理)/余女士(人事)",
+          "procurement_decision_maker": "待确认(建议通过雷国辉或何树泉对接设备/环保部门)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
         },
         "timeline": {
           "project_start": "2026年(环评重新报批)",
