@@ -58,9 +58,9 @@
     },
     "search_bias_warning": "Engine A only 2/11 signals. Need more compliance-driven search. Next round: strengthen Engine A (pollution permit database, auto-monitoring requirements).",
     "stage3_status": {
-      "contacts_complete": 0,
-      "contacts_partial": 6,
-      "contacts_incomplete": 5
+      "contacts_complete": 3,
+      "contacts_partial": 8,
+      "contacts_incomplete": 0
     }
   },
   "top_5_match": [
@@ -423,12 +423,12 @@
       "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "灿盛制药(淄博)有限公司; 地址:淄博高新区牧龙山路1033号",
+          "project_owner_contact": "灿盛制药(淄博)有限公司; 法定代表人:陆坊斌; 电话:0533-207****; 邮箱:jin-guo.ma@centrient.com; 地址:山东省淄博高新区牧龙山路1033号; 母公司:荷兰Centrient Pharmaceuticals(原DSM制药部门); 注册资本:1138.9万美元; 成立:1995-09-04; 员工:137人(2025年); 2018年被并购(交易金额6303万元); 曾用名:中化帝斯曼制药(淄博)有限公司",
           "epc_contractor_contact": "不适用(技改项目,利用现有设施)",
-          "design_institute_contact": "待确认(MVR系统设计单位未知)",
-          "operator_contact": "灿盛制药(淄博)生产运营部门",
-          "procurement_decision_maker": "待确认",
-          "contacts_search_status": "INCOMPLETE - 有企业地址,无具体联系人"
+          "design_institute_contact": "环评报告编制单位:山东美陵中联环境工程有限公司(在环评公示文件中列为编制单位); 地址:淄博市临淄区",
+          "operator_contact": "灿盛制药(淄博)生产运营部门; 建议通过陆坊斌或jin-guo.ma@centrient.com对接环保/EHS部门",
+          "procurement_decision_maker": "待确认(母公司Centrient采购体系可能主导); 建议联系路径:通过荷兰总部Centrient或中国法人陆坊斌",
+          "contacts_search_status": "PARTIAL - 企业基本信息和邮箱已确认,母公司为荷兰Centrient,具体采购决策人待核实"
         },
         "timeline": {
           "project_start": "2026年(环评拟审批公示)",
@@ -528,12 +528,12 @@
       "estimated_time_window": "技改设计阶段(2026Q4)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "启东盖天力药业有限公司; 排污许可证编号:91320681608384436X001V",
+          "project_owner_contact": "启东盖天力药业有限公司; 法定代表人:徐无为; 电话:0513-83101860 / 0513-83321533; 邮箱:yonghu@gaitianli.com.cn / sjh@gaitianli.com.cn; 官网:www.gaitianli.com.cn; 地址:江苏省启东市经济开发区南苑西路1166号; 成立:1995-06-06; 注册资本:4500万元; 员工:127人(2025年); 主营:中成药槐耳颗粒/槐杞黄颗粒",
           "epc_contractor_contact": "不适用",
           "design_institute_contact": "待确认",
-          "operator_contact": "启东盖天力药业",
-          "procurement_decision_maker": "待确认",
-          "contacts_search_status": "INCOMPLETE"
+          "operator_contact": "启东盖天力药业(自营)",
+          "procurement_decision_maker": "待确认(建议通过0513-83101860转分机对接设备/环保部门)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
         },
         "timeline": {
           "project_start": "2026年(拟批准公示)",
@@ -634,12 +634,12 @@
       "estimated_time_window": "EPC合同签订后施工阶段(2026Q4-2027) - 采购窗口正在收窄",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "云南解化绿源化工有限公司; 地址:云南红河州开远市小龙潭化工园区; 2025年7月成立",
-          "epc_contractor_contact": "中国天辰工程有限公司(水处理及配套工程EPC中标)",
-          "design_institute_contact": "中国天辰(设计施工总承包)",
-          "operator_contact": "云南解化绿源化工有限公司(搬迁后自营)",
-          "procurement_decision_maker": "EPC方主导(仪表选型可能已确定)",
-          "contacts_search_status": "PARTIAL - EPC方已知,业主方无公开联系人"
+          "project_owner_contact": "云南解化绿源化工有限公司; 法定代表人:张兵; 董事/经理:黄鑫; 原法定代表人:王朝文; 电话:0873-716****(部分隐藏); 地址:云南省红河州开远市小龙潭镇小龙潭化工园区; 注册资本17亿元; 成立2025-06-20; 母公司:云南建投集团",
+          "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭贵和; 总经理/董事:赵敏伟; 电话:022-23408826; 邮箱:tccoverseas@cntcc.cn; 地址:天津市北辰区京津路1号; 官网:www.china-tcc.com; 仪表采购关键联系人:孙颖B(17320080380 / sunying9@cncec.cn)-温度仪表询比采购; 张炜(18622208507 / zhangwei64@cncec.cn)-现场仪表接线箱; 安秋宇(022-23406957 / anqiuyu@cncec.cn)-仪表桥架; 裴工(022-23407221 / peijinhao@cncec.cn); 采购部办公室(022-23407379 / zhangfengyun3@cncec.cn); 马猛猛(022-23408114 / mamengmeng@cncec.cn); 国内业务:022-23408999 / tccdomestic@cntcc.cn; 分供方:022-23408886 / caimai@cntcc.cn",
+          "design_institute_contact": "中国天辰(设计施工总承包); 原化工部第一设计院(1953年成立); 国内业务邮箱:华东hdqyzx@cncec.cn / 西北xbqyzx@cncec.cn / 东北dbqyzx@cncec.cn",
+          "operator_contact": "云南解化绿源化工有限公司(搬迁后自营); 老厂运营方:云南解化清洁能源开发有限公司解化化工分公司",
+          "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 关键建议:联系孙颖B/张炜/安秋宇了解仪表采购标准; 招标代理:云南西南咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-65875131 / 13211686971)",
+          "contacts_search_status": "COMPLETE - 业主和EPC方已确认; 天辰仪表采购团队关键联系人已定位(孙颖B/张炜/安秋宇)"
         },
         "timeline": {
           "project_start": "2025年(项目筹备)",
@@ -739,12 +739,12 @@
       "estimated_time_window": "BOOT项目设计阶段(2026Q4-2027Q1)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "中捷产业园区管委会",
+          "project_owner_contact": "中捷产业园区石化工业园管理中心; 招标代理:河北天作招标代理有限公司; 代理联系人:齐福坤/王艳; 电话:0317-5687679 / 13313079810",
           "epc_contractor_contact": "不适用(BOOT模式,运营方自建)",
-          "design_institute_contact": "节能国祯/麦王环境/山东圣立创联合体",
-          "operator_contact": "节能国祯(牵头运营方); 麦王环境; 山东圣立创",
-          "procurement_decision_maker": "运营方联合体(节能国祯主导)",
-          "contacts_search_status": "PARTIAL - 运营方联合体已知,无具体联系人姓名"
+          "design_institute_contact": "中节能国祯环保科技股份有限公司(牵头运营方); 董秘:罗锦辉; 证券代表:李越越; 电话:0551-65324976; 地址:安徽省合肥市高新区创新大道2688号中新网安大厦; 邮箱:gzhb@gzep.com.cn; 官网:www.gzep.com.cn; 股票代码:300388; 设备制造事业部:0551-66181035; 客服中心:400-1622919",
+          "operator_contact": "节能国祯(牵头)+麦王环境+山东圣立创联合体; 麦王环境:法定代表人崔黎明(更正),电话021-68552275,邮箱zhaoyijing@mcwongtech.com,地址上海市杨浦区杨树浦路1088号,官网www.mcwongtech.com,员工127人; 山东圣立创:法定代表人胡平财,电话1768178****,邮箱2756535001@qq.com,地址济宁建设路141号",
+          "procurement_decision_maker": "运营方联合体(节能国祯主导); 关键建议:通过罗锦辉(0551-65324976)对接项目采购或设备制造事业部(0551-66181035)",
+          "contacts_search_status": "COMPLETE - 运营方联合体及招标代理联系人已确认; 麦王环境法人更正为崔黎明"
         },
         "timeline": {
           "project_start": "2026-09-03(中标公告)",
@@ -840,12 +840,12 @@
       "estimated_time_window": "EPC施工阶段(2026Q4-2027) - 采购窗口可能已过",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "国能长源荆门发电有限公司",
-          "epc_contractor_contact": "科环集团国能水务南京分公司(实施方)",
-          "design_institute_contact": "国能水务(内部)",
-          "operator_contact": "国能长源荆门发电",
-          "procurement_decision_maker": "国能水务(内部)",
-          "contacts_search_status": "PARTIAL - 实施方已知,无具体联系人"
+          "project_owner_contact": "国能长源荆门发电有限公司; 地址:湖北省荆门市城东工业区; 始建于1976年,隶属国家能源投资集团; 三期2x640MW机组2006-2007年投产; 补充水源:漳河水库; 冷却方式:带冷却塔的二次循环冷却系统",
+          "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(实施方); 负责人:祖坤勇(2021年11月上任); 前负责人:顾小红; 电话:025-68521182; 邮箱:p0004212@chnenergy.com.cn; 地址:南京市建邺区楠溪江东街68号; 曾用名:北京朗新明/国能朗新明环保科技南京分公司; 关联公司:国能(南京)水务环保科技有限公司(法定代表人:祖坤勇,注册资本5050万,电话025-68521182,地址:南京市建邺区江心洲文泰街85号)",
+          "design_institute_contact": "国能水务(内部EPC设计)",
+          "operator_contact": "国能长源荆门发电有限公司(自营)",
+          "procurement_decision_maker": "国能水务南京分公司(内部EPC采购); 招标代理:国家能源集团国际工程咨询有限公司; 关键发现:2026-08-28曾发布'仪表成套询价采购公告'(WZCX-WZXJ-202****,报价截止2026-09-01),说明仪表采购正在进行; 2026-09-09低压电气设备已中标(南京双灵瑞203万); 2026-09-10新发布'建安工程招标公告'(CEZB260107615)",
+          "contacts_search_status": "COMPLETE - EPC实施方及业主信息已确认; 关键发现:曾有仪表成套询价采购(2026-08-28),仪表采购窗口可能存在"
         },
         "timeline": {
           "project_start": "2026年(EPC实施中)",
@@ -937,12 +937,12 @@
       "estimated_time_window": "法典生效后(2026-08-15起)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "康乃尔化学工业股份有限公司; 地址:吉林市吉林经开区",
+          "project_owner_contact": "康乃尔化学工业股份有限公司; 法定代表人:薛艳东; 电话:0432-68105976; 邮箱:18744218058@163.com; 官网:www.jilinconnell.com; 地址:吉林市吉林经济技术开发区昆仑街245号; HR:姜女士(人事经理); 员工:577人(2025年); 注册资本:5.86亿元; 成立:2006-11-23; 所属集团:吉林康乃尔集团",
           "epc_contractor_contact": "不适用",
           "design_institute_contact": "不适用",
-          "operator_contact": "康乃尔化学(自营)",
-          "procurement_decision_maker": "待确认",
-          "contacts_search_status": "INCOMPLETE - 有企业名称,无具体联系人"
+          "operator_contact": "康乃尔化学(自营); 注意:2023年与旭阳集团合作成立吉林旭阳康乃尔化工有限公司(法定代表人:潘九海,注册资本133万元)",
+          "procurement_decision_maker": "待确认(建议通过薛艳东对接环保/设备/EHS部门; 或直接拨打0432-68105976转分机)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
         },
         "timeline": {
           "project_start": "法典生效后(2026-08-15)",
@@ -1031,12 +1031,12 @@
       "estimated_time_window": "2026年10月正式招标",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "山东鼎皓制药; 地址:山东菏泽单县",
+          "project_owner_contact": "山东鼎皓制药有限公司; 法定代表人:陈立明(执行董事兼总经理); 监事:陈力民; 财务负责人:王艳丽; 电话:1509837****(部分隐藏); 邮箱:1****@qq.com(部分隐藏); 地址:山东省菏泽市单县北城街道胜利路109号; 注册资本:1000万元; 成立:2022-06-09; 参保人数:5人; 母公司:山东鼎皓集团(2024年销售收入近2亿元,员工300人); 集团研发中心:济南市商河化工园区高端化学原料药基地; 关联公司:济南鼎皓医药科技有限公司(法定代表人:方金印); 菏泽润昌医药科技有限公司(法定代表人:陈力民,持股100%)",
           "epc_contractor_contact": "不适用(业主自建)",
           "design_institute_contact": "待确认",
-          "operator_contact": "山东鼎皓制药(自营)",
-          "procurement_decision_maker": "待确认",
-          "contacts_search_status": "INCOMPLETE"
+          "operator_contact": "山东鼎皓制药(自营); 集团生产基地:菏泽单县/鄄城、济南商河/莱芜、江苏、河北、山西",
+          "procurement_decision_maker": "待确认(建议通过陈立明或集团总部对接); 注意:集团规模较大(300人,2亿营收),可能有集中采购体系",
+          "contacts_search_status": "PARTIAL - 企业基本信息和部分联系方式已确认,具体采购决策人待核实"
         },
         "timeline": {
           "project_start": "2026年(招标计划阶段)",
@@ -1120,12 +1120,12 @@
       "estimated_time_window": "投标截止9/14 - 采购窗口即将关闭",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "大开热电2x350MW",
-          "epc_contractor_contact": "待确认(EPC方)",
-          "design_institute_contact": "待确认",
-          "operator_contact": "大开热电",
-          "procurement_decision_maker": "待确认",
-          "contacts_search_status": "INCOMPLETE"
+          "project_owner_contact": "国电电力大连开发区热电厂(大开热电); 在役2x350MW火电机组,总装机700MW; 厂址:大连开发区钢铁路90号; 始建于2012年(2号机组2009年11月投产); 隶属国家能源投资集团/国电电力; 补充水源:八三工程供水管线",
+          "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(脱硫废水ZLD EPC实施方); 负责人:祖坤勇; 电话:025-68521182; 注意:与国能长源荆门项目EPC为同一实施方",
+          "design_institute_contact": "国能水务(内部EPC设计)",
+          "operator_contact": "大开热电(自营); 脱硫废水ZLD EPC实施中",
+          "procurement_decision_maker": "国能水务南京分公司(内部EPC采购); 招标代理:国家能源集团国际工程咨询有限公司; 2026-09-10发布建安工程招标公告(CEZB260107615,计划开工2026-09-15,竣工2027-07-31)",
+          "contacts_search_status": "PARTIAL - 业主和EPC实施方已确认,EPC与国能荆门项目为同一团队"
         },
         "timeline": {
           "project_start": "2026年(EPC招标)",
@@ -1213,12 +1213,12 @@
       "estimated_time_window": "运营中(数字化持续升级)",
       "stage3_enrichment": {
         "contacts": {
-          "project_owner_contact": "建投准能",
-          "epc_contractor_contact": "施耐德电气(智慧电厂实施方)",
+          "project_owner_contact": "建投准能(内蒙古鄂尔多斯准格尔旗); 隶属河北建投集团",
+          "epc_contractor_contact": "施耐德电气(智慧电厂实施方); 数字化平台:AVEVA AIM; 注意:施耐德已有成熟数字化平台,水系统可能已纳入",
           "design_institute_contact": "施耐德电气",
-          "operator_contact": "建投准能",
-          "procurement_decision_maker": "施耐德电气(数字化平台)",
-          "contacts_search_status": "PARTIAL - 实施方已知"
+          "operator_contact": "建投准能(自营)",
+          "procurement_decision_maker": "施耐德电气(数字化平台主导); 建议验证:水系统仪表是否已纳入AVEVA AIM平台",
+          "contacts_search_status": "PARTIAL - 实施方已知,无具体联系人姓名"
         },
         "timeline": {
           "project_start": "2026年(施耐德实施中)",
