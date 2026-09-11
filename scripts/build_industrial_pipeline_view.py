@@ -24,11 +24,17 @@ def model():
     projects = {p.get("project_id"): p for p in source.get("projects", [])}
     accounts = {a.get("account_id"): a for a in source.get("accounts", [])}
     for item in source.get("leads", []):
+        signal = item.get("original_signal") or {}
+        if signal.get("to_verify") is not None and not isinstance(signal["to_verify"], list):
+            signal["to_verify"] = [signal["to_verify"]]
+        evidence = signal.get("evidence") or {}
+        for field in ("facts", "inferences", "unknowns"):
+            if evidence.get(field) is not None and not isinstance(evidence[field], list):
+                evidence[field] = [evidence[field]]
+    for item in source.get("leads", []):
         if item.get("lead_id") in existing:
             continue
         sig = item.get("original_signal") or {}
-        if sig.get("to_verify") is not None and not isinstance(sig["to_verify"], list):
-            sig["to_verify"] = [sig["to_verify"]]
         evidence = sig.get("evidence") or {}
         row_lead = {"lead_id": item.get("lead_id"), "company": {"company_name": sig.get("company"), "location": sig.get("location"), "industry": sig.get("industry")}, "project": {"project_name": sig.get("opportunity"), "project_stage": sig.get("opportunity_stage")}, "signal": {"signal_description": sig.get("opportunity"), "signal_date": item.get("first_discovered") or source.get("metadata", {}).get("generated_date")}, "evidence": [{"source_url": url, "evidence_summary": "Enriched source URL"} for url in sig.get("source_urls", [])]}
         enriched_contacts = []
