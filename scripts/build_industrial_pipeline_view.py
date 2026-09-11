@@ -35,7 +35,6 @@ def model():
                 continue
             contact = json.loads(json.dumps(contacts[cid], ensure_ascii=False))
             contact["name"] = mask_name(contact.get("name"))
-            contact.pop("phone", None)
             contact.pop("email", None)
             enriched_contacts.append(contact)
         manifest["leads"].append({"date": row_lead["signal"]["signal_date"], "lead": row_lead, "stage1": "ENRICHED_SOURCE", "stage2": "NOT_RECORDED", "stage3": "ENRICHED", "stage2_detail": "Enriched record contains no Stage 2 decision for this Lead ID.", "stage3_detail": "DoMate enriched record is available; Water Clay output is not linked here.", "stage3_result": None, "enriched_record": item, "enriched_contacts": enriched_contacts, "enriched_projects": [projects[x] for x in item.get("project_ids", []) if x in projects], "enriched_accounts": [accounts[x] for x in item.get("account_ids", []) if x in accounts], "legacy_match": True})
