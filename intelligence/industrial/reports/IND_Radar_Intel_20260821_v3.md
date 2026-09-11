@@ -1,0 +1,573 @@
+# iMS Industrial Market Intelligence Radar
+**2026-08-21** | Week 2 | v2.2
+
+## 1. Executive Summary
+
+**28** Scanned → **14** Valid | **5** Eng A + **9** Eng B | **2** P1 / **7** P2 / **5** P3
+
+### Today's Key Judgments
+
+**【Judgment】 HJ 1480-2026正在形成跨行业、短时间窗口的工业数字化监管需求**
+- **Why it matters**: 10月1日强制实施，37万家排污单位43天改造窗口。海康/大华/宇视已发布专项产品。
+- **iMS relevance**: 视频监控点位与水质监测点位高度重叠——iMS可整合'数据+视频'双重合规方案。
+- **Key unknown**: iMS是否支持GB/T 28181-2022视频流接入？
+
+**【Judgment】 锂电行业正在形成'扩产→含氟废水→在线监测'的重复信号**
+- **Why it matters**: 楚能80GWh投产、石大胜华28亿扩产（含氟化锂）、中航锂电3.5GWh满产——三条独立信号同一模式。
+- **iMS relevance**: 含氟废水在线监测可能成为锂电池行业垂直iMS用例。
+- **Key unknown**: 新建工厂废水站是否已建设？仪表品牌是什么？
+
+**【Judgment】 E+H Netilion生态已形成'仪表→数据→诊断→资产管理'闭环**
+- **Why it matters**: E+H 2024年营收37.44亿欧元，90%仪表数字化+唯一IP地址，Netilion覆盖远程监控/数据管理/预测性维护。
+- **iMS relevance**: iMS与Netilion定位直接重叠。差异化需在'多品牌整合+水质专业分析+合规场景'建立壁垒。
+- **Key unknown**: Netilion在中国工业废水领域实际装机量？客户满意度？
+
+**【Judgment】 环评公示是Industrial Radar最早的项目发现窗口**
+- **Why it matters**: 华康制药环评8月11日公示时项目尚未建设，介入成本最低。
+- **iMS relevance**: 系统监控环评公示页面可建立自动化Early Trigger发现流程。
+- **Key unknown**: 环评公示到实际建设的时间间隔？采购决策在哪个环节？
+
+## 2. Industrial Signal Landscape
+
+| Signal | Industry | P | Eng | iMS Relevance | Time Window |
+|---|---|---|---|---|---|
+| 全国37万家排污单位（重点工业 | 跨行业合规 | P1 | A | High | 2026年10月1日起持续（合规截止日已 |
+| 黄石大冶81家排污单位 | 跨行业合规 | P2 | A | Medium | 2026年8月-10月（试点窗口） |
+| 全国排污单位（自行监测管理办法 | 跨行业合规 | P2 | A | Medium | 征求意见中，预计2026年底-2027年 |
+| 全国排污许可企业（生态环境法典 | 跨行业合规 | P3 | A | Low | 2026年8月15日起（法典已施行，后续 |
+| 全国排污许可证公示企业（8月2 | 其他工业 | P3 | A | Low | 公示期2026-08-21至08-27， |
+| 楚能新能源（宜昌） | 新能源/电池 | P2 | B | Medium | 2026年8月已投产，废水系统可能已在运 |
+| 石大胜华（东营） | 新能源/电池 | P2 | B | Medium | 电解液+添加剂项目12个月（2027年投 |
+| 新乡华康制药 | 制药 | P2 | B | Medium | 环评公示中（8月11日），预计2026- |
+| 长鑫科技（合肥） | 半导体/电子 | P2 | B | Medium | 2026年全年产能爬坡 |
+| 16万吨磷酸铁锂材料项目 | 新能源/电池 | P3 | B | Low | 环评一次公示阶段，预计2027-2028 |
+| 亿纬锂能（匈牙利） | 新能源/电池 | P3 | B | Low | 2027年投产（海外） |
+| 43个化工新建项目 | 石化/化工 | P3 | B | Low | 需进一步确认各项目阶段 |
+| 山东奕杰鑫新材料 | 半导体/电子 | P3 | B | Low | 环评公示中，后续建设阶段 |
+| 中航锂电（洛阳） | 新能源/电池 | P3 | B | Low | 已投产 |
+
+## 3. Top 5 Industrial Signals
+
+### #1 全国37万家排污单位（重点工业）
+P1 | Engine A | 跨行业合规 | 全国
+
+**What Changed**
+- [Fact] 生态环境部2026年7月22日发布HJ 1480-2026标准，2026年10月1日实施
+- [Fact] 全国开展自行监测排污单位超37万家
+- [Fact] 标准要求覆盖废水采样口、废气监测孔、监测站房等关键点位
+
+**Why It Matters**
+新国标强制实施 → 37万家排污单位需视频监控改造 → 监测点位与水质监测点位高度重叠 → iMS可整合视频+水质数据为合规增值
+
+**iMS Relevance**
+iMS平台集成HJ1480视频监控数据流+水质在线监测数据，为工业排污单位提供'数据+视频'双重合规解决方案
+
+**Potential iMS Use Case**
+- Use Case: iMS平台集成HJ1480视频监控数据流+水质在线监测数据，为工业排污单位提供'数据+视频'双重合规解决方案
+- Evidence: 生态环境部2026年7月22日发布HJ , 全国开展自行监测排污单位超37万家
+- Status: Active
+
+**Key Unknowns**
+- [Unknown] Hach是否有视频监控相关产品线或合作伙伴
+- [Unknown] iMS平台架构是否支持GB/T 28181-2022视频流接入
+- [Unknown] 工业排污单位视频监控改造是否与Hach仪表采购同一预算口
+
+**What to Verify Next**
+- iMS平台架构是否支持GB/T 28181-2022视频流接入？
+- Hach是否有视频监控相关产品线或合作伙伴？
+- 工业排污单位视频监控改造与水质仪表采购是否同一预算口？
+
+### #2 楚能新能源（宜昌）
+P2 | Engine B | 新能源/电池 | 湖北省宜昌市夷陵区龙泉镇
+
+**What Changed**
+- [Fact] 8月9日楚能新能源宜昌二期80GWh锂电池产业园正式投产
+- [Fact] 总投资220亿元，规划产能80GWh
+- [Fact] 从开工到投产仅10个月，较既定工期提前2个月
+
+**Why It Matters**
+80GWh产能投产 → 含氟/含铜/酸性废水产生 → 废水处理+在线监测需求 → Hach仪表+iMS机会
+
+**iMS Relevance**
+iMS监控锂电池工厂废水处理系统（含氟/含铜/酸碱废水），确保排放合规
+
+**Potential iMS Use Case**
+- Use Case: iMS监控锂电池工厂废水处理系统（含氟/含铜/酸碱废水），确保排放合规
+- Evidence: 8月9日楚能新能源宜昌二期80GWh锂电, 总投资220亿元，规划产能80GWh
+- Status: Emerging
+
+**Key Unknowns**
+- [Unknown] 楚能宜昌基地废水处理系统建设情况
+- [Unknown] 是否已安装水质在线监测仪表
+- [Unknown] 废水处理是否自建或委托第三方
+
+**What to Verify Next**
+- 楚能宜昌基地废水处理系统是否已建设？
+- 是否已安装水质在线监测仪表？仪表品牌是什么？
+- 废水处理由企业自营还是第三方运营？
+
+### #3 石大胜华（东营）
+P2 | Engine B | 新能源/电池 | 山东省东营市垦利区
+
+**What Changed**
+- [Fact] 8月3日石大胜华公告三大投资项目，总投资28.05亿元
+- [Fact] 23万吨/年液态锂盐项目（投资17.97亿，建设周期24个月）
+- [Fact] 20万吨/年电解液项目（投资7.22亿，建设周期12个月）
+
+**Why It Matters**
+28亿扩产 → 新增液态锂盐/电解液/氟化锂产能 → 含氟+有机废水处理需求 → 仪表+iMS机会
+
+**iMS Relevance**
+iMS监控锂电材料工厂废水处理系统（含氟/有机物/COD废水）
+
+**Potential iMS Use Case**
+- Use Case: iMS监控锂电材料工厂废水处理系统（含氟/有机物/COD废水）
+- Evidence: 8月3日石大胜华公告三大投资项目，总投资, 23万吨/年液态锂盐项目（投资17.97
+- Status: Emerging
+
+**Key Unknowns**
+- [Unknown] 项目环评是否已公示
+- [Unknown] 废水处理系统设计方案
+- [Unknown] 是否已采购水质监测仪表
+
+**What to Verify Next**
+- 项目环评是否已公示？
+- 废水处理系统设计方案是什么？
+- 是否已采购水质监测仪表？
+
+### #4 长鑫科技（合肥）
+P2 | Engine B | 半导体/电子 | 安徽省合肥市
+
+**What Changed**
+- [Fact] 长鑫科技是国内唯一DRAM全产业链IDM企业
+- [Fact] 已建成三座12英寸高端晶圆生产基地
+- [Fact] 2025年末月产能30万片，2026年冲刺40万片/月
+
+**Why It Matters**
+产能扩张30→40万片/月 → 超纯水系统扩容+废水处理需求增加 → 仪表+iMS机会
+
+**iMS Relevance**
+iMS监控半导体晶圆厂超纯水系统和废水排放（UPW/含氟/含铜废水）
+
+**Potential iMS Use Case**
+- Use Case: iMS监控半导体晶圆厂超纯水系统和废水排放（UPW/含氟/含铜废水）
+- Evidence: 长鑫科技是国内唯一DRAM全产业链IDM, 已建成三座12英寸高端晶圆生产基地
+- Status: Emerging
+
+**Key Unknowns**
+- [Unknown] 现有超纯水系统品牌
+- [Unknown] 废水监测仪表品牌
+- [Unknown] 40万片/月产能对应的超纯水需求量
+
+**What to Verify Next**
+- 现有超纯水系统品牌是什么？
+- 废水监测仪表品牌是什么？
+- 40万片/月产能对应的超纯水需求量？
+
+### #5 新乡华康制药
+P2 | Engine B | 制药 | 河南省新乡市延津县
+
+**What Changed**
+- [Fact] 8月11日新乡市生态环境局拟审批华康制药原料药及医药中间体技术改造项目
+- [Fact] 现有年产150吨5-氟胞嘧啶生产线技改为年产450吨
+- [Fact] 总投资300万元
+
+**Why It Matters**
+产能扩大3倍 → 废水量增加 → 现有处理站可能需升级监测 → Hach/iMS机会
+
+**iMS Relevance**
+iMS监控制药废水处理站进出水水质（COD/氨氮/特征污染物）
+
+**Potential iMS Use Case**
+- Use Case: iMS监控制药废水处理站进出水水质（COD/氨氮/特征污染物）
+- Evidence: 8月11日新乡市生态环境局拟审批华康制药, 现有年产150吨5-氟胞嘧啶生产线技改为
+- Status: Emerging
+
+**Key Unknowns**
+- [Unknown] 现有3500m³/d污水处理站是否已安装在线监测仪表
+- [Unknown] 产能扩大后处理站是否需要扩建
+- [Unknown] 仪表品牌
+
+**What to Verify Next**
+- 现有3500m³/d污水处理站是否已安装在线监测仪表？
+- 产能扩大后处理站是否需要扩建？
+- 仪表品牌是什么？
+
+## 4. Industrial Intelligence
+
+### 4.1 Industry Trends
+**新能源/电池**: 产能扩张持续加速，含氟废水处理需求集中爆发
+- Signal: 楚能80GWh投产
+- Signal: 石大胜华28亿扩产
+- Signal: 中航锂电3.5GWh满产
+- Signal: 16万吨磷酸铁锂环评
+- Structural change: 锂电行业从'产能竞赛'进入'环保合规竞赛'阶段。含氟废水是在线监测的核心场景。
+- AI Judgment: 锂电行业含氟废水在线监测正在成为可标准化的垂直iMS用例。支持信号来自4条独立来源。
+
+**半导体/电子**: 国产替代加速，超纯水系统需求持续增长
+- Signal: 长鑫科技冲刺40万片/月
+- Signal: 蓝晓科技半导体级树脂通过认证
+- Structural change: 晶圆产能扩张驱动UPW系统扩容。半导体行业UPW+废水双重监控是独特需求。
+- AI Judgment: 半导体行业iMS切入点应在UPW品质监控+废水合规排放双重场景。
+
+**制药**: 原料药技改环评活跃，现有废水站升级窗口
+- Signal: 华康制药产能扩大3倍环评公示
+- Signal: 佛慈制药污水处理站委托运营招标
+- Structural change: 制药企业现有污水处理站面临产能扩大后的升级需求。第三方运维可能成为iMS生态入口。
+- AI Judgment: 制药行业废水站升级+第三方运维是iMS进入路径。
+
+**石化/化工**: 大型炼化项目持续但进度分散
+- Signal: 43个化工新建项目
+- Signal: 东明炼化713亿
+- Signal: 华锦阿美837亿
+- Structural change: 石化行业新建项目体量大但信息粒度粗，需验证具体阶段和废水方案。
+- AI Judgment: 石化行业信号量大但粒度不足，需降低优先级。
+
+### 4.2 Cross-signal Patterns
+**含氟废水监测**
+- Signals: 楚能80GWh, 石大胜华氟化锂项目, 16万吨磷酸铁锂
+- Maturity: Emerging — 多条独立信号指向同一需求，但尚无具体项目采购确认
+- AI Judgment: 如果在3条以上独立项目中验证到含氟废水在线监测需求，可升级为标准化iMS用例。
+
+**视频+水质数据融合合规**
+- Signals: HJ 1480-2026, 大冶81家试点, 自行监测管理办法征求意见稿
+- Maturity: Strong — 国家标准已发布，试点已启动，政策驱动明确
+- AI Judgment: 这是最成熟的跨行业iMS用例。关键瓶颈是iMS是否支持视频流接入。
+
+**环评公示→废水站建设→仪表采购**
+- Signals: 华康制药环评, 奕杰鑫石英砂环评, 磷酸铁锂环评
+- Maturity: Validated — 环评公示作为Early Trigger的逻辑已被多个信号验证
+- AI Judgment: 环评公示监控应成为Engine B的标准信息源。
+
+### 4.3 Emerging iMS Use Cases
+| Use Case | Maturity | Why Now | Key Unknown |
+|---|---|---|---|
+| Industrial Compliance Monitoring (合规监控) | High — 政策驱动明确，时间窗口紧迫 | HJ 1480于10月1日实施，37万家企业面临改造刚需 | iMS是否能集成视频监控数据流 |
+| Data + Video Compliance (数据+视频双重合规) | Emerging — 标准已发布但iMS技术适配未验证 | 视频监控点位与水质监测点位重叠，形成天然整合机会 | iMS是否支持GB/T 28181-2022协议 |
+| Fluoride Wastewater Monitoring (含氟废水监测) | Emerging — 3条独立信号指向同一需求 | 锂电行业扩产潮驱动含氟废水处理需求 | 新建工厂废水站是否已建设；现有仪表品牌 |
+| UPW Monitoring (超纯水监控) | Watchlist — 产能扩张信号明确但监测需求待验证 | 半导体国产替代驱动晶圆产能持续增长 | 现有UPW系统品牌；iMS在UPW场景的适用性 |
+| Multi-site Instrument Management (多站点仪表管理) | Emerging — 多站点管理需求因合规升级而显现 | 合规改造涉及大量企业，多站点仪表统一管理需求增加 | iMS是否支持多租户/多站点架构 |
+
+## 5. Policy Intelligence
+
+### HJ 1480-2026 排污单位自行监测视频监控系统建设与联网技术要求
+- **What Changed**: 10月1日强制实施，覆盖37万家排污单位。要求废水采样口/站房/排放口/危废间视频监控，存储90天，在线率≥95%。
+- **Why Relevant**: Fact: 视频监控点位与Hach在线水质仪表安装点位高度重叠。Inference: iMS可整合'水质数据+视频画面'提供双重合规方案。
+- **What to Watch**: iMS是否支持GB/T 28181-2022视频流接入；安防企业是否寻求水质监测合作
+
+### 排污单位自行监测管理办法（征求意见稿）
+- **What Changed**: 8月4日发布，覆盖自动在线监测/手工采样/第三方委托/违法认定/差异化执法五大模块。要求使用符合国家标准的监测设备。
+- **Why Relevant**: Inference: 监测设备合规性要求提升，可能推动工业排污单位更新现有仪表。
+- **What to Watch**: 正式发布时间；对监测设备品牌/型号是否有具体要求
+
+### 中华人民共和国生态环境法典
+- **What Changed**: 8月15日正式施行，10部环保法律合并废止。排污许可制度确立为核心法律地位。
+- **Why Relevant**: Inference: 工业企业排污许可证后监管需求增加，监测数据质量要求提升。
+- **What to Watch**: 地方执法力度跟进；配套实施细则出台
+
+## 6. Ecosystem Intelligence
+
+### EPC/环保工程公司
+**天清世恒（南京）**
+- **What Changed**: Fact: 工业废水EPC总承包，覆盖化工/医药/光伏/锂电池/半导体，千万级项目5个以上。
+- **Why Relevant**: Inference: 锂电池/半导体废水EPC经验直接对应iMS目标客户群
+- **What to Watch**: 是否使用数字化平台；仪表选型偏好
+
+**中节能国祯**
+- **What Changed**: Fact: 联合体中标1.356亿云南1.5万m³/d污水厂EPC+O项目（8月18日公示）
+- **Why Relevant**: Inference: EPC+O模式意味着运营期有持续仪表需求
+- **What to Watch**: 工业废水项目占比
+
+**南通华新环保科技**
+- **What Changed**: Fact: 中标7718万浏阳再生水厂工艺集成系统设备采购
+- **Why Relevant**: Inference: 工艺集成系统设备采购方可能包含水质监测仪表选型权
+- **What to Watch**: 仪表选型偏好
+
+### 第三方运维公司
+**佛慈制药污水处理站委托运营**
+- **What Changed**: Fact: 8月12日招标公告，2000m³/d制药废水站3年委托运营，含水质检测工作。
+- **Why Relevant**: Inference: 第三方运维公司负责水质检测，可能是iMS数据平台的生态入口
+- **What to Watch**: 中标方是谁；是否使用数字化平台
+
+### 安防/视频厂商
+**海康威视/大华/宇视**
+- **What Changed**: Fact: HJ 1480-2026发布后一周内发布专项视频监控产品线。
+- **Why Relevant**: Inference: 安防企业正在进入环境监测领域，可能成为iMS合作伙伴或竞争者。
+- **What to Watch**: 是否寻求水质监测领域合作；是否已有环境监测数字化平台
+
+### 国产仪表厂商
+**雷磁（上海仪电）**
+- **What Changed**: Fact: 国内电化学分析仪器市场占有率第一，pH计国产品牌市场占比61.3%。
+- **Why Relevant**: Inference: 在中低端市场与Hach竞争，但数字化平台能力较弱。
+- **What to Watch**: 是否推出工业在线监测数字化平台
+
+**重庆川仪**
+- **What Changed**: Fact: A股上市国企，流量计/分析仪表国产化率超95%。
+- **Why Relevant**: Inference: 大型国企背景，在政府项目中可能有政策优势。
+- **What to Watch**: 是否有类似iMS的数字化平台
+
+## 7. Competitive Intelligence
+
+### E+H (Endress+Hauser)
+- **What Changed**: Fact: 2024年营收37.44亿欧元，投资3.493亿欧元扩建中国/印度生产。90%现场仪表数字化+唯一IP地址。Netilion覆盖远程监控/数据管理/预测性维护。8900项专利，研发7.4%。
+- **Why Relevant**: Direct competitor — Netilion生态已形成'仪表→数据→诊断→资产管理→预测性维护'闭环，与iMS定位高度重叠。
+- **What to Watch**: Netilion在中国工业废水领域装机量增长；是否推出数据+视频融合方案；是否与安防企业合作
+
+### Siemens
+- **What Changed**: Fact: 水处理解决方案覆盖SIMATIC PCS 7过程控制系统、数字化孪生、AI泄漏检测。与Capgemini合作发布水务数字化白皮书。
+- **Why Relevant**: Adjacent competitor — 优势在自动化/DCS层，水质分析仪表不是核心产品线。中国市场案例较少。
+- **What to Watch**: 是否在中国工业水处理领域加强水质分析产品线；是否与国产仪表厂商合作
+
+### 国产仪表厂商（雷磁/川仪等）
+- **What Changed**: Fact: 雷磁pH计国产品牌市场占比61.3%。川仪核心元器件国产化率超95%。国产仪表在中低端市场已大幅替代。
+- **Why Relevant**: Indirect competitor — 单台仪表有价格优势，但缺乏数字化平台能力。iMS差异化在多品牌整合+数据分析+合规场景。
+- **What to Watch**: 国产仪表厂商是否推出数字化平台；是否与互联网企业合作进入数据分析领域
+
+## 8. Signal Quality & Exclusions
+
+| Source Type | Signals | Rating |
+|---|---|---|
+| 生态环境部官网/公告 | 3 | A — Authoritative |
+| 地方生态环境局环评公示 | 2 | A — Earliest window |
+| 上市公司公告 | 3 | B — Accurate but distant |
+| 行业媒体 | 4 | B — Needs cross-verify |
+| B2B推广文章 | 0 | D — Noise |
+
+### Excluded Signals
+- 多个B2B推广文章（纯净水处理设备厂家推荐）: 广告内容，非真实项目信号
+- 多家化工企业ESG评级变化（恒力/万华/荣盛等）: Tier 3背景信号，ESG评级变化不直接产生监测设备需求
+- 新能源汽车销量预测报告: 行业趋势分析，非具体企业项目信号
+- 锂电池隔膜产能分析报告: 行业研究文档，非项目信号
+
+## 9. Detailed Signal Appendix
+
+### IND-20260821-001 | 全国37万家排污单位（重点工业）
+P1 | Tier 1 | Engine A | 跨行业合规 | 全国
+
+- [Fact] 生态环境部2026年7月22日发布HJ 1480-2026标准，2026年10月1日实施
+- [Fact] 全国开展自行监测排污单位超37万家
+- [Fact] 标准要求覆盖废水采样口、废气监测孔、监测站房等关键点位
+- [Infer] 37万家排污单位中工业企业占比高，视频监控改造为刚性需求
+- [Infer] HJ 1480与Hach水质在线监测仪表形成互补——监测点位的视频覆盖与水质数据采集可协同
+- [Unknown] Hach是否有视频监控相关产品线或合作伙伴
+- [Unknown] iMS平台架构是否支持GB/T 28181-2022视频流接入
+- **Logic**: 新国标强制实施 → 37万家排污单位需视频监控改造 → 监测点位与水质监测点位高度重叠 → iMS可整合视频+水质数据为合规增值
+- **Potential iMS Use Case**: iMS平台集成HJ1480视频监控数据流+水质在线监测数据，为工业排污单位提供'数据+视频'双重合规解决方案
+- **Stage**: Industrial Market Intelligence | **Time**: 2026年10月1日起持续（合规截止日已定，改造窗口43天）
+- Source: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202607/t20260727_1162843.html
+- Source: https://baijiahao.baidu.com/s?id=1873507252801538342
+- **First seen**: 2026-08-21 | **New fact**: HJ 1480-2026标准10月1日实施倒计时43天；海康/大华/宇视三大安防企业已发布专项产品；37万家排污单位改造刚需
+
+### IND-20260821-002 | 黄石大冶81家排污单位
+P2 | Tier 1 | Engine A | 跨行业合规 | 湖北省黄石市大冶市
+
+- [Fact] 湖北省2026-2028年系统推进排污单位自行监测视频监控网络建设
+- [Fact] 大冶市作为全省试点，首批81家企业纳入改造范围
+- [Fact] 8月全面铺开标准化建设，9月完成市级联网验收，10月省市平台互联互通
+- [Infer] 大冶81家企业中含矿业、化工、制造等工业企业
+- [Infer] 视频监控改造与水质监测点位改造可能同步推进
+- [Unknown] 81家企业中Hach客户占比
+- [Unknown] 是否有水质监测仪表同步更新需求
+- **Logic**: 省级试点 → 81家企业改造 → 监测点位与水质监测点位重叠 → iMS整合机会
+- **Potential iMS Use Case**: iMS为大冶试点排污单位提供视频监控+水质监测数据整合平台
+- **Stage**: Potential Industrial Signal | **Time**: 2026年8月-10月（试点窗口）
+- Source: https://www.cenews.com.cn/news.html?aid=1804133
+- **First seen**: 2026-08-21 | **New fact**: 大冶81家企业8月铺开建设、9月验收、10月联网的时间表确认
+
+### IND-20260821-003 | 全国排污单位（自行监测管理办法征求意见稿）
+P2 | Tier 1 | Engine A | 跨行业合规 | 全国
+
+- [Fact] 8月4日生态环境部发布《排污单位自行监测管理办法（征求意见稿）》
+- [Fact] 覆盖自动在线监测、手工采样检测、第三方委托监管、违法认定、差异化执法五大模块
+- [Fact] 要求使用符合国家标准和规范的监测设备和标准器具
+- [Infer] 管理办法正式实施后将强化对监测设备合规性的要求
+- [Infer] 工业排污单位可能需要升级现有监测设备以满足新规
+- [Unknown] 管理办法正式发布时间
+- [Unknown] 对监测设备品牌/型号是否有具体要求
+- **Logic**: 自行监测管理办法升级 → 设备合规性要求提高 → 监测设备更新/升级需求 → Hach/iMS机会
+- **Potential iMS Use Case**: iMS帮助工业排污单位满足自行监测管理办法的数据质量与全过程管控要求
+- **Stage**: Industrial Signal | **Time**: 征求意见中，预计2026年底-2027年正式实施
+- Source: https://www.instrument.com.cn/news/20260806/954631.shtml
+- **First seen**: 2026-08-21 | **New fact**: 征求意见稿8月4日发布，五大模块覆盖自动在线监测+第三方委托
+
+### IND-20260821-004 | 全国排污许可企业（生态环境法典）
+P3 | Tier 2 | Engine A | 跨行业合规 | 全国
+
+- [Fact] 《中华人民共和国生态环境法典》2026年8月15日正式施行
+- [Fact] 环境保护法等10部法律同时废止
+- [Fact] 法典专设排污许可管理章节，明确以排污许可制为核心
+- [Infer] 法典施行后排污许可监管将更加严格
+- [Infer] 工业企业排污许可证后监管需求增加
+- [Unknown] 法典对监测设备的具体要求是否变化
+- [Unknown] 地方执法力度是否跟进
+- **Logic**: 法典施行 → 排污许可制度强化 → 工业企业合规监测需求增加 → Hach/iMS机会
+- **Potential iMS Use Case**: iMS帮助工业企业满足法典框架下的排污许可合规与证后监管要求
+- **Stage**: Industrial Signal | **Time**: 2026年8月15日起（法典已施行，后续配套细则陆续出台）
+- Source: https://mp.weixin.qq.com/s?__biz=MzIxOTcxNzQxMg==&mid=2247751302&idx=1&sn=9afac836d6be31ff3cd16bf2ce264446
+- **First seen**: 2026-08-21 | **New fact**: 生态环境法典8月15日施行，排污许可制度7大核心变化确认
+
+### IND-20260821-005 | 全国排污许可证公示企业（8月21日批次）
+P3 | Tier 2 | Engine A | 其他工业 | 天津、河北、福建、江苏、宁夏
+
+- [Fact] 8月21日全国排污许可证管理信息平台新增多家企业公示
+- [Fact] 包括天津武清京津科技谷多家金属表面处理企业
+- [Fact] 河北唐山废弃资源综合利用企业
+- [Infer] 金属表面处理行业废水含重金属，监测需求明确
+- [Infer] 铝压延加工产生含油废水，需监测
+- [Unknown] 这些企业是否需要新建/升级监测系统
+- [Unknown] 现有监测仪表品牌
+- **Logic**: 新增排污许可 → 新增监测义务 → 可能需采购监测仪表 → 潜在Hach机会
+- **Potential iMS Use Case**: 新增排污许可企业可能需要水质在线监测系统建设
+- **Stage**: Industrial Signal | **Time**: 公示期2026-08-21至08-27，后续取决于许可核发
+- Source: https://permit.mee.gov.cn/
+- **First seen**: 2026-08-21 | **New fact**: 8月21日排污许可平台新增多家企业公示
+
+### IND-20260821-006 | 楚能新能源（宜昌）
+P2 | Tier 2 | Engine B | 新能源/电池 | 湖北省宜昌市夷陵区龙泉镇
+
+- [Fact] 8月9日楚能新能源宜昌二期80GWh锂电池产业园正式投产
+- [Fact] 总投资220亿元，规划产能80GWh
+- [Fact] 从开工到投产仅10个月，较既定工期提前2个月
+- [Infer] 锂电池生产产生含氟废水（电解液清洗）、含铜废水、酸性废水
+- [Infer] 80GWh产能对应大量废水处理需求
+- [Unknown] 楚能宜昌基地废水处理系统建设情况
+- [Unknown] 是否已安装水质在线监测仪表
+- **Logic**: 80GWh产能投产 → 含氟/含铜/酸性废水产生 → 废水处理+在线监测需求 → Hach仪表+iMS机会
+- **Potential iMS Use Case**: iMS监控锂电池工厂废水处理系统（含氟/含铜/酸碱废水），确保排放合规
+- **Stage**: Potential Industrial Signal | **Time**: 2026年8月已投产，废水系统可能已在运行或调试中
+- Source: http://www.whycsh.org/html/hyzq/hydt/4397.html
+- Source: https://baijiahao.baidu.com/s?id=1873119664487617929
+- **First seen**: 2026-08-21 | **New fact**: 楚能宜昌二期8月9日正式投产，80GWh产能，总投资220亿
+
+### IND-20260821-007 | 石大胜华（东营）
+P2 | Tier 2 | Engine B | 新能源/电池 | 山东省东营市垦利区
+
+- [Fact] 8月3日石大胜华公告三大投资项目，总投资28.05亿元
+- [Fact] 23万吨/年液态锂盐项目（投资17.97亿，建设周期24个月）
+- [Fact] 20万吨/年电解液项目（投资7.22亿，建设周期12个月）
+- [Infer] 液态锂盐生产涉及DMC（碳酸二甲酯）等化学品，生产废水含有机物
+- [Infer] 氟化锂项目涉及含氟废水
+- [Unknown] 项目环评是否已公示
+- [Unknown] 废水处理系统设计方案
+- **Logic**: 28亿扩产 → 新增液态锂盐/电解液/氟化锂产能 → 含氟+有机废水处理需求 → 仪表+iMS机会
+- **Potential iMS Use Case**: iMS监控锂电材料工厂废水处理系统（含氟/有机物/COD废水）
+- **Stage**: Potential Industrial Signal | **Time**: 电解液+添加剂项目12个月（2027年投产），锂盐项目24个月（2028年投产）
+- Source: https://baijiahao.baidu.com/s?id=1872641104959943377
+- Source: https://www.cnr.cn/jingji/ycbd/20260803/t20260803_527745440.shtml
+- **First seen**: 2026-08-21 | **New fact**: 石大胜华28亿三大项目8月19日股东会通过，含氟化锂项目
+
+### IND-20260821-008 | 新乡华康制药
+P2 | Tier 2 | Engine B | 制药 | 河南省新乡市延津县
+
+- [Fact] 8月11日新乡市生态环境局拟审批华康制药原料药及医药中间体技术改造项目
+- [Fact] 现有年产150吨5-氟胞嘧啶生产线技改为年产450吨
+- [Fact] 总投资300万元
+- [Infer] 产能扩大3倍，现有污水处理站可能需要升级或增加监测点
+- [Infer] 制药废水含高浓度有机物和特征污染物
+- [Unknown] 现有3500m³/d污水处理站是否已安装在线监测仪表
+- [Unknown] 产能扩大后处理站是否需要扩建
+- **Logic**: 产能扩大3倍 → 废水量增加 → 现有处理站可能需升级监测 → Hach/iMS机会
+- **Potential iMS Use Case**: iMS监控制药废水处理站进出水水质（COD/氨氮/特征污染物）
+- **Stage**: Potential Industrial Signal | **Time**: 环评公示中（8月11日），预计2026-2027年建设
+- Source: http://sthjj.xinxiang.gov.cn/zwgk/public/6638717/9705185.html
+- **First seen**: 2026-08-21 | **New fact**: 华康制药原料药技改环评8月11日公示，产能150→450吨
+
+### IND-20260821-009 | 长鑫科技（合肥）
+P2 | Tier 2 | Engine B | 半导体/电子 | 安徽省合肥市
+
+- [Fact] 长鑫科技是国内唯一DRAM全产业链IDM企业
+- [Fact] 已建成三座12英寸高端晶圆生产基地
+- [Fact] 2025年末月产能30万片，2026年冲刺40万片/月
+- [Infer] 晶圆制造需要大量超纯水（UPW），水质监控至关重要
+- [Infer] 产能从30万片→40万片/月意味着超纯水系统需扩容
+- [Unknown] 现有超纯水系统品牌
+- [Unknown] 废水监测仪表品牌
+- **Logic**: 产能扩张30→40万片/月 → 超纯水系统扩容+废水处理需求增加 → 仪表+iMS机会
+- **Potential iMS Use Case**: iMS监控半导体晶圆厂超纯水系统和废水排放（UPW/含氟/含铜废水）
+- **Stage**: Potential Industrial Signal | **Time**: 2026年全年产能爬坡
+- Source: https://baijiahao.baidu.com/s?id=1865703313589031462
+- Source: https://baijiahao.baidu.com/s?id=1870580457843494644
+- **First seen**: 2026-08-21 | **New fact**: 长鑫2026年冲刺40万片/月，Q1净利330亿，IPO更新
+
+### IND-20260821-010 | 16万吨磷酸铁锂材料项目
+P3 | Tier 2 | Engine B | 新能源/电池 | 未明确
+
+- [Fact] 8月13日环评一次公示
+- [Fact] 总投资21亿元
+- [Fact] 年产16万吨高压实磷酸铁锂材料
+- [Infer] 磷酸铁锂生产产生含磷、含铁废水
+- [Infer] 新建项目需配套废水处理设施和在线监测
+- [Unknown] 项目具体选址
+- [Unknown] 建设单位全称
+- **Logic**: 21亿新建项目 → 磷酸铁锂生产 → 含磷/含铁废水 → 监测仪表需求
+- **Potential iMS Use Case**: iMS监控磷酸铁锂材料工厂废水处理系统
+- **Stage**: Industrial Signal | **Time**: 环评一次公示阶段，预计2027-2028年投产
+- Source: https://baijiahao.baidu.com/s?id=1873486662928868295
+- **First seen**: 2026-08-21 | **New fact**: 16万吨磷酸铁锂项目8月13日环评一次公示
+
+### IND-20260821-011 | 亿纬锂能（匈牙利）
+P3 | Tier 3 | Engine B | 新能源/电池 | 匈牙利
+
+- [Fact] 亿纬锂能在匈牙利建设28GWh大圆柱锂电池工厂
+- [Fact] 计划2027年投产
+- [Fact] 沈阳、合肥和匈牙利新产能将加快建设和达产
+- [Infer] 海外项目对中国仪表厂商的iMS机会有限
+- [Infer] 但沈阳、合肥国内产能扩张可能有监测需求
+- [Unknown] 国内产能扩张具体规模
+- [Unknown] 是否使用Hach仪表
+- **Logic**: 海外扩产 → 中国区iMS机会有限 → 观望国内产能扩张
+- **Potential iMS Use Case**: 有限——海外项目不在iMS中国区覆盖范围
+- **Stage**: Industrial Signal | **Time**: 2027年投产（海外）
+- Source: https://www.163.com/dy/article/L4QEDMGH0556423M.html
+- **First seen**: 2026-08-21 | **New fact**: 亿纬锂能匈牙利28GWh工厂2027投产
+
+### IND-20260821-012 | 43个化工新建项目
+P3 | Tier 2 | Engine B | 石化/化工 | 全国多地
+
+- [Fact] 43个化工新建项目最新动态
+- [Fact] 东明炼化项目投资713亿
+- [Fact] 华锦阿美项目投资837亿
+- [Infer] 大型炼化项目废水处理系统投资规模大
+- [Infer] 含油废水、含硫废水处理需在线监测
+- [Unknown] 具体项目进度阶段
+- [Unknown] 废水处理系统是否已招标
+- **Logic**: 大型炼化新建项目 → 含油/含硫废水处理系统 → 在线监测需求 → Hach机会
+- **Potential iMS Use Case**: iMS监控炼化企业废水处理系统（含油/含硫/COD/氨氮）
+- **Stage**: Industrial Signal | **Time**: 需进一步确认各项目阶段
+- Source: https://www.dzwww.com/jixie/80c922a8801304522.html
+- **First seen**: 2026-08-21 | **New fact**: 43个化工新建项目动态，东明炼化713亿+华锦阿美837亿
+
+### IND-20260821-013 | 山东奕杰鑫新材料
+P3 | Tier 2 | Engine B | 半导体/电子 | 山东省淄博市高新区
+
+- [Fact] 8月17日淄博高新区环保局公示环评审批意见
+- [Fact] 年产7000吨5N光伏太阳能级高纯石英砂项目重新报批
+- [Fact] 项目工艺含酸洗工序（氯化氢、硫酸、氟化物废气）
+- [Infer] 高纯石英砂酸洗工艺产生含酸废水
+- [Infer] 酸洗废水需中和处理后排放
+- [Unknown] 废水处理系统具体方案
+- [Unknown] 是否已安装监测仪表
+- **Logic**: 高纯石英砂项目 → 酸洗工艺 → 含酸/含氟废水 → 监测仪表需求
+- **Potential iMS Use Case**: iMS监控石英砂酸洗废水处理系统（pH/氟化物/COD）
+- **Stage**: Industrial Signal | **Time**: 环评公示中，后续建设阶段
+- Source: http://www.china-zibo.gov.cn/gongkai/site_gxqhbj/channel_6076a2721887a377796bb7cf/doc_6a82adc5e6baf94850b797c9.html
+- **First seen**: 2026-08-21 | **New fact**: 奕杰鑫5N石英砂项目8月17日环评重新报批公示
+
+### IND-20260821-014 | 中航锂电（洛阳）
+P3 | Tier 2 | Engine B | 新能源/电池 | 河南省洛阳市
+
+- [Fact] 8月10日中航锂电洛阳3.5GWh电池模组生产线投用
+- [Fact] 6月顺利投用，目前已满产
+- [Fact] 配套中国重汽、奇瑞商用车等
+- [Infer] 电池模组生产线可能需配套废水处理
+- [Infer] 模组生产清洗工序产生废水
+- [Unknown] 是否有新建废水处理设施
+- [Unknown] 现有监测仪表情况
+- **Logic**: 3.5GWh产线投用 → 模组生产废水 → 监测需求 → 观望
+- **Potential iMS Use Case**: iMS监控电池模组工厂废水排放
+- **Stage**: Industrial Signal | **Time**: 已投产
+- Source: https://libattery.ofweek.com/tag-2019年.HTM
+- **First seen**: 2026-08-21 | **New fact**: 中航锂电洛阳3.5GWh产线8月10日满产
+
+---
+iMS Industrial Market Intelligence Radar | 2026-08-21 | Week 2
