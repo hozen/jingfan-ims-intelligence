@@ -1,0 +1,451 @@
+{
+  "date": "2026-09-11",
+  "weekday": "Friday",
+  "scanner_summary": {
+    "total_scanned": 86,
+    "valid_triggers": 14,
+    "p1_count": 0,
+    "p2_count": 4,
+    "p3_count": 1,
+    "industry_trigger_count": 4,
+    "ecosystem_trigger_count": 3,
+    "policy_trigger_count": 3,
+    "competitive_trigger_count": 3,
+    "trigger_breakdown": {
+      "project": 5,
+      "account": 1,
+      "industry": 4,
+      "ecosystem": 3,
+      "policy": 3,
+      "competitive": 3
+    }
+  },
+  "top_5_match": [
+    {
+      "name": "夹江县青衣水厂扩建智慧水务采购(1656万)",
+      "trigger_type": "project",
+      "public_signal_score": 72,
+      "priority": "P2",
+      "match_reason": "9月3日发布智慧水务采购招标，预算1656万，招标人为广东省基础工程集团，9月24日开标。供水厂扩建+智慧水务同步建设，仪表数字化层独立采购。",
+      "agent_checklist": "验证夹江水务是否Hach客户；设计院是谁；智慧水务平台是否支持第三方仪表接入；仪表选型阶段"
+    },
+    {
+      "name": "定远县盐化工业园工业污水处理厂提标改造(1.9亿EPC)",
+      "trigger_type": "project",
+      "public_signal_score": 68,
+      "priority": "P2",
+      "match_reason": "1.9亿EPC招标，含自动化及智慧化改造。工业污水(除氟+脱盐+分盐)复杂工艺，在线仪表需求高。EPC模式总包负责设备采购。",
+      "agent_checklist": "验证定远盐化工业园是否Hach客户；EPC总包方是谁；仪表选型阶段；智慧化改造包含哪些具体在线监测需求"
+    },
+    {
+      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+      "trigger_type": "project",
+      "public_signal_score": 68,
+      "priority": "P2",
+      "match_reason": "9/7首次发现。中国电建EPC总包，7万m3/d新建污水厂，智慧水务软件独立采购包。9/3发布招标，9/20计划开工。今日无新事实变化，维持P2。",
+      "agent_checklist": "验证邛崃污水处理厂是否使用Hach仪表；智慧水务软件架构是否支持第三方仪表数据接入；中国电建设计院仪表选型倾向"
+    },
+    {
+      "name": "重庆水务集团新董事长上任+存量提质战略",
+      "trigger_type": "account",
+      "public_signal_score": 65,
+      "priority": "P2",
+      "match_reason": "王小军正式出任董事长，2026年中报明确战略转向'存量提质、数字赋能'。供水板块量价双降(-2.94%/-4.26%)，污水板块量利双增(+8.98%/+2.65pp)。新《供水条例》6月施行，数字化/水质溯源/二次供水纳入法定考核。",
+      "agent_checklist": "验证重庆水务是否Hach战略客户；当前SFDC Account状态；多水厂数量和仪表装机；是否已有iMS或类似数字化产品"
+    },
+    {
+      "name": "数据中心液冷基础设施化+GB/T 48023-2026冷板液冷国标",
+      "trigger_type": "industry",
+      "public_signal_score": 58,
+      "priority": "P3",
+      "match_reason": "液冷成为数据中心基础设施标配。GB/T 48023-2026覆盖冷板/CDU/冷却液/管路/监测报警全环节。AI数据中心冷却水监测需求增长。但与iMS核心场景(在线水质仪表监控)距离较远，Use Case偏Unknown。",
+      "agent_checklist": "验证数据中心冷却水是否Hach目标场景；液冷系统水质监测参数需求；是否有Hach数据中心客户"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "OPS-20260911-001",
+      "name": "夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目",
+      "public_facts": "2026年9月3日发布招标公告，项目编号2026-QSX-0824。夹江县城乡供水一张网建设项目-青衣水厂扩建工程(二阶段)智慧水务采购项目，预算1656.63万元。招标人为广东省基础工程集团有限公司。投标截止2026年9月24日。位于四川省乐山市夹江县。",
+      "ai_judgment": "供水厂扩建同步建设智慧水务系统，预算1656万单独采购智慧水务包，说明数字化层是独立投入而非附属。新建水厂必然配备在线水质仪表(浊度/余氯/pH/氨氮等)，如果厂内使用Hach仪表，iMS可作为仪表数据采集/监控层接入智慧水务平台。EPC总包(广东省基础工程集团)负责设备选型，设计院影响力关键。逻辑链：供水扩建->智慧水务独立采购->仪表数据需接入平台->仪表监控+数据质量需求->iMS潜在切入。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+      "opportunity_stage": "招标",
+      "estimated_time_window": "<3 months",
+      "logic_chain_check": "Customer Change(供水厂扩建) -> Digital Change(智慧水务1656万独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need(仪表监控+数据质量) -> Potential iMS Use Case。逻辑链中等强度：智慧水务采购不等于仪表采购，但数字化层建设是iMS切入窗口。断裂风险：若智慧水务软件自建仪表数据采集模块，iMS可能被绕过。",
+      "to_verify": {
+        "customer_identity": "夹江县水务主体是否为Hach客户？Salesforce Account是否存在？广东省基础工程集团是否为战略EPC伙伴？",
+        "installed_base": "青衣水厂扩建后安装哪些品牌在线仪表？现有水厂仪表类型/数量？是否有联网仪表？",
+        "commercial_history": "夹江或乐山区域历史Hach销售记录？当前Pipeline？",
+        "ims": "是否已有iMS或类似数字化产品？智慧水务软件架构是否支持第三方仪表数据接入？",
+        "account_sales": "Account Owner是谁？四川区域Regional Owner？"
+      },
+      "score": 72,
+      "score_breakdown": {
+        "signal_strength": 75,
+        "ims_relevance": 70,
+        "project_customer_stage": 78,
+        "timing": 85,
+        "scale": 65,
+        "ecosystem_influence": 50,
+        "evidence_quality": 80
+      },
+      "confidence": "medium",
+      "source_url": "https://www.gxjtzb.com/Html/?1035587.html",
+      "source_type": "procurement_notice",
+      "continuity": {
+        "first_seen": "2026-09-11",
+        "new_facts_today": "首次发现",
+        "changed": true
+      }
+    },
+    {
+      "id": "OPS-20260911-002",
+      "name": "定远县盐化工业园工业污水处理厂提标改造项目(1.9亿EPC)",
+      "public_facts": "2026年8月31日发布招标公告。安徽省定远县盐化工业园工业污水处理厂提标改造项目，合同估算价1.91亿元。建设内容：新建除氟装置(1万m3/d)、分盐装置(1万m3/d)、厂外管廊、自动化及智慧化改造。EPC总承包模式。工艺含前置除硬+一级/二级除氟、RO+NF+MVR蒸发结晶等复杂工业废水处理流程。",
+      "ai_judgment": "1.9亿工业污水EPC项目，工艺复杂(除氟+脱盐+分盐)，自动化及智慧化改造明确列入建设内容。工业污水厂对在线监测仪表的需求远高于市政污水——氟离子、重金属、电导率、有机物等多参数连续监测是工艺控制刚需。如果厂内安装Hach在线仪表，iMS可切入仪表监控/数据质量/资产管理。EPC总包负责全部设备采购，设计院选型倾向是关键。逻辑链：工业污水提标->自动化智慧化改造->多参数在线监测需求->仪表监控+数据质量->iMS潜在切入。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Asset Management",
+      "opportunity_stage": "EPC准备/招标",
+      "estimated_time_window": "3-6 months",
+      "logic_chain_check": "Customer Change(工业污水提标改造1.9亿) -> Digital Change(自动化及智慧化改造列入建设内容) -> Operational Problem(复杂工艺需多参数在线监测) -> Instrument/Data Management Need(仪表监控+数据质量+资产管理) -> Potential iMS Use Case。逻辑链较强：工业污水复杂工艺直接产生在线仪表需求，自动化智慧化改造为数字化层建设窗口。",
+      "to_verify": {
+        "customer_identity": "定远县盐化工业园是否为Hach客户？园区内企业是否Hach用户？EPC总包方是谁？",
+        "installed_base": "现有污水厂仪表类型/数量？扩建后新增仪表需求？是否有联网仪表？",
+        "commercial_history": "定远或滁州区域历史Hach销售记录？当前Pipeline？",
+        "ims": "是否已有iMS或类似数字化产品？自动化智慧化改造的具体架构？",
+        "account_sales": "Account Owner是谁？安徽区域Regional Owner？"
+      },
+      "score": 68,
+      "score_breakdown": {
+        "signal_strength": 72,
+        "ims_relevance": 65,
+        "project_customer_stage": 75,
+        "timing": 70,
+        "scale": 68,
+        "ecosystem_influence": 55,
+        "evidence_quality": 80
+      },
+      "confidence": "medium",
+      "source_url": "https://www.sohu.com/a/1070591714_121123737",
+      "source_type": "procurement_notice",
+      "continuity": {
+        "first_seen": "2026-09-11",
+        "new_facts_today": "首次发现",
+        "changed": true
+      }
+    },
+    {
+      "id": "OPS-20260911-003",
+      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+      "public_facts": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。",
+      "ai_judgment": "9/7首次发现，今日无新事实变化。EPC项目中智慧水务软件独立采购，数字化层正在构建。iMS可作为仪表数据采集/监控层接入。维持P2。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+      "opportunity_stage": "EPC准备/招标",
+      "estimated_time_window": "<3 months",
+      "logic_chain_check": "Customer Change(新建污水厂) -> Digital Change(智慧水务软件独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need -> Potential iMS Use Case。逻辑链中等强度。",
+      "to_verify": {
+        "customer_identity": "邛崃市水务主体是否为Hach客户？中国电建是否为战略EPC伙伴？",
+        "installed_base": "新建7万m3/d厂将安装哪些品牌在线仪表？",
+        "commercial_history": "邛崃或成都区域历史Hach销售记录？",
+        "ims": "是否已有iMS或类似数字化产品？",
+        "account_sales": "Account Owner是谁？四川/成都区域Regional Owner？"
+      },
+      "score": 68,
+      "score_breakdown": {
+        "signal_strength": 70,
+        "ims_relevance": 68,
+        "project_customer_stage": 75,
+        "timing": 85,
+        "scale": 60,
+        "ecosystem_influence": 55,
+        "evidence_quality": 85
+      },
+      "confidence": "medium",
+      "source_url": "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn",
+      "source_type": "procurement_notice",
+      "continuity": {
+        "first_seen": "2026-09-07",
+        "new_facts_today": "无新事实",
+        "changed": false
+      }
+    },
+    {
+      "id": "OPS-20260911-004",
+      "name": "重庆水务集团-新董事长+存量提质数字赋能战略转向",
+      "public_facts": "2026年8月31日重庆水务公告选举王小军为第六届董事会董事长。2026年中报行业判断收敛为'全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段'。新《供水条例》(国务院831号令)6月1日施行，将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核。供水板块收入-2.94%、毛利率-4.26pp；污水板块收入+8.98%、毛利率+2.65pp。日供水设计能力343.97万m3，日污水处理设计能力600.945万m3。'十五五'规划改造供排水管网超35万公里。",
+      "ai_judgment": "重庆水务是中国最大水务运营商之一(约81%重庆市污水处理市场份额)。新董事长上任+战略明确转向'数字赋能'，叠加新《供水条例》法定强制数字化考核，构成Account-level战略变化信号。重庆水务管理数百座水厂/污水厂，多水厂集中管理痛点明确(供水产销差率15.36%)。如果重庆水务使用Hach仪表，iMS可切入Multi-site Management/Asset Management/Predictive Maintenance。逻辑链：集团战略变化(数字赋能) -> 运营模式变化(存量提质) -> 多水厂集中管理痛点 -> 仪表/数据/资产管理需求 -> iMS Multi-site Management。但此信号为Account Trigger而非具体项目，时间窗口和具体采购需求需Company Agent验证。",
+      "potential_ims_use_case": "Multi-site Management / Asset Management / Digital Operations",
+      "opportunity_stage": "战略规划",
+      "estimated_time_window": "6-18 months",
+      "logic_chain_check": "Customer Change(新董事长+战略转向数字赋能) -> Digital Change(供水数字化/水质溯源法定考核) -> Operational Problem(数百座厂集中管理/产销差15%) -> Instrument/Data/Asset Management Need(多站点管理/资产管理) -> Potential iMS Use Case。逻辑链较强：集团级战略变化+法定考核驱动，但缺少具体项目落地点。",
+      "to_verify": {
+        "customer_identity": "重庆水务集团是否为Hach战略客户？SFDC Account状态？客户等级？",
+        "installed_base": "重庆水务旗下水厂/污水厂总数？Hach仪表装机数量？是否有联网仪表？数字化白空间？",
+        "commercial_history": "历史Hach销售记录？当前Pipeline？服务合同？",
+        "ims": "是否已有iMS或类似数字化产品？北控水务SED/Enki是否已渗透？",
+        "account_sales": "Account Owner是谁？重庆区域Regional Owner？新董事长上任后IT/数字化部门联系人？"
+      },
+      "score": 65,
+      "score_breakdown": {
+        "signal_strength": 68,
+        "ims_relevance": 65,
+        "project_customer_stage": 50,
+        "timing": 55,
+        "scale": 80,
+        "ecosystem_influence": 65,
+        "evidence_quality": 75
+      },
+      "confidence": "medium",
+      "source_url": "https://stock.stockstar.com/RB2026090900020058.shtml",
+      "source_type": "company_announcement",
+      "continuity": {
+        "first_seen": "2026-09-11",
+        "new_facts_today": "首次发现：新董事长上任+中报战略转向",
+        "changed": true
+      }
+    },
+    {
+      "id": "OPS-20260911-005",
+      "name": "明溪县城区污水管网设施在线监测建设项目",
+      "public_facts": "9/9首次发现。公开招标200万，明确采购COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统，24h连续监测+GIS集成+异常智能报警。",
+      "ai_judgment": "9/9首次发现，今日无新事实变化。在线监测设备+数据管理平台直接命中iMS核心场景。维持P2。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+      "opportunity_stage": "招标",
+      "estimated_time_window": "<3 months",
+      "logic_chain_check": "Customer Change(污水管网在线监测建设) -> Digital Change(B/S架构智慧排水系统) -> Operational Problem(24h连续监测+异常报警) -> Instrument/Data Management Need -> Potential iMS Use Case。逻辑链较强。",
+      "to_verify": {
+        "customer_identity": "明溪县住建局是否为Hach客户？",
+        "installed_base": "现有管网监测仪表类型/数量？新增仪表规格？",
+        "commercial_history": "明溪或三明区域历史Hach销售记录？",
+        "ims": "智慧排水系统是否支持第三方仪表数据接入？",
+        "account_sales": "Account Owner是谁？福建区域Regional Owner？"
+      },
+      "score": 67,
+      "score_breakdown": {
+        "signal_strength": 70,
+        "ims_relevance": 72,
+        "project_customer_stage": 75,
+        "timing": 85,
+        "scale": 50,
+        "ecosystem_influence": 45,
+        "evidence_quality": 75
+      },
+      "confidence": "medium",
+      "source_url": "https://www.ggzy.gov.cn",
+      "source_type": "procurement_notice",
+      "continuity": {
+        "first_seen": "2026-09-09",
+        "new_facts_today": "无新事实",
+        "changed": false
+      }
+    }
+  ],
+  "industry_triggers": [
+    {
+      "trigger": "2026年上半年中国半导体产业投资8002亿元(+72.4%)",
+      "facts": "CINNO Research统计2026年上半年中国(含台湾)半导体产业总投资额8002亿元，同比+72.4%。晶圆制造投资4527亿(占56.6%,+93.4%)，封测投资1373亿(+225.5%)，材料749亿(+38.9%)。长鑫科技申报科创板IPO募资295亿，75亿用于12英寸产线升级扩产。预计2026年中国12英寸晶圆月产能从150万片增至250万片+。",
+      "iMS_relevance": "中-高：半导体扩产直接产生超纯水/废水处理在线监测需求。艺康(Ecolab)已在SEMICON Taiwan 2026展示完整半导体水管理方案。晶圆厂水系统仪表数量大、精度要求高。iMS在半导体行业Instrument Monitoring/Asset Management有潜在机会。",
+      "source": "https://baijiahao.baidu.com/s?id=1875040353916788253"
+    },
+    {
+      "trigger": "艺康(Ecolab)收购Ovivo电子超纯水业务，展示半导体全流程水管理方案",
+      "facts": "艺康2025年12月以18亿美元收购Ovivo电子超纯水业务。SEMICON Taiwan 2026上艺康首次展示完整半导体水管理解决方案，覆盖超纯水生产/冷却水/废水处理/工艺冷却水。旗下纳尔科品牌3D TRASAR数字化工具落地水管理全生命周期服务。SEMICON预测2026全球半导体设备销售额1659亿美元(+23.2%)。",
+      "iMS_relevance": "中：艺康在半导体水管理领域构建了'设备+数字化+全生命周期服务'闭环，与iMS价值空间有重叠。但艺康更偏水处理化学+设备端，iMS更偏仪表数据层。需关注艺康3D TRASAR是否进入仪表资产管理领域。",
+      "source": "https://finance.china.com/TMT/13004688/20260909/49730044.html"
+    },
+    {
+      "trigger": "数据中心液冷成为基础设施标配(2026液冷放量元年)",
+      "facts": "赛迪顾问数据2025年中国液冷数据中心市场规模159.8亿(+45.2%)。GB/T 48023-2026《数据中心冷板式液冷系统技术规范》2026年7月发布、2027年2月实施，覆盖冷板/CDU/冷却液/管路/监测报警。全国34省已明确PUE管控要求。液冷从'选项'变为'必答'，单机柜功率超20kW须采用液冷。",
+      "iMS_relevance": "低-中：数据中心液冷系统需要冷却液水质监测(电导率/pH/溶解氧/微生物等)，但与iMS核心场景(水务/工业过程水)距离较远。Use Case偏Unknown。需关注是否有Hach数据中心冷却水客户。",
+      "source": "https://baijiahao.baidu.com/s?id=1875267253942102428"
+    },
+    {
+      "trigger": "中国药典2025版允许注射用水采用非蒸馏工艺(PAT全流程实时监控)",
+      "facts": "中国药典2025版允许注射用水采用RO+EDI等非蒸馏工艺制备，但要求通过过程分析技术(PAT)实现全流程实时监控。电导率/TOC/微生物等关键参数需在线连续监测。ATP生物发光法在线监测灵敏度提升至10 CFU/mL。",
+      "iMS_relevance": "中：制药水系统在线监测需求明确提升，电导率/TOC在线仪表需求增加。但制药行业GMP合规体系与水务不同，iMS适用性需验证。如果Hach有制药行业TOC/电导率仪表装机，iMS可切入Instrument Monitoring/Data Quality。",
+      "source": "https://gzzkjcjsfwyxgs.51sole.com/companynewsdetail_334329818.htm"
+    }
+  ],
+  "ecosystem_triggers": [
+    {
+      "actor": "北控水务集团",
+      "role": "水务运营商+数字化平台输出方",
+      "facts": "2026中关村论坛发布四款核心数智化产品：污水运营管理系统(SED)、污水行业垂类大模型Enki、厂网协同运营管理平台、产业互联平台云涟网。已实现水厂设备仪器数据实时感知、运维工艺流程化数字化。核心产品已在内部验证，正向行业推广。",
+      "iMS_assessment": "北控水务从自身数字化转型转向行业数智化能力输出。SED/Enki直接覆盖仪表数据感知->运维流程化->智能调控全链。这是iMS在水务行业的潜在竞争/合作关系——北控可能成为iMS的渠道伙伴或竞争对手。需验证北控水厂是否使用Hach仪表，SED是否兼容第三方仪表。",
+      "source": "http://www.xinhuanet.com/energy/20260402/a46b16c32a74806bdaf2f74d6a93cae/c.html"
+    },
+    {
+      "actor": "中国电建(市政公司)",
+      "role": "EPC总包方",
+      "facts": "中国电建市政公司中标邛崃污水厂设计-施工总承包，并发布智慧水务软件开发采购。EPC总包模式下负责全部设备材料采购。",
+      "iMS_assessment": "中国电建作为大型央企EPC，在水务项目中有仪表选型决定权。如果Hach与中国电建设计院建立合作，可通过EPC渠道进入多个项目。",
+      "source": "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn"
+    },
+    {
+      "actor": "广东省基础工程集团",
+      "role": "EPC总包方",
+      "facts": "广东省基础工程集团作为夹江县青衣水厂扩建工程智慧水务采购项目招标人，负责供水厂扩建+智慧水务系统建设。",
+      "iMS_assessment": "广东省基础工程集团在四川水务市场有项目布局。其智慧水务采购架构是否支持第三方仪表接入是关键。",
+      "source": "https://www.gxjtzb.com/Html/?1035587.html"
+    }
+  ],
+  "policy_triggers": [
+    {
+      "policy": "新《供水条例》(国务院令第831号令)",
+      "effective_date": "2026-06-01",
+      "facts": "2026年6月1日施行，替代沿用30余年的《城市供水条例》。将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核。城乡统筹覆盖。",
+      "demand_type": "同时产生仪表需求和iMS需求",
+      "iMS_relevance": "高：法定强制供水数字化考核直接驱动在线仪表采购和数据系统升级。水质全链条溯源要求数据采集/质量/追溯。二次供水规范化催生多站点管理需求。iMS的Instrument Monitoring/Data Quality/Multi-site Management场景直接受益。",
+      "source": "https://news.sohu.com/a/1070979581_121106869"
+    },
+    {
+      "policy": "《生态环境法典》正式施行(整合废止十部单行法律)",
+      "effective_date": "2026-08-15",
+      "facts": "2026年3月12日全国人大通过，8月15日施行。河湖长制正式入法。'节水优先'方针法典化。非常规水利用(再生水/雨水/海水淡化)制度具体化，污水资源化利用基础设施成为法定义务。",
+      "demand_type": "主要产生iMS需求(间接产生仪表需求)",
+      "iMS_relevance": "中-高：法典化提升水务合规刚性，再生水利用设施配套催生在线监测需求。河湖长制入法加强跨区域水质监管。但法典到具体项目落地有时间差。",
+      "source": "https://news.sohu.com/a/1070979581_121106869"
+    },
+    {
+      "policy": "多项水污染物排放新标准2026年9月1日起实施",
+      "effective_date": "2026-09-01",
+      "facts": "《纺织工业水污染物排放标准》(GB 4287-2026)新增斑马鱼卵急性毒性项目及排放限值。《丹江口库区排放控制标准》(GB 47946-2026)首次发布流域型标准。《赤水河流域排放标准》(GB 47945-2026)分三类控制区。《工业园区污水集中处理设施水污染物排放标准制订技术导则》(HJ 945.4-2026)要求'一园一策'差异化管控。新建企业9/1起、现有企业2028/1/1起实施。",
+      "demand_type": "同时产生仪表需求和iMS需求",
+      "iMS_relevance": "中-高：新标准增加污染物项目(如斑马鱼毒性)和监测要求，工业污水厂需增设在线监测仪表。'一园一策'差异化管控增加仪表配置复杂度。现有企业2028年前需完成改造，形成存量替换周期。",
+      "source": "https://www.instrument.com.cn/news/20260903/969759.shtml"
+    }
+  ],
+  "competitive_triggers": [
+    {
+      "competitor": "Endress+Hauser (E+H)",
+      "facts": "E+H官网明确水务行业战略，Netilion IIoT平台覆盖远程资产监控/预测性维护。水务和环境行业列为六大核心行业之一。声称服务废水处理、数字化技术支持远程数据访问、助力智能水务管理。",
+      "enters_ims_value_space": true,
+      "assessment": "E+H持续在水务行业构建仪表->数据->诊断->资产管理闭环。Netilion是iMS的直接竞争平台。E+H优势是仪表+平台一体化，劣势是绑定E+H仪表生态。iMS差异化在于跨品牌兼容。",
+      "source": "https://www.endress.com.cn/zh/Endress-Hauser-group/partner-for-process-improvement/industry-expertise-application-knowledge"
+    },
+    {
+      "competitor": "艺康(Ecolab)/纳尔科(Nalco)",
+      "facts": "艺康收购Ovivo电子超纯水业务后，在半导体行业构建全流程水管理方案。3D TRASAR数字化工具覆盖水质管理/腐蚀控制/微生物防治/现场维护/水管理全生命周期服务。服务范围覆盖半导体工厂多环节：水资源回收/冷却水/废水处理/超纯水。",
+      "enters_ims_value_space": true,
+      "assessment": "艺康正在半导体行业构建'设备+化学品+数字化+全生命周期服务'闭环，与iMS在工业水管理领域有重叠。但艺康核心是水处理化学品+设备，iMS核心是仪表数据层。需关注3D TRASAR是否扩展到跨品牌仪表资产管理。",
+      "source": "https://finance.china.com/TMT/13004688/20260909/49730044.html"
+    },
+    {
+      "competitor": "北控水务(SED+Enki)",
+      "facts": "北控水务发布四款数智化产品，其中污水运营管理系统(SED)已实现设备仪器数据实时感知、运维流程数字化、技术与经济指标线上化管控。污水行业垂类大模型Enki构建水务知识图谱+智能体，实现污水厂自适应调控。厂网协同平台打破单厂模式，实现厂+管网数据互通与AI联调。核心产品已在内部验证，正向行业推广。",
+      "enters_ims_value_space": true,
+      "assessment": "北控水务从水务运营商转型为数智化能力输出方，SED+Enki+厂网协同平台覆盖仪表数据感知->运维流程->智能调控->厂网协同全链。这是iMS在水务行业面临的最直接的'运营商级'竞争——北控既是潜在客户也是竞争对手。iMS差异化在于跨品牌仪表兼容和独立于运营商的中立性。",
+      "source": "http://www.xinhuanet.com/energy/20260402/a46b16c32a74806bdaf2f74d6a93cae/c.html"
+    }
+  ],
+  "strategic_accounts": [
+    {
+      "name": "重庆水务集团",
+      "type": "水务运营商",
+      "first_seen": "2026-09-11",
+      "status": "monitoring",
+      "latest_signal": "新董事长王小军上任+2026中报战略转向'存量提质、数字赋能'+新《供水条例》法定数字化考核。约81%重庆污水处理市场份额，日处理能力600万m3+。供水板块承压(-2.94%)，污水板块增长(+8.98%)。",
+      "iMS_fit": "Multi-site Management / Asset Management / Digital Operations",
+      "action_needed": "Company Agent验证：是否Hach战略客户？多水厂仪表装机？已有数字化产品？北控SED是否已渗透？"
+    },
+    {
+      "name": "北控水务集团",
+      "type": "水务运营商+数字化平台输出方",
+      "first_seen": "2026-09-04",
+      "status": "monitoring",
+      "latest_signal": "SED/Enki/厂网协同/云涟网四款数智化产品已内部验证并开始行业推广。从自身数字化转型转向行业数智化能力输出。",
+      "iMS_fit": "竞合关系：北控可能成为iMS渠道伙伴(如Hach仪表接入SED)或直接竞争对手(SED覆盖仪表数据层)。",
+      "action_needed": "验证北控水厂是否使用Hach仪表；SED是否兼容第三方仪表；是否有合作窗口。"
+    },
+    {
+      "name": "中国电建(市政公司)",
+      "type": "EPC总包方",
+      "first_seen": "2026-09-07",
+      "status": "monitoring",
+      "latest_signal": "邛崃污水厂EPC总包+智慧水务软件采购。EPC模式下有仪表选型决定权。",
+      "iMS_fit": "EPC渠道：如果Hach与中国电建设计院建立合作，可通过EPC渠道进入多个项目。",
+      "action_needed": "验证中国电建设计院仪表选型倾向；是否Hach战略EPC伙伴。"
+    },
+    {
+      "name": "华虹宏力",
+      "type": "半导体制造",
+      "first_seen": "2026-09-04",
+      "status": "monitoring",
+      "latest_signal": "Fab9B增资41.7亿美元(约280亿元)确认，5.5万片/月12英寸特色工艺产线。Fab9A设备搬入完成Q3末达产。",
+      "iMS_fit": "半导体行业：超纯水系统仪表监控/资产管理。需验证华虹是否Hach客户。",
+      "action_needed": "验证华虹无锡一二期是否Hach客户；超纯水系统EPC是谁。"
+    }
+  ],
+  "rejected_signals": [
+    {
+      "name": "六蓝水库重建加固工程(勘察设计6800万)",
+      "rejection_reason": "水库工程，非水厂/管网项目。虽有水文监测需求，但不在iMS核心场景(在线水质仪表监控/数据管理/资产管理)内。"
+    },
+    {
+      "name": "湖北监利工业污水处理厂扩建工程EPC(1.25亿)",
+      "rejection_reason": "虽然是工业污水EPC大项目，但搜索未发现明确的'自动化/智慧化/数字化'采购包。无法建立iMS逻辑链。如果后续出现智慧化采购信息则重新评估。"
+    },
+    {
+      "name": "2026智能制造系统集成服务市场报告(3500亿)",
+      "rejection_reason": "宏观行业报告，非具体项目信号。无法形成可验证的Opportunity Hypothesis。"
+    },
+    {
+      "name": "2026数字水务创新论坛(上海城投)",
+      "rejection_reason": "行业会议/论坛信号，非具体项目。上海城投水务展示智慧泵房方案，但未产生具体采购需求。"
+    },
+    {
+      "name": "全球水质监测仪传感器市场报告(120亿美元)",
+      "rejection_reason": "宏观市场报告，非具体项目信号。"
+    },
+    {
+      "name": "郑州联盛泳池水环境数字化EPC",
+      "rejection_reason": "泳池/休闲水环境领域，非iMS核心场景(水务/工业过程水)。"
+    },
+    {
+      "name": "长鑫科技科创板IPO募资295亿",
+      "rejection_reason": "资本市场事件。虽反映半导体扩产趋势(已在industry_triggers覆盖)，但IPO本身不构成iMS Opportunity。"
+    },
+    {
+      "name": "半导体设备订单扩产提速业绩会",
+      "rejection_reason": "行业趋势已在industry_triggers覆盖，业绩会本身不构成具体项目信号。"
+    },
+    {
+      "name": "电磁流量计十大品牌排行(2026年9月)",
+      "rejection_reason": "产品评测/营销内容，非项目信号或战略变化。"
+    }
+  ],
+  "data_source": {
+    "search_scope": "中国大陆公开互联网",
+    "search_date": "2026-09-11",
+    "radars_active": [
+      "Radar 1: Project Trigger",
+      "Radar 2: Account Trigger",
+      "Radar 3: Existing Instrument Need",
+      "Radar 4: Policy/Regulation/Funding",
+      "Radar 5: Design Institute/EPC/SI",
+      "Radar 6: Competitive Dynamics"
+    ],
+    "sources_used": [
+      "百度搜索(websearch)",
+      "全国公共资源交易平台",
+      "上市公司公告/年报",
+      "行业媒体(仪器信息网/搜狐/新华财经)",
+      "企业官网(E+H/艺康/北控水务)"
+    ]
+  },
+  "disclaimer": "本报告所有信息均来自公开互联网。Public Signal Score不等于Hach Opportunity Score。DuMate负责发现公开信号，Company Agent负责内部数据验证。不得使用Hach内部数据作为已确认的评分输入。",
+  "qc_checklist": {
+    "all_from_public_sources": true,
+    "facts_and_ai_judgment_separated": true,
+    "no_internal_data_as_facts": true,
+    "no_unsupported_numbers": true,
+    "truly_ims_related": true,
+    "use_case_specified_or_unknown": true,
+    "time_window_reasonable": true,
+    "to_verify_structured_five_categories": true,
+    "no_duplicate_from_yesterday": true,
+    "no_industry_news_as_opportunity": true,
+    "no_padding_p2_p3": true,
+    "github_schema_preserved": true,
+    "latest_and_daily_generated": true
+  }
+}
