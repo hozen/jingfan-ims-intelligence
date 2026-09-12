@@ -75,8 +75,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-001",
       "first_seen": "2026-08-19",
-      "last_updated": "2026-09-02",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "公开采购公告明确需求：合同全生命周期管理信息软件开发（2026BFFWZ00698，预算约95万元，预计2026年10月进场）；另有2026-2028年度阀门采购（预算2450万）与南淝河49处在线监测设施运维采购（72.2万）",
+      "current_solution": [
+        "西部组团净水二厂已上线'设备全生命周期管理'系统、AI视频巡检、电力智能分析（工艺与设备数据自动采集率100%、核心设备远程控制率88.3%、预测性维护命中率93%）",
+        "2026-2028年度阀门采购（预算2450万，公开招标）",
+        "南淝河49处在线监测设施运维（72.2万，2026年9月采购）"
+      ],
+      "operational_pain_points": [
+        "集团下辖169座自来水厂+250座泵站+7236km排水管网，多站点集中管控与仪表资产管理复杂度高",
+        "既有'设备全生命周期管理'系统覆盖范围未公开，是否含在线水质仪表待验证"
+      ],
+      "sales_summary": [
+        "已上线设备全生命周期系统（采集率100%）",
+        "合同全生命周期软件95万采购进行中",
+        "阀门2450万+监测运维72.2万在招"
+      ],
+      "time_window_basis": "合同全生命周期软件开发预计2026年10月进场（facts原文），采购公告8月发布；设备全生命周期系统为已上线现状，后续扩展窗口3-6个月",
+      "next_validation_questions": [
+        "合肥水务是否已有Hach机会/管线？",
+        "'设备全生命周期管理'是否覆盖在线水质仪表？",
+        "合同全生命周期软件98号文项目决策联系人是谁？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-002",
@@ -134,8 +155,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-002",
       "first_seen": "2026-08-19",
-      "last_updated": "2026-09-04",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": null,
+      "current_solution": [
+        "已接管市级1579公里排水管网、58座泵站",
+        "'投建管运'一体化管控模式推进中，供排水规模518万立方米/日"
+      ],
+      "operational_pain_points": [
+        "2026年底前将全面接管区级7236公里排水管网和250座泵站，站点数量阶跃增长",
+        "供水出厂水/管网水97项指标已达标，扩网后多站点监测与管理压力上升"
+      ],
+      "sales_summary": [
+        "排水接管+7236km+250泵站",
+        "多站点管理需求强化",
+        "规模538万m³/日头部客户"
+      ],
+      "time_window_basis": "2026年底前全面接管区级管网（facts原文），接管完成后数字化管理需求集中释放，窗口6-12个月",
+      "next_validation_questions": [
+        "合肥水务是否为Hach战略客户？",
+        "接管后泵站/管网监测仪表新增需求是否已立项？",
+        "排水管网数字化采购何时发出？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-003",
@@ -196,8 +237,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-003",
       "first_seen": "2026-09-04",
-      "last_updated": "2026-09-04",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "EPC招标公告（BB2026HYGCZ0521，合同估算价10.087亿元）明确建设内容含'智慧监测体系建设工程'与新建包集水厂/双龙小集水厂改造/乡镇管网更新；2026-09-10公告被撤销",
+      "current_solution": [
+        "新建包集水厂及取水泵站+双龙/小集水厂更新改造（招标内容）",
+        "乡镇供水管网更新改造、配套光伏/充电桩（招标内容）",
+        "招标代理：安徽鑫宸博晟工程咨询有限公司"
+      ],
+      "operational_pain_points": [
+        "全域供水存量设施改造需求（新建+改造+管网更新+智慧监测全链条）",
+        "EPC招标9/2发布、9/10撤销，采购流程波动，重新招标窗口1-3个月"
+      ],
+      "sales_summary": [
+        "10亿全域供水数字化EPC",
+        "含智慧监测独立子项",
+        "9/10撤标，窗口1-3个月"
+      ],
+      "time_window_basis": "EPC招标公告2026-09-02发布（勘察设计90天、工期1080天），9/10撤销后重新招标窗口通常1-3个月，据此维持3-6个月",
+      "next_validation_questions": [
+        "怀远禹众水务是否为Hach客户？",
+        "智慧监测体系技术规格是否含在线水质仪表？",
+        "重新招标时间点与方案调整方向？"
+      ]
     },
     {
       "lead_id": "MUN-20260911-004",
@@ -258,8 +320,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260911-004",
       "first_seen": "2026-09-11",
-      "last_updated": "2026-09-11",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "招标公告明确需求：青衣水厂扩建工程(二阶段)智慧水务采购（预算1656.63万元，2026-QSX-0824）；另原水水质在线监测仪器运维及水资源计量设施运维服务已采购",
+      "current_solution": [
+        "原水水质在线监测仪器运维+水资源计量设施运维（2026-08-06成交，中国电建水电七局相关方）",
+        "EPC招标人：广东省基础工程集团有限公司"
+      ],
+      "operational_pain_points": [
+        "智慧水务采购2026-08-10终止、9/3重新招标，采购流程反复",
+        "监测运维外包刚需已确认（运维服务成交）"
+      ],
+      "sales_summary": [
+        "智慧水务独立采购1656万",
+        "8/10终止9/3重招波动",
+        "运维服务已成交（水电七局）"
+      ],
+      "time_window_basis": "招标公告2026-09-03发布、投标截止9/24（facts原文），处于招标窗口<3个月",
+      "next_validation_questions": [
+        "夹江水务主体是否为Hach客户？",
+        "智慧水务软件是否支持第三方仪表接入？",
+        "重启采购与水电七局运维的关系？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-005",
@@ -315,8 +397,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-005",
       "first_seen": "2026-08-25",
-      "last_updated": "2026-09-02",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "战略协议明确合作方向：WorkBuddy智能体应用（水务数字助手）、国产化管网水力模型AI优化、水务大脑智慧化平台共建（数据统一治理/大模型支撑）、人才培养",
+      "current_solution": [
+        "腾讯WorkBuddy智能体（AI产品）",
+        "腾讯云+联合水务共建'水务大脑'智慧化中枢（运营数据/工艺经验/专家知识沉淀）",
+        "运营类业务119座以上站点（运营收入占比89.00%）"
+      ],
+      "operational_pain_points": [
+        "工程类业务收缩、战略转向存量提质，运营效率与数据治理压力上升",
+        "'水务大脑'是否覆盖仪表资产管理/健康诊断未知"
+      ],
+      "sales_summary": [
+        "联合水务×腾讯共建水务大脑",
+        "AI智能体+管网模型+数据治理",
+        "Use Case未知，待验证"
+      ],
+      "time_window_basis": "2026-08-27签署战略协议（facts原文），联合水务半年报战略转向明确，平台建设属中长期推进，窗口6-12个月",
+      "next_validation_questions": [
+        "联合水务是否已有Hach装机/管线？",
+        "'水务大脑'是否含仪表资产管理模块？",
+        "腾讯云合作是否排他性阻断Hach？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-006",
@@ -377,8 +480,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-006",
       "first_seen": "2026-09-04",
-      "last_updated": "2026-09-04",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "招标公告明确需求：第四、第五再生水厂'全维度智慧化升级'设计（HRZBXA2026-JS-02，含初步设计/施工图/实施配合，设计周期30天）",
+      "current_solution": [
+        "第三再生水厂成熟智慧化改造经验（AI托管模式，新华社等报道）",
+        "厂网一体化管理平台由浪潮通软中标（993.6万元）"
+      ],
+      "operational_pain_points": [
+        "两座再生水厂同步全维度升级，设计期为仪表/平台选型关键期",
+        "数字化转型、减污降碳协同要求（招标背景表述）"
+      ],
+      "sales_summary": [
+        "两厂同步全维度智慧化升级",
+        "设计招标9/21截止",
+        "平台商浪潮已锁定厂网侧"
+      ],
+      "time_window_basis": "设计招标2026-09-01发布、9/21截止、设计周期30天（facts原文），设计完成后施工/采购窗口3-6个月",
+      "next_validation_questions": [
+        "西安净水是否为Hach客户？",
+        "第三再生水厂改造用了哪些品牌仪表？",
+        "设计院是否已确定仪表选型？"
+      ]
     },
     {
       "lead_id": "MUN-20260911-007",
@@ -438,8 +561,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260911-007",
       "first_seen": "2026-09-07",
-      "last_updated": "2026-09-11",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "采购公告明确需求：智慧水务工程软件开发服务公开询比（计划工期2026-09-20至2027-08-20）",
+      "current_solution": [
+        "EPC总承包：中国电建市政建设集团+成都市政设计研究院联合体（中标价2.973亿元）",
+        "新建7万m³/d污水处理厂（EPC内容）"
+      ],
+      "operational_pain_points": [
+        "新建污水厂数字化层独立采购，仪表数据接入平台架构待定",
+        "仪表采购与集成窗口集中在2026Q4-2027Q1"
+      ],
+      "sales_summary": [
+        "7万m³/d新建污水厂EPC",
+        "智慧水务软件独立询比采购",
+        "仪表采购窗口2026Q4"
+      ],
+      "time_window_basis": "智慧水务软件开发采购2026-09-03发布、2026-09-20开工（facts原文），软件先行、仪表集成随后，<3个月进入实质阶段",
+      "next_validation_questions": [
+        "邛崃水务主体是否为Hach客户？",
+        "新建厂在线仪表品牌选型由谁定？",
+        "软件平台是否兼容第三方仪表？"
+      ]
     },
     {
       "lead_id": "MUN-20260911-009",
@@ -497,8 +640,25 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260911-009",
       "first_seen": "2026-09-09",
-      "last_updated": "2026-09-11",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "招标公告明确采购需求：COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统（预算200万，24h连续监测+GIS+异常报警）",
+      "current_solution": [],
+      "operational_pain_points": [
+        "城区污水管网在线监测设施缺失，需新建200万监测系统",
+        "监测设施建后需24h连续运行与运维保障"
+      ],
+      "sales_summary": [
+        "200万管网在线监测采购",
+        "COD/流量/液位/井盖四类设备",
+        "业主：君峰城建（0598-2868876）"
+      ],
+      "time_window_basis": "9/9公开招标、200万预算（facts原文），招标节点进行中，<3个月",
+      "next_validation_questions": [
+        "明溪县住建局是否为Hach客户？",
+        "智慧排水系统数据接口是否开放？",
+        "中标后仪表运维归属是谁？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-011",
@@ -554,8 +714,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-011",
       "first_seen": "2026-08-31",
-      "last_updated": "2026-09-02",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "招标公告明确需求：智慧调度中心1座、智慧水务管理系统1套（含一水厂自动化）、压力监测149套/流量计188套/水质监测183套（合计521套在线仪表）",
+      "current_solution": [
+        "新建供水调度中心+智慧水务管理系统（本次招标内容）",
+        "一水厂自动化控制建设（招标内容）"
+      ],
+      "operational_pain_points": [
+        "521套在线仪表部署后运维管理需求将在12-18个月后形成（facts推断）",
+        "一水厂自动化建设说明存量自动化基础薄弱"
+      ],
+      "sales_summary": [
+        "521套在线仪表大规模部署",
+        "含智慧调度中心+数据中心",
+        "招标9/3截止，窗口收窄"
+      ],
+      "time_window_basis": "招标文件获取2026-08-28至09-03（facts原文），需求已固化；监测运维需求在部署完成后（12-18个月）形成",
+      "next_validation_questions": [
+        "郴州区域供水单位是否为Hach客户？",
+        "521套仪表中标品牌是否为竞争对手？",
+        "管理系统是否含仪表运维模块？"
+      ]
     },
     {
       "lead_id": "MUN-20260911-014",
@@ -617,8 +797,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260911-014",
       "first_seen": "2026-09-11",
-      "last_updated": "2026-09-11",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "重庆水务中报公开表述：'全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段'；新《供水条例》(831号令)将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核",
+      "current_solution": [
+        "日供水设计能力343.97万m³、日污水处理设计能力600.945万m³（多水厂/多污水厂运营）",
+        "AI漏损检测/数字化应用已有落地（阳虎/苏航受访）",
+        "投资者关系公开邮箱swjtdsb@cqswjt.com"
+      ],
+      "operational_pain_points": [
+        "供水产销差率15.36%，存量提质压力大",
+        "供水板块收入-2.94%、毛利率-4.26pp"
+      ],
+      "sales_summary": [
+        "新董事长+数字赋能战略转向",
+        "产销差15.36%存量提质需求",
+        "831号令法定数字化考核"
+      ],
+      "time_window_basis": "2026-08-31新董事长选举+2026中报战略表述（facts原文），属集团级战略转向，项目化落地窗口6-18个月",
+      "next_validation_questions": [
+        "重庆水务是否为Hach战略客户？",
+        "旗下水厂/污水厂Hach装机量与联网比例？",
+        "数字化部门/项目负责人是谁？"
+      ]
     },
     {
       "lead_id": "MUN-20260909-015",
@@ -674,8 +875,30 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260909-015",
       "first_seen": "2026-09-09",
-      "last_updated": "2026-09-09",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "项目批复明确建设内容：污水厂信息化建设——构建智能AI专家系统、安防系统，搭建涵盖智能控制、实时监测与远程运维的智慧厂站运营管控平台（项目总投资1.44亿）",
+      "current_solution": [
+        "现有10000m³/d生活污水处理厂（设备更新中，含电气/自控工程）",
+        "新建10000m³/d工业污水处理厂（含废水设施+电气/仪表/自控）",
+        "园区雨污水管网错混接改造（项目内容）"
+      ],
+      "operational_pain_points": [
+        "生活污水厂存量设备老化需更新",
+        "工业+生活双线在线监测（COD/氨氮/总磷/总氮/pH）需求刚需",
+        "雨污水管网错混接需整改"
+      ],
+      "sales_summary": [
+        "1.44亿厂区智慧化改造",
+        "智慧厂站平台含远程运维",
+        "仪表+信息化独立建项"
+      ],
+      "time_window_basis": "项目处于可研/初步设计、2026-09-05最近追踪（facts原文），设计期选型未定，窗口6-12个月",
+      "next_validation_questions": [
+        "运营主体是否为Hach客户？",
+        "现有生活污水厂在线仪表品牌？",
+        "设计院与平台架构是否确定？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-016",
@@ -733,8 +956,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-016",
       "first_seen": "2026-09-02",
-      "last_updated": "2026-09-02",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "首创环保2026半年报与内部信息：将37座老旧污水处理厂分批注入新设'智水运营科技平台'，统一接入AIoT智慧水务中枢，从'工程驱动'转向'城市水系统首席运营官'",
+      "current_solution": [
+        "'智水运营科技平台'（AIoT智慧水务中枢，37座污水厂分批接入）",
+        "终止12个低毛利高垫资EPC项目（合同额超27亿）"
+      ],
+      "operational_pain_points": [
+        "2026H1净利下滑近10%，运营效率压力大",
+        "37座老旧污水厂多站点统一运维管理需求集中",
+        "工程类项目收缩，运营+服务+数据信用转型中"
+      ],
+      "sales_summary": [
+        "37座污水厂接入AIoT中枢",
+        "从施工队转运营服务商",
+        "平台覆盖度待验证"
+      ],
+      "time_window_basis": "2026半年报披露转型（facts原文），37座厂分批注入，属中长期平台建设，窗口6-12个月",
+      "next_validation_questions": [
+        "首创环保是否为Hach客户？37座厂Hach装机？",
+        "'智水运营科技平台'由谁建设、是否含仪表资产管理？",
+        "转型技术伙伴是否已排他？"
+      ]
     },
     {
       "lead_id": "MUN-20260909-017",
@@ -790,8 +1034,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260909-017",
       "first_seen": "2026-09-07",
-      "last_updated": "2026-09-09",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "初步设计批复明确：配备分区计量水表及在线监测等设备，实现专业化、集约化水务运营管理（923.85km管网改造/466.15km增压净化提标/更换水表23559个）",
+      "current_solution": [
+        "集中建设单位：淮安自来水有限公司",
+        "实施单位：清江浦区农业农村和水利局（项目批复主体）"
+      ],
+      "operational_pain_points": [
+        "农村供水网络分散（923.85km改造+466.15km提标），集约化运营需求明确",
+        "存量水表约2.36万个需更换，设施提标压力大"
+      ],
+      "sales_summary": [
+        "初设已批，含在线监测设备",
+        "923km管网+2.36万水表改造",
+        "淮安自来水为集建主体"
+      ],
+      "time_window_basis": "初步设计2026-07-15批复、7-13概算评审（facts原文），初设完成后进入施工图/采购窗口3-6个月",
+      "next_validation_questions": [
+        "淮安自来水是否为Hach客户？",
+        "在线监测设备选型是否已定？",
+        "设计院与EPC中标方是谁？"
+      ]
     },
     {
       "lead_id": "MUN-20260907-018",
@@ -847,8 +1111,29 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260907-018",
       "first_seen": "2026-09-07",
-      "last_updated": "2026-09-07",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "招标公告明确：改造120个二次供水泵房（整体改造含重建5个38个/局部82个）+28个小区管网改造56.658km，内容含工艺/电气自控/建筑/暖通（总投资2.44亿）",
+      "current_solution": [
+        "实际运营方：津滨威立雅（16个小区）+天津自来水集团（12个小区）",
+        "招标人：天津市辰裕农业农村发展有限公司"
+      ],
+      "operational_pain_points": [
+        "120个分散泵房集中改造，电气自控配置将使多站点管理复杂度上升",
+        "存量泵房设施老化，改造后在线监测/运维需求待释放",
+        "二次供水管网分散（56.658km），巡检运维压力大"
+      ],
+      "sales_summary": [
+        "2.44亿改造120个泵房",
+        "电气自控不=水质仪表待验证",
+        "威立雅/天津自来水运营"
+      ],
+      "time_window_basis": "设计施工总承包招标（facts原文），招标节点<3个月；泵房改造后仪表/管理需求逐步释放",
+      "next_validation_questions": [
+        "津滨威立雅/天津自来水是否为Hach客户？",
+        "120个泵房改造是否含水质监测设备？",
+        "二供管理平台是否已存在？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-019",
@@ -904,8 +1189,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-019",
       "first_seen": "2026-09-04",
-      "last_updated": "2026-09-04",
-      "status": "monitoring"
+      "last_updated": "2026-09-12",
+      "status": "monitoring",
+      "customer_requirement": "招标公告明确需求：2026年鄞州区污水处理设施在线水质监测系统运维管理（预算270万，覆盖8乡镇19泵站，3年合同一年一签）",
+      "current_solution": [
+        "现有在线水质监测设备+平台+机房设备（8乡镇19泵站）",
+        "运维服务外包模式（本次招标）"
+      ],
+      "operational_pain_points": [
+        "8乡镇19泵站分散运维，人力/响应成本高",
+        "存量监测设备老化/故障管理需专业运维，270万/3年运维投入"
+      ],
+      "sales_summary": [
+        "270万/3年监测运维外包",
+        "8乡镇19泵站分散站点",
+        "运维方数字化工具是切入点"
+      ],
+      "time_window_basis": "招标公告2026-08-28发布、9/17截止（facts原文），运维合同即将签署，<3个月",
+      "next_validation_questions": [
+        "设备品牌中是否有Hach仪表？",
+        "运维中标方是否缺数字化运维工具？",
+        "运维方是否为可合作渠道？"
+      ]
     },
     {
       "lead_id": "MUN-20260902-020",
@@ -961,8 +1266,28 @@
       "contact_summary": "No contacts enriched yet",
       "organization_map_id": "ORG-MUN-20260902-020",
       "first_seen": "2026-09-02",
-      "last_updated": "2026-09-02",
-      "status": "active"
+      "last_updated": "2026-09-12",
+      "status": "active",
+      "customer_requirement": "EPC合同明确：普安县水务一体化建设项目（智慧水务及配套工程）设计采购施工EPC总承包（合同7703.63万元，工期1095天，2026-08-18签约）",
+      "current_solution": [
+        "水务一体化智慧水务及配套工程EPC总承包（本项目）",
+        "普发改发[2026]5号批复"
+      ],
+      "operational_pain_points": [
+        "县级水务一体化起步，智慧水务平台+在线仪表部署刚启动",
+        "3年工期下数字化建设周期长、多站点逻辑弱（县级规模）"
+      ],
+      "sales_summary": [
+        "7703万EPC智慧水务（3年）",
+        "县级客户规模小",
+        "EPC早期可追溯技术路线"
+      ],
+      "time_window_basis": "合同签约2026-08-18、工期1095天（facts原文），EPC初期阶段，窗口6-12个月",
+      "next_validation_questions": [
+        "EPC中标方与技术路线是谁？",
+        "智慧水务平台是否含仪表管理模块？",
+        "普安水务是否为Hach渠道客户？"
+      ]
     },
     {
       "lead_id": "MUN-20260911-021",
@@ -1004,7 +1329,11 @@
         "source_urls": [
           "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
           "https://baijiahao.baidu.com/s?id=1875927833954203215",
-          "https://baike.baidu.com/item/平顶山自来水二次供水有限公司/22230224"
+          "https://baike.baidu.com/item/平顶山自来水二次供水有限公司/22230224",
+          "https://baijiahao.baidu.com/s?id=1874004836978966018",
+          "http://www.hnsmarterwater.com/",
+          "https://www.zhipin.com/companys/9a78d7f4b76045851nV72Nq1FFU~.html",
+          "https://baike.baidu.com/item/河南智慧水务股份有限公司/51286715"
         ],
         "to_verify": {
           "customer_identity": "平顶山自来水是否为Hach客户？二次供水公司是否独立Account？",
@@ -1038,7 +1367,29 @@
       "organization_map_id": "ORG-MUN-20260911-021",
       "first_seen": "2026-09-11",
       "last_updated": "2026-09-12",
-      "status": "active"
+      "status": "active",
+      "customer_requirement": "公开表述（平顶山日报2026-09-10/签约发言）：'存量小区泵房设备老旧分散、智慧化基础薄弱，促使二次供水运行管护、水质保障、科技化运维标准进一步提高'；明确要求'推动二次供水运维由被动处置向主动预警转变'、向智慧化运营转变；合作框架含泵房智慧化升级、智慧管网、数字化装备、智能远传水表与自动抄表营收。",
+      "current_solution": [
+        "自研'二次供水智能化运行数据监控平台'：24小时采集水压/流量/温湿度/设备工况/能耗/安防，联动工单+自动抄表（2026城市供水生命线科技创新大会成果展示）",
+        "自研'智能化泵房安防控制柜'：水淹报警/红外入侵/声光联动/智能门禁，隐患预警防范率100%（同源）",
+        "2026-09-09与河南智慧水务股份有限公司签约，组建联合事业部推进泵房智慧升级（平顶山日报）"
+      ],
+      "operational_pain_points": [
+        "存量小区泵房设备老化、分散管理、智慧化基础薄弱（代德山签约发言/平顶山日报原文）",
+        "传统'出问题再抢修'被动运维模式难以匹配监管要求（平顶山日报原文）",
+        "现阶段部分小区存在二次供水水质安全管控风险（代德山签约发言原文）"
+      ],
+      "sales_summary": [
+        "211座泵房智慧化启动，技术路线未定（9/9签约）",
+        "客户已明确要'被动运维转主动预警'（代德山/申毅公开表述）",
+        "自研平台+安防柜已就位，合作方河南智慧水务（西门子系）"
+      ],
+      "time_window_basis": "2026-09-09战略合作框架刚签署、联合事业部组建中，无公开招投标节点；泵房改造技术路线未锁定（平顶山日报2026-09-10）；新《供水条例》(831号令)2026-06-01施行带来合规推进压力，预计1-2个季度内进入立项/设计窗口，维持6-9个月判断",
+      "next_validation_questions": [
+        "211座泵房水质在线监测（余氯/浊度）仪表现状如何？品牌/数量/联网方式？",
+        "自研数据平台与河南智慧水务平台是否兼容第三方（非西门子系）仪表接入？",
+        "联合事业部第一阶段试点泵房清单与预算是否已确定？"
+      ]
     }
   ],
   "projects": [
