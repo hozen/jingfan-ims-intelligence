@@ -19,7 +19,7 @@ curl -fsS http://127.0.0.1:8080/healthz
 ssh -L 8080:127.0.0.1:8080 user@your-server
 ```
 
-然后打开 `http://127.0.0.1:8080`。
+然后打开 `http://127.0.0.1:8080`。根地址会进入 IMS Intelligence 工业线索页，页面顶部的“打开 Water Clay ICP 客户情报”按钮会跳转到 `/water-clay-poc/`。
 
 若明确需要局域网直接访问，可在启动前设置监听地址：
 
@@ -56,7 +56,7 @@ python3 scripts/build_icp_poc.py
 python3 -m http.server 8080 --bind 127.0.0.1 --directory customer/water-clay-poc
 ```
 
-此方式适合验收，不建议作为长期生产服务。长期部署请使用 Docker Compose，或让服务器管理员把相同目录接入现有反向代理。
+此方式适合验收，不建议作为长期生产服务。临时入口是 `http://127.0.0.1:8080/industrial-leads/`。长期部署请使用 Docker Compose，或让服务器管理员把相同目录接入现有反向代理。
 
 ## 数据刷新逻辑
 
@@ -71,4 +71,3 @@ python3 -m http.server 8080 --bind 127.0.0.1 --directory customer/water-clay-poc
 - `customer/water-clay-poc/profiles.json`
 
 当前 POC 只展示客户/项目情报和角色覆盖数量，不展示联系人手机号或邮箱。
-

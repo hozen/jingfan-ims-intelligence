@@ -1,10 +1,10 @@
 FROM nginx:1.27-alpine
 
 COPY deploy/linux/nginx.conf /etc/nginx/conf.d/default.conf
-COPY customer/water-clay-poc/ /usr/share/nginx/html/
+COPY customer/industrial-leads/ /usr/share/nginx/html/industrial-leads/
+COPY customer/water-clay-poc/ /usr/share/nginx/html/water-clay-poc/
 
 EXPOSE 8080
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD wget -qO- http://127.0.0.1:8080/healthz || exit 1
-
