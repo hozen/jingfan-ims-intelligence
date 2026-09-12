@@ -12,13 +12,19 @@ def mask_name(value):
     if not isinstance(value, str) or not value.strip(): return value
     return value[0] + "*" * (len(value.strip()) - 1)
 
+def display_contact_name(value):
+    """Keep public organisations readable; mask personal names only."""
+    if not isinstance(value, str): return value
+    if any(token in value for token in ("公司", "集团", "机构", "中心", "热线", "办公室", "委员会", "研究院", "大学", "局")):
+        return value
+    return mask_name(value)
+
 def safe(value):
     if isinstance(value, dict): return {k: safe(v) for k, v in value.items()}
     if isinstance(value, list): return [safe(v) for v in value]
     if not isinstance(value, str): return value
     value = re.sub(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", "[邮箱已隐藏]", value)
     value = re.sub(r"(?<!\d)(1[3-9]\d)\d{4}(\d{4})(?!\d)", r"\1****\2", value)
-    value = re.sub(r"(?<!\d)(0\d{2,3}-?)\d{4}(\d{3,4})(?!\d)", r"\1****\2", value)
     return re.sub(r"(?<=[：:])([\u4e00-\u9fff])([\u4e00-\u9fff]{1,3})", lambda m: m[1] + "*" * len(m[2]), value)
 
 def read(path): return json.loads(path.read_text(encoding="utf-8"))
@@ -45,7 +51,7 @@ def contacts_for(item, contacts):
         contact_ids=[cid for cid, contact in contacts.items() if contact.get("lead_id")==item["lead_id"]]
     for cid in contact_ids:
         if cid in contacts:
-            contact=safe(json.loads(json.dumps(contacts[cid], ensure_ascii=False))); contact["name"]=mask_name(contact.get("name")); contact.pop("email", None)
+            contact=safe(json.loads(json.dumps(contacts[cid], ensure_ascii=False))); contact["name"]=display_contact_name(contact.get("name")); contact.pop("email", None)
             phone=contact.get("phone")
             if phone and not isinstance(phone, list):
                 contact["phone"]=[phone if isinstance(phone, dict) else {"value":phone}]
@@ -90,8 +96,8 @@ def enriched_rows(segment, directory, patterns):
             elif plant_type in ("water_supply", "drinking_water"): signal["industry"]="市政供水"
         if not signal.get("location"):
             place_text=" ".join(str(signal.get(k) or "") for k in ("company", "opportunity"))
-            county=re.search(r"([\u4e00-\u9fff]{2,8}县)", place_text)
-            if county: signal["location"]=county.group(1)+"（省市未记录）"
+            place=re.search(r"([\u4e00-\u9fff]{2,8}县)", place_text) or re.search(r"([\u4e00-\u9fff]{2,8}市)", place_text)
+            if place: signal["location"]=place.group(1)+"（省市未记录）"
         for key in ("facts","inferences","unknowns"):
             if evidence.get(key) is not None and not isinstance(evidence[key],list): evidence[key]=[evidence[key]]
         category=municipal_category(signal) if segment=="municipal" else industrial_category(signal); date=item.get("last_updated") or item.get("first_seen") or stamp

@@ -276,13 +276,13 @@
           "contact_id": "CT-MUN-045",
           "lead_id": "MUN-20260911-021",
           "account_id": "ACC-018",
-          "name": "平********",
+          "name": "平顶山供水服务热线",
           "unit": "平顶山市自来水有限公司（母公司）",
           "role": "24小时供水服务热线（公司级入口）",
           "priority": "B",
           "phone": [
             {
-              "value": "0375-****000"
+              "value": "0375-2830000"
             }
           ],
           "source_url": "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml",
@@ -603,7 +603,7 @@
           "evidence": {
             "facts": [
               "9/9首次发现。公开招标200万，明确采购COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统，24h连续监测+GIS集成+异常智能报警。",
-              "明溪县城区污水管网设施在线监测建设项目相关公开渠道：业***询电话0598-****876（君峰城市建设投资，陈先生）；县住建局党组成员李强。"
+              "明溪县城区污水管网设施在线监测建设项目相关公开渠道：业***询电话0598-2868876（君峰城市建设投资，陈先生）；县住建局党组成员李强。"
             ],
             "inferences": [
               "9/9首次发现，今日无新事实变化。在线监测设备+数据管理平台直接命中iMS核心场景。维持P2。"
@@ -647,7 +647,7 @@
           "sales_summary": [
             "200万管网在线监测采购",
             "COD/流量/液位/井盖四类设备",
-            "业主：君***（0598-****876）"
+            "业主：君***（0598-2868876）"
           ],
           "time_window_basis": "9/9公开招标、200万预算（facts原文），招标节点进行中，<3个月",
           "next_validation_questions": [
@@ -706,7 +706,7 @@
           "priority": "B",
           "phone": [
             {
-              "value": "0598-****876"
+              "value": "0598-2868876"
             }
           ],
           "source_url": "https://www.fjggzyjy.cn",
@@ -746,7 +746,7 @@
         "lead_id": "MUN-20260911-007",
         "company": {
           "company_name": "邛崃市城区污水处理厂智慧水务软件开发采购",
-          "location": null,
+          "location": "邛崃市（省市未记录）",
           "industry": "市政污水／管网"
         },
         "project": {
@@ -779,7 +779,7 @@
             "facts": [
               "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。",
               "邛崃市城区污水处理厂配套EPC由中国电建市政建设集团与成都市政设计研究院联合体中标，中标价297,248,748.30元，项目负责人施工常彪、设计林忠军。",
-              "招标人成都市沄崃投资集团（028-****1865）、代理成都尚特项目管理（028-****3980）。"
+              "招标人成都市沄崃投资集团（028-88771865）、代理成都尚特项目管理（028-61683980）。"
             ],
             "inferences": [
               "9/7首次发现，今日无新事实变化。EPC项目中智慧水务软件独立采购，数字化层正在构建。iMS可作为仪表数据采集/监控层接入。维持P2。",
@@ -835,7 +835,7 @@
             "新建厂在线仪表品牌选型由谁定？",
             "软件平台是否兼容第三方仪表？"
           ],
-          "location": null,
+          "location": "邛崃市（省市未记录）",
           "industry": "市政污水／管网"
         },
         "enrichment_status": "signal_only",
@@ -880,13 +880,13 @@
           "contact_id": "CT-MUN-016",
           "lead_id": "MUN-20260911-007",
           "account_id": null,
-          "name": "成*****************",
+          "name": "成都市沄崃投资集团有限公司（招标人）",
           "unit": "成都市沄崃投资集团有限公司",
           "role": "邛崃市城区污水处理厂项目招标人",
           "priority": "B",
           "phone": [
             {
-              "value": "028-****1865"
+              "value": "028-88771865"
             }
           ],
           "source_url": "https://ggzyjy.sc.gov.cn",
@@ -899,13 +899,13 @@
           "contact_id": "CT-MUN-017",
           "lead_id": "MUN-20260911-007",
           "account_id": null,
-          "name": "成***************",
+          "name": "成都尚特项目管理有限公司（代理）",
           "unit": "成都尚特项目管理有限公司",
           "role": "招标代理机构",
           "priority": "B",
           "phone": [
             {
-              "value": "028-****3980"
+              "value": "028-61683980"
             }
           ],
           "source_url": "https://ggzyjy.sc.gov.cn",
@@ -979,7 +979,7 @@
               "2026年9月3日发布招标公告，项目编号2026-QSX-0824。夹江县城乡供水一张网建设项目-青衣水厂扩建工程(二阶段)智慧水务采购项目，预算1656.63万元。招标人为广东省基础工程集团有限公司。投标截止2026年9月24日。位于四川省乐山市夹江县。",
               "2026-08-10，夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目发布终止公告（四川省公共资源交易平台），原招标作废。",
               "2026-08-06，与夹江青衣水厂及供水管网工程相关的原水水质在线监测仪器运维服务及水资源计量设施运维服务采购成交（成交供应商为中国电建水电七局相关方）。",
-              "夹江青衣水厂扩建工程EPC招标人为广东省基础工程集团（董事长方创熙，电话020-****0299）。"
+              "夹江青衣水厂扩建工程EPC招标人为广东省基础工程集团（董事长方创熙，电话020-83900299）。"
             ],
             "inferences": [
               "供水厂扩建同步建设智慧水务系统，预算1656万单独采购智慧水务包，说明数字化层是独立投入而非附属。新建水厂必然配备在线水质仪表(浊度/余氯/pH/氨氮等)，如果厂内使用Hach仪表，iMS可作为仪表数据采集/监控层接入智慧水务平台。EPC总包(广东省基础工程集团)负责设备选型，设计院影响力关键。逻辑链：供***->智慧水务独立采购->仪表数据需接入平台->仪表监控+数据质量需求->iMS潜在切入。",
@@ -1086,7 +1086,7 @@
           "priority": "B",
           "phone": [
             {
-              "value": "020-****0299"
+              "value": "020-83900299"
             }
           ],
           "source_url": "https://ggzyjy.sc.gov.cn",
@@ -1258,7 +1258,7 @@
           "priority": "B",
           "phone": [
             {
-              "value": "0517-****6890"
+              "value": "0517-83516890"
             }
           ],
           "source_url": "https://www.ehall.jiangsu.gov.cn",
@@ -1445,7 +1445,7 @@
           "contact_id": "CT-MUN-029",
           "lead_id": "MUN-20260909-015",
           "account_id": null,
-          "name": "兴**********",
+          "name": "兴宁市住房和城乡建设局",
           "unit": "兴宁市住房和城乡建设局",
           "role": "项目监督部门",
           "priority": "C",
@@ -1599,7 +1599,7 @@
           "contact_id": "CT-MUN-035",
           "lead_id": "MUN-20260907-018",
           "account_id": "ACC-015",
-          "name": "天**************",
+          "name": "天津市辰裕农业农村发展有限公司",
           "unit": "天津市辰裕农业农村发展有限公司",
           "role": "二次供水设施改造招标人（机构入口）",
           "priority": "B",
@@ -1614,7 +1614,7 @@
           "contact_id": "CT-MUN-036",
           "lead_id": "MUN-20260907-018",
           "account_id": "ACC-015",
-          "name": "天*************",
+          "name": "天津福松工程项目管理有限公司",
           "unit": "天津福松工程项目管理有限公司",
           "role": "招标代理机构",
           "priority": "B",
@@ -1919,13 +1919,13 @@
           "contact_id": "CT-MUN-037",
           "lead_id": "MUN-20260902-019",
           "account_id": null,
-          "name": "鄞*********",
+          "name": "鄞州区水利局（经办）",
           "unit": "宁波市鄞州区水利局",
           "role": "在线水质监测设备运维项目采购人",
           "priority": "B",
           "phone": [
             {
-              "value": "0574-****2343"
+              "value": "0574-89582343"
             }
           ],
           "source_url": "https://ggzy.zj.gov.cn",
@@ -1938,7 +1938,7 @@
           "contact_id": "CT-MUN-038",
           "lead_id": "MUN-20260902-019",
           "account_id": null,
-          "name": "宁***************",
+          "name": "宁波恒翔管理咨询有限公司（代理）",
           "unit": "宁波恒翔管理咨询有限公司",
           "role": "招标代理机构",
           "priority": "B",
@@ -2369,7 +2369,7 @@
             "facts": [
               "2026年9月1日，西安净水处理有限责任公司发布招标公告（HRZBXA2026-JS-02），对第四、第五再生水厂实施全维度智慧化升级设计。招标范围含初步设计（含概算）、图纸设计、实施配合全流程。设计周期30日历天。借鉴第三再生水厂成熟智慧化改造经验。落实国企数字化转型、黄河流域生态保护、减污降碳协同增效要求。投标截止9月21日。",
               "西安净水处理有限责任公司厂网一体化管理平台项目由浪潮通软中标，中标金额993.6万元（2026年公开信息）。",
-              "西安净水董事长陈鸿（029-****0908）；高级技术专家焦峰为第三再生水厂AI托管模式受访人（新华社等媒体报道）。"
+              "西安净水董事长陈鸿（029-83570908）；高级技术专家焦峰为第三再生水厂AI托管模式受访人（新华社等媒体报道）。"
             ],
             "inferences": [
               "两座再生水厂同步进行'全维度智慧化升级'，且有第三再生水厂成功经验可复制——这表明西安净水处理公司已在智慧化改造路径上验证了方法论，正在向更多水厂推广。'全维度智慧化升级'必然包含在线仪表数据采集与监测系统。逻辑链：多***步智慧化改造→统一管理需求→在线仪表数据集中→multi-site management+instrument monitoring。关键不确定性：设***尚未明确具体仪表品牌和技术路线，iMS机会取决于设计院的技术选型。",
@@ -2492,7 +2492,7 @@
           "priority": "B",
           "phone": [
             {
-              "value": "029-****0908"
+              "value": "029-83570908"
             }
           ],
           "source_url": "https://www.qcc.com",
@@ -2649,7 +2649,7 @@
           "priority": "A",
           "phone": [
             {
-              "value": "021-****0178"
+              "value": "021-62370178"
             }
           ],
           "source_url": "https://www.unitedwater.com.cn",
@@ -2668,14 +2668,14 @@
           "priority": "B",
           "phone": [
             {
-              "value": "021-****0178"
+              "value": "021-62370178"
             }
           ],
           "source_url": "https://www.unitedwater.com.cn",
           "source_type": "company_disclosure",
           "verification_status": "inferred",
           "first_seen": "2026-09-12",
-          "notes": "公司总机021-****0178为公开入口"
+          "notes": "公司总机021-62370178为公开入口"
         },
         {
           "contact_id": "CT-MUN-012",
@@ -2687,7 +2687,7 @@
           "priority": "B",
           "phone": [
             {
-              "value": "021-****0178"
+              "value": "021-62370178"
             }
           ],
           "source_url": "https://www.unitedwater.com.cn",
@@ -2706,7 +2706,7 @@
           "priority": "C",
           "phone": [
             {
-              "value": "021-****0178"
+              "value": "021-62370178"
             }
           ],
           "source_url": "https://www.unitedwater.com.cn",
@@ -2743,11 +2743,11 @@
           "signal_date": "2026-09-12",
           "evidence": [
             {
-              "source_url": "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/0020****1002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
+              "source_url": "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/002001001002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
               "evidence_summary": "原始数据来源"
             },
             {
-              "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+              "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
               "evidence_summary": "原始数据来源"
             }
           ]
@@ -2764,7 +2764,7 @@
             "facts": [
               "2026年9月2日，怀远县禹众水务有限公司发布EPC招标公告（BB2026HYGCZ0521），合同估算价10.087亿元，建设内容包括：(1)新建包集水厂及取水泵站；(2)双龙水厂和小集水厂更新改造；(3)乡镇供水管网更新改造；(4)智慧监测体系建设工程；(5)配套基础设施（光伏、充电桩）。工期1080天，勘察设计90天。资金来源为国有资金。",
               "2026-09-10，怀远县全域供水数字化改造提升项目EPC（编号BB2026HYGCZ0521）招标公告被撤销（撤销公告发布于蚌埠公共资源交易中心）。",
-              "招标文件预公示（2026-08-25）显示招标人怀远县禹众水务有限公司联系人杨毛星（0552-****611）、代理安徽鑫宸博晟工程咨询有限公司联系人周冰馨（151****0140）。",
+              "招标文件预公示（2026-08-25）显示招标人怀远县禹众水务有限公司联系人杨毛星（0552-8215611）、代理安徽鑫宸博晟工程咨询有限公司联系人周冰馨（151****0140）。",
               "怀远县禹众水务法定代表人王兵，母公司怀远县大禹产业投资集团（法定代表人焦利君），为怀远县国资平台。"
             ],
             "inferences": [
@@ -2786,8 +2786,8 @@
           "priority": "P2",
           "score": 72,
           "source_urls": [
-            "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/0020****1002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
-            "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html"
+            "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/002001001002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
+            "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html"
           ],
           "to_verify": {
             "customer_identity": "怀远县禹众水务有限公司是否为Hach客户？Salesforce Account是否存在？该公司为新设主体，需确认其与怀远县原有水务机构的关系。",
@@ -2848,7 +2848,7 @@
             },
             "estimated_time_window": "3-6 months",
             "location": null,
-            "source_url": "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/0020****1002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
+            "source_url": "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/002001001002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
             "enrichment_level": 1,
             "enrichment_needed": [
               "design_institute",
@@ -2873,10 +2873,10 @@
           "priority": "B",
           "phone": [
             {
-              "value": "0552-****611"
+              "value": "0552-8215611"
             }
           ],
-          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
           "source_type": "official_announcement",
           "verification_status": "verified",
           "first_seen": "2026-09-12",
@@ -2895,7 +2895,7 @@
               "value": "151****0140"
             }
           ],
-          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
           "source_type": "official_announcement",
           "verification_status": "verified",
           "first_seen": "2026-09-12",
@@ -3084,13 +3084,13 @@
           "contact_id": "CT-MUN-004",
           "lead_id": "MUN-20260902-002",
           "account_id": "ACC-008",
-          "name": "合********",
+          "name": "合肥水务集团办公室",
           "unit": "合肥水务集团有限公司",
           "role": "公司办公室总机（排水管网全面接管对接入口）",
           "priority": "B",
           "phone": [
             {
-              "value": "0551-****1821"
+              "value": "0551-64421821"
             }
           ],
           "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
@@ -3148,7 +3148,7 @@
             "facts": [
               "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）。8月19日，西部组团净水二厂获评第五期'双百跨越'智能化标杆污水处理厂。官方信息确认：厂***线'设备全生命周期管理'系统、AI视频巡检、电力智能分析等智能协同系统；工艺与设备数据自动采集率100%；核心设备远程控制率88.3%；设备预测性维护命中率93%。8月30日人民日报道合肥水务集团水务一体化改革两年成果，涉水职能归口统一，'原水-供水-排水-净水'全链条协同治理。此前已发现：2026-2028年度阀门采购(预算2450万)、南淝河49处在线监测设施运维(72.2万，9月采购)。",
               "2026年8-9月，合肥水务集团发布合同全生命周期管理信息软件开发项目采购公告（编号2026BFFWZ00698，预算约95万元，预计2026年10月进场）。",
-              "合肥水务集团2026-2028年度采购公告提供公开联系人（采购经办俞工，电话0551-****3680），涉及在线监测/压力监测设备类采购。"
+              "合肥水务集团2026-2028年度采购公告提供公开联系人（采购经办俞工，电话0551-64423680），涉及在线监测/压力监测设备类采购。"
             ],
             "inferences": [
               "合肥水务集团正处于从分散管理向超大规模集中管控转型的成熟期。关键发现：'设备全生命周期管理'系统已在西部组团净水二厂上线运行，且'设备预测性维护命中率93%'——这直接验证了iMS Asset Management和Predictive Maintenance的Use Case在大型水务集团的真实需求。但核心验证问题是：该'设备全生命周期管理'系统是否已覆盖在线水质仪表（Hach核心品类），还是仅覆盖通用机电设备（泵/阀门/风机）？如果仅覆盖通用设备，则在线水质仪表的健康诊断和资产管理仍是数字化白空间。7236km排水管网+250座泵站+169座自来水厂的规模，加上多个正在执行的采购项目，使合肥水务集团成为当前最高优先级的Company Agent验证对象。",
@@ -3283,7 +3283,7 @@
           "priority": "A",
           "phone": [
             {
-              "value": "0551-****3680"
+              "value": "0551-64423680"
             }
           ],
           "source_url": "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html",
@@ -3296,13 +3296,13 @@
           "contact_id": "CT-MUN-002",
           "lead_id": "MUN-20260902-001",
           "account_id": "ACC-008",
-          "name": "合********",
+          "name": "合肥水务集团办公室",
           "unit": "合肥水务集团有限公司",
           "role": "公司办公室总机",
           "priority": "B",
           "phone": [
             {
-              "value": "0551-****1821"
+              "value": "0551-64421821"
             }
           ],
           "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
@@ -3315,13 +3315,13 @@
           "contact_id": "CT-MUN-003",
           "lead_id": "MUN-20260902-001",
           "account_id": "ACC-008",
-          "name": "合*********",
+          "name": "合肥水务集团服务热线",
           "unit": "合肥水务集团有限公司",
           "role": "24小时服务热线",
           "priority": "B",
           "phone": [
             {
-              "value": "0551-****2666"
+              "value": "0551-64422666"
             }
           ],
           "source_url": "https://www.hfwater.cn",
@@ -4373,7 +4373,7 @@
           "signal_date": "2026-09-11",
           "evidence": [
             {
-              "source_url": "https://ggzy.jgswj.gxzf.gov.cn/qzggzy/jyxx/001001/001001001/0010****1006/20260910/8d061ac4-96c2-4d53-a5c2-d9fca3e8699b.html",
+              "source_url": "https://ggzy.jgswj.gxzf.gov.cn/qzggzy/jyxx/001001/001001001/001001001006/20260910/8d061ac4-96c2-4d53-a5c2-d9fca3e8699b.html",
               "evidence_summary": "市政雷达日报"
             }
           ]
@@ -4396,11 +4396,11 @@
             "account_sales": "Account Owner是谁？广西区域Regional Owner？"
           },
           "source_urls": [
-            "https://ggzy.jgswj.gxzf.gov.cn/qzggzy/jyxx/001001/001001001/0010****1006/20260910/8d061ac4-96c2-4d53-a5c2-d9fca3e8699b.html"
+            "https://ggzy.jgswj.gxzf.gov.cn/qzggzy/jyxx/001001/001001001/001001001006/20260910/8d061ac4-96c2-4d53-a5c2-d9fca3e8699b.html"
           ],
           "evidence": {
             "facts": [
-              "2026年9月10日发布招标计划：灵***里污水处理厂及配套管网工程方案设计、初步设计及施工图设计服务，招标人灵山县灵广土地整治开发有限公司，预算220万元。新建1座1.0万吨/天污水处理厂（配水井/细格栅间及旋流沉砂池/调节池水解酸化池/CASS生物池/高效沉淀池/纤维转盘滤池/紫外线消毒渠+巴氏计量槽/仪表间危废间/污泥深度脱水车间等）及配套管网7950米（含污水提升泵站、DN1000污水管5150米、DN500球墨铸铁管2800米等）。项目联系人方工 0777-****299（公开）。"
+              "2026年9月10日发布招标计划：灵***里污水处理厂及配套管网工程方案设计、初步设计及施工图设计服务，招标人灵山县灵广土地整治开发有限公司，预算220万元。新建1座1.0万吨/天污水处理厂（配水井/细格栅间及旋流沉砂池/调节池水解酸化池/CASS生物池/高效沉淀池/纤维转盘滤池/紫外线消毒渠+巴氏计量槽/仪表间危废间/污泥深度脱水车间等）及配套管网7950米（含污水提升泵站、DN1000污水管5150米、DN500球墨铸铁管2800米等）。项目联系人方工 0777-6880299（公开）。"
             ],
             "inferences": [
               "新建1万m3/d污水厂+配套管网，设计服务刚发布招标计划（正式招标在即），处于设计阶段早期。新建厂必然配置进出水在线监测（COD/氨氮/总磷等）与仪表间（公告明确含'仪表间危废间'），智慧平台与仪表数据接入架构尚未设计。设计院未定是影响设备清单的最佳时间点。虽为县级小型项目（单厂1万m3/d），但新建项目对iMS的意义在于：切***厂的数字化设计（平台预留第三方仪表接口）可形成标杆。"
@@ -4437,7 +4437,7 @@
           "signal_date": "2026-09-11",
           "evidence": [
             {
-              "source_url": "https://ggzy.xjbt.gov.cn/jygk/004001/004001002/0040****2001/20260908/4f3b6a8f-fd3f-486e-b498-ce360ae4b8d2.html",
+              "source_url": "https://ggzy.xjbt.gov.cn/jygk/004001/004001002/004001002001/20260908/4f3b6a8f-fd3f-486e-b498-ce360ae4b8d2.html",
               "evidence_summary": "市政雷达日报"
             }
           ]
@@ -4460,7 +4460,7 @@
             "account_sales": "Account Owner是谁？新疆/西北区域Regional Owner？"
           },
           "source_urls": [
-            "https://ggzy.xjbt.gov.cn/jygk/004001/004001002/0040****2001/20260908/4f3b6a8f-fd3f-486e-b498-ce360ae4b8d2.html"
+            "https://ggzy.xjbt.gov.cn/jygk/004001/004001002/004001002001/20260908/4f3b6a8f-fd3f-486e-b498-ce360ae4b8d2.html"
           ],
           "evidence": {
             "facts": [
@@ -4579,7 +4579,7 @@
           "stage3_enrichment": {
             "contacts": {
               "project_owner_contact": "国能长源荆门发电有限公司; 地址:湖***门市城东工业区; 始建于1976年,隶属国家能源投资集团; 三期2x640MW机组2006-2007年投产; 补充水源:漳***; 冷却方式:带***的二次循环冷却系统",
-              "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(实施方); 负责人:祖**(2021年11月上任); 前负责人:顾**; 电话:025-****1182; 邮箱:[邮箱已隐藏]; 地址:南***邺区楠溪江东街68号; 曾用名:北***明/国能朗新明环保科技南京分公司; 关联公司:国*(南京)水务环保科技有限公司(法定代表人:祖**,注册资本5050万,电话025-****1182,地址:南***邺区江心洲文泰街85号)",
+              "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(实施方); 负责人:祖**(2021年11月上任); 前负责人:顾**; 电话:025-68521182; 邮箱:[邮箱已隐藏]; 地址:南***邺区楠溪江东街68号; 曾用名:北***明/国能朗新明环保科技南京分公司; 关联公司:国*(南京)水务环保科技有限公司(法定代表人:祖**,注册资本5050万,电话025-68521182,地址:南***邺区江心洲文泰街85号)",
               "design_institute_contact": "国能水务(内部EPC设计)",
               "operator_contact": "国能长源荆门发电有限公司(自营)",
               "procurement_decision_maker": "国能水务南京分公司(内部EPC采购); 招标代理:国***集团国际工程咨询有限公司; 关键发现:2026-08-28曾发布'仪表成套询价采购公告'(WZCX-WZXJ-202****,报价截止2026-09-01),说明仪表采购正在进行; 2026-09-09低压电气设备已中标(南京双灵瑞203万); 2026-09-10新发布'建安工程招标公告'(CEZB260107615)",
@@ -4719,11 +4719,11 @@
           "estimated_time_window": "BOOT项目设计阶段(2026Q4-2027Q1)",
           "stage3_enrichment": {
             "contacts": {
-              "project_owner_contact": "中捷产业园区石化工业园管理中心; 招标代理:河***招标代理有限公司; 代理联系人:齐**/王艳; 电话:0317-****679 / 133****9810",
+              "project_owner_contact": "中捷产业园区石化工业园管理中心; 招标代理:河***招标代理有限公司; 代理联系人:齐**/王艳; 电话:0317-5687679 / 133****9810",
               "epc_contractor_contact": "不适用(BOOT模式,运营方自建)",
-              "design_institute_contact": "中节能国祯环保科技股份有限公司(牵头运营方); 董秘:罗**; 证券代表:李**; 电话:0551-****4976; 地址:安***肥市高新区创新大道2688号中新网安大厦; 邮箱:[邮箱已隐藏]; 官网:www.gzep.com.cn; 股票代码:300388; 设备制造事业部:0551-****1035; 客服中心:400-1622919",
-              "operator_contact": "节能国祯(牵头)+麦王环境+山东圣立创联合体; 麦王环境:法***人崔黎明(更正),电话021-****2275,邮箱[邮箱已隐藏],地址上海市杨浦区杨树浦路1088号,官网www.mcwongtech.com,员工127人; 山东圣立创:法***人胡平财,电话1768178****,邮箱[邮箱已隐藏],地址济宁建设路141号",
-              "procurement_decision_maker": "运营方联合体(节能国祯主导); 关键建议:通***辉(0551-****4976)对接项目采购或设备制造事业部(0551-****1035)",
+              "design_institute_contact": "中节能国祯环保科技股份有限公司(牵头运营方); 董秘:罗**; 证券代表:李**; 电话:0551-65324976; 地址:安***肥市高新区创新大道2688号中新网安大厦; 邮箱:[邮箱已隐藏]; 官网:www.gzep.com.cn; 股票代码:300388; 设备制造事业部:0551-66181035; 客服中心:400-1622919",
+              "operator_contact": "节能国祯(牵头)+麦王环境+山东圣立创联合体; 麦王环境:法***人崔黎明(更正),电话021-68552275,邮箱[邮箱已隐藏],地址上海市杨浦区杨树浦路1088号,官网www.mcwongtech.com,员工127人; 山东圣立创:法***人胡平财,电话1768178****,邮箱[邮箱已隐藏],地址济宁建设路141号",
+              "procurement_decision_maker": "运营方联合体(节能国祯主导); 关键建议:通***辉(0551-65324976)对接项目采购或设备制造事业部(0551-66181035)",
               "contacts_search_status": "COMPLETE - 运营方联合体及招标代理联系人已确认; 麦王环境法人更正为崔黎明"
             },
             "timeline": {
@@ -4867,10 +4867,10 @@
           "stage3_enrichment": {
             "contacts": {
               "project_owner_contact": "云南解化绿源化工有限公司; 法定代表人:张*; 董事/经理:黄*; 原法定代表人:王**; 电话:0873-716****(部分隐藏); 地址:云***河州开远市小龙潭镇小龙潭化工园区; 注册资本17亿元; 成立2025-06-20; 母公司:云***集团",
-              "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭**; 总经理/董事:赵**; 电话:022-****8826; 邮箱:[邮箱已隐藏]; 地址:天***辰区京津路1号; 官网:www.china-tcc.com; 采购部办公室:022-****7379 / [邮箱已隐藏]; 国内业务:022-****8999 / [邮箱已隐藏]; 分供方:022-****8886 / [邮箱已隐藏]",
+              "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭**; 总经理/董事:赵**; 电话:022-23408826; 邮箱:[邮箱已隐藏]; 地址:天***辰区京津路1号; 官网:www.china-tcc.com; 采购部办公室:022-23407379 / [邮箱已隐藏]; 国内业务:022-23408999 / [邮箱已隐藏]; 分供方:022-23408886 / [邮箱已隐藏]",
               "design_institute_contact": "中国天辰(设计施工总承包); 原化工部第一设计院(1953年成立); 国内业务邮箱:华*[邮箱已隐藏] / 西北[邮箱已隐藏] / 东北[邮箱已隐藏]",
               "operator_contact": "云南解化绿源化工有限公司(搬迁后自营); 老厂运营方:云***清洁能源开发有限公司解化化工分公司",
-              "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 仪表采购执行团队:张*(核心,多项目覆盖)、孙颖B(温度仪表)、安秋宇(仪表桥架); 建议优先联系张炜(186****8507 / [邮箱已隐藏]); 招标代理:云***咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-****5131 / 132****6971)",
+              "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 仪表采购执行团队:张*(核心,多项目覆盖)、孙颖B(温度仪表)、安秋宇(仪表桥架); 建议优先联系张炜(186****8507 / [邮箱已隐藏]); 招标代理:云***咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-65875131 / 132****6971)",
               "contacts_search_status": "COMPLETE - 业主和EPC方已确认; 天辰仪表采购团队关键联系人已定位,张炜为仪表采购核心执行人"
             },
             "timeline": {
@@ -4904,7 +4904,7 @@
                   "2026-04-14 仪表管阀件询比采购联系人(TCC-T25011-EA-022-B)",
                   "2026年 恒坤化工项目仪表管阀件谈判采购联系人(TCC-T25090-EA-016-B)"
                 ],
-                "contact": "电话:186****8507 / 022-****7521; 邮箱:[邮箱已隐藏]",
+                "contact": "电话:186****8507 / 022-23407521; 邮箱:[邮箱已隐藏]",
                 "scope": "覆盖仪表管阀件、TOC分析仪表、现场仪表接线箱、码头库区仪表等多类仪表物资",
                 "inference": "张炜是天辰公司仪表类物资采购的核心执行人/高级采购工程师，跨多个项目持续负责仪表采购。建议作为首要联系人。",
                 "confidence": "HIGH"
@@ -4924,7 +4924,7 @@
                 "evidence": [
                   "2026-09-02 国能准东煤制天然气项目仪表桥架询比采购联系人(TCC-T25117-EA-012-B)"
                 ],
-                "contact": "电话:022-****6957; 邮箱:[邮箱已隐藏]",
+                "contact": "电话:022-23406957; 邮箱:[邮箱已隐藏]",
                 "scope": "负责仪表桥架类采购",
                 "inference": "安秋宇是天辰公司采购部人员，负责仪表桥架类物资采购，属于仪表采购专业口执行人员。",
                 "confidence": "MEDIUM"
@@ -5038,11 +5038,11 @@
           "estimated_time_window": "技改设计阶段(2026Q4)",
           "stage3_enrichment": {
             "contacts": {
-              "project_owner_contact": "启东盖天力药业有限公司; 法定代表人:徐**; 电话:0513-****1860 / 0513-****1533; 邮箱:[邮箱已隐藏] / [邮箱已隐藏]; 官网:www.gaitianli.com.cn; 地址:江***东市经济开发区南苑西路1166号; 成立:1995-06-06; 注册资本:4500万元; 员工:127人(2025年); 主营:中***耳颗粒/槐杞黄颗粒",
+              "project_owner_contact": "启东盖天力药业有限公司; 法定代表人:徐**; 电话:0513-83101860 / 0513-83321533; 邮箱:[邮箱已隐藏] / [邮箱已隐藏]; 官网:www.gaitianli.com.cn; 地址:江***东市经济开发区南苑西路1166号; 成立:1995-06-06; 注册资本:4500万元; 员工:127人(2025年); 主营:中***耳颗粒/槐杞黄颗粒",
               "epc_contractor_contact": "不适用",
               "design_institute_contact": "待确认",
               "operator_contact": "启东盖天力药业(自营)",
-              "procurement_decision_maker": "待确认(建议通过0513-****1860转分机对接设备/环保部门)",
+              "procurement_decision_maker": "待确认(建议通过0513-83101860转分机对接设备/环保部门)",
               "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
             },
             "timeline": {
@@ -5312,7 +5312,7 @@
           "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
           "stage3_enrichment": {
             "contacts": {
-              "project_owner_contact": "先进半导体材料(安徽)有限公司; 法定代表人/董事:雷**; 董事长:何**; 电话:0550-****288; 邮箱:[邮箱已隐藏]; 地址:安***州市中新苏滁高新技术产业开发区文忠路288号; 官网:www.aam-intl.com; 母公司:AAMI先进封装材料国际有限公司(香港)",
+              "project_owner_contact": "先进半导体材料(安徽)有限公司; 法定代表人/董事:雷**; 董事长:何**; 电话:0550-7126288; 邮箱:[邮箱已隐藏]; 地址:安***州市中新苏滁高新技术产业开发区文忠路288号; 官网:www.aam-intl.com; 母公司:AAMI先进封装材料国际有限公司(香港)",
               "epc_contractor_contact": "不适用(环评阶段,未进入EPC)",
               "design_institute_contact": "待确认(环评报告编制单位未在公开文件中披露)",
               "operator_contact": "先进半导体材料(安徽)有限公司(自营); HR:宋**(人力资源部经理)/余女士(人事)",
@@ -8088,7 +8088,7 @@
           "logic": "Park CapEx(钛白产业园污水厂) → 含设备购置的新建污水厂 → 在线监测需求 → Potential iMS",
           "estimated_time_window": "2026 Q4 - 2027 Q4 (设计→EPC→建设)",
           "source_urls": [
-            "https://ggzy.jgswj.gxzf.gov.cn/wzggzy/jyxx/001001/001001001/0010****1001/20260821/8f72c9a5-59ae-47f3-aa79-991fac2e2d51.html"
+            "https://ggzy.jgswj.gxzf.gov.cn/wzggzy/jyxx/001001/001001001/001001001001/20260821/8f72c9a5-59ae-47f3-aa79-991fac2e2d51.html"
           ],
           "to_verify": [
             "设计中标方是谁?",
@@ -10861,7 +10861,7 @@
           "potential_ims_use_case": "",
           "logic_rationale": "Carried signal",
           "source_urls": [
-            "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_0985****106d45149b2dd1d2caa9015a.html"
+            "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_09852904106d45149b2dd1d2caa9015a.html"
           ],
           "to_verify": {},
           "continuity": {
@@ -11497,7 +11497,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0575-****7961",
+              "value": "0575-83107961",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.szzj.gov.cn/art/2025/3/13/art_1530087_59097963.html",
@@ -11557,7 +11557,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0575-****2980",
+              "value": "0575-83292980",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.cnzhaobiao.cn/news/detail/id/95853.html",
@@ -11983,7 +11983,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0871-****8165",
+              "value": "0871-64118165",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -11997,7 +11997,7 @@
               "verified": false
             },
             {
-              "value": "0871-****3808",
+              "value": "0871-64163808",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -12059,7 +12059,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0871-****8165",
+              "value": "0871-64118165",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -12073,7 +12073,7 @@
               "verified": false
             },
             {
-              "value": "0871-****3808",
+              "value": "0871-64163808",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -12135,7 +12135,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0871-****8165",
+              "value": "0871-64118165",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -12149,7 +12149,7 @@
               "verified": false
             },
             {
-              "value": "0871-****3808",
+              "value": "0871-64163808",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.langxian.gov.cn/lx/zwgk/201908/aa7e9b9c2a534884b117d6947fd436bb.shtml",
@@ -12319,7 +12319,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0712-****242",
+              "value": "0712-2826242",
               "type": "LANDLINE",
               "source_agent": "WorkBuddy",
               "source_url": "https://xgxz.xiaogan.gov.cn/ggzyjy/jyxx/jsgc/zbjggg/202606/t20260616_580317.shtml",
@@ -12530,7 +12530,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0712-****735",
+              "value": "0712-2057735",
               "type": "LANDLINE",
               "source_agent": "WorkBuddy",
               "source_url": "同上",
@@ -14196,7 +14196,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0411-****3810",
+              "value": "0411-39233810",
               "type": "LANDLINE",
               "source_agent": "WorkBuddy",
               "source_url": "https://www.bidcenter.com.cn/news-194304713-17.html",
@@ -15987,7 +15987,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "021-****3678",
+              "value": "021-32173678",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.shabidding.com/ekp/resource/attachment/sys_att_main/sysAttMain.do?method=download&fdId=1944f855a5f833bac4def2740b9bfb45",
@@ -16047,7 +16047,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "021-****3678",
+              "value": "021-32173678",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.shabidding.com/ekp/resource/attachment/sys_att_main/sysAttMain.do?method=download&fdId=1944f855a5f833bac4def2740b9bfb45",
@@ -16227,7 +16227,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "021-****2800",
+              "value": "021-20812800",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://static.cninfo.com.cn/finalpage/2026-03-27/1225037057.PDF",
@@ -16287,7 +16287,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "021-****2800",
+              "value": "021-20812800",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://static.cninfo.com.cn/finalpage/2026-03-27/1225037057.PDF",
@@ -16445,7 +16445,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0475-****618",
+              "value": "0475-8313618",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://sthjj.tongliao.gov.cn/xwzx/tzgg/index_7494_5.html",
@@ -16845,7 +16845,7 @@
       "enriched_contacts": [
         {
           "contact_id": "CT-20260820-0023",
-          "name": "中*************",
+          "name": "中壹建安(重庆)科技有限公司",
           "company": "中壹建安(重庆)科技有限公司",
           "title": "环评编制单位 (杰瑞锂电池资源化循环利用项目)",
           "role": "B",
@@ -16885,7 +16885,7 @@
         },
         {
           "contact_id": "CT-20260820-0024",
-          "name": "杰*************",
+          "name": "杰瑞再生资源(重庆)有限公司",
           "company": "杰瑞再生资源(重庆)有限公司",
           "title": "项目法人单位 (长寿区齐心西路1号, 年产1.5万吨锂电回收)",
           "role": "D",
@@ -17057,7 +17057,7 @@
       "enriched_contacts": [
         {
           "contact_id": "CT-20260820-0021",
-          "name": "福***************",
+          "name": "福建省石油化学工业设计院有限公司",
           "company": "福建省石油化学工业设计院有限公司",
           "title": "环评编制单位 (万华化学福建48万吨甲醛项目)",
           "role": "B",
@@ -17101,7 +17101,7 @@
         },
         {
           "contact_id": "CT-20260820-0022",
-          "name": "万*************",
+          "name": "万华环保科技(福建)有限公司",
           "company": "万华环保科技(福建)有限公司",
           "title": "废水处理依托单位 (编组站综合废水处理系统)",
           "role": "B",
@@ -17306,7 +17306,7 @@
         },
         {
           "contact_id": "CT-20260820-0020",
-          "name": "广************",
+          "name": "广西宁福新能源科技有限公司",
           "company": "广西宁福新能源科技有限公司",
           "title": "项目法人单位 (多氟多控股子公司, 注册资本34.59亿元)",
           "role": "D",
@@ -17526,7 +17526,7 @@
         },
         {
           "contact_id": "CT-20260820-0018",
-          "name": "江************",
+          "name": "江苏省环境工程技术有限公司",
           "company": "江苏省环境工程技术有限公司",
           "title": "环评编制单位 (苏州二叶制药肝素原药扩建项目)",
           "role": "B",
@@ -17736,7 +17736,7 @@
         },
         {
           "contact_id": "CT-20260820-0016",
-          "name": "湖***********",
+          "name": "湖南蓝方环保科技有限公司",
           "company": "湖南蓝方环保科技有限公司",
           "title": "环评编制单位 (湖南裕能循环科技碳酸锂项目)",
           "role": "B",
@@ -17941,7 +17941,7 @@
       "enriched_contacts": [
         {
           "contact_id": "CT-20260820-0025",
-          "name": "中*************",
+          "name": "中芯国际集成电路制造有限公司",
           "company": "中芯国际集成电路制造有限公司(SMIC)",
           "title": "企业实体 (Q2资本开支18.357亿美元, 产能利用率93.7%)",
           "role": "D",
@@ -20521,7 +20521,7 @@
         },
         {
           "contact_id": "CT-20260818-0046",
-          "name": "马*************",
+          "name": "马冠军（同时担任公司总经理）",
           "company": "河南鼎新医药科技有限公司",
           "title": "法定代表人/总经理",
           "role": "D",
@@ -20536,7 +20536,7 @@
           "account_id": "ACC-IND-20260818-010-01",
           "phone": [
             {
-              "value": "0373-****159",
+              "value": "0373-6351159",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.tuoxinpharm.com/article/14.html",
@@ -21692,7 +21692,7 @@
           "account_id": "ACC-IND-20260818-008-01",
           "phone": [
             {
-              "value": "0710-****555",
+              "value": "0710-3725555",
               "type": "MOBILE",
               "source": "public",
               "source_agent": "DuMate",
@@ -22006,7 +22006,7 @@
           "account_id": "ACC-IND-20260818-008-01",
           "phone": [
             {
-              "value": "0710-****155",
+              "value": "0710-3725155",
               "type": "MOBILE",
               "source": "public",
               "source_agent": "DuMate",
@@ -22044,7 +22044,7 @@
         },
         {
           "contact_id": "CT-20260818-0013",
-          "name": "中********",
+          "name": "中建三局总承包公司",
           "company": "中建三局总承包公司",
           "title": "EPC: 2#、3#电芯洁净车间施工",
           "role": "B",
@@ -23929,7 +23929,7 @@
           "signal_date": "2026-08-27T10:30:00+08:00",
           "evidence": [
             {
-              "source_url": "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb0152****0198b",
+              "source_url": "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b",
               "evidence_summary": "原始数据来源"
             }
           ]
@@ -23969,7 +23969,7 @@
           "water_system_ownership": "D",
           "incrementality_status": "unknown",
           "source_urls": [
-            "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb0152****0198b"
+            "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b"
           ],
           "to_verify": {
             "customer_identity": "N/A - 法规层面信号",
@@ -24040,7 +24040,7 @@
               "evidence_summary": "原始数据来源"
             },
             {
-              "source_url": "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb0152****0198b",
+              "source_url": "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b",
               "evidence_summary": "原始数据来源"
             }
           ]
@@ -24086,7 +24086,7 @@
           "source_urls": [
             "https://www.zjcsc.org/2026/0813/10377.html",
             "http://sthj.hlj.gov.cn/sthj/c111946/202608/c00_31966684.shtml",
-            "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb0152****0198b"
+            "https://mp.weixin.qq.com/s?__biz=MzA5MTU4NzgyMA==&mid=2649987289&idx=1&sn=a2bc0f3461462ed7bcb015234570198b"
           ],
           "to_verify": {
             "customer_identity": "需识别5大重点行业中持重点管理排污许可证的具体企业",
@@ -24161,7 +24161,7 @@
               "evidence_summary": "原始数据来源"
             },
             {
-              "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007009/007009001/0070****1001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+              "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007009/007009001/007009001001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
               "evidence_summary": "原始数据来源"
             },
             {
@@ -24224,7 +24224,7 @@
             "http://www.changting.gov.cn/xwzx/gsgg/202603/t20260309_2280146.htm",
             "https://ggzy.longyan.gov.cn/lyztb/gcjs/007005/moreinfo.html",
             "https://baijiahao.baidu.com/s?id=1873426710061627850&wfr=spider&for=pc",
-            "https://ggzy.longyan.gov.cn/lyztb/gcjs/007009/007009001/0070****1001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+            "https://ggzy.longyan.gov.cn/lyztb/gcjs/007009/007009001/007009001001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
             "https://www.tianyancha.com/company/754131859",
             "https://sthjj.longyan.gov.cn/zwgk/xzsp/nspgs/202605/t20260520_2293065.htm"
           ],
@@ -24256,7 +24256,7 @@
           "role_description": "龙岩稀土工业园区污水零直排建设项目招标代理",
           "phone": null,
           "source": "ggzy.longyan.gov.cn",
-          "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/0070****3001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+          "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/007002003001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
           "discovered_by": [
             "DuMate"
           ],
@@ -24282,7 +24282,7 @@
           "role_description": "龙岩稀土工业园区核心企业，稀土冶炼分离+永磁材料",
           "phone": null,
           "source": "ggzy.longyan.gov.cn",
-          "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/0070****3001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
+          "source_url": "https://ggzy.longyan.gov.cn/lyztb/gcjs/007002/007002003/007002003001/20260403/e45972eb-abbb-44a1-826d-e403962250ee.html",
           "discovered_by": [
             "DuMate"
           ],
@@ -25207,7 +25207,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0512-****2346",
+              "value": "0512-65262346",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://szhjrx.langye.net/hpgzcy/gzcy/2022-01-22/353.html",
@@ -25267,7 +25267,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0512-****9298",
+              "value": "0512-67069298",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.tsingcheng.com/service/kangningjierui/",
@@ -25425,7 +25425,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0551-****3893",
+              "value": "0551-63633893",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.huaishang.gov.cn/xwzx/tzgg/5090172.html",
@@ -25585,7 +25585,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0572-****311",
+              "value": "0572-6250311",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://cgtest.sz-water.com.cn:59999/hyzbgg/23363.jhtml",
@@ -25645,7 +25645,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0572-****311",
+              "value": "0572-6250311",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://cgtest.sz-water.com.cn:59999/hyzbgg/23363.jhtml",
@@ -26005,7 +26005,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "010-****7458",
+              "value": "010-51957458",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.zgdlzb.net/news/202508/06/374823.html",
@@ -26073,7 +26073,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "010-****8099",
+              "value": "010-64398099",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.dcpc.com/",
@@ -26231,7 +26231,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0771-****832",
+              "value": "0771-5785832",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://zb.chinalco.com.cn/zbxx/001001/001001005/20260703/5a4b0d0e-b751-49d2-be08-e7eec2e6ff2b.html",
@@ -26602,7 +26602,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0510-****1757",
+              "value": "0510-85211757",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://bigdata.wuxi.gov.cn/doc/2026/06/22/4793763.shtml",
@@ -26662,7 +26662,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0755-****6666",
+              "value": "0755-33386666",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202404271631453959_1.pdf",
@@ -26823,7 +26823,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0731-****0060",
+              "value": "0731-58270060",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
@@ -27215,7 +27215,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "029-****1198",
+              "value": "029-38011198",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://stockmc.xueqiu.com/202603/688498_20260325_ZGGE.pdf",
@@ -27361,7 +27361,7 @@
       "enriched_contacts": [
         {
           "contact_id": "CT-20260819-0089",
-          "name": "太**********",
+          "name": "太仓港经开区行政审批局",
           "company": "政府",
           "title": "审批/公众意见",
           "role": "C",
@@ -27373,7 +27373,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0512-****8013",
+              "value": "0512-56668013",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://www.taicang.gov.cn/taicang/gsgg/202502/eb4a3534b83b4d43bab62ae13f336b73.shtml",
@@ -27519,7 +27519,7 @@
       "enriched_contacts": [
         {
           "contact_id": "CT-20260818-0046",
-          "name": "马*************",
+          "name": "马冠军（同时担任公司总经理）",
           "company": "河南鼎新医药科技有限公司",
           "title": "法定代表人/总经理",
           "role": "D",
@@ -27534,7 +27534,7 @@
           "account_id": "ACC-IND-20260818-010-01",
           "phone": [
             {
-              "value": "0373-****159",
+              "value": "0373-6351159",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.tuoxinpharm.com/article/14.html",
@@ -27751,7 +27751,7 @@
         },
         {
           "contact_id": "CT-20260819-0087",
-          "name": "桓***",
+          "name": "桓台分局",
           "company": "淄博市生态环境局桓台分局",
           "title": "审批窗口",
           "role": "C",
@@ -27763,7 +27763,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0533-****076",
+              "value": "0533-8227076",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.huantai.gov.cn/gongkai/site_zbssthjjhtfj/channel_c_5f9f6c9be592f315dca00fba_n_1605683046.7742/doc_6a631c7897765960288b95f3.html",
@@ -27963,7 +27963,7 @@
         },
         {
           "contact_id": "CT-20260819-0061",
-          "name": "淄**********",
+          "name": "淄博高新区生态环境分局",
           "company": "政府",
           "title": "公众意见窗口",
           "role": "C",
@@ -27975,7 +27975,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0533-****141",
+              "value": "0533-2326141",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "http://www.china-zibo.gov.cn/gongkai/site_gxqhbj/channel_6076a2721887a377796bb7cf/doc_634e0bf5b3c4de005a69989c.html",
@@ -28134,7 +28134,7 @@
           "account_id": "",
           "phone": [
             {
-              "value": "0731-****0060",
+              "value": "0731-58270060",
               "type": "LANDLINE",
               "source_agent": "Perplexity",
               "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225155057.PDF",
