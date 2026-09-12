@@ -59,6 +59,19 @@ def enriched_rows(segment, directory, patterns):
     rows=[]
     for lead_id,(item,contacts,projects,accounts,stamp) in latest.items():
         signal=safe(item.get("original_signal") or {}); evidence=signal.get("evidence") or {}
+        # Dumate stores sales-facing enrichment beside original_signal.  Keep it
+        # with the signal used by the public view instead of dropping it during
+        # the JSON build.
+        for key in ("customer_requirement", "customer_need", "current_solution",
+                    "operational_pain_points", "pain_points", "sales_summary", "time_window_basis",
+                    "validation_questions", "next_validation_questions", "demand_hypothesis", "demand_signals",
+                    "prior_attempts", "why_unresolved"):
+            if item.get(key) is not None:
+                signal[key] = safe(item[key])
+        if not signal.get("to_verify"):
+            signal["to_verify"] = (signal.get("next_validation_questions")
+                                   if signal.get("next_validation_questions") is not None
+                                   else signal.get("validation_questions"))
         linked_projects=[safe(projects[x]) for x in item.get("project_ids") or [] if x in projects]
         linked_accounts=[safe(accounts[x]) for x in item.get("account_ids") or [] if x in accounts]
         if not signal.get("location") and linked_projects:
@@ -133,6 +146,9 @@ def page():
     js = js.replace("s=e.original_signal||{},ev=s.evidence||{},contacts", "s=e.original_signal||{},ev=s.evidence||{},project=(e.projects||[])[0]||{},account=(e.accounts||[])[0]||{},water=project.water_system_details||{},contacts")
     js = js.replace("<section class=\"section amber\"><h3>客户需求与待核实事项</h3>${matrix([['客户需求',s.customer_requirement||s.customer_need],['当前方案／痛点',(ev.inferences||[]).join('；')],['待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')]])}</section>", "<section class=\"section blue\"><h3>项目与系统现状</h3>${matrix([['现有平台',account.existing_digital_platform||account.digitalization_status],['仪表／系统要求',water.instrument_requirements],['当前合作／进展',account.latest_signal]])}</section><section class=\"section amber\"><h3>客户需求与待核实事项</h3>${matrix([['客户明确需求',s.customer_requirement||s.customer_need],['重点待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')],['建议优先确认',account.action_needed||s.pull_box?.next_validation_question]])}</section>")
     js = js.replace("['判断逻辑',s.logic]", "['判断摘要',(ev.inferences||[]).map(x=>String(x).split('。')[0]).filter(Boolean).slice(0,2).join('；')||s.logic]")
+    js = js.replace("['优先级／时间窗口',`${s.priority||s.signal_tier||'未记录'} / ${s.estimated_time_window||'未记录'}`]", "['优先级／时间窗口',`${s.priority||s.signal_tier||'未记录'} / ${s.estimated_time_window||'未记录'}`],['时间窗口依据',s.time_window_basis]")
+    js = js.replace("<section class=\"section blue\"><h3>项目与系统现状</h3>", "<section class=\"section green\"><h3>销售摘要</h3>${matrix([['机会概述',s.sales_summary],['需求假设',s.demand_hypothesis],['既往尝试',s.prior_attempts],['未解决原因',s.why_unresolved]])}</section><section class=\"section blue\"><h3>项目与系统现状</h3>")
+    js = js.replace("['现有平台',account.existing_digital_platform||account.digitalization_status],['仪表／系统要求',water.instrument_requirements]", "['当前方案',s.current_solution||account.existing_digital_platform||account.digitalization_status],['业务痛点',s.operational_pain_points||s.pain_points||water.instrument_requirements]")
     mobile_css = r'''@media(max-width:760px){.back-to-list{display:inline-block;margin:0 0 12px;padding:6px 10px;border:1px solid #b8cbd4;border-radius:8px;background:#fff;color:#0e628c;font:inherit}.show-detail .list{display:none}.show-detail .detail{margin-top:0}}@media(min-width:761px){.back-to-list{display:none}}'''
     mobile_js = r'''if(matchMedia('(max-width:760px)').matches){document.addEventListener('click',event=>{if(event.target.closest('.row'))setTimeout(()=>{document.body.classList.add('show-detail');if(!detail.querySelector('.back-to-list'))detail.insertAdjacentHTML('afterbegin','<button class="back-to-list" type="button">← 返回线索列表</button>');window.scrollTo(0,0)},0)});detail.addEventListener('click',event=>{if(event.target.closest('.back-to-list')){document.body.classList.remove('show-detail');window.scrollTo(0,0)}})}'''
     return f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>靖帆IMS Intelligence</title><style>{css}{mobile_css}</style><main><h1>靖帆IMS Intelligence</h1><p class="muted">工业与市政线索 · 数据自动同步仓库 JSON</p><div class="toolbar"><input id="search" class="search" placeholder="搜索公司、项目、省份、城市、事实或联系人"><div id="segment" class="filters"></div><div id="category" class="filters"></div></div><div class="layout"><aside class="list"></aside><article class="detail"></article></div></main><script type="module">{js}{mobile_js}</script></html>'
