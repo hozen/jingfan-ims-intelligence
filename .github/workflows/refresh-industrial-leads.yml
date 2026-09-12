@@ -1,11 +1,17 @@
-name: Refresh industrial lead data
+name: Refresh RMS lead data
 
 on:
   push:
     branches: [main]
     paths:
       - 'intelligence/industrial/daily/**/*.json'
+      - 'intelligence/industrial/daily/*.json'
       - 'intelligence/industrial/enriched/**/*.json'
+      - 'intelligence/industrial/enriched/*.json'
+      - 'intelligence/municipal/daily/**/*.json'
+      - 'intelligence/municipal/daily/*.json'
+      - 'intelligence/municipal/enriched/**/*.json'
+      - 'intelligence/municipal/enriched/*.json'
       - 'customer/industrial-leads/pipeline-manifest.json'
       - 'scripts/build_industrial_pipeline_view.py'
 
@@ -24,8 +30,8 @@ jobs:
       - run: python scripts/build_industrial_pipeline_view.py
       - name: Commit refreshed page data
         run: |
-          git config user.name 'industrial-leads-bot'
-          git config user.email 'industrial-leads-bot@users.noreply.github.com'
+          git config user.name 'rms-leads-bot'
+          git config user.email 'rms-leads-bot@users.noreply.github.com'
           git add customer/industrial-leads/index.html customer/industrial-leads/leads-data.json
-          git diff --cached --quiet || git commit -m '自动刷新工业线索数据'
+          git diff --cached --quiet || git commit -m '自动刷新 RMS 线索数据'
           git push
