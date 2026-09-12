@@ -1,0 +1,31 @@
+name: Refresh industrial lead data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'intelligence/industrial/daily/**/*.json'
+      - 'intelligence/industrial/enriched/**/*.json'
+      - 'customer/industrial-leads/pipeline-manifest.json'
+      - 'scripts/build_industrial_pipeline_view.py'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    # Generated customer files do not match the trigger paths, preventing loops.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/build_industrial_pipeline_view.py
+      - name: Commit refreshed page data
+        run: |
+          git config user.name 'industrial-leads-bot'
+          git config user.email 'industrial-leads-bot@users.noreply.github.com'
+          git add customer/industrial-leads/index.html customer/industrial-leads/leads-data.json
+          git diff --cached --quiet || git commit -m '自动刷新工业线索数据'
+          git push

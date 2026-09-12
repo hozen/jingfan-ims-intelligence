@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "customer/industrial-leads/index.html"
+DATA = ROOT / "customer/industrial-leads/leads-data.json"
 MANIFEST = ROOT / "customer/industrial-leads/pipeline-manifest.json"
 ENRICHED = ROOT / "intelligence/industrial/enriched/indctx_latest.json"
 DAILY = ROOT / "intelligence/industrial/daily"
@@ -74,6 +75,7 @@ def model():
             row["stage3_detail"] = "DuMate 资料尚未补充。"
     enriched_records, enriched_history = load_enriched_history()
     existing = {row["lead"]["lead_id"] for row in manifest["leads"]}
+    rows_by_id = {row["lead"]["lead_id"]: row for row in manifest["leads"]}
     for lead_id, bundle in enriched_records.items():
         item, contacts = bundle["item"], bundle["contacts"]
         projects, accounts = bundle["projects"], bundle["accounts"]
@@ -94,13 +96,14 @@ def model():
             enriched_contacts.append(contact)
         manifest["leads"].append({"date": row_lead["signal"]["signal_date"], "lead": row_lead, "stage1": "ENRICHED_SOURCE", "stage2": "NOT_RECORDED", "stage3": "ENRICHED", "stage2_detail": "Enriched record contains no Stage 2 decision for this Lead ID.", "stage3_detail": "DuMate 已补充资料。", "stage3_result": None, "enriched_record": item, "enriched_contacts": enriched_contacts, "enriched_projects": [projects[x] for x in item.get("project_ids", []) if x in projects], "enriched_accounts": [accounts[x] for x in item.get("account_ids", []) if x in accounts], "dumate_history": enriched_history.get(lead_id, []), "legacy_match": True})
         existing.add(item.get("lead_id"))
+        rows_by_id[item.get("lead_id")] = manifest["leads"][-1]
     for path in sorted(DAILY.glob("*.json")):
         daily = json.loads(path.read_text(encoding="utf-8"))
         match = re.search(r"\d{4}-\d{2}-\d{2}", path.name)
         report_date = daily.get("report_date") or daily.get("date") or (match.group(0) if match else "未记录")
         for signal in daily.get("signals", []):
             lead_id = signal.get("id")
-            if not lead_id or lead_id in existing:
+            if not lead_id:
                 continue
             project = signal.get("project") or signal.get("opportunity") or signal.get("trigger")
             stage3 = signal.get("stage3_enrichment") or {}
@@ -117,6 +120,20 @@ def model():
             }
             if stage3:
                 display_record["日报附带资料"] = redact_daily_stage3(stage3)
+            if lead_id in existing:
+                # The legacy manifest often contains only a short summary.  A
+                # same-ID Radar record is the authoritative discovery detail;
+                # add it unless DuMate has already supplied a richer record.
+                row = rows_by_id[lead_id]
+                if not row.get("enriched_record"):
+                    row["enriched_record"] = display_record
+                    row["daily_contacts"] = redact_daily_stage3(stage3.get("contacts", {})) if isinstance(stage3, dict) else {}
+                    row["daily_stage3"] = bool(stage3)
+                    row["source_kind"] = "daily_radar"
+                    if stage3:
+                        row["stage3"] = "DAILY_ENRICHMENT"
+                        row["stage3_detail"] = "日报附带资料，不等同于 DuMate 补充。"
+                continue
             manifest["leads"].append({
                 "date": report_date,
                 "lead": {
@@ -140,12 +157,12 @@ def model():
                 "legacy_match": True,
             })
             existing.add(lead_id)
+            rows_by_id[lead_id] = manifest["leads"][-1]
     manifest["lead_count"] = len(manifest["leads"])
     manifest["enriched_contact_count"] = sum(len(x.get("enriched_contacts", [])) for x in manifest["leads"])
     return manifest
 
 def page(m):
-    data = json.dumps(m, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     leads = m["leads"]
     yes = sum(x.get("stage2") == "YES" for x in leads)
     enriched = sum(x.get("stage3") == "ENRICHED" for x in leads)
@@ -155,7 +172,7 @@ def page(m):
 @media(max-width:760px){main{padding:12px}.layout{display:block}.list{position:static;max-height:none;margin-bottom:12px}.detail{padding:13px;scroll-margin-top:10px}.facts{grid-template-columns:1fr 1fr}.row{padding:10px 11px}.toolbar{top:0}.detail h2{font-size:22px}}
 '''
     js = r'''
-const d=JSON.parse(document.getElementById('data').textContent),list=document.querySelector('aside'),detail=document.querySelector('.detail'),search=document.querySelector('#search');let activeFilter='all';
+const d=await fetch('./leads-data.json?'+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('线索数据加载失败');return r.json()}),list=document.querySelector('aside'),detail=document.querySelector('.detail'),search=document.querySelector('#search');let activeFilter='all';
 document.head.insertAdjacentHTML('beforeend','<style>.filters{display:flex;gap:7px;overflow:auto;padding:8px 0 2px}.filter{white-space:nowrap;border:1px solid #b9cbd4;border-radius:99px;padding:8px 12px;background:#fff;color:#17212b;font:inherit;cursor:pointer}.filter.selected{background:#0e628c;border-color:#0e628c;color:#fff}.reports{margin-top:14px}</style>');
 document.querySelector('.toolbar').insertAdjacentHTML('beforeend','<div class="filters" aria-label="筛选线索"><button class="filter selected" data-filter="all">全部</button><button class="filter" data-filter="contacts">已有联系人资料</button><button class="filter" data-filter="yes">国内团队已确认</button><button class="filter" data-filter="todo">待国内团队确认</button><button class="filter export" type="button">导出当前结果 PDF</button></div>');
 document.querySelector('[data-filter="all"]').textContent=`全部（${d.leads.length}）`;document.querySelector('[data-filter="contacts"]').textContent=`已有联系人资料（${d.leads.filter(r=>(r.enriched_contacts||[]).length>0).length}）`;document.querySelector('[data-filter="yes"]').textContent=`国内团队已确认（${d.leads.filter(r=>r.stage2==='YES').length}）`;document.querySelector('[data-filter="todo"]').textContent=`待国内团队确认（${d.leads.filter(r=>r.stage2!=='YES').length}）`;
@@ -173,7 +190,7 @@ document.querySelector('.reports').innerHTML='<details><summary>原始雷达报�
 const esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const status=(x,type)=>{const map={DISCOVERED:'已发现',ENRICHED_SOURCE:'已有补充资料',SOURCE_NOT_LINKED:'未找到对应发现记录',NOT_RUN:'还未判断',NOT_RECORDED:'没有记录',YES:'已确认可以跟进',ENRICHED:'已完成资料补充',BLOCKED:'暂时不能补充资料'};return `<span class="badge ${type}">${esc(map[x]||x||'没有记录')}</span>`};
 const filteredRows=()=>{const q=search.value.trim().toLowerCase();return d.leads.map((r,i)=>({r,i})).filter(({r})=>(activeFilter==='all'||(activeFilter==='contacts'&&(r.enriched_contacts||[]).length>0)||(activeFilter==='yes'&&r.stage2==='YES')||(activeFilter==='todo'&&r.stage2!=='YES'))&&(!q||JSON.stringify(r).toLowerCase().includes(q)))};
-function renderList(){const rows=filteredRows(),days=[...new Set(rows.map(x=>x.r.date))];list.innerHTML=days.length?days.map(day=>`<div class="day">${esc(day)}</div>`+rows.filter(x=>x.r.date===day).map(x=>`<button class="row" data-i="${x.i}"><b>${esc(x.r.lead.lead_id)}</b><span>${esc(x.r.lead.company?.company_name||'公司名称未记录')}</span><small>${esc(x.r.lead.project?.project_name||x.r.lead.signal?.signal_description||'项目名称未记录')}</small></button>`).join('')).join(''):'<div class="empty">没有找到匹配线索</div>';list.querySelectorAll('.row').forEach(x=>x.onclick=()=>{sessionStorage.setItem('industrial-leads-selected',x.dataset.i);show(+x.dataset.i,true);});}
+function renderList(){const rows=filteredRows(),days=[...new Set(rows.map(x=>x.r.date))].sort((a,b)=>String(b).localeCompare(String(a)));list.innerHTML=days.length?days.map(day=>`<div class="day">${esc(day)}</div>`+rows.filter(x=>x.r.date===day).map(x=>`<button class="row" data-i="${x.i}"><b>${esc(x.r.lead.lead_id)}</b><span>${esc(x.r.lead.company?.company_name||'公司名称未记录')}</span><small>${esc(x.r.lead.project?.project_name||x.r.lead.signal?.signal_description||'项目名称未记录')}</small></button>`).join('')).join(''):'<div class="empty">没有找到匹配线索</div>';list.querySelectorAll('.row').forEach(x=>x.onclick=()=>{sessionStorage.setItem('industrial-leads-selected',x.dataset.i);show(+x.dataset.i,true);});}
 function show(i,focus=false){const r=d.leads[i],l=r.lead,z=r.stage3_result||{},ev=l.evidence||[],unknowns=z.unknowns||[];list.querySelectorAll('.row').forEach(x=>x.classList.toggle('active',+x.dataset.i===i));const evidence=ev.length?ev.map(x=>`<li><b>${esc(x.document_title||x.source_type||'来源记录')}</b><br>${esc(x.verbatim_evidence||x.evidence_summary||'没有摘录原文')}<br><a href="${esc(x.canonical_url||x.source_url||'#')}" target="_blank" rel="noreferrer">打开来源</a></li>`).join(''):'<li>没有证据记录</li>';const gap=unknowns.length?unknowns.map(x=>`<li>${esc(typeof x==='string'?x:x.description||JSON.stringify(x))}</li>`).join(''):'<li>Water Clay 没有登记未知项。</li>';const prompt=`请补充线索 ${l.lead_id}：\n1. 找到 Stage 1 原始发现记录，并确认与公司、项目、日期是否一致。\n2. 给出 Stage 2 判断：YES（可以跟进）/ REVIEW（需要人工复核）/ NO（不跟进），并写明事实依据。\n3. 如果是 YES，再补充：项目当前进度、业主/设计/施工/供应商、采购负责人或技术负责人姓名及公开联系方式。\n4. 每条信息附来源链接和原文摘录；没有找到就明确写“未找到”，不要推测。`;detail.innerHTML=`<div class="detail-head"><h2>${esc(l.company?.company_name||'公司名称未记录')}</h2><p class="muted">${esc(l.lead_id)} · ${esc(r.date)} · ${esc(l.company?.location||'地区未记录')}</p><div class="badges">${status(r.stage1,'blue')}${status(r.stage2,r.stage2==='YES'?'green':'amber')}${status(r.stage3,r.stage3==='ENRICHED'?'green':'red')}</div></div><div class="facts"><div class="fact"><label>项目</label>${esc(l.project?.project_name||'未记录')}</div><div class="fact"><label>当前进度（记录值）</label>${esc(l.project?.project_stage||z.main_project_stage?.value||'未记录')}</div><div class="fact"><label>线索来源日期</label>${esc(l.signal?.signal_date||r.date||'未记录')}</div><div class="fact"><label>证据条数</label>${ev.length} 条</div></div><div class="box"><h3>现在能确认的事实</h3><p>${esc(l.signal?.signal_description||'没有信号描述')}</p><p class="muted">${esc(r.stage3_detail||r.stage2_detail||'没有补充说明')}</p></div><details class="box" open><summary>查看来源证据（${ev.length} 条）</summary><ul>${evidence}</ul></details><details class="box"><summary>查看缺口</summary><ul>${r.stage1==='SOURCE_NOT_LINKED'?'<li>这条记录没有找到对应的 Stage 1 原始发现记录。</li>':''}${r.stage2!=='YES'?'<li>没有这条 Lead ID 的 Stage 2 明确判断，因此不能确认是否值得跟进。</li>':''}${r.stage3!=='ENRICHED'?'<li>没有 Stage 3 补充结果；原因是 Stage 2 尚未明确为“可以跟进”。</li>':''}${gap}</ul></details><details class="box prompt"><summary>给工业雷达的补充要求（可复制）</summary>${esc(prompt)}</details>`;if(focus)detail.scrollIntoView({behavior:'smooth',block:'start'});}
 const baseShow=show;show=(i,focus=false)=>{baseShow(i,focus);const r=d.leads[i],e=r.enriched_record,cs=r.enriched_contacts||[];if(!e)return;const s=e.original_signal||{},f=s.evidence||{},rec=e.ims_recommendation||{},phones=c=>{const p=(c.phone||[]).map(x=>x.value).join('、'),m=(c.email||[]).map(x=>x.value).join('、');return [p&&`电话：${esc(p)}`,m&&`邮箱：${esc(m)}`].filter(Boolean).join('；')||'没有公开联系方式'};detail.insertAdjacentHTML('beforeend',`<div class="box"><h3>销售常用信息</h3><div class="facts"><div class="fact"><label>行业</label>${esc(s.industry||'未记录')}</div><div class="fact"><label>线索级别</label>${esc(s.signal_tier||'未记录')}</div><div class="fact"><label>机会阶段</label>${esc(s.opportunity_stage||'未记录')}</div><div class="fact"><label>优先级</label>${esc(s.priority||'未记录')}</div><div class="fact"><label>预计时间</label>${esc(s.estimated_time_window||'未记录')}</div><div class="fact"><label>水系统归属</label>${esc(s.water_system_ownership||'未记录')}</div></div><p>${esc(s.potential_ims_use_case||'未记录')}</p></div><div class="box"><h3>联系人（${cs.length} 人）</h3><ul>${cs.length?cs.map(c=>`<li><b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||'职务未记录')}<br>${phones(c)}<br><span class="muted">来源：${esc((c.discovered_by||[]).join('、')||'未记录')}；证据状态：${esc(c.verification_status||'未记录')}</span></li>`).join(''):'<li>没有关联联系人。</li>'}</ul></div><details class="box"><summary>项目事实、推断与待核实项</summary><p><b>已记录事实</b></p><ul>${(f.facts||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>未记录</li>'}</ul><p><b>待核实</b></p><ul>${(f.unknowns||e.missing_roles||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>未记录</li>'}</ul></details><div class="box"><h3>补充资料中的行动建议</h3><p>${esc(rec.recommended_action||'未记录')}</p></div>`);};
 const oldShow=show;const keyNames={lead_id:'线索编号',company:'公司',company_name:'公司名称',account:'账户',location:'地点',industry:'行业',opportunity:'项目机会',signal_tier:'线索级别',engine:'雷达引擎',evidence:'证据',facts:'已记录事实',inferences:'推断',unknowns:'未知项',potential_ims_use_case:'潜在软件用例',logic:'判断逻辑',opportunity_stage:'机会阶段',estimated_time_window:'预计时间窗口',priority:'优先级',water_system_ownership:'水系统归属',incrementality_status:'新增机会状态',to_verify:'待核实',continuity:'连续性变化',enrichment_status:'资料补充状态',contact_ids:'联系人编号',contact_summary:'联系人概况',missing_roles:'缺失角色',enrichment_sources:'资料来源',ims_recommendation:'软件建议',recommended_action:'建议行动',priority_score:'优先级分数',time_sensitivity:'时间紧迫性',name:'姓名',title:'职务',role:'角色',role_description:'角色说明',contact_status:'联系人状态',current_historical:'当前/历史',evidence_score:'证据分数',commercial_relevance_score:'商业相关性'};
@@ -191,10 +208,11 @@ const savedSearch=sessionStorage.getItem('industrial-leads-search')||'';search.v
 const savedLead=sessionStorage.getItem('industrial-leads-selected');show(savedLead&&d.leads[+savedLead]?+savedLead:0);
 if(window.matchMedia('(min-width:761px)').matches){setInterval(()=>location.reload(),60000);}
 '''
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f3f7f8"><title>工业线索</title><style>{css}</style></head><body><main><p class="muted">IMS GTM · 销售线索</p><h1>工业线索</h1><p class="intro muted">按日期找线索。页面只显示资料里已经写明的事实。</p><div class="toolbar"><input id="search" class="search" aria-label="搜索线索" placeholder="搜索公司、项目或线索编号…"></div><div class="stats"><div class="stat"><b>{len(leads)}</b><span>全部线索</span></div><div class="stat"><b>{yes}</b><span>已确认可跟进</span></div><div class="stat"><b>{enriched}</b><span>已补充资料</span></div></div><div class="layout"><aside class="list" aria-label="线索列表"></aside><section class="detail" aria-live="polite"></section></div><p class="muted" style="margin-top:12px">资料负责人：国内团队 · 电脑端每 60 秒自动检查更新 · 本页不自动猜测、不自动改变线索状态</p></main><script id="data" type="application/json">{data}</script><script>{js}</script></body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f3f7f8"><title>工业线索</title><style>{css}</style></head><body><main><p class="muted">IMS GTM · 销售线索</p><h1>工业线索</h1><p class="intro muted">按日期找线索。页面只显示资料里已经写明的事实。</p><div class="toolbar"><input id="search" class="search" aria-label="搜索线索" placeholder="搜索公司、项目或线索编号…"></div><div class="stats"><div class="stat"><b>{len(leads)}</b><span>全部线索</span></div><div class="stat"><b>{yes}</b><span>已确认可跟进</span></div><div class="stat"><b>{enriched}</b><span>已补充资料</span></div></div><div class="layout"><aside class="list" aria-label="线索列表"></aside><section class="detail" aria-live="polite"></section></div><p class="muted" style="margin-top:12px">资料负责人：国内团队 · 电脑端每 60 秒自动检查更新 · 本页不自动猜测、不自动改变线索状态</p></main><script type="module">{js}</script></body></html>'''
 
 if __name__ == "__main__":
     m = model()
     PAGE.parent.mkdir(parents=True, exist_ok=True)
+    DATA.write_text(json.dumps(m, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"), encoding="utf-8")
     PAGE.write_text(page(m), encoding="utf-8")
     print(f"Built mobile fact-first page for {len(m['leads'])} records")
