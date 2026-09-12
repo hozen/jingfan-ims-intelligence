@@ -60,6 +60,13 @@ def load_enriched_history():
 
 def model():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    # These are Water Clay fixture outputs without a linked industrial discovery
+    # record.  They are useful for pipeline testing but must not enter the
+    # industrial sales view (one is a municipal sewage-plant project).
+    manifest["leads"] = [
+        row for row in manifest["leads"]
+        if row.get("stage1") != "SOURCE_NOT_LINKED"
+    ]
     enriched_records, enriched_history = load_enriched_history()
     existing = {row["lead"]["lead_id"] for row in manifest["leads"]}
     for lead_id, bundle in enriched_records.items():
