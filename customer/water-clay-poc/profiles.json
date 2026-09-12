@@ -161,6 +161,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "襄阳楚能新能源锂离子电池及系统制造基地(襄阳楚能新能源70GWh锂电池项目)",
+        "unavoidable": "省级重点项目，占地1475亩，建筑面积80万m²",
+        "limitations": "锂电池生产废水含重金属、有机溶剂、酸碱废水，需专业处理",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "电池废水处理监测、重金属/有机物在线监测、合规记录自动化",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "襄阳基地污水站是否已建成或正在建设中"
+      },
       "next_action": "1) 确认楚能孝感/宜昌基地是否已有Hach装机；2) 通过中铁建设集团/中建三局了解污水站设计与施工方；3) 紧急接触楚能襄阳基地EHS团队(组建中)；4) 投产前冲刺期(2026年5-8月)为关键窗口"
     },
     {
@@ -315,6 +327,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "海力士非易失性存储器项目(二号工厂/二厂) — 2022年5月16日在大连金普新区举行开工仪式, 全称为'爱思开海力士·英特尔DMTM半导体(大连)有限公司非易失性存储器项目'",
+        "unavoidable": "SK海力士2026年上半年恢复大连2号工厂投资并重启施工",
+        "limitations": "2号工厂投产将增加废水产生量，可能需要扩展废水处理能力",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "半导体工厂废水处理监测、在线监测数据管理、合规记录自动化",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "2号工厂是否新建独立废水处理设施还是扩展现有设施"
+      },
       "next_action": "1) 确认Hach是否已在1号工厂有装机；2) 通过十一科技(EDRI)EPC渠道了解二厂水处理系统设计；3) 2026年Q3-Q4关键采购窗口前接触SK海力士/Solidigm大连EHS团队"
     },
     {
@@ -457,6 +481,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "内蒙古金友化工有限责任公司环保治理设施技术改造项目",
+        "unavoidable": "金友化工/诚信永安/晨宏力化工/沙洲化学科技4家企业实施节水技改",
+        "limitations": "零排放和回用系统需要大量水质监测仪表(COD/氨氮/盐度/电导率等)",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "化工废水零排放监测、MVR过程控制监测、回用水质在线监测、合规记录自动化",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "各企业现有监测仪表品牌和配置"
+      },
       "next_action": "1) 通过北京绿邦环保了解晨宏力化工水处理仪表选型；2) 联系阿拉善高新区环保分局(0483-8799905)获取4家企业排污许可信息；3) 重点关注MVR/RO/三效蒸发系统的过程监测仪表需求；4) 部分项目已投运，存在仪表升级/维护需求"
     },
     {
@@ -572,6 +608,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "2026年度向特定对象发行A股股票（8.41亿元定增）——聚焦创新医药CDMO六大募投项目",
+        "unavoidable": "8月11日公告，拟定增募资不超8.41亿元",
+        "limitations": "原料药/中间体生产产生高浓度有机废水、高氨氮废水",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "制药废水处理监测、高氨氮/高COD在线监测、合规记录自动化",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "各项目环评批复状态"
       },
       "next_action": "1) 确认雅本化学太仓/南通基地是否已有Hach装机；2) 跟踪定增审核进度及各项目环评公示；3) 重点关注上虞基地2019吨原料药项目(投资2.8亿)的水系统设计；4) 采购窗口2027-2028"
     },
@@ -724,6 +772,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "河南鼎新医药科技有限公司年产860吨医药中间体及现有产品产能优化改造项目",
+        "unavoidable": "新乡市生态环境局2026-08-11环评审批公示",
+        "limitations": "现有污水处理站已有完整处理工艺，可能需要监测仪表升级",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "制药废水处理监测、现有污水站仪表升级、深度脱氮工艺监测",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "现有污水处理站监测仪表品牌"
+      },
       "next_action": "1) 确认拓新药业集团是否已有Hach装机；2) 了解产品结构调整对废水水质的影响；3) 关注现有在线监测仪表是否需升级；4) 采购窗口2026年Q4(较短)"
     },
     {
@@ -821,6 +881,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "源杰半导体科技产业园",
+        "unavoidable": "8月11日公告，投资42.68亿元建设半导体科技产业园",
+        "limitations": "半导体芯片生产需超纯水和废水处理系统",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "半导体产业园水系统监测、超纯水质量监测、废水排放合规监测",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "项目是否包含独立废水处理设施"
       },
       "next_action": "1) 跟踪环评公示(预计2026-Q4至2027-Q1)；2) 关注西咸新区沣西新城环保局动态；3) 源杰科技为科创板上市企业(688498)，可从年报/ESG报告获取水系统信息；4) 采购窗口2027-2028"
     },
@@ -1042,6 +1114,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "unknown",
+        "unavoidable": "惠州市生态环境局2026-08-14建设项目受理信息公示",
+        "limitations": "电池材料生产可能产生含重金属/酸碱废水",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "电池材料生产废水监测(如涉及水系统)",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "项目具体内容和规模(未获取环评报告全文)"
       },
       "next_action": "1) 跟踪环评批复(预计2026-Q4)；2) 项目建设期2026年12月起，EPC尚未招标；3) 关注生产废水回用系统的水质监测需求(虽不外排但回用需水质控制)；4) 贝特瑞集团(920185.BJ)体量大，可从集团层面接触"
     },
@@ -1269,6 +1353,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "半导体零部件研发生产基地项目",
+        "unavoidable": "臻宝科技落子武汉光谷，投资5.2亿建设半导体零部件研发生产基地",
+        "limitations": "半导体零部件生产可能涉及清洗工艺，需要纯水和废水处理",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "半导体零部件生产水系统监测",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "具体生产工艺是否产生大量工业废水"
+      },
       "next_action": "1) 跟踪武汉东湖新技术开发区环评公示；2) 关注臻宝科技(688797)后续公告；3) 重庆总部环评已获批(渝(九)环准〔2026〕11号)，可参考其水系统设计；4) 采购窗口2027-2029"
     },
     {
@@ -1347,6 +1443,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "生态环境法典施行强化排污许可核心地位与自动监测义务",
+        "unavoidable": "《中华人民共和国生态环境法典》2026-08-15正式施行，环境保护法等10部法律同时废止",
+        "limitations": "法典施行后，重点管理排污单位的自动监测设备安装/联网/运维需求将强化",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "合规引擎(国务院令第831号监管记录自动化)直接相关；自动监测义务强化可能推动仪表新增需求，iMS可提供监测数据管理与合规记录",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "法典是否直接导致新的监测因子要求变化"
+      },
       "next_action": null
     },
     {
@@ -1418,6 +1526,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "法典明确自行监测6项全流程合规义务与16种违法情形",
+        "unavoidable": "法典第183条要求所有排污许可管理单位制定自行监测方案",
+        "limitations": "企业自行监测合规成本上升，可能寻求第三方监测服务或自动化监测方案",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "iMS可提供自行监测数据管理、自动监测设备运维记录、合规报告自动生成",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "法典对监测仪表技术规格的具体要求"
       },
       "next_action": null
     },
@@ -1491,6 +1611,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "嘉兴市污染源自动监控管理办法修正(2026-08-15施行)",
+        "unavoidable": "嘉兴市人民政府令第57号修正《嘉兴市污染源自动监控管理办法》，2026-08-15施行",
+        "limitations": "嘉兴市工业企业可能面临自动监测设备升级或新增需求",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "自动监测设备安装/验收/运维合规记录自动化",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "嘉兴市重点排污单位中5大行业的具体企业名单"
+      },
       "next_action": null
     },
     {
@@ -1562,6 +1694,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "厦门市生态环境影响评价与排污许可综合管理名录(2026年版)发布",
+        "unavoidable": "厦门市生态环境局2026-08-12发布综合管理名录(2026年版)",
+        "limitations": "厦门市新建工业项目环评与排污许可管理更精细化",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "新建项目环评→排污许可→监测仪表需求链条",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "具体哪些行业/项目类型受影响最大"
+      },
       "next_action": null
     },
     {
@@ -1626,6 +1770,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "LFP 16万吨基地建设",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": "FILL_MISSING_ROLE"
     },
@@ -1692,6 +1848,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "化工园区废水处理厂3万m3/d",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": "FILL_MISSING_ROLE"
     },
     {
@@ -1756,6 +1924,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "550吨富马酸喹硫平项目",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": "FILL_MISSING_ROLE"
     },
@@ -1822,6 +2002,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "两项中标项目(有色冶炼+新能源电池材料)",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": "FILL_MISSING_ROLE"
     },
     {
@@ -1886,6 +2078,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "20万吨磷酸铁前驱体项目",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -1952,6 +2156,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "25万吨LFP扩建",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": "FILL_MISSING_ROLE"
     },
     {
@@ -2016,6 +2232,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "3万吨废旧锂电池回收",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2082,6 +2310,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "锂电池回收已投产-Aftermarket",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2146,6 +2386,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "临港Fab9+各基地扩产",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2212,6 +2464,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "全厂工业废水处理EPC",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2276,6 +2540,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "70GWh锂电池基地",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2342,6 +2618,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "二厂扩产+环保/水处理",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2406,6 +2694,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "工业污水处理EPC",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2472,6 +2772,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "10000t/d工业污水EPC",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2536,6 +2848,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "5万m3/d工业污水EPC+管网",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2602,6 +2926,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "固态电池基地",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2666,6 +3002,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "磷酸铁扩建",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2732,6 +3080,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "正极材料扩建+中试",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2796,6 +3156,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "60GWh电池基地",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2862,6 +3234,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "半导体中试平台",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -2926,6 +3310,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "原料药+环保改造",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -2992,6 +3388,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "煤山污水处理厂及管网",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -3056,6 +3464,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "原料药二期2.43亿",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -3122,6 +3542,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "生物制药基地",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -3186,6 +3618,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "自动化改造项目",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -3252,6 +3696,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "医药中间体产能优化",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -3316,6 +3772,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "农药原药扩建",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -3382,6 +3850,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "半导体芯片基地",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": null
     },
     {
@@ -3446,6 +3926,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "半导体零部件研发生产",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": null
     },
@@ -3529,6 +4021,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "生态环境法典2026-08-15施行 - 排污许可重点管理单位法定自动监测义务",
+        "unavoidable": "生态环境法典2026-08-15施行，5编1242条，废止10部单行法律",
+        "limitations": "第二批Q4 2026覆盖石化/化工/印染/电镀行业，这些行业企业将需要更新排污许可证并可能新增自动监测设备",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "排污许可重点管理单位自动监测义务 - 在线水质监测(COD/氨氮/总磷/总氮/重金属) + IMS合规引擎",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "具体哪些企业将被纳入排污许可重点管理(需逐省核查名录)"
+      },
       "next_action": null
     },
     {
@@ -3611,6 +4115,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "环办水体〔2026〕13号 - 八部门联合通知加强工业污水污染风险防范",
+        "unavoidable": "生态环境部等八部门联合印发环办水体〔2026〕13号",
+        "limitations": "工业园区污水集中处理设施改造将产生水质监测仪表需求",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "工业园区污水集中处理在线监测 + 特征污染物监测 + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "具体哪些园区将被优先整治"
+      },
       "next_action": null
     },
     {
@@ -3691,6 +4207,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "多省市地方性法规集中修改 - 排污许可重点管理单位自动监测要求写入地方法规",
+        "unavoidable": "广东省修订水污染防治条例/大气污染防治条例/环境保护条例，2026-08-15施行",
+        "limitations": "全国性地方立法集中升级自动监测要求",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "地方合规驱动的自动监测设备升级 - 在线水质监测 + IMS合规引擎",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "地方执法力度和时间表"
       },
       "next_action": null
     },
@@ -3774,6 +4302,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "宁德时代厦门零碳科技城 - 高性能电池生产基地建设",
+        "unavoidable": "宁德时代零碳科技(厦门)有限公司2026年6月完成注册，注册资本100亿元",
+        "limitations": "新建大型电池生产基地必然需要工业废水处理系统(含重金属废水)",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "电池制造废水在线监测(重金属/氟化物/COD) + 零碳工厂水管理 + IMS生命周期智能",
+        "delivery_mode": "Integrate",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "水系统建设具体进度和招标时间"
       },
       "next_action": "Search EHS/water treatment managers at CATL Xiamen base"
     },
@@ -3866,6 +4406,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "比亚迪徐州钠电池基地 - 总投资100亿元，一期15GWh",
+        "unavoidable": "比亚迪与淮海控股2023年6月签署战略合作协议，以合资公司方式在徐州经开区建设钠离子电池生产基地(来源：OFweek锂电)",
+        "limitations": "项目已进入规模化出货阶段(2026年2月首批下线)，一期厂房和设备已完成，水系统建设大概率已完成",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "钠电池制造废水在线监测(二期扩容) + 水系统生命周期智能管理(一期存量机会)",
+        "delivery_mode": "Integrate",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "一期水系统的具体承建方、技术方案、监测仪表配置"
+      },
       "next_action": "Identify BYD Xuzhou EPC contractor for water treatment system"
     },
     {
@@ -3957,6 +4509,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "中芯国际Q2资本开支18.357亿美元 - 12英寸产线扩充",
+        "unavoidable": "中芯国际2026Q2资本开支18.357亿美元，环比增长17.5%",
+        "limitations": "CapEx 18.357亿美元/季度是财务指标，实际月产能仅增1.7%(107.83→109.65万片)，说明大部分CapEx用于设备采购和先进制程研发，非全部用于新建厂房",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "临港Fab9二期水系统EPC由谁承建(是否已招标)"
+      },
       "next_action": "Search SMIC environmental/water treatment contacts at 12-inch fabs"
     },
     {
@@ -4035,6 +4599,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "湖南裕能240亿元80万吨磷酸铁锂项目",
+        "unavoidable": "湖南裕能拟投资240亿元建设80万吨磷酸铁锂等项目",
+        "limitations": "大规模正极材料生产需要配套废水处理系统",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "正极材料生产废水在线监测(总磷/铁/锂/COD) + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "项目具体选址和水系统建设方案"
       },
       "next_action": "Contact 湖南蓝方环保科技 for introduction to 湖南裕能 EHS team"
     },
@@ -4116,6 +4692,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "苏州二叶制药扩建肝素系列原药项目 - 省生态环境厅审批公示",
+        "unavoidable": "江苏省生态环境厅2026-08-17审批公示",
+        "limitations": "原料药扩建项目需要配套废水处理设施",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "制药废水在线监测(COD/氨氮/总磷/特征污染物) + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "项目规模和具体废水处理方案"
+      },
       "next_action": "Contact 江苏省环境工程技术有限公司 for 苏州二叶制药 project details"
     },
     {
@@ -4195,6 +4783,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "多氟多南宁四工厂30GWh锂电池项目 - 总投资35亿元",
+        "unavoidable": "广西南宁青秀生态环境局公示",
+        "limitations": "大型电池工厂建设需要配套工业废水处理系统",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "锂电池制造废水在线监测 + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "水系统建设方案和供应商"
+      },
       "next_action": "Search 宁福新能源 EHS manager via recruitment channels"
     },
     {
@@ -4273,6 +4873,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "万华化学福建48万吨甲醛项目 - MDI产业链配套",
+        "unavoidable": "万华福建工业园48万吨/年甲醛项目环评报告书(公示稿)已发布",
+        "limitations": "甲醛生产废水含甲醛/甲醇/甲酸等有机物，需专门处理",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "化工废水在线监测(COD/甲醛/甲醇/特征污染物) + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "新增废水处理设施的具体需求"
       },
       "next_action": "Search 万华环保科技(福建) water treatment manager"
     },
@@ -4354,6 +4966,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "杰瑞再生循环重庆锂电回收场站投产 - 年产能1.5万吨",
+        "unavoidable": "2026年7月31日重庆长寿经开区投产",
+        "limitations": "锂电回收过程产生含重金属/酸碱废水",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "锂电回收废水在线监测(重金属/pH/COD) + IMS合规引擎",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "现有水系统配置情况"
+      },
       "next_action": "Contact 中壹建安(重庆)科技 for 杰瑞锂电回收 project water system details"
     },
     {
@@ -4415,6 +5039,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "原料药产业化基地二期项目环评审批通过（蚌环许〔2026〕87号），新增原料药17吨/年产能",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": "安徽渠源药业有限公司 - pharma - Design"
     },
@@ -4496,6 +5132,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "年产100吨特色原料药生产线项目(投资1.93亿) + 年产5亿片司美格鲁肽片项目(投资7283万) + 扬州5个原料药项目(投资1.57亿)",
+        "unavoidable": "奥锐特药业(605116.SH)成立于1998年，2020年9月上市，注册资本4.01亿元",
+        "limitations": "多个项目同时进行(台州100吨原料药+司美格鲁肽片+扬州5个原料药)，表明企业在扩张期",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "制药废水处理系统扩容监测 + 新增生产线水质监测 + 在线COD/氨氮监测",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "100吨特色原料药项目的具体建设进度(是否已开工/投产)"
+      },
       "next_action": "奥锐特药业有限公司 - pharma - Planning"
     },
     {
@@ -4557,6 +5205,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "芦荟大黄素+双醋瑞因原料药项目环评 (8500万投资)",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": "台州达辰药业有限公司 - pharma - Planning"
     },
@@ -4635,6 +5295,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "搜索未找到5-氟胞嘧啶150t/a→450t/a项目；发现其他项目：年产100吨辅酶Q10及300吨阿昔洛韦项目",
+        "unavoidable": "新乡华康制药有限公司：注册资本100万元，成立日期2023-05-16，法定代表人张志强，位于延津县产业集聚区北区建文路16号(来源：BOSS直聘)",
+        "limitations": "5-氟胞嘧啶150t/a→450t/a项目信息可能来自非公开渠道或内部信息，无法公开验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "制药废水在线监测(如项目存在且涉及水系统建设)",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "5-氟胞嘧啶150t/a→450t/a项目是否存在(原始信号可能基于非公开信息)"
+      },
       "next_action": "新乡华康制药有限公司 - pharma - Design"
     },
     {
@@ -4697,6 +5369,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "860吨医药中间体技改项目环评",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
+      },
       "next_action": "河南鼎新医药科技有限公司 - pharma - Planning"
     },
     {
@@ -4758,6 +5442,18 @@
           "下游核心客户/应用行业",
           "股权比例与最终受益主体"
         ]
+      },
+      "pull": {
+        "job": "第二污水处理厂EPC项目 (2.07亿，暂停中)",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "尚未证明软件能够改善客户结果",
+        "delivery_mode": "Needs Validation",
+        "verdict": "尚未形成软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "客户当前如何完成这项工作，最耗时或最容易失败的环节是什么？"
       },
       "next_action": "云南泸西产业园区 - cross_industry - Paused"
     },
@@ -4840,6 +5536,18 @@
           "股权比例与最终受益主体"
         ]
       },
+      "pull": {
+        "job": "福建(龙岩)稀土工业园区污水零直排建设项目(一期) — 园区级基础设施",
+        "unavoidable": "福建(龙岩)稀土工业园区污水零直排建设项目用地控制性详细规划(草案)已于2026年3月5日通过审查并批前公告，公告期15天(来源：长汀县自然资源局)",
+        "limitations": "污水零直排建设项目(一期)已从规划阶段进入招标/执行阶段，是明确的园区级环保基础设施项目",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "园区工业废水集中处理监测 + 稀土冶炼废水在线监测(重金属/酸碱/pH/COD) + 零排放系统监测",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "污水零直排建设项目(一期)的具体建设内容、投资规模、技术方案"
+      },
       "next_action": "福建龙岩稀土工业园区 - petrochemical - Execution"
     },
     {
@@ -4904,6 +5612,18 @@
           "股权比例"
         ]
       },
+      "pull": {
+        "job": "合肥水务集团智慧水厂2.0设备健康诊断与多站点管理",
+        "unavoidable": "官网更新：智慧水厂2.0、五水厂DN1800原水管迁改、营商服务8.0版。2026年招标含安全生产自评、进气排气阀、管线警示桩",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "Instrument Health Diagnostics / Multi-site Management / Asset Management",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "工程建设部负责人"
+      },
       "next_action": "确认最关键的组织角色和当前项目窗口"
     },
     {
@@ -4967,6 +5687,18 @@
           "所属水厂/污水厂/运营单位",
           "股权比例"
         ]
+      },
+      "pull": {
+        "job": "瀚蓝环境-佛山南海区供水管网漏损治理智慧化项目",
+        "unavoidable": "西部片区智慧化漏损治理项目中标(2026-08-18)，荣鸿建工集团1317万，工期183天。仪表工招聘6K-10K(泉州/漳州)",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "Multi-site Management / Digital Operations",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "工程部负责人"
       },
       "next_action": "瀚蓝环境：通过供水事业部跟踪西部片区漏损治理项目仪表采购需求"
     },
@@ -5188,6 +5920,23 @@
           "股权比例"
         ]
       },
+      "pull": {
+        "job": "紫金县13个镇级污水处理厂水质在线监测系统运维服务",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "Multi-site Management / Instrument Health Diagnostics",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": {
+          "account_name": "合肥水务集团",
+          "role": "工程建设部负责人",
+          "priority": "P1",
+          "search_suggestion": "通过已识别联系人引荐或搜索招标公告/招聘信息"
+        }
+      },
       "next_action": "确认最关键的组织角色和当前项目窗口"
     },
     {
@@ -5407,6 +6156,23 @@
           "所属水厂/污水厂/运营单位",
           "股权比例"
         ]
+      },
+      "pull": {
+        "job": "广州市饮用水水源地水质自动监测站建设项目",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "Instrument Monitoring / Data Quality",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": {
+          "account_name": "合肥水务集团",
+          "role": "工程建设部负责人",
+          "priority": "P1",
+          "search_suggestion": "通过已识别联系人引荐或搜索招标公告/招聘信息"
+        }
       },
       "next_action": "确认最关键的组织角色和当前项目窗口"
     },
@@ -5628,6 +6394,23 @@
           "股权比例"
         ]
       },
+      "pull": {
+        "job": "南县第一污水处理厂设备更新改造项目(二期)智慧水务系统",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "Digital Operations / Unknown",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": {
+          "account_name": "合肥水务集团",
+          "role": "工程建设部负责人",
+          "priority": "P1",
+          "search_suggestion": "通过已识别联系人引荐或搜索招标公告/招聘信息"
+        }
+      },
       "next_action": "确认最关键的组织角色和当前项目窗口"
     },
     {
@@ -5688,6 +6471,18 @@
           "股权比例"
         ]
       },
+      "pull": {
+        "job": "鹰潭市余江区城镇智慧供水建设工程EPC+O",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "智慧水务控制中心+多站点管理+10年运营管理+设备运维",
+        "delivery_mode": "Extend",
+        "verdict": "可验证的软件 PULL",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "生产科负责人"
+      },
       "next_action": "鹰潭余江EPC+O项目：联系江通水利(18770101536)确认仪表采购计划，通过江川水务生产科切入设备选型"
     },
     {
@@ -5747,6 +6542,18 @@
           "所属水厂/污水厂/运营单位",
           "股权比例"
         ]
+      },
+      "pull": {
+        "job": "红寺堡水务公司数字化转型项目",
+        "unavoidable": "尚未找到客户必须完成该工作的直接证据",
+        "limitations": "现有工作流、系统覆盖和失败成本待验证",
+        "instrument_supply": "用在线仪表提供连续、可信、可追溯的现场数据；具体测量点与数据质量需按项目验证",
+        "software_supply": "4座水厂集控+GIS+DMA漏损管控+设备运维+调度中心",
+        "delivery_mode": "Needs Validation",
+        "verdict": "软件增量价值待验证",
+        "score": null,
+        "score_detail": {},
+        "validation_question": "调度中心负责人"
       },
       "next_action": "红寺堡水务：通过宁夏水务集团(李志军)切入，了解4座水厂仪表品牌和智能化管控技术栈"
     }

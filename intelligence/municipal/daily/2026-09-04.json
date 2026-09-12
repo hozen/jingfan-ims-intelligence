@@ -1,0 +1,462 @@
+{
+  "report_id": "RPT-20260904-IMS-GTM-RADAR",
+  "date": "2026-09-04",
+  "version": "3.2",
+  "scanner_summary": {
+    "total_scanned": 72,
+    "valid_triggers": 12,
+    "p1_count": 0,
+    "p2_count": 4,
+    "p3_count": 1,
+    "industry_trigger_count": 4,
+    "ecosystem_trigger_count": 3,
+    "policy_trigger_count": 3,
+    "competitive_trigger_count": 2,
+    "trigger_breakdown": {
+      "项目": 4,
+      "客户变化": 2,
+      "行业": 4,
+      "生态": 3,
+      "政策": 3,
+      "竞争": 2
+    }
+  },
+  "top_5_match": [
+    {
+      "name": "合肥水务集团排水管网全面接管7236km+250座泵站",
+      "trigger_type": "Account",
+      "public_signal_score": 76,
+      "priority": "P2",
+      "match_reason": "管理范围从供水扩展至排水全链条，站点规模大幅增加，multi-site management需求强化",
+      "agent_checklist": "验证合肥水务集团是否已有iMS；排水管网接管后仪表资产管理规划",
+      "sector": "municipal"
+    }
+  ],
+  "opportunities": [
+    {
+      "name": "合肥水务集团排水管网全面接管7236km+250座泵站-管理规模扩展",
+      "trigger_type": "Account",
+      "public_facts": "合肥水务集团2024年8月30日成立，两周年总结显示：推进'原水、供水、排水、净水'全链条协同治理，加速向'投建管运'一体化管控模式转型。供排水规模518万立方米/日。2026年底前将全面接管区级7236公里公共排水管网和250座泵站（目前已接管市级1579公里管网、58座泵站）。供水出厂水、管网水97项检测指标均优于国家标准。",
+      "ai_judgment": "合肥水务集团管理范围从供水扩展至排水全链条，2026年底前将全面接管区级7236公里排水管网和250座泵站——这意味着管理站点数量将出现阶跃式增长。逻辑链：水务一体化→管理范围急剧扩大（+7236km管网+250泵站）→多站点管理复杂度上升→仪表/设备资产管理需求强化→Potential iMS Use Case强化。此为既有Opportunity的连续性更新：管理规模扩展进一步验证了multi-site management和asset management的核心假设。但具体数字化项目时间表未公开。",
+      "potential_ims_use_case": "Multi-site Management / Asset Management",
+      "opportunity_stage": "战略规划",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "水务一体化→排水管网全面接管→站点规模阶跃增长→multi-site management+asset management需求强化。逻辑链完整。",
+      "to_verify": {
+        "customer_identity": "合肥水务集团是否为Hach战略客户？Salesforce Account状态？",
+        "installed_base": "合肥水务集团下辖水厂/泵站的Hach仪表装机量？排水管网接管后新增仪表需求？",
+        "commercial_history": "合肥水务集团历史Hach销售/Opportunity/Pipeline？服务合同状态？",
+        "ims": "合肥水务集团是否已有iMS或类似数字化产品？排水管网接管是否触发新的数字化管理需求？",
+        "account_sales": "安徽区域Account Owner？合肥水务集团客户关系等级？"
+      },
+      "score": 76,
+      "score_breakdown": {
+        "signal_strength": 15,
+        "ims_relevance": 14,
+        "project_customer_stage": 11,
+        "timing": 10,
+        "scale": 10,
+        "ecosystem_influence": 8,
+        "evidence_quality": 8
+      },
+      "confidence": "medium-high",
+      "source_url": "http://ah.people.com.cn/n2/2026/0830/c227131-41681738.html",
+      "source_type": "人民网官方媒体",
+      "continuity": {
+        "first_seen": "2026-08-19",
+        "new_facts_today": "排水管网全面接管区级7236公里+250座泵站；供排水规模518万立方米/日；投建管运一体化转型",
+        "changed": true
+      },
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS",
+      "estimated_time_window_basis": "v3.5 修订：原 v3.2 档位 6-12 months 非 v3.5 档位体系，按战略规划阶段绑定规则修正为 >9 months",
+      "action_triad": {
+        "find_who": "合肥水务集团设备管理/数字化部门（排水管网专项负责人）、区级泵站运营单位",
+        "talk_what": "250座泵站的在线监测覆盖现状，排水管网接管后的统一监控平台规划，仪表资产管理需求",
+        "why_now": "管网接管刚完成、管理规模阶跃，集团化统一管理的数字化建设处于需求定义早期"
+      },
+      "v35_revision_note": [
+        "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
+      ]
+    }
+  ],
+  "industry_triggers": [
+    {
+      "name": "城市更新十五五规划-供水管网17.5万公里改造+1600亿中央财政",
+      "description": "《城市更新'十五五'规划》提出建设改造城市地下管网约77万公里，其中供水管网约17.5万公里。2026年中央财政支持城市地下管网建设改造资金规模达1600亿元，比上一年增加250亿元。管网大规模更新背后意味着数字化监测、漏损治理等配套需求增加。",
+      "ims_relevance": "管网改造→在线监测仪表需求→多站点管理需求。但主要驱动管网监测（压力/流量/水质），iMS价值在于仪表资产管理。",
+      "source_url": "https://finance.eastmoney.com/a/202608313860510620.html"
+    },
+    {
+      "name": "水务行业从规模扩张转向存量深耕-绿城水务/聊城水务年报信号",
+      "description": "绿城水务2026年中报明确行业主线从新增产能建设转向存量设施提质增效。聊城水务集团提出'存量深耕夯实民生底盘，创新转型激活增长动能'，行业聚焦数智化转型。",
+      "ims_relevance": "存量深耕→存量仪表管理/运维需求→iMS在存量市场的价值凸显。",
+      "source_url": "https://stock.stockstar.com/RB2026090300030711.shtml"
+    },
+    {
+      "name": "威立雅3.43亿欧元微电子水处理订单-超纯水+废水回用+ZLD全链条",
+      "description": "威立雅拿下微电子领域水处理订单3.43亿欧元，含新加坡新建晶圆厂超纯水系统+美国生产基地深度污水回用与ZLD。目标2030年数据中心+微电子板块年收入10亿欧元。",
+      "ims_relevance": "微电子水处理市场规模确认→晶圆厂水系统仪表密集→工业iMS潜在场景。但威立雅是EPC层面竞争对手/合作伙伴，iMS需通过EPC切入。",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MjM5NDMzMDEyNg==&mid=2649963179"
+    },
+    {
+      "name": "工业水大会(宁波10月29-31日)-含半导体&数据中心节水+循环水智能管控专题",
+      "description": "第46届工业水大会设置'半导体&数据中心节水与水资源管理'和'工业循环水智能管控与节能降碳'专题分会场。",
+      "ims_relevance": "工业水处理行业关注点向半导体/数据中心+智能管控聚焦→iMS在工业循环水智能管控领域有机会。",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MjM5NDMzMDEyNg==&mid=2649963191"
+    }
+  ],
+  "ecosystem_triggers": [
+    {
+      "name": "威派格-六张网机遇下从硬件到全生命周期管理转型",
+      "description": "威派格（603956）在'十五五'六张网建设机遇下，布局从水源地到水龙头全链条：智能模块化水厂+加压泵站+二次供水+管网GIS+DMA分区计量+智能水表+数据治理平台。研究院院长薛浩表示未来水务建设从单纯建设向'建设、管理、运维、服务'全生命周期管理转变。2026年上半年营收1.41亿元（同比-57.41%），净利润亏损1.3亿元。",
+      "role": "数字化公司/系统集成商",
+      "ims_relevance": "威派格正在构建'硬件+软件+服务'全链条，其'全生命周期管理'理念与iMS价值主张高度重叠。但其半年报显示营收大幅下滑，可能处于转型阵痛期。",
+      "source_url": "https://finance.eastmoney.com/a/202608313860510620.html"
+    },
+    {
+      "name": "高频科技-半导体超纯水全生命周期价值(含数字化运维平台)",
+      "description": "高频科技在IC WORLD 2026展示超纯水系统供应+半导体超纯水运维服务+BOO/BOT服务+半导体超纯水运维数字化平台+水处理专用药剂+耗材。宣称覆盖从项目建设到长期生产运营的水务全生命周期价值。具备12英寸14nm芯片产线超纯水制备能力。",
+      "role": "EPC/运维服务商",
+      "ims_relevance": "高频科技的'超纯水运维数字化平台'直接进入iMS价值空间（仪表监控+运维管理+资产管理）。作为半导体水系统EPC/运维方，可能成为iMS在半导体行业的渠道伙伴或竞争对手。",
+      "source_url": "https://baijiahao.baidu.com/s?id=1875293616968392271&wfr=spider&for=pc"
+    },
+    {
+      "name": "中国市政工程西北设计研究院-阿克苏EPC中标成员单位",
+      "description": "阿克苏市老旧供水管网更新改造EPC（8600万）中标联合体成员为中国市政工程西北设计研究院有限公司，牵头单位为阿克苏市政工程建设有限公司。项目含33000块物联网智能水表+DMA分区计量体系。",
+      "role": "设计院/EPC",
+      "ims_relevance": "中国市政工程西北设计研究院在新疆智慧水务EPC中的角色，可能影响后续项目的技术路线选型。",
+      "source_url": "https://stock.10jqka.com.cn/20260902/c679531994.shtml"
+    }
+  ],
+  "policy_triggers": [
+    {
+      "name": "HJ 945.4-2026工业园区污水集中处理设施水污染物排放标准制订技术导则(9月1日实施)",
+      "description": "2026年9月1日起实施。指导和规范地方开展工业园区污水集中处理设施水污染物排放标准的制定和修订。现有企业自2028年1月1日起执行相应新标准。非全国统一提标时间节点，而是地方标准制定的技术导则。",
+      "demand_type": "产生仪表需求（间接产生iMS需求）",
+      "ims_relevance": "排放标准收紧→在线监测仪表需求增加→仪表管理需求。但2028年执行新标准意味着时间窗口较长。",
+      "source_url": "https://www.sohu.com/a/1070841942_121349568"
+    },
+    {
+      "name": "生态环境法典(8月15日施行)-涉水法规系统性重构",
+      "description": "《中华人民共和国生态环境法典》8月15日施行，整合废止《水污染防治法》等十部单行法律。法典共5编1242条。同月底《水法》修订草案二审。水利部全年发布四批三十余项行业标准，覆盖水质管理、水权交易、数智化监测、工程安全等领域。",
+      "demand_type": "产生iMS需求（数智化监测明确纳入法规体系）",
+      "ims_relevance": "法规体系重构中明确提及'数智化监测'→在线监测+数据管理+合规审计需求→iMS在数据质量/合规层面的价值。",
+      "source_url": "https://www.sohu.com/a/1070979581_121106869"
+    },
+    {
+      "name": "新版供水条例(6月1日施行)-城乡统筹供水保障",
+      "description": "6月1日新版《供水条例》施行，替代沿用三十余年的《城市供水条例》，供水保障从城市统筹扩至城乡。农村规模化供水纳入行政法规层面。",
+      "demand_type": "产生仪表需求（农村供水监测新增）",
+      "ims_relevance": "城乡统筹→农村供水监测仪表新增→多站点管理需求（农村水站分散）。",
+      "source_url": "https://www.sohu.com/a/1070528148_99904785"
+    }
+  ],
+  "competitive_triggers": [
+    {
+      "name": "E+H Heartbeat自诊断技术+Ethernet-APL-直接进入iMS价值空间",
+      "description": "E+H在漳州Ethernet-APL研讨会展示Heartbeat自诊断技术，强调'设备自诊断、状态监测及预测性维护，为用户提供更加可靠、高效的资产管理能力'。Profinet over APL技术促进现场设备与控制系统、资产管理平台之间的数据互联互通。E+H 90%现场仪表实现数字化并配备唯一IP地址。2024年净销售额37.44亿欧元，研发投入占比7.4%。",
+      "competitor": "E+H (Endress+Hauser)",
+      "enters_ims_value_space": true,
+      "ims_relevance": "E+H的Heartbeat技术直接覆盖iMS核心价值空间：仪表自诊断→状态监测→预测性维护→资产管理。这是竞争对手在iMS价值空间最直接的布局。E+H通过Ethernet-APL实现设备级数据互联互通，本质上在构建'仪表→数据→诊断→资产管理→生命周期管理'完整闭环。",
+      "source_url": "https://www.gkong.com/item/news/2026/09/127082.html"
+    },
+    {
+      "name": "威派格全生命周期管理理念-从设备到数据到服务",
+      "description": "威派格布局从水源地到水龙头全链条：智能模块化水厂+管网GIS+DMA分区计量+智能水表+数据治理平台。明确'从单纯建设向建设、管理、运维、服务全生命周期管理转变'。",
+      "competitor": "威派格 (国内智慧水务企业)",
+      "enters_ims_value_space": true,
+      "ims_relevance": "威派格的'全生命周期管理'理念与iMS价值主张重叠，但其核心在水务平台层（管网/计量/数据治理），而非仪表健康诊断。可能在多站点管理和数据治理层面形成竞争。",
+      "source_url": "https://finance.eastmoney.com/a/202608313860510620.html"
+    }
+  ],
+  "strategic_accounts": [
+    {
+      "name": "合肥水务集团",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第6期跟踪。新事实：排水管网全面接管区级7236公里+250座泵站；供排水规模518万立方米/日；投建管运一体化转型。管理规模阶跃增长强化multi-site management假设。",
+      "change_type": "updated"
+    },
+    {
+      "name": "联合水务(603291)",
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第5期跟踪。本期无新事实变化，保持关注。",
+      "change_type": "no_change"
+    },
+    {
+      "name": "盐城城投水务集团",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第4期跟踪。本期无新事实变化，保持关注。",
+      "change_type": "no_change"
+    },
+    {
+      "name": "郴州某区域供水",
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第3期跟踪。本期无新事实变化，保持关注。",
+      "change_type": "no_change"
+    },
+    {
+      "name": "深圳环境水务集团",
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第3期跟踪。新事实：深圳市年度水质净化厂过程仪表维护服务采购公告——过程仪表维护外包需求出现。",
+      "change_type": "updated"
+    },
+    {
+      "name": "首创环保",
+      "first_seen": "2026-09-02",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第2期跟踪。本期无新事实变化，保持关注。",
+      "change_type": "no_change"
+    },
+    {
+      "name": "重庆水务",
+      "first_seen": "2026-09-02",
+      "last_seen": "2026-09-04",
+      "continuity": "连续第2期跟踪。新事实：王小军正式出任董事长，新管理层就位。",
+      "change_type": "updated"
+    },
+    {
+      "name": "怀远县禹众水务有限公司",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "continuity": "首次发现。10亿元级全域供水数字化EPC项目招标人，新设水务主体。",
+      "change_type": "new"
+    },
+    {
+      "name": "西安净水处理有限责任公司",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "continuity": "首次发现。两座再生水厂同步智慧化改造，有第三水厂成功经验可复制。",
+      "change_type": "new"
+    },
+    {
+      "name": "华虹宏力(无锡)",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "continuity": "首次发现。143亿元新建12英寸晶圆代工产线，超纯水系统仪表需求。",
+      "change_type": "new"
+    }
+  ],
+  "rejected_signals": [
+    {
+      "name": "六蓝水库重建加固工程(广西横州)",
+      "reason": "水库重建工程，非水厂/管网项目，无在线仪表管理需求"
+    },
+    {
+      "name": "沁水县第三水厂二期智慧水务暂估价部分采购",
+      "reason": "采购内容为网络安全设备（防火墙/等保测评），非在线仪表或数字化运维管理"
+    },
+    {
+      "name": "松山湖水厂分布式光伏项目(一期)",
+      "reason": "水厂光伏发电项目，非水质监测或仪表管理相关"
+    },
+    {
+      "name": "乌海工业配水厂新建4万m3蓄水池项目",
+      "reason": "造价咨询服务采购，非仪表或数字化相关"
+    },
+    {
+      "name": "各类水质测定仪/流量计/电磁流量计选型指南文章(多篇)",
+      "reason": "营销内容/SEO文章，非真实市场信号"
+    },
+    {
+      "name": "南宁市水资源环境水质监测招标",
+      "reason": "水质监测服务（人工采样分析），非在线仪表管理或数字化运维"
+    },
+    {
+      "name": "无棣县润禹水务集团党建工作报道",
+      "reason": "党建工作宣传，非数字化/仪表/战略变化相关"
+    },
+    {
+      "name": "克拉玛依实验室超纯水设备耗材竞价",
+      "reason": "社区卫生服务中心实验室耗材，非工业水系统"
+    }
+  ],
+  "data_source": {
+    "scan_date": "2026-09-04",
+    "scan_time": "08:11 CST",
+    "last_report_date": "2026-09-02",
+    "search_sources": [
+      "百度搜索(9组关键词覆盖6大雷达+工业补充)",
+      "中国政府采购网(ccgp.gov.cn)",
+      "蚌埠市公共资源交易平台",
+      "西安招标平台(okcis.cn)",
+      "上市公司公告(华虹宏力688347)",
+      "人民网/东方财富/同花顺等官方媒体",
+      "工控网(gkong.com)/仪器信息网"
+    ],
+    "radar_coverage": {
+      "radar_1_project": "水务新建/扩建/智慧水厂/技改/管网/二供/农村供水/污水厂提标/再生水+工业(半导体/制药/数据中心)",
+      "radar_2_account": "水务集团合并重组/集团化/数字化部门/运维外包/新管理层/数字化战略",
+      "radar_3_installed_base": "多水厂管理/仪表故障/校准/运维成本/设备台账/更换周期",
+      "radar_4_policy": "新水质标准/在线监测强制要求/数据管理审计/环保法规/数字化转型政策/专项资金",
+      "radar_5_ecosystem": "设计院/EPC/工程公司/水务咨询/数字化公司/AI公司/系统集成商/科研院校",
+      "radar_6_competitive": "E+H/Siemens/Schneider/ABB/Emerson/Yokogawa竞争动态"
+    }
+  },
+  "disclaimer": "本报告由iMS GTM Public Signal Radar Agent v3.2自动生成。所有信息均来自中国大陆公开互联网。Report中的ai_judgment为AI基于公开信息的分析判断，不构成投资建议或销售承诺。Signal != Opportunity；Public Signal Score != Hach Opportunity Score。DuMate负责发现，Company Agent负责验证，GTM Workbook负责沉淀和行动。",
+  "qc_checklist": {
+    "all_from_public_sources": true,
+    "facts_and_ai_judgment_separated": true,
+    "no_internal_info_as_facts": true,
+    "no_unfounded_numbers": true,
+    "truly_ims_related": true,
+    "use_case_specified_or_unknown": true,
+    "time_window_provided": true,
+    "to_verify_structured": true,
+    "no_duplicate_with_yesterday": true,
+    "no_general_news_as_opportunity": true,
+    "no_padding_p2_p3": true,
+    "github_schema_preserved": true,
+    "both_json_files_generated": true
+  },
+  "background_monitoring": [
+    {
+      "name": "怀远县全域供水数字化改造提升项目EPC-智慧监测体系建设工程",
+      "customer": "2026年9月2日，怀远县禹众水务有限公司发布EPC招标公告（BB2026HYGCZ0521），合同估算价10.087亿",
+      "region": "待补充",
+      "stage": "EPC准备/招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "EPC准备/招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "EPC准备/招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+        "original_date": "2026-09-04",
+        "original": {
+          "name": "怀远县全域供水数字化改造提升项目EPC-智慧监测体系建设工程",
+          "opportunity_stage": "EPC准备/招标",
+          "estimated_time_window": "3-6 months",
+          "score": 72,
+          "trigger_type": "项目",
+          "potential_ims_use_case": "Multi-site Management / Asset Management",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "多水厂新建+改造→智慧监测体系→在线仪表部署→多站点管理+资产管理需求。逻辑链完整但iMS具体需求取决于智慧监测体系的技术规格。"
+        }
+      }
+    },
+    {
+      "name": "西安第四第五再生水厂智慧化改造设计项目-全维度智慧化升级",
+      "customer": "2026年9月1日，西安净水处理有限责任公司发布招标公告（HRZBXA2026-JS-02），对第四、第五再生水厂实施全",
+      "region": "待补充",
+      "stage": "设计招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "设计招标阶段（接近过滤线），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "设计招标阶段（接近过滤线），v3.5 修订移动",
+        "original_date": "2026-09-04",
+        "original": {
+          "name": "西安第四第五再生水厂智慧化改造设计项目-全维度智慧化升级",
+          "opportunity_stage": "设计招标",
+          "estimated_time_window": "3-6 months",
+          "score": 68,
+          "trigger_type": "项目",
+          "potential_ims_use_case": "Multi-site Management / Instrument Monitoring",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "多水厂同步智慧化改造→全维度升级含仪表数据→统一管理需求→multi-site+instrument monitoring。逻辑链完整但iMS具体需求取决于设计阶段技术选型。"
+        }
+      }
+    },
+    {
+      "name": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
+      "customer": "2026年9月1日，华虹宏力（688347.SH/01347.HK）公告，联合无锡锡虹国芯二期、华芯鼎新、国开新型政策性",
+      "region": "待补充",
+      "stage": "战略规划/立项",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "6-12 months",
+      "trace_value": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+      "sector": "industrial",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "industrial",
+        "reason": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+        "original_date": "2026-09-04",
+        "original": {
+          "name": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
+          "opportunity_stage": "战略规划/立项",
+          "estimated_time_window": "6-12 months",
+          "score": 65,
+          "trigger_type": "项目",
+          "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Lifecycle Management",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "新建12英寸晶圆厂→超纯水系统→在线仪表密集部署→仪表运维+资产管理需求。逻辑链完整但切入路径需通过EPC/设计院。"
+        }
+      }
+    },
+    {
+      "name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
+      "customer": "2026年8月28日发布招标公告，2026年鄞州区污水处理设施在线水质监测系统运维管理项目，预算270万元，覆盖8个乡镇",
+      "region": "待补充",
+      "stage": "招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "<3 months",
+      "trace_value": "招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+        "original_date": "2026-09-04",
+        "original": {
+          "name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
+          "opportunity_stage": "招标",
+          "estimated_time_window": "<3 months",
+          "score": 58,
+          "trigger_type": "存量仪表",
+          "potential_ims_use_case": "Instrument Health Diagnostics / Multi-site Management",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "多站点在线监测设备→运维外包→设备健康诊断需求→instrument health diagnostics。逻辑链完整但iMS切入点在运维方而非业主方。"
+        }
+      }
+    }
+  ],
+  "v35_revision_note": {
+    "date": "2026-09-12",
+    "agent": "v3.5 Prompt Evolution Review",
+    "summary": "以补充为主（version/trigger_type/sector/logic_chain_check_status/continuity），修正阶段准入（招标/采购/EPC→background_monitoring）、行业边界（工业Fab→industrial bg）、阶段-窗口绑定（郴州/兴宁）、跨天无新事实重复合并（邛崃/清江浦）。原字段未删除，移动与修正均以 v35_revision 记录。"
+  },
+  "top5_revision_note": "v3.5 修订：top_5_match 与保留 opportunities 对齐，移除已移入 background_monitoring 的条目（数量 1）",
+  "weekday": "Friday"
+}
