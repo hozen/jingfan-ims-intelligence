@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "v3.2-municipal-v2",
+    "version": "v3.2-municipal-v3",
     "generated_date": "2026-09-12",
     "last_update": "2026-09-12",
-    "description": "iMS Municipal Master Intelligence - Enriched Context (16 municipal leads, industrial content excluded per scope decision 2026-09-12)",
+    "description": "iMS Municipal Master Intelligence - Enriched Context (17 municipal leads incl. Pingdingshan, industrial content excluded per scope decision 2026-09-12)",
     "data_sources": [
       "intelligence/municipal/daily/2026-09-02.json",
       "intelligence/municipal/daily/2026-09-04.json",
@@ -963,6 +963,82 @@
       "first_seen": "2026-09-02",
       "last_updated": "2026-09-02",
       "status": "active"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "original_signal": {
+        "id": "OPS-20260911-V33-005",
+        "market_segment": "municipal",
+        "company": "平顶山自来水二次供水有限公司",
+        "opportunity": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+        "signal_tier": "Tier 2",
+        "evidence": {
+          "facts": [
+            "2026年9月9日，平顶山自来水二次供水有限公司与河南智慧水务股份有限公司签署战略合作框架协议（平顶山日报2026-09-10报道，记者王代诺），聚焦二次供水数字化、智慧化升级，双方组建联合事业部推进泵房智慧升级、数字化规划、高新技术企业培育及智慧水务产品研发。",
+            "平顶山自来水二次供水有限公司成立于2017-03-28，国有控股小微企业，隶属平顶山发展投资控股集团，法定代表人申毅（多源一致：百度百科/企查猫/天眼查；爱企查个别页面显示张伟，需工商核实），注册地河南省平顶山市新华区光明路4号（光明路水厂院内），所属行业为其他水的处理、利用与分配（国标D4690），注册资本1000万元，员工约190人。",
+            "公司已接管二次供水泵房211座（一说覆盖184个小区）、服务居民11.5万余户、覆盖人口约35万人，占平顶山城区高层住宅用户的约52%。",
+            "公司为河南省首家专业化二次供水统建统管企业，具备市政、机电总承包二级资质，拥有泵房智能化数据监控平台、智能化安防控制装置等6项发明与实用新型专利；被河南省住建厅指定为《河南省城市供水调压调蓄设施技术标准》主编单位；2024年其管理服务做法入选住建部《城市公共供水管网漏损治理可复制政策机制清单》全国推广。",
+            "母公司平顶山市自来水有限公司（法定代表人毕志伟）：拥有白龟山、九里山、焦庄等5座水厂，设计日供水能力51万立方米，供水管网约1200公里，服务22万多户，2022年起依托智慧水务一体化管理平台运营。",
+            "平顶山自来水二次供水有限公司总经理/董事公开信息：平顶山市自来水有限公司党委书记、董事长杨伟新，党委副书记、总经理代德山（2026-09-10签约报道列名），党委副书记、工会主席李建中。",
+            "二次供水设备采购参考：平公资采2025606号二次供水设备入围招标（2025-07评审）包1中标上海熊猫机械、包2中标浙江利欧环境科技，服务期2年。"
+          ],
+          "inferences": [
+            "211座分散泵房的设备资产管理/远程运维是典型iMS Multi-site Management场景。结合新《供水条例》(831号令)2026-06-01施行(二次供水规范化纳入法定考核，余氯/浊度在线监测为常规考核项)与公司自研'二次供水智能化运行数据监控平台'的存在，说明客户已建自研数据中枢——iMS切入路径更可能是'仪表数据层+平台兼容'（向客户证明iMS可接入多品牌仪表、补充自研平台未覆盖的诊断/资产生命周期能力）而非替代平台。",
+            "合作方河南智慧水务股份有限公司（平顶山日报口径）为地方数字化伙伴，其技术路线将决定在线监测数据接入架构，需验证是否兼容第三方仪表，这是iMS能/不能切入的关键分水岭。",
+            "二次供水设备入围招标显示上海熊猫/浙江利欧等国产设备商已锁定存量设备——211座泵房的水泵/成套设备品牌非Hach侧，但水质在线监测仪表（余氯/浊度/pH/流量）存在独立采购与运维增量空间。"
+          ],
+          "unknowns": [
+            "平顶山自来水（母/子公司）是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
+            "211座泵房水质监测仪表现状：品牌/数量/联网情况？自研监控平台已接入哪些仪表？",
+            "河南智慧水务平台的仪表接入方式与兼容性？是否已有Hach仪表接入先例？",
+            "历史销售/Pipeline/服务合同？河南区域是否有经销商覆盖？",
+            "Account Owner是谁？河南区域Regional Owner？"
+          ]
+        },
+        "potential_ims_use_case": "Multi-site Management / Instrument Monitoring / Predictive Maintenance",
+        "logic": "Customer Change(211座泵房分散管理+设备老化) -> Digital Change(战略合作推进泵房智慧升级/数字化规划) -> Operational Problem(被动运维转主动预警、水质安全管控风险、设备资产管理缺口) -> Instrument/Data/Asset Management Need(泵房水质监测+设备资产管理) -> Potential iMS Use Case(Multi-site Management/Instrument Monitoring)。逻辑链较强：痛点明确（211座泵房分散管理、明确表述'被动运维转主动预警'）。",
+        "opportunity_stage": "战略规划",
+        "estimated_time_window": "6-9 months",
+        "priority": "P2",
+        "score": 63,
+        "source_urls": [
+          "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+          "https://baijiahao.baidu.com/s?id=1875927833954203215",
+          "https://baike.baidu.com/item/平顶山自来水二次供水有限公司/22230224"
+        ],
+        "to_verify": {
+          "customer_identity": "平顶山自来水是否为Hach客户？二次供水公司是否独立Account？",
+          "installed_base": "211座泵房水质监测仪表现状（品牌/数量/联网情况）？自研平台接入仪表清单？",
+          "commercial_history": "平顶山/河南区域历史Hach销售记录？当前Pipeline？服务合同？",
+          "ims": "是否已有iMS或类似数字化产品？河南智慧水务平台是否兼容第三方仪表？",
+          "account_sales": "Account Owner是谁？河南区域Regional Owner？申毅/代德山是否已有接触？"
+        },
+        "continuity": {
+          "first_seen": "2026-09-11",
+          "new_facts_today": "2026-09-12补全：工商主体（法定代表人为申毅，爱企查个别页面显示张伟待核实）、注册地、行业代码D4690、母公司结构与平台自研情况、二次供水设备入围供应商（熊猫/利欧）。",
+          "changed": true
+        }
+      },
+      "enrichment_status": "contacts_enriched",
+      "project_ids": [
+        "PRJ-MUN-20260911-021"
+      ],
+      "account_ids": [
+        "ACC-018"
+      ],
+      "contact_ids": [
+        "CT-MUN-040",
+        "CT-MUN-041",
+        "CT-MUN-042",
+        "CT-MUN-043",
+        "CT-MUN-044",
+        "CT-MUN-045"
+      ],
+      "contact_summary": "6 contacts: 申毅(B,法代/书记/董事)/代德山(B,总经理)/杨伟新(B,董事长/inferred)/毕志伟(B,母公司法代)/李建中(C)/供水服务热线(B)",
+      "organization_map_id": "ORG-MUN-20260911-021",
+      "first_seen": "2026-09-11",
+      "last_updated": "2026-09-12",
+      "status": "active"
     }
   ],
   "projects": [
@@ -1477,6 +1553,38 @@
         "location_detail",
         "staffing_signals"
       ]
+    },
+    {
+      "project_id": "PRJ-MUN-20260911-021",
+      "lead_id": "MUN-20260911-021",
+      "project_name": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+      "owner": "平顶山自来水二次供水有限公司",
+      "investment_amount": null,
+      "project_status": "战略规划",
+      "water_system_details": {
+        "plant_type": "二次供水泵房群（211座/约占城区高层住宅52%）",
+        "design_scale": "211座泵房",
+        "treatment_process": null,
+        "instrument_requirements": "余氯/浊度/pH/流量在线监测（新《供水条例》二供规范化考核）；自研监控平台已覆盖的水压/流量/温湿度/能耗/安防维度外，水质在线监测为增量空间",
+        "smart_water_platform": true,
+        "epc_contractor": null,
+        "design_institute": null,
+        "instrument_procurement_mode": "待定（此前二次供水设备入围框架：熊猫机械/利欧环境）",
+        "permit_status": null,
+        "staffing_evidence": null
+      },
+      "estimated_time_window": "6-9 months",
+      "location": "河南省平顶山市新华区光明路4号（光明路水厂院内）",
+      "source_url": "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+      "enrichment_level": 2,
+      "enrichment_needed": [
+        "design_institute",
+        "epc_contractor_identity",
+        "treatment_process_detail",
+        "instrument_procurement_mode_detail",
+        "pump_room_instrument_inventory",
+        "joint_division_roadmap"
+      ]
     }
   ],
   "accounts": [
@@ -1868,6 +1976,32 @@
         "digitalization_current_state",
         "existing_instrument_brands",
         "key_contacts"
+      ]
+    },
+    {
+      "account_id": "ACC-018",
+      "name": "平顶山自来水二次供水有限公司",
+      "type": "water_utility (secondary supply specialized operator)",
+      "group_name": "平顶山发展投资控股集团 / 平顶山市自来水有限公司（母公司）",
+      "plant_count": "211座二次供水泵房",
+      "daily_capacity": "母公司设计日供水51万m3",
+      "digitalization_status": "已自研'二次供水智能化运行数据监控平台'（6项专利）；2026-09-09与河南智慧水务签署战略合作推进泵房智慧升级",
+      "existing_digital_platform": "二次供水智能化运行数据监控平台（自研；覆盖水压/流量/温湿度/设备工况/能耗/安防/自动抄表）",
+      "supply_chain_loss_rate": null,
+      "market_share": "约占平顶山城区高层住宅用户的52%",
+      "stock_code": null,
+      "first_seen": "2026-09-11",
+      "status": "monitoring",
+      "latest_signal": "与河南智慧水务战略合作（2026-09-09签约），组建联合事业部推进211座泵房智慧化升级",
+      "ims_fit": "Multi-site Management / Instrument Monitoring / Predictive Maintenance",
+      "action_needed": "验证是否为Hach客户；211座泵房水质监测仪表现状；河南智慧水务平台是否兼容第三方仪表",
+      "enrichment_level": 2,
+      "enrichment_needed": [
+        "pump_room_instrument_inventory",
+        "digitalization_partner_tech_stack",
+        "existing_instrument_brands",
+        "procurement_contacts",
+        "joint_division_roadmap"
       ]
     }
   ],
@@ -2495,6 +2629,102 @@
       "verification_status": "inferred",
       "first_seen": "2026-09-12",
       "notes": "2026-07-29中标结果公示PDF遮挡中标单位不可见；无公开个人联系人，需查询后确认业主（招标计划2026-04-22）"
+    },
+    {
+      "contact_id": "CT-MUN-040",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "申毅",
+      "unit": "平顶山自来水二次供水有限公司",
+      "role": "法定代表人/党支部书记/董事（战略合作签约代表）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+      "source_type": "official_media",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "2026-09-09战略合作签约代表，公开报道列名；多源（百科/企查猫/天眼查）为法定代表人；爱企查个别页面显示张伟，需工商快照核实。公司电话0375-258****（部分公开），企业邮箱psegzhk@163.com见于爱企查（未验证）"
+    },
+    {
+      "contact_id": "CT-MUN-041",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "代德山",
+      "unit": "平顶山市自来水有限公司（母公司）",
+      "role": "党委副书记/总经理（签约仪式公开发言）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+      "source_type": "official_media",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "2026-09-09签约仪式公开介绍二供痛点（存量泵房分散管理/设备老旧/被动运维），母公司层面决策影响人"
+    },
+    {
+      "contact_id": "CT-MUN-042",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "杨伟新",
+      "unit": "平顶山市自来水有限公司（母公司）",
+      "role": "党委书记/董事长",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODk4MTQ4NQ==&mid=2650690765&idx=1&sn=8a6d7e993fe210fa6233f0410989d8a8",
+      "source_type": "company_wechat",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "任职信息来自2022年公司微信报道，现任需核实"
+    },
+    {
+      "contact_id": "CT-MUN-043",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "毕志伟",
+      "unit": "平顶山市自来水有限公司（母公司）",
+      "role": "法定代表人",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://baike.baidu.com/item/平顶山市自来水有限公司/20509685",
+      "source_type": "baike",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "母公司法定代表人人选（百度百科）；供Account映射参考"
+    },
+    {
+      "contact_id": "CT-MUN-044",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "李建中",
+      "unit": "平顶山市自来水有限公司（母公司）",
+      "role": "党委副书记/工会主席",
+      "priority": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MjM5ODk4MTQ4NQ==&mid=2650690765&idx=1&sn=8a6d7e993fe210fa6233f0410989d8a8",
+      "source_type": "company_wechat",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "任职信息来自2022年公司微信报道，现任需核实"
+    },
+    {
+      "contact_id": "CT-MUN-045",
+      "lead_id": "MUN-20260911-021",
+      "account_id": "ACC-018",
+      "name": "平顶山供水服务热线",
+      "unit": "平顶山市自来水有限公司（母公司）",
+      "role": "24小时供水服务热线（公司级入口）",
+      "priority": "B",
+      "phone": "0375-2830000",
+      "email": null,
+      "source_url": "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml",
+      "source_type": "gov_website",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "母公司在册服务热线（官方营商环境报道公布），作为公司级触达兜底入口"
     }
   ],
   "organization_maps": [
@@ -3611,6 +3841,47 @@
       "completeness": 0.2,
       "missing_count": 4,
       "filled_count": 1
+    },
+    {
+      "map_id": "ORG-MUN-20260911-021",
+      "lead_id": "MUN-20260911-021",
+      "plant_type": "二次供水泵房群（211座）",
+      "buying_center": {
+        "owner_side.operations": {
+          "person": "申毅",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-040",
+          "source_type": "official_media",
+          "verification_status": "verified"
+        },
+        "owner_side.procurement": {
+          "person": "平顶山供水服务热线",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-045",
+          "source_type": "gov_website",
+          "verification_status": "verified"
+        },
+        "owner_side.IT": {
+          "person": null,
+          "status": "missing",
+          "priority": "B"
+        },
+        "epc_side.project_manager": {
+          "person": null,
+          "status": "missing",
+          "priority": "C"
+        },
+        "design_institute_side.engineer": {
+          "person": null,
+          "status": "missing",
+          "priority": "C"
+        }
+      },
+      "completeness": 0.4,
+      "missing_count": 3,
+      "filled_count": 2
     }
   ],
   "missing_roles": [
@@ -5071,53 +5342,99 @@
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
       "status": "not_started"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "map_id": "ORG-MUN-20260911-021",
+      "role": "owner_side.operations",
+      "priority": "B",
+      "discovery_path": "official_media (平顶山日报 2026-09-10)",
+      "status": "completed",
+      "filled_by": "CT-MUN-040",
+      "filled_person": "申毅",
+      "completion_date": "2026-09-12"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "map_id": "ORG-MUN-20260911-021",
+      "role": "owner_side.procurement",
+      "priority": "B",
+      "discovery_path": "official_media + gov_website",
+      "status": "completed",
+      "filled_by": "CT-MUN-045",
+      "filled_person": "平顶山供水服务热线",
+      "completion_date": "2026-09-12"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "map_id": "ORG-MUN-20260911-021",
+      "role": "owner_side.IT",
+      "priority": "B",
+      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
+      "status": "not_started"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "map_id": "ORG-MUN-20260911-021",
+      "role": "epc_side.project_manager",
+      "priority": "C",
+      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
+      "status": "not_started"
+    },
+    {
+      "lead_id": "MUN-20260911-021",
+      "map_id": "ORG-MUN-20260911-021",
+      "role": "design_institute_side.engineer",
+      "priority": "C",
+      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
+      "status": "not_started"
     }
   ],
   "agent_statistics": {
-    "total_leads": 16,
-    "total_projects": 16,
-    "total_accounts": 15,
-    "total_contacts": 39,
-    "total_organization_maps": 16,
-    "total_missing_roles": 168,
+    "total_leads": 17,
+    "total_projects": 17,
+    "total_accounts": 16,
+    "total_contacts": 45,
+    "total_organization_maps": 17,
+    "total_missing_roles": 173,
     "contacts_by_priority": {
       "A": 6,
-      "B": 26,
-      "C": 7,
+      "B": 31,
+      "C": 8,
       "D": 0
     },
-    "contacts_verified": 20,
-    "contacts_with_phone": 19,
+    "contacts_verified": 24,
+    "contacts_with_phone": 20,
     "contacts_with_email": 1,
     "cross_agent_confirmed": 0,
     "dedup_merged": 0,
-    "enrichment_rounds_completed": 1,
+    "enrichment_rounds_completed": 2,
     "last_enrichment_date": "2026-09-12",
     "enrichment_coverage": "100%",
-    "leads_fully_enriched": 13,
+    "leads_fully_enriched": 14,
     "leads_partially_enriched": 3,
     "leads_not_enriched": 0
   },
   "data_quality": {
-    "total_leads": 16,
-    "leads_with_project_link": 16,
+    "total_leads": 17,
+    "leads_with_project_link": 17,
     "leads_with_account_link": 6,
-    "leads_with_contacts": 16,
-    "leads_with_org_map": 16,
+    "leads_with_contacts": 17,
+    "leads_with_org_map": 17,
     "projects_with_investment": 7,
     "projects_with_design_scale": 3,
     "projects_with_smart_water": 16,
     "projects_with_epc": 7,
     "projects_with_design_institute": 0,
     "accounts_with_plant_count": 0,
-    "accounts_with_digitalization_status": 6,
+    "accounts_with_digitalization_status": 7,
     "accounts_with_stock_code": 4,
-    "contacts_with_phone": 19,
+    "contacts_with_phone": 20,
     "contacts_with_email": 1,
-    "contacts_verified": 20,
+    "contacts_verified": 24,
     "org_maps_complete": 0,
     "org_maps_partial": 0,
-    "overall_completeness": 0.49,
+    "overall_completeness": 0.53,
     "data_sources": [
       "daily_radar_reports (2026-09-02 to 2026-09-11)"
     ],
@@ -5346,6 +5663,49 @@
         "Identify Account Owner"
       ],
       "status": "not_started"
+    },
+    {
+      "action_id": "NBA-MUN-20260911-021",
+      "lead_id": "MUN-20260911-021",
+      "action": "enrich_project_details",
+      "priority": "high",
+      "description": "Enrich project details for: 平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+      "specific_tasks": [
+        "Confirm 河南智慧水务股份有限公司 technical stack",
+        "Identify joint division roadmap & pilot pump rooms",
+        "Determine instrument procurement mode (vs 熊猫/利欧 framework)",
+        "Find pump room water-quality instrument inventory",
+        "Check staffing/recruitment signals (联合事业部招聘)"
+      ],
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-040",
+        "CT-MUN-041",
+        "CT-MUN-042",
+        "CT-MUN-043",
+        "CT-MUN-044",
+        "CT-MUN-045"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
+    },
+    {
+      "action_id": "NBA-CA-MUN-20260911-021",
+      "lead_id": "MUN-20260911-021",
+      "action": "company_agent_verification",
+      "priority": "high",
+      "description": "Company Agent internal verification for: 平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+      "specific_tasks": [
+        "Verify customer identity in Salesforce",
+        "Check installed base (211座泵房仪表类型/数量)",
+        "Review commercial history",
+        "Check existing iMS/digital products",
+        "Identify Account Owner"
+      ],
+      "status": "not_started",
+      "contact_refs": [
+        "CT-MUN-040",
+        "CT-MUN-041"
+      ]
     }
   ],
   "priority_ranking": [
@@ -5532,7 +5892,21 @@
       "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 14,
+      "lead_id": "MUN-20260911-021",
+      "name": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+      "score": 63,
+      "priority": "P2",
+      "use_case": "Multi-site Management / Instrument Monitoring / Predictive Maintenance",
+      "time_window": "6-9 months",
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 6,
+      "org_map_completeness": 0.4,
+      "company_agent_verified": false,
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12 (平顶山补录)",
+      "rank": 14
+    },
+    {
+      "rank": 15,
       "lead_id": "MUN-20260907-018",
       "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
       "score": 62,
@@ -5546,7 +5920,7 @@
       "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "lead_id": "MUN-20260902-019",
       "name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
       "score": 58,
@@ -5560,7 +5934,7 @@
       "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "lead_id": "MUN-20260902-020",
       "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
       "score": 52,
@@ -5622,6 +5996,42 @@
         "https://ggzy.zj.gov.cn",
         "https://www.ccgp.gov.cn",
         "http://ztb.guizhou.gov.cn/trade/bulletin/?id=890198"
+      ]
+    },
+    {
+      "round": 2,
+      "date": "2026-09-12",
+      "action": "add_pingdingshan_lead_enrichment",
+      "description": "Added Pingdingshan (MUN-20260911-021, 211座二供泵房×河南智慧水务战略合作) per user request: 1 lead + 1 project + 1 account (ACC-018) + 6 contacts (CT-MUN-040..045) + org map + missing roles + NBA. Industry/region/contacts fields补齐。",
+      "leads_processed": 17,
+      "contacts_added": 6,
+      "org_maps_created": 17,
+      "missing_roles_identified": 173,
+      "data_sources": [
+        "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html",
+        "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+        "https://www.hfwater.cn",
+        "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+        "https://seo.shuidi.cn/company-93528580f5233d07a4f8bbd2cb221a01.html",
+        "https://ggzyjy.sc.gov.cn",
+        "https://www.unitedwater.com.cn",
+        "https://www.xinhuanet.com",
+        "https://www.qcc.com",
+        "https://www.fjggzyjy.cn",
+        "https://www.fjmx.gov.cn",
+        "https://www.czs.gov.cn",
+        "https://www.cqwater.com",
+        "https://www.xingning.gov.cn",
+        "https://www.capitalwater.cn",
+        "https://www.ehall.jiangsu.gov.cn",
+        "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+        "https://ggzy.zj.gov.cn",
+        "https://www.ccgp.gov.cn",
+        "http://ztb.guizhou.gov.cn/trade/bulletin/?id=890198",
+        "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+        "https://mp.weixin.qq.com/s?__biz=MjM5ODk4MTQ4NQ==&mid=2650690765&idx=1&sn=8a6d7e993fe210fa6233f0410989d8a8",
+        "https://baike.baidu.com/item/平顶山市自来水有限公司/20509685",
+        "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml"
       ]
     }
   ],
