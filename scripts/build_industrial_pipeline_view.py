@@ -55,10 +55,17 @@ def enriched_rows(segment, directory, patterns):
     rows=[]
     for lead_id,(item,contacts,projects,accounts,stamp) in latest.items():
         signal=safe(item.get("original_signal") or {}); evidence=signal.get("evidence") or {}
+        linked_projects=[safe(projects[x]) for x in item.get("project_ids") or [] if x in projects]
+        linked_accounts=[safe(accounts[x]) for x in item.get("account_ids") or [] if x in accounts]
+        if not signal.get("location") and linked_projects:
+            signal["location"]=linked_projects[0].get("location")
+        if not signal.get("industry") and segment=="municipal" and linked_accounts:
+            account_type=str(linked_accounts[0].get("type") or "")
+            signal["industry"]="市政水务／二次供水" if "water_utility" in account_type else account_type
         for key in ("facts","inferences","unknowns"):
             if evidence.get(key) is not None and not isinstance(evidence[key],list): evidence[key]=[evidence[key]]
         category=municipal_category(signal) if segment=="municipal" else industrial_category(signal); date=item.get("last_updated") or item.get("first_seen") or stamp
-        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"projects":[safe(projects[x]) for x in item.get("project_ids") or [] if x in projects],"accounts":[safe(accounts[x]) for x in item.get("account_ids") or [] if x in accounts]},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
+        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
     return rows
 
 def industrial_rows():
