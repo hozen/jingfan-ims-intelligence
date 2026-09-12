@@ -464,7 +464,98 @@
           }
         ]
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-022",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "阳*",
+          "unit": "重庆市自来水有限公司",
+          "role": "生产技术部副部长（AI漏损检测/数字化应用受访者）",
+          "priority": "A",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "news",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "AI漏损检测受访技术负责人，最贴近iMS Use Case；电话未公开"
+        },
+        {
+          "contact_id": "CT-MUN-023",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "苏*",
+          "unit": "重庆市自来水有限公司",
+          "role": "管网部副部长（AI漏损检测受访者）",
+          "priority": "A",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "news",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-024",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "王**",
+          "unit": "重庆水务集团股份有限公司",
+          "role": "董事长（新任）",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "2026-08上任，推行存量提质/数字赋能战略"
+        },
+        {
+          "contact_id": "CT-MUN-025",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "付**",
+          "unit": "重庆水务集团股份有限公司",
+          "role": "总经理",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-026",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "郭*",
+          "unit": "重庆水务集团股份有限公司",
+          "role": "财务总监兼董事会秘书",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-027",
+          "lead_id": "MUN-20260911-014",
+          "account_id": "ACC-007",
+          "name": "重********",
+          "unit": "重庆水务集团股份有限公司",
+          "role": "投资者关系邮箱",
+          "priority": "C",
+          "phone": null,
+          "source_url": "https://www.cqwater.com",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "公开邮箱；内部数字化部门联系人需Company Agent验证"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -480,8 +571,8 @@
         "lead_id": "MUN-20260911-009",
         "company": {
           "company_name": "明溪县城区污水管网设施在线监测建设项目",
-          "location": null,
-          "industry": null
+          "location": "明溪县（省市未记录）",
+          "industry": "市政污水／管网"
         },
         "project": {
           "project_name": "明溪县城区污水管网设施在线监测建设项目",
@@ -564,7 +655,8 @@
             "智慧排水系统数据接口是否开放？",
             "中标后仪表运维归属是谁？"
           ],
-          "location": null
+          "location": "明溪县（省市未记录）",
+          "industry": "市政污水／管网"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -603,7 +695,42 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-019",
+          "lead_id": "MUN-20260911-009",
+          "account_id": null,
+          "name": "陈**",
+          "unit": "明溪县君峰城市建设投资有限责任公司",
+          "role": "项目咨询联系人（城区污水管网在线监测建设）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0598-****876"
+            }
+          ],
+          "source_url": "https://www.fjggzyjy.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "管网在线监测项目业主咨询电话"
+        },
+        {
+          "contact_id": "CT-MUN-020",
+          "lead_id": "MUN-20260911-009",
+          "account_id": null,
+          "name": "李*",
+          "unit": "明溪县住房和城乡建设局",
+          "role": "党组成员（行业主管部门）",
+          "priority": "C",
+          "phone": null,
+          "source_url": "https://www.fjmx.gov.cn",
+          "source_type": "gov_website",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "无公开电话"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -620,7 +747,7 @@
         "company": {
           "company_name": "邛崃市城区污水处理厂智慧水务软件开发采购",
           "location": null,
-          "industry": null
+          "industry": "市政污水／管网"
         },
         "project": {
           "project_name": "邛崃市城区污水处理厂智慧水务软件开发采购",
@@ -708,7 +835,8 @@
             "新建厂在线仪表品牌选型由谁定？",
             "软件平台是否兼容第三方仪表？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政污水／管网"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -747,7 +875,61 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-016",
+          "lead_id": "MUN-20260911-007",
+          "account_id": null,
+          "name": "成*****************",
+          "unit": "成都市沄崃投资集团有限公司",
+          "role": "邛崃市城区污水处理厂项目招标人",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "028-****1865"
+            }
+          ],
+          "source_url": "https://ggzyjy.sc.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "智慧水务软件开发采购（2026-09-03发布）；另有配套EPC中国电建市政+成都市政院中标2.97亿"
+        },
+        {
+          "contact_id": "CT-MUN-017",
+          "lead_id": "MUN-20260911-007",
+          "account_id": null,
+          "name": "成***************",
+          "unit": "成都尚特项目管理有限公司",
+          "role": "招标代理机构",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "028-****3980"
+            }
+          ],
+          "source_url": "https://ggzyjy.sc.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-018",
+          "lead_id": "MUN-20260911-007",
+          "account_id": null,
+          "name": "常*************",
+          "unit": "中国电建市政/成都市政设计研究院",
+          "role": "EPC项目负责人（中标公示）",
+          "priority": "C",
+          "phone": null,
+          "source_url": "https://ggzyjy.sc.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "EPC中标价297,248,748.30元；无公开电话"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -763,8 +945,8 @@
         "lead_id": "MUN-20260911-004",
         "company": {
           "company_name": "夹江县青衣水厂扩建工程",
-          "location": null,
-          "industry": null
+          "location": "夹江县（省市未记录）",
+          "industry": "市政供水"
         },
         "project": {
           "project_name": "夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目",
@@ -853,7 +1035,8 @@
             "智慧水务软件是否支持第三方仪表接入？",
             "重启采购与水电七局运维的关系？"
           ],
-          "location": null
+          "location": "夹江县（省市未记录）",
+          "industry": "市政供水"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -892,7 +1075,42 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-008",
+          "lead_id": "MUN-20260911-004",
+          "account_id": "ACC-016",
+          "name": "方**",
+          "unit": "广东省基础工程集团有限公司",
+          "role": "董事长（夹江青衣水厂EPC招标人）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "020-****0299"
+            }
+          ],
+          "source_url": "https://ggzyjy.sc.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "注意：夹***衣水厂扩建工程(二阶段)智慧水务采购项目已于2026-08-10终止，重新招标后可经由EPC招标人方获取业主联系方式"
+        },
+        {
+          "contact_id": "CT-MUN-009",
+          "lead_id": "MUN-20260911-004",
+          "account_id": "ACC-016",
+          "name": "夹******",
+          "unit": "夹江县青衣水厂",
+          "role": "项目业主（机构入口）",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://ggzyjy.sc.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "智慧水务采购终止公告为2026-08-10；原水质在线监测仪器运维服务由水电七局（中国电建）中标（2026-08-06），运维承接方是重启后关键触达对象"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -909,7 +1127,7 @@
         "company": {
           "company_name": "清江浦区农村供水提升改造项目",
           "location": null,
-          "industry": null
+          "industry": "市政供水"
         },
         "project": {
           "project_name": "清江浦区农村供水提升改造项目(初步设计已批复)",
@@ -989,7 +1207,8 @@
             "在线监测设备选型是否已定？",
             "设计院与EPC中标方是谁？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政供水"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -1028,7 +1247,46 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-033",
+          "lead_id": "MUN-20260909-017",
+          "account_id": null,
+          "name": "顾**",
+          "unit": "淮安市清江浦区农业农村和水利局",
+          "role": "农村供水提升改造项目联系人（征询公告）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0517-****6890"
+            }
+          ],
+          "source_url": "https://www.ehall.jiangsu.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "项目业主另有淮安自来水有限公司；EPC中标候选人已公示（2026-08-31）"
+        },
+        {
+          "contact_id": "CT-MUN-034",
+          "lead_id": "MUN-20260909-017",
+          "account_id": null,
+          "name": "孙********",
+          "unit": "招标代理机构",
+          "role": "代理机构联系人",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "189****8992 / 158****6668"
+            }
+          ],
+          "source_url": "https://www.ehall.jiangsu.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1045,7 +1303,7 @@
         "company": {
           "company_name": "兴宁产业园区污水处理厂智慧化升级改造工程",
           "location": null,
-          "industry": null
+          "industry": "市政污水／管网"
         },
         "project": {
           "project_name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
@@ -1127,7 +1385,8 @@
             "现有生活污水厂在线仪表品牌？",
             "设计院与平台架构是否确定？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政污水／管网"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -1166,7 +1425,38 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-028",
+          "lead_id": "MUN-20260909-015",
+          "account_id": null,
+          "name": "欧***",
+          "unit": "兴宁市工业园管理委员会",
+          "role": "管委会主任（产业园区污水厂项目属地主管）",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.xingning.gov.cn",
+          "source_type": "gov_website",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "项目2026-09-04发招标计划，勘察/初设招标预计2026-10-05发布；无公开电话"
+        },
+        {
+          "contact_id": "CT-MUN-029",
+          "lead_id": "MUN-20260909-015",
+          "account_id": null,
+          "name": "兴**********",
+          "unit": "兴宁市住房和城乡建设局",
+          "role": "项目监督部门",
+          "priority": "C",
+          "phone": null,
+          "source_url": "https://www.xingning.gov.cn",
+          "source_type": "gov_website",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "暂无公开联系方式"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1183,7 +1473,7 @@
         "company": {
           "company_name": "天津北辰区二次供水设施改造工程",
           "location": null,
-          "industry": null
+          "industry": "市政供水"
         },
         "project": {
           "project_name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
@@ -1264,7 +1554,8 @@
             "120个泵房改造是否含水质监测设备？",
             "二供管理平台是否已存在？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政供水"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -1303,7 +1594,38 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-035",
+          "lead_id": "MUN-20260907-018",
+          "account_id": "ACC-015",
+          "name": "天**************",
+          "unit": "天津市辰裕农业农村发展有限公司",
+          "role": "二次供水设施改造招标人（机构入口）",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "项目资金244,153,100元（中央60%+自筹40%），备案JS1201132026096002/003；公司电话未公开，可通过代理机构对接"
+        },
+        {
+          "contact_id": "CT-MUN-036",
+          "lead_id": "MUN-20260907-018",
+          "account_id": "ACC-015",
+          "name": "天*************",
+          "unit": "天津福松工程项目管理有限公司",
+          "role": "招标代理机构",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1319,7 +1641,7 @@
         "lead_id": "MUN-20260902-020",
         "company": {
           "company_name": "普安县水务一体化智慧水务及配套工程EPC总承包",
-          "location": null,
+          "location": "普安县（省市未记录）",
           "industry": null
         },
         "project": {
@@ -1400,7 +1722,7 @@
             "智慧水务平台是否含仪表管理模块？",
             "普安水务是否为Hach渠道客户？"
           ],
-          "location": null
+          "location": "普安县（省市未记录）"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -1439,7 +1761,23 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-039",
+          "lead_id": "MUN-20260902-020",
+          "account_id": null,
+          "name": "普****************",
+          "unit": "黔西南州公共资源交易中心",
+          "role": "项目公告渠道（中标结果公示）",
+          "priority": "B",
+          "phone": null,
+          "source_url": "http://ztb.guizhou.gov.cn/trade/bulletin/?id=890198",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "2026-07-29中标结果公示PDF遮挡中标单位不可见；无公开个人联系人，需查询后确认业主（招标计划2026-04-22）"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1456,7 +1794,7 @@
         "company": {
           "company_name": "鄞州区污水处理设施在线水质监测系统运维管理",
           "location": null,
-          "industry": null
+          "industry": "市政污水／管网"
         },
         "project": {
           "project_name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
@@ -1536,7 +1874,8 @@
             "运维中标方是否缺数字化运维工具？",
             "运维方是否为可合作渠道？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政污水／管网"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -1575,7 +1914,42 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-037",
+          "lead_id": "MUN-20260902-019",
+          "account_id": null,
+          "name": "鄞*********",
+          "unit": "宁波市鄞州区水利局",
+          "role": "在线水质监测设备运维项目采购人",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0574-****2343"
+            }
+          ],
+          "source_url": "https://ggzy.zj.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "佐证：2025年HXZB(2025)-047在线水质监测设备运维管理项目预算309万，经政采云招标；2026版项目应同源"
+        },
+        {
+          "contact_id": "CT-MUN-038",
+          "lead_id": "MUN-20260902-019",
+          "account_id": null,
+          "name": "宁***************",
+          "unit": "宁波恒翔管理咨询有限公司",
+          "role": "招标代理机构",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.ccgp.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "DBD(2025)-047项目代理，可获取运维范围与站点清单"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1740,7 +2114,53 @@
           }
         ]
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-030",
+          "lead_id": "MUN-20260902-016",
+          "account_id": "ACC-006",
+          "name": "黄**",
+          "unit": "北京首创生态环保集团股份有限公司",
+          "role": "副总经理（数据要素/智水运营平台数字化方向）",
+          "priority": "A",
+          "phone": null,
+          "source_url": "https://www.capitalwater.cn",
+          "source_type": "news",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "2026数字水务论坛演讲人（数据筑基AI赋能城市水系统），数智化大赛/数据要素大赛一等奖主导者；电话未公开"
+        },
+        {
+          "contact_id": "CT-MUN-031",
+          "lead_id": "MUN-20260902-016",
+          "account_id": "ACC-006",
+          "name": "李**",
+          "unit": "北京首创生态环保集团股份有限公司",
+          "role": "董事长",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.capitalwater.cn",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-032",
+          "lead_id": "MUN-20260902-016",
+          "account_id": "ACC-006",
+          "name": "刘*******",
+          "unit": "首创集团",
+          "role": "集团董事长 / 集团总经理",
+          "priority": "B",
+          "phone": null,
+          "source_url": "https://www.capitalwater.cn",
+          "source_type": "company_disclosure",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "可经集团总机转接"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1876,7 +2296,27 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-021",
+          "lead_id": "MUN-20260902-011",
+          "account_id": "ACC-004",
+          "name": "陈**",
+          "unit": "广东华南水电高新技术开发有限公司",
+          "role": "郴州水利信息中枢和智慧化管理平台项目（一期）中标方联系人",
+          "priority": "C",
+          "phone": [
+            {
+              "value": "159****0479"
+            }
+          ],
+          "source_url": "https://www.czs.gov.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "佐证：郴***利信息中枢一期已由华南水电中标376.91万；521套在线仪表项目业主直接联系人未检索到公开信息，需Company Agent验证"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -1893,7 +2333,7 @@
         "company": {
           "company_name": "西安第四第五再生水厂智慧化改造设计项目",
           "location": null,
-          "industry": null
+          "industry": "市政供水"
         },
         "project": {
           "project_name": "西安第四第五再生水厂智慧化改造设计项目-全维度智慧化升级",
@@ -1986,7 +2426,8 @@
             "第三再生水厂改造用了哪些品牌仪表？",
             "设计院是否已确定仪表选型？"
           ],
-          "location": null
+          "location": null,
+          "industry": "市政供水"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -2025,7 +2466,42 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-014",
+          "lead_id": "MUN-20260902-006",
+          "account_id": "ACC-010",
+          "name": "焦*",
+          "unit": "西安净水处理有限责任公司",
+          "role": "高级技术专家（AI托管再生水厂受访人/第三再生水厂）",
+          "priority": "A",
+          "phone": null,
+          "source_url": "https://www.xinhuanet.com",
+          "source_type": "news",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "AI托管再生水厂标杆受访者，最贴近iMS Use Case的技术决策人；电话未公开"
+        },
+        {
+          "contact_id": "CT-MUN-015",
+          "lead_id": "MUN-20260902-006",
+          "account_id": "ACC-010",
+          "name": "陈*",
+          "unit": "西安净水处理有限责任公司",
+          "role": "董事长（第四第五再生水厂智慧化改造项目业主）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "029-****0908"
+            }
+          ],
+          "source_url": "https://www.qcc.com",
+          "source_type": "registration_db",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "另有：厂***化管理平台由浪潮通软中标993.6万，平台商是设计院外关键生态触点"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -2162,7 +2638,84 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-010",
+          "lead_id": "MUN-20260902-005",
+          "account_id": "ACC-002",
+          "name": "陈*",
+          "unit": "江苏联合水务科技股份有限公司",
+          "role": "高级副总裁（数字化/水务大脑战略对外发言人）",
+          "priority": "A",
+          "phone": [
+            {
+              "value": "021-****0178"
+            }
+          ],
+          "source_url": "https://www.unitedwater.com.cn",
+          "source_type": "news",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "腾讯云战略合作'水务大脑'发布会发言人；公司总机为接通入口，Email未公开不猜测"
+        },
+        {
+          "contact_id": "CT-MUN-011",
+          "lead_id": "MUN-20260902-005",
+          "account_id": "ACC-002",
+          "name": "俞**",
+          "unit": "江苏联合水务科技股份有限公司",
+          "role": "董事长/总裁",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "021-****0178"
+            }
+          ],
+          "source_url": "https://www.unitedwater.com.cn",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "公司总机021-****0178为公开入口"
+        },
+        {
+          "contact_id": "CT-MUN-012",
+          "lead_id": "MUN-20260902-005",
+          "account_id": "ACC-002",
+          "name": "许**",
+          "unit": "江苏联合水务科技股份有限公司",
+          "role": "副总裁兼董事会秘书",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "021-****0178"
+            }
+          ],
+          "source_url": "https://www.unitedwater.com.cn",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        },
+        {
+          "contact_id": "CT-MUN-013",
+          "lead_id": "MUN-20260902-005",
+          "account_id": "ACC-002",
+          "name": "程**",
+          "unit": "江苏联合水务科技股份有限公司",
+          "role": "证券事务代表",
+          "priority": "C",
+          "phone": [
+            {
+              "value": "021-****0178"
+            }
+          ],
+          "source_url": "https://www.unitedwater.com.cn",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": ""
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -2178,8 +2731,8 @@
         "lead_id": "MUN-20260902-003",
         "company": {
           "company_name": "怀远县全域供水数字化改造提升项目EPC",
-          "location": null,
-          "industry": null
+          "location": "怀远县（省市未记录）",
+          "industry": "市政供水"
         },
         "project": {
           "project_name": "怀远县全域供水数字化改造提升项目EPC-智慧监测体系建设工程",
@@ -2269,7 +2822,8 @@
             "智慧监测体系技术规格是否含在线水质仪表？",
             "重新招标时间点与方案调整方向？"
           ],
-          "location": null
+          "location": "怀远县（省市未记录）",
+          "industry": "市政供水"
         },
         "enrichment_status": "signal_only",
         "projects": [
@@ -2308,7 +2862,61 @@
         ],
         "accounts": []
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-005",
+          "lead_id": "MUN-20260902-003",
+          "account_id": "ACC-009",
+          "name": "杨**",
+          "unit": "怀远县禹众水务有限公司",
+          "role": "EPC招标人联系人（全域供水数字化改造项目）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0552-****611"
+            }
+          ],
+          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "注意：EPC项目BB2026HYGCZ0521已于2026-09-10撤销招标，重新招标时优先联系；母公司怀远县大禹产业投资集团（董事长焦利君）"
+        },
+        {
+          "contact_id": "CT-MUN-006",
+          "lead_id": "MUN-20260902-003",
+          "account_id": "ACC-009",
+          "name": "周**",
+          "unit": "安徽鑫宸博晟工程咨询有限公司",
+          "role": "招标代理机构联系人",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "151****0140"
+            }
+          ],
+          "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/0020****5002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "代理可获知撤销原因与重新招标安排"
+        },
+        {
+          "contact_id": "CT-MUN-007",
+          "lead_id": "MUN-20260902-003",
+          "account_id": "ACC-009",
+          "name": "王*",
+          "unit": "怀远县禹众水务有限公司",
+          "role": "法定代表人",
+          "priority": "C",
+          "phone": null,
+          "source_url": "https://seo.shuidi.cn/company-93528580f5233d07a4f8bbd2cb221a01.html",
+          "source_type": "registration_db",
+          "verification_status": "inferred",
+          "first_seen": "2026-09-12",
+          "notes": "工商登记信息，无公开电话"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -2471,7 +3079,27 @@
           }
         ]
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-004",
+          "lead_id": "MUN-20260902-002",
+          "account_id": "ACC-008",
+          "name": "合********",
+          "unit": "合肥水务集团有限公司",
+          "role": "公司办公室总机（排水管网全面接管对接入口）",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0551-****1821"
+            }
+          ],
+          "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+          "source_type": "gov_website",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "与MUN-20260902-001同一主体；排水管网接管涉及多站点监测，可经由总机转接管网/调度部门"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
@@ -2644,7 +3272,65 @@
           }
         ]
       },
-      "enriched_contacts": [],
+      "enriched_contacts": [
+        {
+          "contact_id": "CT-MUN-001",
+          "lead_id": "MUN-20260902-001",
+          "account_id": "ACC-008",
+          "name": "俞*",
+          "unit": "合肥水务集团有限公司",
+          "role": "采购经办（压力监测设备采购项目）",
+          "priority": "A",
+          "phone": [
+            {
+              "value": "0551-****3680"
+            }
+          ],
+          "source_url": "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "合肥水务集团2026-2028年度采购公告联系人，涉及在线监测/压力监测设备，最优先接入点"
+        },
+        {
+          "contact_id": "CT-MUN-002",
+          "lead_id": "MUN-20260902-001",
+          "account_id": "ACC-008",
+          "name": "合********",
+          "unit": "合肥水务集团有限公司",
+          "role": "公司办公室总机",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0551-****1821"
+            }
+          ],
+          "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+          "source_type": "gov_website",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "官方公开电话，可转接数字化/设备管理部门"
+        },
+        {
+          "contact_id": "CT-MUN-003",
+          "lead_id": "MUN-20260902-001",
+          "account_id": "ACC-008",
+          "name": "合*********",
+          "unit": "合肥水务集团有限公司",
+          "role": "24小时服务热线",
+          "priority": "B",
+          "phone": [
+            {
+              "value": "0551-****2666"
+            }
+          ],
+          "source_url": "https://www.hfwater.cn",
+          "source_type": "official_announcement",
+          "verification_status": "verified",
+          "first_seen": "2026-09-12",
+          "notes": "另：新**2026BFFWZ00698合同全生命周期管理信息软件开发项目（预算95万，预计2026-10进场），已同步至lead证据"
+        }
+      ],
       "history": [
         {
           "file": "indctx_latest.json",
