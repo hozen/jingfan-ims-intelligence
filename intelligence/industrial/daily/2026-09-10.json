@@ -1,0 +1,1327 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "report_date": "2026-09-10",
+  "scan_timestamp": "2026-09-10T08:27:37+08:00",
+  "experiment_week": 5,
+  "spec_version": "PULL_v1_Stage3",
+  "scanner_summary": {
+    "total_signals": 11,
+    "engine_a_count": 2,
+    "engine_b_count": 9,
+    "first_seen_count": 7,
+    "no_new_facts_count": 4,
+    "qual_breakdown": {
+      "WATCH": 10,
+      "REJECT": 1,
+      "PASS": 0
+    },
+    "priority_breakdown": {
+      "P1": 0,
+      "P2": 6,
+      "P3": 5
+    },
+    "industry_breakdown": {
+      "cross_industry": 1,
+      "semiconductor/electronics": 1,
+      "pharma": 3,
+      "petrochemical/chemical": 2,
+      "power": 3,
+      "petrochemical": 1
+    },
+    "pull_score_distribution": {
+      "0_5": 0,
+      "6_10": 5,
+      "11_15": 6,
+      "16_20": 0
+    },
+    "entry_window_breakdown": {
+      "EARLY": 8,
+      "LATE": 3
+    },
+    "trigger_distribution": {
+      "regulatory_compliance": 2,
+      "eia_approval": 2,
+      "epc_tender": 3,
+      "digitalization": 1,
+      "capex_expansion": 2
+    },
+    "source_distribution": {
+      "government_ecology": 4,
+      "bid_platform": 3,
+      "news_media": 3,
+      "industry_media": 2
+    },
+    "early_vs_late": {
+      "early": 8,
+      "late": 3
+    },
+    "search_bias_warning": "Engine A only 2/11 signals. Need more compliance-driven search. Next round: strengthen Engine A (pollution permit database, auto-monitoring requirements).",
+    "stage3_status": {
+      "contacts_complete": 3,
+      "contacts_partial": 8,
+      "contacts_incomplete": 0
+    }
+  },
+  "top_5_match": [
+    {
+      "id": "IND-20260910-01",
+      "company": "四川省排污单位(全省范围)",
+      "industry": "cross_industry",
+      "priority": "P2",
+      "pull_score": 15,
+      "reason": "央视曝光监测数据造假->省生态环境厅+市监局联合3个月专项行动->拉网式排查自动监测设备信息->重点排污单位主要监测点位须安装视频监控并联网",
+      "agent_checklist": [
+        "关注10月10日自查阶段后公布的问题企业名单",
+        "确认被查处企业的在线仪表数量和排口数量",
+        "确认是否有集中监控平台需求"
+      ]
+    },
+    {
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "industry": "petrochemical",
+      "priority": "P2",
+      "pull_score": 14,
+      "reason": "自动监测设备故障4日+第三方运维响应不足+未上报(法典生效后合规压力)",
+      "agent_checklist": [
+        "确认该厂在线仪表数量+排口数量",
+        "确认当前SCADA覆盖范围",
+        "确认环保部门是否已有预算和行动计划"
+      ]
+    },
+    {
+      "id": "IND-20260910-02",
+      "company": "先进半导体材料(安徽)有限公司",
+      "industry": "semiconductor/electronics",
+      "priority": "P2",
+      "pull_score": 12,
+      "reason": "环评重新报批-生产工艺重大变动-含银/蚀刻/酸碱/含氰废水分类处理-执行GB39731-2020",
+      "agent_checklist": [
+        "确认废水处理设施设计单位和仪表清单",
+        "确认在线监测仪表是否已选型",
+        "确认含氰废水在线监测要求"
+      ]
+    },
+    {
+      "id": "IND-20260910-03",
+      "company": "灿盛制药(淄博)有限公司",
+      "industry": "pharma",
+      "priority": "P2",
+      "pull_score": 12,
+      "reason": "头孢菌素技改-母液压滤废水经电渗析+MVR脱盐预处理-现有污水处理站-执行GB21904-2008",
+      "agent_checklist": [
+        "确认MVR脱盐系统在线仪表配置",
+        "确认现有污水处理站在线监测仪表清单",
+        "确认全盐量在线监测要求"
+      ]
+    },
+    {
+      "id": "IND-20260910-06",
+      "company": "中捷产业园区石化工业园(节能国祯+麦王环境+山东圣立创联合体中标)",
+      "industry": "petrochemical/chemical",
+      "priority": "P2",
+      "pull_score": 12,
+      "reason": "BOOT30年特许经营-石化园区工业废水COD上万-中水回用率>=75%-17.85元/吨",
+      "agent_checklist": [
+        "确认节能国祯的仪表选型标准和供应商偏好",
+        "确认BOOT项目水处理工艺和在线监测要求",
+        "确认Hach在石化园区污水处理领域装机基数"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260910-01",
+      "company": "四川省排污单位(全省范围)",
+      "industry": "cross_industry",
+      "location": "四川省(全省)",
+      "project": "四川省排污单位自行监测数据弄虚作假整治专项行动(2026年9-11月)",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "opp_type": "Regulatory Trigger Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "央视曝光监测数据造假->省生态环境厅+市监局联合3个月专项行动->拉网式排查自动监测设备信息->重点排污单位主要监测点位须安装视频监控并联网",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Regulatory/Ongoing",
+      "water_system_ownership": "D",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026-09-06央视财经频道曝光生态环境监测技术服务机构监测数据造假问题",
+          "2026-09-07四川省生态环境厅+省市场监督管理局联合印发专项行动通知",
+          "行动时间2026年9月至11月,全省范围,为期三个月",
+          "要求:排污单位关键监测数据使用符合标准规范的设备,关键数据与生态环境部门联网",
+          "要求:排污许可重点管理单位主要监测点位须安装视频监控并联网",
+          "10月10日前完成自查,10月11日至11月10日省级抽查",
+          "行动依据:《中华人民共和国生态环境法典》《生态环境监测条例》"
+        ],
+        "inferences": [
+          "法典2026-08-15生效后,监管力度显著升级,自行监测数据管理从形式合规转向实质合规",
+          "拉网式排查将暴露大量自动监测设备管理漏洞,形成集中整改需求",
+          "重点排污单位(石化/制药/电池/半导体等)是主要受影响群体",
+          "视频监控+数据联网要求可能催生在线监测仪表升级和集中管理平台需求"
+        ],
+        "unknowns": [
+          "哪些具体企业将被发现存在监测设备管理问题?",
+          "这些企业当前有多少台在线监测仪表?",
+          "是否有SCADA/DCS覆盖监测仪表?",
+          "整改预算是否已分配?"
+        ]
+      },
+      "to_verify": [
+        "关注10月10日自查阶段后公布的问题企业名单",
+        "确认被查处企业的在线仪表数量和排口数量",
+        "确认是否有集中监控平台需求",
+        "确认整改预算来源和时间表"
+      ],
+      "source_urls": [
+        "https://news.cnr.cn/native/gd/20260908/t20260908_527807929.shtml",
+        "https://sichuan.scol.com.cn/ggxw/202609/83318183.html",
+        "https://www.chinanews.com.cn/sh/2026/09-08/10692577.shtml"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 5,
+        "limitations": 3,
+        "ims_leverage": 3,
+        "total": 15
+      },
+      "pull_box": {
+        "project": "四川省全省排污单位自行监测数据造假整治,3个月拉网式排查,要求关键数据联网+视频监控",
+        "project_confidence": "FACT",
+        "unavoidable": "法典2026-08-15生效,重点排污单位自动监测设备必须正常运行,数据异常必须上报。不解决产生明确合规后果(处罚/吊销资质/移送公安)",
+        "unavoidable_confidence": "FACT",
+        "limitations": "当前大量排污单位依赖第三方定期巡检,数据未联网,异常期间无运维记录。拉网式排查将暴露这些管理漏洞",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "iMS可提供仪表状态实时监控->发现数据异常->及时通知运维->形成合规闭环。但需确认具体企业仪表规模和现有SCADA覆盖",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "哪些具体企业将被发现存在监测设备管理问题?这些企业有多少台在线仪表?",
+        "next_validation_question": "贵厂当前有多少台在线监测仪表?数据是否已与生态环境部门联网?如何管理仪表运行状态?"
+      },
+      "evidence_quality": "HIGH",
+      "hach_fit": "Medium",
+      "ims_fit": "Medium",
+      "logic": "Compliance Trigger(法典生效+央视曝光) -> Monitoring Obligation(自行监测数据联网+视频监控) -> Instrumentation Requirement(在线监测仪表升级+集中管理) -> Potential iMS Opportunity(仪表状态监控+合规闭环)",
+      "potential_ims_use_case": "在线监测仪表集中监控平台+合规数据管理+运维响应闭环",
+      "estimated_time_window": "2026年9月-11月(专项行动期间)至2027年(整改期)",
+      "stage3_enrichment": {
+        "contacts": {
+          "regulatory_contact": "四川省生态环境厅环境监察执法局(专项行动牵头); 成都市成华区生态环境局(具体执法)",
+          "project_owner_contact": "待确认(10月10日自查名单公布后再定位具体企业)",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "不适用",
+          "operator_contact": "各排污单位环保/EHS部门",
+          "procurement_decision_maker": "各排污单位(分散决策)",
+          "contacts_search_status": "PARTIAL - 监管方已确认,具体企业待10月名单公布"
+        },
+        "timeline": {
+          "project_start": "2026-09-07(专项行动通知印发)",
+          "milestone_self_inspection_deadline": "2026-10-10",
+          "milestone_provincial_inspection": "2026-10-11至2026-11-10",
+          "procurement_window_estimate": "2026Q4-2027Q1(整改需求释放)",
+          "project_completion": "2027年(整改完成)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "各排污单位分散采购",
+          "budget_owner": "各排污单位(是否已分配预算未知)",
+          "technical_spec_owner": "各排污单位环保/EHS部门",
+          "influencer": "四川省生态环境厅(强制要求)",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "四川专项行动是批量市场机会,需10月后通过问题企业名单精准定位"
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-02",
+      "company": "先进半导体材料(安徽)有限公司",
+      "industry": "semiconductor/electronics",
+      "location": "安徽滁州中新苏滁高新区",
+      "project": "三期项目(重新报批)-引线框架生产线工艺变更,含自建废水处理设施",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "opp_type": "EIA/Design Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "环评重新报批-生产工艺重大变动-含银/蚀刻/酸碱/含氰废水分类处理-执行GB39731-2020",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "EIA/Approval",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026年环评重新报批批复(苏滁企服环函[2026]25号),因生产工艺/污染物排放量重大变动",
+          "项目总投资3000万元,年产冲压引线框架2000万条",
+          "废水分类:含银废水/蚀刻废水/一般清洗废水/酸性废水/末端清洗废水经处理后回用",
+          "酸性废液/碱性废液/有机废液/退镀废水/脱模废液/含氰废水/废气喷淋塔废水经处理达标后排入市政污水管网",
+          "车间排放口总银执行GB39731-2020间接排放限值",
+          "废水总排口总铜/总氰化物执行GB39731-2020间接排放限值",
+          "项目对已批复三期项目中的ME2生产线后取消了1条镀镍钯金生产线,在镀铜生产线前增加了1条表面蚀刻处理线"
+        ],
+        "inferences": [
+          "半导体引线框架电镀/蚀刻废水含重金属(银/铜)和氰化物,处理工艺复杂",
+          "重新报批意味着废水处理设施需同步调整,仪表选型可能尚未冻结",
+          "含氰废水需专项处理和在线监测"
+        ],
+        "unknowns": [
+          "在线监测仪表是否已选型?",
+          "废水处理设施的具体工艺和仪表清单?",
+          "设计院是谁?"
+        ]
+      },
+      "to_verify": [
+        "确认废水处理设施设计单位和仪表清单",
+        "确认在线监测仪表是否已选型",
+        "确认含氰废水在线监测要求"
+      ],
+      "source_urls": [
+        "https://scp.chuzhou.gov.cn/zwgk/tzgg/gsgg/1104474231.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 2,
+        "ims_leverage": 2,
+        "total": 12
+      },
+      "pull_box": {
+        "project": "半导体引线框架生产线工艺变更重新报批环评,自建废水处理设施含多类废水分类处理",
+        "project_confidence": "FACT",
+        "unavoidable": "因生产工艺重大变动需重新报批环评,废水须满足GB39731-2020电子工业水污染物排放标准。不达标不能投产",
+        "unavoidable_confidence": "FACT",
+        "limitations": "新建/改建废水处理设施,现有方案未知。重新报批阶段技术规格可能尚未冻结",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果仪表选型尚未冻结,Hach可在含银/含铜/含氰废水在线监测选型阶段影响技术规格。iMS可在多排口场景提供集中监控",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "废水处理设施的在线监测仪表是否已选型?设计院是谁?",
+        "next_validation_question": "三期重新报批项目的废水处理设施设计由哪家设计院承担?在线监测仪表是否已选型?"
+      },
+      "evidence_quality": "HIGH",
+      "hach_fit": "High",
+      "ims_fit": "Low",
+      "logic": "CapEx Trigger(3000万工艺变更) -> Water System(含银/铜/氰化物多类废水) -> Instrumentation Requirement(GB39731-2020在线监测) -> Potential Hach Opportunity(重金属/氰化物在线分析仪)",
+      "potential_ims_use_case": "多排口废水在线监测集中管理(如仪表已选型则为Installed Base/Lifecycle)",
+      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "先进半导体材料(安徽)有限公司; 法定代表人/董事:雷国辉; 董事长:何树泉; 电话:0550-7126288; 邮箱:j.song@aam-intl.com; 地址:安徽省滁州市中新苏滁高新技术产业开发区文忠路288号; 官网:www.aam-intl.com; 母公司:AAMI先进封装材料国际有限公司(香港)",
+          "epc_contractor_contact": "不适用(环评阶段,未进入EPC)",
+          "design_institute_contact": "待确认(环评报告编制单位未在公开文件中披露)",
+          "operator_contact": "先进半导体材料(安徽)有限公司(自营); HR:宋先生(人力资源部经理)/余女士(人事)",
+          "procurement_decision_maker": "待确认(建议通过雷国辉或何树泉对接设备/环保部门)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
+        },
+        "timeline": {
+          "project_start": "2026年(环评重新报批)",
+          "milestone_eia_approval": "2026Q3-Q4(环评批复)",
+          "milestone_design": "2026Q4-2027Q1(设计阶段,仪表选型窗口)",
+          "procurement_window_estimate": "2026Q4-2027Q1",
+          "project_completion": "2027年(预计投产)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采(环评阶段,尚未确定EPC)",
+          "budget_owner": "先进半导体材料(安徽)有限公司",
+          "technical_spec_owner": "待确认(设计院)",
+          "influencer": "环评批复要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用(尚未确定EPC)",
+          "competition_notes": "环评阶段是仪表选型最佳窗口,需在EIA批复后尽快联系业主"
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-03",
+      "company": "灿盛制药(淄博)有限公司",
+      "industry": "pharma",
+      "location": "山东淄博高新区",
+      "project": "年产1200吨头孢菌素技术改造项目(增加头孢羟氨苄)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "EIA/Design Lead",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "头孢菌素技改-母液压滤废水经电渗析+MVR脱盐预处理-现有污水处理站-执行GB21904-2008",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "EIA/Approval",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026-09-04淄博市生态环境局拟审批公示",
+          "项目利用现有头孢氨苄和头孢拉定共线生产线,增加头孢羟氨苄原料药",
+          "1200吨/年总产能不变(头孢氨苄1000->800,头孢拉定200不变,头孢羟氨苄+200)",
+          "母液压滤废水经过电渗析+MVR脱盐预处理后进入现有污水处理站",
+          "外排废水须满足GB21904-2008化学合成类制药工业水污染物排放标准",
+          "全盐量须满足DB37 3416.3-2025小清河流域标准"
+        ],
+        "inferences": [
+          "头孢类制药废水含高COD/高盐/难降解有机物",
+          "新增MVR脱盐预处理是水系统增量",
+          "现有污水处理站可能需评估是否需扩建"
+        ],
+        "unknowns": [
+          "MVR系统是否含在线监测仪表?",
+          "现有污水处理站在线仪表配置?",
+          "全盐量监测是否需要新增在线仪表?"
+        ]
+      },
+      "to_verify": [
+        "确认MVR脱盐系统在线仪表配置",
+        "确认现有污水处理站在线监测仪表清单",
+        "确认全盐量在线监测要求"
+      ],
+      "source_urls": [
+        "https://epb.zibo.gov.cn/gongkai/channel_c_5f9fa491ab327f36e4c13066_n_1605682664.7259/doc_6a9a50b897765960288b98af.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 3,
+        "ims_leverage": 2,
+        "total": 12
+      },
+      "pull_box": {
+        "project": "头孢菌素生产线技改,新增MVR脱盐预处理+现有污水处理站改扩建评估",
+        "project_confidence": "FACT",
+        "unavoidable": "制药废水须满足GB21904-2008,全盐量须满足DB37 3416.3-2025。MVR脱盐为新增工艺",
+        "unavoidable_confidence": "FACT",
+        "limitations": "现有污水处理站(工艺/能力未知)需评估是否满足新增MVR预处理后的负荷。全盐量监测可能需要新增在线仪表",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果MVR系统和全盐量监测需要新增在线仪表,iMS可在选型阶段介入。但现有污水处理站仪表配置未知",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "MVR脱盐系统是否含在线监测仪表?现有污水处理站在线仪表清单是什么?",
+        "next_validation_question": "MVR脱盐系统和现有污水处理站的在线监测仪表配置是什么?全盐量是否需要新增在线监测?"
+      },
+      "evidence_quality": "HIGH",
+      "hach_fit": "Medium",
+      "ims_fit": "Low",
+      "logic": "CapEx Trigger(头孢技改) -> Water System(MVR脱盐+现有WWTP) -> Instrumentation Requirement(全盐量+COD/氨氮在线监测) -> Potential Hach Opportunity(制药废水在线分析仪)",
+      "potential_ims_use_case": "MVR+WWTP在线监测集中管理(如仪表新增则为New Opportunity)",
+      "estimated_time_window": "环评批复后至设备安装(预计2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "灿盛制药(淄博)有限公司; 法定代表人:陆坊斌; 电话:0533-207****; 邮箱:jin-guo.ma@centrient.com; 地址:山东省淄博高新区牧龙山路1033号; 母公司:荷兰Centrient Pharmaceuticals(原DSM制药部门); 注册资本:1138.9万美元; 成立:1995-09-04; 员工:137人(2025年); 2018年被并购(交易金额6303万元); 曾用名:中化帝斯曼制药(淄博)有限公司",
+          "epc_contractor_contact": "不适用(技改项目,利用现有设施)",
+          "design_institute_contact": "环评报告编制单位:山东美陵中联环境工程有限公司(在环评公示文件中列为编制单位); 地址:淄博市临淄区",
+          "operator_contact": "灿盛制药(淄博)生产运营部门; 建议通过陆坊斌或jin-guo.ma@centrient.com对接环保/EHS部门",
+          "procurement_decision_maker": "待确认(母公司Centrient采购体系可能主导); 建议联系路径:通过荷兰总部Centrient或中国法人陆坊斌",
+          "contacts_search_status": "PARTIAL - 企业基本信息和邮箱已确认,母公司为荷兰Centrient,具体采购决策人待核实"
+        },
+        "timeline": {
+          "project_start": "2026年(环评拟审批公示)",
+          "milestone_eia_approval": "2026-09(预计近期批复)",
+          "milestone_design": "2026Q4(设计阶段)",
+          "procurement_window_estimate": "2026Q4-2027Q1",
+          "project_completion": "2027年(预计技改完成)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采(技改项目)",
+          "budget_owner": "灿盛制药(淄博)",
+          "technical_spec_owner": "待确认(现有污水处理站运营方)",
+          "influencer": "环评批复要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "技改项目仪表选型窗口较窄,需在环评批复后尽快联系"
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-04",
+      "company": "启东盖天力药业有限公司",
+      "industry": "pharma",
+      "location": "江苏启东经济开发区",
+      "project": "槐耳颗粒/槐杞黄颗粒智能化技术改造项目(投资3000万)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Digitalization Lead",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "智能化技改-现有两套废水预处理(150t/d+200t/d含MBR)-需评估是否需扩建",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Design",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026年拟批准公示,投资3000万(环保投资30万)",
+          "新增提取罐/高效高速离心器/三效薄膜浓缩蒸发器等16台套设备",
+          "现有1号生产废水处理系统:调节池+混凝沉淀+接触氧化+二沉+排放,150t/d",
+          "现有2号生产废水处理系统:调节池+混凝沉淀+厌氧+一级/二级接触氧化+MBR+排放,200t/d",
+          "纳管废水须满足GB21907-2008生物工程类制药工业水污染物排放标准",
+          "排污许可证编号:91320681608384436X001V"
+        ],
+        "inferences": [
+          "智能化技改可能引入数字化管理需求",
+          "两套废水预处理系统并联运行,可能存在数据孤岛",
+          "MBR系统通常需要在线监测仪表"
+        ],
+        "unknowns": [
+          "水系统仪表是否纳入智能化技改范围?",
+          "现有两套废水系统的在线仪表配置?",
+          "是否有数字化管理平台需求?"
+        ]
+      },
+      "to_verify": [
+        "确认智能化技改是否包含水系统仪表数字化",
+        "确认现有废水系统在线仪表清单",
+        "确认是否有数据集中管理平台需求"
+      ],
+      "source_urls": [
+        "http://www.qidong.gov.cn/qdsxzspj/hpgs/content/cce75a41-37a1-468f-b3fd-526a29a166b6.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 2,
+        "ims_leverage": 2,
+        "total": 9
+      },
+      "pull_box": {
+        "project": "中药颗粒智能化技术改造,现有两套废水预处理系统(含MBR)",
+        "project_confidence": "FACT",
+        "unavoidable": "技改项目需评估现有废水预处理能力是否满足新增污染源强。智能化升级是企业战略,但水系统是否包含未知",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "现有两套废水预处理系统并联运行,可能存在数据孤岛。MBR系统通常需在线监测但配置未知",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果智能化技改包含水系统仪表数字化,iMS可在两套系统间提供集中监控。但水系统是否纳入未知",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "智能化技改是否包含水系统仪表数字化?现有两套废水系统在线仪表配置?",
+        "next_validation_question": "智能化技改项目中水系统在线监测仪表是否纳入数字化升级范围?"
+      },
+      "evidence_quality": "MEDIUM",
+      "hach_fit": "Low",
+      "ims_fit": "Low",
+      "logic": "Digitalization Trigger(智能化技改) -> Water System(两套WWTP含MBR) -> Possible Instrumentation Requirement(数据集中管理) -> Weak iMS Signal",
+      "potential_ims_use_case": "两套废水预处理系统集中监控(如纳入智能化范围)",
+      "estimated_time_window": "技改设计阶段(2026Q4)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "启东盖天力药业有限公司; 法定代表人:徐无为; 电话:0513-83101860 / 0513-83321533; 邮箱:yonghu@gaitianli.com.cn / sjh@gaitianli.com.cn; 官网:www.gaitianli.com.cn; 地址:江苏省启东市经济开发区南苑西路1166号; 成立:1995-06-06; 注册资本:4500万元; 员工:127人(2025年); 主营:中成药槐耳颗粒/槐杞黄颗粒",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "待确认",
+          "operator_contact": "启东盖天力药业(自营)",
+          "procurement_decision_maker": "待确认(建议通过0513-83101860转分机对接设备/环保部门)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
+        },
+        "timeline": {
+          "project_start": "2026年(拟批准公示)",
+          "milestone_eia_approval": "2026Q3",
+          "procurement_window_estimate": "2026Q4",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采",
+          "budget_owner": "启东盖天力药业",
+          "technical_spec_owner": "待确认",
+          "influencer": "技改方案",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "智能化技改是否包含水系统未知"
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-05",
+      "company": "云南解化绿源化工有限公司(云南省煤炭产业集团/云南能投集团)",
+      "industry": "petrochemical/chemical",
+      "location": "云南红河州开远市小龙潭化工园区",
+      "project": "搬迁转型升级建设50万吨合成氨及下游项目-水处理及配套工程EPC",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "水处理EPC已由中国天辰中标(1亿+)-70亿搬迁项目-合成氨/尿素/硝酸/硝铵",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "EPC-Project Prep",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-09-03水处理及配套工程EPC中标候选人公示,中标单位中国天辰工程有限公司",
+          "项目总投资约70亿元,占地约1692亩",
+          "以50万吨/年合成氨装置为核心,配套50万吨/年尿素/54万吨/年硝酸/55万吨/年硝酸铵等",
+          "项目属于搬迁入园项目,业主云南解化绿源化工有限公司(2025年7月成立)",
+          "背后云南省煤炭产业集团和云南能投集团",
+          "多个EPC标段已相继中标:粉煤气化4.36亿/硝酸硝铵10亿/空分锅炉6.18亿/净化氨合成11.8亿"
+        ],
+        "inferences": [
+          "大型合成氨项目水处理系统通常含循环冷却水/锅炉补给水/工艺废水处理",
+          "EPC已中标意味着水处理系统设计由EPC方主导,仪表选型可能已确定",
+          "搬迁入园项目通常需建设完整水系统(给水/排水/回用)"
+        ],
+        "unknowns": [
+          "EPC方(中国天辰)的仪表选型标准是什么?",
+          "水处理系统是否包含在线监测仪表?",
+          "Hach在合成氨行业装机基数如何?"
+        ]
+      },
+      "to_verify": [
+        "确认EPC方仪表选型标准是否已确定",
+        "确认水处理系统在线监测仪表清单",
+        "确认Hach在合成氨行业装机基数"
+      ],
+      "source_urls": [
+        "https://www.bidchance.com/info-zhongbiao-b5e333d1616386531eeae45e31eb713a.html",
+        "https://www.cbi360.net/hyzx/zbkx_70260904132091.html",
+        "https://news.qq.com/rain/a/20260907A08JCN00"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 10
+      },
+      "pull_box": {
+        "project": "50万吨合成氨搬迁入园项目,水处理EPC已由中国天辰中标",
+        "project_confidence": "FACT",
+        "unavoidable": "搬迁入园是政府要求,必须建设配套水处理设施。EPC已中标",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC已中标,仪表选型可能已由EPC方确定。介入窗口正在收窄",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果EPC方仪表选型未冻结,Hach仍有机会。但EPC模式下业主决策权有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "EPC方(中国天辰)的仪表选型是否已确定?",
+        "next_validation_question": "水处理EPC项目中的在线监测仪表选型是否已确定?如果未确定,技术规格由谁编制?"
+      },
+      "evidence_quality": "MEDIUM",
+      "hach_fit": "Medium",
+      "ims_fit": "No Evidence",
+      "logic": "CapEx Trigger(70亿搬迁项目) -> Water System(完整水系统新建) -> Instrumentation Requirement(在线监测) -> Timing Window Closing(EPC已中标)",
+      "potential_ims_use_case": "大型合成氨水系统在线监测(如EPC仪表未选型)",
+      "estimated_time_window": "EPC合同签订后施工阶段(2026Q4-2027) - 采购窗口正在收窄",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "云南解化绿源化工有限公司; 法定代表人:张兵; 董事/经理:黄鑫; 原法定代表人:王朝文; 电话:0873-716****(部分隐藏); 地址:云南省红河州开远市小龙潭镇小龙潭化工园区; 注册资本17亿元; 成立2025-06-20; 母公司:云南建投集团",
+          "epc_contractor_contact": "中国天辰工程有限公司; 法定代表人/董事长:郭贵和; 总经理/董事:赵敏伟; 电话:022-23408826; 邮箱:tccoverseas@cntcc.cn; 地址:天津市北辰区京津路1号; 官网:www.china-tcc.com; 采购部办公室:022-23407379 / zhangfengyun3@cncec.cn; 国内业务:022-23408999 / tccdomestic@cntcc.cn; 分供方:022-23408886 / caimai@cntcc.cn",
+          "design_institute_contact": "中国天辰(设计施工总承包); 原化工部第一设计院(1953年成立); 国内业务邮箱:华东hdqyzx@cncec.cn / 西北xbqyzx@cncec.cn / 东北dbqyzx@cncec.cn",
+          "operator_contact": "云南解化绿源化工有限公司(搬迁后自营); 老厂运营方:云南解化清洁能源开发有限公司解化化工分公司",
+          "procurement_decision_maker": "EPC方主导仪表选型(中国天辰); 仪表采购执行团队:张炜(核心,多项目覆盖)、孙颖B(温度仪表)、安秋宇(仪表桥架); 建议优先联系张炜(18622208507 / zhangwei64@cncec.cn); 招标代理:云南西南咨询有限公司(马天成/王闻简/杨丽/王素娟/王倩 0871-65875131 / 13211686971)",
+          "contacts_search_status": "COMPLETE - 业主和EPC方已确认; 天辰仪表采购团队关键联系人已定位,张炜为仪表采购核心执行人"
+        },
+        "timeline": {
+          "project_start": "2025年(项目筹备)",
+          "milestone_epc_award": "2026-09-03(水处理EPC中标)",
+          "procurement_window_estimate": "2026Q4-2027(施工阶段,窗口收窄)",
+          "project_completion": "2028年(预计全面投产)",
+          "timeline_confidence": "FACT"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC总承包(中国天辰)",
+          "budget_owner": "云南省煤炭产业集团/云南能投集团",
+          "technical_spec_owner": "中国天辰(主导)",
+          "influencer": "政府搬迁入园要求",
+          "decision_maker": "中国天辰(仪表选型)",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "中国天辰工程有限公司",
+          "competition_notes": "EPC已中标,介入窗口收窄。需确认天辰仪表选型标准"
+        },
+        "contact_background": {
+          "张炜": {
+            "role": "中国天辰工程有限公司 仪表类物资采购核心执行人/采购工程师",
+            "evidence": [
+              "2026-09-03 渤化码头库区项目仪表管阀件询比采购联系人(TCC-T25051-EA-022-B)",
+              "2026-07-07 TOC分析仪表(含成套柜)谈判采购联系人(TCC-T25127-EA-007-B)",
+              "2026-07-17 现场仪表接线箱询比采购联系人(TCC-T25051-EA-020-B)",
+              "2026-04-14 仪表管阀件询比采购联系人(TCC-T25011-EA-022-B)",
+              "2026年 恒坤化工项目仪表管阀件谈判采购联系人(TCC-T25090-EA-016-B)"
+            ],
+            "contact": "电话:18622208507 / 022-23407521; 邮箱:zhangwei64@cncec.cn",
+            "scope": "覆盖仪表管阀件、TOC分析仪表、现场仪表接线箱、码头库区仪表等多类仪表物资",
+            "inference": "张炜是天辰公司仪表类物资采购的核心执行人/高级采购工程师，跨多个项目持续负责仪表采购。建议作为首要联系人。",
+            "confidence": "HIGH"
+          },
+          "孙颖B": {
+            "role": "中国天辰工程有限公司 温度仪表采购联系人",
+            "evidence": [
+              "2026-07-16 温度仪表询比采购变更公告联系人(TCC-T25126-EA-019-B)"
+            ],
+            "contact": "电话:17320080380; 邮箱:sunying9@cncec.cn",
+            "scope": "负责温度仪表类采购",
+            "inference": "孙颖B是天辰公司采购部人员，负责温度仪表类物资采购，属于仪表采购专业口执行人员。",
+            "confidence": "MEDIUM"
+          },
+          "安秋宇": {
+            "role": "中国天辰工程有限公司 仪表桥架采购联系人",
+            "evidence": [
+              "2026-09-02 国能准东煤制天然气项目仪表桥架询比采购联系人(TCC-T25117-EA-012-B)"
+            ],
+            "contact": "电话:022-23406957; 邮箱:anqiuyu@cncec.cn",
+            "scope": "负责仪表桥架类采购",
+            "inference": "安秋宇是天辰公司采购部人员，负责仪表桥架类物资采购，属于仪表采购专业口执行人员。",
+            "confidence": "MEDIUM"
+          }
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-06",
+      "company": "中捷产业园区石化工业园(节能国祯+麦王环境+山东圣立创联合体中标)",
+      "industry": "petrochemical/chemical",
+      "location": "河北沧州中捷产业园区",
+      "project": "石化工业园污水处理及中水回用BOOT特许经营(30年,1万m3/d+0.5万m3/d回用)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "BOOT30年特许经营-石化园区工业废水COD上万-中水回用率>=75%-17.85元/吨",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Design",
+      "water_system_ownership": "C",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-09-03节能国祯联合麦王环境/山东圣立创中标中捷产业园区石化工业园污水处理及中水回用特许经营",
+          "BOOT模式,30年特许经营期,中标单价17.85元/吨",
+          "处理能力1万m3/d污水处理+0.5万m3/d中水回用",
+          "中水回用率不低于75%",
+          "园区聚集恒力/旭阳/盛虹等超百家石化化工企业",
+          "钱江水利9月9日公告未中标"
+        ],
+        "inferences": [
+          "石化园区工业废水COD高/含油/氨氮高/难降解有机物,处理难度大",
+          "BOOT模式下运营方负责设计建设运营30年,仪表选型由运营方决定",
+          "中水回用率75%要求意味着深度处理+膜工艺,通常需在线监测"
+        ],
+        "unknowns": [
+          "运营方(节能国祯)的仪表选型偏好?",
+          "Hach在石化园区污水处理领域装机基数?",
+          "BOOT项目是否已有仪表技术规格?"
+        ]
+      },
+      "to_verify": [
+        "确认节能国祯的仪表选型标准和供应商偏好",
+        "确认BOOT项目水处理工艺和在线监测要求",
+        "确认Hach在石化园区污水处理领域装机基数"
+      ],
+      "source_urls": [
+        "https://www.sohu.com/a/1071461279_122066679",
+        "http://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12589733"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 2,
+        "ims_leverage": 2,
+        "total": 12
+      },
+      "pull_box": {
+        "project": "石化园区工业废水BOOT特许经营30年,含中水回用75%",
+        "project_confidence": "FACT",
+        "unavoidable": "园区企业日均工业废水产生量超12万吨,必须集中处理。中水回用率>=75%是硬性要求",
+        "unavoidable_confidence": "FACT",
+        "limitations": "BOOT模式下运营方负责设计建设运营。仪表选型由运营方决定,Hach介入需通过运营方",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果运营方选型未冻结,Hach可在石化废水在线监测( COD/氨氮/油/TOC)选型阶段介入。iMS可在多排口/多工艺段提供集中监控",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "运营方(节能国祯)的仪表选型标准和供应商偏好是什么?",
+        "next_validation_question": "BOOT项目水处理工艺的在线监测仪表选型是否已确定?技术规格由谁编制?"
+      },
+      "evidence_quality": "HIGH",
+      "hach_fit": "Medium",
+      "ims_fit": "Low",
+      "logic": "CapEx Trigger(BOOT30年特许经营) -> Water System(石化园区工业废水+中水回用) -> Instrumentation Requirement(在线监测) -> Potential Hach Opportunity(通过运营方介入)",
+      "potential_ims_use_case": "石化园区工业废水多排口集中监控(如运营方选型未冻结)",
+      "estimated_time_window": "BOOT项目设计阶段(2026Q4-2027Q1)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "中捷产业园区石化工业园管理中心; 招标代理:河北天作招标代理有限公司; 代理联系人:齐福坤/王艳; 电话:0317-5687679 / 13313079810",
+          "epc_contractor_contact": "不适用(BOOT模式,运营方自建)",
+          "design_institute_contact": "中节能国祯环保科技股份有限公司(牵头运营方); 董秘:罗锦辉; 证券代表:李越越; 电话:0551-65324976; 地址:安徽省合肥市高新区创新大道2688号中新网安大厦; 邮箱:gzhb@gzep.com.cn; 官网:www.gzep.com.cn; 股票代码:300388; 设备制造事业部:0551-66181035; 客服中心:400-1622919",
+          "operator_contact": "节能国祯(牵头)+麦王环境+山东圣立创联合体; 麦王环境:法定代表人崔黎明(更正),电话021-68552275,邮箱zhaoyijing@mcwongtech.com,地址上海市杨浦区杨树浦路1088号,官网www.mcwongtech.com,员工127人; 山东圣立创:法定代表人胡平财,电话1768178****,邮箱2756535001@qq.com,地址济宁建设路141号",
+          "procurement_decision_maker": "运营方联合体(节能国祯主导); 关键建议:通过罗锦辉(0551-65324976)对接项目采购或设备制造事业部(0551-66181035)",
+          "contacts_search_status": "COMPLETE - 运营方联合体及招标代理联系人已确认; 麦王环境法人更正为崔黎明"
+        },
+        "timeline": {
+          "project_start": "2026-09-03(中标公告)",
+          "milestone_design": "2026Q4-2027Q1(设计建设)",
+          "milestone_construction": "2027-2028",
+          "procurement_window_estimate": "2026Q4-2027Q1(设计阶段)",
+          "project_completion": "2028年(预计投运)",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "BOOT特许经营(运营方采购)",
+          "budget_owner": "节能国祯联合体",
+          "technical_spec_owner": "节能国祯(主导)",
+          "influencer": "园区管委会",
+          "decision_maker": "节能国祯(仪表选型)",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "节能国祯+麦王环境+山东圣立创联合体",
+          "competition_notes": "BOOT模式下运营方负责30年,有长期运维动力。需通过节能国祯介入"
+        }
+      }
+    },
+    {
+      "id": "IND-20260910-07",
+      "company": "国能长源荆门发电有限公司(科环集团国能水务南京分公司)",
+      "industry": "power",
+      "location": "湖北荆门",
+      "project": "2x640MW机组全厂废水治理及零排放EPC",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "REJECT",
+      "trigger": "ZLD EPC项目-低压电气设备中标候选人公示(南京双灵瑞203万)-非仪表招标",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Procurement",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-09-09低压电气设备公开招标中标候选人公示",
+          "第一中标候选人南京双灵瑞电力自动化系统有限公司,报价203万元",
+          "项目名称:科环集团国能水务南京分公司国能长源荆门2x640MW机组全厂废水治理及零排放EPC",
+          "国能水务在火电ZLD领域有多个业绩(汉川/北仑/福州/常州等)"
+        ],
+        "inferences": [
+          "火电厂ZLD系统通常含脱硫废水/工业废水/循环冷却水处理",
+          "本次招标为低压电气设备,非在线监测仪表",
+          "EPC由国能水务实施,仪表选型可能由EPC方内部决定"
+        ],
+        "unknowns": [
+          "EPC方在线监测仪表选型标准?",
+          "是否单独有仪表招标包?"
+        ]
+      },
+      "to_verify": [
+        "确认是否有单独的在线监测仪表招标包",
+        "确认国能水务仪表选型标准"
+      ],
+      "source_urls": [
+        "https://jilin.zhaobiaoziyuan.com/detail/6aa0ef1d73b064ec599f5981.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 3,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 8
+      },
+      "pull_box": {
+        "project": "火电厂2x640MW全厂废水零排放EPC,电气设备采购中",
+        "project_confidence": "FACT",
+        "unavoidable": "火电厂全厂废水零排放是政策要求。EPC正在实施",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC由国能水务实施,仪表选型可能由内部决定。本次招标为电气设备非仪表",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "iMS价值有限-EPC方主导选型,且本次招标非仪表类",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "是否有单独的在线监测仪表招标包?",
+        "next_validation_question": "EPC项目中是否包含单独的在线监测仪表招标包?"
+      },
+      "evidence_quality": "MEDIUM",
+      "hach_fit": "Low",
+      "ims_fit": "No Evidence",
+      "logic": "CapEx Trigger(ZLD EPC) -> Water System(全厂废水零排放) -> Instrumentation Requirement(在线监测) -> Timing Window Closing(EPC实施中,本次招标非仪表)",
+      "potential_ims_use_case": "火电ZLD在线监测(如有独立仪表包)",
+      "estimated_time_window": "EPC施工阶段(2026Q4-2027) - 采购窗口可能已过",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "国能长源荆门发电有限公司; 地址:湖北省荆门市城东工业区; 始建于1976年,隶属国家能源投资集团; 三期2x640MW机组2006-2007年投产; 补充水源:漳河水库; 冷却方式:带冷却塔的二次循环冷却系统",
+          "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(实施方); 负责人:祖坤勇(2021年11月上任); 前负责人:顾小红; 电话:025-68521182; 邮箱:p0004212@chnenergy.com.cn; 地址:南京市建邺区楠溪江东街68号; 曾用名:北京朗新明/国能朗新明环保科技南京分公司; 关联公司:国能(南京)水务环保科技有限公司(法定代表人:祖坤勇,注册资本5050万,电话025-68521182,地址:南京市建邺区江心洲文泰街85号)",
+          "design_institute_contact": "国能水务(内部EPC设计)",
+          "operator_contact": "国能长源荆门发电有限公司(自营)",
+          "procurement_decision_maker": "国能水务南京分公司(内部EPC采购); 招标代理:国家能源集团国际工程咨询有限公司; 关键发现:2026-08-28曾发布'仪表成套询价采购公告'(WZCX-WZXJ-202****,报价截止2026-09-01),说明仪表采购正在进行; 2026-09-09低压电气设备已中标(南京双灵瑞203万); 2026-09-10新发布'建安工程招标公告'(CEZB260107615)",
+          "contacts_search_status": "COMPLETE - EPC实施方及业主信息已确认; 关键发现:曾有仪表成套询价采购(2026-08-28),仪表采购窗口可能存在"
+        },
+        "timeline": {
+          "project_start": "2026年(EPC实施中)",
+          "milestone_electrical_tender": "2026-09-09(低压电气设备中标公示)",
+          "procurement_window_estimate": "EPC实施中,采购窗口可能已过",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC内部采购(国能水务)",
+          "budget_owner": "科环集团",
+          "technical_spec_owner": "国能水务",
+          "influencer": "火电ZLD政策要求",
+          "decision_maker": "国能水务",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "科环集团国能水务",
+          "competition_notes": "EPC内部采购,介入窗口已过或极窄"
+        }
+      }
+    },
+    {
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "industry": "petrochemical",
+      "location": "吉林市吉林经开区",
+      "project": "自动监测设备故障4日+第三方运维响应不足+未上报",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "opp_type": "iMS Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "自动监测设备故障4日+第三方运维响应不足+未上报(法典生效后合规压力)",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Regulatory/Ongoing",
+      "water_system_ownership": "D",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026-09-08报告中记录的全部事实保持不变",
+          "本次搜索未发现新的公开信息更新"
+        ],
+        "inferences": [
+          "法典2026-08-15生效后合规压力持续",
+          "四川专项行动可能波及类似企业"
+        ],
+        "unknowns": [
+          "该厂废水排口在线仪表数量?(9/8报告中已记录的unknowns保持不变)"
+        ]
+      },
+      "to_verify": [
+        "确认该厂在线仪表数量+排口数量",
+        "确认当前SCADA覆盖范围",
+        "确认环保部门是否已有预算和行动计划"
+      ],
+      "source_urls": [
+        "https://www.jlcity.gov.cn/bmwz/hbj/hjxxgk/hjcf/202608/t20260831_1334077.html"
+      ],
+      "continuity": "no_new_facts",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 3,
+        "ims_leverage": 3,
+        "total": 14
+      },
+      "pull_box": {
+        "project": "自动监测设备故障4日未上报,第三方运维响应不足,合规风险已发生",
+        "project_confidence": "FACT",
+        "unavoidable": "法典生效后重点排污单位自动监测设备必须正常运行,数据异常必须上报",
+        "unavoidable_confidence": "FACT",
+        "limitations": "当前依赖第三方定期巡检(每月2次),异常期间无任何巡检/数据核验/故障排查记录",
+        "limitations_confidence": "FACT",
+        "leverage": "仪表状态数据->发现异常趋势->及时通知运维->减少合规风险",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "该厂有多少台在线监测仪表?是否多排口?",
+        "next_validation_question": "贵厂目前有多少台在线监测仪表?分布在几个排口?当前如何管理这些仪表的运行状态?"
+      },
+      "evidence_quality": "HIGH",
+      "hach_fit": "Medium",
+      "ims_fit": "Medium",
+      "logic": "Compliance Trigger -> Monitoring Obligation -> Instrumentation Requirement -> Potential iMS Opportunity",
+      "potential_ims_use_case": "在线监测仪表集中监控平台+合规数据管理+运维响应闭环",
+      "estimated_time_window": "法典生效后(2026-08-15起)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "康乃尔化学工业股份有限公司; 法定代表人:薛艳东; 电话:0432-68105976; 邮箱:18744218058@163.com; 官网:www.jilinconnell.com; 地址:吉林市吉林经济技术开发区昆仑街245号; HR:姜女士(人事经理); 员工:577人(2025年); 注册资本:5.86亿元; 成立:2006-11-23; 所属集团:吉林康乃尔集团",
+          "epc_contractor_contact": "不适用",
+          "design_institute_contact": "不适用",
+          "operator_contact": "康乃尔化学(自营); 注意:2023年与旭阳集团合作成立吉林旭阳康乃尔化工有限公司(法定代表人:潘九海,注册资本133万元)",
+          "procurement_decision_maker": "待确认(建议通过薛艳东对接环保/设备/EHS部门; 或直接拨打0432-68105976转分机)",
+          "contacts_search_status": "PARTIAL - 企业基本信息和公开联系方式已确认,具体采购决策人待核实"
+        },
+        "timeline": {
+          "project_start": "法典生效后(2026-08-15)",
+          "milestone_inspection": "2026-08(吉林市生态环境局现场检查)",
+          "procurement_window_estimate": "2026Q4-2027(整改期)",
+          "project_completion": "持续合规运营",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主直采",
+          "budget_owner": "康乃尔化学",
+          "technical_spec_owner": "环保/EHS部门",
+          "influencer": "法典合规要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "合规驱动,需找到具体环保负责人推动"
+        }
+      }
+    },
+    {
+      "id": "IND-20260908-04",
+      "company": "山东鼎皓制药",
+      "industry": "pharma",
+      "location": "山东菏泽单县",
+      "project": "新建头孢类兽药废水处理站(招标计划阶段,10月正式招标)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "新建污水处理站招标计划(含仪表,预算550万,10月正式招标)",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Tender",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-09-08报告中记录的全部事实保持不变",
+          "本次搜索未发现新的公开信息更新",
+          "预计2026年10月正式招标"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "环评是否明确在线监测仪表要求?(9/8报告中已记录的unknowns保持不变)"
+        ]
+      },
+      "to_verify": [
+        "查环评确认废水量和在线监测要求",
+        "确认仪表是否在甲供清单"
+      ],
+      "source_urls": [
+        "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html"
+      ],
+      "continuity": "no_new_facts",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 2,
+        "ims_leverage": 2,
+        "total": 11
+      },
+      "pull_box": {
+        "project": "新建头孢类兽药废水处理站,招标计划阶段",
+        "project_confidence": "FACT",
+        "unavoidable": "制药废水必须处理达标排放,环评要求在线监测",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "新建项目,无现有解决方案",
+        "limitations_confidence": "FACT",
+        "leverage": "新建污水处理站仪表选型阶段可影响技术规格",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "环评是否明确在线监测仪表要求?",
+        "next_validation_question": "环评报告中废水排放量和在线监测要求是什么?"
+      },
+      "evidence_quality": "MEDIUM",
+      "hach_fit": "Medium",
+      "ims_fit": "No Evidence",
+      "logic": "CapEx Trigger(550万新建WWTP) -> Water System(头孢类兽药废水) -> Instrumentation Requirement(招标范围含仪表) -> Potential Hach Opportunity",
+      "potential_ims_use_case": "新建WWTP在线监测仪表选型(招标前介入)",
+      "estimated_time_window": "2026年10月正式招标",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "山东鼎皓制药有限公司; 法定代表人:陈立明(执行董事兼总经理); 监事:陈力民; 财务负责人:王艳丽; 电话:1509837****(部分隐藏); 邮箱:1****@qq.com(部分隐藏); 地址:山东省菏泽市单县北城街道胜利路109号; 注册资本:1000万元; 成立:2022-06-09; 参保人数:5人; 母公司:山东鼎皓集团(2024年销售收入近2亿元,员工300人); 集团研发中心:济南市商河化工园区高端化学原料药基地; 关联公司:济南鼎皓医药科技有限公司(法定代表人:方金印); 菏泽润昌医药科技有限公司(法定代表人:陈力民,持股100%)",
+          "epc_contractor_contact": "不适用(业主自建)",
+          "design_institute_contact": "待确认",
+          "operator_contact": "山东鼎皓制药(自营); 集团生产基地:菏泽单县/鄄城、济南商河/莱芜、江苏、河北、山西",
+          "procurement_decision_maker": "待确认(建议通过陈立明或集团总部对接); 注意:集团规模较大(300人,2亿营收),可能有集中采购体系",
+          "contacts_search_status": "PARTIAL - 企业基本信息和部分联系方式已确认,具体采购决策人待核实"
+        },
+        "timeline": {
+          "project_start": "2026年(招标计划阶段)",
+          "milestone_tender": "2026-10(正式招标)",
+          "procurement_window_estimate": "2026-10(招标窗口)",
+          "project_completion": "2027年",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "业主招标",
+          "budget_owner": "山东鼎皓制药",
+          "technical_spec_owner": "待确认",
+          "influencer": "环评要求",
+          "decision_maker": "待确认",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "10月招标前是仪表选型最后窗口"
+        }
+      }
+    },
+    {
+      "id": "IND-20260908-05",
+      "company": "大开热电2x350MW",
+      "industry": "power",
+      "location": "辽宁大连",
+      "project": "脱硫废水ZLD EPC建安招标(投标截止9/14)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "脱硫废水ZLD EPC建安招标,含甲供设备通道",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Tender",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-09-08报告中记录的全部事实保持不变",
+          "投标截止2026-09-14(即将到期)"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [
+        "查EPC招标文件甲供设备清单",
+        "确认甲供仪表是否包含水质分析仪"
+      ],
+      "source_urls": [],
+      "continuity": "no_new_facts",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 3,
+        "limitations": 2,
+        "ims_leverage": 1,
+        "total": 9
+      },
+      "pull_box": {
+        "project": "脱硫废水ZLD EPC建安招标,含甲供设备通道",
+        "project_confidence": "FACT",
+        "unavoidable": "脱硫废水零排放是环保要求",
+        "unavoidable_confidence": "FACT",
+        "limitations": "甲供设备通道存在但仪表是否包含未知",
+        "limitations_confidence": "INFERENCE",
+        "leverage": "如果甲供仪表包含水质分析仪,Hach有机会。但EPC模式下介入有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "甲供设备清单是否包含水质分析仪?",
+        "next_validation_question": "EPC招标文件甲供设备清单是否包含水质分析仪?"
+      },
+      "evidence_quality": "LOW",
+      "hach_fit": "Low",
+      "ims_fit": "No Evidence",
+      "logic": "CapEx Trigger(ZLD EPC) -> Water System(脱硫废水) -> Instrumentation Requirement(甲供设备) -> Uncertain",
+      "potential_ims_use_case": "脱硫废水ZLD在线监测(如有甲供仪表)",
+      "estimated_time_window": "投标截止9/14 - 采购窗口即将关闭",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "国电电力大连开发区热电厂(大开热电); 在役2x350MW火电机组,总装机700MW; 厂址:大连开发区钢铁路90号; 始建于2012年(2号机组2009年11月投产); 隶属国家能源投资集团/国电电力; 补充水源:八三工程供水管线",
+          "epc_contractor_contact": "科环集团国能水务环保有限公司南京分公司(脱硫废水ZLD EPC实施方); 负责人:祖坤勇; 电话:025-68521182; 注意:与国能长源荆门项目EPC为同一实施方",
+          "design_institute_contact": "国能水务(内部EPC设计)",
+          "operator_contact": "大开热电(自营); 脱硫废水ZLD EPC实施中",
+          "procurement_decision_maker": "国能水务南京分公司(内部EPC采购); 招标代理:国家能源集团国际工程咨询有限公司; 2026-09-10发布建安工程招标公告(CEZB260107615,计划开工2026-09-15,竣工2027-07-31)",
+          "contacts_search_status": "PARTIAL - 业主和EPC实施方已确认,EPC与国能荆门项目为同一团队"
+        },
+        "timeline": {
+          "project_start": "2026年(EPC招标)",
+          "milestone_tender_deadline": "2026-09-14(投标截止)",
+          "procurement_window_estimate": "2026-09(投标截止,窗口即将关闭)",
+          "project_completion": "2027年",
+          "timeline_confidence": "FACT"
+        },
+        "decision_chain": {
+          "procurement_mode": "EPC总包",
+          "budget_owner": "大开热电",
+          "technical_spec_owner": "EPC方",
+          "influencer": "环保要求",
+          "decision_maker": "EPC方",
+          "decision_chain_confidence": "LOW"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "未确认",
+          "epc_water_treatment_contractor": "待确认",
+          "competition_notes": "投标截止9/14,窗口即将关闭"
+        }
+      }
+    },
+    {
+      "id": "IND-20260908-12",
+      "company": "建投准能(施耐德电气实施)",
+      "industry": "power",
+      "location": "内蒙古鄂尔多斯准格尔旗",
+      "project": "智慧电厂全流程数字化+数据孤岛+远程运维",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "智慧电厂全流程数字化(施耐德AVEVA AIM)+数据孤岛+远程运维",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Completed/Operating",
+      "water_system_ownership": "D",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [
+          "2026-09-08报告中记录的全部事实保持不变",
+          "本次搜索未发现新的公开信息更新"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "水系统在线监测仪表是否已纳入施耐德数字化平台?(保持不变)"
+        ]
+      },
+      "to_verify": [
+        "确认水系统仪表是否纳入施耐德平台",
+        "确认Hach装机基数"
+      ],
+      "source_urls": [
+        "https://www.csdn.net/article/2026-09-03/164331664"
+      ],
+      "continuity": "no_new_facts",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 3,
+        "ims_leverage": 2,
+        "total": 10
+      },
+      "pull_box": {
+        "project": "智慧电厂全流程数字化升级,施耐德实施中",
+        "project_confidence": "FACT",
+        "unavoidable": "电厂数字化转型是企业战略,但水系统仪表是否包含未知",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "传统电厂数据孤岛/信息查找困难/数据完整性难以保障",
+        "limitations_confidence": "FACT",
+        "leverage": "如果水系统仪表未纳入施耐德平台,iMS可作为水系统层补充",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "水系统在线监测仪表是否已纳入施耐德数字化平台?",
+        "next_validation_question": "贵厂水系统在线监测仪表是否已纳入施耐德数字化平台?如果没有,当前如何管理?"
+      },
+      "evidence_quality": "LOW-MEDIUM",
+      "hach_fit": "Low",
+      "ims_fit": "Low",
+      "logic": "Digitalization Trigger -> Water System(全厂水系统含脱硫废水等) -> Possible Instrumentation Gap -> Weak iMS Signal",
+      "potential_ims_use_case": "水系统仪表垂直补充(如未纳入施耐德平台)",
+      "estimated_time_window": "运营中(数字化持续升级)",
+      "stage3_enrichment": {
+        "contacts": {
+          "project_owner_contact": "建投准能(内蒙古鄂尔多斯准格尔旗); 隶属河北建投集团",
+          "epc_contractor_contact": "施耐德电气(智慧电厂实施方); 数字化平台:AVEVA AIM; 注意:施耐德已有成熟数字化平台,水系统可能已纳入",
+          "design_institute_contact": "施耐德电气",
+          "operator_contact": "建投准能(自营)",
+          "procurement_decision_maker": "施耐德电气(数字化平台主导); 建议验证:水系统仪表是否已纳入AVEVA AIM平台",
+          "contacts_search_status": "PARTIAL - 实施方已知,无具体联系人姓名"
+        },
+        "timeline": {
+          "project_start": "2026年(施耐德实施中)",
+          "milestone_digitalization": "2026年(施耐德AVEVA AIM实施)",
+          "procurement_window_estimate": "运营中(数字化持续升级)",
+          "project_completion": "持续",
+          "timeline_confidence": "INFERENCE"
+        },
+        "decision_chain": {
+          "procurement_mode": "数字化总包(施耐德)",
+          "budget_owner": "建投准能",
+          "technical_spec_owner": "施耐德电气",
+          "influencer": "智慧电厂战略",
+          "decision_maker": "施耐德电气",
+          "decision_chain_confidence": "MEDIUM"
+        },
+        "competition": {
+          "known_instrument_brands": "未确认",
+          "known_software_platforms": "施耐德AVEVA AIM(已实施)",
+          "epc_water_treatment_contractor": "不适用",
+          "competition_notes": "施耐德已实施数字化平台,水系统是否纳入未知"
+        }
+      }
+    }
+  ],
+  "market_background": {
+    "key_regulatory": "生态环境法典2026-08-15生效,自行监测数据管理从形式合规转向实质合规",
+    "key_event": "央视9/6曝光监测数据造假->四川全省3个月专项行动",
+    "policy_trend": "排污许可制为核心的固定污染源监管制度持续强化,生态环境部修订发布火电等6项排污许可证技术规范",
+    "industry_trend": "工业废水近零排放攻坚三年行动方案(2025-2027)推进中,中水回用率要求提升"
+  },
+  "source_effectiveness": {
+    "high_value_sources": [
+      "各地生态环境局环评审批公示(Engine A/B)",
+      "bidchance/cbi360招标平台(Engine B)",
+      "省生态环境厅官方通知(Engine A)",
+      "上市公司公告(Engine B)"
+    ],
+    "low_value_sources": [
+      "SEO软文/水处理设备推广文章",
+      "通用行业报告"
+    ],
+    "improvement_notes": "需加强排污许可证管理信息平台直接查询,获取重点排污单位名单和自行监测方案"
+  },
+  "experiment_observations": {
+    "municipal_vs_industrial_differentiation": "本次报告全部聚焦工业废水/工业监测,未覆盖市政污水处理厂/自来水公司/供水管网。market_segment固定为industrial。",
+    "demand_learning_summary": "1. 发现新的Strong PULL:四川自行监测造假整治(PULL=15),是迄今最强监管型forcing function。法典生效后,监管从形式合规转向实质合规,拉网式排查将暴露大量仪表管理漏洞。2. Repeatable PULL Pattern确认:'第三方运维响应不足+合规压力'模式再次出现(康乃尔9/8 + 四川全省9/10),标记REPEATABLE DEMAND SIGNAL。3. 降级线索:解化绿源EPC(PULL=10)因EPC已中标,介入窗口收窄,从Potential降为Signal。4. GTM假设:法典生效后监管升级正在创造集中需求,建议关注10月10日四川自查阶段后的问题企业名单,可能形成批量Lead。",
+    "repeatable_demand_signals": [
+      {
+        "pattern": "第三方运维响应不足 + 合规压力(法典生效后)",
+        "occurrences": [
+          "康乃尔化学(IND-20260908-11)",
+          "四川省全省专项行动(IND-20260910-01)"
+        ],
+        "demand_signal": "重点排污单位依赖第三方定期巡检,异常期间无运维记录,合规风险已发生。iMS价值链:仪表状态->异常发现->运维通知->合规闭环",
+        "status": "REPEATABLE - 积累Evidence中"
+      }
+    ],
+    "major_rejection_reasons": [
+      "EPC已中标(解化绿源/国能荆门)- 采购窗口正在关闭",
+      "本次招标非仪表类(国能荆门电气设备)",
+      "智能化技改水系统是否包含未知(启东盖天力)"
+    ],
+    "unresolved_signals": [
+      "康乃尔化学-废水排口仪表数量未知",
+      "山东鼎皓制药-环评在线监测要求未知(10月招标前需确认)",
+      "建投准能-水系统仪表是否纳入施耐德平台未知"
+    ]
+  }
+}

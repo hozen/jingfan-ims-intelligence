@@ -1,0 +1,1810 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "report_date": "2026-09-08",
+  "experiment_week": 5,
+  "spec_version": "v3.0-stage3",
+  "scanner_summary": {
+    "total_signals": 11,
+    "engine_a_count": 0,
+    "engine_b_count": 7,
+    "engine_c_count": 4,
+    "pass_count": 0,
+    "watch_count": 7,
+    "reject_count": 4,
+    "industry_breakdown": {
+      "petrochemical": 4,
+      "power": 3,
+      "battery": 1,
+      "pharma": 2,
+      "industrial_park": 1
+    },
+    "opp_type_breakdown": {
+      "iMS Lead": 1,
+      "Early Strategic Lead": 3,
+      "Tender Monitoring": 4,
+      "Installed Base Future Lead": 1,
+      "Not Qualified": 2
+    },
+    "entry_window_breakdown": {
+      "EARLY": 4,
+      "LATE": 4,
+      "CLOSED": 2,
+      "UNKNOWN": 1
+    },
+    "influence_window_breakdown": {
+      "HIGH": 2,
+      "MEDIUM": 1,
+      "LOW": 4,
+      "NONE": 4
+    },
+    "pull_score_distribution": {
+      "0_5": 2,
+      "6_10": 5,
+      "11_15": 4,
+      "16_20": 0
+    },
+    "search_bias_warning": "Tender+Closed = 7/11 = 64% > 50%. Radar leans toward tender search. Next round: strengthen Engine C Early Signal search (project filing, feasibility study, EIA first announcement, digitalization plans, O&M pain points).",
+    "stage3_enriched_count": 3,
+    "stage3_lead_ids": [
+      "IND-20260908-11",
+      "IND-20260908-04",
+      "IND-20260908-12"
+    ]
+  },
+  "top_5_match": [
+    {
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "reason": "自动监测设备故障4日未上报+第三方运维响应不足+合规压力+数据异常无人处理. iMS Demand Signal完整成立.",
+      "agent_checklist": [
+        "确认该厂在线仪表数量+排口数量",
+        "确认是否多厂区/多排口",
+        "确认当前SCADA覆盖范围",
+        "确认环保/EHS部门是否已有预算",
+        "确认法典生效后合规压力是否已转化为行动"
+      ]
+    },
+    {
+      "id": "IND-20260908-04",
+      "company": "山东鼎皓制药",
+      "reason": "新建污水处理站招标计划阶段, 仪表规格未冻结, 预算550万含仪表, 10月正式招标.",
+      "agent_checklist": [
+        "查环评确认废水量和在线监测要求",
+        "确认是否已在Vendor List中",
+        "确认业主决策链"
+      ]
+    },
+    {
+      "id": "IND-20260908-12",
+      "company": "建投准能（施耐德实施）",
+      "reason": "智慧电厂全流程数字化已实施, 但水系统仪表是否纳入施耐德平台未知. 存在Digitalization Trigger+Data Pain.",
+      "agent_checklist": [
+        "确认水系统仪表是否纳入施耐德数字化平台",
+        "确认Hach装机基数",
+        "确认是否有独立水系统仪表运维痛点"
+      ]
+    },
+    {
+      "id": "IND-20260908-13",
+      "company": "金溪斯普瑞药业",
+      "reason": "环评公示稿阶段, 12种精细化工产品改扩建, 废水成分复杂, 影响窗口HIGH.",
+      "agent_checklist": [
+        "下载环评报告查废水处理章节",
+        "确认在线监测仪表要求",
+        "确认废水量"
+      ]
+    },
+    {
+      "id": "IND-20260908-05",
+      "company": "大开热电2x350MW",
+      "reason": "脱硫废水ZLD EPC招标中, 含甲供设备通道, 投标截止9/14.",
+      "agent_checklist": [
+        "查EPC招标文件甲供设备清单",
+        "确认甲供仪表是否包含水质分析仪"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260908-11",
+      "company": "康乃尔化学工业股份有限公司",
+      "industry": "petrochemical",
+      "location": "吉林市吉林经开区",
+      "engine": "C",
+      "opp_type": "iMS Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "自动监测设备故障4日+第三方运维响应不足+未上报",
+      "evidence": {
+        "facts": [
+          "吉林市生态环境局2026年5月29日现场检查发现4月3-6日自动监测数据连续4日超标异常",
+          "企业已发现数据异常但未依法及时报告",
+          "第三方运维仅4月2日和4月9日完成巡检校准, 异常期间无运维记录",
+          "吉林市生态环境局作出不予处罚决定(吉市环不罚JK5号)"
+        ],
+        "inferences": [
+          "企业缺乏自动监测设备实时状态管理能力, 依赖第三方定期巡检",
+          "如果有iMS类型集中监控平台, 4天异常窗口可能缩短到小时级",
+          "此类模式可能在重点排污单位中反复出现"
+        ],
+        "unknowns": [
+          "该厂有多少台在线监测仪表?",
+          "是否多排口/多厂区?",
+          "当前是否有SCADA/DCS覆盖监测仪表?"
+        ]
+      },
+      "to_verify": [
+        "确认该厂在线仪表数量+排口数量",
+        "确认当前SCADA覆盖范围",
+        "确认环保部门是否已有预算和行动计划"
+      ],
+      "source_urls": [
+        "https://www.jlcity.gov.cn/bmwz/hbj/hjxxgk/hjcf/202608/t20260831_1334077.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 3,
+        "ims_leverage": 3,
+        "total": 14
+      },
+      "pull_box": {
+        "project": "自动监测设备故障4日未上报, 第三方运维响应不足, 合规风险已发生",
+        "project_confidence": "FACT",
+        "unavoidable": "法典生效后重点排污单位自动监测设备必须正常运行, 数据异常必须上报. 不解决产生明确合规后果",
+        "unavoidable_confidence": "FACT",
+        "limitations": "当前依赖第三方定期巡检(每月2次), 异常期间无任何巡检/数据核验/故障排查记录",
+        "limitations_confidence": "FACT",
+        "leverage": "仪表状态数据->发现异常趋势->及时通知运维->减少合规风险. 但需确认多排口规模",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "该厂有多少台在线监测仪表? 是否多排口?",
+        "next_validation_question": "贵厂目前有多少台在线监测仪表? 分布在几个排口? 当前如何管理这些仪表的运行状态?"
+      },
+      "evidence_quality": "HIGH",
+      "stage3": {
+        "title": "Stage 3 — Enrichment",
+        "rows": [
+          [
+            "排污许可证编号",
+            "91220000795208496U003V [FACT]"
+          ],
+          [
+            "环评批复文号",
+            "吉市环建(表)字〔2011〕140号 [FACT]"
+          ],
+          [
+            "竣工环保验收",
+            "吉市环验字(2012)第50号 [FACT]"
+          ],
+          [
+            "项目规模",
+            "25t/h燃气锅炉（二期） [FACT]"
+          ],
+          [
+            "监测点位",
+            "厂区二期燃气锅炉废气排口 [FACT]"
+          ],
+          [
+            "设备类型",
+            "重点污染源自动监测系统（颗粒物连续监测） [FACT]"
+          ],
+          [
+            "第三方运维公司",
+            "吉林科瑞环保科技有限公司 [FACT]"
+          ],
+          [
+            "第三方检测机构",
+            "吉林汇洋检测有限公司（编号HYJC-FQ-2604-010） [FACT]"
+          ],
+          [
+            "企业内部责任部门",
+            "质量管理部门（有颗粒物检测报告） [FACT]"
+          ],
+          [
+            "设计院",
+            "UNKNOWN"
+          ],
+          [
+            "EPC",
+            "UNKNOWN — 非新建项目，运维阶段"
+          ],
+          [
+            "水处理相关内容",
+            "本线索为废气自动监测，非水系统。但iMS价值链（设备状态→异常发现→运维通知→合规闭环）同样适用于水质监测仪表"
+          ],
+          [
+            "仪表机会",
+            "如果该厂有废水排口自动监测仪表，则iMS集中监控价值链同样适用。需确认废水排口数量 [INFERENCE]"
+          ],
+          [
+            "项目联系人/相关角色",
+            "UNKNOWN — 需通过排污许可证自行监测方案查环保负责人"
+          ],
+          [
+            "时间节点",
+            "法典2026-08-15生效 → 当前合规压力已激活"
+          ],
+          [
+            "Stage 3 结论",
+            "Enrichment获得6项新事实。关键发现：该厂有明确的排污许可证编号和自行监测义务，第三方运维公司已确认，企业质管部门有检测能力。iMS价值链从客户问题出发完整成立。下一步需查全国排污许可证管理信息平台获取自行监测方案，确认废水排口数量。"
+          ]
+        ]
+      },
+      "stage3_note": "",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-11"
+          ],
+          [
+            "行业",
+            "石化/化工"
+          ],
+          [
+            "地区",
+            "吉林市吉林经开区"
+          ],
+          [
+            "项目主体",
+            "康乃尔化学工业股份有限公司"
+          ],
+          [
+            "Entity Status",
+            "已确认"
+          ],
+          [
+            "Trigger Type",
+            "Operational — 自动监测设备故障"
+          ],
+          [
+            "Signal Tier",
+            "Tier 1（强领先信号）"
+          ],
+          [
+            "Engine",
+            "C — Early Signal"
+          ],
+          [
+            "项目阶段",
+            "运营中（已投产）"
+          ],
+          [
+            "时间节点",
+            "2026-04-03至04-06异常 → 2026-05-29检查 → 2026-08-31公示"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "Opportunity Type",
+            "iMS Lead"
+          ],
+          [
+            "介入窗口",
+            "EARLY"
+          ],
+          [
+            "影响窗口",
+            "HIGH"
+          ],
+          [
+            "Water Signal",
+            "Confirmed — 燃气锅炉废气自动监测"
+          ],
+          [
+            "Relevant Package",
+            "在线监测设备运维 + 数据管理"
+          ],
+          [
+            "Package Stage",
+            "Installed Base — 运维阶段"
+          ],
+          [
+            "Hach Fit",
+            "Medium"
+          ],
+          [
+            "iMS Fit",
+            "Medium — 客户问题已确认"
+          ],
+          [
+            "Incrementality",
+            "Existing Facility Modification — 监测设备运维升级"
+          ],
+          [
+            "PULL Score",
+            "14 / 20 (P=4 U=4 L=3 L=3)"
+          ],
+          [
+            "Evidence Quality",
+            "HIGH"
+          ],
+          [
+            "P — Project",
+            "自动监测设备故障4日未上报，第三方运维响应不足，合规风险已发生 [FACT]"
+          ],
+          [
+            "U — Unavoidable",
+            "法典生效后重点排污单位自动监测设备必须正常运行，数据异常必须上报。不解决产生明确合规后果 [FACT]"
+          ],
+          [
+            "L — Limitations",
+            "当前依赖第三方定期巡检（每月2次），异常期间无任何巡检/数据核验/故障排查记录 [FACT]"
+          ],
+          [
+            "L — Leverage",
+            "仪表状态数据→发现异常趋势→及时通知运维→减少合规风险。但需确认多排口规模 [INFERENCE]"
+          ],
+          [
+            "Key Unknown",
+            "该厂有多少台在线监测仪表？是否多排口？"
+          ],
+          [
+            "Next Validation Question",
+            "贵厂目前有多少台在线监测仪表？分布在几个排口？当前如何管理这些仪表的运行状态？"
+          ],
+          [
+            "升级PASS条件",
+            "确认多排口 + 多仪表 + 无集中监控平台 + 有合规压力 + 有预算"
+          ],
+          [
+            "降级REJECT条件",
+            "发现仅有1台仪表 + 已有SCADA全覆盖 + 无预算"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-04",
+      "company": "山东鼎皓制药",
+      "industry": "pharma",
+      "location": "山东菏泽单县",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "新建污水处理站招标计划, 含仪表, 10月正式招标",
+      "evidence": {
+        "facts": [
+          "预算550万元, 预计2026年10月正式招标",
+          "范围: 设备/电气/仪表/工艺管道配套施工",
+          "位于盛之源医药产业园"
+        ],
+        "inferences": [
+          "制药废水处理站通常需要COD/pH/氨氮在线分析仪",
+          "招标计划阶段技术规格编制尚未完成"
+        ],
+        "unknowns": [
+          "在线仪表占比多少?",
+          "环评是否明确在线监测要求?"
+        ]
+      },
+      "to_verify": [
+        "查环评确认废水量和在线监测要求",
+        "确认仪表是否在甲供清单"
+      ],
+      "source_urls": [
+        "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 2,
+        "ims_leverage": 2,
+        "total": 11
+      },
+      "pull_box": {
+        "project": "新建头孢类兽药废水处理站, 招标计划阶段",
+        "project_confidence": "FACT",
+        "unavoidable": "制药废水必须处理达标排放, 环评要求在线监测",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "新建项目, 无现有解决方案",
+        "limitations_confidence": "FACT",
+        "leverage": "新建污水处理站仪表选型阶段可影响技术规格",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "环评是否明确在线监测仪表要求?",
+        "next_validation_question": "环评报告中废水排放量和在线监测要求是什么?"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3": {
+        "title": "Stage 3 — Enrichment",
+        "rows": [
+          [
+            "招标人",
+            "山东单养千秋实业集团有限公司 [FACT]"
+          ],
+          [
+            "项目规模",
+            "年产120吨头孢类兽药 + 污水处理站预算550万元 [FACT]"
+          ],
+          [
+            "招标范围",
+            "设备、电气、仪表、工艺管道配套施工 [FACT]"
+          ],
+          [
+            "招标方式",
+            "公开招标 [FACT]"
+          ],
+          [
+            "预计招标时间",
+            "2026年10月 [FACT]"
+          ],
+          [
+            "设计院",
+            "UNKNOWN — 招标计划提到「招标人提供的设计文件」，说明设计已完成但设计单位未公开"
+          ],
+          [
+            "EPC",
+            "UNKNOWN — 招标范围为设备配套采购施工，可能非完整EPC模式"
+          ],
+          [
+            "水处理相关内容",
+            "头孢类兽药废水：高COD、高盐、可生化性差。制药废水通常需COD/pH/氨氮在线分析仪 [INFERENCE]"
+          ],
+          [
+            "仪表机会",
+            "招标范围明确含「仪表」。如含在线水质仪表且未选型，Hach可影响技术规格 [INFERENCE]"
+          ],
+          [
+            "废水量",
+            "UNKNOWN — 需查环评报告"
+          ],
+          [
+            "在线监测要求",
+            "UNKNOWN — 需查环评报告"
+          ],
+          [
+            "项目联系人/相关角色",
+            "UNKNOWN"
+          ],
+          [
+            "Stage 3 结论",
+            "Enrichment获得5项新事实。关键发现：招标范围明确含「仪表」，设计已完成但设计单位未公开，招标方式为公开招标。仍未获取环评报告中的废水量和在线监测要求——这是升级PASS的关键门槛。"
+          ]
+        ]
+      },
+      "stage3_note": "",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-04"
+          ],
+          [
+            "行业",
+            "制药"
+          ],
+          [
+            "地区",
+            "山东菏泽单县"
+          ],
+          [
+            "项目主体",
+            "山东鼎皓制药（山东单养千秋实业集团有限公司）"
+          ],
+          [
+            "Entity Status",
+            "已确认"
+          ],
+          [
+            "Trigger Type",
+            "Project — 新建污水处理站"
+          ],
+          [
+            "Signal Tier",
+            "Tier 2（支撑信号）"
+          ],
+          [
+            "Engine",
+            "C — Early Signal"
+          ],
+          [
+            "项目阶段",
+            "招标计划阶段（Pre-Tender）"
+          ],
+          [
+            "时间节点",
+            "招标计划2026-09-01发布 → 预计2026年10月正式招标"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "Opportunity Type",
+            "Early Strategic Lead"
+          ],
+          [
+            "介入窗口",
+            "EARLY"
+          ],
+          [
+            "影响窗口",
+            "HIGH — 规格尚未冻结"
+          ],
+          [
+            "Water Signal",
+            "Confirmed — 新建头孢类兽药废水处理站"
+          ],
+          [
+            "Relevant Package",
+            "污水处理站设备（含仪表）"
+          ],
+          [
+            "Package Stage",
+            "Pre-Tender"
+          ],
+          [
+            "Hach Fit",
+            "Medium"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence"
+          ],
+          [
+            "Incrementality",
+            "New Facility — 新建污水处理站"
+          ],
+          [
+            "PULL Score",
+            "11 / 20 (P=4 U=3 L=2 L=2)"
+          ],
+          [
+            "Evidence Quality",
+            "MEDIUM"
+          ],
+          [
+            "P — Project",
+            "新建头孢类兽药废水处理站，招标计划阶段 [FACT]"
+          ],
+          [
+            "U — Unavoidable",
+            "制药废水必须处理达标排放，环评要求在线监测 [INFERENCE]"
+          ],
+          [
+            "L — Limitations",
+            "新建项目，无现有解决方案 [FACT]"
+          ],
+          [
+            "L — Leverage",
+            "新建污水处理站仪表选型阶段可影响技术规格 [INFERENCE]"
+          ],
+          [
+            "Key Unknown",
+            "环评是否明确在线监测仪表要求？"
+          ],
+          [
+            "Next Validation Question",
+            "环评报告中废水排放量和在线监测要求是什么？"
+          ],
+          [
+            "升级PASS条件",
+            "环评明确在线监测要求 + 仪表尚未选型"
+          ],
+          [
+            "降级REJECT条件",
+            "发现仅采购工艺设备"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-12",
+      "company": "建投准能（施耐德电气实施）",
+      "industry": "power",
+      "location": "内蒙古鄂尔多斯准格尔旗",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "MEDIUM",
+      "qual": "WATCH",
+      "trigger": "智慧电厂全流程数字化+数据孤岛+远程运维",
+      "evidence": {
+        "facts": [
+          "施耐德电气为建投准能提供一体化智慧电厂方案",
+          "采用AVEVA AIM数字化交付平台, 构建1:1数字孪生",
+          "明确解决痛点: 数据散/找得慢/数据有但用不上",
+          "关键运行参数标准差优化30%"
+        ],
+        "inferences": [
+          "如果水系统仪表未纳入施耐德平台, Hach+iMS有机会作为补充",
+          "建投准能已有数字化意识, 对数据管理平台接受度高"
+        ],
+        "unknowns": [
+          "水系统在线监测仪表是否已纳入施耐德数字化平台?",
+          "Hach在长滩电厂装机基数如何?",
+          "是否有独立的水系统仪表运维痛点?"
+        ]
+      },
+      "to_verify": [
+        "确认水系统仪表是否纳入施耐德平台",
+        "确认Hach装机基数"
+      ],
+      "source_urls": [
+        "https://www.csdn.net/article/2026-09-03/164331664"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 3,
+        "ims_leverage": 2,
+        "total": 10
+      },
+      "pull_box": {
+        "project": "智慧电厂全流程数字化升级, 施耐德实施中",
+        "project_confidence": "FACT",
+        "unavoidable": "电厂数字化转型是企业战略, 但水系统仪表是否包含未知",
+        "unavoidable_confidence": "INFERENCE",
+        "limitations": "传统电厂数据孤岛/信息查找困难/数据完整性难以保障",
+        "limitations_confidence": "FACT",
+        "leverage": "如果水系统仪表未纳入施耐德平台, iMS可作为水系统层补充",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "水系统在线监测仪表是否已纳入施耐德数字化平台?",
+        "next_validation_question": "贵厂水系统在线监测仪表是否已纳入施耐德数字化平台? 如果没有, 当前如何管理?"
+      },
+      "evidence_quality": "LOW-MEDIUM",
+      "stage3": {
+        "title": "Stage 3 — Enrichment",
+        "rows": [
+          [
+            "机组规模",
+            "2x660MW超超临界间接空冷机组 [FACT]"
+          ],
+          [
+            "定位",
+            "内蒙古至北京西、天津南电力通道配套电源点 [FACT]"
+          ],
+          [
+            "数字化方案",
+            "施耐德电气AVEVA AIM数字化交付 + 1:1数字孪生 [FACT]"
+          ],
+          [
+            "数字化成果",
+            "关键运行参数标准差优化30%，自动投入率>95%，数字资产管理效率提升90% [FACT]"
+          ],
+          [
+            "数字化覆盖范围",
+            "结构/属性/设备关联/工程图纸/施工/调试/监理/许可文档 [FACT] — 未明确提及水系统在线监测仪表"
+          ],
+          [
+            "水系统仪表覆盖",
+            "UNKNOWN — 施耐德方案未明确提及水系统在线监测仪表是否纳入数字化平台"
+          ],
+          [
+            "设计院",
+            "UNKNOWN"
+          ],
+          [
+            "EPC",
+            "UNKNOWN"
+          ],
+          [
+            "Hach装机基数",
+            "UNKNOWN — 需确认长滩电厂是否有Hach水质仪表"
+          ],
+          [
+            "水处理相关内容",
+            "火电厂通常有脱硫废水ZLD、工业废水、循环冷却水等水系统。施耐德方案聚焦全厂数字化，水系统仪表层可能未被覆盖 [INFERENCE]"
+          ],
+          [
+            "仪表机会",
+            "如果水系统仪表未纳入施耐德平台，iMS可作为水系统监测层的垂直补充 [INFERENCE]"
+          ],
+          [
+            "项目联系人/相关角色",
+            "UNKNOWN — 施耐德电气为数字化方案提供方，建投准能为业主"
+          ],
+          [
+            "Stage 3 结论",
+            "Enrichment获得5项新事实。关键发现：施耐德数字化方案明确覆盖结构/设备/工程文档，但未提及水系统在线监测仪表。这既可能是机会（水系统仪表未覆盖，iMS可补充），也可能是威胁（已纳入但未公开说明）。下一步需直接确认水系统仪表覆盖情况。"
+          ]
+        ]
+      },
+      "stage3_note": "",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-12"
+          ],
+          [
+            "行业",
+            "火电"
+          ],
+          [
+            "地区",
+            "内蒙古鄂尔多斯准格尔旗魏家峁镇长滩电厂"
+          ],
+          [
+            "项目主体",
+            "建投国电准格尔旗能源有限公司（建投准能）"
+          ],
+          [
+            "Entity Status",
+            "已确认"
+          ],
+          [
+            "Trigger Type",
+            "Digitalization — 智慧电厂"
+          ],
+          [
+            "Signal Tier",
+            "Tier 2（支撑信号）"
+          ],
+          [
+            "Engine",
+            "C — Early Signal"
+          ],
+          [
+            "项目阶段",
+            "已投产（数字化升级中）"
+          ],
+          [
+            "时间节点",
+            "建设之初即注入数字化基因 → 持续运营中"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "Opportunity Type",
+            "Early Strategic Lead"
+          ],
+          [
+            "介入窗口",
+            "EARLY"
+          ],
+          [
+            "影响窗口",
+            "MEDIUM"
+          ],
+          [
+            "Water Signal",
+            "Possible — 全厂水系统（含脱硫废水等）"
+          ],
+          [
+            "Relevant Package",
+            "智慧电厂数字化平台"
+          ],
+          [
+            "Package Stage",
+            "Digital Transformation — 实施中"
+          ],
+          [
+            "Hach Fit",
+            "Unknown"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence — 但存在Digitalization Trigger"
+          ],
+          [
+            "Incrementality",
+            "Existing Facility Modification — 数字化升级"
+          ],
+          [
+            "PULL Score",
+            "10 / 20 (P=3 U=2 L=3 L=2)"
+          ],
+          [
+            "Evidence Quality",
+            "LOW-MEDIUM"
+          ],
+          [
+            "P — Project",
+            "智慧电厂全流程数字化升级，施耐德实施中 [FACT]"
+          ],
+          [
+            "U — Unavoidable",
+            "电厂数字化转型是企业战略，但水系统仪表是否包含未知 [INFERENCE]"
+          ],
+          [
+            "L — Limitations",
+            "传统电厂数据孤岛/信息查找困难/数据完整性难以保障 [FACT]"
+          ],
+          [
+            "L — Leverage",
+            "如果水系统仪表未纳入施耐德平台，iMS可作为水系统层补充 [INFERENCE]"
+          ],
+          [
+            "Key Unknown",
+            "水系统在线监测仪表是否已纳入施耐德数字化平台？"
+          ],
+          [
+            "Next Validation Question",
+            "贵厂水系统在线监测仪表是否已纳入施耐德数字化平台？如果没有，当前如何管理？"
+          ],
+          [
+            "升级PASS条件",
+            "水系统仪表未纳入 + 有Hach装机基数 + 有运维痛点"
+          ],
+          [
+            "降级REJECT条件",
+            "水系统仪表已全面纳入施耐德平台"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-13",
+      "company": "金溪斯普瑞药业有限公司",
+      "industry": "pharma",
+      "location": "江西抚州金溪",
+      "engine": "C",
+      "opp_type": "Early Strategic Lead",
+      "entry_window": "EARLY",
+      "influence_window": "HIGH",
+      "qual": "WATCH",
+      "trigger": "环评公示稿阶段, 12种精细化工产品改扩建",
+      "evidence": {
+        "facts": [
+          "环境影响报告书(公示稿)发布于2026年8月",
+          "年产5699吨共12种精细化工产品改扩建项目",
+          "评价单位: 江西锦名成环保有限公司"
+        ],
+        "inferences": [
+          "环评阶段项目刚通过立项, 距离设备采购还有6-12个月",
+          "精细化工废水通常含高COD/高盐/有机溶剂"
+        ],
+        "unknowns": [
+          "环评报告是否明确在线监测仪表要求?",
+          "废水量是多少?"
+        ]
+      },
+      "to_verify": [
+        "下载环评报告查废水处理章节",
+        "确认在线监测要求"
+      ],
+      "source_urls": [
+        "https://max.book118.com/html/2026/0829/8114132112010122.shtm"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 7
+      },
+      "pull_box": {
+        "project": "5699吨精细化工产品改扩建, 环评公示阶段",
+        "project_confidence": "FACT",
+        "unavoidable": "化工废水必须处理达标, 但具体在线监测要求未知",
+        "unavoidable_confidence": "UNKNOWN",
+        "limitations": "新建项目, 无现有解决方案信息",
+        "limitations_confidence": "UNKNOWN",
+        "leverage": "环评阶段规格完全未冻结, 理论上可影响选型",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "环评报告是否明确在线监测仪表要求?",
+        "next_validation_question": "环评报告中废水排放量和在线监测要求是什么?"
+      },
+      "evidence_quality": "LOW",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — Stage 2 Evidence Quality = LOW，PULL Score 7/20，需先获取环评报告确认在线监测要求",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-13"
+          ],
+          [
+            "行业",
+            "制药/精细化工"
+          ],
+          [
+            "地区",
+            "江西抚州金溪"
+          ],
+          [
+            "项目主体",
+            "金溪斯普瑞药业有限公司"
+          ],
+          [
+            "Entity Status",
+            "已确认"
+          ],
+          [
+            "Trigger Type",
+            "Project — 环评公示阶段"
+          ],
+          [
+            "Signal Tier",
+            "Tier 2"
+          ],
+          [
+            "Engine",
+            "C"
+          ],
+          [
+            "项目阶段",
+            "环境影响评价公示稿"
+          ],
+          [
+            "时间节点",
+            "环评公示2026年8月"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "Opportunity Type",
+            "Early Strategic Lead"
+          ],
+          [
+            "介入窗口",
+            "EARLY"
+          ],
+          [
+            "影响窗口",
+            "HIGH — 环评阶段规格完全未冻结"
+          ],
+          [
+            "Water Signal",
+            "Possible"
+          ],
+          [
+            "Hach Fit",
+            "Unknown"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence"
+          ],
+          [
+            "Incrementality",
+            "New Facility — 改扩建"
+          ],
+          [
+            "PULL Score",
+            "7 / 20"
+          ],
+          [
+            "Evidence Quality",
+            "LOW"
+          ],
+          [
+            "Key Unknown",
+            "环评报告是否明确在线监测仪表要求？"
+          ],
+          [
+            "升级PASS条件",
+            "环评明确在线监测要求 + 尚未到设计阶段"
+          ],
+          [
+            "降级REJECT条件",
+            "环评未明确在线监测"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-05",
+      "company": "大开热电2x350MW",
+      "industry": "power",
+      "location": "辽宁大连",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "脱硫废水ZLD EPC建安招标",
+      "evidence": {
+        "facts": [
+          "2x350MW机组2012年投运, 新建ZLD系统",
+          "招标编号CEZB260107615, 投标截止2026-09-14",
+          "范围含仪表安装, 提到甲供设备"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "甲供仪表清单是否包含水质分析仪?"
+        ]
+      },
+      "to_verify": [
+        "查EPC招标文件中甲供设备清单"
+      ],
+      "source_urls": [
+        "https://news.bjx.com.cn/html/20260902/1511131.shtml"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 9
+      },
+      "pull_box": {
+        "project": "脱硫废水ZLD EPC招标中, 含甲供设备",
+        "project_confidence": "FACT",
+        "unavoidable": "环保要求脱硫废水零排放",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC总包采购, 仪表选型已在招标文件中",
+        "limitations_confidence": "FACT",
+        "leverage": "仅甲供仪表通道, 影响有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "甲供仪表清单是否包含水质分析仪?",
+        "next_validation_question": "EPC招标文件中甲供设备清单是否包含水质分析仪?"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — 影响窗口LOW，仅甲供通道有残存价值",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-05"
+          ],
+          [
+            "行业",
+            "火电"
+          ],
+          [
+            "地区",
+            "辽宁大连"
+          ],
+          [
+            "项目主体",
+            "北京国电电力大连开发区热电厂"
+          ],
+          [
+            "Trigger Type",
+            "CapEx — ZLD改造"
+          ],
+          [
+            "Engine",
+            "B"
+          ],
+          [
+            "项目阶段",
+            "EPC建安招标中"
+          ],
+          [
+            "时间节点",
+            "投标截止2026-09-14"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "Opportunity Type",
+            "Tender Monitoring"
+          ],
+          [
+            "介入窗口",
+            "LATE — 招标文件已含技术规格"
+          ],
+          [
+            "影响窗口",
+            "LOW"
+          ],
+          [
+            "Water Signal",
+            "Confirmed — 脱硫废水ZLD"
+          ],
+          [
+            "Hach Fit",
+            "Medium"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence"
+          ],
+          [
+            "Incrementality",
+            "New Facility — 新建ZLD系统"
+          ],
+          [
+            "PULL Score",
+            "9 / 20"
+          ],
+          [
+            "Key Unknown",
+            "甲供仪表清单是否包含水质分析仪？"
+          ],
+          [
+            "升级PASS条件",
+            "发现甲供水质仪表且未选型"
+          ],
+          [
+            "降级REJECT条件",
+            "仪表全部EPC内采购且已选型"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-03",
+      "company": "50GWh储能电池工厂",
+      "industry": "battery",
+      "location": "内蒙古零碳产业园",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "ZLD水处理EPC招标",
+      "evidence": {
+        "facts": [
+          "项目编号SMZB-2026-HZB0834, 9/23开标, 工期60日"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "项目业主是谁?",
+          "仪表是EPC内还是甲供?"
+        ]
+      },
+      "to_verify": [
+        "确认业主身份"
+      ],
+      "source_urls": [
+        "https://www.qianlima.com/bid-627623254.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 2,
+        "unavoidable": 3,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 7
+      },
+      "pull_box": {
+        "project": "ZLD水处理EPC招标",
+        "project_confidence": "FACT",
+        "unavoidable": "锂电行业规范要求ZLD",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC总包, 规格已定",
+        "limitations_confidence": "FACT",
+        "leverage": "仅通过EPC进入, 影响有限",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "项目业主是谁?",
+        "next_validation_question": "项目业主是谁? 仪表是EPC内采购还是甲供?"
+      },
+      "evidence_quality": "LOW-MEDIUM",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — 业主未公开，无法推进",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-03"
+          ],
+          [
+            "行业",
+            "新能源/电池"
+          ],
+          [
+            "地区",
+            "内蒙古零碳产业园"
+          ],
+          [
+            "项目主体",
+            "未公开"
+          ],
+          [
+            "Trigger Type",
+            "CapEx — ZLD水处理"
+          ],
+          [
+            "Engine",
+            "B"
+          ],
+          [
+            "项目阶段",
+            "EPC招标中"
+          ],
+          [
+            "时间节点",
+            "9/23开标"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "介入窗口",
+            "LATE"
+          ],
+          [
+            "影响窗口",
+            "LOW"
+          ],
+          [
+            "Water Signal",
+            "Confirmed"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence"
+          ],
+          [
+            "PULL Score",
+            "7 / 20"
+          ],
+          [
+            "Key Unknown",
+            "项目业主是谁？"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-07",
+      "company": "全南工业园污水处理一期",
+      "industry": "industrial_park",
+      "location": "江西赣州全南",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "LATE",
+      "influence_window": "LOW",
+      "qual": "WATCH",
+      "trigger": "污水处理一期设备采购招标",
+      "evidence": {
+        "facts": [
+          "招标编号QNTW2026-QN-G001, 开标延期至2026-09-29"
+        ],
+        "inferences": [],
+        "unknowns": [
+          "设备范围含不含在线水质仪表?"
+        ]
+      },
+      "to_verify": [
+        "获取招标文件确认设备清单"
+      ],
+      "source_urls": [
+        "http://www.ccgp.gov.cn/cggg/dfgg/gzgg/202609/t20260904_27271666.htm"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 2,
+        "unavoidable": 2,
+        "limitations": 1,
+        "ims_leverage": 1,
+        "total": 6
+      },
+      "pull_box": {
+        "project": "工业园区污水处理一期设备采购",
+        "project_confidence": "FACT",
+        "unavoidable": "工业园区污水必须处理",
+        "unavoidable_confidence": "FACT",
+        "limitations": "设备采购招标已发布",
+        "limitations_confidence": "FACT",
+        "leverage": "仅如果含在线水质仪表且未选型",
+        "leverage_confidence": "INFERENCE",
+        "key_unknown": "设备范围含不含在线水质仪表?",
+        "next_validation_question": "招标设备清单是否包含在线水质仪表?"
+      },
+      "evidence_quality": "LOW",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — 影响窗口LOW",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-07"
+          ],
+          [
+            "行业",
+            "工业园区"
+          ],
+          [
+            "地区",
+            "江西赣州全南"
+          ],
+          [
+            "项目主体",
+            "江西全南工业园管委会"
+          ],
+          [
+            "Trigger Type",
+            "设备采购招标"
+          ],
+          [
+            "Engine",
+            "B"
+          ],
+          [
+            "项目阶段",
+            "设备采购招标"
+          ],
+          [
+            "时间节点",
+            "开标延期至2026-09-29"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "WATCH"
+          ],
+          [
+            "介入窗口",
+            "LATE"
+          ],
+          [
+            "影响窗口",
+            "LOW"
+          ],
+          [
+            "iMS Fit",
+            "No Evidence"
+          ],
+          [
+            "PULL Score",
+            "6 / 20"
+          ],
+          [
+            "Key Unknown",
+            "设备范围含不含在线水质仪表？"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-08",
+      "company": "石狮鸿山三期1x1000MW",
+      "industry": "power",
+      "location": "福建石狮",
+      "engine": "B",
+      "opp_type": "Tender Monitoring",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "脱硫+ZLD EPC已预中标",
+      "evidence": {
+        "facts": [
+          "龙源环保预中标1.1亿元"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [],
+      "source_urls": [
+        "https://news.bjx.com.cn/html/20260903/1511313.shtml"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 0,
+        "ims_leverage": 0,
+        "total": 7
+      },
+      "pull_box": {
+        "project": "脱硫废水ZLD EPC已预中标龙源环保",
+        "project_confidence": "FACT",
+        "unavoidable": "环保要求ZLD",
+        "unavoidable_confidence": "FACT",
+        "limitations": "EPC已预中标, 仪表选型基本完成",
+        "limitations_confidence": "FACT",
+        "leverage": "无影响窗口",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 已关闭"
+      },
+      "evidence_quality": "HIGH",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — REJECT",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-08"
+          ],
+          [
+            "行业",
+            "火电"
+          ],
+          [
+            "地区",
+            "福建石狮"
+          ],
+          [
+            "项目主体",
+            "国能神福（石狮）发电有限公司"
+          ],
+          [
+            "Trigger Type",
+            "CapEx — ZLD"
+          ],
+          [
+            "项目阶段",
+            "EPC已预中标"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "REJECT"
+          ],
+          [
+            "介入窗口",
+            "CLOSED"
+          ],
+          [
+            "影响窗口",
+            "NONE"
+          ],
+          [
+            "原因",
+            "EPC已预中标龙源环保1.1亿，仪表选型基本完成"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-06",
+      "company": "大庆炼化含磷废水设施升级",
+      "industry": "petrochemical",
+      "location": "黑龙江大庆",
+      "engine": "B",
+      "opp_type": "Installed Base Future Lead",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "含磷废水设施升级建设中",
+      "evidence": {
+        "facts": [
+          "范围: 更换回转干燥机/泵/搅拌器, DCS迁移, 新增压力/密度仪表"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [],
+      "source_urls": [
+        "https://daqing.okcis.cn/oeQ4NPLxMA6.bn"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 0,
+        "ims_leverage": 0,
+        "total": 5
+      },
+      "pull_box": {
+        "project": "含磷废水设施升级, 建设中",
+        "project_confidence": "FACT",
+        "unavoidable": "设施升级需求",
+        "unavoidable_confidence": "FACT",
+        "limitations": "设备已采购, 新增为压力/密度仪表非水质分析仪",
+        "limitations_confidence": "FACT",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 已关闭"
+      },
+      "evidence_quality": "HIGH",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — REJECT",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-06"
+          ],
+          [
+            "行业",
+            "石化/化工"
+          ],
+          [
+            "地区",
+            "黑龙江大庆"
+          ],
+          [
+            "项目主体",
+            "中石油大庆炼化分公司"
+          ],
+          [
+            "项目阶段",
+            "建设中"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "REJECT"
+          ],
+          [
+            "介入窗口",
+            "CLOSED"
+          ],
+          [
+            "影响窗口",
+            "NONE"
+          ],
+          [
+            "原因",
+            "已进入建设阶段，新增仪表为压力/密度仪表，非水质分析仪"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-02",
+      "company": "铜陵化工园区污水厂自行监测",
+      "industry": "petrochemical",
+      "location": "安徽铜陵",
+      "engine": "B",
+      "opp_type": "Not Qualified",
+      "entry_window": "CLOSED",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "第三方检测服务招标",
+      "evidence": {
+        "facts": [
+          "预算14.76万元, 范围: 废水/雨水/地下水监测, 要求CMA认证"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [],
+      "source_urls": [
+        "https://ggzyjyzx.tl.gov.cn/jyxx/003006/003006001/20260901/c0af063d-e0c4-4534-bc11-f55c7930040c.html"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 2,
+        "unavoidable": 2,
+        "limitations": 0,
+        "ims_leverage": 0,
+        "total": 4
+      },
+      "pull_box": {
+        "project": "第三方检测服务招标, 非设备/仪表采购",
+        "project_confidence": "FACT",
+        "unavoidable": "排污许可要求自行监测",
+        "unavoidable_confidence": "FACT",
+        "limitations": "招标是第三方检测服务, 不是设备/仪表/iMS采购",
+        "limitations_confidence": "FACT",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 不符合资格"
+      },
+      "evidence_quality": "HIGH",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — REJECT",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-02"
+          ],
+          [
+            "行业",
+            "石化/化工"
+          ],
+          [
+            "地区",
+            "安徽铜陵"
+          ],
+          [
+            "项目主体",
+            "铜陵经济开发区化工园区污水厂"
+          ],
+          [
+            "项目阶段",
+            "运营（过渡期）"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "REJECT"
+          ],
+          [
+            "原因",
+            "招标是第三方检测服务，不是设备/仪表/iMS采购"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "IND-20260908-10",
+      "company": "菲达环保废水系统采购",
+      "industry": "equipment",
+      "location": "浙江诸暨",
+      "engine": "B",
+      "opp_type": "Not Qualified",
+      "entry_window": "UNKNOWN",
+      "influence_window": "NONE",
+      "qual": "REJECT",
+      "trigger": "设备采购",
+      "evidence": {
+        "facts": [
+          "招标编号2026-KHKF-189, 交付2026-11-30"
+        ],
+        "inferences": [],
+        "unknowns": []
+      },
+      "to_verify": [],
+      "source_urls": [
+        "https://zhejiang.okcis.cn/oeQ4xRe84WJ.bn"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 1,
+        "unavoidable": 1,
+        "limitations": 0,
+        "ims_leverage": 0,
+        "total": 2
+      },
+      "pull_box": {
+        "project": "设备采购, 无明确水质仪表或iMS需求",
+        "project_confidence": "FACT",
+        "unavoidable": "未知",
+        "unavoidable_confidence": "UNKNOWN",
+        "limitations": "无信息",
+        "limitations_confidence": "UNKNOWN",
+        "leverage": "无",
+        "leverage_confidence": "FACT",
+        "key_unknown": "N/A",
+        "next_validation_question": "N/A - 不符合资格"
+      },
+      "evidence_quality": "LOW",
+      "stage3": null,
+      "stage3_note": "未进入 Stage 3 — REJECT",
+      "stage1": {
+        "title": "Stage 1 — Discovery",
+        "rows": [
+          [
+            "Lead ID",
+            "IND-20260908-10"
+          ],
+          [
+            "行业",
+            "装备制造"
+          ],
+          [
+            "地区",
+            "浙江诸暨"
+          ],
+          [
+            "项目主体",
+            "菲达环保/菲达科技"
+          ]
+        ]
+      },
+      "stage2_detailed": {
+        "title": "Stage 2 — Qualification",
+        "rows": [
+          [
+            "Qualification",
+            "REJECT"
+          ],
+          [
+            "原因",
+            "仅为设备采购，无明确水质仪表或iMS需求"
+          ]
+        ]
+      }
+    }
+  ],
+  "market_background": [
+    "火电脱硫废水ZLD集中爆发但几乎全走EPC总包——GTM关键不是找电厂, 而是建立与ZLD EPC承包商的影响路径。",
+    "康乃尔化学案揭示iMS真实需求: 自动监测设备故障4日未上报, 第三方运维未及时响应, 数据超标异常无人处理——Maintenance Pain+Compliance Pain+Data Pain三重叠加。",
+    "《锂电行业规范条件(2026年本)》要求新建锂电池材料项目须配套ZLD, 2027年底前现有企业完成改造——行业级Forcing Function。"
+  ],
+  "regulatory_triggers": [
+    {
+      "title": "《生态环境法典》2026-08-15生效",
+      "what": "第184条要求重点排污许可持有人安装自动监测设备并联网; 第183条要求所有排污许可持有人开展自行监测。违规罚款2-20万元。",
+      "why": "产生全行业自动监测设备安装/联网/数据管理升级需求",
+      "next_search": "找具体省市执行名单->具体企业->判断监测缺口",
+      "sources": [
+        "https://www.wulanchabu.gov.cn/sthjzl/2005657.html"
+      ]
+    },
+    {
+      "title": "HJ 853-2026 石化工业排污许可证技术规范发布",
+      "what": "2026-07-31发布, 2027-01-01实施。修订石化工业排污许可自行监测要求。",
+      "why": "石化企业2027年前需更新排污许可及自行监测方案",
+      "next_search": "石化重点排污企业名单->判断哪些需要监测升级",
+      "sources": [
+        "https://m.bzfxw.com/soft/sort055/huanbao/20260908075639b886638a.html"
+      ]
+    },
+    {
+      "title": "《锂电行业规范条件(2026年本)》",
+      "what": "新建锂电池材料项目须配套废水ZLD设施; 2027年底前现有企业完成ZLD改造。",
+      "why": "锂电全产业链面临废水ZLD合规压力",
+      "next_search": "具体锂电材料企业->判断哪些尚未建设ZLD",
+      "sources": [
+        "https://www.cnblogs.com/mmddlz/p/22809239"
+      ]
+    }
+  ],
+  "source_effectiveness": {
+    "gov_epa": 3,
+    "tender_platform": 4,
+    "industry_media": 2,
+    "company_announcement": 1,
+    "eia_platform": 1
+  },
+  "experiment_observations": {
+    "municipal_vs_industrial_differentiation": "Radar已明确market_segment=industrial, 不覆盖市政污水处理厂/自来水公司/供水管网项目。本轮所有线索均为工业企业或工业园区。",
+    "demand_learning_summary": {
+      "new_strong_pull": "是。康乃尔化学: 自动监测设备故障4日未上报, 第三方运维响应不足。PULL Score 14/20, 完整Demand->Pain->Leverage链。",
+      "repeatable_pull_pattern": "是。第三方运维响应不足+合规压力+数据异常无人处理模式, 可能在重点排污单位中反复出现。",
+      "downgraded_due_to_demand": "是。建投准能: 数字化触发存在但水系统仪表覆盖未知, iMS Fit=No Evidence, 维持WATCH。",
+      "product_gtm_assumption_change": "是。发现甲供设备通道可能是Hach绕过EPC总包直接进入的路径。法典生效后重点排污单位自动监测运维痛点可能成为Repeatable Demand Signal。"
+    },
+    "repeatable_demand_signals": [
+      {
+        "pattern": "Third-party O&M response gap + Compliance pressure + Data anomaly unmanaged",
+        "first_seen": "2026-09-08 康乃尔化学",
+        "confidence": "MEDIUM",
+        "status": "accumulating"
+      }
+    ]
+  },
+  "cross_lead_insights": [
+    "康乃尔化学案是本轮最重要的iMS Demand Signal——自动监测设备故障4日未上报, 第三方运维响应不足, 数据异常无人处理。非产品推断, 而是从客户问题出发iMS价值链完整成立。",
+    "Radar当前偏向招标搜索(Tender+Closed=64%)。需从招标公告转向项目备案/可研/环评第一次公示/数字化转型规划/运维痛点等Early Signal来源。",
+    "建投准能案揭示: 火电厂数字化已由施耐德等巨头引领进入数据孤岛->数字孪生阶段。Hach+iMS机会在于补充水系统仪表层数字化。"
+  ]
+}

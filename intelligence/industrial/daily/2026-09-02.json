@@ -1,0 +1,781 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "experiment_week": 3,
+  "scan_date": "2026-09-02",
+  "scan_timestamp": "2026-09-02T12:16:29+08:00",
+  "scanner_summary": {
+    "total_signals": 15,
+    "engine_a_count": 1,
+    "engine_b_count": 14,
+    "priority_breakdown": {
+      "P1": 4,
+      "P2": 6,
+      "P3": 5
+    },
+    "industry_breakdown": {
+      "半导体/电子": 2,
+      "新能源/电池": 4,
+      "石化/化工": 6,
+      "制药": 1,
+      "跨行业": 1,
+      "工业园区": 1
+    },
+    "stage_breakdown": {
+      "Potential Industrial Opportunity": 9,
+      "Industrial Signal": 6,
+      "Industrial iMS Opportunity": 0
+    },
+    "tier_breakdown": {
+      "Tier 1": 5,
+      "Tier 2": 8,
+      "Tier 3": 2
+    },
+    "timing_breakdown": {
+      "Early(Planning/EIA/Design)": 5,
+      "Mid(Tender/EPC/Procurement)": 8,
+      "Late(Production/Completed)": 1,
+      "Regulatory/Ongoing": 1
+    }
+  },
+  "top_5_match": [
+    {
+      "id": "IND-20260902-001",
+      "company": "广州粤芯半导体技术有限公司",
+      "industry": "半导体/电子",
+      "priority": "P1",
+      "agent_checklist": "customer_identity=广州粤芯(12寸晶圆); installed_base=unknown; commercial_history=unknown; ims_fit=高(半导体废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-002",
+      "company": "中国石油长庆石化分公司",
+      "industry": "石化/化工",
+      "priority": "P1",
+      "agent_checklist": "customer_identity=中石油长庆石化; installed_base=unknown; commercial_history=unknown; ims_fit=高(ZLD监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-003",
+      "company": "中国石油兰州石化分公司",
+      "industry": "石化/化工",
+      "priority": "P1",
+      "agent_checklist": "customer_identity=中石油兰州石化; installed_base=unknown; commercial_history=unknown; ims_fit=高(炼油废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-004",
+      "company": "立鼎材料科技(四川)有限公司(中创新航全资子公司)",
+      "industry": "新能源/电池",
+      "priority": "P1",
+      "agent_checklist": "customer_identity=立鼎材料(中创新航子公司); installed_base=unknown; commercial_history=unknown; ims_fit=高(电池废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-005",
+      "company": "郑州半导体硅片企业(建设单位待确认)",
+      "industry": "半导体/电子",
+      "priority": "P2",
+      "agent_checklist": "customer_identity=unknown(需确认); installed_base=unknown; commercial_history=unknown; ims_fit=中(硅片废水); account_sales=unknown"
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260902-001",
+      "company": "广州粤芯半导体技术有限公司",
+      "industry": "半导体/电子",
+      "location": "广东广州",
+      "project": "粤芯四期集成电路制造项目 - 纯废水系统(废硫酸处理系统包)",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P1",
+      "timing": "Equipment Procurement/Installation",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-08-25 粤芯四期纯废水系统-废硫酸处理系统包结果公告发布",
+          "采购编号: 400-006-6655-26XB0271/01, 采购方式: 询比采购",
+          "所属行业: 建筑安装业"
+        ],
+        "inferences": [
+          "Engineering Inference: 12英寸晶圆厂纯废水系统是厂务核心, 废硫酸处理含氟/含酸废水是关键环节",
+          "四期=新建产线, 水系统为新增"
+        ],
+        "unknowns": [
+          "中标供应商具体身份未知",
+          "废硫酸处理系统包是否包含在线监测仪表未知",
+          "Hach installed base/competitor未知"
+        ]
+      },
+      "potential_ims_use_case": "含氟/含酸废水在线监测(COD/氟离子/重金属/TOC), 超纯水循环监测",
+      "logic": "Compliance Trigger(半导体废水排放标准) → 纯废水系统建设 → 废硫酸处理子系统采购 → 在线监测仪表需求 → Potential iMS",
+      "estimated_time_window": "2026 Q3-Q4 (设备安装调试期)",
+      "source_urls": [
+        "https://www.chinabidding.cn/zbgs/U-vzlzmyt.html"
+      ],
+      "to_verify": [
+        "粤芯四期水系统EPC/设计院是谁?",
+        "废硫酸处理系统包是否包含在线监测仪表采购?",
+        "粤芯一期/二期/三期现有Hach installed base?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=广州粤芯(12寸晶圆); installed_base=unknown; commercial_history=unknown; ims_fit=高(半导体废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-002",
+      "company": "中国石油长庆石化分公司",
+      "industry": "石化/化工",
+      "location": "陕西",
+      "project": "长庆石化含盐污水零排放项目",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P1",
+      "timing": "Planning-Feasibility (可研阶段)",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Water System",
+      "evidence": {
+        "facts": [
+          "2026-08-27 可研技术服务二次选商结果公告",
+          "拟成交人: 中国昆仑工程有限公司",
+          "项目名称: 长庆石化公司含盐污水零排放项目"
+        ],
+        "inferences": [
+          "零排放(ZLD)项目必然涉及蒸发结晶/MVR/RO等深度处理, 需要在线电导率/TOC/硬度监测",
+          "可研阶段=项目刚启动, 仪表采购窗口在未来6-12个月"
+        ],
+        "unknowns": [
+          "项目总投资规模未知",
+          "现有污水处理系统配置未知",
+          "Hach installed base未知"
+        ]
+      },
+      "potential_ims_use_case": "ZLD系统进/出水在线监测(电导率/TOC/硬度/SiO2), 蒸发结晶过程控制监测",
+      "logic": "CapEx Trigger(含盐污水零排放) → ZLD系统新建 → 在线水质监测需求 → Potential iMS",
+      "estimated_time_window": "2026 Q4 - 2027 Q2 (设计→招标→采购)",
+      "source_urls": [
+        "https://www.chinabidding.cn/zbgs/U-vzlEZZi.html"
+      ],
+      "to_verify": [
+        "项目总投资规模和具体工艺路线?",
+        "谁负责水系统设计? 昆仑工程自己还是委托设计院?",
+        "长庆石化现有在线监测仪表品牌?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=中石油长庆石化; installed_base=unknown; commercial_history=unknown; ims_fit=高(ZLD监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-003",
+      "company": "中国石油兰州石化分公司",
+      "industry": "石化/化工",
+      "location": "甘肃兰州",
+      "project": "兰州石化炼油污水达标升级改造EPC",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P1",
+      "timing": "Tender/EPC (招标阶段)",
+      "water_system_ownership": "A",
+      "incrementality_status": "Water System Upgrade",
+      "evidence": {
+        "facts": [
+          "EPC招标, 批复概算总投资17475万元",
+          "工艺: 两级化学氧化+脱氮+生化+出水安保",
+          "新建500m³/h浓水处理单元及配套公用工程",
+          "批复文号: 炼化新材料[2026]166号"
+        ],
+        "inferences": [
+          "浓水处理单元是RO浓水深度处理, 需要在线TOC/COD/氨氮监测",
+          "1.75亿投资规模大, 仪表采购有实质商业价值"
+        ],
+        "unknowns": [
+          "EPC中标方未知(招标中)",
+          "现有在线监测仪表配置和品牌未知"
+        ]
+      },
+      "potential_ims_use_case": "炼油废水进出水在线监测(COD/TOC/氨氮/石油类/挥发酚), 浓水处理单元电导率/TOC",
+      "logic": "Compliance Trigger(污水达标升级) → 新建浓水处理+生化改造 → 在线监测需求 → Potential iMS",
+      "estimated_time_window": "2026 Q4 - 2027 Q3 (EPC执行期)",
+      "source_urls": [
+        "https://gs.bidcenter.com.cn/gys/detail-11686922.html"
+      ],
+      "to_verify": [
+        "EPC中标方是谁?",
+        "仪表采购是EPC包内还是甲方单独采购?",
+        "兰州石化现有Hach/competitor installed base?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=中石油兰州石化; installed_base=unknown; commercial_history=unknown; ims_fit=高(炼油废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-004",
+      "company": "立鼎材料科技(四川)有限公司(中创新航全资子公司)",
+      "industry": "新能源/电池",
+      "location": "四川眉山彭山区",
+      "project": "年产30万吨磷酸铁锂材料项目",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P1",
+      "timing": "EIA/Approval (环评第一次公示)",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026年8月 环评第一次公示发布",
+          "总投资33.6亿元, 建设地点: 彭山区经济开发区产业大道17号",
+          "环评明确包含: 纯水站、污水处理站等生产及辅助用房",
+          "企查查穿透: 立鼎材料=中创新航全资子公司"
+        ],
+        "inferences": [
+          "Direct Evidence: 环评明确列出纯水站和污水处理站=确定新建水系统",
+          "30万吨产能规模大, 水系统规模可期"
+        ],
+        "unknowns": [
+          "污水处理站设计规模/工艺未知",
+          "纯水站制备能力未知",
+          "EPC/设计院未知",
+          "锂电产能审批收紧政策是否影响此项目(已有环评公示, 影响较小)"
+        ]
+      },
+      "potential_ims_use_case": "磷酸铁锂生产废水在线监测(pH/COD/氨氮/总磷/总氮/锂), 纯水站水质监测",
+      "logic": "CapEx(33.6亿新建) → 环评明确纯水站+污水站 → 新建水系统=新仪表需求 → Potential iMS",
+      "estimated_time_window": "2027 Q1-Q3 (环评→设计→建设→采购)",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1874920244125441110&wfr=spider&for=pc",
+        "https://finance.sina.cn/2026-08-30/detail-iniqakft2885484.d.html"
+      ],
+      "to_verify": [
+        "污水处理站设计规模和工艺路线?",
+        "水系统EPC/设计院是谁?",
+        "中创新航眉山基地现有Hach installed base?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=立鼎材料(中创新航子公司); installed_base=unknown; commercial_history=unknown; ims_fit=高(电池废水监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-005",
+      "company": "郑州半导体硅片企业(建设单位待确认)",
+      "industry": "半导体/电子",
+      "location": "河南郑州",
+      "project": "年产360万片8英寸半导体特色硅抛光片项目",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P2",
+      "timing": "Construction (施工总承包刚中标, 工期486天)",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-08-27 施工总承包中标候选人公示",
+          "第一候选人: 中建八局第一建设, 投标价3.66亿, 工期486天",
+          "项目编号: 26-GCZN-018701, 郑州市公共资源交易中心"
+        ],
+        "inferences": [
+          "Strong Engineering Inference: 8英寸硅抛光片生产需要超纯水(UPW)和含氟/含酸废水处理",
+          "486天工期=约16个月, 水系统设计/采购窗口在开工后3-6个月"
+        ],
+        "unknowns": [
+          "建设单位具体身份未在公示中明确",
+          "水系统是否包含在施工总承包范围内, 还是单独EPC",
+          "是否有单独的水系统招标"
+        ]
+      },
+      "potential_ims_use_case": "硅片生产废水在线监测(氟离子/COD/TOC/pH/重金属), UPW系统水质监测",
+      "logic": "CapEx(8寸硅片新建厂) → UPW+废水是必要厂务 → Strong Inference水系统需求 → Potential iMS(待水系统招标确认)",
+      "estimated_time_window": "2026 Q4 - 2027 Q2 (水系统设计/采购窗口)",
+      "source_urls": [
+        "https://zzggzy.zhengzhou.gov.cn/jsgc/004004/20260828/f04d285c-cbc1-417c-8b66-424570356cb6.html"
+      ],
+      "to_verify": [
+        "建设单位具体是哪家企业?",
+        "水系统是否单独EPC招标?",
+        "8寸硅片厂水系统设计院/EPC是谁?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=unknown(需确认); installed_base=unknown; commercial_history=unknown; ims_fit=中(硅片废水); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-006",
+      "company": "中捷石化工业园(中捷产业园区)",
+      "industry": "石化/化工",
+      "location": "河北沧州中捷产业园区",
+      "project": "中捷石化工业园污水处理及中水回用特许经营项目(三次)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Tender (中标候选人公示 2026-08-27)",
+      "water_system_ownership": "C",
+      "incrementality_status": "New Water System (Park-level)",
+      "evidence": {
+        "facts": [
+          "2026-08-27 三次招标中标候选人公示",
+          "第一候选人: 中节能国祯环保, 特许经营模式",
+          "钱江水利(600283)公告参与投标"
+        ],
+        "inferences": [
+          "Park-level: 园区集中污水处理+中水回用, 运营方负责建设运营",
+          "中水回用=RO/UF深度处理, 需要在线电导率/TOC监测"
+        ],
+        "unknowns": [
+          "项目总投资/处理规模未知",
+          "运营方(中节能国祯?)是否负责仪表采购",
+          "园区内企业是否各自有预处理设施"
+        ]
+      },
+      "potential_ims_use_case": "园区污水厂进出水在线监测(COD/TOC/氨氮/总磷/石油类), 中水回用RO系统监测",
+      "logic": "Park-level CapEx → 污水处理+中水回用新建 → 在线监测需求 → Potential iMS(运营方为决策方)",
+      "estimated_time_window": "2026 Q4 - 2027 Q4 (建设运营期)",
+      "source_urls": [
+        "https://www.chinabidding.cn/zbgs/U-vzl84N0.html",
+        "https://data.eastmoney.com/notices/detail/600283/AN202608261828473809.html"
+      ],
+      "to_verify": [
+        "项目总投资和处理规模?",
+        "运营方是否负责仪表采购还是甲方?",
+        "园区内主要企业名单?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=中节能国祯(运营方); installed_base=unknown; commercial_history=unknown; ims_fit=中(园区污水); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-007",
+      "company": "宜城经济开发区管委会",
+      "industry": "石化/化工",
+      "location": "湖北襄阳宜城",
+      "project": "宜城精细化工业园污水处理厂建设(扩建4.5万吨/日)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Design (勘察设计招标, 计划工期40天, 开工2026-10-10)",
+      "water_system_ownership": "B",
+      "incrementality_status": "Water System Expansion",
+      "evidence": {
+        "facts": [
+          "2026-08-25 勘察设计招标公告",
+          "扩建规模4.5万吨/日, 含AAO+芬顿氧化+磁混凝沉淀",
+          "含电气及自控仪表, 合同估算268万",
+          "批复: 宜发改审批[2026]22号"
+        ],
+        "inferences": [
+          "Direct Evidence: 明确新建含自控仪表的工业污水处理厂",
+          "芬顿氧化=高级氧化, 需要精准pH/ORP/Fe2+监测"
+        ],
+        "unknowns": [
+          "EPC中标方未知(设计阶段)",
+          "仪表采购是在EPC包内还是单独?",
+          "园区内企业类型和排放特征"
+        ]
+      },
+      "potential_ims_use_case": "工业污水厂进出水在线监测(COD/TOC/氨氮/总磷/pH/ORP), 芬顿过程控制",
+      "logic": "Park CapEx(4.5万吨扩建) → 含自控仪表的新建污水厂 → 在线监测采购需求 → Potential iMS",
+      "estimated_time_window": "2026 Q4 - 2027 Q3 (设计→EPC→建设)",
+      "source_urls": [
+        "http://www.ych.gov.cn/xxgk/xxgkml/jczwgk/ggzyjy/202608/t20260825_4050140.shtml"
+      ],
+      "to_verify": [
+        "EPC中标方是谁?",
+        "仪表采购模式(EPC包内/单独)?",
+        "精细化工园区主要企业排放特征?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=宜城经开区管委会; installed_base=unknown; commercial_history=unknown; ims_fit=中(化工园区污水); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-008",
+      "company": "藤县中和基础设施投资有限公司",
+      "industry": "石化/化工",
+      "location": "广西梧州藤县",
+      "project": "藤县钛白新材料产业园化工园区污水处理厂(5.5万m3/d)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Design (设计招标, 服务期25天)",
+      "water_system_ownership": "B",
+      "incrementality_status": "New Water System",
+      "evidence": {
+        "facts": [
+          "2026-08-21 设计招标公告",
+          "一期0.5万m3/d + 二期5万m3/d, 远期10万m3/d",
+          "含混凝沉淀/生化池及水电配套设施, 配套管网1950米",
+          "批复: 梧发改环资[2026]111号"
+        ],
+        "inferences": [
+          "Direct Evidence: 化工园区集中污水处理厂新建",
+          "钛白产业园=酸性废水+重金属, 需要专门监测"
+        ],
+        "unknowns": [
+          "EPC方未知(设计阶段)",
+          "园区内企业数量和排放特征",
+          "仪表采购模式"
+        ]
+      },
+      "potential_ims_use_case": "钛白化工园区污水在线监测(pH/COD/SS/重金属/硫酸盐), 混凝沉淀过程控制",
+      "logic": "Park CapEx(钛白产业园污水厂) → 含设备购置的新建污水厂 → 在线监测需求 → Potential iMS",
+      "estimated_time_window": "2026 Q4 - 2027 Q4 (设计→EPC→建设)",
+      "source_urls": [
+        "https://ggzy.jgswj.gxzf.gov.cn/wzggzy/jyxx/001001/001001001/001001001001/20260821/8f72c9a5-59ae-47f3-aa79-991fac2e2d51.html"
+      ],
+      "to_verify": [
+        "设计中标方是谁?",
+        "钛白产业园内主要企业排放特征?",
+        "仪表是否含在EPC包内?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=藤县中和基础设施投资; installed_base=unknown; commercial_history=unknown; ims_fit=中(化工园区污水); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-009",
+      "company": "全国实行排污许可重点管理的企业事业单位",
+      "industry": "跨行业",
+      "location": "全国",
+      "project": "生态环境法典施行 - 自动监测义务扩大",
+      "signal_tier": "Tier 1",
+      "engine": "A",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P2",
+      "timing": "Regulatory (已生效 2026-08-15)",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Monitoring Requirements",
+      "evidence": {
+        "facts": [
+          "《生态环境法典》2026-08-15正式施行",
+          "第184条: 重点管理排污单位必须自动监测设备安装/联网/运维/数据异常处置",
+          "明确16种自动监测违法情形",
+          "专项领域强制监测: 化工园区/工业园区污水集中处理/排放工业有毒有害水污染物等"
+        ],
+        "inferences": [
+          "Regulatory Inference: 重点管理排污单位范围可能扩大, 更多企业需安装自动监测设备",
+          "朝阳区检查113家企业(67家重点管理)反映执法力度加强"
+        ],
+        "unknowns": [
+          "哪些具体企业因法典新纳入重点管理?",
+          "新增自动监测设备需求量无法量化",
+          "现有企业自动监测设备覆盖率未知"
+        ]
+      },
+      "potential_ims_use_case": "自动监测设备安装/联网/运维需求扩大, 在线水质监测(COD/TOC/氨氮/总磷/总氮/重金属)",
+      "logic": "Regulatory Trigger(法典施行) → 重点管理单位自动监测强制义务 → 设备安装/运维需求 → Potential iMS(broad, 需具体企业)",
+      "estimated_time_window": "2026 Q3起持续 (合规整改期)",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzU3MDI5Njg3NA==&mid=2247541701&idx=2&sn=a94a2f64bc2fc374df8c9ed85721c236",
+        "http://binyang.gov.cn/gk/xxgkml/shgysyjslygk/hjbhly/hjbhzccshgh/t6713680.html",
+        "https://mp.weixin.qq.com/s?__biz=MzA3MzU3MTU4MA==&mid=2247631988&idx=1&sn=450e9209fa5a6c299a83f2580c6fca27"
+      ],
+      "to_verify": [
+        "哪些重点行业企业因法典新纳入重点管理?",
+        "地方执法力度和整改期限?",
+        "自动监测设备市场增量规模?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=跨行业(需聚焦具体企业); installed_base=unknown; commercial_history=unknown; ims_fit=高(合规监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-010",
+      "company": "中国石化仪征化纤有限责任公司",
+      "industry": "石化/化工",
+      "location": "江苏扬州",
+      "project": "仪征化纤生化装置西区MBBR改造(400m3/h, COD<=90mg/L)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P2",
+      "timing": "Tender/Procurement (招标结果公告)",
+      "water_system_ownership": "A",
+      "incrementality_status": "Water System Upgrade",
+      "evidence": {
+        "facts": [
+          "2026-08-09 招标结果公告(中国石化物资电子招标投标平台)",
+          "工艺: MBBR, 处理量400m3/h, 出水COD<=90mg/L",
+          "招标平台: bidding.epec.com (中石化电子采购)"
+        ],
+        "inferences": [
+          "Direct Evidence: 污水处理系统改造, MBBR工艺需DO/pH/ORP在线监测",
+          "中石化体系内企业, 有标准化采购流程"
+        ],
+        "unknowns": [
+          "中标方身份未知",
+          "仪表是否包含在改造包内",
+          "仪征化纤现有在线监测品牌"
+        ]
+      },
+      "potential_ims_use_case": "MBBR过程监测(DO/pH/ORP), 出水COD/TOC在线监测",
+      "logic": "Compliance(污水达标改造) → MBBR工艺升级 → 过程+出水在线监测需求 → Potential iMS",
+      "estimated_time_window": "2026 Q3-Q4 (设备安装调试)",
+      "source_urls": [
+        "https://www.bidizhaobiao.com/company_353384773073547264.html"
+      ],
+      "to_verify": [
+        "中标方是谁? 仪表是否在改造包内?",
+        "仪征化纤现有Hach installed base?",
+        "中石化体系采购流程和准入要求?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=中石化仪征化纤; installed_base=unknown; commercial_history=unknown; ims_fit=中(MBBR监测); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-011",
+      "company": "沙湾市商务和工业信息化局",
+      "industry": "工业园区",
+      "location": "新疆塔城沙湾市",
+      "project": "沙湾综合产业园区污水处理厂EPC+O(5000万)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "priority": "P3",
+      "timing": "Tender (EPC+O招标中)",
+      "water_system_ownership": "C",
+      "incrementality_status": "New Water System",
+      "evidence": {
+        "facts": [
+          "2026-08-31 EPC+O招标公告, 投资5000万",
+          "含: 出水在线监测间(30.36m2), 气浮+加药间, 调节池+事故池",
+          "深化处理装配式一体化装置, 中水回用池",
+          "招标人: 沙湾市商务和工业信息化局"
+        ],
+        "inferences": [
+          "Direct Evidence: 明确出水在线监测间=有仪表采购需求",
+          "Park-level, 偏市政/园区基础设施"
+        ],
+        "unknowns": [
+          "园区内工业企业类型和排放特征",
+          "EPC方未知",
+          "仪表采购在EPC包内"
+        ]
+      },
+      "potential_ims_use_case": "园区污水厂出水在线监测(COD/TOC/氨氮/总磷/pH)",
+      "logic": "Park CapEx(5000万污水厂) → 含在线监测间 → 仪表需求 → Potential iMS(但规模偏小)",
+      "estimated_time_window": "2026 Q4 - 2027 Q3",
+      "source_urls": [
+        "http://ggzyjy.xjtc.gov.cn/jyxx/002001/002001001/20260831/6132a065-6595-4818-9af9-2176d0da8159.html"
+      ],
+      "to_verify": [
+        "EPC中标方?",
+        "园区主要工业企业和排放类型?",
+        "仪表采购规模?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=沙湾市商务局; installed_base=unknown; commercial_history=unknown; ims_fit=低-中(园区污水); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-012",
+      "company": "孝感澴楚新能源投资有限公司",
+      "industry": "新能源/电池",
+      "location": "湖北孝感临空经济区",
+      "project": "孝感新能源二期30GWh锂电池制造设备购置",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Equipment Procurement (16标段招标中)",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Production Line",
+      "evidence": {
+        "facts": [
+          "2026年8月 设备购置16标段招标(OHT标段)",
+          "项目年产30GWh, 孝感临空经济区科源路8号",
+          "招标内容: 制浆/涂布/卷绕/注液/NMP回收等生产设备, 无水系统设备"
+        ],
+        "inferences": [
+          "Industry Inference: 30GWh锂电池工厂需要NMP回收废水处理和纯水系统, 但本次招标无水系统",
+          "水系统可能已在前期建设中或单独EPC"
+        ],
+        "unknowns": [
+          "水系统是否已建设完成?",
+          "是否有单独的水系统EPC招标?",
+          "项目环评中废水处理规模"
+        ]
+      },
+      "potential_ims_use_case": "锂电池生产废水监测(镍/钴/锰/氟/有机溶剂), NMP回收废水",
+      "logic": "CapEx(30GWh新建) → Industry Inference水系统需求 → 但无直接水系统证据 → Signal only",
+      "estimated_time_window": "Unknown (水系统阶段未知)",
+      "source_urls": [
+        "https://www.hbggzyfwpt.cn/jyxx/jsgcXmxxDetail3?guid=92c956cc-452a-49d4-9216-6fbb1877500a"
+      ],
+      "to_verify": [
+        "孝感二期是否有独立水系统EPC招标?",
+        "环评中废水处理设施规模?",
+        "一期水系统现状和Hach installed base?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=孝感澴楚新能源; installed_base=unknown; commercial_history=unknown; ims_fit=unknown(无水系统证据); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-013",
+      "company": "楚能新能源(襄阳)",
+      "industry": "新能源/电池",
+      "location": "湖北襄阳高新区",
+      "project": "楚能襄阳70GWh锂电池产业园",
+      "signal_tier": "Tier 3",
+      "engine": "B",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Production Ramp / Mass Production (8月30日投产)",
+      "water_system_ownership": "D",
+      "incrementality_status": "Installed Base / Lifecycle",
+      "evidence": {
+        "facts": [
+          "2026-08-30 正式投产, 规划年产能70GWh",
+          "占地1608亩, 建筑面积105万m2, 投资300亿",
+          "从动工到投产仅10个月"
+        ],
+        "inferences": [
+          "已投产=新建水系统主要采购窗口大概率已过",
+          "Lifecycle Opportunity: 仪表维护/替换/升级/新增监测点"
+        ],
+        "unknowns": [
+          "水系统是否已全部建成运行",
+          "现有仪表品牌和数量",
+          "后续是否有二期扩建计划"
+        ]
+      },
+      "potential_ims_use_case": "Installed Base: 仪表维护/升级/新增监测点, iMS生命周期管理",
+      "logic": "已投产 → 新建水系统窗口已过 → 降级为Lifecycle/Installed Base Opportunity",
+      "estimated_time_window": "持续 (运营期仪表维护/替换)",
+      "source_urls": [
+        "https://m.bjx.com.cn/mnews/20260831/1510693.shtml"
+      ],
+      "to_verify": [
+        "现有水系统在线仪表品牌和数量?",
+        "是否有扩建/改造计划?",
+        "楚能与Hach是否有商业往来?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=楚能新能源; installed_base=unknown; commercial_history=unknown; ims_fit=低(Lifecycle); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-014",
+      "company": "兰州佛慈制药股份有限公司",
+      "industry": "制药",
+      "location": "甘肃兰州",
+      "project": "佛慈制药污水处理站委托运营(2000m3/d)",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Tender (招标公告 2026-08-24)",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility",
+      "evidence": {
+        "facts": [
+          "2026-08-24 污水处理站委托运营服务项目(二次)招标",
+          "设计规模2000m3/d, 24小时运行",
+          "配套中水回用系统",
+          "出水标准: GB21906-2008(中药类制药工业水污染物)"
+        ],
+        "inferences": [
+          "Direct Evidence: 已建污水站+中水回用, 委托运营=不是新建",
+          "运营方需保障出水达标, 可能需要仪表升级/维护"
+        ],
+        "unknowns": [
+          "现有在线监测仪表配置和品牌",
+          "运营方是否有仪表采购预算",
+          "仪表升级需求程度"
+        ]
+      },
+      "potential_ims_use_case": "中药制药废水在线监测(COD/TOC/氨氮/SS/色度), 中水回用RO监测",
+      "logic": "Existing Facility(委托运营) → 运营达标需求 → 可能仪表升级/维护 → Installed Base/Lifecycle",
+      "estimated_time_window": "运营期持续",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1874453333315834105&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "现有在线仪表品牌和配置?",
+        "运营方是否有仪表升级预算?",
+        "佛慈与Hach是否有商业往来?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=佛慈制药; installed_base=unknown; commercial_history=unknown; ims_fit=低(Lifecycle); account_sales=unknown"
+    },
+    {
+      "id": "IND-20260902-015",
+      "company": "力合厚浦科技有限公司",
+      "industry": "新能源/电池",
+      "location": "四川泸州古蔺",
+      "project": "锂电池材料循环利用项目(50亿)",
+      "signal_tier": "Tier 3",
+      "engine": "B",
+      "opportunity_stage": "Industrial Signal",
+      "priority": "P3",
+      "timing": "Concept/Planning (签约阶段)",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [
+          "2026-08-21 投资签约, 总投资约50亿",
+          "选址古蔺经济开发区, 分两期建设",
+          "年产6万吨含锂三元前驱体+2万吨MHP精炼线"
+        ],
+        "inferences": [
+          "Industry Inference: 三元前驱体生产需要纯水和废水处理, 但仅签约阶段",
+          "锂电材料循环利用可能涉及湿法冶金废水"
+        ],
+        "unknowns": [
+          "无环评/可研/设计信息",
+          "水系统规模完全未知",
+          "项目能否实际落地(锂电审批收紧背景)"
+        ]
+      },
+      "potential_ims_use_case": "三元前驱体废水监测(重金属/Ni/Co/Mn/氨氮), 湿法冶金废水",
+      "logic": "CapEx(50亿签约) → Industry Inference水系统需求 → 但仅签约无实质进展 → Tier 3 Watchlist",
+      "estimated_time_window": "2027-2028 (如能落地)",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1874920244125441110&wfr=spider&for=pc"
+      ],
+      "to_verify": [
+        "项目是否已备案/环评?",
+        "水系统规模和工艺?",
+        "能否在锂电审批收紧背景下落地?"
+      ],
+      "continuity": "first_seen",
+      "agent_checklist": "customer_identity=力合厚浦; installed_base=unknown; commercial_history=unknown; ims_fit=unknown(早期); account_sales=unknown"
+    }
+  ],
+  "market_background": {
+    "key_events": [
+      "《生态环境法典》2026-08-15施行, 以排污许可制为核心, 扩大自动监测义务",
+      "锂电产能审批收紧: 工信部暂停受理动力储能电池新建项目, 已完成环评项目不受影响",
+      "楚能襄阳70GWh投产, 标志锂电超级工厂进入量产阶段",
+      "威立雅斩获3.43亿欧元微电子水处理订单(新加坡UPW+美国ZLD), 反映半导体水系统市场活跃"
+    ],
+    "policy_signals": [
+      "生态环境法典: 重点管理排污单位强制自动监测(第184条)",
+      "16种自动监测违法情形明确, 执法力度加强",
+      "锂电产能管控: 暂停≠叫停, 待摸底后重新放行"
+    ]
+  },
+  "source_effectiveness": {
+    "most_valuable_sources": [
+      "chinabidding.cn - 招标公告/结果, 发现粤芯/长庆石化/中捷项目",
+      "政府公共资源交易平台(郑州/新疆/湖北/广西) - 官方EPC/设计招标",
+      "上市公司公告(钱江水利) - 验证中捷项目进展",
+      "bidcenter.com.cn - 兰州石化招标预告",
+      "微信公众号 - 法典解读/行业动态"
+    ],
+    "noise_sources": [
+      "SEO推广文章(半导体废水处理公司推荐类) - 无项目级信息",
+      "通用行业分析文章 - 无具体机会"
+    ],
+    "earliest_signal_sources": [
+      "环评公示平台 - 中创新航磷酸铁锂(最早发现水系统需求)",
+      "可研/设计招标 - 长庆石化/宜城/藤县(项目启动最早信号)"
+    ]
+  },
+  "experiment_observations": {
+    "week_3_engine_comparison": {
+      "engine_a_findings": "Engine A产生1条信号(生态环境法典), 属于系统级合规触发器。优势: 覆盖面广, 影响所有重点管理排污单位。劣势: 无法指向具体企业, 需要结合Engine B的项目信息才能形成可行动Opportunity。Engine A更适合作为筛选器而非独立机会发现引擎。",
+      "engine_b_findings": "Engine B产生14条信号, 其中4条P1, 6条P2, 4条P3。优势: 项目级证据直接链接水系统采购, 时间窗口明确, 可行动性强。最强信号: 粤芯四期(直接水系统包结果公告)、长庆石化(ZLD可研)、兰州石化(1.75亿EPC招标)、中创新航(环评含纯水站+污水站)。",
+      "engine_a_vs_b_conclusion": "Engine B在Industrial Radar中明显更有效: 1)产出比14:1; 2)证据链更完整(项目事实→水系统→仪表需求); 3)时间窗口更明确; 4)可行动性更强。Engine A的价值在于提供合规背景和市场驱动逻辑, 作为Engine B信号的'为什么'解释。建议: Engine A降频为周扫, Engine B保持日扫, 但Engine A的合规触发器应自动关联Engine B的具体项目。",
+      "week3_vs_week2_changes": "Week 3相比Week 2: 1)信号质量提升, 更多Direct Evidence(粤芯废硫酸处理包/兰州石化EPC/中创新航环评含水站); 2)P1信号从2条增至4条; 3)新增石化行业强信号(长庆ZLD+兰州炼油升级); 4)半导体信号从CapEx推断升级为直接水系统包招标。"
+    },
+    "municipal_vs_industrial_differentiation": "本周明确排除了市政污水处理厂项目(如第七师胡杨河5万方/日、北京全区委托监测)和污水零直排提质增效项目(钱塘区), 这些属于Municipal Radar范围。保留的园区污水处理厂仅限于化工/钛白/精细化工等工业属性明确的园区。",
+    "key_limitations": [
+      "无法获取中标供应商具体身份(chinabidding需注册)",
+      "无法验证Hach installed base(需Stage 2 Enrichment)",
+      "部分项目建设单位未在公示中明确(8寸硅片项目)",
+      "锂电审批收紧政策对在建项目影响待观察"
+    ]
+  }
+}

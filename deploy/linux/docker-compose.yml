@@ -1,0 +1,11 @@
+services:
+  water-clay:
+    build:
+      context: ../..
+      dockerfile: deploy/linux/Dockerfile
+    image: water-clay-icp:local
+    container_name: water-clay-icp
+    restart: unless-stopped
+    ports:
+      - "${WATER_CLAY_BIND:-127.0.0.1}:8080:8080"
+

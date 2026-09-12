@@ -1,0 +1,1248 @@
+{
+  "report_id": "ind-radar-20260831",
+  "date": "2026-08-31",
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "experiment_week": 3,
+  "version": "v2.1-week3-d1",
+  "scanner_summary": {
+    "total_scanned": 28,
+    "total_signals": 27,
+    "new_signals_today": 5,
+    "carried_signals": 22,
+    "material_changes_today": 0,
+    "engine_a_count": 8,
+    "engine_b_count": 19,
+    "engine_a_new_today": 1,
+    "engine_b_new_today": 4,
+    "p1_count": 0,
+    "p2_count": 12,
+    "p3_count": 15,
+    "signal_count": 15,
+    "potential_count": 12,
+    "ims_opportunity_count": 0,
+    "industry_breakdown": {
+      "battery": 6,
+      "pharmaceutical": 2,
+      "cross_industry": 10,
+      "petrochemical": 5,
+      "semiconductor": 4,
+      "food_beverage": 1
+    },
+    "engine_breakdown": {
+      "engine_a_compliance": 8,
+      "engine_b_project_capex": 19
+    },
+    "timing_breakdown": {
+      "Early Trigger": 3,
+      "Planning-Feasibility": 3,
+      "EIA-Approval": 6,
+      "Design": 2,
+      "Tender-Procurement": 4,
+      "Execution": 3,
+      "Completed-Too Late": 1,
+      "Industrial Signal": 5
+    }
+  },
+  "top_5_match": [
+    {
+      "rank": 1,
+      "id": "IND-20260831-001",
+      "name": "杭州临江新材料产业园9万t/d化工污水处理厂",
+      "engine": "B",
+      "industry": "petrochemical",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "3.49亿EPC中标，9万t/d化工园区污水处理厂设备采购安装，Direct Water Evidence，但中标已出意味着采购窗口可能正在关闭",
+      "agent_checklist": [
+        "确认中建八局项目部仪表采购分包商",
+        "查询杭州临江/萧山Hach装机",
+        "评估iMS对化工园区污水处理厂适用性",
+        "确认设备安装时间表和采购窗口"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "IND-20260827-001",
+      "name": "蓬莱开发区工业园区污水集中处理设施",
+      "engine": "B",
+      "industry": "cross_industry",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "2万m3/d工业园区污水集中处理设施第一次环评公示，Park-level直接水系统证据，最早阶段介入窗口",
+      "agent_checklist": [
+        "确认蓬莱经开区管委会是否为Hach客户",
+        "查询蓬莱经开区现有工业企业类型",
+        "评估iMS对工业园区集中污水处理厂监控适用性",
+        "追踪环评报告书中水系统设计规模"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "IND-20260825-001",
+      "name": "立鼎材料科技(四川)/中创新航",
+      "engine": "B",
+      "industry": "battery",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "33.6亿磷酸铁锂项目第一次环评，明确含纯水站+污水处理站，30万吨大规模",
+      "agent_checklist": [
+        "确认中创新航眉山基地是否为Hach客户",
+        "查询中创新航眉山现有Hach装机",
+        "评估iMS对磷酸铁锂工厂纯水+废水监控适用性"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "IND-20260827-006",
+      "name": "顺德工业(江苏)半导体引线框架废水站提标改造",
+      "engine": "B",
+      "industry": "semiconductor",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "半导体引线框架龙头新建电镀产线驱动废水站提标改造，11类复杂电镀废水，Direct Water Evidence",
+      "agent_checklist": [
+        "确认顺德工业(江苏)是否为Hach客户",
+        "查询张家港保税区现有Hach装机",
+        "评估iMS对半导体电镀废水站监控适用性"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "IND-20260825-004",
+      "name": "监利市城发农业投资/朱河工业园区",
+      "engine": "B",
+      "industry": "cross_industry",
+      "priority": "P2",
+      "match_priority": "B",
+      "match_reason": "1.25亿工业污水处理厂扩建EPC，4000→15000m3/d近4倍扩容，9月即将招标——时间窗口最紧迫",
+      "agent_checklist": [
+        "确认监利市城发农业投资是否为Hach客户",
+        "查询朱河工业园区现有污水处理厂仪表品牌",
+        "确认EPC招标时间和中标方"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260831-001",
+      "market_segment": "industrial",
+      "company": "杭州临江高新技术产业开发区新材料产业园",
+      "account": "杭州临江高新技术产业开发区管委会/中建八局",
+      "industry": "petrochemical",
+      "location": "浙江省杭州市萧山区临江高新技术产业开发区",
+      "opportunity": "新材料产业园配套工业化工污水处理厂设备及安装项目——9万t/d近期，12万t/d远期，3.49亿中标",
+      "signal_tier": "Tier 1",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "8月21日杭州临江高新区新材料产业园配套污水处理厂及附属设施工程(一期)设备及安装项目中标结果公告",
+          "中国建筑第八工程局有限公司中标，中标价348,786,752元(约3.49亿)",
+          "新建化工园区配套污水处理厂1座，近期处理规模暂定9万t/d，远期12万t/d",
+          "新建配套尾水排放管双管敷设DN1200，单管长度约1.6km",
+          "招标范围：工业(化工)污水处理工艺设备采购、安装调试、试运行",
+          "共34家企业参与投标，竞争激烈",
+          "建安工程造价42,444,881元(约4244万)"
+        ],
+        "inferences": [
+          "9万t/d工业化工污水处理厂需大量进出水在线监测仪表(COD/氨氮/总磷/总氮/pH/流量/特征污染物)",
+          "中建八局中标EPC意味着设备采购进入执行阶段，但具体仪表采购可能在EPC分包中",
+          "化工园区污水处理厂需监控特征污染物(苯系物/重金属/氟化物等)",
+          "Park-level Opportunity：园区集中处理设施服务多个化工企业"
+        ],
+        "unknowns": [
+          "中建八局是否已确定仪表供应商或分包含仪表采购",
+          "污水处理工艺路线和具体仪表清单",
+          "Hach在杭州临江/萧山地区的装机情况",
+          "设计院和仪表规格是否已锁定",
+          "设备安装时间表和采购窗口是否已过"
+        ]
+      },
+      "potential_ims_use_case": "iMS监控化工园区集中污水处理厂进出水水质(COD/氨氮/总磷/总氮/pH/流量/特征污染物)及各处理单元过程控制",
+      "logic_rationale": "9万t/d新建化工园区污水处理厂 → 明确需要在线监测仪表 → 设备采购EPC中标(3.49亿) → 但中标已出意味着主要采购窗口可能正在关闭或已关闭",
+      "opportunity_stage": "Tender/Procurement",
+      "estimated_time_window": "EPC中标8/21，设备安装预计2026-2027年，仪表采购窗口可能正在关闭",
+      "priority": "P2",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "http://www.sohu.com/a/1067548077_121123737"
+      ],
+      "to_verify": {
+        "customer_identity": "确认杭州临江高新区管委会是否为Hach客户",
+        "installed_base": "查询临江高新区现有化工企业Hach仪表装机",
+        "commercial_history": "查询杭州临江历史水质监测设备采购",
+        "ims": "评估iMS对化工园区集中污水处理厂监控适用性",
+        "account_sales": "确认中建八局项目部分管仪表采购的负责人和分包商"
+      },
+      "continuity": {
+        "first_seen": "2026-08-31",
+        "new_facts_today": [
+          "杭州临江新材料产业园9万t/d化工污水处理厂EPC中标(3.49亿/中建八局)",
+          "34家企业竞标，竞争激烈",
+          "设备采购安装为招标范围"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260831-002",
+      "market_segment": "industrial",
+      "company": "湛江市聚鑫新能源有限公司",
+      "account": "湛江市聚鑫新能源有限公司",
+      "industry": "battery",
+      "location": "广东省湛江市坡头区官渡工业园",
+      "opportunity": "9万吨锂电池负极材料智能化改扩建项目环评批复——球形石墨纯化扩产+酸洗工艺",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "8月24-28日湛江市生态环境局坡头分局拟批准年产9万吨锂电池负极材料智能化改扩建项目",
+          "改扩建：球形石墨纯化3万t/a→5万t/a，新增回收料纯化3万t/a，高碳石墨纯化1万t/a",
+          "酸储罐区调整：现有调整为储存盐酸/氢氟酸，新增硝酸储罐区",
+          "在现有厂区北侧新建23333平方米新厂区(研发楼/原料仓库/产品仓库)",
+          "建设单位为湛江市聚鑫新能源有限公司，环评机构广州国寰环保科技"
+        ],
+        "inferences": [
+          "石墨纯化使用HF/HCl/HNO3 → 酸洗废水需要处理",
+          "Industry Inference: 锂电池负极材料酸洗工艺产生含氟/含酸废水",
+          "改扩建性质意味着可能有现有水系统，增量取决于新增产能的废水增量"
+        ],
+        "unknowns": [
+          "现有厂区废水处理系统规模和仪表品牌",
+          "扩建后新增废水量是否超过现有处理能力",
+          "是否需要新建/扩建废水处理设施",
+          "聚鑫新能源是否为Hach客户"
+        ]
+      },
+      "potential_ims_use_case": "iMS监控锂电池负极材料工厂酸洗废水处理系统(含氟/COD/pH/重金属)",
+      "logic_rationale": "9万吨负极材料改扩建 → 酸洗工艺(HF/HCl/HNO3) → Industry Inference: 含氟/含酸废水需处理 → 但无Direct Water System Evidence(环评中未明确新建/扩建污水处理站)",
+      "opportunity_stage": "EIA-Approval",
+      "estimated_time_window": "环评批复中(8月)，预计2027年建设",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.zhanjiang.gov.cn/zjsfw/bmdh/sthjj/zwgk/xzgs/content/post_2215069.html"
+      ],
+      "to_verify": {
+        "customer_identity": "确认聚鑫新能源是否为Hach客户",
+        "installed_base": "查询现有厂区废水处理系统仪表品牌",
+        "commercial_history": "",
+        "ims": "评估iMS对负极材料酸洗废水监控适用性",
+        "account_sales": "确认官渡工业园厂务/环保联系人"
+      },
+      "continuity": {
+        "first_seen": "2026-08-31",
+        "new_facts_today": [
+          "湛江聚鑫9万吨负极材料改扩建环评批复",
+          "酸储罐区调整(HF/HCl/HNO3)",
+          "新建23333平方米新厂区"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260831-003",
+      "market_segment": "industrial",
+      "company": "山东先声再明生物制药有限公司/先声药业集团",
+      "account": "山东先声再明生物制药有限公司",
+      "industry": "pharmaceutical",
+      "location": "山东省烟台经济技术开发区扬州大街15号",
+      "opportunity": "先声国际医药产业园(山东)二期项目环评征求意见稿——年产酶制剂260万支，依托一期污水站",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "8月25日先声国际医药产业园(山东)二期项目环境影响报告书征求意见稿公示",
+          "建设单位：山东先声再明生物制药有限公司(先声药业集团子公司)",
+          "依托一期项目原液车间(发酵车间和纯化车间)、废液处理间、污水站等",
+          "在联合厂房新建酶制剂项目，年产酶制剂260万支",
+          "项目位于烟台经济技术开发区扬州大街15号"
+        ],
+        "inferences": [
+          "依托一期污水站意味着现有水系统已运行，二期新增产能可能需要扩容",
+          "生物制药发酵/纯化工艺产生含有机物/COD/氨氮废水",
+          "Industry Inference: 酶制剂生产通常增加废水量"
+        ],
+        "unknowns": [
+          "一期污水站设计规模和当前负荷",
+          "二期新增废水量是否超过现有处理能力",
+          "是否需要新增在线监测点",
+          "先声药业是否为Hach客户"
+        ]
+      },
+      "potential_ims_use_case": "iMS监控生物制药工厂污水站(COD/氨氮/TOC/pH/流量)及废液处理间",
+      "logic_rationale": "酶制剂二期扩建 → 依托一期污水站 → Industry Inference: 发酵/纯化增加废水量 → 需确认增量是否触发水系统扩容",
+      "opportunity_stage": "EIA-Approval",
+      "estimated_time_window": "环评征求意见稿(8月25日)，预计2027年建设",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.yeda.gov.cn/col/col50341/art/2026/art_5d93820bab934a13a9099b964bf0e148.html"
+      ],
+      "to_verify": {
+        "customer_identity": "确认先声药业集团是否为Hach客户",
+        "installed_base": "查询先声药业烟台基地Hach仪表装机",
+        "commercial_history": "",
+        "ims": "评估iMS对生物制药污水站监控适用性",
+        "account_sales": "确认先声再明生物制药烟台基地厂务/环保联系人"
+      },
+      "continuity": {
+        "first_seen": "2026-08-31",
+        "new_facts_today": [
+          "先声国际医药产业园二期环评征求意见稿公示",
+          "年产酶制剂260万支，依托一期污水站"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260831-004",
+      "market_segment": "industrial",
+      "company": "福建省工业企业(固定污染源自动监控)",
+      "account": "福建省生态环境厅/全省排污单位",
+      "industry": "cross_industry",
+      "location": "福建省全省",
+      "opportunity": "福建省修订固定污染源自动监控办法——排污单位对数据真实性负首责，安装联网运维费用企业承担",
+      "signal_tier": "Tier 2",
+      "engine": "A",
+      "evidence": {
+        "facts": [
+          "福建省修订出台《福建省固定污染源自动监控管理办法》，以省政府令形式公布",
+          "2026年8月16日经省政府常务会议审议通过并公布施行",
+          "排污单位是自动监测设备正常运行和数据质量的第一责任人",
+          "纳入自动监控名单的排污单位必须装设备、联网、验收备案",
+          "企业承担建设、运行、维护全部费用",
+          "实行排污许可重点管理的一律进名单，名单每年更新",
+          "委托第三方运维的，企业仍需监督管理，运维方发现篡改数据须报告"
+        ],
+        "inferences": [
+          "福建省以省级政府令形式强化企业自动监控主体责任",
+          "排污许可重点管理企业强制纳入自动监控名单 → 可能触发新增/更新监测设备需求",
+          "数据真实性首责制可能推动企业升级监测设备或加强数据管理",
+          "与法典第183/186条衔接，明确了持证排污单位的自行监测+自动监控义务"
+        ],
+        "unknowns": [
+          "福建省排污许可重点管理企业具体名单和数量",
+          "新办法是否直接要求新增监测设备或仅强化现有设备运维",
+          "与湖北省大冶市试点的区别和可比性",
+          "Hach在福建省的装机情况"
+        ]
+      },
+      "potential_ims_use_case": "iMS帮助福建省排污许可重点管理企业满足自动监控数据真实性/完整性/运维管理要求",
+      "logic_rationale": "法典施行 → 省级自动监控办法修订 → 排污许可重点管理企业强制安装联网 → 数据质量首责制 → 潜在设备更新/数据管理需求",
+      "opportunity_stage": "Industrial Signal",
+      "estimated_time_window": "8月16日公布施行，名单每年更新",
+      "priority": "P3",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "http://h5.wap.erbiao24h.cn/minsheng/8788944.shtml",
+        "https://www.fjdaily.com/app/content/2026-08/25/content_4360469.html"
+      ],
+      "to_verify": {
+        "customer_identity": "确认福建省排污许可重点管理企业中Hach客户覆盖",
+        "installed_base": "查询福建省Hach仪表装机",
+        "commercial_history": "",
+        "ims": "评估iMS对接自动监控平台和数据管理的适用性",
+        "account_sales": "确认福建省生态环境厅联系人"
+      },
+      "continuity": {
+        "first_seen": "2026-08-31",
+        "new_facts_today": [
+          "福建省固定污染源自动监控办法修订公布(8月16日)",
+          "排污单位数据真实性首责制",
+          "排污许可重点管理企业强制纳入自动监控名单"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260831-005",
+      "market_segment": "industrial",
+      "company": "扬州祖名豆制食品有限公司/祖名股份",
+      "account": "扬州祖名豆制食品有限公司",
+      "industry": "food_beverage",
+      "location": "江苏省扬州市经济技术开发区裕元路98号",
+      "opportunity": "5万吨生鲜类豆制品和植物蛋白饮品项目重新报批——配套污水处理站+560m³事故应急池，但项目已试生产",
+      "signal_tier": "Tier 2",
+      "engine": "B",
+      "evidence": {
+        "facts": [
+          "8月28日扬州经开区批复扬州祖名豆制食品5万吨生鲜类豆制品项目(重新报批)",
+          "总投资33000万元，环保投资8000万元",
+          "配套建设污水处理站、560m³事故应急池、300m³雨水收集池",
+          "项目已建成试生产，因产品/产线/废气治理设施/污染物排放量重大变动需重新报批",
+          "新增臭豆腐、响铃卷、素鸡、烘干蛋白渣、干豆渣生产线",
+          "用地面积54586平方米"
+        ],
+        "inferences": [
+          "配套建设污水处理站是Direct Water System Evidence",
+          "但项目已建成试生产 → 主要水系统采购窗口大概率已过",
+          "重新报批意味着可能需要调整/扩建现有水系统 → Installed Base/Lifecycle Opportunity",
+          "食品饮料行业首个有效信号：豆制品制造产生高浓度有机废水(COD高)"
+        ],
+        "unknowns": [
+          "现有污水处理站规模和仪表品牌",
+          "重新报批后是否需要扩建水系统",
+          "祖名豆制是否为Hach客户",
+          "新增生产线是否增加废水量超过现有处理能力"
+        ]
+      },
+      "potential_ims_use_case": "iMS监控豆制品工厂污水处理站(COD/氨氮/总磷/pH/流量)及事故应急池",
+      "logic_rationale": "5万吨豆制品项目配套污水处理站 → Direct Water Evidence → 但项目已试生产 → 主要采购窗口已过 → Installed Base/Lifecycle Opportunity",
+      "opportunity_stage": "Completed-Too Late",
+      "estimated_time_window": "项目已试生产，重新报批中，水系统可能需要调整",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "source_urls": [
+        "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_1c7405aba6ba43788ba1144b2bc13e34.html"
+      ],
+      "to_verify": {
+        "customer_identity": "确认祖名股份(003030.SZ)是否为Hach客户",
+        "installed_base": "查询扬州祖名现有污水处理站仪表品牌",
+        "commercial_history": "",
+        "ims": "评估iMS对豆制品工厂污水站监控适用性",
+        "account_sales": "确认扬州祖名厂务/环保联系人"
+      },
+      "continuity": {
+        "first_seen": "2026-08-31",
+        "new_facts_today": [
+          "扬州祖名5万吨豆制品项目重新报批批复",
+          "配套污水处理站+560m³事故应急池",
+          "项目已试生产，主要采购窗口已过"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-001",
+      "company": "烟台市蓬莱经济开发区管委会",
+      "industry": "cross_industry",
+      "engine": "B",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "山东省烟台市蓬莱区",
+      "opportunity": "蓬莱开发区工业园区污水集中处理设施建设工程第一次环评公示——2万m3/d",
+      "estimated_time_window": "第一次环评公示(8/26)，预计2027年建设",
+      "water_system_ownership": "B",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal — see 8/27 report for full details",
+      "source_urls": [
+        "https://www.penglai.gov.cn/col/col13318/art/2026/art_5e4e1ac1e971464197e51f77d0a71e04.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-002",
+      "company": "四川省盈达锂电新材料有限公司",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "四川省遂宁市蓬溪经开区",
+      "opportunity": "5万吨磷酸盐正极材料扩建项目环评公示——依托现有外排水处理系统",
+      "estimated_time_window": "环评公示中(8月)",
+      "water_system_ownership": "A",
+      "incrementality_status": "Water System Expansion",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://ssthjj.suining.gov.cn/zwgk/show/d92b854de9fb7429cc065e73601a70b3.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-003",
+      "company": "黄石市大冶市81家排污许可重点管理单位",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Industrial Signal",
+      "location": "湖北省黄石市大冶市",
+      "opportunity": "大冶市81家排污单位自行监测视频监控联网建设——湖北省试点，9月30日首批截止",
+      "estimated_time_window": "9月30日首批点位建设截止",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "Installed Base/Lifecycle",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.cenews.com.cn/news.html?aid=1804133"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [
+          "距9月30日首批点位建设截止仅剩30天"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-004",
+      "company": "宁夏4家试点工业园区排污单位",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "宁夏(平罗/石嘴山/青铜峡/吴忠太阳山)",
+      "opportunity": "宁夏排污单位自行监测穿透式监管改革试点启动",
+      "estimated_time_window": "8月24日启动会",
+      "water_system_ownership": "N/A",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.hbzhan.com/news/detail/201046.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-005",
+      "company": "万华化学(600309.SH)/万华(滨州)新能源",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "山东省滨州市沾化区",
+      "opportunity": "万华绿电产业园40万吨磷酸铁锂项目——CapEx信号无Direct Water Evidence",
+      "estimated_time_window": "9月具备施工条件，12月桩基",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "http://www.zhanhua.gov.cn/art/2026/8/21/art_258292_10441324.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260827-006",
+      "company": "顺德工业(江苏)/台湾顺德工业集团(2351.TW)",
+      "industry": "semiconductor",
+      "engine": "B",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "江苏省苏州市张家港保税区",
+      "opportunity": "半导体引线框架龙头新建电镀产线驱动废水站提标改造——11类电镀废水",
+      "estimated_time_window": "提标改造已提上日程(8月报道)",
+      "water_system_ownership": "A",
+      "incrementality_status": "Water System Upgrade",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.jiemian.com/article/14954024.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-27",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-001",
+      "company": "立鼎材料科技(四川)/中创新航(03931.HK)",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "四川省眉山市彭山区",
+      "opportunity": "30万吨磷酸铁锂材料项目第一次环评公示——33.6亿，明确含纯水站和污水处理站",
+      "estimated_time_window": "第一次环评(8月)，预计2027-2028建设",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1874124832420951358"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-002",
+      "company": "兰州佛慈制药(002644.SZ)",
+      "industry": "pharmaceutical",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "甘肃省兰州市",
+      "opportunity": "佛慈制药污水处理站委托运营招标——2000m3/d，3年",
+      "estimated_time_window": "9月15日开标",
+      "water_system_ownership": "D",
+      "incrementality_status": "Installed Base/Lifecycle",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://finance.sina.cn/2026-08-25/detail-inipnuhu9646888.d.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-003",
+      "company": "全国工业企业(新版排污许可证)",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Industrial Signal",
+      "location": "全国",
+      "opportunity": "新版排污许可证副本格式8/19正式启用——水污染分册独立",
+      "estimated_time_window": "Q4 2026第二批石化/化工/印染/电镀",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2073615275765806370"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-004",
+      "company": "监利市城发农业投资/朱河工业园区",
+      "industry": "cross_industry",
+      "engine": "B",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "湖北省荆州市监利经开区",
+      "opportunity": "朱河工业园区工业污水处理厂扩建EPC——1.25亿，4000→15000m3/d，9月招标",
+      "estimated_time_window": "9月招标(即将)",
+      "water_system_ownership": "D",
+      "incrementality_status": "Water System Expansion",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://mhuanbao.bjx.com.cn/mnews/20260821/1509461.shtml"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [
+          "距9月招标窗口仅剩数天"
+        ],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-005",
+      "company": "霍尔果斯兵团分区/新疆宏远建设集团",
+      "industry": "cross_industry",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "新疆霍尔果斯",
+      "opportunity": "霍尔果斯生物制造污水处理中心EPC已中标——4.75亿，3万m3/d",
+      "estimated_time_window": "已中标",
+      "water_system_ownership": "D",
+      "incrementality_status": "New Facility",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.163.com/dy/article/L4TBDU3O055616X1.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-006",
+      "company": "泰州市永昌化工",
+      "industry": "petrochemical",
+      "engine": "B",
+      "signal_tier": "Tier 3",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "江苏省泰州市",
+      "opportunity": "含砷废水处理系统改造项目环评公示",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "Existing Facility Modification",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://cmc.gov.cn/xwzx/spgg/art/2026/art_a28adb5646aa44ee8520a142af22d8e5.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260825-007",
+      "company": "江苏省工业企业(自动监控)",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 3",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "江苏省全省",
+      "opportunity": "江苏省8419家企业重点污染源自动监控系统运行——15135个监控点",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "Installed Base/Lifecycle",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "http://sthjt.jiangsu.gov.cn/art/2026/8/20/art_83585_11818615.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-25",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-001",
+      "company": "全国工业排污单位(生态环境部通知)",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Industrial Signal",
+      "location": "全国",
+      "opportunity": "生态环境部通知加强工业污水风险防范保障农业灌溉用水安全",
+      "estimated_time_window": "2026年底前完成排查整治方案",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "http://www.gsgz.gov.cn/gzzfxxgk/xzjdxxgk/ljdz/ncwfgz_7086/202608/t20260818_1575949.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-002",
+      "company": "广东省工业企业",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "广东省全省",
+      "opportunity": "新版《广东省水污染防治条例》8/15施行——工业水污染防治要求升级",
+      "estimated_time_window": "8/15施行",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://mp.weixin.qq.com/s?__biz=MzIwMDIyODAyNw==&mid=2650075719&idx=2&sn=4259f7d2b6a205030e8460fde72de752"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-003",
+      "company": "河南正佳能源环保/河南达利食品",
+      "industry": "cross_industry",
+      "engine": "A",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "河南省郑州市新郑市",
+      "opportunity": "郑州环境法典进企业专项帮扶——含食品/能源企业排污许可整改",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://sthjj.zhengzhou.gov.cn/gzdt/10213213.jhtml"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-004",
+      "company": "上海新阳半导体材料(300236.SZ)",
+      "industry": "semiconductor",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "上海市化学工业区",
+      "opportunity": "上海新阳10.5亿半导体化学品项目——9月开工",
+      "estimated_time_window": "9月开工",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.cfi.net.cn/p20260820001396.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-005",
+      "company": "宁德时代/宜春时代新能源矿业(300750.SZ)",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "江西省宜春市宜丰县-奉新县",
+      "opportunity": "全球最大锂云母矿环评——MATERIAL CHANGE: 环评公示已撤销",
+      "estimated_time_window": "Unknown(环评撤销)",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal — MATERIAL CHANGE: EIA withdrawn",
+      "source_urls": [
+        "https://xny.mysteel.com/a/26082617/D68D56CE4A061C4C.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-006",
+      "company": "亿纬锂能(300014.SZ)",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "广东省惠州市",
+      "opportunity": "亿纬锂能惠州钠电二期15亿项目——2GWh钠离子电池",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://xueqiu.com/9958052416/406011917"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-007",
+      "company": "茂名创能烯碳科技",
+      "industry": "battery",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "广东省茂名市",
+      "opportunity": "5万吨液晶高碳材料+钠电池/锂电池负极材料项目环评公示",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://maoming.okcis.cn/qcgz20260822080002184512.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-008",
+      "company": "吉林经开区化工园区",
+      "industry": "petrochemical",
+      "engine": "B",
+      "signal_tier": "Tier 1",
+      "priority": "P2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "location": "吉林省吉林市",
+      "opportunity": "吉林经开区化工园区地下水污染防控与修复EPC招标——1.13亿，含监测设施安装",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "http://www.jl.gov.cn/ggzy/gcjs/zbgg/202608/t20260818_9683420.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-009",
+      "company": "扬州晶新微电子",
+      "industry": "semiconductor",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "江苏省扬州市",
+      "opportunity": "扬州晶新微电子180万片5英寸半导体芯片扩产EIA批复——1亿",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_09852904106d45149b2dd1d2caa9015a.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    },
+    {
+      "id": "IND-20260824-010",
+      "company": "广东依诺聚合物科技",
+      "industry": "petrochemical",
+      "engine": "B",
+      "signal_tier": "Tier 2",
+      "priority": "P3",
+      "opportunity_stage": "Industrial Signal",
+      "location": "广东省江门市开平市",
+      "opportunity": "广东依诺62000吨聚合物改建项目——含自建污水处理站",
+      "estimated_time_window": "",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "evidence": {
+        "facts": [],
+        "inferences": [],
+        "unknowns": []
+      },
+      "potential_ims_use_case": "",
+      "logic_rationale": "Carried signal",
+      "source_urls": [
+        "https://www.jiangmen.gov.cn/bmpd/jmssthjj/zwgk/tzgg/content/post_3540456.html"
+      ],
+      "to_verify": {},
+      "continuity": {
+        "first_seen": "2026-08-24",
+        "new_facts_today": [],
+        "changed": false
+      }
+    }
+  ],
+  "market_background": [
+    {
+      "id": "BG-20260825-001",
+      "title": "新版排污许可证副本格式8/19正式启用——水污染分册独立+一口一表一码",
+      "description": "生态环境部新版排污许可证副本分三批启用。首批火电/水泥/污水处理已上线，Q4 2026石化/化工/印染/电镀为第二批。",
+      "ims_relevance": "高——Q4 2026石化/化工/印染/电镀是Hach/iMS重点行业",
+      "priority": "P2",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2073615275765806370"
+      ]
+    },
+    {
+      "id": "BG-20260824-001",
+      "title": "生态环境部发文加强工业污水风险防范保障农业灌溉用水安全",
+      "description": "MEE通知要求2026年底前完成农田周边工业企业及园区污水排查整治方案，强化水质监测。",
+      "ims_relevance": "高——明确要求工业排水水质监测+特征污染物管控+数据共享",
+      "priority": "P2",
+      "source_urls": [
+        "http://www.gsgz.gov.cn/gzzfxxgk/xzjdxxgk/ljdz/ncwfgz_7086/202608/t20260818_1575949.html"
+      ]
+    },
+    {
+      "id": "BG-20260827-001",
+      "title": "锂电产能审批政策收紧传闻",
+      "description": "8月24日自媒体报道下半年新申报锂电产能已不再审批。工信部未正式确认。",
+      "ims_relevance": "中——若审批收紧，部分在建电池项目可能延迟，影响水系统采购节奏",
+      "priority": "P3",
+      "source_urls": [
+        "https://xueqiu.com/8252275672/406661667"
+      ]
+    },
+    {
+      "id": "BG-20260831-001",
+      "title": "福建省修订固定污染源自动监控办法——数据真实性首责制",
+      "description": "福建省以省政府令修订固定污染源自动监控管理办法，8/16公布施行。排污单位是自动监测设备正常运行和数据质量的第一责任人，纳入自动监控名单的企业必须装设备、联网、验收备案。",
+      "ims_relevance": "中——省级自动监控办法强化企业主体责任，可能触发设备更新/数据管理需求",
+      "priority": "P3",
+      "source_urls": [
+        "http://h5.wap.erbiao24h.cn/minsheng/8788944.shtml"
+      ]
+    }
+  ],
+  "source_effectiveness": [
+    {
+      "source_type": "地方生态环境局环评公示",
+      "signals_produced": 8,
+      "effectiveness": "最有效"
+    },
+    {
+      "source_type": "生态环境部官网/通知",
+      "signals_produced": 4,
+      "effectiveness": "最有效"
+    },
+    {
+      "source_type": "招投标平台",
+      "signals_produced": 5,
+      "effectiveness": "最有效"
+    },
+    {
+      "source_type": "政府工作报告/工作分解",
+      "signals_produced": 2,
+      "effectiveness": "次有效"
+    },
+    {
+      "source_type": "上市公司公告/半年报",
+      "signals_produced": 2,
+      "effectiveness": "次有效"
+    },
+    {
+      "source_type": "行业媒体/EPC案例",
+      "signals_produced": 2,
+      "effectiveness": "中等"
+    },
+    {
+      "source_type": "省级政府令/法规修订",
+      "signals_produced": 2,
+      "effectiveness": "次有效"
+    },
+    {
+      "source_type": "通用B2B推广文章",
+      "signals_produced": 0,
+      "effectiveness": "噪声大"
+    }
+  ],
+  "experiment_observations": [
+    {
+      "observation": "Week 3 Day 1发现5条新信号。杭州临江新材料产业园9万t/d化工污水处理厂EPC中标(3.49亿/中建八局)是今日最强Engine B信号——Direct Water Evidence级别，但EPC中标已出意味着主要采购窗口可能正在关闭。",
+      "implication": "招投标平台能发现高价值Direct Water Evidence信号，但timing上偏晚——中标后主要设备采购已确定。Radar应在EIA阶段更早发现此类项目。"
+    },
+    {
+      "observation": "Engine A vs B对比(Week 3累积): Engine A=8信号(30%)，Engine B=19信号(70%)。Engine A信号多为省级/国家级政策法规层面(如福建自动监控办法、新版排污许可证、MEE通知)，难以直接链接到具体企业采购。Engine B信号更易形成具体项目级水系统证据链。",
+      "implication": "Engine B在发现可行动的Project-level机会方面明显优于Engine A。但Engine A在发现合规驱动的批量需求(如大冶81家企业、福建全省排污许可重点管理企业)方面具有独特价值。两种Engine互补。"
+    },
+    {
+      "observation": "食品饮料行业终于出现首个有效信号——扬州祖名5万吨豆制品项目配套污水处理站。但项目已试生产，主要采购窗口已过。Week 2和Week 1均无食品饮料信号。",
+      "implication": "食品饮料行业信号稀缺且timing偏晚。可能需要调整搜索策略：关注大型食品企业(白酒/乳制品/饮料)新建工厂的早期规划阶段，而非环评批复阶段。"
+    },
+    {
+      "observation": "municipal_vs_industrial_differentiation: 今日排除多个B2B推广文章(纯水设备/废水回用设备厂商软文)、电力项目(万州电厂脱硫废水零排放EPC——属电力行业非5大重点)、储能项目(顺德伦教200MW储能环评——不产生工业废水)。杭州临江新材料产业园配套污水处理厂纳入Industrial Radar，因服务化工园区而非市政。",
+      "implication": "区分标准持续有效：化工园区集中污水处理设施=Industrial；电力/储能=排除。B2B推广文章继续为最大噪声源。"
+    },
+    {
+      "observation": "时间窗口紧迫性提醒：监利朱河工业园区污水处理厂扩建EPC(IND-20260825-004)9月即将招标——距招标窗口仅剩数天。大冶市81家企业自行监测视频监控(IND-20260827-003)9月30日首批截止——仅剩30天。这两个P2信号需要Company Agent优先关注。",
+      "implication": "Radar的价值在于提前发现，但部分信号发现时已临近截止日期。需提高搜索频率或扩大搜索范围以更早发现。"
+    }
+  ],
+  "rejected_signals": [
+    {
+      "description": "多个B2B推广文章(纯水设备/废水回用设备/循环水维保服务商)",
+      "reason": "广告内容，非真实项目信号"
+    },
+    {
+      "description": "万州电厂二期脱硫废水零排放EPC(2x1000MW)",
+      "reason": "电力行业不在5大重点行业范围内"
+    },
+    {
+      "description": "顺德伦教200MW/400MWh独立储能项目环评",
+      "reason": "储能电站不产生工业废水"
+    },
+    {
+      "description": "河南铭镓半导体光电子晶体材料三期EIA受理",
+      "reason": "项目真实但无水系统证据，仅CapEx信号，不足以形成Water Opportunity"
+    },
+    {
+      "description": "重庆恒侨表面处理生产线EIA受理",
+      "reason": "表面处理园区内租户项目，规模和water system evidence不足"
+    },
+    {
+      "description": "中国铁建废水处理站集中采购中标",
+      "reason": "企业级设备集中采购，非具体项目级水系统建设信号"
+    }
+  ]
+}
