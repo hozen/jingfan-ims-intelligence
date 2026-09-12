@@ -32,27 +32,46 @@ def redact_daily_stage3(value):
         return [redact_daily_stage3(v) for v in value]
     return redact_contact_text(value)
 
+def load_enriched_history():
+    """Return the newest usable DuMate record for every Lead ID plus its provenance."""
+    paths = sorted(p for p in ENRICHED.parent.glob("indctx*.json") if p.name != ENRICHED.name)
+    paths.append(ENRICHED)  # latest is deliberately applied last
+    records, history = {}, {}
+    for path in paths:
+        source = json.loads(path.read_text(encoding="utf-8"))
+        contacts = {c.get("contact_id"): c for c in source.get("contacts", [])}
+        projects = {p.get("project_id"): p for p in source.get("projects", [])}
+        accounts = {a.get("account_id"): a for a in source.get("accounts", [])}
+        snapshot_date = source.get("metadata", {}).get("generated_date") or path.stem
+        for item in source.get("leads", []):
+            lead_id = item.get("lead_id")
+            if not lead_id:
+                continue
+            signal = item.get("original_signal") or {}
+            if signal.get("to_verify") is not None and not isinstance(signal["to_verify"], list):
+                signal["to_verify"] = [signal["to_verify"]]
+            evidence = signal.get("evidence") or {}
+            for field in ("facts", "inferences", "unknowns"):
+                if evidence.get(field) is not None and not isinstance(evidence[field], list):
+                    evidence[field] = [evidence[field]]
+            history.setdefault(lead_id, []).append({"file": path.name, "date": snapshot_date})
+            records[lead_id] = {"item": item, "contacts": contacts, "projects": projects, "accounts": accounts}
+    return records, history
+
 def model():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    source = json.loads(ENRICHED.read_text(encoding="utf-8"))
+    enriched_records, enriched_history = load_enriched_history()
     existing = {row["lead"]["lead_id"] for row in manifest["leads"]}
-    contacts = {c.get("contact_id"): c for c in source.get("contacts", [])}
-    projects = {p.get("project_id"): p for p in source.get("projects", [])}
-    accounts = {a.get("account_id"): a for a in source.get("accounts", [])}
-    for item in source.get("leads", []):
-        signal = item.get("original_signal") or {}
-        if signal.get("to_verify") is not None and not isinstance(signal["to_verify"], list):
-            signal["to_verify"] = [signal["to_verify"]]
-        evidence = signal.get("evidence") or {}
-        for field in ("facts", "inferences", "unknowns"):
-            if evidence.get(field) is not None and not isinstance(evidence[field], list):
-                evidence[field] = [evidence[field]]
-    for item in source.get("leads", []):
+    for lead_id, bundle in enriched_records.items():
+        item, contacts = bundle["item"], bundle["contacts"]
+        projects, accounts = bundle["projects"], bundle["accounts"]
         if item.get("lead_id") in existing:
             continue
         sig = item.get("original_signal") or {}
         evidence = sig.get("evidence") or {}
-        row_lead = {"lead_id": item.get("lead_id"), "company": {"company_name": sig.get("company"), "location": sig.get("location"), "industry": sig.get("industry")}, "project": {"project_name": sig.get("opportunity"), "project_stage": sig.get("opportunity_stage")}, "signal": {"signal_description": sig.get("opportunity"), "signal_date": item.get("first_discovered") or source.get("metadata", {}).get("generated_date")}, "evidence": [{"source_url": url, "evidence_summary": "Enriched source URL"} for url in sig.get("source_urls", [])]}
+        snapshot_dates = enriched_history.get(lead_id, [])
+        snapshot_date = snapshot_dates[-1]["date"] if snapshot_dates else "未记录"
+        row_lead = {"lead_id": item.get("lead_id"), "company": {"company_name": sig.get("company"), "location": sig.get("location"), "industry": sig.get("industry")}, "project": {"project_name": sig.get("opportunity"), "project_stage": sig.get("opportunity_stage")}, "signal": {"signal_description": sig.get("opportunity"), "signal_date": item.get("first_discovered") or snapshot_date}, "evidence": [{"source_url": url, "evidence_summary": "Enriched source URL"} for url in sig.get("source_urls", [])]}
         enriched_contacts = []
         for cid in item.get("contact_ids", []):
             if cid not in contacts:
@@ -61,7 +80,7 @@ def model():
             contact["name"] = mask_name(contact.get("name"))
             contact.pop("email", None)
             enriched_contacts.append(contact)
-        manifest["leads"].append({"date": row_lead["signal"]["signal_date"], "lead": row_lead, "stage1": "ENRICHED_SOURCE", "stage2": "NOT_RECORDED", "stage3": "ENRICHED", "stage2_detail": "Enriched record contains no Stage 2 decision for this Lead ID.", "stage3_detail": "DoMate enriched record is available; Water Clay output is not linked here.", "stage3_result": None, "enriched_record": item, "enriched_contacts": enriched_contacts, "enriched_projects": [projects[x] for x in item.get("project_ids", []) if x in projects], "enriched_accounts": [accounts[x] for x in item.get("account_ids", []) if x in accounts], "legacy_match": True})
+        manifest["leads"].append({"date": row_lead["signal"]["signal_date"], "lead": row_lead, "stage1": "ENRICHED_SOURCE", "stage2": "NOT_RECORDED", "stage3": "ENRICHED", "stage2_detail": "Enriched record contains no Stage 2 decision for this Lead ID.", "stage3_detail": "DoMate enriched record is available; Water Clay output is not linked here.", "stage3_result": None, "enriched_record": item, "enriched_contacts": enriched_contacts, "enriched_projects": [projects[x] for x in item.get("project_ids", []) if x in projects], "enriched_accounts": [accounts[x] for x in item.get("account_ids", []) if x in accounts], "dumate_history": enriched_history.get(lead_id, []), "legacy_match": True})
         existing.add(item.get("lead_id"))
     for path in sorted(DAILY.glob("*.json")):
         daily = json.loads(path.read_text(encoding="utf-8"))
@@ -73,8 +92,11 @@ def model():
                 continue
             project = signal.get("project") or signal.get("opportunity") or signal.get("trigger")
             stage3 = signal.get("stage3_enrichment") or {}
+            safe_signal = json.loads(json.dumps(signal, ensure_ascii=False))
+            if "stage3_enrichment" in safe_signal:
+                safe_signal["stage3_enrichment"] = redact_daily_stage3(stage3)
             display_record = {
-                "original_signal": signal,
+                "original_signal": safe_signal,
                 "enrichment_status": "RADAR_DAILY",
                 "ims_recommendation": {
                     "ims_fit": signal.get("ims_fit"),
@@ -100,6 +122,7 @@ def model():
                 "stage3_result": None,
                 "enriched_record": display_record,
                 "enriched_contacts": [],
+                "daily_contacts": redact_daily_stage3(stage3.get("contacts", {})) if isinstance(stage3, dict) else {},
                 "daily_stage3": bool(stage3),
                 "source_kind": "daily_radar",
                 "legacy_match": True,
@@ -146,7 +169,7 @@ show=(i,focus=false)=>{oldShow(i,focus);const e=d.leads[i].enriched_record;if(e)
 const baseList=renderList;renderList=()=>{baseList();const visible=[...list.querySelectorAll('.row')].map(x=>+x.dataset.i),selected=+sessionStorage.getItem('industrial-leads-selected');if(visible.length&&!visible.includes(selected))show(visible[0]);};
 const stagesShow=show;show=(i,focus=false)=>{stagesShow(i,focus);const r=d.leads[i],l=r.lead,e=r.enriched_record,z=r.stage3_result||{},s=e?.original_signal||{},c=(r.enriched_contacts||[]).length,stage1=l.signal?.signal_description||s.opportunity||'未记录',stage2=r.stage2==='YES'?'国内团队已确认':(r.stage2_detail||'等待国内团队判断'),stage3=e?'DuMate 资料已补充':(z.schema_version?'辅助证据已核验':'等待资料补充'),stage4=e?.ims_recommendation?.recommended_action||z.next_action||'待人工安排负责人和下一步行动',stage5='待人工记录联系结果';detail.insertAdjacentHTML('afterbegin',`<div class="stage-grid"><div class="stage-card"><h3>Stage 1 · Radar</h3><em>发现事实</em><p>${esc(stage1)}</p><p class="muted">来源证据：${(l.evidence||[]).length} 条</p></div><div class="stage-card"><h3>Stage 2 · Qualification</h3><em>${esc(r.stage2==='YES'?'已确认':'待判断')}</em><p>${esc(stage2)}</p></div><div class="stage-card"><h3>Stage 3 · Enrichment</h3><em>${esc(e?'已补充':'待补充')}</em><p>${esc(stage3)}</p><p class="muted">联系人：${c} 人</p></div><div class="stage-card"><h3>Stage 4 · Orchestration</h3><em class="stage-wait">人工安排</em><p>${esc(stage4)}</p></div><div class="stage-card"><h3>Stage 5 · Engagement</h3><em class="stage-wait">未开始</em><p>${esc(stage5)}</p></div></div>`);};
 show=(i,focus=false)=>{const r=d.leads[i],l=r.lead,e=r.enriched_record||{},s=e.original_signal||{},sev=s.evidence||{},z=r.stage3_result||{},ev=l.evidence||[],facts=sev.facts||[],inferences=sev.inferences||[],unknowns=sev.unknowns||[],contacts=r.enriched_contacts||[],sources=s.source_urls||ev.map(x=>x.source_url||x.canonical_url).filter(Boolean),recommendation=typeof e.ims_recommendation==='string'?e.ims_recommendation:e.ims_recommendation?.recommended_action||z.next_action||'',imsFit=e.ims_opportunity_level||s.ims_opportunity_level||e.ims_recommendation?.ims_fit||'未评估',matrix=(a)=>`<div class="lead-matrix">${a.map(([k,v])=>`<div class="k">${esc(k)}</div><div>${esc(v||'未记录')}</div>`).join('')}</div>`,decision=(k,v)=>`<div class="decision-line"><div class="k">${esc(k)}</div><div>${esc(v||'未记录')}</div></div>`,items=a=>a&&a.length?`<ul>${a.map(x=>`<li>${esc(typeof x==='string'?x:JSON.stringify(x))}</li>`).join('')}</ul>`:'<p class="muted">未记录</p>',contactHtml=contacts.length?contacts.map(c=>`<div class="contact-line"><b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||c.role||'职务未记录')}<br>${(c.phone||[]).map(x=>`电话：${esc(x.value)}`).join('；')||'联系方式未公开'}<br><span class="muted">来源：${esc((c.discovered_by||[]).join('、')||c.source||'未记录')} · 验证：${esc(c.verification_status||c.contact_status||'未记录')}</span></div>`).join(''):'<p class="muted">未记录联系人</p>';list.querySelectorAll('.row').forEach(x=>x.classList.toggle('active',+x.dataset.i===i));detail.innerHTML=`<div class="detail-head"><h2>${esc(l.company?.company_name||s.company||'公司名称未记录')}</h2><p class="muted">${esc(l.lead_id)} · ${esc(r.date||l.signal?.signal_date)} · ${esc(l.company?.location||s.location||'地区未记录')}</p><div class="badges">${status(r.stage2,r.stage2==='YES'?'green':'amber')}<span class="badge blue">${esc(s.priority||s.signal_tier||'优先级未记录')}</span><span class="badge blue">${esc(e.enrichment_status||r.stage3||'资料状态未记录')}</span></div></div>${matrix([['行业 / 地区',`${s.industry||l.company?.industry||'未记录'} / ${s.location||l.company?.location||'未记录'}`],['来源引擎',s.engine],['窗口 / 时点',s.estimated_time_window||l.signal?.signal_date||r.date],['类型',s.signal_type||l.signal?.signal_type],['项目实体 / 有效性',s.continuity?.status||s.incrementality_status||'未记录'],['投资 / 产能',s.investment_or_capacity],['主项目阶段',s.opportunity_stage||l.project?.project_stage],['相关包阶段',s.related_procurement_phase]])}<section class="fact-section blue"><h3>项目背景 / 已确认事实</h3>${items(facts.length?facts:[l.signal?.signal_description].filter(Boolean))}</section><section class="fact-section amber"><h3>客户需求与现有方案</h3>${matrix([['客户要完成什么',s.customer_requirement||s.customer_need],['目前 / 已尝试方案',s.current_solution||s.existing_solution],['客户痛点 / 方案问题',inferences.join('；')],['为什么是现在',s.logic||l.signal?.signal_description]])}</section><section class="fact-section green"><h3>iMS 机会判断</h3>${matrix([['iMS机会可能性',imsFit],['Opportunity Stage',s.opportunity_stage||l.project?.project_stage],['为什么与iMS相关',s.logic],['iMS具体作用',s.potential_ims_use_case],['机会成立条件',(s.to_verify||unknowns).join('；')],['商业入口',recommendation]])}${decision('AI Recommendation',recommendation)}${decision('VM Decision',r.stage2==='YES'?'YES':r.stage2||'未记录')}</section><section class="fact-section green"><h3>联系人与补充资料</h3>${matrix([['资料状态',e.enrichment_status||r.stage3],['联系人数量',contacts.length+' 人'],['缺失角色',(e.missing_roles||[]).join('、')],['判断依据',r.stage2_detail]])}<h3 style="margin-top:12px">联系人</h3>${contactHtml}</section><section class="fact-section blue"><h3>下一步</h3>${items([recommendation,...(s.to_verify||unknowns)].filter(Boolean))}<h3 style="margin-top:12px">来源</h3>${items(sources)}</section><details class="box"><summary>查看全部资料字段（按字段排版）</summary>${renderAll(e)}</details>`;if(focus)detail.scrollIntoView({behavior:'smooth',block:'start'});};
-const qualityShow=show;show=(i,focus=false)=>{qualityShow(i,focus);const r=d.leads[i],z=r.stage3_result||{},daily=r.source_kind==='daily_radar',hasEnrichment=Boolean(r.enriched_record)&&!daily,unlinked=r.stage1==='SOURCE_NOT_LINKED',judgement=r.stage2==='YES'?(unlinked?'国内判断 YES，待关联':'已确认可以跟进'):(r.stage2==='NOT_RECORDED'?'国内判断未记录':'国内判断待补'),enrichment=daily?(r.daily_stage3?'Radar 日报附带资料':'Radar 日报，待补充'):(hasEnrichment?'DuMate 资料已补充':(z.schema_version?'Water Clay 已核验，非资料补全':'资料未补充')),badges=detail.querySelector('.badges');badges.innerHTML=`<span class="badge ${unlinked?'amber':'blue'}">${esc(unlinked?'原始发现未关联':'原始发现已关联')}</span><span class="badge ${unlinked?'amber':r.stage2==='YES'?'green':'amber'}">${esc(judgement)}</span><span class="badge blue">${esc(enrichment)}</span>`;const supplement=[...detail.querySelectorAll('section')].find(x=>x.querySelector('h3')?.textContent==='联系人与补充资料');if(supplement&&!hasEnrichment){const cells=supplement.querySelectorAll('.lead-matrix>div');for(let n=0;n<cells.length;n+=2)if(cells[n].textContent==='资料状态')cells[n+1].textContent=enrichment;}if(unlinked){badges.insertAdjacentHTML('afterend','<p class="muted" style="margin-top:8px">该条没有关联的原始发现记录；国内判断和 Water Clay 输出不能作为 iMS 机会确认依据。</p>');const decisions=detail.querySelectorAll('.decision-line');if(decisions[1])decisions[1].lastElementChild.textContent='YES（原始发现未关联，不能作为 iMS 结论）';}};
+const qualityShow=show;show=(i,focus=false)=>{qualityShow(i,focus);const r=d.leads[i],z=r.stage3_result||{},daily=r.source_kind==='daily_radar',hasEnrichment=Boolean(r.enriched_record)&&!daily,unlinked=r.stage1==='SOURCE_NOT_LINKED',judgement=r.stage2==='YES'?(unlinked?'国内判断 YES，待关联':'已确认可以跟进'):(r.stage2==='NOT_RECORDED'?'国内判断未记录':'国内判断待补'),enrichment=daily?(r.daily_stage3?'Radar 日报附带资料':'Radar 日报，待补充'):(hasEnrichment?'DuMate 资料已补充':(z.schema_version?'Water Clay 已核验，非资料补全':'资料未补充')),badges=detail.querySelector('.badges');badges.innerHTML=`<span class="badge ${unlinked?'amber':'blue'}">${esc(unlinked?'原始发现未关联':'原始发现已关联')}</span><span class="badge ${unlinked?'amber':r.stage2==='YES'?'green':'amber'}">${esc(judgement)}</span><span class="badge blue">${esc(enrichment)}</span>`;const supplement=[...detail.querySelectorAll('section')].find(x=>x.querySelector('h3')?.textContent==='联系人与补充资料');if(supplement&&!hasEnrichment){const cells=supplement.querySelectorAll('.lead-matrix>div');for(let n=0;n<cells.length;n+=2)if(cells[n].textContent==='资料状态')cells[n+1].textContent=enrichment;}if(daily&&supplement&&Object.keys(r.daily_contacts||{}).length)supplement.insertAdjacentHTML('beforeend',`<details class="box"><summary>日报附带的联系人与项目资料</summary>${renderAll(r.daily_contacts)}</details>`);if((r.dumate_history||[]).length)detail.insertAdjacentHTML('beforeend',`<details class="box"><summary>DuMate 历史快照（${r.dumate_history.length} 次）</summary>${renderAll(r.dumate_history)}</details>`);if(unlinked){badges.insertAdjacentHTML('afterend','<p class="muted" style="margin-top:8px">该条没有关联的原始发现记录；国内判断和 Water Clay 输出不能作为 iMS 机会确认依据。</p>');const decisions=detail.querySelectorAll('.decision-line');if(decisions[1])decisions[1].lastElementChild.textContent='YES（原始发现未关联，不能作为 iMS 结论）';}};
 document.querySelector('[data-filter="yes"]').textContent=`国内判断 YES（${d.leads.filter(r=>r.stage2==='YES').length}，待关联）`;
 search.oninput=()=>{sessionStorage.setItem('industrial-leads-search',search.value);renderList();};
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{activeFilter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('selected',x===b));renderList();});
