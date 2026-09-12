@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "weekday": "Tuesday",
+  "weekday": "Wednesday",
   "scanner_summary": {
     "total_scanned": 92,
     "valid_triggers": 15,
@@ -22,152 +22,16 @@
   },
   "top_5_match": [
     {
-      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
-      "trigger_type": "project",
-      "public_signal_score": 68,
-      "priority": "P2",
-      "match_reason": "EPC项目中智慧水务软件独立采购包，数字化层正在构建，iMS可作为仪表数据接口层切入点。中国电建为EPC总包。9/7首次发现，今日无新事实变化。",
-      "agent_checklist": "验证邛崃污水处理厂是否使用Hach仪表；智慧水务软件架构是否支持第三方仪表数据接入；中国电建设计院仪表选型倾向"
-    },
-    {
-      "name": "明溪县城区污水管网设施在线监测建设项目",
-      "trigger_type": "project",
-      "public_signal_score": 67,
-      "priority": "P2",
-      "match_reason": "公开招标200万，明确采购COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统，24h连续监测+GIS集成+异常智能报警。在线监测设备+数据管理平台直接命中iMS核心场景。",
-      "agent_checklist": "验证明溪县住建局是否为Hach客户；在线监测设备选型是否已定；设计院/集成商是谁；智慧排水系统是否支持第三方仪表数据接入"
-    },
-    {
-      "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
-      "trigger_type": "project",
-      "public_signal_score": 66,
-      "priority": "P2",
-      "match_reason": "9月1日增资公告确认41.7亿美元(约280亿元)投资，5.5万片/月12英寸特色工艺产线。Fab9A设备搬入完成Q3末达产。高频科技超纯水运维数字化平台亮相IC WORLD。半导体仪表数字化需求持续显现。",
-      "agent_checklist": "验证华虹无锡一二期是否Hach客户；超纯水系统EPC是谁；高频科技数字化平台是否与iMS形成竞合"
-    },
-    {
       "name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
-      "trigger_type": "project",
+      "trigger_type": "Project",
       "public_signal_score": 64,
       "priority": "P2",
       "match_reason": "1.44亿投资，建设内容明确包含仪表/自控工程+信息化建设(智能AI专家系统/智慧厂站运营管控平台/实时监测与远程运维)。工业污水+生活污水双线，仪表和数字化平台同步建设。",
-      "agent_checklist": "验证兴宁产业园区是否Hach客户；设计院是谁；智慧厂站平台架构是否支持第三方仪表接入；仪表选型阶段"
-    },
-    {
-      "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
-      "trigger_type": "project",
-      "public_signal_score": 63,
-      "priority": "P2",
-      "match_reason": "初步设计明确配备在线监测设备及分区计量水表，目标集约化管理。923.85km管网+23559水表。9/7首次发现，今日无新事实变化。",
-      "agent_checklist": "验证淮安自来水有限公司是否Hach客户；在线监测设备选型是否已定；设计院是谁"
+      "agent_checklist": "验证兴宁产业园区是否Hach客户；设计院是谁；智慧厂站平台架构是否支持第三方仪表接入；仪表选型阶段",
+      "sector": "municipal"
     }
   ],
   "opportunities": [
-    {
-      "id": "OPS-20260909-001",
-      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
-      "public_facts": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂(一次性建成)，含预处理/生化处理/深度处理/尾水处理系统。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。招标编号SZJT-GDGS-QLGWEQ-QTZBWJ-[2026]-001。",
-      "ai_judgment": "污水处理厂新建EPC项目中，智慧水务软件开发作为独立采购包单独招标，说明数字化层正在主动构建而非附属。如果厂内安装Hach在线水质仪表(如浊度/余氯/氨氮/pH/ORP)，iMS可作为仪表数据采集/监控/诊断层接入智慧水务平台，形成'仪表-iMS-智慧水务平台'三层架构。关键不确定点：软件采购与仪表采购可能分离，iMS切入点取决于仪表选型和软件架构是否预留第三方数据接口。中国电建作为EPC总包方，其设计院对仪表选型有决定性影响。",
-      "potential_ims_use_case": "Instrument Monitoring / Data Quality",
-      "opportunity_stage": "EPC准备/招标",
-      "estimated_time_window": "<3 months",
-      "logic_chain_check": "Customer Change(新建污水厂) -> Digital Change(智慧水务软件独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need(仪表监控+数据质量) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等强度：软件开发本身不等于仪表采购，但数字化层建设是iMS切入窗口。断裂风险：若软件自建仪表数据采集模块，iMS可能被绕过。",
-      "to_verify": {
-        "customer_identity": "邛崃市水务主体是否为Hach客户？Salesforce Account是否存在？中国电建是否为战略EPC伙伴？",
-        "installed_base": "新建7万m3/d厂将安装哪些品牌在线仪表？厂站数量？是否有联网仪表？",
-        "commercial_history": "邛崃或成都区域历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS或类似数字化产品？智慧水务软件架构是否支持第三方仪表数据接入？",
-        "account_sales": "Account Owner是谁？四川/成都区域Regional Owner？与中国电建的关系？"
-      },
-      "score": 68,
-      "score_breakdown": {
-        "signal_strength": 70,
-        "ims_relevance": 68,
-        "project_customer_stage": 75,
-        "timing": 85,
-        "scale": 60,
-        "ecosystem_influence": 55,
-        "evidence_quality": 85
-      },
-      "confidence": "medium",
-      "source_url": "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn",
-      "source_type": "procurement_notice",
-      "continuity": {
-        "first_seen": "2026-09-07",
-        "new_facts_today": "无新事实",
-        "changed": false
-      }
-    },
-    {
-      "id": "OPS-20260909-002",
-      "name": "明溪县城区污水管网设施在线监测建设项目",
-      "public_facts": "明溪县住房和城乡建设局委托中宏源建设管理有限公司于2026年9月3日发布公开招标公告(项目编号[350421]HYG[GK]2026001)，预算200万元，投标截止2026年9月29日。采购内容：(1)智慧化系统——数据对接与数据展示系统模块、一张图、智能可视化、异常智能核定及推送、报备事后监管、数据分析、考核抓手、智能监控后台、移动端应用；(2)智慧化监测硬件——数据采集终端、水质COD传感器、电导率传感器、液位传感器、河道雷达液位传感器、多普勒超声波流量计、智能井盖监测仪、室外监控防雨箱、AI视频摄像机、监控立杆、太阳能等配套硬件；(3)智慧化监测系统集成及维保服务。系统采用B/S模式，对排水管网运行状态24小时连续监测，将智能感知设备监测数据与GIS平台集成，实现运行异常智能报警。",
-      "ai_judgment": "这是一个直接以'在线监测建设'为核心标的的政府采购项目，不是附属于水厂建设的附属采购。采购清单明确包含水质COD传感器、电导率传感器等多类在线水质仪表，以及数据采集终端和智慧化系统平台。iMS的核心价值——仪表数据采集/监控/异常报警/数据质量管理——与本项目需求高度匹配。但项目规模仅200万元，仪表数量有限(覆盖明溪城区排水管网)，且采购方式为整体打包(硬件+软件+集成+维保)，iMS切入取决于：(1)明溪是否已有Hach仪表存量；(2)系统集成商是否愿意引入iMS作为仪表数据管理层；(3)项目规模是否足以支撑iMS部署成本。关键断裂点：如果集成商自建数据采集模块，iMS可能被绕过。",
-      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
-      "opportunity_stage": "招标",
-      "estimated_time_window": "<3 months",
-      "logic_chain_check": "Customer Change(污水管网监测需求) -> Digital Change(在线监测设备+智慧排水系统采购) -> Operational Problem(管网运行状态24h连续监测+异常报警) -> Instrument/Data Management Need(仪表监控+数据质量+多站点管理) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Multi-site Management)。逻辑链强：在线监测设备是明确采购内容，数据管理平台是明确建设目标，iMS核心场景直接命中。",
-      "to_verify": {
-        "customer_identity": "明溪县住房和城乡建设局是否为Hach客户？Salesforce Account是否存在？福建省三明区域是否有Hach销售记录？",
-        "installed_base": "明溪县现有排水管网在线仪表品牌/数量？是否有Hach仪表？本项目新增仪表选型是否已定？",
-        "commercial_history": "三明/明溪区域历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS或类似数字化产品？智慧排水系统架构是否支持第三方仪表数据接入？系统集成商是谁？",
-        "account_sales": "Account Owner？福建区域Regional Owner？与明溪县住建局的关系？"
-      },
-      "score": 67,
-      "score_breakdown": {
-        "signal_strength": 75,
-        "ims_relevance": 80,
-        "project_customer_stage": 75,
-        "timing": 85,
-        "scale": 40,
-        "ecosystem_influence": 50,
-        "evidence_quality": 80
-      },
-      "confidence": "medium",
-      "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260903_27260195.htm",
-      "source_type": "procurement_notice",
-      "continuity": {
-        "first_seen": "2026-09-09",
-        "new_facts_today": "首次发现",
-        "changed": false
-      }
-    },
-    {
-      "id": "OPS-20260909-003",
-      "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
-      "public_facts": "2026年9月1日晚，华虹宏力发布公告，公司及全资子公司上海华虹宏力拟联合无锡锡虹国芯二期、华芯鼎新、国开公司共同对无锡华虹宏力三期半导体有限公司(Fab9B)增资，建设月产能约5.5万片的12英寸特色工艺晶圆代工产线。增资后注册资本41.7亿美元(约280亿元人民币)，华虹方合计出资约143亿元持股51%。Fab9B已于2026年3月启动建设，预计4Q26开始装机。同期，Fab9A(二期8.3万片/月)设备已于2026年6月底全部搬入完成，计划Q3末达规划产能。华虹2026Q2产能利用率102.8%，营收创历史新高。此外，高频科技在IC WORLD 2026展出半导体超纯水运维数字化平台，覆盖项目建设到长期运营的水务全生命周期。",
-      "ai_judgment": "增资公告确认Fab9B投资规模和产能目标，时间线进一步明确(3月开工→4Q26装机→2028满产)。Fab9A设备搬入完成且即将达产，意味着无锡华虹基地的仪表需求从'即将到来'变为'正在发生'。高频科技超纯水运维数字化平台的持续展出说明半导体行业仪表数字化需求正在从概念走向产品化。但iMS在半导体场景的适用性仍需验证：半导体超纯水仪表是否使用Hach产品？高频科技运维平台是否已占据运维数字化层？如果互补，iMS可专注仪表健康诊断层。",
-      "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-      "opportunity_stage": "建设(已开工)",
-      "estimated_time_window": "3-6 months",
-      "logic_chain_check": "Customer Change(晶圆厂扩建+增资确认) -> Digital Change(高频科技超纯水数字化平台持续展出) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。",
-      "to_verify": {
-        "customer_identity": "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "华虹无锡一二期现有在线仪表品牌/数量？Fab9A超纯水系统供应商是谁？Fab9B超纯水系统EPC是否已定？",
-        "commercial_history": "华虹历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-        "account_sales": "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-      },
-      "score": 66,
-      "score_breakdown": {
-        "signal_strength": 85,
-        "ims_relevance": 55,
-        "project_customer_stage": 75,
-        "timing": 70,
-        "scale": 85,
-        "ecosystem_influence": 60,
-        "evidence_quality": 85
-      },
-      "confidence": "medium",
-      "source_url": "https://baijiahao.baidu.com/s?id=1875203019069202789&wfr=spider&for=pc",
-      "source_type": "industry_news",
-      "continuity": {
-        "first_seen": "2026-09-04",
-        "new_facts_today": "9月1日增资公告确认41.7亿美元投资规模/5.5万片月产能/Fab9A设备搬入完成Q3末达产/高频科技IC WORLD展出超纯水运维数字化平台",
-        "changed": true
-      }
-    },
     {
       "id": "OPS-20260909-004",
       "name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
@@ -175,7 +39,7 @@
       "ai_judgment": "项目明确将'仪表'和'信息化建设'作为独立建设内容，且信息化建设包含'智能控制、实时监测与远程运维的智慧厂站运营管控平台'。这意味着仪表层和数字平台层同步建设，iMS可以作为仪表数据采集/监控/诊断层接入智慧厂站平台。工业污水+生活污水双线模式下，进出水在线监测仪表(COD/氨氮/总磷/总氮/pH等)需求明确。AI专家系统的引入说明客户对'数据->模型->决策'链条有认可度。关键不确定点：项目处于早期阶段(可研/设计)，仪表选型和平台架构尚未确定；设计院信息缺失；兴宁产业园区客户主体不明确。",
       "potential_ims_use_case": "Instrument Monitoring / Digital Operations / Predictive Maintenance",
       "opportunity_stage": "可研/初步设计",
-      "estimated_time_window": "6-12 months",
+      "estimated_time_window": "6-9 months",
       "logic_chain_check": "Customer Change(园区污水厂升级+新建) -> Digital Change(信息化建设+智慧厂站运营管控平台+AI专家系统) -> Operational Problem(实时监测+远程运维需求) -> Instrument/Data Management Need(仪表监控+数据管理+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Digital Operations/Predictive Maintenance)。逻辑链较强：仪表和数字化平台同步建设，实时监测与远程运维是明确目标。",
       "to_verify": {
         "customer_identity": "兴宁产业园区污水处理厂运营主体是否为Hach客户？Salesforce Account是否存在？广东梅州区域是否有Hach销售记录？",
@@ -201,42 +65,19 @@
         "first_seen": "2026-09-09",
         "new_facts_today": "首次发现",
         "changed": false
-      }
-    },
-    {
-      "id": "OPS-20260909-005",
-      "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
-      "public_facts": "淮安市清江浦区农村供水提升改造项目初步设计于2026年7月15日获区发改委批复，7月13日区财政局完成概算评审。项目对约923.85km供水管网进行改造新建，对约466.15km管网进行增压净化提标；更换水表约23559个，配套阀门/井室/增压站/二次供水等附属设施提标更新，配备分区计量水表及在线监测等设备，实现专业化、集约化水务运营管理。集中建设单位为淮安自来水有限公司，清江浦区农业农村和水利局为实施单位。",
-      "ai_judgment": "项目明确配备'分区计量水表及在线监测等设备'，建设目标是'专业化、集约化水务运营管理'。这直接指向Multi-site Management和Instrument Monitoring场景：分散供水站点的在线监测设备集中管理是iMS的核心价值点。923.85km管网+23559个水表规模可观。但项目仍处于初步设计阶段，设备选型尚未确定，设计院信息缺失。淮安自来水有限公司作为集中建设单位，是关键客户主体。",
-      "potential_ims_use_case": "Multi-site Management / Instrument Monitoring",
-      "opportunity_stage": "初步设计/可研",
-      "estimated_time_window": "3-6 months",
-      "logic_chain_check": "Customer Change(农村供水改造) -> Digital Change(配备在线监测设备+分区计量水表) -> Operational Problem(分散站点集中管理) -> Instrument/Data Management Need(在线仪表监控+多站点管理) -> Potential iMS Use Case(Multi-site Management/Instrument Monitoring)。逻辑链较强：在线监测设备是明确的建设内容，集约化管理是明确的目标。",
-      "to_verify": {
-        "customer_identity": "淮安自来水有限公司是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "现有在线水质仪表品牌/数量？供水站数量？是否有联网仪表？",
-        "commercial_history": "淮安区域历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS或类似数字化产品？设计院是否已确定在线监测设备选型？",
-        "account_sales": "Account Owner？江苏区域Regional Owner？与淮安自来水有限公司的关系？"
       },
-      "score": 63,
-      "score_breakdown": {
-        "signal_strength": 65,
-        "ims_relevance": 75,
-        "project_customer_stage": 55,
-        "timing": 60,
-        "scale": 70,
-        "ecosystem_influence": 45,
-        "evidence_quality": 80
+      "trigger_type": "Project",
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS",
+      "estimated_time_window_basis": "可研/初步设计阶段按v3.5绑定表标6-9个月（原6-12非档位值，修正）",
+      "action_triad": {
+        "find_who": "兴宁产业园区管委会、EPC/设计单位（可研/初步设计阶段）",
+        "talk_what": "智慧厂站运营管控平台与AI专家系统的仪表数据接入要求，在线监测设备选型与点位",
+        "why_now": "可研/初步设计阶段，技术路线与设备清单未锁定，可植入iMS概念"
       },
-      "confidence": "medium",
-      "source_url": "https://www.haqjp.gov.cn/col/1835_433615/art/17828352/1784279109378PO5U19Gf.html",
-      "source_type": "government_notice",
-      "continuity": {
-        "first_seen": "2026-09-07",
-        "new_facts_today": "无新事实",
-        "changed": false
-      }
+      "v35_revision_note": [
+        "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
+      ]
     }
   ],
   "industry_triggers": [
@@ -431,5 +272,147 @@
     "no_p2_p3_manufactured": true,
     "github_json_schema_preserved": true,
     "both_json_files_generated": true
-  }
+  },
+  "version": "3.2",
+  "background_monitoring": [
+    {
+      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+      "customer": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂(一次性",
+      "region": "待补充",
+      "stage": "EPC准备/招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "<3 months",
+      "trace_value": "与2026-09-07邛崃条目重复且无新事实（changed=false），v3.5 连续性规则合并/移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "merged_duplicate",
+        "merge_with": "2026-09-07-邛崃",
+        "reason": "与2026-09-07邛崃条目重复且无新事实（changed=false），v3.5 连续性规则合并/移动",
+        "original_date": "2026-09-09",
+        "original": {
+          "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+          "opportunity_stage": "EPC准备/招标",
+          "estimated_time_window": "<3 months",
+          "score": 68,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+          "continuity": {
+            "first_seen": "2026-09-07",
+            "new_facts_today": "无新事实",
+            "changed": false
+          },
+          "logic_chain_check": "Customer Change(新建污水厂) -> Digital Change(智慧水务软件独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need(仪表监控+数据质量) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等强度：软件开发本身不等于仪表采购，但数字化层建设是iMS切入窗口。断裂风险：若软件自建仪表数据采集模块，iMS可能被绕过。"
+        }
+      }
+    },
+    {
+      "name": "明溪县城区污水管网设施在线监测建设项目",
+      "customer": "明溪县住房和城乡建设局委托中宏源建设管理有限公司于2026年9月3日发布公开招标公告(项目编号[350421]HYG[G",
+      "region": "待补充",
+      "stage": "招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "<3 months",
+      "trace_value": "招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "招标阶段（Stage Gate 拒绝），v3.5 修订移动",
+        "original_date": "2026-09-09",
+        "original": {
+          "name": "明溪县城区污水管网设施在线监测建设项目",
+          "opportunity_stage": "招标",
+          "estimated_time_window": "<3 months",
+          "score": 67,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+          "continuity": {
+            "first_seen": "2026-09-09",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "Customer Change(污水管网监测需求) -> Digital Change(在线监测设备+智慧排水系统采购) -> Operational Problem(管网运行状态24h连续监测+异常报警) -> Instrument/Data Management Need(仪表监控+数据质量+多站点管理) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Multi-site Management)。逻辑链强：在线监测设备是明确采购内容，数据管理平台是明确建设目标，iMS核心场景直接命中。"
+        }
+      }
+    },
+    {
+      "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
+      "customer": "2026年9月1日晚，华虹宏力发布公告，公司及全资子公司上海华虹宏力拟联合无锡锡虹国芯二期、华芯鼎新、国开公司共同对无锡",
+      "region": "待补充",
+      "stage": "建设(已开工)",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+      "sector": "industrial",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "industrial",
+        "reason": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+        "original_date": "2026-09-09",
+        "original": {
+          "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
+          "opportunity_stage": "建设(已开工)",
+          "estimated_time_window": "3-6 months",
+          "score": 66,
+          "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "9月1日增资公告确认41.7亿美元投资规模/5.5万片月产能/Fab9A设备搬入完成Q3末达产/高频科技IC WORLD展出超纯水运维数字化平台",
+            "changed": true
+          },
+          "logic_chain_check": "Customer Change(晶圆厂扩建+增资确认) -> Digital Change(高频科技超纯水数字化平台持续展出) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。"
+        }
+      }
+    },
+    {
+      "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
+      "customer": "淮安市清江浦区农村供水提升改造项目初步设计于2026年7月15日获区发改委批复，7月13日区财政局完成概算评审",
+      "region": "待补充",
+      "stage": "初步设计/可研",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "与2026-09-07清江浦条目重复且无新事实（changed=false），v3.5 连续性规则合并/移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "merged_duplicate",
+        "merge_with": "2026-09-07-清江浦",
+        "reason": "与2026-09-07清江浦条目重复且无新事实（changed=false），v3.5 连续性规则合并/移动",
+        "original_date": "2026-09-09",
+        "original": {
+          "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
+          "opportunity_stage": "初步设计/可研",
+          "estimated_time_window": "3-6 months",
+          "score": 63,
+          "potential_ims_use_case": "Multi-site Management / Instrument Monitoring",
+          "continuity": {
+            "first_seen": "2026-09-07",
+            "new_facts_today": "无新事实",
+            "changed": false
+          },
+          "logic_chain_check": "Customer Change(农村供水改造) -> Digital Change(配备在线监测设备+分区计量水表) -> Operational Problem(分散站点集中管理) -> Instrument/Data Management Need(在线仪表监控+多站点管理) -> Potential iMS Use Case(Multi-site Management/Instrument Monitoring)。逻辑链较强：在线监测设备是明确的建设内容，集约化管理是明确的目标。"
+        }
+      }
+    }
+  ],
+  "v35_revision_note": {
+    "date": "2026-09-12",
+    "agent": "v3.5 Prompt Evolution Review",
+    "summary": "以补充为主（version/trigger_type/sector/logic_chain_check_status/continuity），修正阶段准入（招标/采购/EPC→background_monitoring）、行业边界（工业Fab→industrial bg）、阶段-窗口绑定（郴州/兴宁）、跨天无新事实重复合并（邛崃/清江浦）。原字段未删除，移动与修正均以 v35_revision 记录。",
+    "weekday_correction": "原记录 Tuesday 有误，修正为 Wednesday"
+  },
+  "top5_revision_note": "v3.5 修订：top_5_match 与保留 opportunities 对齐，移除已移入 background_monitoring 的条目（数量 1）"
 }

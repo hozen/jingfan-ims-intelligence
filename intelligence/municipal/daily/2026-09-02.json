@@ -23,49 +23,8 @@
   },
   "top_5_match": [
     {
-      "name": "合肥水务集团设备全生命周期管理系统与多站点资产管理",
-      "trigger_type": "客户变化",
-      "public_signal_score": 76,
-      "priority": "P2",
-      "match_reason": "连续第14天追踪。今日新增关键事实：8月19日西部组团净水二厂获评全国'智能化标杆污水处理厂'，官方确认已上线'设备全生命周期管理'系统、'设备预测性维护命中率93%'、'工艺与设备数据自动采集率100%'、'核心设备远程控制率88.3%'。8月30日人民日报道水务一体化改革两周年成果。此前已发现阀门采购(2450万)+49处在线监测设施运维(72.2万)。设备全生命周期管理已落地=直接验证iMS Asset Management/Predictive Maintenance Use Case。关键验证点：现有系统是否已覆盖在线水质仪表，还是仅覆盖通用机电设备？",
-      "agent_checklist": [
-        "Customer Identity: 合肥水务集团是否为Hach客户？Salesforce Account是否存在？",
-        "Installed Base: 169座自来水厂+排水设施在线仪表类型/数量？Hach仪表装机？联网仪表比例？",
-        "Commercial History: 2450万阀门采购是否含Hach产品？49处监测设施运维是否涉及Hach仪表？",
-        "iMS: 西部组团净水二厂'设备全生命周期管理'系统由谁建设？是否已覆盖在线水质仪表？是否存在扩展至其他水厂的机会？",
-        "Account/Sales: Account Owner？Regional Owner？与合肥水务数字化部门关系？"
-      ]
-    },
-    {
-      "name": "联合水务×腾讯云战略合作共建'水务大脑'",
-      "trigger_type": "客户变化",
-      "public_signal_score": 68,
-      "priority": "P2",
-      "match_reason": "连续第8天追踪。今日新增关键事实：8月27日联合水务(603291)与腾讯云在深圳签署战略合作，共建'水务大脑'。合作四大方向：WorkBuddy智能体应用、国产化管网水力模型AI优化、水务大脑智慧化平台共建、人才培养。核心是将运营数据/工艺经验/专家知识沉淀为可复用水务智能体。iMS逻辑链在仪表资产管理层断裂——合作聚焦工艺调度AI而非设备运维。Use Case标注Unknown。但多站点数据统一治理方向与iMS Multi-site Management有交集，值得Company Agent验证。",
-      "agent_checklist": [
-        "Customer Identity: 联合水务是否为Hach客户？Salesforce Account？",
-        "Installed Base: 联合水务下属27家运营公司的仪表类型/数量？Hach装机？",
-        "iMS: '水务大脑'是否包含仪表资产管理模块？腾讯云合作是否排他？",
-        "Commercial History: 历史销售/Opportunity？服务合同？",
-        "Account/Sales: Account Owner？与联合水务数字化团队关系？"
-      ]
-    },
-    {
-      "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
-      "trigger_type": "项目",
-      "public_signal_score": 65,
-      "priority": "P2",
-      "match_reason": "连续第3天追踪。招标文件获取期8/28-9/3（今日截止前最后窗口）。项目明确：149套压力监测+188套流量计+183套水质监测设备=521套在线仪表。含智慧调度管控中心+一水厂自动化控制。iMS逻辑链：521套在线仪表大规模部署->仪表数据需统一管理->多站点运维协同需求->可能形成Multi-site Management/Asset Management。但招标在即=低价值窗口，需求已固化。价值在于追溯中标方和设计院为下一个同类项目布局。",
-      "agent_checklist": [
-        "Customer Identity: 郴州某区域供水单位是否为Hach客户？",
-        "Installed Base: 现有Hach仪表装机？521套仪表是否包含Hach产品？",
-        "Ecosystem: 招标设计方/可研编制方是谁？潜在中标方？",
-        "iMS: 项目是否包含仪表运维管理平台模块？"
-      ]
-    },
-    {
       "name": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢",
-      "trigger_type": "客户变化",
+      "trigger_type": "Account",
       "public_signal_score": 63,
       "priority": "P2",
       "match_reason": "新信号。2026半年报显示：首创环保全面终止12个低毛利EPC打包项目(合同额超27亿)，将37座老旧污水处理厂分批注入新成立的'智水运营科技平台'，统一接入AIoT智慧水务中枢。从'乙方施工队'向'城市水系统首席运营官'转型，毛利率提升2.3个百分点。iMS逻辑链：Customer Change(从EPC到运营服务转型) -> Digital Change(AIoT智慧水务中枢) -> Operational Problem(37座污水厂统一运维，设备资产管理) -> iMS Use Case: Multi-site Management/Asset Management。逻辑链完整。",
@@ -75,136 +34,19 @@
         "iMS: '智水运营科技平台'由谁建设？是否包含仪表资产管理？AIoT中枢是否已覆盖在线水质仪表？",
         "Commercial History: 历史销售/Opportunity？",
         "Account/Sales: Account Owner？Regional Owner？"
-      ]
-    },
-    {
-      "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
-      "trigger_type": "项目",
-      "public_signal_score": 52,
-      "priority": "P3",
-      "match_reason": "新信号。贵州普安县水务一体化建设项目(智慧水务及配套工程)EPC总承包，合同金额7703万，工期1095天，合同签约时间2026-08-18。含智慧水务及配套工程。iMS逻辑链：Project(EPC智慧水务) -> Digital Change(智慧水务平台) -> Operational Problem(多站点仪表管理) -> iMS Use Case: Multi-site Management。但普安县为县级客户，规模小，多站点逻辑弱。价值在于EPC初期阶段可追溯设计院和技术路线。",
-      "agent_checklist": [
-        "Customer Identity: 普安县水务是否为Hach客户？",
-        "Installed Base: 现有仪表装机？",
-        "Ecosystem: EPC中标方是谁？设计院？技术路线包含哪些仪表品牌？",
-        "iMS: 智慧水务平台是否包含仪表管理模块？"
-      ]
+      ],
+      "sector": "municipal"
     }
   ],
   "opportunities": [
     {
-      "name": "合肥水务集团设备全生命周期管理系统与多站点资产管理",
-      "trigger_type": "客户变化",
-      "public_facts": "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）。8月19日，西部组团净水二厂获评第五期'双百跨越'智能化标杆污水处理厂。官方信息确认：厂区已上线'设备全生命周期管理'系统、AI视频巡检、电力智能分析等智能协同系统；工艺与设备数据自动采集率100%；核心设备远程控制率88.3%；设备预测性维护命中率93%。8月30日人民日报道合肥水务集团水务一体化改革两年成果，涉水职能归口统一，'原水-供水-排水-净水'全链条协同治理。此前已发现：2026-2028年度阀门采购(预算2450万)、南淝河49处在线监测设施运维(72.2万，9月采购)。",
-      "ai_judgment": "合肥水务集团正处于从分散管理向超大规模集中管控转型的成熟期。关键发现：'设备全生命周期管理'系统已在西部组团净水二厂上线运行，且'设备预测性维护命中率93%'——这直接验证了iMS Asset Management和Predictive Maintenance的Use Case在大型水务集团的真实需求。但核心验证问题是：该'设备全生命周期管理'系统是否已覆盖在线水质仪表（Hach核心品类），还是仅覆盖通用机电设备（泵/阀门/风机）？如果仅覆盖通用设备，则在线水质仪表的健康诊断和资产管理仍是数字化白空间。7236km排水管网+250座泵站+169座自来水厂的规模，加上多个正在执行的采购项目，使合肥水务集团成为当前最高优先级的Company Agent验证对象。",
-      "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics / Predictive Maintenance",
-      "opportunity_stage": "采购",
-      "estimated_time_window": "3-6 months",
-      "logic_chain_check": "Customer Change(水务一体化改革两年, 投建管运一体化) -> Digital Change(设备全生命周期管理系统已上线, 数据采集率100%) -> Operational Problem(169座水厂+7236km管网+250座泵站统一运维) -> Instrument/Data/Asset Management Need(设备全生命周期管理是否覆盖在线水质仪表待验证) -> Potential iMS Use Case。逻辑链完整，且系统已落地验证需求真实性。",
-      "to_verify": {
-        "customer_identity": "合肥水务集团是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
-        "installed_base": "169座自来水厂+排水设施的在线水质仪表类型与数量？Hach仪表装机情况？联网仪表比例？7236km排水管网配套监测仪表数量？",
-        "commercial_history": "历史销售/Opportunity/Win-Loss？2450万阀门采购是否包含Hach产品？49处监测设施运维是否涉及Hach仪表？当前Pipeline？",
-        "ims": "西部组团净水二厂'设备全生命周期管理'系统由谁建设？是否已覆盖在线水质仪表的健康诊断？还是仅覆盖通用机电设备？是否存在扩展至其他18座水厂的机会？排水管网接管后是否需要新的仪表管理工具？",
-        "account_sales": "Account Owner？Regional Owner？与合肥水务集团数字化部门是否已建立关系？"
-      },
-      "score": 76,
-      "score_breakdown": {
-        "signal_strength": 17,
-        "ims_relevance": 15,
-        "project_customer_stage": 13,
-        "timing": 12,
-        "scale": 12,
-        "ecosystem_influence": 4,
-        "evidence_quality": 3
-      },
-      "confidence": "高",
-      "source_url": "https://www.hfwater.cn/content/detail/6a94d9c2ccc0b4ac76000029.html",
-      "source_type": "官方权威(合肥水务集团官网)+官方权威(人民网)",
-      "continuity": {
-        "first_seen": "2026-08-19",
-        "new_facts_today": "8/19西部组团净水二厂获评智能化标杆，官方确认'设备全生命周期管理'系统已上线，设备预测性维护命中率93%，数据采集率100%，远程控制率88.3%。8/30人民日报道水务一体化两周年成果。此前已发现阀门采购(2450万)+49处监测设施运维(72.2万)。",
-        "changed": true
-      }
-    },
-    {
-      "name": "联合水务×腾讯云战略合作共建'水务大脑'",
-      "trigger_type": "客户变化",
-      "public_facts": "2026年8月27日，江苏联合水务科技股份有限公司(603291)与腾讯云计算(北京)有限责任公司在深圳腾讯总部签署战略合作协议。双方以人工智能大模型与智能体应用为首要方向，依托腾讯WorkBuddy等AI产品，把联合水务运营数据、工艺经验与专家知识沉淀为可复用'水务数字助手'，共建'水务大脑'智慧化中枢。四大合作方向：1)WorkBuddy智能体应用(水务数字助手)；2)国产化管网水力模型AI优化升级；3)水务大脑智慧化平台共建(数据统一治理与共享、大模型统一支撑)；4)人才培养与科研。联合水务2026半年报显示：运营类业务占比升至89.00%，工程类业务收缩，战略重心从'轻重并举+科技赋能'转向'存量提质+内外协同'，明确'智慧水务+AI+机器人'方向。",
-      "ai_judgment": "联合水务与腾讯云的合作标志着水务行业AI化进入新阶段。'水务大脑'的核心是数据统一治理与共享——这与iMS Multi-site Management和Data Quality的Use Case有交集。但关键逻辑链断裂点在于：合作聚焦工艺调度AI(投药、曝气、管网探漏)和运营经验复化，而非设备/仪表资产管理。'水务大脑'是否包含仪表健康诊断模块尚不明确。如果联合水务的'水务大脑'未来扩展到设备运维层，则iMS价值空间可能被挤压。Use Case标注Unknown，因逻辑链在仪表资产管理层断裂。",
-      "potential_ims_use_case": "Unknown",
-      "opportunity_stage": "战略规划",
-      "estimated_time_window": "6-12 months",
-      "logic_chain_check": "Customer Change(联合水务AI战略升级, 与腾讯云合作) -> Digital Change(水务大脑, 数据统一治理) -> Operational Problem(多站点运营经验复用, 工艺调度) -> [逻辑断裂: 仪表/设备资产管理需求未在合作中明确体现] -> Potential iMS Use Case: Unknown。合作聚焦工艺AI层，仪表资产管理层逻辑断裂。",
-      "to_verify": {
-        "customer_identity": "联合水务是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "联合水务27家运营公司的在线水质仪表类型/数量？Hach仪表装机情况？联网仪表比例？",
-        "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
-        "ims": "联合水务是否已有iMS？'水务大脑'是否包含仪表资产管理模块？腾讯云合作是否排他（是否会排除Hach iMS接入）？'水陆哨兵'智能设备管理平台与'水务大脑'的关系？",
-        "account_sales": "Account Owner？Regional Owner？与联合水务数字化团队关系？"
-      },
-      "score": 68,
-      "score_breakdown": {
-        "signal_strength": 15,
-        "ims_relevance": 10,
-        "project_customer_stage": 12,
-        "timing": 10,
-        "scale": 12,
-        "ecosystem_influence": 6,
-        "evidence_quality": 3
-      },
-      "confidence": "中",
-      "source_url": "https://finance.cnr.cn/cjtt/yw/20260828/t20260828_527796275.shtml",
-      "source_type": "官方权威(央广网)+上市公司公告",
-      "continuity": {
-        "first_seen": "2026-08-25",
-        "new_facts_today": "8/27与腾讯云正式签署战略合作协议，共建'水务大脑'，四大合作方向明确。2026半年报显示战略从'轻重并举'转向'存量提质+内外协同'，明确'智慧水务+AI+机器人'方向。",
-        "changed": true
-      }
-    },
-    {
-      "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
-      "trigger_type": "项目",
-      "public_facts": "湖南省郴州某区域智慧水务建设项目招标公告已发布。招标文件获取时间：2026年8月28日至9月3日。项目建设内容：1)智慧调度管控工程建设——供水调度中心1座、智慧水务管理系统1套(含一水厂自动化控制建设)、供水'一张图'、服务器、数据中心；2)配套设施建设——新建压力监测149套、流量计(含压力)188套、水质监测设备183套，合计521套在线仪表。项目资金来源为国有资金，面向中小企业招标。不接受联合体投标。",
-      "ai_judgment": "521套在线仪表(149压力+188流量+183水质)的大规模部署，在区域智慧水务项目中属于中大规模。项目含智慧调度中心+数据中心+一水厂自动化，说明数字化转型有一定深度。iMS逻辑链：521套在线仪表部署->仪表数据需统一管理->多站点运维协同->可能形成Multi-site Management和Asset Management需求。但关键限制：项目处于招标获取期最后阶段（今日9/3截止），需求已固化，iMS介入窗口窄。价值在于：1)追溯中标方和仪表品牌为下一个同类项目布局；2)521套仪表部署后的运维管理需求将在12-18个月后形成。",
-      "potential_ims_use_case": "Asset Management / Multi-site Management / Instrument Health Diagnostics",
-      "opportunity_stage": "招标",
-      "estimated_time_window": "12-18 months",
-      "logic_chain_check": "Project(521套在线仪表智慧水务招标) -> Digital Change(智慧调度中心+数据中心) -> Operational Problem(521套仪表部署后运维管理需求) -> Instrument/Data/Asset Management Need(仪表资产管理+健康诊断) -> Potential iMS Use Case。逻辑链完整，但时间窗口在部署完成后(12-18个月)。",
-      "to_verify": {
-        "customer_identity": "郴州某区域供水单位是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "现有Hach仪表装机？521套仪表招标是否包含Hach产品？",
-        "commercial_history": "历史销售/Opportunity？",
-        "ims": "智慧水务管理系统是否包含仪表运维管理模块？由谁建设？",
-        "account_sales": "Account Owner？Regional Owner？郴州区域Hach渠道伙伴？"
-      },
-      "score": 65,
-      "score_breakdown": {
-        "signal_strength": 14,
-        "ims_relevance": 12,
-        "project_customer_stage": 8,
-        "timing": 10,
-        "scale": 12,
-        "ecosystem_influence": 4,
-        "evidence_quality": 5
-      },
-      "confidence": "中高",
-      "source_url": "https://www.ulilink.com/newDetailsView?id=ce334073ee784e007bcfbeb42947eed1929ae1dd1a6008babf14b65d334427f4",
-      "source_type": "招标公告(公开)",
-      "continuity": {
-        "first_seen": "2026-08-31",
-        "new_facts_today": "招标文件获取期8/28-9/3，今日为最后窗口。项目规模明确：521套在线仪表(149压力+188流量+183水质)+智慧调度中心+数据中心+一水厂自动化。",
-        "changed": true
-      }
-    },
-    {
       "name": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢",
-      "trigger_type": "客户变化",
+      "trigger_type": "Account",
       "public_facts": "首创环保2026年半年报显示：上半年营收83.59亿但净利下滑近10%。行业内部人士透露：2026年上半年，首创环保已全面终止12个低毛利、高垫资的EPC打包项目，涉及合同额超27亿元；将原属'工程驱动型'的37座老旧污水处理厂，分批注入新成立的'智水运营科技平台'，统一接入AIoT智慧水务中枢。从'乙方施工队'向'城市水系统首席运营官'转型，毛利率提升2.3个百分点。半年报显示不再卖力气盖厂，而是卖'大脑'+'服务'+'数据信用'。",
       "ai_judgment": "首创环保的战略转型是水务行业从'建设驱动'到'运营驱动'的标志性事件。37座老旧污水厂统一接入AIoT智慧水务中枢，意味着多站点设备统一运维管理需求集中爆发。'智水运营科技平台'由谁建设、是否包含在线水质仪表的健康诊断和资产管理，是关键验证点。如果该平台尚未覆盖仪表资产管理层，则iMS有明确的切入机会。首创环保作为大型上市环保企业，其37座污水厂的仪表装机量应相当可观。但需注意：首创环保的转型可能已选择技术伙伴，iMS切入空间取决于其现有平台覆盖度。",
       "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
       "opportunity_stage": "战略规划",
-      "estimated_time_window": "6-12 months",
+      "estimated_time_window": ">9 months",
       "logic_chain_check": "Customer Change(从EPC到运营服务转型, 37座污水厂注入AIoT中枢) -> Digital Change(智水运营科技平台, AIoT智慧水务中枢) -> Operational Problem(37座老旧污水厂统一运维, 设备资产管理) -> Instrument/Data/Asset Management Need(多站点仪表统一管理+健康诊断) -> Potential iMS Use Case。逻辑链完整。",
       "to_verify": {
         "customer_identity": "首创环保是否为Hach客户？Salesforce Account是否存在？37座污水厂中是否有Hach装机？",
@@ -230,42 +72,18 @@
         "first_seen": "2026-09-02",
         "new_facts_today": "新信号。首创环保2026半年报显示战略转型：终止12个EPC项目(27亿)，37座污水厂注入'智水运营科技平台'AIoT中枢，从EPC向运营服务转型。",
         "changed": true
-      }
-    },
-    {
-      "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
-      "trigger_type": "项目",
-      "public_facts": "贵州省黔西南布依族苗族自治州普安县水务一体化建设项目(智慧水务及配套工程)设计、采购、施工EPC总承包。合同签约时间2026年8月18日，工期1095天(约3年)，合同金额7703.63万元。项目编号e(略)027h001，审批文件普发改发[2026]5号。项目类型为水务一体化智慧水务及配套工程。",
-      "ai_judgment": "普安县水务一体化EPC项目7703万、工期3年，属于中等规模县级智慧水务项目。iMS逻辑链：智慧水务平台建设->在线仪表部署->仪表数据管理需求->可能形成Multi-site Management需求。但限制明显：1)普安县为县级客户，规模小，多站点逻辑弱；2)项目处于EPC签约初期，具体仪表品牌和技术路线尚未公开。价值在于EPC初期阶段可追溯中标方和技术路线，为同类项目布局。",
-      "potential_ims_use_case": "Multi-site Management / Unknown",
-      "opportunity_stage": "EPC准备",
-      "estimated_time_window": "6-12 months",
-      "logic_chain_check": "Project(智慧水务EPC 7703万) -> Digital Change(智慧水务平台) -> Operational Problem(仪表管理, 但规模小) -> [逻辑弱化: 县级单点客户, 多站点逻辑弱] -> Potential iMS Use Case: Multi-site Management(弱)/Unknown。逻辑链部分断裂，规模和多站点逻辑不足。",
-      "to_verify": {
-        "customer_identity": "普安县水务是否为Hach客户？",
-        "installed_base": "现有仪表装机？项目计划部署多少在线仪表？",
-        "commercial_history": "历史销售？",
-        "ims": "智慧水务平台是否包含仪表管理模块？EPC中标方是谁？",
-        "account_sales": "Account Owner？贵州区域渠道？"
       },
-      "score": 52,
-      "score_breakdown": {
-        "signal_strength": 10,
-        "ims_relevance": 8,
-        "project_customer_stage": 12,
-        "timing": 8,
-        "scale": 6,
-        "ecosystem_influence": 4,
-        "evidence_quality": 4
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS",
+      "estimated_time_window_basis": "v3.5 修订：原 v3.2 档位 6-12 months 非 v3.5 档位体系，按战略规划阶段绑定规则修正为 >9 months",
+      "action_triad": {
+        "find_who": "首创环保科技平台/数字化运营部门负责人（37座污水厂运营管理团队）",
+        "talk_what": "智水运营科技平台的数据接入架构，现有污水厂在线仪表是否纳入统一管理与健康诊断",
+        "why_now": "2026半年报刚宣布从EPC转向运营+AIoT战略，平台处于需求定义期，供应商与设备选型未锁定"
       },
-      "confidence": "中低",
-      "source_url": "https://puanxian.okcis.cn/drww20260901115312132956.html",
-      "source_type": "招标公告(公开)",
-      "continuity": {
-        "first_seen": "2026-09-02",
-        "new_facts_today": "新信号。普安县水务一体化EPC总承包7703万，工期1095天，合同签约8/18。",
-        "changed": true
-      }
+      "v35_revision_note": [
+        "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
+      ]
     }
   ],
   "industry_triggers": [
@@ -493,5 +311,151 @@
     "no_padding_p2_p3": true,
     "github_schema_preserved": true,
     "both_json_files_generated": true
-  }
+  },
+  "revew_notice": "v3.5 修订",
+  "background_monitoring": [
+    {
+      "name": "合肥水务集团设备全生命周期管理系统与多站点资产管理",
+      "customer": "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）",
+      "region": "待补充",
+      "stage": "采购",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "采购阶段（Stage Gate 拒绝），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "采购阶段（Stage Gate 拒绝），v3.5 修订移动",
+        "original_date": "2026-09-02",
+        "original": {
+          "name": "合肥水务集团设备全生命周期管理系统与多站点资产管理",
+          "opportunity_stage": "采购",
+          "estimated_time_window": "3-6 months",
+          "score": 76,
+          "trigger_type": "客户变化",
+          "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics / Predictive Maintenance",
+          "continuity": {
+            "first_seen": "2026-08-19",
+            "new_facts_today": "8/19西部组团净水二厂获评智能化标杆，官方确认'设备全生命周期管理'系统已上线，设备预测性维护命中率93%，数据采集率100%，远程控制率88.3%。8/30人民日报道水务一体化两周年成果。此前已发现阀门采购(2450万)+49处监测设施运维(72.2万)。",
+            "changed": true
+          },
+          "logic_chain_check": "Customer Change(水务一体化改革两年, 投建管运一体化) -> Digital Change(设备全生命周期管理系统已上线, 数据采集率100%) -> Operational Problem(169座水厂+7236km管网+250座泵站统一运维) -> Instrument/Data/Asset Management Need(设备全生命周期管理是否覆盖在线水质仪表待验证) -> Potential iMS Use Case。逻辑链完整，且系统已落地验证需求真实性。"
+        }
+      }
+    },
+    {
+      "name": "联合水务×腾讯云战略合作共建'水务大脑'",
+      "customer": "2026年8月27日，江苏联合水务科技股份有限公司(603291)与腾讯云计算(北京)有限责任公司在深圳腾讯总部签署战略",
+      "region": "待补充",
+      "stage": "战略规划",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "6-12 months",
+      "trace_value": "logic_chain BROKEN（合作聚焦工艺AI层，仪表管理层断裂），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "logic_chain BROKEN（合作聚焦工艺AI层，仪表管理层断裂），v3.5 修订移动",
+        "original_date": "2026-09-02",
+        "original": {
+          "name": "联合水务×腾讯云战略合作共建'水务大脑'",
+          "opportunity_stage": "战略规划",
+          "estimated_time_window": "6-12 months",
+          "score": 68,
+          "trigger_type": "客户变化",
+          "potential_ims_use_case": "Unknown",
+          "continuity": {
+            "first_seen": "2026-08-25",
+            "new_facts_today": "8/27与腾讯云正式签署战略合作协议，共建'水务大脑'，四大合作方向明确。2026半年报显示战略从'轻重并举'转向'存量提质+内外协同'，明确'智慧水务+AI+机器人'方向。",
+            "changed": true
+          },
+          "logic_chain_check": "Customer Change(联合水务AI战略升级, 与腾讯云合作) -> Digital Change(水务大脑, 数据统一治理) -> Operational Problem(多站点运营经验复用, 工艺调度) -> [逻辑断裂: 仪表/设备资产管理需求未在合作中明确体现] -> Potential iMS Use Case: Unknown。合作聚焦工艺AI层，仪表资产管理层逻辑断裂。"
+        }
+      }
+    },
+    {
+      "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
+      "customer": "湖南省郴州某区域智慧水务建设项目招标公告已发布",
+      "region": "待补充",
+      "stage": "招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "12-18 months",
+      "trace_value": "招标阶段（Stage Gate 拒绝）+ tw/阶段矛盾修正",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "招标阶段（Stage Gate 拒绝）+ tw/阶段矛盾修正",
+        "original_date": "2026-09-02",
+        "original": {
+          "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
+          "opportunity_stage": "招标",
+          "estimated_time_window": "12-18 months",
+          "score": 65,
+          "trigger_type": "项目",
+          "potential_ims_use_case": "Asset Management / Multi-site Management / Instrument Health Diagnostics",
+          "continuity": {
+            "first_seen": "2026-08-31",
+            "new_facts_today": "招标文件获取期8/28-9/3，今日为最后窗口。项目规模明确：521套在线仪表(149压力+188流量+183水质)+智慧调度中心+数据中心+一水厂自动化。",
+            "changed": true
+          },
+          "logic_chain_check": "Project(521套在线仪表智慧水务招标) -> Digital Change(智慧调度中心+数据中心) -> Operational Problem(521套仪表部署后运维管理需求) -> Instrument/Data/Asset Management Need(仪表资产管理+健康诊断) -> Potential iMS Use Case。逻辑链完整，但时间窗口在部署完成后(12-18个月)。"
+        }
+      }
+    },
+    {
+      "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
+      "customer": "贵州省黔西南布依族苗族自治州普安县水务一体化建设项目(智慧水务及配套工程)设计、采购、施工EPC总承包",
+      "region": "待补充",
+      "stage": "EPC准备",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "6-12 months",
+      "trace_value": "EPC准备阶段接近过滤线 + 逻辑链WEAK（县级单点规模不足），v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "EPC准备阶段接近过滤线 + 逻辑链WEAK（县级单点规模不足），v3.5 修订移动",
+        "original_date": "2026-09-02",
+        "original": {
+          "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
+          "opportunity_stage": "EPC准备",
+          "estimated_time_window": "6-12 months",
+          "score": 52,
+          "trigger_type": "项目",
+          "potential_ims_use_case": "Multi-site Management / Unknown",
+          "continuity": {
+            "first_seen": "2026-09-02",
+            "new_facts_today": "新信号。普安县水务一体化EPC总承包7703万，工期1095天，合同签约8/18。",
+            "changed": true
+          },
+          "logic_chain_check": "Project(智慧水务EPC 7703万) -> Digital Change(智慧水务平台) -> Operational Problem(仪表管理, 但规模小) -> [逻辑弱化: 县级单点客户, 多站点逻辑弱] -> Potential iMS Use Case: Multi-site Management(弱)/Unknown。逻辑链部分断裂，规模和多站点逻辑不足。"
+        }
+      }
+    }
+  ],
+  "v35_revision_note": {
+    "date": "2026-09-12",
+    "agent": "v3.5 Prompt Evolution Review",
+    "summary": "以补充为主（version/trigger_type/sector/logic_chain_check_status/continuity），修正阶段准入（招标/采购/EPC→background_monitoring）、行业边界（工业Fab→industrial bg）、阶段-窗口绑定（郴州/兴宁）、跨天无新事实重复合并（邛崃/清江浦）。原字段未删除，移动与修正均以 v35_revision 记录。"
+  },
+  "top5_revision_note": "v3.5 修订：top_5_match 与保留 opportunities 对齐，移除已移入 background_monitoring 的条目（数量 1）",
+  "weekday": "Wednesday"
 }

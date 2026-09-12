@@ -22,109 +22,16 @@
   },
   "top_5_match": [
     {
-      "name": "邛崃市城区污水处理厂(7万m3/d)智慧水务软件开发采购",
-      "trigger_type": "project",
-      "public_signal_score": 68,
-      "priority": "P2",
-      "match_reason": "EPC项目中智慧水务软件独立采购包，数字化层正在构建，iMS可作为仪表数据接口层切入点。中国电建为EPC总包。",
-      "agent_checklist": "验证邛崃污水处理厂是否使用Hach仪表；智慧水务软件架构是否支持第三方仪表数据接入；中国电建设计院仪表选型倾向"
-    },
-    {
-      "name": "华虹半导体Fab9B扩建(60亿美元/12英寸/40nm)",
-      "trigger_type": "project",
-      "public_signal_score": 65,
-      "priority": "P2",
-      "match_reason": "Fab9B 3月开工4Q26装机，超纯水系统必然配置大量在线仪表。高频科技已推超纯水运维数字化平台，半导体仪表数字化需求显现。",
-      "agent_checklist": "验证华虹无锡一二期是否Hach客户；超纯水系统EPC是谁；高频科技数字化平台是否与iMS形成竞合"
-    },
-    {
       "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
-      "trigger_type": "project",
+      "trigger_type": "Project",
       "public_signal_score": 63,
       "priority": "P2",
       "match_reason": "初步设计明确配备在线监测设备及分区计量水表，目标集约化管理。923.85km管网+23559水表，Multi-site场景清晰。",
-      "agent_checklist": "验证淮安自来水有限公司是否Hach客户；在线监测设备选型是否已定；设计院是谁"
-    },
-    {
-      "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
-      "trigger_type": "project",
-      "public_signal_score": 62,
-      "priority": "P2",
-      "match_reason": "120个分散泵房集中改造含电气自控工程，Multi-site Management场景。招标中，<3个月窗口。",
-      "agent_checklist": "验证津滨威立雅/天津自来水集团是否Hach客户；泵房改造是否包含在线水质仪表；设计院是谁"
+      "agent_checklist": "验证淮安自来水有限公司是否Hach客户；在线监测设备选型是否已定；设计院是谁",
+      "sector": "municipal"
     }
   ],
   "opportunities": [
-    {
-      "id": "OPS-20260907-001",
-      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
-      "public_facts": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂(一次性建成)，含预处理/生化处理/深度处理/尾水处理系统。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。招标编号SZJT-GDGS-QLGWEQ-QTZBWJ-[2026]-001。",
-      "ai_judgment": "污水处理厂新建EPC项目中，智慧水务软件开发作为独立采购包单独招标，说明数字化层正在主动构建而非附属。如果厂内安装Hach在线水质仪表(如浊度/余氯/氨氮/pH/ORP)，iMS可作为仪表数据采集/监控/诊断层接入智慧水务平台，形成'仪表-iMS-智慧水务平台'三层架构。关键不确定点：软件采购与仪表采购可能分离，iMS切入点取决于仪表选型和软件架构是否预留第三方数据接口。中国电建作为EPC总包方，其设计院对仪表选型有决定性影响。",
-      "potential_ims_use_case": "Instrument Monitoring / Data Quality",
-      "opportunity_stage": "EPC准备/招标",
-      "estimated_time_window": "<3 months",
-      "logic_chain_check": "Customer Change(新建污水厂) -> Digital Change(智慧水务软件独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need(仪表监控+数据质量) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等强度：软件开发本身不等于仪表采购，但数字化层建设是iMS切入窗口。断裂风险：若软件自建仪表数据采集模块，iMS可能被绕过。",
-      "to_verify": {
-        "customer_identity": "邛崃市水务主体是否为Hach客户？Salesforce Account是否存在？中国电建是否为战略EPC伙伴？",
-        "installed_base": "新建7万m3/d厂将安装哪些品牌在线仪表？厂站数量？是否有联网仪表？",
-        "commercial_history": "邛崃或成都区域历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS或类似数字化产品？智慧水务软件架构是否支持第三方仪表数据接入？",
-        "account_sales": "Account Owner是谁？四川/成都区域Regional Owner？与中国电建的关系？"
-      },
-      "score": 68,
-      "score_breakdown": {
-        "signal_strength": 70,
-        "ims_relevance": 68,
-        "project_customer_stage": 75,
-        "timing": 85,
-        "scale": 60,
-        "ecosystem_influence": 55,
-        "evidence_quality": 85
-      },
-      "confidence": "medium",
-      "source_url": "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn",
-      "source_type": "procurement_notice",
-      "continuity": {
-        "first_seen": "2026-09-07",
-        "new_facts_today": "首次发现",
-        "changed": false
-      }
-    },
-    {
-      "id": "OPS-20260907-002",
-      "name": "华虹半导体Fab9B扩建(时间线更新)",
-      "public_facts": "华虹半导体2026Q1业绩显示：Fab9A预计2026年Q3达满产，Fab9B已于2026年3月开工、预计4Q26开始装机、2028年达满产，总资本开支60亿美元，主攻40nm特色工艺。华虹半导体1Q26收入6.609亿美元(同比+22.2%)，产能利用率99.7%。同期，高频科技在SEMICON China 2026展示半导体超纯水运维数字化平台，覆盖全方位安全保障+专家级响应+数字化平台+降本方案。",
-      "ai_judgment": "晶圆厂扩建必然需要超纯水系统，超纯水系统包含大量在线水质仪表(TOC/电导率/pH/溶解氧等)。高频科技已推出'超纯水运维数字化平台'，说明半导体行业出现了仪表数字化管理的真实需求。但iMS在半导体场景的适用性需要验证：半导体超纯水仪表是否使用Hach产品？高频科技运维平台是否与iMS形成竞争或互补关系？如果互补，iMS可以专注于仪表健康诊断层，高频科技负责运维服务层。",
-      "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-      "opportunity_stage": "建设(已开工)",
-      "estimated_time_window": "3-6 months",
-      "logic_chain_check": "Customer Change(晶圆厂扩建) -> Digital Change(高频科技推超纯水数字化平台) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。",
-      "to_verify": {
-        "customer_identity": "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "华虹无锡一二期现有在线仪表品牌/数量？超纯水系统供应商是谁？",
-        "commercial_history": "华虹历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-        "account_sales": "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-      },
-      "score": 65,
-      "score_breakdown": {
-        "signal_strength": 80,
-        "ims_relevance": 55,
-        "project_customer_stage": 70,
-        "timing": 70,
-        "scale": 85,
-        "ecosystem_influence": 60,
-        "evidence_quality": 80
-      },
-      "confidence": "medium",
-      "source_url": "https://baijiahao.baidu.com/s?id=1866076290709608050&wfr=spider&for=pc",
-      "source_type": "industry_news",
-      "continuity": {
-        "first_seen": "2026-09-04",
-        "new_facts_today": "Fab9B开工时间(3月)、装机时间(4Q26)、达满产时间(2028)、总资本开支(60亿美元)确认；高频科技超纯水运维数字化平台亮相",
-        "changed": true
-      }
-    },
     {
       "id": "OPS-20260907-003",
       "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
@@ -158,42 +65,18 @@
         "first_seen": "2026-09-07",
         "new_facts_today": "首次发现",
         "changed": false
-      }
-    },
-    {
-      "id": "OPS-20260907-004",
-      "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
-      "public_facts": "天津市北辰区居民住宅二次供水设施改造工程，总投资2.44亿元(自筹40%+中央资金60%)，招标人为天津市辰裕农业农村发展有限公司。改造120个二次供水泵房(整体改造含重建5个38个，局部改造82个)，28个小区二次供水管网改造56.658公里。建设内容涉及工艺工程、电气自控工程、建筑工程、暖通工程。津滨威立雅供水范围内16个小区，自来水集团供水范围内12个小区。设计施工总承包招标。",
-      "ai_judgment": "120个分散泵房的集中改造，涉及'电气自控工程'，意味着泵房将配置自动控制和监测设备。多站点泵房管理是iMS Multi-site Management的核心场景。但二次供水泵房改造更偏机电设备(水泵/阀门/控制柜)，在线水质仪表(余氯/浊度/pH)是否纳入尚不明确。津滨威立雅(Veolia运营)和天津自来水集团是实际运营方，均为大型水务运营商。关键断裂点：电气自控不等于在线水质仪表。",
-      "potential_ims_use_case": "Multi-site Management / Unknown",
-      "opportunity_stage": "招标",
-      "estimated_time_window": "<3 months",
-      "logic_chain_check": "Customer Change(二供改造) -> Digital Change(电气自控工程) -> Operational Problem(120个泵房集中管理) -> Instrument/Data Management Need(可能) -> Potential iMS Use Case(Multi-site Management/Unknown)。逻辑链有断裂：电气自控不等于在线水质仪表，需确认改造范围是否包含水质在线监测设备。标注Unknown直至确认。",
-      "to_verify": {
-        "customer_identity": "津滨威立雅/天津自来水集团是否为Hach客户？Salesforce Account是否存在？",
-        "installed_base": "现有二次供水泵房在线仪表品牌/数量？120个泵房改造是否包含水质监测设备？",
-        "commercial_history": "天津区域历史Hach销售记录？当前Pipeline？",
-        "ims": "是否已有iMS或类似数字化产品？二次供水管理平台是否已存在？",
-        "account_sales": "Account Owner？天津区域Regional Owner？与津滨威立雅/天津自来水集团的关系？"
       },
-      "score": 62,
-      "score_breakdown": {
-        "signal_strength": 75,
-        "ims_relevance": 50,
-        "project_customer_stage": 80,
-        "timing": 85,
-        "scale": 70,
-        "ecosystem_influence": 40,
-        "evidence_quality": 85
+      "trigger_type": "Project",
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS",
+      "action_triad": {
+        "find_who": "清江浦区水利/供水主管部门负责人、可研编制单位（初步设计已批复，进入施工图阶段）",
+        "talk_what": "初步设计中在线监测设备的具体点位与选型，分区计量水表的数据接入方案",
+        "why_now": "初步设计已批复、设备清单尚未完全锁定，是影响选型的最后窗口"
       },
-      "confidence": "low-medium",
-      "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769580.jhtml",
-      "source_type": "procurement_notice",
-      "continuity": {
-        "first_seen": "2026-09-07",
-        "new_facts_today": "首次发现",
-        "changed": false
-      }
+      "v35_revision_note": [
+        "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
+      ]
     }
   ],
   "industry_triggers": [
@@ -371,5 +254,113 @@
     "no_p2_p3_manufactured": true,
     "github_json_schema_preserved": true,
     "both_json_files_generated": true
-  }
+  },
+  "version": "3.2",
+  "background_monitoring": [
+    {
+      "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+      "customer": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂(一次性",
+      "region": "待补充",
+      "stage": "EPC准备/招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "<3 months",
+      "trace_value": "EPC准备/招标阶段（Stage Gate 拒绝），v3.5 修订移动，9/09 无新事实重复并入本条目",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "EPC准备/招标阶段（Stage Gate 拒绝），v3.5 修订移动，9/09 无新事实重复并入本条目",
+        "original_date": "2026-09-07",
+        "original": {
+          "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
+          "opportunity_stage": "EPC准备/招标",
+          "estimated_time_window": "<3 months",
+          "score": 68,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+          "continuity": {
+            "first_seen": "2026-09-07",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "Customer Change(新建污水厂) -> Digital Change(智慧水务软件独立采购) -> Operational Problem(仪表数据需接入平台) -> Instrument/Data Management Need(仪表监控+数据质量) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等强度：软件开发本身不等于仪表采购，但数字化层建设是iMS切入窗口。断裂风险：若软件自建仪表数据采集模块，iMS可能被绕过。"
+        }
+      }
+    },
+    {
+      "name": "华虹半导体Fab9B扩建(时间线更新)",
+      "customer": "华虹半导体2026Q1业绩显示：Fab9A预计2026年Q3达满产，Fab9B已于2026年3月开工、预计4Q26开始装",
+      "region": "待补充",
+      "stage": "建设(已开工)",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "3-6 months",
+      "trace_value": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+      "sector": "industrial",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "industrial",
+        "reason": "半导体工业Fab（行业边界v3.5），归工业雷达跟踪",
+        "original_date": "2026-09-07",
+        "original": {
+          "name": "华虹半导体Fab9B扩建(时间线更新)",
+          "opportunity_stage": "建设(已开工)",
+          "estimated_time_window": "3-6 months",
+          "score": 65,
+          "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
+          "continuity": {
+            "first_seen": "2026-09-04",
+            "new_facts_today": "Fab9B开工时间(3月)、装机时间(4Q26)、达满产时间(2028)、总资本开支(60亿美元)确认；高频科技超纯水运维数字化平台亮相",
+            "changed": true
+          },
+          "logic_chain_check": "Customer Change(晶圆厂扩建) -> Digital Change(高频科技推超纯水数字化平台) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。"
+        }
+      }
+    },
+    {
+      "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
+      "customer": "天津市北辰区居民住宅二次供水设施改造工程，总投资2.44亿元(自筹40%+中央资金60%)，招标人为天津市辰裕农业农村发",
+      "region": "待补充",
+      "stage": "招标",
+      "epc_contractor": "未公开（v3.5修订补充）",
+      "design_institute": "未公开（v3.5修订补充）",
+      "feasibility_unit": "未公开（v3.5修订补充）",
+      "key_dates": "<3 months",
+      "trace_value": "招标阶段（Stage Gate 拒绝）+ 逻辑链WEAK，v3.5 修订移动",
+      "sector": "municipal",
+      "v35_revision": {
+        "date": "2026-09-12",
+        "agent": "v3.5 Prompt Evolution Review",
+        "action": "moved_from_opportunities",
+        "sector": "municipal",
+        "reason": "招标阶段（Stage Gate 拒绝）+ 逻辑链WEAK，v3.5 修订移动",
+        "original_date": "2026-09-07",
+        "original": {
+          "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
+          "opportunity_stage": "招标",
+          "estimated_time_window": "<3 months",
+          "score": 62,
+          "potential_ims_use_case": "Multi-site Management / Unknown",
+          "continuity": {
+            "first_seen": "2026-09-07",
+            "new_facts_today": "首次发现",
+            "changed": false
+          },
+          "logic_chain_check": "Customer Change(二供改造) -> Digital Change(电气自控工程) -> Operational Problem(120个泵房集中管理) -> Instrument/Data Management Need(可能) -> Potential iMS Use Case(Multi-site Management/Unknown)。逻辑链有断裂：电气自控不等于在线水质仪表，需确认改造范围是否包含水质在线监测设备。标注Unknown直至确认。"
+        }
+      }
+    }
+  ],
+  "v35_revision_note": {
+    "date": "2026-09-12",
+    "agent": "v3.5 Prompt Evolution Review",
+    "summary": "以补充为主（version/trigger_type/sector/logic_chain_check_status/continuity），修正阶段准入（招标/采购/EPC→background_monitoring）、行业边界（工业Fab→industrial bg）、阶段-窗口绑定（郴州/兴宁）、跨天无新事实重复合并（邛崃/清江浦）。原字段未删除，移动与修正均以 v35_revision 记录。"
+  },
+  "top5_revision_note": "v3.5 修订：top_5_match 与保留 opportunities 对齐，移除已移入 background_monitoring 的条目（数量 1）"
 }
