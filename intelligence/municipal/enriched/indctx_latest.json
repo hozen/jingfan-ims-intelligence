@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "v3.2-municipal-v1",
-    "generated_date": "2026-09-11",
-    "last_update": "2026-09-11T09:30:00+08:00",
-    "description": "iMS Municipal Master Intelligence - Initial Enriched Context from Daily Radar Reports",
+    "version": "v3.2-municipal-v2",
+    "generated_date": "2026-09-12",
+    "last_update": "2026-09-12",
+    "description": "iMS Municipal Master Intelligence - Enriched Context (16 municipal leads, industrial content excluded per scope decision 2026-09-12)",
     "data_sources": [
       "intelligence/municipal/daily/2026-09-02.json",
       "intelligence/municipal/daily/2026-09-04.json",
@@ -25,10 +25,13 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）。8月19日，西部组团净水二厂获评第五期'双百跨越'智能化标杆污水处理厂。官方信息确认：厂区已上线'设备全生命周期管理'系统、AI视频巡检、电力智能分析等智能协同系统；工艺与设备数据自动采集率100%；核心设备远程控制率88.3%；设备预测性维护命中率93%。8月30日人民日报道合肥水务集团水务一体化改革两年成果，涉水职能归口统一，'原水-供水-排水-净水'全链条协同治理。此前已发现：2026-2028年度阀门采购(预算2450万)、南淝河49处在线监测设施运维(72.2万，9月采购)。"
+            "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）。8月19日，西部组团净水二厂获评第五期'双百跨越'智能化标杆污水处理厂。官方信息确认：厂区已上线'设备全生命周期管理'系统、AI视频巡检、电力智能分析等智能协同系统；工艺与设备数据自动采集率100%；核心设备远程控制率88.3%；设备预测性维护命中率93%。8月30日人民日报道合肥水务集团水务一体化改革两年成果，涉水职能归口统一，'原水-供水-排水-净水'全链条协同治理。此前已发现：2026-2028年度阀门采购(预算2450万)、南淝河49处在线监测设施运维(72.2万，9月采购)。",
+            "2026年8-9月，合肥水务集团发布合同全生命周期管理信息软件开发项目采购公告（编号2026BFFWZ00698，预算约95万元，预计2026年10月进场）。",
+            "合肥水务集团2026-2028年度采购公告提供公开联系人（采购经办俞工，电话0551-64423680），涉及在线监测/压力监测设备类采购。"
           ],
           "inferences": [
-            "合肥水务集团正处于从分散管理向超大规模集中管控转型的成熟期。关键发现：'设备全生命周期管理'系统已在西部组团净水二厂上线运行，且'设备预测性维护命中率93%'——这直接验证了iMS Asset Management和Predictive Maintenance的Use Case在大型水务集团的真实需求。但核心验证问题是：该'设备全生命周期管理'系统是否已覆盖在线水质仪表（Hach核心品类），还是仅覆盖通用机电设备（泵/阀门/风机）？如果仅覆盖通用设备，则在线水质仪表的健康诊断和资产管理仍是数字化白空间。7236km排水管网+250座泵站+169座自来水厂的规模，加上多个正在执行的采购项目，使合肥水务集团成为当前最高优先级的Company Agent验证对象。"
+            "合肥水务集团正处于从分散管理向超大规模集中管控转型的成熟期。关键发现：'设备全生命周期管理'系统已在西部组团净水二厂上线运行，且'设备预测性维护命中率93%'——这直接验证了iMS Asset Management和Predictive Maintenance的Use Case在大型水务集团的真实需求。但核心验证问题是：该'设备全生命周期管理'系统是否已覆盖在线水质仪表（Hach核心品类），还是仅覆盖通用机电设备（泵/阀门/风机）？如果仅覆盖通用设备，则在线水质仪表的健康诊断和资产管理仍是数字化白空间。7236km排水管网+250座泵站+169座自来水厂的规模，加上多个正在执行的采购项目，使合肥水务集团成为当前最高优先级的Company Agent验证对象。",
+            "合同全生命周期管理系统项目表明合肥水务集团数字化投入覆盖经营管理侧，与设备全生命周期管理系统构成潜在一体化管理需求，需Company Agent验证两系统是否打通及是否覆盖仪表资产。"
           ],
           "unknowns": [
             "合肥水务集团是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
@@ -45,7 +48,8 @@
         "priority": "P2",
         "score": 76,
         "source_urls": [
-          "https://www.hfwater.cn/content/detail/6a94d9c2ccc0b4ac76000029.html"
+          "https://www.hfwater.cn/content/detail/6a94d9c2ccc0b4ac76000029.html",
+          "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html"
         ],
         "to_verify": {
           "customer_identity": "合肥水务集团是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
@@ -143,10 +147,14 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "2026年9月2日，怀远县禹众水务有限公司发布EPC招标公告（BB2026HYGCZ0521），合同估算价10.087亿元，建设内容包括：(1)新建包集水厂及取水泵站；(2)双龙水厂和小集水厂更新改造；(3)乡镇供水管网更新改造；(4)智慧监测体系建设工程；(5)配套基础设施（光伏、充电桩）。工期1080天，勘察设计90天。资金来源为国有资金。"
+            "2026年9月2日，怀远县禹众水务有限公司发布EPC招标公告（BB2026HYGCZ0521），合同估算价10.087亿元，建设内容包括：(1)新建包集水厂及取水泵站；(2)双龙水厂和小集水厂更新改造；(3)乡镇供水管网更新改造；(4)智慧监测体系建设工程；(5)配套基础设施（光伏、充电桩）。工期1080天，勘察设计90天。资金来源为国有资金。",
+            "2026-09-10，怀远县全域供水数字化改造提升项目EPC（编号BB2026HYGCZ0521）招标公告被撤销（撤销公告发布于蚌埠公共资源交易中心）。",
+            "招标文件预公示（2026-08-25）显示招标人怀远县禹众水务有限公司联系人杨毛星（0552-8215611）、代理安徽鑫宸博晟工程咨询有限公司联系人周冰馨（15155220140）。",
+            "怀远县禹众水务法定代表人王兵，母公司怀远县大禹产业投资集团（法定代表人焦利君），为怀远县国资平台。"
           ],
           "inferences": [
-            "这是一个10亿元级别的全域供水数字化EPC项目，明确将'智慧监测体系建设工程'列为独立子项。招标人为怀远县禹众水务有限公司——新设水务主体（怀发改备案(2026)621号），表明该区域正在推进水务整合。项目涵盖新建水厂+老厂改造+管网更新+智慧监测，形成典型的多站点管理场景。逻辑链：多水厂新建/改造→智慧监测体系部署→在线仪表大规模安装→多站点数据集中管理→仪表资产管理需求→Potential iMS Use Case。关键不确定性：智慧监测体系的具体技术规格未在公告中披露，可能仅为管网监测（压力/流量/水质）而非过程仪表管理。"
+            "这是一个10亿元级别的全域供水数字化EPC项目，明确将'智慧监测体系建设工程'列为独立子项。招标人为怀远县禹众水务有限公司——新设水务主体（怀发改备案(2026)621号），表明该区域正在推进水务整合。项目涵盖新建水厂+老厂改造+管网更新+智慧监测，形成典型的多站点管理场景。逻辑链：多水厂新建/改造→智慧监测体系部署→在线仪表大规模安装→多站点数据集中管理→仪表资产管理需求→Potential iMS Use Case。关键不确定性：智慧监测体系的具体技术规格未在公告中披露，可能仅为管网监测（压力/流量/水质）而非过程仪表管理。",
+            "EPC撤销常见原因包括方案调整/资金来源变化/招标条件变更，重新招标窗口期通常为1-3个月，是保持早期介入的最优时间点。"
           ],
           "unknowns": [
             "怀远县禹众水务有限公司是否为Hach客户？Salesforce Account是否存在？该公司为新设主体，需确认其与怀远县原有水务机构的关系。",
@@ -163,7 +171,8 @@
         "priority": "P2",
         "score": 72,
         "source_urls": [
-          "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/002001001002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html"
+          "https://ggzy.bengbu.gov.cn/jyxxgk/002001/002001001/002001001002/20260902/d4341b3f-aa03-4a46-b2bd-021eedd259fc.html",
+          "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html"
         ],
         "to_verify": {
           "customer_identity": "怀远县禹众水务有限公司是否为Hach客户？Salesforce Account是否存在？该公司为新设主体，需确认其与怀远县原有水务机构的关系。",
@@ -200,10 +209,14 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "2026年9月3日发布招标公告，项目编号2026-QSX-0824。夹江县城乡供水一张网建设项目-青衣水厂扩建工程(二阶段)智慧水务采购项目，预算1656.63万元。招标人为广东省基础工程集团有限公司。投标截止2026年9月24日。位于四川省乐山市夹江县。"
+            "2026年9月3日发布招标公告，项目编号2026-QSX-0824。夹江县城乡供水一张网建设项目-青衣水厂扩建工程(二阶段)智慧水务采购项目，预算1656.63万元。招标人为广东省基础工程集团有限公司。投标截止2026年9月24日。位于四川省乐山市夹江县。",
+            "2026-08-10，夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目发布终止公告（四川省公共资源交易平台），原招标作废。",
+            "2026-08-06，与夹江青衣水厂及供水管网工程相关的原水水质在线监测仪器运维服务及水资源计量设施运维服务采购成交（成交供应商为中国电建水电七局相关方）。",
+            "夹江青衣水厂扩建工程EPC招标人为广东省基础工程集团（董事长方创熙，电话020-83900299）。"
           ],
           "inferences": [
-            "供水厂扩建同步建设智慧水务系统，预算1656万单独采购智慧水务包，说明数字化层是独立投入而非附属。新建水厂必然配备在线水质仪表(浊度/余氯/pH/氨氮等)，如果厂内使用Hach仪表，iMS可作为仪表数据采集/监控层接入智慧水务平台。EPC总包(广东省基础工程集团)负责设备选型，设计院影响力关键。逻辑链：供水扩建->智慧水务独立采购->仪表数据需接入平台->仪表监控+数据质量需求->iMS潜在切入。"
+            "供水厂扩建同步建设智慧水务系统，预算1656万单独采购智慧水务包，说明数字化层是独立投入而非附属。新建水厂必然配备在线水质仪表(浊度/余氯/pH/氨氮等)，如果厂内使用Hach仪表，iMS可作为仪表数据采集/监控层接入智慧水务平台。EPC总包(广东省基础工程集团)负责设备选型，设计院影响力关键。逻辑链：供水扩建->智慧水务独立采购->仪表数据需接入平台->仪表监控+数据质量需求->iMS潜在切入。",
+            "智慧水务采购终止后大概率重新组织采购；在线监测仪器运维服务已成交说明当地对监测运维仍有刚需，重启窗口是iMS介入机会。"
           ],
           "unknowns": [
             "夹江县水务主体是否为Hach客户？Salesforce Account是否存在？广东省基础工程集团是否为战略EPC伙伴？",
@@ -220,7 +233,8 @@
         "priority": "P2",
         "score": 72,
         "source_urls": [
-          "https://www.gxjtzb.com/Html/?1035587.html"
+          "https://www.gxjtzb.com/Html/?1035587.html",
+          "https://ggzyjy.sc.gov.cn"
         ],
         "to_verify": {
           "customer_identity": "夹江县水务主体是否为Hach客户？Salesforce Account是否存在？广东省基础工程集团是否为战略EPC伙伴？",
@@ -314,10 +328,13 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "2026年9月1日，西安净水处理有限责任公司发布招标公告（HRZBXA2026-JS-02），对第四、第五再生水厂实施全维度智慧化升级设计。招标范围含初步设计（含概算）、图纸设计、实施配合全流程。设计周期30日历天。借鉴第三再生水厂成熟智慧化改造经验。落实国企数字化转型、黄河流域生态保护、减污降碳协同增效要求。投标截止9月21日。"
+            "2026年9月1日，西安净水处理有限责任公司发布招标公告（HRZBXA2026-JS-02），对第四、第五再生水厂实施全维度智慧化升级设计。招标范围含初步设计（含概算）、图纸设计、实施配合全流程。设计周期30日历天。借鉴第三再生水厂成熟智慧化改造经验。落实国企数字化转型、黄河流域生态保护、减污降碳协同增效要求。投标截止9月21日。",
+            "西安净水处理有限责任公司厂网一体化管理平台项目由浪潮通软中标，中标金额993.6万元（2026年公开信息）。",
+            "西安净水董事长陈鸿（029-83570908）；高级技术专家焦峰为第三再生水厂AI托管模式受访人（新华社等媒体报道）。"
           ],
           "inferences": [
-            "两座再生水厂同步进行'全维度智慧化升级'，且有第三再生水厂成功经验可复制——这表明西安净水处理公司已在智慧化改造路径上验证了方法论，正在向更多水厂推广。'全维度智慧化升级'必然包含在线仪表数据采集与监测系统。逻辑链：多水厂同步智慧化改造→统一管理需求→在线仪表数据集中→multi-site management+instrument monitoring。关键不确定性：设计阶段尚未明确具体仪表品牌和技术路线，iMS机会取决于设计院的技术选型。"
+            "两座再生水厂同步进行'全维度智慧化升级'，且有第三再生水厂成功经验可复制——这表明西安净水处理公司已在智慧化改造路径上验证了方法论，正在向更多水厂推广。'全维度智慧化升级'必然包含在线仪表数据采集与监测系统。逻辑链：多水厂同步智慧化改造→统一管理需求→在线仪表数据集中→multi-site management+instrument monitoring。关键不确定性：设计阶段尚未明确具体仪表品牌和技术路线，iMS机会取决于设计院的技术选型。",
+            "厂网一体化平台商浪潮是西安净水数字化生态的核心触达对象，iMS可作为仪表数据层与平台商互补或合作。"
           ],
           "unknowns": [
             "西安净水处理有限责任公司是否为Hach客户？Salesforce Account是否存在？",
@@ -334,7 +351,9 @@
         "priority": "P2",
         "score": 68,
         "source_urls": [
-          "https://xian.okcis.cn/oeQeXSlJvXD.bn"
+          "https://xian.okcis.cn/oeQeXSlJvXD.bn",
+          "https://www.xinhuanet.com",
+          "https://www.qcc.com"
         ],
         "to_verify": {
           "customer_identity": "西安净水处理有限责任公司是否为Hach客户？Salesforce Account是否存在？",
@@ -371,10 +390,13 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。"
+            "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/d污水处理厂。2026年9月3日发布智慧水务工程软件开发服务公开询比采购公告，计划工期2026年9月20日至2027年8月20日。",
+            "邛崃市城区污水处理厂配套EPC由中国电建市政建设集团与成都市政设计研究院联合体中标，中标价297,248,748.30元，项目负责人施工常彪、设计林忠军。",
+            "招标人成都市沄崃投资集团（028-88771865）、代理成都尚特项目管理（028-61683980）。"
           ],
           "inferences": [
-            "9/7首次发现，今日无新事实变化。EPC项目中智慧水务软件独立采购，数字化层正在构建。iMS可作为仪表数据采集/监控层接入。维持P2。"
+            "9/7首次发现，今日无新事实变化。EPC项目中智慧水务软件独立采购，数字化层正在构建。iMS可作为仪表数据采集/监控层接入。维持P2。",
+            "EPC联合体中标确认后，智慧水务软件开发采购与EPC施工并行推进，仪表采购与集成采购窗口集中在2026Q4-2027Q1。"
           ],
           "unknowns": [
             "邛崃市水务主体是否为Hach客户？中国电建是否为战略EPC伙伴？",
@@ -391,7 +413,8 @@
         "priority": "P2",
         "score": 68,
         "source_urls": [
-          "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn"
+          "https://chengdu.okcis.cn/oeQ4mwt4FkQ.bn",
+          "https://ggzyjy.sc.gov.cn"
         ],
         "to_verify": {
           "customer_identity": "邛崃市水务主体是否为Hach客户？中国电建是否为战略EPC伙伴？",
@@ -419,63 +442,6 @@
       "status": "monitoring"
     },
     {
-      "lead_id": "MUN-20260911-008",
-      "original_signal": {
-        "id": "OPS-20260911-002",
-        "market_segment": "municipal",
-        "company": "定远县盐化工业园工业污水处理厂提标改造项目",
-        "opportunity": "定远县盐化工业园工业污水处理厂提标改造项目(1.9亿EPC)",
-        "signal_tier": "Tier 2",
-        "evidence": {
-          "facts": [
-            "2026年8月31日发布招标公告。安徽省定远县盐化工业园工业污水处理厂提标改造项目，合同估算价1.91亿元。建设内容：新建除氟装置(1万m3/d)、分盐装置(1万m3/d)、厂外管廊、自动化及智慧化改造。EPC总承包模式。工艺含前置除硬+一级/二级除氟、RO+NF+MVR蒸发结晶等复杂工业废水处理流程。"
-          ],
-          "inferences": [
-            "1.9亿工业污水EPC项目，工艺复杂(除氟+脱盐+分盐)，自动化及智慧化改造明确列入建设内容。工业污水厂对在线监测仪表的需求远高于市政污水——氟离子、重金属、电导率、有机物等多参数连续监测是工艺控制刚需。如果厂内安装Hach在线仪表，iMS可切入仪表监控/数据质量/资产管理。EPC总包负责全部设备采购，设计院选型倾向是关键。逻辑链：工业污水提标->自动化智慧化改造->多参数在线监测需求->仪表监控+数据质量->iMS潜在切入。"
-          ],
-          "unknowns": [
-            "定远县盐化工业园是否为Hach客户？园区内企业是否Hach用户？EPC总包方是谁？",
-            "现有污水厂仪表类型/数量？扩建后新增仪表需求？是否有联网仪表？",
-            "定远或滁州区域历史Hach销售记录？当前Pipeline？",
-            "是否已有iMS或类似数字化产品？自动化智慧化改造的具体架构？",
-            "Account Owner是谁？安徽区域Regional Owner？"
-          ]
-        },
-        "potential_ims_use_case": "Instrument Monitoring / Data Quality / Asset Management",
-        "logic": "Customer Change(工业污水提标改造1.9亿) -> Digital Change(自动化及智慧化改造列入建设内容) -> Operational Problem(复杂工艺需多参数在线监测) -> Instrument/Data Management Need(仪表监控+数据质量+资产管理) -> Potential iMS Use Case。逻辑链较强：工业污水复杂工艺直接产生在线仪表需求，自动化智慧化改造为数字化层建设窗口。",
-        "opportunity_stage": "EPC准备/招标",
-        "estimated_time_window": "3-6 months",
-        "priority": "P2",
-        "score": 68,
-        "source_urls": [
-          "https://www.sohu.com/a/1070591714_121123737"
-        ],
-        "to_verify": {
-          "customer_identity": "定远县盐化工业园是否为Hach客户？园区内企业是否Hach用户？EPC总包方是谁？",
-          "installed_base": "现有污水厂仪表类型/数量？扩建后新增仪表需求？是否有联网仪表？",
-          "commercial_history": "定远或滁州区域历史Hach销售记录？当前Pipeline？",
-          "ims": "是否已有iMS或类似数字化产品？自动化智慧化改造的具体架构？",
-          "account_sales": "Account Owner是谁？安徽区域Regional Owner？"
-        },
-        "continuity": {
-          "first_seen": "2026-09-11",
-          "new_facts_today": "首次发现",
-          "changed": true
-        }
-      },
-      "enrichment_status": "signal_only",
-      "project_ids": [
-        "PRJ-MUN-20260911-008"
-      ],
-      "account_ids": [],
-      "contact_ids": [],
-      "contact_summary": "No contacts enriched yet",
-      "organization_map_id": "ORG-MUN-20260911-008",
-      "first_seen": "2026-09-11",
-      "last_updated": "2026-09-11",
-      "status": "active"
-    },
-    {
       "lead_id": "MUN-20260911-009",
       "original_signal": {
         "id": "OPS-20260911-005",
@@ -485,7 +451,8 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "9/9首次发现。公开招标200万，明确采购COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统，24h连续监测+GIS集成+异常智能报警。"
+            "9/9首次发现。公开招标200万，明确采购COD传感器/电导率传感器/液位传感器/超声波流量计/智能井盖监测仪，构建B/S架构智慧排水管网监测系统，24h连续监测+GIS集成+异常智能报警。",
+            "明溪县城区污水管网设施在线监测建设项目相关公开渠道：业主方咨询电话0598-2868876（君峰城市建设投资，陈先生）；县住建局党组成员李强。"
           ],
           "inferences": [
             "9/9首次发现，今日无新事实变化。在线监测设备+数据管理平台直接命中iMS核心场景。维持P2。"
@@ -505,7 +472,8 @@
         "priority": "P2",
         "score": 67,
         "source_urls": [
-          "https://www.ggzy.gov.cn"
+          "https://www.ggzy.gov.cn",
+          "https://www.fjggzyjy.cn"
         ],
         "to_verify": {
           "customer_identity": "明溪县住建局是否为Hach客户？",
@@ -531,65 +499,6 @@
       "first_seen": "2026-09-09",
       "last_updated": "2026-09-11",
       "status": "monitoring"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "original_signal": {
-        "id": "OPS-20260909-003",
-        "market_segment": "municipal",
-        "company": "华虹宏力Fab9B扩建",
-        "opportunity": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
-        "signal_tier": "Tier 2",
-        "evidence": {
-          "facts": [
-            "2026年9月1日晚，华虹宏力发布公告，公司及全资子公司上海华虹宏力拟联合无锡锡虹国芯二期、华芯鼎新、国开公司共同对无锡华虹宏力三期半导体有限公司(Fab9B)增资，建设月产能约5.5万片的12英寸特色工艺晶圆代工产线。增资后注册资本41.7亿美元(约280亿元人民币)，华虹方合计出资约143亿元持股51%。Fab9B已于2026年3月启动建设，预计4Q26开始装机。同期，Fab9A(二期8.3万片/月)设备已于2026年6月底全部搬入完成，计划Q3末达规划产能。华虹2026Q2产能利用率102.8%，营收创历史新高。此外，高频科技在IC WORLD 2026展出半导体超纯水运维数字化平台，覆盖项目建设到长期运营的水务全生命周期。"
-          ],
-          "inferences": [
-            "增资公告确认Fab9B投资规模和产能目标，时间线进一步明确(3月开工→4Q26装机→2028满产)。Fab9A设备搬入完成且即将达产，意味着无锡华虹基地的仪表需求从'即将到来'变为'正在发生'。高频科技超纯水运维数字化平台的持续展出说明半导体行业仪表数字化需求正在从概念走向产品化。但iMS在半导体场景的适用性仍需验证：半导体超纯水仪表是否使用Hach产品？高频科技运维平台是否已占据运维数字化层？如果互补，iMS可专注仪表健康诊断层。"
-          ],
-          "unknowns": [
-            "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-            "华虹无锡一二期现有在线仪表品牌/数量？Fab9A超纯水系统供应商是谁？Fab9B超纯水系统EPC是否已定？",
-            "华虹历史Hach销售记录？当前Pipeline？",
-            "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-            "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-          ]
-        },
-        "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-        "logic": "Customer Change(晶圆厂扩建+增资确认) -> Digital Change(高频科技超纯水数字化平台持续展出) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。",
-        "opportunity_stage": "建设(已开工)",
-        "estimated_time_window": "3-6 months",
-        "priority": "P2",
-        "score": 66,
-        "source_urls": [
-          "https://baijiahao.baidu.com/s?id=1875203019069202789&wfr=spider&for=pc"
-        ],
-        "to_verify": {
-          "customer_identity": "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-          "installed_base": "华虹无锡一二期现有在线仪表品牌/数量？Fab9A超纯水系统供应商是谁？Fab9B超纯水系统EPC是否已定？",
-          "commercial_history": "华虹历史Hach销售记录？当前Pipeline？",
-          "ims": "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-          "account_sales": "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-        },
-        "continuity": {
-          "first_seen": "2026-09-04",
-          "new_facts_today": "9月1日增资公告确认41.7亿美元投资规模/5.5万片月产能/Fab9A设备搬入完成Q3末达产/高频科技IC WORLD展出超纯水运维数字化平台",
-          "changed": true
-        }
-      },
-      "enrichment_status": "signal_only",
-      "project_ids": [
-        "PRJ-MUN-20260909-010"
-      ],
-      "account_ids": [
-        "ACC-013"
-      ],
-      "contact_ids": [],
-      "contact_summary": "No contacts enriched yet",
-      "organization_map_id": "ORG-MUN-20260909-010",
-      "first_seen": "2026-09-04",
-      "last_updated": "2026-09-09",
-      "status": "active"
     },
     {
       "lead_id": "MUN-20260902-011",
@@ -649,122 +558,6 @@
       "status": "active"
     },
     {
-      "lead_id": "MUN-20260902-012",
-      "original_signal": {
-        "id": "",
-        "market_segment": "municipal",
-        "company": "华虹宏力无锡三期12英寸晶圆代工产线建设",
-        "opportunity": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
-        "signal_tier": "Tier 2",
-        "evidence": {
-          "facts": [
-            "2026年9月1日，华虹宏力（688347.SH/01347.HK）公告，联合无锡锡虹国芯二期、华芯鼎新、国开新型政策性金融工具公司，对无锡华虹宏力三期半导体有限公司增资，建设月产能5.5万片的12英寸特色工艺晶圆代工产线。总投资约143亿元（注册资本将增至41.7亿美元）。覆盖功率器件、存储器、模拟芯片等。标的公司为2025年10月新设，尚需股东大会批准。2026年上半年华虹宏力营收95.74亿元（+19.41%），产能利用率96.82%。"
-          ],
-          "inferences": [
-            "12英寸晶圆厂建设必然需要超纯水（UPW）系统，而超纯水系统是仪表密集型场景（电导率/TOC/颗粒/硅/溶解氧等在线监测点众多）。高频科技在IC WORLD展示的'半导体超纯水运维数字化平台'印证了这一趋势。逻辑链：新建12英寸晶圆厂→超纯水系统建设→大量高精度在线仪表部署→仪表运维/健康诊断/资产管理需求→Potential iMS Use Case。但项目处于增资审批阶段，实际建设启动尚需时日，且晶圆厂水系统通常由专业EPC/设计院整体打包，iMS切入路径需要通过EPC或设计院。"
-          ],
-          "unknowns": [
-            "华虹宏力（无锡一二期）是否为Hach客户？Salesforce Account状态？",
-            "华虹无锡一二期现有Hach仪表类型和数量？超纯水系统在线仪表品牌？",
-            "华虹宏力历史Hach销售/Opportunity？服务合同？Win-Loss？",
-            "华虹无锡是否已有iMS或类似数字化产品？三期建设是否规划数字化水系统管理？",
-            "江苏区域Account Owner？半导体行业覆盖负责人？"
-          ]
-        },
-        "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Lifecycle Management",
-        "logic": "新建12英寸晶圆厂→超纯水系统→在线仪表密集部署→仪表运维+资产管理需求。逻辑链完整但切入路径需通过EPC/设计院。",
-        "opportunity_stage": "战略规划/立项",
-        "estimated_time_window": "6-12 months",
-        "priority": "P2",
-        "score": 65,
-        "source_urls": [
-          "http://finance.sina.com.cn/roll/2026-09-02/doc-iniqmfta2981151.shtml"
-        ],
-        "to_verify": {
-          "customer_identity": "华虹宏力（无锡一二期）是否为Hach客户？Salesforce Account状态？",
-          "installed_base": "华虹无锡一二期现有Hach仪表类型和数量？超纯水系统在线仪表品牌？",
-          "commercial_history": "华虹宏力历史Hach销售/Opportunity？服务合同？Win-Loss？",
-          "ims": "华虹无锡是否已有iMS或类似数字化产品？三期建设是否规划数字化水系统管理？",
-          "account_sales": "江苏区域Account Owner？半导体行业覆盖负责人？"
-        },
-        "continuity": {
-          "first_seen": "2026-09-04",
-          "new_facts_today": "首次发现",
-          "changed": false
-        }
-      },
-      "enrichment_status": "signal_only",
-      "project_ids": [
-        "PRJ-MUN-20260902-012"
-      ],
-      "account_ids": [
-        "ACC-013"
-      ],
-      "contact_ids": [],
-      "contact_summary": "No contacts enriched yet",
-      "organization_map_id": "ORG-MUN-20260902-012",
-      "first_seen": "2026-09-04",
-      "last_updated": "2026-09-04",
-      "status": "monitoring"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "original_signal": {
-        "id": "OPS-20260907-002",
-        "market_segment": "municipal",
-        "company": "华虹半导体Fab9B扩建",
-        "opportunity": "华虹半导体Fab9B扩建(时间线更新)",
-        "signal_tier": "Tier 2",
-        "evidence": {
-          "facts": [
-            "华虹半导体2026Q1业绩显示：Fab9A预计2026年Q3达满产，Fab9B已于2026年3月开工、预计4Q26开始装机、2028年达满产，总资本开支60亿美元，主攻40nm特色工艺。华虹半导体1Q26收入6.609亿美元(同比+22.2%)，产能利用率99.7%。同期，高频科技在SEMICON China 2026展示半导体超纯水运维数字化平台，覆盖全方位安全保障+专家级响应+数字化平台+降本方案。"
-          ],
-          "inferences": [
-            "晶圆厂扩建必然需要超纯水系统，超纯水系统包含大量在线水质仪表(TOC/电导率/pH/溶解氧等)。高频科技已推出'超纯水运维数字化平台'，说明半导体行业出现了仪表数字化管理的真实需求。但iMS在半导体场景的适用性需要验证：半导体超纯水仪表是否使用Hach产品？高频科技运维平台是否与iMS形成竞争或互补关系？如果互补，iMS可以专注于仪表健康诊断层，高频科技负责运维服务层。"
-          ],
-          "unknowns": [
-            "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-            "华虹无锡一二期现有在线仪表品牌/数量？超纯水系统供应商是谁？",
-            "华虹历史Hach销售记录？当前Pipeline？",
-            "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-            "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-          ]
-        },
-        "potential_ims_use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-        "logic": "Customer Change(晶圆厂扩建) -> Digital Change(高频科技推超纯水数字化平台) -> Operational Problem(大量在线仪表需集中监控) -> Instrument/Data Management Need(仪表监测+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Predictive Maintenance)。逻辑链中等：仪表需求明确，但iMS在半导体场景适用性待验证，高频科技可能已占据运维数字化层。",
-        "opportunity_stage": "建设(已开工)",
-        "estimated_time_window": "3-6 months",
-        "priority": "P2",
-        "score": 65,
-        "source_urls": [
-          "https://baijiahao.baidu.com/s?id=1866076290709608050&wfr=spider&for=pc"
-        ],
-        "to_verify": {
-          "customer_identity": "华虹半导体(无锡)是否为Hach客户？Salesforce Account是否存在？",
-          "installed_base": "华虹无锡一二期现有在线仪表品牌/数量？超纯水系统供应商是谁？",
-          "commercial_history": "华虹历史Hach销售记录？当前Pipeline？",
-          "ims": "是否已有iMS？高频科技运维数字化平台功能范围？是否与iMS竞合？",
-          "account_sales": "Account Owner？无锡/上海区域Regional Owner？与高频科技的关系？"
-        },
-        "continuity": {
-          "first_seen": "2026-09-04",
-          "new_facts_today": "Fab9B开工时间(3月)、装机时间(4Q26)、达满产时间(2028)、总资本开支(60亿美元)确认；高频科技超纯水运维数字化平台亮相",
-          "changed": true
-        }
-      },
-      "enrichment_status": "signal_only",
-      "project_ids": [
-        "PRJ-MUN-20260907-013"
-      ],
-      "account_ids": [],
-      "contact_ids": [],
-      "contact_summary": "No contacts enriched yet",
-      "organization_map_id": "ORG-MUN-20260907-013",
-      "first_seen": "2026-09-04",
-      "last_updated": "2026-09-07",
-      "status": "active"
-    },
-    {
       "lead_id": "MUN-20260911-014",
       "original_signal": {
         "id": "OPS-20260911-004",
@@ -774,7 +567,10 @@
         "signal_tier": "Tier 2",
         "evidence": {
           "facts": [
-            "2026年8月31日重庆水务公告选举王小军为第六届董事会董事长。2026年中报行业判断收敛为'全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段'。新《供水条例》(国务院831号令)6月1日施行，将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核。供水板块收入-2.94%、毛利率-4.26pp；污水板块收入+8.98%、毛利率+2.65pp。日供水设计能力343.97万m3，日污水处理设计能力600.945万m3。'十五五'规划改造供排水管网超35万公里。"
+            "2026年8月31日重庆水务公告选举王小军为第六届董事会董事长。2026年中报行业判断收敛为'全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段'。新《供水条例》(国务院831号令)6月1日施行，将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核。供水板块收入-2.94%、毛利率-4.26pp；污水板块收入+8.98%、毛利率+2.65pp。日供水设计能力343.97万m3，日污水处理设计能力600.945万m3。'十五五'规划改造供排水管网超35万公里。",
+            "重庆水务新董事长王小军、总经理付朝清、财务总监兼董秘郭剑（2026-08公告）。",
+            "重庆市自来水有限公司生产技术部副部长阳虎、管网部副部长苏航为AI漏损检测/数字化应用受访人。",
+            "重庆水务投资者关系公开邮箱swjtdsb@cqswjt.com。"
           ],
           "inferences": [
             "重庆水务是中国最大水务运营商之一(约81%重庆市污水处理市场份额)。新董事长上任+战略明确转向'数字赋能'，叠加新《供水条例》法定强制数字化考核，构成Account-level战略变化信号。重庆水务管理数百座水厂/污水厂，多水厂集中管理痛点明确(供水产销差率15.36%)。如果重庆水务使用Hach仪表，iMS可切入Multi-site Management/Asset Management/Predictive Maintenance。逻辑链：集团战略变化(数字赋能) -> 运营模式变化(存量提质) -> 多水厂集中管理痛点 -> 仪表/数据/资产管理需求 -> iMS Multi-site Management。但此信号为Account Trigger而非具体项目，时间窗口和具体采购需求需Company Agent验证。"
@@ -794,7 +590,8 @@
         "priority": "P2",
         "score": 65,
         "source_urls": [
-          "https://stock.stockstar.com/RB2026090900020058.shtml"
+          "https://stock.stockstar.com/RB2026090900020058.shtml",
+          "https://www.cqwater.com"
         ],
         "to_verify": {
           "customer_identity": "重庆水务集团是否为Hach战略客户？SFDC Account状态？客户等级？",
@@ -1394,38 +1191,6 @@
       ]
     },
     {
-      "project_id": "PRJ-MUN-20260911-008",
-      "lead_id": "MUN-20260911-008",
-      "project_name": "定远县盐化工业园工业污水处理厂提标改造项目(1.9亿EPC)",
-      "owner": "定远县盐化工业园工业污水处理厂提标改造项目",
-      "investment_amount": "1.91亿元",
-      "project_status": "EPC准备/招标",
-      "water_system_details": {
-        "plant_type": "wastewater",
-        "design_scale": "1万m3/d",
-        "treatment_process": null,
-        "instrument_requirements": "To be enriched",
-        "smart_water_platform": true,
-        "epc_contractor": "identified_in_signal",
-        "design_institute": null,
-        "instrument_procurement_mode": null,
-        "permit_status": null,
-        "staffing_evidence": null
-      },
-      "estimated_time_window": "3-6 months",
-      "location": null,
-      "source_url": "https://www.sohu.com/a/1070591714_121123737",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "design_institute",
-        "epc_contractor_identity",
-        "treatment_process_detail",
-        "instrument_procurement_mode",
-        "location_detail",
-        "staffing_signals"
-      ]
-    },
-    {
       "project_id": "PRJ-MUN-20260911-009",
       "lead_id": "MUN-20260911-009",
       "project_name": "明溪县城区污水管网设施在线监测建设项目",
@@ -1458,38 +1223,6 @@
       ]
     },
     {
-      "project_id": "PRJ-MUN-20260909-010",
-      "lead_id": "MUN-20260909-010",
-      "project_name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
-      "owner": "华虹宏力Fab9B扩建",
-      "investment_amount": "41.7亿元",
-      "project_status": "建设(已开工)",
-      "water_system_details": {
-        "plant_type": "semiconductor_ultrapure_water",
-        "design_scale": null,
-        "treatment_process": null,
-        "instrument_requirements": "To be enriched",
-        "smart_water_platform": true,
-        "epc_contractor": null,
-        "design_institute": null,
-        "instrument_procurement_mode": null,
-        "permit_status": null,
-        "staffing_evidence": null
-      },
-      "estimated_time_window": "3-6 months",
-      "location": null,
-      "source_url": "https://baijiahao.baidu.com/s?id=1875203019069202789&wfr=spider&for=pc",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "design_institute",
-        "epc_contractor_identity",
-        "treatment_process_detail",
-        "instrument_procurement_mode",
-        "location_detail",
-        "staffing_signals"
-      ]
-    },
-    {
       "project_id": "PRJ-MUN-20260902-011",
       "lead_id": "MUN-20260902-011",
       "project_name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
@@ -1511,70 +1244,6 @@
       "estimated_time_window": "12-18 months",
       "location": null,
       "source_url": "https://www.ulilink.com/newDetailsView?id=ce334073ee784e007bcfbeb42947eed1929ae1dd1a6008babf14b65d334427f4",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "design_institute",
-        "epc_contractor_identity",
-        "treatment_process_detail",
-        "instrument_procurement_mode",
-        "location_detail",
-        "staffing_signals"
-      ]
-    },
-    {
-      "project_id": "PRJ-MUN-20260902-012",
-      "lead_id": "MUN-20260902-012",
-      "project_name": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
-      "owner": "华虹宏力无锡三期12英寸晶圆代工产线建设",
-      "investment_amount": "143亿元",
-      "project_status": "战略规划/立项",
-      "water_system_details": {
-        "plant_type": "semiconductor_ultrapure_water",
-        "design_scale": null,
-        "treatment_process": null,
-        "instrument_requirements": "To be enriched",
-        "smart_water_platform": false,
-        "epc_contractor": null,
-        "design_institute": null,
-        "instrument_procurement_mode": null,
-        "permit_status": null,
-        "staffing_evidence": null
-      },
-      "estimated_time_window": "6-12 months",
-      "location": null,
-      "source_url": "http://finance.sina.com.cn/roll/2026-09-02/doc-iniqmfta2981151.shtml",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "design_institute",
-        "epc_contractor_identity",
-        "treatment_process_detail",
-        "instrument_procurement_mode",
-        "location_detail",
-        "staffing_signals"
-      ]
-    },
-    {
-      "project_id": "PRJ-MUN-20260907-013",
-      "lead_id": "MUN-20260907-013",
-      "project_name": "华虹半导体Fab9B扩建(时间线更新)",
-      "owner": "华虹半导体Fab9B扩建",
-      "investment_amount": "60亿元",
-      "project_status": "建设(已开工)",
-      "water_system_details": {
-        "plant_type": "semiconductor_ultrapure_water",
-        "design_scale": null,
-        "treatment_process": null,
-        "instrument_requirements": "To be enriched",
-        "smart_water_platform": true,
-        "epc_contractor": null,
-        "design_institute": null,
-        "instrument_procurement_mode": null,
-        "permit_status": null,
-        "staffing_evidence": null
-      },
-      "estimated_time_window": "3-6 months",
-      "location": null,
-      "source_url": "https://baijiahao.baidu.com/s?id=1866076290709608050&wfr=spider&for=pc",
       "enrichment_level": 1,
       "enrichment_needed": [
         "design_institute",
@@ -2072,32 +1741,6 @@
       ]
     },
     {
-      "account_id": "ACC-011",
-      "name": "华虹宏力(无锡)",
-      "type": "semiconductor_manufacturer",
-      "group_name": null,
-      "plant_count": null,
-      "daily_capacity": "Fab9B: 5.5万片/月12英寸",
-      "digitalization_status": null,
-      "existing_digital_platform": null,
-      "supply_chain_loss_rate": null,
-      "market_share": null,
-      "stock_code": null,
-      "first_seen": "2026-09-04",
-      "status": "monitoring",
-      "latest_signal": "",
-      "ims_fit": "",
-      "action_needed": "",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "group_structure",
-        "plant_count_and_capacity",
-        "digitalization_current_state",
-        "existing_instrument_brands",
-        "key_contacts"
-      ]
-    },
-    {
       "account_id": "ACC-012",
       "name": "北控水务集团",
       "type": "water_utility",
@@ -2114,32 +1757,6 @@
       "latest_signal": "SED/Enki/厂网协同/云涟网四款数智化产品已内部验证并开始行业推广。从自身数字化转型转向行业数智化能力输出。",
       "ims_fit": "竞合关系：北控可能成为iMS渠道伙伴(如Hach仪表接入SED)或直接竞争对手(SED覆盖仪表数据层)。",
       "action_needed": "验证北控水厂是否使用Hach仪表；SED是否兼容第三方仪表；是否有合作窗口。",
-      "enrichment_level": 1,
-      "enrichment_needed": [
-        "group_structure",
-        "plant_count_and_capacity",
-        "digitalization_current_state",
-        "existing_instrument_brands",
-        "key_contacts"
-      ]
-    },
-    {
-      "account_id": "ACC-013",
-      "name": "华虹宏力",
-      "type": "semiconductor_manufacturer",
-      "group_name": null,
-      "plant_count": null,
-      "daily_capacity": "Fab9B: 5.5万片/月12英寸",
-      "digitalization_status": null,
-      "existing_digital_platform": null,
-      "supply_chain_loss_rate": null,
-      "market_share": null,
-      "stock_code": null,
-      "first_seen": "2026-09-04",
-      "status": "monitoring",
-      "latest_signal": "Fab9B增资41.7亿美元(约280亿元)确认，5.5万片/月12英寸特色工艺产线。Fab9A设备搬入完成Q3末达产。",
-      "ims_fit": "半导体行业：超纯水系统仪表监控/资产管理。需验证华虹是否Hach客户。",
-      "action_needed": "验证华虹无锡一二期是否Hach客户；超纯水系统EPC是谁。",
       "enrichment_level": 1,
       "enrichment_needed": [
         "group_structure",
@@ -2254,7 +1871,632 @@
       ]
     }
   ],
-  "contacts": [],
+  "contacts": [
+    {
+      "contact_id": "CT-MUN-001",
+      "lead_id": "MUN-20260902-001",
+      "account_id": "ACC-008",
+      "name": "俞工",
+      "unit": "合肥水务集团有限公司",
+      "role": "采购经办（压力监测设备采购项目）",
+      "priority": "A",
+      "phone": "0551-64423680",
+      "email": null,
+      "source_url": "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "合肥水务集团2026-2028年度采购公告联系人，涉及在线监测/压力监测设备，最优先接入点"
+    },
+    {
+      "contact_id": "CT-MUN-002",
+      "lead_id": "MUN-20260902-001",
+      "account_id": "ACC-008",
+      "name": "合肥水务集团办公室",
+      "unit": "合肥水务集团有限公司",
+      "role": "公司办公室总机",
+      "priority": "B",
+      "phone": "0551-64421821",
+      "email": null,
+      "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+      "source_type": "gov_website",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "官方公开电话，可转接数字化/设备管理部门"
+    },
+    {
+      "contact_id": "CT-MUN-003",
+      "lead_id": "MUN-20260902-001",
+      "account_id": "ACC-008",
+      "name": "合肥水务集团服务热线",
+      "unit": "合肥水务集团有限公司",
+      "role": "24小时服务热线",
+      "priority": "B",
+      "phone": "0551-64422666",
+      "email": null,
+      "source_url": "https://www.hfwater.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "另：新发现2026BFFWZ00698合同全生命周期管理信息软件开发项目（预算95万，预计2026-10进场），已同步至lead证据"
+    },
+    {
+      "contact_id": "CT-MUN-004",
+      "lead_id": "MUN-20260902-002",
+      "account_id": "ACC-008",
+      "name": "合肥水务集团办公室",
+      "unit": "合肥水务集团有限公司",
+      "role": "公司办公室总机（排水管网全面接管对接入口）",
+      "priority": "B",
+      "phone": "0551-64421821",
+      "email": null,
+      "source_url": "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+      "source_type": "gov_website",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "与MUN-20260902-001同一主体；排水管网接管涉及多站点监测，可经由总机转接管网/调度部门"
+    },
+    {
+      "contact_id": "CT-MUN-005",
+      "lead_id": "MUN-20260902-003",
+      "account_id": "ACC-009",
+      "name": "杨毛星",
+      "unit": "怀远县禹众水务有限公司",
+      "role": "EPC招标人联系人（全域供水数字化改造项目）",
+      "priority": "B",
+      "phone": "0552-8215611",
+      "email": null,
+      "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "注意：EPC项目BB2026HYGCZ0521已于2026-09-10撤销招标，重新招标时优先联系；母公司怀远县大禹产业投资集团（董事长焦利君）"
+    },
+    {
+      "contact_id": "CT-MUN-006",
+      "lead_id": "MUN-20260902-003",
+      "account_id": "ACC-009",
+      "name": "周冰馨",
+      "unit": "安徽鑫宸博晟工程咨询有限公司",
+      "role": "招标代理机构联系人",
+      "priority": "B",
+      "phone": "15155220140",
+      "email": null,
+      "source_url": "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "代理可获知撤销原因与重新招标安排"
+    },
+    {
+      "contact_id": "CT-MUN-007",
+      "lead_id": "MUN-20260902-003",
+      "account_id": "ACC-009",
+      "name": "王兵",
+      "unit": "怀远县禹众水务有限公司",
+      "role": "法定代表人",
+      "priority": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://seo.shuidi.cn/company-93528580f5233d07a4f8bbd2cb221a01.html",
+      "source_type": "registration_db",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "工商登记信息，无公开电话"
+    },
+    {
+      "contact_id": "CT-MUN-008",
+      "lead_id": "MUN-20260911-004",
+      "account_id": "ACC-016",
+      "name": "方创熙",
+      "unit": "广东省基础工程集团有限公司",
+      "role": "董事长（夹江青衣水厂EPC招标人）",
+      "priority": "B",
+      "phone": "020-83900299",
+      "email": null,
+      "source_url": "https://ggzyjy.sc.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "注意：夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目已于2026-08-10终止，重新招标后可经由EPC招标人方获取业主联系方式"
+    },
+    {
+      "contact_id": "CT-MUN-009",
+      "lead_id": "MUN-20260911-004",
+      "account_id": "ACC-016",
+      "name": "夹江县青衣水厂",
+      "unit": "夹江县青衣水厂",
+      "role": "项目业主（机构入口）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://ggzyjy.sc.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "智慧水务采购终止公告为2026-08-10；原水质在线监测仪器运维服务由水电七局（中国电建）中标（2026-08-06），运维承接方是重启后关键触达对象"
+    },
+    {
+      "contact_id": "CT-MUN-010",
+      "lead_id": "MUN-20260902-005",
+      "account_id": "ACC-002",
+      "name": "陈樵",
+      "unit": "江苏联合水务科技股份有限公司",
+      "role": "高级副总裁（数字化/水务大脑战略对外发言人）",
+      "priority": "A",
+      "phone": "021-62370178",
+      "email": null,
+      "source_url": "https://www.unitedwater.com.cn",
+      "source_type": "news",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "腾讯云战略合作'水务大脑'发布会发言人；公司总机为接通入口，Email未公开不猜测"
+    },
+    {
+      "contact_id": "CT-MUN-011",
+      "lead_id": "MUN-20260902-005",
+      "account_id": "ACC-002",
+      "name": "俞伟景",
+      "unit": "江苏联合水务科技股份有限公司",
+      "role": "董事长/总裁",
+      "priority": "B",
+      "phone": "021-62370178",
+      "email": null,
+      "source_url": "https://www.unitedwater.com.cn",
+      "source_type": "company_disclosure",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "公司总机021-62370178为公开入口"
+    },
+    {
+      "contact_id": "CT-MUN-012",
+      "lead_id": "MUN-20260902-005",
+      "account_id": "ACC-002",
+      "name": "许行志",
+      "unit": "江苏联合水务科技股份有限公司",
+      "role": "副总裁兼董事会秘书",
+      "priority": "B",
+      "phone": "021-62370178",
+      "email": null,
+      "source_url": "https://www.unitedwater.com.cn",
+      "source_type": "company_disclosure",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-013",
+      "lead_id": "MUN-20260902-005",
+      "account_id": "ACC-002",
+      "name": "程士珍",
+      "unit": "江苏联合水务科技股份有限公司",
+      "role": "证券事务代表",
+      "priority": "C",
+      "phone": "021-62370178",
+      "email": null,
+      "source_url": "https://www.unitedwater.com.cn",
+      "source_type": "company_disclosure",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-014",
+      "lead_id": "MUN-20260902-006",
+      "account_id": "ACC-010",
+      "name": "焦峰",
+      "unit": "西安净水处理有限责任公司",
+      "role": "高级技术专家（AI托管再生水厂受访人/第三再生水厂）",
+      "priority": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.xinhuanet.com",
+      "source_type": "news",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "AI托管再生水厂标杆受访者，最贴近iMS Use Case的技术决策人；电话未公开"
+    },
+    {
+      "contact_id": "CT-MUN-015",
+      "lead_id": "MUN-20260902-006",
+      "account_id": "ACC-010",
+      "name": "陈鸿",
+      "unit": "西安净水处理有限责任公司",
+      "role": "董事长（第四第五再生水厂智慧化改造项目业主）",
+      "priority": "B",
+      "phone": "029-83570908",
+      "email": null,
+      "source_url": "https://www.qcc.com",
+      "source_type": "registration_db",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "另有：厂网一体化管理平台由浪潮通软中标993.6万，平台商是设计院外关键生态触点"
+    },
+    {
+      "contact_id": "CT-MUN-016",
+      "lead_id": "MUN-20260911-007",
+      "account_id": null,
+      "name": "成都市沄崃投资集团有限公司（招标人）",
+      "unit": "成都市沄崃投资集团有限公司",
+      "role": "邛崃市城区污水处理厂项目招标人",
+      "priority": "B",
+      "phone": "028-88771865",
+      "email": null,
+      "source_url": "https://ggzyjy.sc.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "智慧水务软件开发采购（2026-09-03发布）；另有配套EPC中国电建市政+成都市政院中标2.97亿"
+    },
+    {
+      "contact_id": "CT-MUN-017",
+      "lead_id": "MUN-20260911-007",
+      "account_id": null,
+      "name": "成都尚特项目管理有限公司（代理）",
+      "unit": "成都尚特项目管理有限公司",
+      "role": "招标代理机构",
+      "priority": "B",
+      "phone": "028-61683980",
+      "email": null,
+      "source_url": "https://ggzyjy.sc.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-018",
+      "lead_id": "MUN-20260911-007",
+      "account_id": null,
+      "name": "常彪（施工）/林忠军（设计）",
+      "unit": "中国电建市政/成都市政设计研究院",
+      "role": "EPC项目负责人（中标公示）",
+      "priority": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://ggzyjy.sc.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "EPC中标价297,248,748.30元；无公开电话"
+    },
+    {
+      "contact_id": "CT-MUN-019",
+      "lead_id": "MUN-20260911-009",
+      "account_id": null,
+      "name": "陈先生",
+      "unit": "明溪县君峰城市建设投资有限责任公司",
+      "role": "项目咨询联系人（城区污水管网在线监测建设）",
+      "priority": "B",
+      "phone": "0598-2868876",
+      "email": null,
+      "source_url": "https://www.fjggzyjy.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "管网在线监测项目业主咨询电话"
+    },
+    {
+      "contact_id": "CT-MUN-020",
+      "lead_id": "MUN-20260911-009",
+      "account_id": null,
+      "name": "李强",
+      "unit": "明溪县住房和城乡建设局",
+      "role": "党组成员（行业主管部门）",
+      "priority": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.fjmx.gov.cn",
+      "source_type": "gov_website",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "无公开电话"
+    },
+    {
+      "contact_id": "CT-MUN-021",
+      "lead_id": "MUN-20260902-011",
+      "account_id": "ACC-004",
+      "name": "陈逸纳",
+      "unit": "广东华南水电高新技术开发有限公司",
+      "role": "郴州水利信息中枢和智慧化管理平台项目（一期）中标方联系人",
+      "priority": "C",
+      "phone": "15914390479",
+      "email": null,
+      "source_url": "https://www.czs.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "佐证：郴州市水利信息中枢一期已由华南水电中标376.91万；521套在线仪表项目业主直接联系人未检索到公开信息，需Company Agent验证"
+    },
+    {
+      "contact_id": "CT-MUN-022",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "阳虎",
+      "unit": "重庆市自来水有限公司",
+      "role": "生产技术部副部长（AI漏损检测/数字化应用受访者）",
+      "priority": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.cqwater.com",
+      "source_type": "news",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "AI漏损检测受访技术负责人，最贴近iMS Use Case；电话未公开"
+    },
+    {
+      "contact_id": "CT-MUN-023",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "苏航",
+      "unit": "重庆市自来水有限公司",
+      "role": "管网部副部长（AI漏损检测受访者）",
+      "priority": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.cqwater.com",
+      "source_type": "news",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-024",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "王小军",
+      "unit": "重庆水务集团股份有限公司",
+      "role": "董事长（新任）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.cqwater.com",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "2026-08上任，推行存量提质/数字赋能战略"
+    },
+    {
+      "contact_id": "CT-MUN-025",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "付朝清",
+      "unit": "重庆水务集团股份有限公司",
+      "role": "总经理",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.cqwater.com",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-026",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "郭剑",
+      "unit": "重庆水务集团股份有限公司",
+      "role": "财务总监兼董事会秘书",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.cqwater.com",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-027",
+      "lead_id": "MUN-20260911-014",
+      "account_id": "ACC-007",
+      "name": "重庆水务投资者关系",
+      "unit": "重庆水务集团股份有限公司",
+      "role": "投资者关系邮箱",
+      "priority": "C",
+      "phone": null,
+      "email": "swjtdsb@cqswjt.com",
+      "source_url": "https://www.cqwater.com",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "公开邮箱；内部数字化部门联系人需Company Agent验证"
+    },
+    {
+      "contact_id": "CT-MUN-028",
+      "lead_id": "MUN-20260909-015",
+      "account_id": null,
+      "name": "欧阳勇辉",
+      "unit": "兴宁市工业园管理委员会",
+      "role": "管委会主任（产业园区污水厂项目属地主管）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.xingning.gov.cn",
+      "source_type": "gov_website",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "项目2026-09-04发招标计划，勘察/初设招标预计2026-10-05发布；无公开电话"
+    },
+    {
+      "contact_id": "CT-MUN-029",
+      "lead_id": "MUN-20260909-015",
+      "account_id": null,
+      "name": "兴宁市住房和城乡建设局",
+      "unit": "兴宁市住房和城乡建设局",
+      "role": "项目监督部门",
+      "priority": "C",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.xingning.gov.cn",
+      "source_type": "gov_website",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "暂无公开联系方式"
+    },
+    {
+      "contact_id": "CT-MUN-030",
+      "lead_id": "MUN-20260902-016",
+      "account_id": "ACC-006",
+      "name": "黄绵松",
+      "unit": "北京首创生态环保集团股份有限公司",
+      "role": "副总经理（数据要素/智水运营平台数字化方向）",
+      "priority": "A",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.capitalwater.cn",
+      "source_type": "news",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "2026数字水务论坛演讲人（数据筑基AI赋能城市水系统），数智化大赛/数据要素大赛一等奖主导者；电话未公开"
+    },
+    {
+      "contact_id": "CT-MUN-031",
+      "lead_id": "MUN-20260902-016",
+      "account_id": "ACC-006",
+      "name": "李伏京",
+      "unit": "北京首创生态环保集团股份有限公司",
+      "role": "董事长",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.capitalwater.cn",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-032",
+      "lead_id": "MUN-20260902-016",
+      "account_id": "ACC-006",
+      "name": "刘永政 / 秘勇",
+      "unit": "首创集团",
+      "role": "集团董事长 / 集团总经理",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.capitalwater.cn",
+      "source_type": "company_disclosure",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "可经集团总机转接"
+    },
+    {
+      "contact_id": "CT-MUN-033",
+      "lead_id": "MUN-20260909-017",
+      "account_id": null,
+      "name": "顾希贤",
+      "unit": "淮安市清江浦区农业农村和水利局",
+      "role": "农村供水提升改造项目联系人（征询公告）",
+      "priority": "B",
+      "phone": "0517-83516890",
+      "email": null,
+      "source_url": "https://www.ehall.jiangsu.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "项目业主另有淮安自来水有限公司；EPC中标候选人已公示（2026-08-31）"
+    },
+    {
+      "contact_id": "CT-MUN-034",
+      "lead_id": "MUN-20260909-017",
+      "account_id": null,
+      "name": "孙主任 / 葛先生",
+      "unit": "招标代理机构",
+      "role": "代理机构联系人",
+      "priority": "B",
+      "phone": "18905238992 / 15861726668",
+      "email": null,
+      "source_url": "https://www.ehall.jiangsu.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-035",
+      "lead_id": "MUN-20260907-018",
+      "account_id": "ACC-015",
+      "name": "天津市辰裕农业农村发展有限公司",
+      "unit": "天津市辰裕农业农村发展有限公司",
+      "role": "二次供水设施改造招标人（机构入口）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "项目资金244,153,100元（中央60%+自筹40%），备案JS1201132026096002/003；公司电话未公开，可通过代理机构对接"
+    },
+    {
+      "contact_id": "CT-MUN-036",
+      "lead_id": "MUN-20260907-018",
+      "account_id": "ACC-015",
+      "name": "天津福松工程项目管理有限公司",
+      "unit": "天津福松工程项目管理有限公司",
+      "role": "招标代理机构",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": ""
+    },
+    {
+      "contact_id": "CT-MUN-037",
+      "lead_id": "MUN-20260902-019",
+      "account_id": null,
+      "name": "鄞州区水利局（经办）",
+      "unit": "宁波市鄞州区水利局",
+      "role": "在线水质监测设备运维项目采购人",
+      "priority": "B",
+      "phone": "0574-89582343",
+      "email": null,
+      "source_url": "https://ggzy.zj.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "verified",
+      "first_seen": "2026-09-12",
+      "notes": "佐证：2025年HXZB(2025)-047在线水质监测设备运维管理项目预算309万，经政采云招标；2026版项目应同源"
+    },
+    {
+      "contact_id": "CT-MUN-038",
+      "lead_id": "MUN-20260902-019",
+      "account_id": null,
+      "name": "宁波恒翔管理咨询有限公司（代理）",
+      "unit": "宁波恒翔管理咨询有限公司",
+      "role": "招标代理机构",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "https://www.ccgp.gov.cn",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "DBD(2025)-047项目代理，可获取运维范围与站点清单"
+    },
+    {
+      "contact_id": "CT-MUN-039",
+      "lead_id": "MUN-20260902-020",
+      "account_id": null,
+      "name": "普安县水务一体化项目组（渠道查询）",
+      "unit": "黔西南州公共资源交易中心",
+      "role": "项目公告渠道（中标结果公示）",
+      "priority": "B",
+      "phone": null,
+      "email": null,
+      "source_url": "http://ztb.guizhou.gov.cn/trade/bulletin/?id=890198",
+      "source_type": "official_announcement",
+      "verification_status": "inferred",
+      "first_seen": "2026-09-12",
+      "notes": "2026-07-29中标结果公示PDF遮挡中标单位不可见；无公开个人联系人，需查询后确认业主（招标计划2026-04-22）"
+    }
+  ],
   "organization_maps": [
     {
       "map_id": "ORG-MUN-20260902-001",
@@ -2262,19 +2504,28 @@
       "plant_type": "Unknown",
       "buying_center": {
         "owner_side.operations": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "俞工",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-001",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "合肥水务集团服务热线",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-003",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.IT": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "合肥水务集团办公室",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-002",
+          "source_type": "gov_website",
+          "verification_status": "verified"
         },
         "epc_side.project_manager": {
           "person": null,
@@ -2287,9 +2538,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 5,
-      "filled_count": 0
+      "completeness": 0.6,
+      "missing_count": 2,
+      "filled_count": 3
     },
     {
       "map_id": "ORG-MUN-20260902-002",
@@ -2307,9 +2558,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "合肥水务集团办公室",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-004",
+          "source_type": "gov_website",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2362,9 +2616,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.08,
+      "missing_count": 12,
+      "filled_count": 1
     },
     {
       "map_id": "ORG-MUN-20260902-003",
@@ -2372,19 +2626,28 @@
       "plant_type": "drinking_water",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "周冰馨",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-006",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.equipment_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "王兵",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-007",
+          "source_type": "registration_db",
+          "verification_status": "inferred"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "杨毛星",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-005",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2437,9 +2700,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.23,
+      "missing_count": 10,
+      "filled_count": 3
     },
     {
       "map_id": "ORG-MUN-20260911-004",
@@ -2447,9 +2710,12 @@
       "plant_type": "drinking_water",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "夹江县青衣水厂",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-009",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -2457,9 +2723,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "方创熙",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-008",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2512,9 +2781,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260902-005",
@@ -2522,24 +2791,36 @@
       "plant_type": "Unknown",
       "buying_center": {
         "owner_side.operations": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "陈樵",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-010",
+          "source_type": "news",
+          "verification_status": "inferred"
         },
         "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "许行志",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-012",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred"
         },
         "owner_side.IT": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "俞伟景",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-011",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred"
         },
         "epc_side.project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "程士珍",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-013",
+          "source_type": "company_disclosure",
+          "verification_status": "inferred"
         },
         "design_institute_side.engineer": {
           "person": null,
@@ -2547,9 +2828,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 5,
-      "filled_count": 0
+      "completeness": 0.8,
+      "missing_count": 1,
+      "filled_count": 4
     },
     {
       "map_id": "ORG-MUN-20260902-006",
@@ -2557,9 +2838,12 @@
       "plant_type": "drinking_water",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "陈鸿",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-015",
+          "source_type": "registration_db",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -2567,9 +2851,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "焦峰",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-014",
+          "source_type": "news",
+          "verification_status": "inferred"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2622,9 +2909,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260911-007",
@@ -2632,19 +2919,28 @@
       "plant_type": "wastewater",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "成都尚特项目管理有限公司（代理）",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-017",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.equipment_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "常彪（施工）/林忠军（设计）",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-018",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "成都市沄崃投资集团有限公司（招标人）",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-016",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2697,84 +2993,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
-    },
-    {
-      "map_id": "ORG-MUN-20260911-008",
-      "lead_id": "MUN-20260911-008",
-      "plant_type": "wastewater",
-      "buying_center": {
-        "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.equipment_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "owner_side.digitalization_IT": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "owner_side.instrument_asset_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "epc_side.epc_project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "epc_side.technical_lead": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "epc_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "design_institute_side.water_wastewater_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.automation_control_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "integrator_side.smart_water_integrator": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "integrator_side.automation_integrator": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        }
-      },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.23,
+      "missing_count": 10,
+      "filled_count": 3
     },
     {
       "map_id": "ORG-MUN-20260911-009",
@@ -2782,9 +3003,12 @@
       "plant_type": "wastewater",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "李强",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-020",
+          "source_type": "gov_website",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -2792,9 +3016,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "陈先生",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-019",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -2847,64 +3074,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
-    },
-    {
-      "map_id": "ORG-MUN-20260909-010",
-      "lead_id": "MUN-20260909-010",
-      "plant_type": "semiconductor_ultrapure_water",
-      "buying_center": {
-        "owner_side.facility_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.EHS": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.ultrapure_water_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "epc_side.epc_project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "epc_side.process_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.cleanroom_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.water_system_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "integrator_side.ultrapure_water_specialist": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        }
-      },
-      "completeness": 0,
-      "missing_count": 9,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260902-011",
@@ -2912,9 +3084,12 @@
       "plant_type": "Unknown",
       "buying_center": {
         "owner_side.operations": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "陈逸纳",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-021",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.procurement": {
           "person": null,
@@ -2937,119 +3112,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 5,
-      "filled_count": 0
-    },
-    {
-      "map_id": "ORG-MUN-20260902-012",
-      "lead_id": "MUN-20260902-012",
-      "plant_type": "semiconductor_ultrapure_water",
-      "buying_center": {
-        "owner_side.facility_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.EHS": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.ultrapure_water_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "epc_side.epc_project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "epc_side.process_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.cleanroom_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.water_system_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "integrator_side.ultrapure_water_specialist": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        }
-      },
-      "completeness": 0,
-      "missing_count": 9,
-      "filled_count": 0
-    },
-    {
-      "map_id": "ORG-MUN-20260907-013",
-      "lead_id": "MUN-20260907-013",
-      "plant_type": "semiconductor_ultrapure_water",
-      "buying_center": {
-        "owner_side.facility_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.EHS": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
-        },
-        "owner_side.ultrapure_water_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
-        },
-        "epc_side.epc_project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "epc_side.process_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.cleanroom_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "design_institute_side.water_system_engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        },
-        "integrator_side.ultrapure_water_specialist": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
-        }
-      },
-      "completeness": 0,
-      "missing_count": 9,
-      "filled_count": 0
+      "completeness": 0.2,
+      "missing_count": 4,
+      "filled_count": 1
     },
     {
       "map_id": "ORG-MUN-20260911-014",
@@ -3057,34 +3122,49 @@
       "plant_type": "Unknown",
       "buying_center": {
         "owner_side.operations": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "阳虎",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-022",
+          "source_type": "news",
+          "verification_status": "inferred"
         },
         "owner_side.procurement": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "王小军",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-024",
+          "source_type": "company_disclosure",
+          "verification_status": "verified"
         },
         "owner_side.IT": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "苏航",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-023",
+          "source_type": "news",
+          "verification_status": "inferred"
         },
         "epc_side.project_manager": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "付朝清",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-025",
+          "source_type": "company_disclosure",
+          "verification_status": "verified"
         },
         "design_institute_side.engineer": {
-          "person": null,
-          "status": "missing",
-          "priority": "C"
+          "person": "郭剑",
+          "status": "matched",
+          "priority": "C",
+          "contact_id": "CT-MUN-026",
+          "source_type": "company_disclosure",
+          "verification_status": "verified"
         }
       },
-      "completeness": 0,
-      "missing_count": 5,
-      "filled_count": 0
+      "completeness": 1.0,
+      "missing_count": 0,
+      "filled_count": 5
     },
     {
       "map_id": "ORG-MUN-20260909-015",
@@ -3092,9 +3172,12 @@
       "plant_type": "wastewater",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "兴宁市住房和城乡建设局",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-029",
+          "source_type": "gov_website",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -3102,9 +3185,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "欧阳勇辉",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-028",
+          "source_type": "gov_website",
+          "verification_status": "inferred"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -3157,9 +3243,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260902-016",
@@ -3167,19 +3253,28 @@
       "plant_type": "wastewater",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "李伏京",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-031",
+          "source_type": "company_disclosure",
+          "verification_status": "verified"
         },
         "owner_side.equipment_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "刘永政 / 秘勇",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-032",
+          "source_type": "company_disclosure",
+          "verification_status": "verified"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "黄绵松",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-030",
+          "source_type": "news",
+          "verification_status": "inferred"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -3232,9 +3327,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.23,
+      "missing_count": 10,
+      "filled_count": 3
     },
     {
       "map_id": "ORG-MUN-20260909-017",
@@ -3242,9 +3337,12 @@
       "plant_type": "drinking_water",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "孙主任 / 葛先生",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-034",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -3252,9 +3350,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "顾希贤",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-033",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -3307,9 +3408,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260907-018",
@@ -3317,9 +3418,12 @@
       "plant_type": "drinking_water",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "天津福松工程项目管理有限公司",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-036",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -3327,9 +3431,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "天津市辰裕农业农村发展有限公司",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-035",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -3382,9 +3489,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260902-019",
@@ -3392,9 +3499,12 @@
       "plant_type": "wastewater",
       "buying_center": {
         "owner_side.water_quality_management": {
-          "person": null,
-          "status": "missing",
-          "priority": "A"
+          "person": "宁波恒翔管理咨询有限公司（代理）",
+          "status": "matched",
+          "priority": "A",
+          "contact_id": "CT-MUN-038",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.equipment_management": {
           "person": null,
@@ -3402,9 +3512,12 @@
           "priority": "A"
         },
         "owner_side.operations_maintenance": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "鄞州区水利局（经办）",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-037",
+          "source_type": "official_announcement",
+          "verification_status": "verified"
         },
         "owner_side.digitalization_IT": {
           "person": null,
@@ -3457,9 +3570,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 13,
-      "filled_count": 0
+      "completeness": 0.15,
+      "missing_count": 11,
+      "filled_count": 2
     },
     {
       "map_id": "ORG-MUN-20260902-020",
@@ -3467,9 +3580,12 @@
       "plant_type": "Unknown",
       "buying_center": {
         "owner_side.operations": {
-          "person": null,
-          "status": "missing",
-          "priority": "B"
+          "person": "普安县水务一体化项目组（渠道查询）",
+          "status": "matched",
+          "priority": "B",
+          "contact_id": "CT-MUN-039",
+          "source_type": "official_announcement",
+          "verification_status": "inferred"
         },
         "owner_side.procurement": {
           "person": null,
@@ -3492,9 +3608,9 @@
           "priority": "C"
         }
       },
-      "completeness": 0,
-      "missing_count": 5,
-      "filled_count": 0
+      "completeness": 0.2,
+      "missing_count": 4,
+      "filled_count": 1
     }
   ],
   "missing_roles": [
@@ -3504,7 +3620,10 @@
       "role": "owner_side.operations",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-001",
+      "filled_person": "俞工",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-001",
@@ -3512,7 +3631,10 @@
       "role": "owner_side.procurement",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-003",
+      "filled_person": "合肥水务集团服务热线",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-001",
@@ -3520,7 +3642,10 @@
       "role": "owner_side.IT",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-002",
+      "filled_person": "合肥水务集团办公室",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-001",
@@ -3560,7 +3685,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-004",
+      "filled_person": "合肥水务集团办公室",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-002",
@@ -3648,7 +3776,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-006",
+      "filled_person": "周冰馨",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-003",
@@ -3656,7 +3787,10 @@
       "role": "owner_side.equipment_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-007",
+      "filled_person": "王兵",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-003",
@@ -3664,7 +3798,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-005",
+      "filled_person": "杨毛星",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-003",
@@ -3752,7 +3889,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-009",
+      "filled_person": "夹江县青衣水厂",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-004",
@@ -3768,7 +3908,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-008",
+      "filled_person": "方创熙",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-004",
@@ -3856,7 +3999,10 @@
       "role": "owner_side.operations",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-010",
+      "filled_person": "陈樵",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-005",
@@ -3864,7 +4010,10 @@
       "role": "owner_side.procurement",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-012",
+      "filled_person": "许行志",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-005",
@@ -3872,7 +4021,10 @@
       "role": "owner_side.IT",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-011",
+      "filled_person": "俞伟景",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-005",
@@ -3880,7 +4032,10 @@
       "role": "epc_side.project_manager",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-013",
+      "filled_person": "程士珍",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-005",
@@ -3896,7 +4051,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-015",
+      "filled_person": "陈鸿",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-006",
@@ -3912,7 +4070,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-014",
+      "filled_person": "焦峰",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-006",
@@ -4000,7 +4161,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-017",
+      "filled_person": "成都尚特项目管理有限公司（代理）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-007",
@@ -4008,7 +4172,10 @@
       "role": "owner_side.equipment_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-018",
+      "filled_person": "常彪（施工）/林忠军（设计）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-007",
@@ -4016,7 +4183,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-016",
+      "filled_person": "成都市沄崃投资集团有限公司（招标人）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-007",
@@ -4093,110 +4263,6 @@
     {
       "lead_id": "MUN-20260911-007",
       "map_id": "ORG-MUN-20260911-007",
-      "role": "integrator_side.automation_integrator",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.water_quality_management",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.equipment_management",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.operations_maintenance",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.digitalization_IT",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.procurement",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "owner_side.instrument_asset_management",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "epc_side.epc_project_manager",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "epc_side.technical_lead",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "epc_side.procurement",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "design_institute_side.water_wastewater_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "design_institute_side.automation_control_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
-      "role": "integrator_side.smart_water_integrator",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260911-008",
-      "map_id": "ORG-MUN-20260911-008",
       "role": "integrator_side.automation_integrator",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
@@ -4208,7 +4274,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-020",
+      "filled_person": "李强",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-009",
@@ -4224,7 +4293,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-019",
+      "filled_person": "陈先生",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-009",
@@ -4302,78 +4374,6 @@
       "lead_id": "MUN-20260911-009",
       "map_id": "ORG-MUN-20260911-009",
       "role": "integrator_side.automation_integrator",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "owner_side.facility_manager",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "owner_side.EHS",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "owner_side.ultrapure_water_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "owner_side.procurement",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "epc_side.epc_project_manager",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "epc_side.process_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "design_institute_side.cleanroom_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "design_institute_side.water_system_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260909-010",
-      "map_id": "ORG-MUN-20260909-010",
-      "role": "integrator_side.ultrapure_water_specialist",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
       "status": "not_started"
@@ -4384,7 +4384,10 @@
       "role": "owner_side.operations",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-021",
+      "filled_person": "陈逸纳",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-011",
@@ -4414,150 +4417,6 @@
       "lead_id": "MUN-20260902-011",
       "map_id": "ORG-MUN-20260902-011",
       "role": "design_institute_side.engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "owner_side.facility_manager",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "owner_side.EHS",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "owner_side.ultrapure_water_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "owner_side.procurement",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "epc_side.epc_project_manager",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "epc_side.process_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "design_institute_side.cleanroom_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "design_institute_side.water_system_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260902-012",
-      "map_id": "ORG-MUN-20260902-012",
-      "role": "integrator_side.ultrapure_water_specialist",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "owner_side.facility_manager",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "owner_side.EHS",
-      "priority": "A",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "owner_side.ultrapure_water_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "owner_side.procurement",
-      "priority": "B",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "epc_side.epc_project_manager",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "epc_side.process_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "design_institute_side.cleanroom_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "design_institute_side.water_system_engineer",
-      "priority": "C",
-      "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
-    },
-    {
-      "lead_id": "MUN-20260907-013",
-      "map_id": "ORG-MUN-20260907-013",
-      "role": "integrator_side.ultrapure_water_specialist",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
       "status": "not_started"
@@ -4568,7 +4427,10 @@
       "role": "owner_side.operations",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-022",
+      "filled_person": "阳虎",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-014",
@@ -4576,7 +4438,10 @@
       "role": "owner_side.procurement",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-024",
+      "filled_person": "王小军",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-014",
@@ -4584,7 +4449,10 @@
       "role": "owner_side.IT",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-023",
+      "filled_person": "苏航",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-014",
@@ -4592,7 +4460,10 @@
       "role": "epc_side.project_manager",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-025",
+      "filled_person": "付朝清",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260911-014",
@@ -4600,7 +4471,10 @@
       "role": "design_institute_side.engineer",
       "priority": "C",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-026",
+      "filled_person": "郭剑",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260909-015",
@@ -4608,7 +4482,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-029",
+      "filled_person": "兴宁市住房和城乡建设局",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260909-015",
@@ -4624,7 +4501,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-028",
+      "filled_person": "欧阳勇辉",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260909-015",
@@ -4712,7 +4592,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-031",
+      "filled_person": "李伏京",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-016",
@@ -4720,7 +4603,10 @@
       "role": "owner_side.equipment_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-032",
+      "filled_person": "刘永政 / 秘勇",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-016",
@@ -4728,7 +4614,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-030",
+      "filled_person": "黄绵松",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-016",
@@ -4816,7 +4705,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-034",
+      "filled_person": "孙主任 / 葛先生",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260909-017",
@@ -4832,7 +4724,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-033",
+      "filled_person": "顾希贤",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260909-017",
@@ -4920,7 +4815,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-036",
+      "filled_person": "天津福松工程项目管理有限公司",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260907-018",
@@ -4936,7 +4834,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-035",
+      "filled_person": "天津市辰裕农业农村发展有限公司",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260907-018",
@@ -5024,7 +4925,10 @@
       "role": "owner_side.water_quality_management",
       "priority": "A",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-038",
+      "filled_person": "宁波恒翔管理咨询有限公司（代理）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-019",
@@ -5040,7 +4944,10 @@
       "role": "owner_side.operations_maintenance",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-037",
+      "filled_person": "鄞州区水利局（经办）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-019",
@@ -5128,7 +5035,10 @@
       "role": "owner_side.operations",
       "priority": "B",
       "discovery_path": "websearch_company_website + recruitment_platforms + industry_directory",
-      "status": "not_started"
+      "status": "completed",
+      "filled_by": "CT-MUN-039",
+      "filled_person": "普安县水务一体化项目组（渠道查询）",
+      "completion_date": "2026-09-12"
     },
     {
       "lead_id": "MUN-20260902-020",
@@ -5164,36 +5074,36 @@
     }
   ],
   "agent_statistics": {
-    "total_leads": 20,
-    "total_projects": 20,
-    "total_accounts": 17,
-    "total_contacts": 0,
-    "total_organization_maps": 20,
-    "total_missing_roles": 208,
+    "total_leads": 16,
+    "total_projects": 16,
+    "total_accounts": 15,
+    "total_contacts": 39,
+    "total_organization_maps": 16,
+    "total_missing_roles": 168,
     "contacts_by_priority": {
-      "A": 0,
-      "B": 0,
-      "C": 0,
+      "A": 6,
+      "B": 26,
+      "C": 7,
       "D": 0
     },
-    "contacts_verified": 0,
-    "contacts_with_phone": 0,
-    "contacts_with_email": 0,
+    "contacts_verified": 20,
+    "contacts_with_phone": 19,
+    "contacts_with_email": 1,
     "cross_agent_confirmed": 0,
     "dedup_merged": 0,
-    "enrichment_rounds_completed": 0,
-    "last_enrichment_date": null,
-    "enrichment_coverage": "0%",
-    "leads_fully_enriched": 0,
-    "leads_partially_enriched": 0,
-    "leads_not_enriched": 20
+    "enrichment_rounds_completed": 1,
+    "last_enrichment_date": "2026-09-12",
+    "enrichment_coverage": "100%",
+    "leads_fully_enriched": 13,
+    "leads_partially_enriched": 3,
+    "leads_not_enriched": 0
   },
   "data_quality": {
-    "total_leads": 20,
-    "leads_with_project_link": 20,
+    "total_leads": 16,
+    "leads_with_project_link": 16,
     "leads_with_account_link": 6,
-    "leads_with_contacts": 0,
-    "leads_with_org_map": 20,
+    "leads_with_contacts": 16,
+    "leads_with_org_map": 16,
     "projects_with_investment": 7,
     "projects_with_design_scale": 3,
     "projects_with_smart_water": 16,
@@ -5202,12 +5112,12 @@
     "accounts_with_plant_count": 0,
     "accounts_with_digitalization_status": 6,
     "accounts_with_stock_code": 4,
-    "contacts_with_phone": 0,
-    "contacts_with_email": 0,
-    "contacts_verified": 0,
+    "contacts_with_phone": 19,
+    "contacts_with_email": 1,
+    "contacts_verified": 20,
     "org_maps_complete": 0,
     "org_maps_partial": 0,
-    "overall_completeness": "signal_level_only",
+    "overall_completeness": 0.49,
     "data_sources": [
       "daily_radar_reports (2026-09-02 to 2026-09-11)"
     ],
@@ -5227,7 +5137,13 @@
         "Find instrument procurement mode",
         "Check staffing/recruitment signals"
       ],
-      "status": "not_started"
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-001",
+        "CT-MUN-002",
+        "CT-MUN-003"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
     },
     {
       "action_id": "NBA-MUN-20260902-002",
@@ -5242,7 +5158,11 @@
         "Find instrument procurement mode",
         "Check staffing/recruitment signals"
       ],
-      "status": "not_started"
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-004"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
     },
     {
       "action_id": "NBA-MUN-20260902-003",
@@ -5257,7 +5177,13 @@
         "Find instrument procurement mode",
         "Check staffing/recruitment signals"
       ],
-      "status": "not_started"
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-005",
+        "CT-MUN-006",
+        "CT-MUN-007"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
     },
     {
       "action_id": "NBA-MUN-20260911-004",
@@ -5272,7 +5198,12 @@
         "Find instrument procurement mode",
         "Check staffing/recruitment signals"
       ],
-      "status": "not_started"
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-008",
+        "CT-MUN-009"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
     },
     {
       "action_id": "NBA-MUN-20260902-005",
@@ -5287,7 +5218,14 @@
         "Find instrument procurement mode",
         "Check staffing/recruitment signals"
       ],
-      "status": "not_started"
+      "status": "in_progress",
+      "contact_refs": [
+        "CT-MUN-010",
+        "CT-MUN-011",
+        "CT-MUN-012",
+        "CT-MUN-013"
+      ],
+      "note": "public contacts discovered 2026-09-12; internal verification pending"
     },
     {
       "action_id": "NBA-ACC-001",
@@ -5419,11 +5357,11 @@
       "priority": "P2",
       "use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics / Predictive Maintenance",
       "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 3,
+      "org_map_completeness": 0.6,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 2,
@@ -5433,11 +5371,11 @@
       "priority": "P2",
       "use_case": "Multi-site Management / Asset Management",
       "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_partial",
+      "contacts_count": 1,
+      "org_map_completeness": 0.08,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 3,
@@ -5447,11 +5385,11 @@
       "priority": "P2",
       "use_case": "Multi-site Management / Asset Management",
       "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 3,
+      "org_map_completeness": 0.23,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 4,
@@ -5461,11 +5399,11 @@
       "priority": "P2",
       "use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
       "time_window": "<3 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 5,
@@ -5475,11 +5413,11 @@
       "priority": "P2",
       "use_case": "Unknown",
       "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 4,
+      "org_map_completeness": 0.8,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 6,
@@ -5489,11 +5427,11 @@
       "priority": "P2",
       "use_case": "Multi-site Management / Instrument Monitoring",
       "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 7,
@@ -5503,193 +5441,137 @@
       "priority": "P2",
       "use_case": "Instrument Monitoring / Data Quality",
       "time_window": "<3 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 3,
+      "org_map_completeness": 0.23,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
       "rank": 8,
-      "lead_id": "MUN-20260911-008",
-      "name": "定远县盐化工业园工业污水处理厂提标改造项目(1.9亿EPC)",
-      "score": 68,
-      "priority": "P2",
-      "use_case": "Instrument Monitoring / Data Quality / Asset Management",
-      "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
-      "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
-    },
-    {
-      "rank": 9,
       "lead_id": "MUN-20260911-009",
       "name": "明溪县城区污水管网设施在线监测建设项目",
       "score": 67,
       "priority": "P2",
       "use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
       "time_window": "<3 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 10,
-      "lead_id": "MUN-20260909-010",
-      "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
-      "score": 66,
-      "priority": "P2",
-      "use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-      "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
-      "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
-    },
-    {
-      "rank": 11,
+      "rank": 9,
       "lead_id": "MUN-20260902-011",
       "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
       "score": 65,
       "priority": "P2",
       "use_case": "Asset Management / Multi-site Management / Instrument Health Diagnostics",
       "time_window": "12-18 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_partial",
+      "contacts_count": 1,
+      "org_map_completeness": 0.2,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 12,
-      "lead_id": "MUN-20260902-012",
-      "name": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
-      "score": 65,
-      "priority": "P2",
-      "use_case": "Instrument Monitoring / Predictive Maintenance / Lifecycle Management",
-      "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
-      "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
-    },
-    {
-      "rank": 13,
-      "lead_id": "MUN-20260907-013",
-      "name": "华虹半导体Fab9B扩建(时间线更新)",
-      "score": 65,
-      "priority": "P2",
-      "use_case": "Instrument Monitoring / Predictive Maintenance / Unknown",
-      "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
-      "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
-    },
-    {
-      "rank": 14,
+      "rank": 10,
       "lead_id": "MUN-20260911-014",
       "name": "重庆水务集团-新董事长+存量提质数字赋能战略转向",
       "score": 65,
       "priority": "P2",
       "use_case": "Multi-site Management / Asset Management / Digital Operations",
       "time_window": "6-18 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 6,
+      "org_map_completeness": 1.0,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 15,
+      "rank": 11,
       "lead_id": "MUN-20260909-015",
       "name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
       "score": 64,
       "priority": "P2",
       "use_case": "Instrument Monitoring / Digital Operations / Predictive Maintenance",
       "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 16,
+      "rank": 12,
       "lead_id": "MUN-20260902-016",
       "name": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢",
       "score": 63,
       "priority": "P2",
       "use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
       "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 3,
+      "org_map_completeness": 0.23,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 17,
+      "rank": 13,
       "lead_id": "MUN-20260909-017",
       "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
       "score": 63,
       "priority": "P2",
       "use_case": "Multi-site Management / Instrument Monitoring",
       "time_window": "3-6 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 18,
+      "rank": 14,
       "lead_id": "MUN-20260907-018",
       "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
       "score": 62,
       "priority": "P2",
       "use_case": "Multi-site Management / Unknown",
       "time_window": "<3 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 19,
+      "rank": 15,
       "lead_id": "MUN-20260902-019",
       "name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
       "score": 58,
       "priority": "P3",
       "use_case": "Instrument Health Diagnostics / Multi-site Management",
       "time_window": "<3 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_enriched",
+      "contacts_count": 2,
+      "org_map_completeness": 0.15,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     },
     {
-      "rank": 20,
+      "rank": 16,
       "lead_id": "MUN-20260902-020",
       "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
       "score": 52,
       "priority": "P3",
       "use_case": "Multi-site Management / Unknown",
       "time_window": "6-12 months",
-      "enrichment_status": "signal_only",
-      "contacts_count": 0,
-      "org_map_completeness": 0,
+      "enrichment_status": "contacts_partial",
+      "contacts_count": 1,
+      "org_map_completeness": 0.2,
       "company_agent_verified": false,
-      "reason": "Signal score-based ranking; enrichment pending"
+      "reason": "Signal score-based ranking; contact enrichment completed 2026-09-12"
     }
   ],
   "enrichment_history": [
@@ -5708,6 +5590,38 @@
         "intelligence/municipal/daily/2026-09-07.json",
         "intelligence/municipal/daily/2026-09-09.json",
         "intelligence/municipal/daily/2026-09-11.json"
+      ]
+    },
+    {
+      "round": 1,
+      "date": "2026-09-12",
+      "action": "contact_enrichment_municipal_only",
+      "description": "Contact enrichment for 16 municipal leads (39 contacts: A6/B26/C7, 20 verified, 19 with phone, 1 with email). Industrial content (4 leads: 3x Huahong semiconductor + Dingyuan salt-chemical WWTP; 2 accounts; 8 industrial intel items) removed per scope decision. 47 previously drafted contacts reduced by 8 industrial ones.",
+      "leads_processed": 16,
+      "contacts_added": 39,
+      "org_maps_created": 16,
+      "missing_roles_identified": 168,
+      "data_sources": [
+        "http://ggzy.hefei.gov.cn/jyxx/002013/002013001/20260703/de0c1fc6-7eb3-448f-9dc2-c91caa3d7227.html",
+        "https://www.hefei.gov.cn/zwgk/public/9941/109236620.html",
+        "https://www.hfwater.cn",
+        "http://ggzy.bengbu.gov.cn/jyxxgk/002001/002001015/002001015002/20260825/422a6bf5-6e0a-411d-8211-efb15aaf3c4f.html",
+        "https://seo.shuidi.cn/company-93528580f5233d07a4f8bbd2cb221a01.html",
+        "https://ggzyjy.sc.gov.cn",
+        "https://www.unitedwater.com.cn",
+        "https://www.xinhuanet.com",
+        "https://www.qcc.com",
+        "https://www.fjggzyjy.cn",
+        "https://www.fjmx.gov.cn",
+        "https://www.czs.gov.cn",
+        "https://www.cqwater.com",
+        "https://www.xingning.gov.cn",
+        "https://www.capitalwater.cn",
+        "https://www.ehall.jiangsu.gov.cn",
+        "https://ggzy.zwfwb.tj.gov.cn/jyxxzbgg/1769582.jhtml",
+        "https://ggzy.zj.gov.cn",
+        "https://www.ccgp.gov.cn",
+        "http://ztb.guizhou.gov.cn/trade/bulletin/?id=890198"
       ]
     }
   ],
@@ -5758,14 +5672,6 @@
       "facts": "国务院正式印发，明确要求系统推进供水、排水、污水、地下管网、防洪排涝、水环境综合治理、再生水规模化利用、污泥无害化处置及智慧水务建设等全链条升级任务。国家统筹中央预算内投资、超长期特别国债等多元资金渠道对管网、水环境治理等城市更新项目给予专项支持。构建'厂—网—河(湖)—岸—景'一体化治理体系。",
       "demand_type": "同时产生仪表需求和iMS需求",
       "ims_relevance": "中-高：全链条升级包含智慧水务建设，超长期特别国债提供资金支持。厂网一体化管理催生Multi-site Management需求。但政策到项目落地有时间差，需持续跟踪各地城市更新项目清单中的水务数字化内容。",
-      "first_seen": ""
-    },
-    {
-      "policy": "《工业园区污水集中处理设施水污染物排放标准制订技术导则》(HJ945.4-2026)",
-      "effective_date": "2026-ongoing",
-      "facts": "生态环境部与国家市场监督管理总局联合发布，要求依据园区类型实施分类管控，或按'一园一策'确定差异化排放管控要求。标志着工业园区污水处理排放管控从'一刀切'走向精细化分类管理。",
-      "demand_type": "主要产生仪表需求，间接产生iMS需求",
-      "ims_relevance": "中：'一园一策'差异化管控意味着不同园区在线监测参数和频率可能不同，增加仪表配置复杂度。iMS Data Quality和合规审计场景可能受益，但需等具体园区标准落地。",
       "first_seen": ""
     },
     {
@@ -5844,13 +5750,6 @@
       "first_seen": ""
     },
     {
-      "competitor": "艺康(Ecolab)/纳尔科(Nalco)",
-      "facts": "艺康收购Ovivo电子超纯水业务后，在半导体行业构建全流程水管理方案。3D TRASAR数字化工具覆盖水质管理/腐蚀控制/微生物防治/现场维护/水管理全生命周期服务。服务范围覆盖半导体工厂多环节：水资源回收/冷却水/废水处理/超纯水。",
-      "enters_ims_value_space": true,
-      "assessment": "艺康正在半导体行业构建'设备+化学品+数字化+全生命周期服务'闭环，与iMS在工业水管理领域有重叠。但艺康核心是水处理化学品+设备，iMS核心是仪表数据层。需关注3D TRASAR是否扩展到跨品牌仪表资产管理。",
-      "first_seen": ""
-    },
-    {
       "competitor": "北控水务(SED+Enki)",
       "facts": "北控水务发布四款数智化产品，其中污水运营管理系统(SED)已实现设备仪器数据实时感知、运维流程数字化、技术与经济指标线上化管控。污水行业垂类大模型Enki构建水务知识图谱+智能体，实现污水厂自适应调控。厂网协同平台打破单厂模式，实现厂+管网数据互通与AI联调。核心产品已在内部验证，正向行业推广。",
       "enters_ims_value_space": true,
@@ -5890,13 +5789,6 @@
     {
       "actor": "威派格-六张网机遇下从硬件到全生命周期管理转型",
       "role": "数字化公司/系统集成商",
-      "facts": "",
-      "ims_assessment": "",
-      "first_seen": ""
-    },
-    {
-      "actor": "高频科技-半导体超纯水全生命周期价值(含数字化运维平台)",
-      "role": "EPC/运维服务商",
       "facts": "",
       "ims_assessment": "",
       "first_seen": ""
@@ -5945,24 +5837,6 @@
       "first_seen": ""
     },
     {
-      "trigger": "AI算力驱动数据中心冷却水处理需求翻番",
-      "facts": "2026年全球数据中心冷却系统用水处理剂需求达19.6万吨，较2024年直接翻番。AI服务器功耗从300W向600W+跃升，液冷和蒸发冷却成为主流方案。",
-      "ims_relevance": "低-中：数据中心冷却水系统需要水质监控，但场景与iMS核心水务场景有差异。如Hach进入工业冷却水监测，可能形成新赛道。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "半导体超纯水材料国产替代2026年放量元年",
-      "facts": "行业一致认定2026年是国产超纯水材料全面放量元年。中芯国际/华虹/长鑫/长江存储等头部企业持续扩建产线，超纯水系统属于优先级最高的配套工程。",
-      "ims_relevance": "中：半导体扩产直接拉动超纯水系统建设，进而拉动在线仪表需求。但iMS在半导体场景适用性待验证。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "煤化工水处理超大型项目集中落地",
-      "facts": "国能准东煤制气污水处理项目总投资168亿元，中国天辰/中石化宁波工程拿下EPC，2025年3月开工，计划2027年投产。新疆伊吾工业园区废水回用项目14.97亿元，施工进度超80%。",
-      "ims_relevance": "低：煤化工废水处理偏EPC工程，iMS逻辑链断裂(废水处理工程不等于在线仪表监测管理)。",
-      "first_seen": ""
-    },
-    {
       "trigger": "AI预测性维护技术在设备管理系统渗透率达68.3%",
       "facts": "中国信通院2025Q4《工业设备智能运维白皮书》：2026Q1 AI预测性维护技术在设备管理系统中渗透率达68.3%，较2025年同期提升21.7个百分点。采用该技术的企业设备非计划停机时间平均缩短42.6%。",
       "ims_relevance": "中：预测性维护技术理念与iMS Predictive Maintenance use case一致，市场教育已成熟。但需区分通用设备预测性维护与仪表预测性维护。",
@@ -5981,39 +5855,9 @@
       "first_seen": ""
     },
     {
-      "trigger": "台积电全球近20座晶圆厂同步动工，建厂速度达过去4-5倍",
-      "facts": "2026年9月2日SEMICON Taiwan 2026，台积电高级副总裁侯永清披露全球近20座晶圆厂同步建设，建厂速度达过去4-5倍。2026年资本支出上修至600-640亿美元。设备采购量从基准1倍→1.5倍→1.9倍(仅3个季度)。AI驱动先进制程需求达过去30年未见规模。同期华虹宏力增资41.7亿美元扩产12英寸特色工艺产线。",
-      "ims_relevance": "中：半导体行业处于历史性扩产潮，超纯水系统作为'工业血液'属于优先级最高配套工程。每座晶圆厂需配置大量在线水质仪表(TOC/电导率/pH/溶解氧)。但iMS在半导体场景适用性仍待验证，需区分'仪表需求'与'iMS需求'。",
-      "first_seen": ""
-    },
-    {
       "trigger": "2026年智慧水务监测平台从单点试点走向全域落地",
       "facts": "政策层面明确要求地级及以上城市公共供水管网漏损率控制在9%以内，省级以上水务工程数字孪生覆盖率超过60%。智慧水务对流量计提出更高要求：不仅需要高精度计量，还需支持多通信协议、无缝对接SCADA系统、具备智能自诊断和远程校准功能。电磁流量计国产化率已超75%。",
       "ims_relevance": "中-高：政策驱动智慧水务从试点走向全域落地，仪表智能化(自诊断/远程校准)成为硬性要求。iMS作为仪表智能化管理的工具，市场教育正在加速。但国产流量计厂商已内嵌'AI抗干扰算法'和'智能自诊断'功能，可能部分替代iMS价值。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "2026年上半年中国半导体产业投资8002亿元(+72.4%)",
-      "facts": "CINNO Research统计2026年上半年中国(含台湾)半导体产业总投资额8002亿元，同比+72.4%。晶圆制造投资4527亿(占56.6%,+93.4%)，封测投资1373亿(+225.5%)，材料749亿(+38.9%)。长鑫科技申报科创板IPO募资295亿，75亿用于12英寸产线升级扩产。预计2026年中国12英寸晶圆月产能从150万片增至250万片+。",
-      "ims_relevance": "中-高：半导体扩产直接产生超纯水/废水处理在线监测需求。艺康(Ecolab)已在SEMICON Taiwan 2026展示完整半导体水管理方案。晶圆厂水系统仪表数量大、精度要求高。iMS在半导体行业Instrument Monitoring/Asset Management有潜在机会。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "艺康(Ecolab)收购Ovivo电子超纯水业务，展示半导体全流程水管理方案",
-      "facts": "艺康2025年12月以18亿美元收购Ovivo电子超纯水业务。SEMICON Taiwan 2026上艺康首次展示完整半导体水管理解决方案，覆盖超纯水生产/冷却水/废水处理/工艺冷却水。旗下纳尔科品牌3D TRASAR数字化工具落地水管理全生命周期服务。SEMICON预测2026全球半导体设备销售额1659亿美元(+23.2%)。",
-      "ims_relevance": "中：艺康在半导体水管理领域构建了'设备+数字化+全生命周期服务'闭环，与iMS价值空间有重叠。但艺康更偏水处理化学+设备端，iMS更偏仪表数据层。需关注艺康3D TRASAR是否进入仪表资产管理领域。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "数据中心液冷成为基础设施标配(2026液冷放量元年)",
-      "facts": "赛迪顾问数据2025年中国液冷数据中心市场规模159.8亿(+45.2%)。GB/T 48023-2026《数据中心冷板式液冷系统技术规范》2026年7月发布、2027年2月实施，覆盖冷板/CDU/冷却液/管路/监测报警。全国34省已明确PUE管控要求。液冷从'选项'变为'必答'，单机柜功率超20kW须采用液冷。",
-      "ims_relevance": "低-中：数据中心液冷系统需要冷却液水质监测(电导率/pH/溶解氧/微生物等)，但与iMS核心场景(水务/工业过程水)距离较远。Use Case偏Unknown。需关注是否有Hach数据中心冷却水客户。",
-      "first_seen": ""
-    },
-    {
-      "trigger": "中国药典2025版允许注射用水采用非蒸馏工艺(PAT全流程实时监控)",
-      "facts": "中国药典2025版允许注射用水采用RO+EDI等非蒸馏工艺制备，但要求通过过程分析技术(PAT)实现全流程实时监控。电导率/TOC/微生物等关键参数需在线连续监测。ATP生物发光法在线监测灵敏度提升至10 CFU/mL。",
-      "ims_relevance": "中：制药水系统在线监测需求明确提升，电导率/TOC在线仪表需求增加。但制药行业GMP合规体系与水务不同，iMS适用性需验证。如果Hach有制药行业TOC/电导率仪表装机，iMS可切入Instrument Monitoring/Data Quality。",
       "first_seen": ""
     }
   ]
