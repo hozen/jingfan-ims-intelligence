@@ -238,7 +238,11 @@
           "unit": "平顶山市自来水有限公司（母公司）",
           "role": "24小时供水服务热线（公司级入口）",
           "priority": "B",
-          "phone": "0375-****000",
+          "phone": [
+            {
+              "value": "0375-****000"
+            }
+          ],
           "source_url": "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml",
           "source_type": "gov_website",
           "verification_status": "verified",
