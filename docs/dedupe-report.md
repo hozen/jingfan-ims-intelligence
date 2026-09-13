@@ -2,7 +2,7 @@
 
 - **执行日期**：2026-09-13
 - **数据源**：`intelligence/industrial/enriched/indctx_latest.json`（合并前 177 leads / 275 contacts / 169 projects / 169 accounts，2,297,705B）
-- **数据结果**：176 条有效 lead（**144 active + 33 merged**，其中 1 条 transition 占位不计入销售列表）、275 contacts（6 组合并）、169 projects、169 accounts
+- **数据结果**：177 条有效 lead（**144 active + 33 merged**）、275 contacts（6 组合并）、169 projects、169 accounts；业务去重后每个真实客户机会在主列表中仅出现一次
 - **合并原则**：同一法人主体 + 同一项目/园区 + 相同处理规模/建设内容/招标标的 + 同一地点 => 同一销售机会；不允许只因日期不同而新建独立 lead。
 
 ---
