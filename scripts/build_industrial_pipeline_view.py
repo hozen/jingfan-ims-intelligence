@@ -91,6 +91,12 @@ def enriched_rows(segment, directory, patterns):
             signal["to_verify"] = (signal.get("next_validation_questions")
                                    if signal.get("next_validation_questions") is not None
                                    else signal.get("validation_questions"))
+        # A retained duplicate is useful provenance, but it must never be
+        # presented as a fresh P1/P2 sales opportunity.  Dumate explicitly
+        # records these in the sales summary; preserve the row and demote it.
+        if re.search(r"重复线索|重复/历史|已归档", str(signal.get("sales_summary") or "")):
+            signal["priority"] = "P3（重复／历史）"
+            signal["sales_status"] = "重复／历史记录：默认不建议重复跟进"
         linked_projects=[safe(projects[x]) for x in item.get("project_ids") or [] if x in projects]
         linked_accounts=[safe(accounts[x]) for x in item.get("account_ids") or [] if x in accounts]
         if not signal.get("location") and linked_projects:
@@ -109,7 +115,7 @@ def enriched_rows(segment, directory, patterns):
         for key in ("facts","inferences","unknowns"):
             if evidence.get(key) is not None and not isinstance(evidence[key],list): evidence[key]=[evidence[key]]
         category=municipal_category(signal) if segment=="municipal" else industrial_category(signal); date=item.get("last_updated") or item.get("first_seen") or stamp
-        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"ims_recommendation":safe(item.get("ims_recommendation") or {}),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
+        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"record_status":item.get("record_status","active"),"ims_recommendation":safe(item.get("ims_recommendation") or {}),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
     return rows
 
 def industrial_rows():
@@ -148,7 +154,9 @@ def industrial_rows():
             lead={"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("project") or signal.get("opportunity") or signal.get("trigger"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("trigger"),"signal_date":date,"evidence":[{"source_url":x,"evidence_summary":"工业雷达日报"} for x in signal.get("source_urls",[])]}}
             row={"segment":"industrial","category":industrial_category(signal),"date":date,"lead":lead,"enriched_record":{"original_signal":radar,"enrichment_status":"radar_daily"},"enriched_contacts":[],"history":[]}; rows.append(row); by_id[lead_id]=row
             if identity: known.append(identity)
-    return rows
+    # DoMate retains merged records for auditability. They are historical
+    # evidence rather than separate sales opportunities, so hide them here.
+    return [row for row in rows if (row.get("enriched_record") or {}).get("record_status") != "merged"]
 
 def normalize(value):
     return re.sub(r"[^\w\u4e00-\u9fff]", "", str(value or "")).lower()
