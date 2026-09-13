@@ -83,7 +83,8 @@ def enriched_rows(segment, directory, patterns):
         for key in ("customer_requirement", "customer_need", "current_solution",
                     "operational_pain_points", "pain_points", "sales_summary", "time_window_basis",
                     "validation_questions", "next_validation_questions", "demand_hypothesis", "demand_signals",
-                    "prior_attempts", "why_unresolved"):
+                    "prior_attempts", "why_unresolved", "estimated_time_window",
+                    "sales_insight_evidence"):
             if item.get(key) is not None:
                 signal[key] = safe(item[key])
         if not signal.get("to_verify"):
@@ -108,7 +109,7 @@ def enriched_rows(segment, directory, patterns):
         for key in ("facts","inferences","unknowns"):
             if evidence.get(key) is not None and not isinstance(evidence[key],list): evidence[key]=[evidence[key]]
         category=municipal_category(signal) if segment=="municipal" else industrial_category(signal); date=item.get("last_updated") or item.get("first_seen") or stamp
-        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
+        rows.append({"segment":segment,"category":category,"date":date,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"ims_recommendation":safe(item.get("ims_recommendation") or {}),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":contacts_for(item,contacts),"history":history.get(lead_id,[])})
     return rows
 
 def industrial_rows():
