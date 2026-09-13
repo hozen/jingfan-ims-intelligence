@@ -1,0 +1,180 @@
+{
+ "module": "industrial_icp_low_triage",
+ "description": "LOW分流并入ICP: EPC硬件/已投产/已开工/服务采购类, 水相关但非iMS软件场景或窗口已过, 作生命周期/渠道底账",
+ "triage_at": "2026-09-13",
+ "count": 9,
+ "entries": [
+  {
+   "lead_id": "WB-1-Yaomeng",
+   "company": "平顶山姚孟发电",
+   "industry": "power_generation",
+   "opportunity": "全厂工业废水处理EPC",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "全厂工业废水处理EPC: EPC硬件机会, 水相关但非iMS软件场景, 并入ICP",
+   "source_urls": []
+  },
+  {
+   "lead_id": "WB-4-Changyang",
+   "company": "长阳清江水务",
+   "industry": "industrial_wastewater",
+   "opportunity": "工业污水处理EPC",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "工业污水处理EPC: EPC硬件机会, 并入ICP",
+   "source_urls": []
+  },
+  {
+   "lead_id": "WB-5-Xinxiang",
+   "company": "新乡凤泉湖污水处理",
+   "industry": "industrial_wastewater",
+   "opportunity": "10000t/d工业污水EPC",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "10000t/d工业污水EPC: EPC硬件机会, 并入ICP",
+   "source_urls": []
+  },
+  {
+   "lead_id": "IND-20260817-012",
+   "company": null,
+   "industry": "other",
+   "opportunity": "第二污水处理厂EPC项目 (2.07亿，暂停中)",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "第二污水处理厂EPC(2.07亿, 暂停中): EPC硬件机会, 非iMS软件场景, 并入ICP作生命周期底账",
+   "source_urls": []
+  },
+  {
+   "lead_id": "IND-20260908-010",
+   "company": "铜陵化工园区污水厂自行监测",
+   "industry": "chemical",
+   "opportunity": "第三方检测服务招标",
+   "investment": {
+    "amount": 14.76,
+    "unit": "万元",
+    "amount_cny": 147600.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "第三方检测服务招标(14.76万): 服务采购类, 非iMS客户机会, 并入ICP作渠道/替代情报",
+   "source_urls": [
+    "https://ggzyjyzx.tl.gov.cn/jyxx/003006/003006001/20260901/c0af063d-e0c4-4534-bc11-f55c7930040c.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260908-011",
+   "company": "菲达环保废水系统采购",
+   "industry": "other",
+   "opportunity": "设备采购",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "废水系统设备采购类: 招标窗口即将关闭, 并入ICP作硬件采购底账",
+   "source_urls": [
+    "https://zhejiang.okcis.cn/oeQ4xRe84WJ.bn"
+   ]
+  },
+  {
+   "lead_id": "IND-20260912-009",
+   "company": "湖北祥云(集团)化工股份有限公司",
+   "industry": "chemical",
+   "opportunity": "40万吨/年湿法净化磷酸二期项目(2026年5月开工,计划年内建成)",
+   "investment": {
+    "amount": 19.3,
+    "unit": "亿元",
+    "amount_cny": 1930000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "已开工(2026-05开工,年内建成): 采购窗口已过, 并入ICP作生命周期底账",
+   "source_urls": [
+    "https://www.sohu.com/a/1073156341_121856153"
+   ]
+  },
+  {
+   "lead_id": "IND-20260819-010",
+   "company": "杰瑞再生循环(重庆)",
+   "industry": "battery",
+   "opportunity": "重庆锂电资源化循环利用场站投产",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "已投产运营(2026-07-31投产): 采购窗口已过, 并入ICP作Installed Base底账",
+   "source_urls": [
+    "https://www.163.com/dy/article/L4I8JC9N0556MZCZ.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260821-014",
+   "company": "中航锂电（洛阳）",
+   "industry": "battery",
+   "opportunity": "中航锂电洛阳3.5GWh产线投用——电池模组生产线满产",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "icp",
+   "triage_at": "2026-09-13",
+   "reason": "已投运满产(2026-06投用): 采购窗口已过, 并入ICP作Installed Base底账",
+   "source_urls": [
+    "https://libattery.ofweek.com/tag-2019年.HTM"
+   ]
+  }
+ ]
+}

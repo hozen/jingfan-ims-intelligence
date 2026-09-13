@@ -1,0 +1,391 @@
+{
+ "module": "industrial_background_monitoring",
+ "description": "背景监测池: 环评/CapEx类弱相关信号, 供定期重访观察(窗口临近或水系统证据出现时升级回雷达)",
+ "triage_at": "2026-09-13",
+ "count": 19,
+ "entries": [
+  {
+   "lead_id": "IND-20260818-012",
+   "company": "惠州市贝特瑞新材料",
+   "industry": "new_energy_battery",
+   "opportunity": "贝特瑞新材料建设项目环评受理(2026-08-14)",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评受理阶段, 无水系统与软件证据, 降为背景监测",
+   "source_urls": [
+    "https://shj.huizhou.gov.cn/"
+   ]
+  },
+  {
+   "lead_id": "IND-20260817-007",
+   "company": null,
+   "industry": "pharma",
+   "opportunity": "芦荟大黄素+双醋瑞因原料药项目环评 (8500万投资)",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Industry Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评级信号且原始 facts=0/无来源, 无法验证, 降为背景监测待验证",
+   "source_urls": []
+  },
+  {
+   "lead_id": "IND-20260831-007",
+   "company": "四川省盈达锂电新材料有限公司",
+   "industry": "battery",
+   "opportunity": "5万吨磷酸盐正极材料扩建项目环评公示——依托现有外排水处理系统",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "扩建环评, 依托现有外排水处理系统, 无新增水系统, 降为背景监测",
+   "source_urls": [
+    "https://ssthjj.suining.gov.cn/zwgk/show/d92b854de9fb7429cc065e73601a70b3.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260831-010",
+   "company": "万华化学(600309.SH)/万华(滨州)新能源",
+   "industry": "battery",
+   "opportunity": "万华绿电产业园40万吨磷酸铁锂项目——CapEx信号无Direct Water Evidence",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "CapEx信号且项目自身标注\"无Direct Water Evidence\", 降为背景监测",
+   "source_urls": [
+    "http://www.zhanhua.gov.cn/art/2026/8/21/art_258292_10441324.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260825-011",
+   "company": "茂名创能烯碳科技",
+   "industry": "battery",
+   "opportunity": "5万吨液晶高碳材料+钠电池/锂电池负极材料项目环评公示",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评公示阶段(负极材料), 无监测软件证据, 降为背景监测",
+   "source_urls": [
+    "https://maoming.okcis.cn/qcgz20260822080002184512.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260901-003",
+   "company": "贵安新区凯金新能源科技有限公司（广东凯金新能源全资子公司）",
+   "industry": "battery",
+   "opportunity": "年产20万吨高端锂电池负极材料项目第三次环评公示——35.5亿投资，项目距落地越来越近",
+   "investment": {
+    "amount": 355490.0,
+    "unit": "万元",
+    "amount_cny": 3554900000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "第三次环评公示(35.5亿负极材料), 水系统未明确, 2026Q4-2027批复, 降为背景监测",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1875030811588555181&wfr=spider&for=pc"
+   ]
+  },
+  {
+   "lead_id": "IND-20260902-004",
+   "company": "立鼎材料科技(四川)有限公司(中创新航全资子公司)",
+   "industry": "锂电池正极材料（磷酸铁锂）制造",
+   "opportunity": "年产30万吨磷酸铁锂材料项目",
+   "investment": {
+    "amount": 100.0,
+    "unit": "亿元",
+    "amount_cny": 10000000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评/设计阶段(30万吨磷酸铁锂), 纯水/污水站采购窗口2027年, 当前无软件证据, 降为背景监测(窗口临近再升级)",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1874920244125441110&wfr=spider&for=pc",
+    "https://finance.sina.cn/2026-08-30/detail-iniqakft2885484.d.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260902-005",
+   "company": "郑州半导体硅片企业(建设单位待确认)",
+   "industry": "semiconductor",
+   "opportunity": "年产360万片8英寸半导体特色硅抛光片项目",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "项目事实部分确认但建设单位待确认, 无法建立客户关系, 降为背景监测",
+   "source_urls": [
+    "https://zzggzy.zhengzhou.gov.cn/jsgc/004004/20260828/f04d285c-cbc1-417c-8b66-424570356cb6.html"
+   ]
+  },
+  {
+   "lead_id": "IND-20260902-012",
+   "company": "力合厚浦科技有限公司",
+   "industry": "battery",
+   "opportunity": "锂电池材料循环利用项目(50亿)",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "CapEx级(50亿循环利用), 无项目级水系统证据, 降为背景监测",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1874920244125441110&wfr=spider&for=pc"
+   ]
+  },
+  {
+   "lead_id": "IND-20260908-004",
+   "company": "金溪斯普瑞药业有限公司",
+   "industry": "pharma",
+   "opportunity": "环评公示稿阶段, 12种精细化工产品改扩建",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评公示稿阶段(精细化工改扩建), 无监测软件证据, 降为背景监测",
+   "source_urls": [
+    "https://max.book118.com/html/2026/0829/8114132112010122.shtm"
+   ]
+  },
+  {
+   "lead_id": "IND-20260912-004",
+   "company": "湖北兴友新能源科技有限公司(兴发集团)",
+   "industry": "battery",
+   "opportunity": "年产20万吨电池级超高压实型磷酸铁锂材料项目(一期)含污水处理设施",
+   "investment": {
+    "amount": 5.06,
+    "unit": "亿元",
+    "amount_cny": 505999999.99999994,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "第一次环评公示(2026-09), 预计2027批复建设, 降为背景监测",
+   "source_urls": [
+    "http://finance.sina.com.cn/roll/2026-09-10/doc-iniritau7705225.shtml"
+   ]
+  },
+  {
+   "lead_id": "IND-20260814-006",
+   "company": "当卓(衢州)电池科技有限公司",
+   "industry": "battery",
+   "opportunity": "年产60GWh新型电池项目，环评报告表审查公告",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评阶段(60GWh电池项目环评审查), 水系统与软件证据未建立, 降为背景监测",
+   "source_urls": [
+    "https://stjj.qz.gov.cn/"
+   ]
+  },
+  {
+   "lead_id": "IND-20260814-008",
+   "company": "格林美(无锡)能源材料有限公司",
+   "industry": "battery",
+   "opportunity": "扩建2.5万吨/年超比能正极材料，第三次环评公示",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "扩建环评三次公示中, 依托现有厂区, 无新增水系统证据, 降为背景监测",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1871493580702226610"
+   ]
+  },
+  {
+   "lead_id": "IND-20260819-003",
+   "company": "天赐材料(台州)有限公司",
+   "industry": "battery",
+   "opportunity": "年产16万吨高压实磷酸铁锂项目 - 环评一次公示",
+   "investment": {
+    "amount": 21.0,
+    "unit": "亿元",
+    "amount_cny": 2100000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评一次公示阶段(16万吨磷酸铁锂), 水系统未明确, 降为背景监测",
+   "source_urls": [
+    "http://finance.sina.com.cn/roll/2026-08-14/doc-ininhnxk4157354.shtml",
+    "https://baijiahao.baidu.com/s?id=1873486662928868295&wfr=spider&for=pc",
+    "https://news.smm.cn/news/104063222"
+   ]
+  },
+  {
+   "lead_id": "IND-20260819-007",
+   "company": "云南云聚能新材料有限公司",
+   "industry": "battery",
+   "opportunity": "20万吨/年高性能磷酸铁电池新材料前驱体项目 - 环评公示",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评报批前公示阶段, 水系统未明确, 降为背景监测",
+   "source_urls": [
+    "http://www.kman.gov.cn/c/2026-08-17/7170372.shtml"
+   ]
+  },
+  {
+   "lead_id": "IND-20260819-009",
+   "company": "通辽市朔方循能环保有限公司",
+   "industry": "battery",
+   "opportunity": "3万吨废旧锂电池回收再利用项目 - 环评一次公示",
+   "investment": {
+    "amount": 1.0,
+    "unit": "亿元",
+    "amount_cny": 100000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "环评一次公示早期(回收项目), 预计2027建设, 降为背景监测",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1873486660589089418&wfr=spider&for=pc"
+   ]
+  },
+  {
+   "lead_id": "IND-20260820-001",
+   "company": "SK海力士(SK Hynix)",
+   "industry": "semiconductor",
+   "opportunity": "SK海力士重启大连NAND二期工厂建设 - 产能扩大50%",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "CapEx级信号(产能+50%), 无项目级水系统证据, 降为背景监测(与IND-20260818-005区分)",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1873230710196102941&wfr=spider&for=pc"
+   ]
+  },
+  {
+   "lead_id": "IND-20260821-007",
+   "company": "石大胜华（东营）",
+   "industry": "battery",
+   "opportunity": "石大胜华28亿锂电材料扩产——液态锂盐/电解液/添加剂项目废水处理需求",
+   "investment": {
+    "amount": 28.05,
+    "unit": "亿元",
+    "amount_cny": 2805000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Strong Engineering Inference",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "CapEx扩产(28亿), 含废水处理需求表述但无项目级监测证据, 降为背景监测",
+   "source_urls": [
+    "https://baijiahao.baidu.com/s?id=1872641104959943377",
+    "https://baijiahao.baidu.com/s?id=1873959288413571435",
+    "https://www.cnr.cn/jingji/ycbd/20260803/t20260803_527745440.shtml"
+   ]
+  },
+  {
+   "lead_id": "IND-20260821-008",
+   "company": "新乡华康制药",
+   "industry": "pharma",
+   "opportunity": "华康制药原料药技改项目环评公示——产能扩大3倍，依托现有3500m³/d污水处理站",
+   "investment": {
+    "amount": 300.0,
+    "unit": "万元",
+    "amount_cny": 3000000.0,
+    "note": "提取自公开文本"
+   },
+   "water_relevance": "Direct Evidence",
+   "ims_relevance": "LOW",
+   "triage_category": "background_monitoring",
+   "triage_at": "2026-09-13",
+   "reason": "技改环评, 依托现有3500m3/d污水站(投资仅300万), 无新增水系统, 降为背景监测",
+   "source_urls": [
+    "http://sthjj.xinxiang.gov.cn/zwgk/public/6638717/9705185.html"
+   ]
+  }
+ ]
+}
