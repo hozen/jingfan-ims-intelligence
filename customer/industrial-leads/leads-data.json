@@ -4,6 +4,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "WB-6-Xiaogan",
         "company": {
@@ -629,6 +634,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "WB-5-Xinxiang",
         "company": {
@@ -1354,6 +1364,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "WB-4-Changyang",
         "company": {
@@ -2028,6 +2043,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "WB-1-Yaomeng",
         "company": {
@@ -2628,6 +2648,13 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 1,
+      "quality_missing": [
+        "项目与地区",
+        "阶段与时间窗口",
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "IND-20260817-012",
         "company": {
@@ -2849,6 +2876,13 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-13T10:30:00+08:00",
+      "quality_score": 1,
+      "quality_missing": [
+        "项目与地区",
+        "阶段与时间窗口",
+        "需求与现状",
+        "公开证据"
+      ],
       "lead": {
         "lead_id": "IND-20260817-007",
         "company": {
@@ -3029,6 +3063,8 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260911-021",
         "company": {
@@ -3370,6 +3406,8 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260911-014",
         "company": {
@@ -3675,6 +3713,8 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260911-009",
         "company": {
@@ -3878,6 +3918,8 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260911-007",
         "company": {
@@ -4128,6 +4170,8 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260911-004",
         "company": {
@@ -4348,6 +4392,8 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260909-017",
         "company": {
@@ -4564,6 +4610,8 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260909-015",
         "company": {
@@ -4776,6 +4824,8 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260907-018",
         "company": {
@@ -5013,6 +5063,8 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-020",
         "company": {
@@ -5205,6 +5257,8 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-019",
         "company": {
@@ -5416,6 +5470,8 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-016",
         "company": {
@@ -5663,6 +5719,8 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-011",
         "company": {
@@ -5888,6 +5946,8 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-006",
         "company": {
@@ -6139,6 +6199,8 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-005",
         "company": {
@@ -6423,6 +6485,8 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-003",
         "company": {
@@ -6700,6 +6764,8 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-002",
         "company": {
@@ -6924,6 +6990,8 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-12",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "MUN-20260902-001",
         "company": {
@@ -7239,6 +7307,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-010",
         "company": {
@@ -7437,6 +7509,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-009",
         "company": {
@@ -7630,6 +7706,10 @@
       "segment": "industrial",
       "category": "冶金／钢铁",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-008",
         "company": {
@@ -7829,6 +7909,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-007",
         "company": {
@@ -8034,6 +8118,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-006",
         "company": {
@@ -8255,6 +8343,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-005",
         "company": {
@@ -8467,6 +8559,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-004",
         "company": {
@@ -8670,6 +8766,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-002",
         "company": {
@@ -8924,6 +9024,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-12",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260912-001",
         "company": {
@@ -9134,6 +9238,11 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-11",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260911-002",
         "company": {
@@ -9297,6 +9406,11 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-11",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260911-001",
         "company": {
@@ -9464,6 +9578,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-007",
         "company": {
@@ -9691,6 +9809,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-006",
         "company": {
@@ -9943,6 +10065,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-005",
         "company": {
@@ -10172,6 +10298,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-004",
         "company": {
@@ -10385,6 +10515,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-003",
         "company": {
@@ -10625,6 +10759,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-002",
         "company": {
@@ -10840,6 +10978,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260910-001",
         "company": {
@@ -11066,6 +11208,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-005",
         "company": {
@@ -11266,6 +11412,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-003",
         "company": {
@@ -11474,6 +11624,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "阶段与时间窗口"
+      ],
       "lead": {
         "lead_id": "IND-20260908-002",
         "company": {
@@ -11734,6 +11888,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-10",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-001",
         "company": {
@@ -11970,6 +12128,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-011",
         "company": {
@@ -12156,6 +12319,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-010",
         "company": {
@@ -12337,6 +12505,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-009",
         "company": {
@@ -12533,6 +12706,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-008",
         "company": {
@@ -12719,6 +12897,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-007",
         "company": {
@@ -12929,6 +13112,11 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-006",
         "company": {
@@ -13172,6 +13360,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-08",
+      "quality_score": 3,
+      "quality_missing": [
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260908-004",
         "company": {
@@ -13358,6 +13551,11 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-02",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-012",
         "company": {
@@ -13536,6 +13734,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-02",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260902-011",
         "company": {
@@ -13776,6 +13976,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260902-010",
         "company": {
@@ -14026,6 +14228,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-008",
         "company": {
@@ -14240,6 +14446,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-007",
         "company": {
@@ -14434,6 +14644,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-006",
         "company": {
@@ -14642,6 +14856,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-005",
         "company": {
@@ -14849,6 +15067,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260902-004",
         "company": {
@@ -15069,6 +15291,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260902-003",
         "company": {
@@ -15337,6 +15561,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-02",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260902-002",
         "company": {
@@ -15591,6 +15817,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-02",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260902-001",
         "company": {
@@ -15868,6 +16096,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-007",
         "company": {
@@ -16104,6 +16336,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-02",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-002",
         "company": {
@@ -16567,12 +16803,20 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
       ]
     },
     {
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-010",
         "company": {
@@ -16793,6 +17037,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-009",
         "company": {
@@ -17014,6 +17262,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-008",
         "company": {
@@ -17240,6 +17492,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-006",
         "company": {
@@ -17435,6 +17691,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-005",
         "company": {
@@ -17636,6 +17896,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-004",
         "company": {
@@ -17830,6 +18094,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-003",
         "company": {
@@ -18035,6 +18303,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-002",
         "company": {
@@ -18228,6 +18500,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260901-001",
         "company": {
@@ -18472,6 +18748,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-004",
         "company": {
@@ -18747,6 +19027,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-01",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-001",
         "company": {
@@ -18992,6 +19276,11 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-31",
+      "quality_score": 3,
+      "quality_missing": [
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-011",
         "company": {
@@ -19192,6 +19481,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-31",
+      "quality_score": 2,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-010",
         "company": {
@@ -19367,6 +19662,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-31",
+      "quality_score": 3,
+      "quality_missing": [
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-009",
         "company": {
@@ -19554,6 +19854,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 3,
+      "quality_missing": [
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-008",
         "company": {
@@ -19752,6 +20057,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-31",
+      "quality_score": 2,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-007",
         "company": {
@@ -19927,6 +20238,12 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-31",
+      "quality_score": 2,
+      "quality_missing": [
+        "需求与现状",
+        "公开证据",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-006",
         "company": {
@@ -20102,6 +20419,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-005",
         "company": {
@@ -20349,6 +20670,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-004",
         "company": {
@@ -20558,6 +20883,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-003",
         "company": {
@@ -20766,6 +21095,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-002",
         "company": {
@@ -20998,6 +21331,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260831-001",
         "company": {
@@ -21246,6 +21583,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-014",
         "company": {
@@ -21467,6 +21808,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-013",
         "company": {
@@ -21697,6 +22042,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-012",
         "company": {
@@ -21941,6 +22290,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-011",
         "company": {
@@ -22137,6 +22490,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-010",
         "company": {
@@ -22335,6 +22692,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-009",
         "company": {
@@ -22550,6 +22911,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-008",
         "company": {
@@ -22984,6 +23349,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-007",
         "company": {
@@ -23190,6 +23559,10 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-006",
         "company": {
@@ -23395,6 +23768,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-005",
         "company": {
@@ -23620,6 +23997,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-31",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260825-003",
         "company": {
@@ -23839,6 +24220,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-25",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260824-006",
         "company": {
@@ -24392,6 +24775,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-25",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260824-005",
         "company": {
@@ -24674,6 +25059,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-25",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260824-004",
         "company": {
@@ -24986,6 +25373,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-22",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-005",
         "company": {
@@ -25428,6 +25817,8 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-22",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260817-013",
         "company": {
@@ -25795,6 +26186,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-22",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260817-008",
         "company": {
@@ -26071,6 +26464,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-22",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260817-006",
         "company": {
@@ -26450,6 +26845,11 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-08-21",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260821-002",
         "company": {
@@ -26630,6 +27030,11 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-21",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260821-001",
         "company": {
@@ -26847,6 +27252,11 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-08-21",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260820-001",
         "company": {
@@ -27035,6 +27445,11 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-21",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260810-003",
         "company": {
@@ -27454,6 +27869,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -27653,6 +28072,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -27851,6 +28274,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -28044,6 +28471,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -28240,6 +28671,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -28439,6 +28874,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -28662,6 +29101,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -28867,6 +29310,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -29071,6 +29518,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -29275,6 +29726,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -29492,6 +29947,10 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
@@ -29719,12 +30178,21 @@
           "file": "indctx_latest_jd_2026-09-13.json",
           "date": "2026-09-13T10:30:00+08:00"
         }
+      ],
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
       ]
     },
     {
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-08-20",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260820-003",
         "company": {
@@ -29939,6 +30407,11 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-08-20",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260820-002",
         "company": {
@@ -30118,6 +30591,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-20",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
       "lead": {
         "lead_id": "IND-20260820-12",
         "company": {
@@ -30554,6 +31031,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-11",
         "company": {
@@ -30912,6 +31391,10 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-20",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
       "lead": {
         "lead_id": "IND-20260820-09",
         "company": {
@@ -31250,6 +31733,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-08",
         "company": {
@@ -31579,6 +32064,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-07",
         "company": {
@@ -31976,6 +32463,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-06",
         "company": {
@@ -32468,6 +32957,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-05",
         "company": {
@@ -32846,6 +33337,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-20",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260820-04",
         "company": {
@@ -33249,6 +33742,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-20",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260820-03",
         "company": {
@@ -33506,6 +34003,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-20",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260820-001",
         "company": {
@@ -33699,6 +34200,10 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260819-002",
         "company": {
@@ -33886,6 +34391,10 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260819-001",
         "company": {
@@ -34067,6 +34576,10 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260817-001",
         "company": {
@@ -34289,6 +34802,10 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260812-001",
         "company": {
@@ -34501,6 +35018,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
       "lead": {
         "lead_id": "IND-20260819-011",
         "company": {
@@ -35959,6 +36480,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-010",
         "company": {
@@ -36666,6 +37189,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-009",
         "company": {
@@ -36976,6 +37501,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-008",
         "company": {
@@ -37437,6 +37964,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-007",
         "company": {
@@ -38049,6 +38578,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-006",
         "company": {
@@ -38811,6 +39342,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-004",
         "company": {
@@ -39274,6 +39807,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260819-003",
         "company": {
@@ -39616,6 +40151,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260819-002",
         "company": {
@@ -39927,6 +40466,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260817-005",
         "company": {
@@ -40316,6 +40857,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260817-004",
         "company": {
@@ -40512,6 +41057,10 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260817-003",
         "company": {
@@ -40745,6 +41294,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260817-002",
         "company": {
@@ -41149,6 +41700,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-010",
         "company": {
@@ -41541,6 +42094,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-009",
         "company": {
@@ -41882,6 +42437,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-008",
         "company": {
@@ -42224,6 +42781,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260814-007",
         "company": {
@@ -42415,6 +42976,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-006",
         "company": {
@@ -42777,6 +43340,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-005",
         "company": {
@@ -43209,6 +43774,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-004",
         "company": {
@@ -43615,6 +44182,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260814-003",
         "company": {
@@ -43809,6 +44380,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260814-002",
         "company": {
@@ -44434,6 +45007,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-19",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260814-001",
         "company": {
@@ -44691,6 +45268,10 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260817-002",
         "company": {
@@ -44916,6 +45497,10 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260813-001",
         "company": {
@@ -45186,6 +45771,10 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260812-002",
         "company": {
@@ -45436,6 +46025,10 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260811-001",
         "company": {
@@ -45663,6 +46256,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-012",
         "company": {
@@ -46542,6 +47137,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-011",
         "company": {
@@ -47679,6 +48276,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-010",
         "company": {
@@ -48336,6 +48935,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
       "lead": {
         "lead_id": "IND-20260818-009",
         "company": {
@@ -48921,6 +49524,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-008",
         "company": {
@@ -50876,6 +51481,10 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
       "lead": {
         "lead_id": "IND-20260818-007",
         "company": {
@@ -51639,6 +52248,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-006",
         "company": {
@@ -52465,6 +53076,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 5,
+      "quality_missing": [],
       "lead": {
         "lead_id": "IND-20260818-005",
         "company": {
@@ -53497,6 +54110,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260818-004",
         "company": {
@@ -53717,6 +54334,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260818-003",
         "company": {
@@ -53938,6 +54559,10 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-18",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260818-001",
         "company": {
@@ -54483,6 +55108,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-08-17",
+      "quality_score": 3,
+      "quality_missing": [
+        "项目与地区",
+        "阶段与时间窗口"
+      ],
       "lead": {
         "lead_id": "IND-20260817-001",
         "company": {
@@ -54875,6 +55505,10 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-14",
+      "quality_score": 4,
+      "quality_missing": [
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260812-003",
         "company": {
@@ -55077,6 +55711,12 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-08-10",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260810-002",
         "company": {
@@ -55256,6 +55896,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-08-10",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "阶段与时间窗口",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-20260810-001",
         "company": {
