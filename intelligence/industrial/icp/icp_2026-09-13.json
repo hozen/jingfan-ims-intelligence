@@ -1,0 +1,174 @@
+{
+ "module": "industrial_icp",
+ "description": "客户ICP底账: 已定标/已过窗招标线索, 供 Installed Base / Lifecycle 机会复访",
+ "generated_at": "2026-09-13",
+ "count": 8,
+ "entries": [
+  {
+   "lead_id": "IND-20260831-001",
+   "company": "杭州临江高新技术产业开发区新材料产业园",
+   "industry": "化工园区（新材料产业园配套，服务50余家化工企业）",
+   "opportunity": "新材料产业园配套工业化工污水处理厂设备及安装项目——9万t/d近期，12万t/d远期，3.49亿中标",
+   "investment": {
+    "amount": 16.24,
+    "unit": "亿元",
+    "context": "16.24亿",
+    "amount_cny": 1623999999.9999998
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "设备及安装已中标(2026-08-21, 中建八局3.49亿), 施工阶段, 采购窗已关闭",
+   "source_urls": [
+    "http://www.sohu.com/a/1067548077_121123737"
+   ],
+   "original_lead_id": "IND-20260831-001",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260825-005",
+   "company": "霍尔果斯兵团分区/新疆宏远建设集团",
+   "industry": "cross_industry",
+   "opportunity": "霍尔果斯生物制造污水处理中心EPC已中标——4.75亿，3万m3/d",
+   "investment": {
+    "amount": 4.75,
+    "unit": "亿元",
+    "context": "4.75亿元",
+    "amount_cny": 475000000.0
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "EPC中标公告2026-08-19, 已定标, 采购窗已关闭",
+   "source_urls": [
+    "https://www.163.com/dy/article/L4TBDU3O055616X1.html"
+   ],
+   "original_lead_id": "IND-20260825-005",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260908-005",
+   "company": "大开热电2x350MW",
+   "industry": "power",
+   "opportunity": "脱硫废水ZLD EPC建安招标(投标截止9/14)",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "context": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "投标截止2026-09-14, 建安+仪表招标即将关闭",
+   "source_urls": [
+    "https://news.bjx.com.cn/html/20260902/1511131.shtml"
+   ],
+   "original_lead_id": "IND-20260908-005",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260908-006",
+   "company": "50GWh储能电池工厂",
+   "industry": "储能电池制造基地厂房及基础设施（入驻产能50GWh）",
+   "opportunity": "ZLD水处理EPC招标",
+   "investment": {
+    "amount": 591.0,
+    "unit": "万元",
+    "context": "591万元",
+    "amount_cny": 5910000.0
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "ZLD水处理EPC 2026-09-23开标, 60日完工, 窗口本周关闭",
+   "source_urls": [
+    "https://www.qianlima.com/bid-627623254.html"
+   ],
+   "original_lead_id": "IND-20260908-006",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260908-007",
+   "company": "全南工业园污水处理一期",
+   "industry": "综合工业园（电子信息/有色金属新材料/新能源/装备制造）",
+   "opportunity": "污水处理一期设备采购招标",
+   "investment": {
+    "amount": 3857.7,
+    "unit": "万元",
+    "context": "3857.7万",
+    "amount_cny": 38577000.0
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "设备采购2026-09-29开标, 决策窗口极短, 即将关闭",
+   "source_urls": [
+    "http://www.ccgp.gov.cn/cggg/dfgg/gzgg/202609/t20260904_27271666.htm"
+   ],
+   "original_lead_id": "IND-20260908-007",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260908-008",
+   "company": "石狮鸿山三期1x1000MW",
+   "industry": "power",
+   "opportunity": "脱硫+ZLD EPC已预中标",
+   "investment": {
+    "amount": 1.1,
+    "unit": "亿元",
+    "context": "1.1亿元",
+    "amount_cny": 110000000.00000001
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "脱硫+ZLD EPC已预中标(龙源环保1.1亿), 采购窗已关闭",
+   "source_urls": [
+    "https://news.bjx.com.cn/html/20260903/1511313.shtml"
+   ],
+   "original_lead_id": "IND-20260908-008",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260814-002",
+   "company": "华润双鹤药业股份有限公司沧州分公司",
+   "industry": "pharma",
+   "opportunity": "2026年7月发布排污许可证自行监测服务采购公告（2026.8-2027.7年度）",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "context": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "年度自行监测服务已于2026-08起执行, 非采购窗口线索",
+   "source_urls": [
+    "https://www.dowater.com/zhaobiao/2026-07-13/12398946.asp",
+    "https://job.haut.edu.cn/module/position_details/id-288242/nid-2075",
+    "https://www.bjbys.net.cn/c/2019-01-14/300969.shtml"
+   ],
+   "original_lead_id": "IND-20260814-002",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  },
+  {
+   "lead_id": "IND-20260819-006",
+   "company": "宝武环科(项目方) / 某新能源电池材料企业",
+   "industry": "battery",
+   "opportunity": "宝武环科中标磷酸铁锂行业废水处理EP项目",
+   "investment": {
+    "amount": null,
+    "unit": null,
+    "context": null,
+    "amount_cny": null,
+    "note": "UNKNOWN - 公开信息未含金额"
+   },
+   "window_status": "closed",
+   "migrated_at": "2026-09-13",
+   "reason": "中标(2026年三季度), 进入设计/采购实施, 采购窗已关闭",
+   "source_urls": [
+    "https://k.sina.com.cn/article_5953740931_162dee08306703up7s.html",
+    "https://www.sohu.com/a/1062201330_122014422"
+   ],
+   "original_lead_id": "IND-20260819-006",
+   "lifecycle_note": "已定标/已过窗招标线索: 保留为 Installed Base/Lifecycle 机会底账, 不再作为雷达信号"
+  }
+ ]
+}
