@@ -64,7 +64,12 @@ def enriched_rows(segment, directory, patterns):
     files=sorted({p for pattern in patterns for p in directory.glob(pattern)}, key=lambda p:p.name)
     # Dumate keeps pre-consolidation snapshots beside the canonical master.
     # They remain provenance only; *_latest.json is the current record source.
-    canonical=next((p for p in files if p.name.endswith("_latest.json")), None)
+    # The JD-enriched master is a full replacement for the ordinary latest
+    # master, not an incremental sidecar. Prefer it when present so public
+    # pages retain the original fields *and* the JD evidence.
+    canonical=next((p for p in reversed(files) if "_latest_jd_" in p.name), None)
+    if canonical is None:
+        canonical=next((p for p in files if p.name.endswith("_latest.json")), None)
     latest, history={},{}
     for path in files:
         source=read(path); contacts={x.get("contact_id"):x for x in source.get("contacts",[])}; projects={x.get("project_id"):x for x in source.get("projects",[])}; accounts={x.get("account_id"):x for x in source.get("accounts",[])}
@@ -84,7 +89,7 @@ def enriched_rows(segment, directory, patterns):
                     "operational_pain_points", "pain_points", "sales_summary", "time_window_basis",
                     "validation_questions", "next_validation_questions", "demand_hypothesis", "demand_signals",
                     "prior_attempts", "why_unresolved", "estimated_time_window",
-                    "sales_insight_evidence"):
+                    "sales_insight_evidence", "jd_inferences"):
             if item.get(key) is not None:
                 signal[key] = safe(item[key])
         if not signal.get("to_verify"):
@@ -196,11 +201,12 @@ def page():
     old_contact = '''<b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||c.role||'职务未记录')}<br>${esc((Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')||'联系方式未公开')}'''
     new_contact = '''<b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||c.role||'职务未记录')}${c.unit?`<br><span class="muted">${esc(c.unit)}</span>`:''}<br>${esc((Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')||'联系方式未公开')}'''
     js = js.replace(old_contact, new_contact)
-    js = js.replace("s=e.original_signal||{},ev=s.evidence||{},contacts", "s=e.original_signal||{},ev=s.evidence||{},project=(e.projects||[])[0]||{},account=(e.accounts||[])[0]||{},water=project.water_system_details||{},contacts")
+    js = js.replace("s=e.original_signal||{},ev=s.evidence||{},contacts", "s=e.original_signal||{},ev=s.evidence||{},project=(e.projects||[])[0]||{},account=(e.accounts||[])[0]||{},water=project.water_system_details||{},jd=s.jd_inferences||[],contacts")
     js = js.replace("<section class=\"section amber\"><h3>客户需求与待核实事项</h3>${matrix([['客户需求',s.customer_requirement||s.customer_need],['当前方案／痛点',(ev.inferences||[]).join('；')],['待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')]])}</section>", "<section class=\"section blue\"><h3>项目与系统现状</h3>${matrix([['现有平台',account.existing_digital_platform||account.digitalization_status],['仪表／系统要求',water.instrument_requirements],['当前合作／进展',account.latest_signal]])}</section><section class=\"section amber\"><h3>客户需求与待核实事项</h3>${matrix([['客户明确需求',s.customer_requirement||s.customer_need],['重点待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')],['建议优先确认',account.action_needed||s.pull_box?.next_validation_question]])}</section>")
     js = js.replace("['判断逻辑',s.logic]", "['判断摘要',(ev.inferences||[]).map(x=>String(x).split('。')[0]).filter(Boolean).slice(0,2).join('；')||s.logic]")
     js = js.replace("['优先级／时间窗口',`${s.priority||s.signal_tier||'未记录'} / ${s.estimated_time_window||'未记录'}`]", "['优先级／时间窗口',`${s.priority||s.signal_tier||'未记录'} / ${s.estimated_time_window||'未记录'}`],['时间窗口依据',s.time_window_basis]")
     js = js.replace("<section class=\"section blue\"><h3>项目与系统现状</h3>", "<section class=\"section green\"><h3>销售摘要</h3>${matrix([['机会概述',s.sales_summary],['需求假设',s.demand_hypothesis],['既往尝试',s.prior_attempts],['未解决原因',s.why_unresolved]])}</section><section class=\"section blue\"><h3>项目与系统现状</h3>")
+    js = js.replace("</section><section class=\"section blue\"><h3>项目与系统现状</h3>", "</section>${jd.length?`<section class=\"section amber\"><h3>公开招聘信号（仅作需求验证）</h3>${jd.map(j=>matrix([['招聘岗位',j.job_title],['岗位职责（公开）',j.role_duties],['需求推断',j.software_need],['证据强度',({HIGH:'高',MEDIUM:'中',LOW:'低',UNKNOWN:'待核实'})[j.confidence]||j.confidence],['招聘来源',j.source_url]])).join('')}</section>`:''}<section class=\"section blue\"><h3>项目与系统现状</h3>")
     js = js.replace("['现有平台',account.existing_digital_platform||account.digitalization_status],['仪表／系统要求',water.instrument_requirements]", "['当前方案',s.current_solution||account.existing_digital_platform||account.digitalization_status],['业务痛点',s.operational_pain_points||s.pain_points||water.instrument_requirements]")
     # Raw nested JSON made the disclosure table wider than the page.  The lead
     # fields are rendered above; keep this disclosure as a compact provenance

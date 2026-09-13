@@ -114,7 +114,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "(EPC阶段-无运维岗位)",
+              "employer": "孝感嘉乐投资有限公司",
+              "role_duties": "项目处于5万m3/d工业污水EPC+管网招标/建设阶段，运维团队尚未组建，无公开招聘岗位可检索",
+              "source_url": "",
+              "evidence_type": "UNKNOWN",
+              "confidence": "LOW",
+              "software_need": "JD推断不适用(项目在EPC阶段)；运维管理与监测需求在投产前才会出现，届时可通过岗位JD补充验证",
+              "chain": "EPC阶段无岗位 → JD推断不适用 → 标记UNKNOWN，投产前重访",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference (不适用标记)"
+            }
+          ]
         },
         "enrichment_status": "agent_discovered",
         "record_status": "active",
@@ -8706,6 +8720,9 @@
               "燕山石化主动提升水质监测能力,可能与HJ 853-2026石化排污许可新规相关",
               "隔爆型要求表明监测点在防爆区域",
               "采购单套系统,可能是试点或补充监测点"
+            ],
+            "unknowns": [
+              "【JD推断】燕山石化未在公开招聘平台检索到水处理/环保专岗JD(检索到均为第三方聚合页，无公司直聘岗位)；水系统运维团队规模与数字化现状无法从招聘渠道验证。"
             ]
           },
           "potential_ims_use_case": "",
@@ -8744,7 +8761,8 @@
           "sales_summary": [
             "正在招标且投标窗口极紧（2026-09-23 09:00截止，距今约10天），常态采购通道为中石化物资采购（NWZ编号）体系，具备CEP认证与隔爆资质的产品可直接应标（事实）",
             "现役在线仪表为天津津普利（国产、原厂备件直采模式），燕山对价格敏感度与国产品偏好明显——投标需侧重总拥有成本与本地服务（事实）",
-            "水务运营方为北京燕山威立雅（25年期合约），本次为厂区环保能力建设（业主自采）与其运营体系并行——中标后耗材/运维/扩点具备连续需求（事实）"
+            "水务运营方为北京燕山威立雅（25年期合约），本次为厂区环保能力建设（业主自采）与其运营体系并行——中标后耗材/运维/扩点具备连续需求（事实）",
+            "【JD推断】燕山石化未检索到专岗JD，JD推断法不适用；维持既有项目级证据(lead已有)评估，建议改用招标/环评渠道补充验证。"
           ],
           "time_window_basis": "招标公告2026-09-09发布，投标截止/开标2026-09-23 09:00（招标编号NWZ260925-3809-136113）；中石化物资采购体系中NWZ编号招标为当月启动、次月交付节奏（推断），合同签订后单套系统供货安装约2-4个月。",
           "next_validation_questions": [
@@ -8839,7 +8857,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "(未检索到专岗JD)",
+              "employer": "中国石化北京燕山分公司",
+              "role_duties": "公开招聘平台无该公司水处理/环保专岗直聘信息",
+              "source_url": "",
+              "evidence_type": "UNKNOWN",
+              "confidence": "LOW",
+              "software_need": "无法从JD推断；需通过其他渠道(环评/招标/年报)验证水系统运维数字化需求",
+              "chain": "无JD证据 → 无法建立JD需求推断 → 保持UNKNOWN",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -11470,6 +11502,14 @@
             {
               "source_url": "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTA2MDU0OQ==&mid=2247588428&idx=4&sn=355a5b71d19b3c65ae0cfa8ec9a80caf&chksm=cec6c35306ff1d63115cb6dd73d7bde582e0845b83bf3633e2790a6b52762ff28691a0f2523e&scene=27",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.zhipin.com/job_detail/d038bbf0036c98481XB709i1FlpS.html",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -11488,11 +11528,17 @@
               "位于盛之源医药产业园",
               "2026-09-08报告中记录的全部事实保持不变",
               "本次搜索未发现新的公开信息更新",
-              "预计2026年10月正式招标"
+              "预计2026年10月正式招标",
+              "【项目·山东鼎皓】年产120吨兽用原料药项目公示：总**3.2亿元、环保投资1710万元(占5.34%)，新建污水处理站、RTO废气处理系统、事故水池(单县化工产业园租赁厂房)。",
+              "【JD·鼎皓医药】BOSS直聘在招研发工程师岗(医药中间体/原料药方向，硕士，济南商河研发中心)，证明公司研发团队在扩编。"
             ],
             "inferences": [
               "制药废水处理站通常需要COD/pH/氨氮在线分析仪",
-              "招标计划阶段技术规格编制尚未完成"
+              "招标计划阶段技术规格编制尚未完成",
+              "【JD推断】鼎皓新建污水站+项目投产前将组建水处理运维岗；当前公开渠道未见水处理专岗JD，预计项目试生产前会出现相关岗位需求。"
+            ],
+            "unknowns": [
+              "【JD推断】新建污水处理站规模/工艺/仪表配置；运维团队规划(自建vs外包)。"
             ]
           },
           "potential_ims_use_case": "",
@@ -11501,7 +11547,9 @@
           "estimated_time_window": "招标计划2026-09-01发布，预计2026年10月发布正式招标公告；兽用原料药项目总投资3.2亿元（环保投资1710万）",
           "priority": "P4",
           "source_urls": [
-            "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html"
+            "http://hzsjyzx.cn/jyxx/001001/001001010/20260901/ebcfee8d-7bfa-4438-a12a-e0cd9671bdf8.html",
+            "https://mp.weixin.qq.com/s?__biz=Mzg4NTA2MDU0OQ==&mid=2247588428&idx=4&sn=355a5b71d19b3c65ae0cfa8ec9a80caf&chksm=cec6c35306ff1d63115cb6dd73d7bde582e0845b83bf3633e2790a6b52762ff28691a0f2523e&scene=27",
+            "https://www.zhipin.com/job_detail/d038bbf0036c98481XB709i1FlpS.html"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -11531,7 +11579,8 @@
           "sales_summary": [
             "招标计划明确含'仪表'且为公开招标（550万/2026年10月）：从***划（9月）到正式发标（10月）之间的技术规格编制期是预埋仪表品牌的唯一窗口（事实）",
             "招标人是园区国资平台山东单养千秋实业集团有限公司而非鼎皓制药：污***时服务园区租赁企业，其设备技术规格可复用于园区后续入驻企业，接口价值高于单站金额（事实+推断）",
-            "处理对象为头孢类兽药生产废水（高COD/高盐/含药效活性成分，环评公示确认RTO+污水处理站配套）：污***出水仪表（pH/COD/氨氮/电导率）与园区排污许可在线监测联动是该类站房标配（工程推断）"
+            "处理对象为头孢类兽药生产废水（高COD/高盐/含药效活性成分，环评公示确认RTO+污水处理站配套）：污***出水仪表（pH/COD/氨氮/电导率）与园区排污许可在线监测联动是该类站房标配（工程推断）",
+            "【JD/项目推断】鼎皓3.2亿兽用原料药项目公示新增污水站(环保投资1710万)，为lead补充直接水系统证据；水处理岗位JD未见公开，运维配置未验证，建议窗口期在试生产前(预计2027)确认污水站工艺与监测配置。"
           ],
           "time_window_basis": "菏泽市公共资源交易网招标计划（2026-09-01）原文：'预计招标公告发布时间：2026年10月'；鼎皓兽用原料药项目环评（报批前公示）披露项目总投资3.2亿元、新建污水处理站为环保设施之一。",
           "next_validation_questions": [
@@ -11618,7 +11667,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "研发工程师(医药合成方向)",
+              "employer": "济南鼎皓医药科技有限公司",
+              "role_duties": "小分子有机化学合成小试和中试(非水处理岗，侧面证明研发扩编)",
+              "source_url": "https://www.zhipin.com/job_detail/d038bbf0036c98481XB709i1FlpS.html",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "新建污水处理站配套监测与水质管理；项目投产启动期合规数据管理",
+              "chain": "3.2亿项目新建污水站(环保投资1710万) → 投产前后需要水处理运维与监测 → 水质数据/合规管理需求",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -13501,6 +13564,14 @@
             {
               "source_url": "https://www.hbggzyfwpt.cn/jyxx/jsgcXmxxDetail3?guid=92c956cc-452a-49d4-9216-6fbb1877500a",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://xgxz.xiaogan.gov.cn/ggzyjy/jyxx/jsgc/zbgg/202609/t20260905_591068.shtml",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.liepin.com/job/1978547449.shtml",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -13516,11 +13587,17 @@
             "facts": [
               "2026年8月 设备购置16标段招标(OHT标段)",
               "项目年产30GWh, 孝感临空经济区科源路8号",
-              "招标内容: 制浆/涂布/卷绕/注液/NMP回收等生产设备, 无水系统设备"
+              "招标内容: 制浆/涂布/卷绕/注液/NMP回收等生产设备, 无水系统设备",
+              "【招标·孝感澴楚】孝感新能源项目二期30GWh设备购置16标段招标公告发布(2026-09-05,官方招标平台)：9标段为NMP回收系统设备(合同估算价约2275万元)，交货地孝感临空经济区科源路8号(孝感楚能二期园区内)。",
+              "【JD·楚能孝感】猎聘显示楚能新能源(孝感)在招动力设备技术员岗：职***压机、冷水机、水塔、真空系统、制氮机维护保养、记录设备日常运行状态。"
             ],
             "inferences": [
               "Industry Inference: 30GWh锂电池工厂需要NMP回收废水处理和纯水系统, 但本次招标无水系统",
-              "水系统可能已在前期建设中或单独EPC"
+              "水系统可能已在前期建设中或单独EPC",
+              "【JD推断】孝感二期投产前设备购置阶段，水处理/厂务岗位序列与一期同构(可参照孝感/宜昌/襄阳已有JD)；NMP回收系统招标确认水相关工艺环节存在，投产后水质监测与数据管理需求将出现。"
+            ],
+            "unknowns": [
+              "【JD推断】二期水系统(纯水/NMP废水)EPC与监测仪表采购渠道与时间；是否沿用一期供应商体系。"
             ]
           },
           "potential_ims_use_case": "",
@@ -13529,7 +13606,9 @@
           "estimated_time_window": "生产设备16标段招标2026-09-05发布、计划交货期120日历天 → 2026Q4-2027Q1设备进场安装；水系统采购通道以业主公开公告为准（本次招标未含）",
           "priority": "P3",
           "source_urls": [
-            "https://www.hbggzyfwpt.cn/jyxx/jsgcXmxxDetail3?guid=92c956cc-452a-49d4-9216-6fbb1877500a"
+            "https://www.hbggzyfwpt.cn/jyxx/jsgcXmxxDetail3?guid=92c956cc-452a-49d4-9216-6fbb1877500a",
+            "https://xgxz.xiaogan.gov.cn/ggzyjy/jyxx/jsgc/zbgg/202609/t20260905_591068.shtml",
+            "https://www.liepin.com/job/1978547449.shtml"
           ],
           "to_verify": [
             "水系统（纯水/废水/中水回用）是否已招标或计划招标时间？",
@@ -13558,7 +13637,8 @@
           ],
           "sales_summary": [
             "30GWh电池工厂纯水制备+NMP废水+清洗废水为标配，本次16标段生产设备招标未含水系统 → 水系统存在另行采购通道，需挖掘其招标渠道与时间",
-            "NMP精馏提纯设备（10标段、约4,460万）招标确认产线严格配套NMP回收 → NMP回收水质与废水处理监测需求确定"
+            "NMP精馏提纯设备（10标段、约4,460万）招标确认产线严格配套NMP回收 → NMP回收水质与废水处理监测需求确定",
+            "【JD/招标推断】孝感澴楚(楚能二期)处于设备购置阶段，9标段NMP回收设备2275万招标确认水相关工艺投资；JD推断适用性中等(岗位序列可参照一期)，建议投产窗口(2027)前确认水系统供应商与EPC通道。"
           ],
           "time_window_basis": "孝感市公共资源交易网2026-09-05设备购置16标段招标公告（项目备案2026年4月）；本次招标含NMP回收精馏等生产设备但不含水系统（以既有为准）",
           "next_validation_questions": [
@@ -13629,7 +13709,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "动力设备技术员(孝感)",
+              "employer": "楚能新能源股份有限公司(孝感基地)",
+              "role_duties": "空压机、冷水机、水塔、真空系统、制氮机维护保养；记录设备日常运行状态",
+              "source_url": "https://www.liepin.com/job/1978547449.shtml",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "二期水系统(纯水/NMP废水)监测与数据管理；投产后与一期同构的运维数字化需求",
+              "chain": "二期30GWh设备购置(含NMP回收2275万)+一期同构岗位 → 投产后水系统运维需求 → 监测与数据管理",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched_p2",
         "record_status": "active",
@@ -13710,6 +13804,14 @@
             {
               "source_url": "https://www.bidizhaobiao.com/company_353384773073547264.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://easycarbon.cn/bid/2026091110048975",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://mp.weixin.qq.com/s?__biz=MzUxMTM5MTYxNw==&mid=2247647168&idx=5&sn=5a8ac54732678e8e923af8321754841f&chksm=f9789d2ece0f14388a483def1de183c60ab23be140e6f7055f657c9e1a75b7ee0775834d27dd&scene=27",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -13725,11 +13827,17 @@
             "facts": [
               "2026-08-09 招标结果公告(中国石化物资电子招标投标平台)",
               "工艺: MBBR, 处理量400m3/h, 出水COD<=90mg/L",
-              "招标平台: bidding.epec.com (中石化电子采购)"
+              "招标平台: bidding.epec.com (中石化电子采购)",
+              "【招标·仪征化纤】2026年9月发布公用工程部生化装置东区隐患治理项目配套污水处理防治(活性炭吸附)设备公开招标公告(重招，项目资金国有资金100%)。",
+              "【JD·仪征化纤】2024年校招含安全环保岗(历史信息，官网招聘简章)。"
             ],
             "inferences": [
               "Direct Evidence: 污水处理系统改造, MBBR工艺需DO/pH/ORP在线监测",
-              "中石化体系内企业, 有标准化采购流程"
+              "中石化体系内企业, 有标准化采购流程",
+              "【JD推断】现役生化装置隐患治理带动水处理设备更新采购；活性炭吸附段新增/更换将配套进出水监测点，水系统改造存在监测与数据管理增量。"
+            ],
+            "unknowns": [
+              "【JD推断】招标设备是否含在线监测仪表；仪征化纤水系统(污水/循环水)既有DCS与监测数据管理现状。"
             ]
           },
           "potential_ims_use_case": "",
@@ -13738,7 +13846,9 @@
           "estimated_time_window": "改造施工预计2026Q4-2027年（MBBR生化段改造，参照同类型工期约6-12个月）；仪表配套窗口未来3-12个月",
           "priority": "P2",
           "source_urls": [
-            "https://www.bidizhaobiao.com/company_353384773073547264.html"
+            "https://www.bidizhaobiao.com/company_353384773073547264.html",
+            "https://easycarbon.cn/bid/2026091110048975",
+            "https://mp.weixin.qq.com/s?__biz=MzUxMTM5MTYxNw==&mid=2247647168&idx=5&sn=5a8ac54732678e8e923af8321754841f&chksm=f9789d2ece0f14388a483def1de183c60ab23be140e6f7055f657c9e1a75b7ee0775834d27dd&scene=27"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -13769,7 +13879,8 @@
           "sales_summary": [
             "招标结果公告（2026-08-09）关联于上海科原环境科技有限公司投标/成交档案（天眼查招投标记录可见），该公司大概率为本改造中标方——MBBR工艺包供应商即仪表配套首选接口（fact+inference，需核实最终成交人）",
             "采购走中石化物资电子招标平台标准流程（bidding.epec.com），后续仪表/备件采购同平台可跟踪（事实）",
-            "仪征化纤持续扩产（50万吨瓶片改造）且环保信息披露显示A级绩效管理，水系统改造与在线监测外委需求常态化（事实）"
+            "仪征化纤持续扩产（50万吨瓶片改造）且环保信息披露显示A级绩效管理，水系统改造与在线监测外委需求常态化（事实）",
+            "【JD/招标推断】仪征化纤2026年启动生化装置隐患治理并采购活性炭吸附设备(重招)，水系统改造带来监测点增量；建议跟踪重招结果与设备配置，确认是否需同步新增在线监测。"
           ],
           "time_window_basis": "2026-08-06评标结果公示、2026-08-09招标结果公告（第1次重招）发布→合同签订与进场施工通常1-3个月内启动（参照同类生化改造项目惯例推导）；出水COD≤90mg/L为生产性技改目标，项目已进入实施阶段。",
           "next_validation_questions": [
@@ -13848,7 +13959,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "安全环保岗(校招,历史)",
+              "employer": "中国石化仪征化纤有限责任公司",
+              "role_duties": "2024校招含安全环保岗；2026年公用工程部生化装置隐患治理配套活性炭吸附设备招标(重招)",
+              "source_url": "https://easycarbon.cn/bid/2026091110048975",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "生化装置隐患治理配套吸附段监测点；水系统改造期数据与合规管理",
+              "chain": "隐患治理+活性炭吸附设备采购 → 吸附段进出水监测需求 → 数据接入与管理",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -14971,6 +15096,14 @@
             {
               "source_url": "https://gs.bidcenter.com.cn/gys/detail-11686922.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://job.henu.edu.cn/module/position_details/id-359998/nid-2562",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://www.gansu.gov.cn/gsszf/c100002/c100006/c100007/202601/174276205.shtml",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -14987,11 +15120,17 @@
               "EPC招标, 批复概算总投资17475万元",
               "工艺: 两级化学氧化+脱氮+生化+出水安保",
               "新建500m³/h浓水处理单元及配套公用工程",
-              "批复文号: 炼化新材料[2026]166号"
+              "批复文号: 炼化新材料[2026]166号",
+              "【JD·兰州石化】2023年校招设环保工程师博士岗(兰州,25k以上,专业方向含污水处理/废物处理/环保工程)。",
+              "【JD·兰州石化】甘肃省人民政府官网2026-01报道：兰***建立智能化监控系统，任何点位出现异常排放15秒内触发三级报警。"
             ],
             "inferences": [
               "浓水处理单元是RO浓水深度处理, 需要在线TOC/COD/氨氮监测",
-              "1.75亿投资规模大, 仪表采购有实质商业价值"
+              "1.75亿投资规模大, 仪表采购有实质商业价值",
+              "【JD推断】兰州石化环保智能化有集团级投入(智能监控已落地)，炼油污水数据接入既有智能监控体系的可能性高；iMS切入需围绕水质数据管理与合规联动，而非从零数字化。"
+            ],
+            "unknowns": [
+              "【JD推断】兰石化智能监控系统覆盖范围是否包含炼油污水水质在线数据；水质数据管理与排放监控是否分属不同系统。"
             ]
           },
           "potential_ims_use_case": "",
@@ -15000,7 +15139,9 @@
           "estimated_time_window": "计划2027-06-01开工、2028-12-30中交、2029-03-30工程交接；EPC/监理定标2026Q4；仪表采购预计2027年内（开工后设备订货期）",
           "priority": "P1",
           "source_urls": [
-            "https://gs.bidcenter.com.cn/gys/detail-11686922.html"
+            "https://gs.bidcenter.com.cn/gys/detail-11686922.html",
+            "https://job.henu.edu.cn/module/position_details/id-359998/nid-2562",
+            "http://www.gansu.gov.cn/gsszf/c100002/c100006/c100007/202601/174276205.shtml"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -15031,7 +15172,8 @@
           "sales_summary": [
             "项目正处EPC+监理招标期（监理2026-10-09开标），批复概算1.75亿元，是甘肃省内最大的炼油污水提标工程——当前定标窗口直接决定后续仪表选型（事实）",
             "出水COD≤30、氨氮≤5、总氮≤30的特别限值+浓水高含盐难降解特性，要求浓水处理单元（化学氧化/脱氮/生化/出水安保）多点在线监测，仪表点位数与价值量高（由工艺与指标推导）",
-            "兰州石化近三年滚动投入水务改造（雨污分流2024-25、回用扩能2026、达标升级2027-28），既有在线监测系统（COD/氨氮）与新建浓水处理单元将构成统一监测网络，MRO与增量市场并存（事实）"
+            "兰州石化近三年滚动投入水务改造（雨污分流2024-25、回用扩能2026、达标升级2027-28），既有在线监测系统（COD/氨氮）与新建浓水处理单元将构成统一监测网络，MRO与增量市场并存（事实）",
+            "【JD推断】兰州石化已建成15秒三级报警的智能监控体系，环保数字化基础全国领先；iMS切入点应是水质数据专精(浊度/COD等在线+合规台账联动)，并需与既有智能监控系统共存而非替代。"
           ],
           "time_window_basis": "监理招标公告（2026-09-07发布，2026-10-09开标）载明计划开工/中交/交接日期；环评2026-05-15受理公示；兰州市工信局2026-05-27官方发布披露项目进入环评公示及前期设计推进阶段；上下文（bidcenter）载明EPC招标及批复概算17475万元、批复文号炼化新材料[2026]166号。",
           "next_validation_questions": [
@@ -15128,7 +15270,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "环保工程师(博士)",
+              "employer": "中国石油兰州石化分公司",
+              "role_duties": "环保、环评、脱硫除尘、污水处理、废物处理、环保工程(2023校招)",
+              "source_url": "https://job.henu.edu.cn/module/position_details/id-359998/nid-2562",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "水质数据与智能监控/合规体系联动；污水达标升级改造(lead已有)配套的监测与数据管理",
+              "chain": "环保工程师岗(含污水处理方向)+智能监控体系+污水达标升级改造 → 水质监测与数据管理需求明确",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -15207,6 +15363,14 @@
             {
               "source_url": "https://www.chinabidding.cn/zbgs/U-vzlEZZi.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://imu.nmbys.cn/campus/view/id/71142",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://career.nankai.edu.cn/correcruit/content/id/118494.html",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -15222,11 +15386,17 @@
             "facts": [
               "2026-08-27 可研技术服务二次选商结果公告",
               "拟成交人: 中国昆仑工程有限公司",
-              "项目名称: 长庆石化公司含盐污水零排放项目"
+              "项目名称: 长庆石化公司含盐污水零排放项目",
+              "【JD·长庆石化】2026年秋季校招官方公告设'炼化数智技术研究'岗(博士,计算机/控制/软件工程/人工智能/大数据方向,1人)与'炼化环保技术'岗。",
+              "【JD·长庆石化】官方招聘公告企业简介自述'建成国内首个5G全覆盖智能炼厂'(咸阳)。"
             ],
             "inferences": [
               "零排放(ZLD)项目必然涉及蒸发结晶/MVR/RO等深度处理, 需要在线电导率/TOC/硬度监测",
-              "可研阶段=项目刚启动, 仪表采购窗口在未来6-12个月"
+              "可研阶段=项目刚启动, 仪表采购窗口在未来6-12个月",
+              "【JD推断】环保技术岗与数智技术岗同批招聘反映环保数字化是长庆石化的明确方向；既有5G智能炼厂底座意味着水系统数据接入集团平台比从零建设数字化更现实，iMS需对接既有架构。"
+            ],
+            "unknowns": [
+              "【JD推断】水系统(循环水/污水)在线仪表与数据平台现状；'炼化环保技术'岗具体职责边界。"
             ]
           },
           "potential_ims_use_case": "",
@@ -15235,7 +15405,9 @@
           "estimated_time_window": "设计/EPC招标预计2027年上半年至年中；仪表采购窗口2027年内（未来12-18个月）",
           "priority": "P1",
           "source_urls": [
-            "https://www.chinabidding.cn/zbgs/U-vzlEZZi.html"
+            "https://www.chinabidding.cn/zbgs/U-vzlEZZi.html",
+            "https://imu.nmbys.cn/campus/view/id/71142",
+            "https://career.nankai.edu.cn/correcruit/content/id/118494.html"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -15264,7 +15436,8 @@
           "sales_summary": [
             "可研已定向中国昆仑工程（集团设计院），2026-08-27二次选商成交——设计团队即仪表规格制定者，是当前唯一可介入的技术接口（事实）",
             "零排放分盐系统（超滤+RO+分盐）各工段在线监测参数多、点数密，且需与现有环境在线监控平台整合，是iMS型仪表+数据管理产品的适配场景（由公开工艺信息推导）",
-            "长庆石化为中国石油体系内招标成熟客户（招标代理为中国石油物资有限公司西安分公司；2026-08仍在采购在线分析仪类物资），采购通道清晰（事实）"
+            "长庆石化为中国石油体系内招标成熟客户（招标代理为中国石油物资有限公司西安分公司；2026-08仍在采购在线分析仪类物资），采购通道清晰（事实）",
+            "【JD推断】长庆石化2026秋招数智技术博士岗+5G智能炼厂自述，数智化是官方战略；建议以'对接既有5G/数智平台的水系统数据与合规模块'定位，避免与集团自建平台正面竞争。"
           ],
           "time_window_basis": "可研技术服务2026-08-27二次选商成交（中国昆仑工程）+2026-09-04发布成交结果公告 → 可研编制约3-6个月（2026Q4-2027Q1）→ 立项/环评/初步设计约6-12个月 → EPC招标预计2027年。参照兰州石化同型项目（2026-05环评受理→2027-06开工）周期作基准推导。",
           "next_validation_questions": [
@@ -15351,7 +15524,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "炼化数智技术研究(博士岗)",
+              "employer": "中国石油天然气股份有限公司长庆石化分公司",
+              "role_duties": "计算机/控制/软件工程/人工智能/大数据方向数智化研究(2026秋招官方公告)",
+              "source_url": "https://imu.nmbys.cn/campus/view/id/71142",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "数智化专门岗位+5G智能炼厂 → 水系统数据需与集团数智平台对接；iMS定位为水专项数据与合规模块而非独立平台",
+              "chain": "数智技术岗+环保技术岗并招 → 环保数字化方向明确 → 水系统数据需纳入集团数智架构",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -15431,6 +15618,14 @@
             {
               "source_url": "https://www.chinabidding.cn/zbgs/U-vzlzmyt.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://m.liepin.com/company/9427931/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://gdcs.stu.edu.cn/JobFair/CareerTalk?id=5465",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -15446,11 +15641,17 @@
             "facts": [
               "2026-08-25 粤芯四期纯废水系统-废硫酸处理系统包结果公告发布",
               "采购编号: 400-006-6655-26XB0271/01, 采购方式: 询比采购",
-              "所属行业: 建筑安装业"
+              "所属行业: 建筑安装业",
+              "【JD·粤芯半导体】猎聘显示在招厂务机电工程师/高级工程师(10-20k,广州黄埔,2年以上)、厂务洁净工程师/高级工程师(8-18k)岗位。",
+              "【JD·粤芯半导体】2026校招宣讲会职位清单含厂务工程师岗(官方宣讲会公告)。"
             ],
             "inferences": [
               "Engineering Inference: 12英寸晶圆厂纯废水系统是厂务核心, 废硫酸处理含氟/含酸废水是关键环节",
-              "四期=新建产线, 水系统为新增"
+              "四期=新建产线, 水系统为新增",
+              "【JD推断】粤芯四期(4万片/月新产线)建设驱动厂务团队扩编；半导体厂务机电/水系统(UPW纯水、废水站)运行与监测需求随产能同步增长。"
+            ],
+            "unknowns": [
+              "【JD推断】粤芯水系统(UPW/废水站)运维团队规模、既有监测仪表与数据工具；厂务工程师具体分管水系统程度。"
             ]
           },
           "potential_ims_use_case": "",
@@ -15459,7 +15660,9 @@
           "estimated_time_window": "2026 Q4 - 2027（纯废水系统后续包件/相关仪表采购窗口）；整个四期预计2029年底建成投产",
           "priority": "P1",
           "source_urls": [
-            "https://www.chinabidding.cn/zbgs/U-vzlzmyt.html"
+            "https://www.chinabidding.cn/zbgs/U-vzlzmyt.html",
+            "https://m.liepin.com/company/9427931/",
+            "https://gdcs.stu.edu.cn/JobFair/CareerTalk?id=5465"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -15488,7 +15691,8 @@
           "sales_summary": [
             "粤芯四期总投资约252亿元、月产4万片12英寸，2026-01-22动工、预计2029年底建成，纯废水系统正处于分包密集采购期（2026年5-8月已连续三个包件开标）——切入窗口明确（fact）",
             "超纯水系统关键监测设备（二级TOC UV）已由奥加诺（Organo）在'水处理膜组件与二级TOC UV设备'包内中标（2026-05-29），此类仪表采购已锁定；废硫酸处理系统包2026-08-25定标，其是否含在线监测仪表待核实——竞对格局需进一步确认（fact+unknown）",
-            "粤芯创业板IPO 2026-06-15过会（拟募资75亿），四期扩产资金确定性增强；2029年投产后12英寸Fab水质在线监测/纯水监测为长期存量机会（fact）"
+            "粤芯创业板IPO 2026-06-15过会（拟募资75亿），四期扩产资金确定性增强；2029年投产后12英寸Fab水质在线监测/纯水监测为长期存量机会（fact）",
+            "【JD推断】粤芯四期建设期厂务团队扩编，厂务岗位含机电/洁净方向；水系统(UPW/废水)仪表与数据管理需结合四期设计确认，当前为MEDIUM置信度推断。"
           ],
           "time_window_basis": "四期2026-01-22动工启动（总投资252亿元，2029年底建成投产）；纯废水系统分包采购正在密集期：水***组件与二级TOC UV设备包2026-05-29结果公告（奥加诺中标）、PVDFHP材料及阀门包2026-06-12结果公告、废硫酸处理系统包2026-08-22候选人/08-25结果公告（400-006-6655-26XB0271/01，询比采购、物资类）；按分包开标节奏，后续仪表/控制类包件大概率在2026 Q4-2027陆续发布。",
           "next_validation_questions": [
@@ -15597,7 +15801,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "厂务机电工程师/高级工程师",
+              "employer": "粤芯半导体技术股份有限公司",
+              "role_duties": "厂务工程(机电/洁净方向)运行管理；校招含厂务工程师岗",
+              "source_url": "https://m.liepin.com/company/9427931/",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "四期扩产期厂务水系统(UPW/废水)建设与运行监测点位扩展；水系统数据接入管理",
+              "chain": "四期扩产+厂务岗位扩编 → 水系统规模扩大 → 监测增量与数据管理需求",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -16154,6 +16372,18 @@
             {
               "source_url": "https://m.bjx.com.cn/mnews/20260831/1510693.shtml",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.zhipin.com/job_detail/5f86d432f8f1f1681XJ-0t69EFdT.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.zhipin.com/gongsir/4e365fe07354695d1XV40ty8EFQ~.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://m.liepin.com/yichang/zpguifangongchengshi/",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -16174,14 +16404,21 @@
               "宜昌基地总产能跃升至全球锂电池生产基地第一梯队",
               "2026-08-30 正式投产, 规划年产能70GWh",
               "占地1608亩, 建筑面积105万m2, 投资300亿",
-              "从动工到投产仅10个月"
+              "从动工到投产仅10个月",
+              "【JD·楚能宜昌】BOSS直聘在招环保工程师岗(已关闭,1-3年,大专)：职***染治理设施(废水站)运行管理、排污申报登记、排污许可证申请及证后管理、污泥危废属性鉴别、环境体系建立运行。",
+              "【JD·楚能宜昌】BOSS直聘在招暖通技术员岗(在招)：职***湿机、组合式空调、除尘、废气、真空泵、纯水、NMP回收等辅助设施运行及保养。",
+              "【JD·楚能宜昌】猎聘显示宜昌夷陵区在招EHS体系工程师(8-15k,2年以上)。"
             ],
             "inferences": [
               "锂电池生产产生含氟废水（电解液清洗）、含铜废水、酸性废水",
               "80GWh产能对应大量废水处理需求",
               "新建工厂可能需配套建设废水处理系统和在线监测",
               "已投产=新建水系统主要采购窗口大概率已过",
-              "Lifecycle Opportunity: 仪表维护/替换/升级/新增监测点"
+              "Lifecycle Opportunity: 仪表维护/替换/升级/新增监测点",
+              "【JD推断】宜昌基地废水站运维+排污证后管理职责集中于一岗，与襄阳基地岗位职责高度一致 → 楚能集团水系统运维岗位标准化，跨基地(孝感/宜昌/襄阳)水系统数据对标是iMS切入点，与IND-20260818-008构成REPEATABLE DEMAND SIGNAL(集团级)。"
+            ],
+            "unknowns": [
+              "【JD推断】各基地水系统仪表品牌与既有数据平台；是否已有集团级供应商目录。"
             ]
           },
           "potential_ims_use_case": "",
@@ -16193,7 +16430,10 @@
             "http://www.whycsh.org/html/hyzq/hydt/4397.html",
             "https://baijiahao.baidu.com/s?id=1873119664487617929",
             "https://finance.sina.com.cn/jjxw/2026-08-14/doc-ininhxpi2781881.shtml",
-            "https://m.bjx.com.cn/mnews/20260831/1510693.shtml"
+            "https://m.bjx.com.cn/mnews/20260831/1510693.shtml",
+            "https://www.zhipin.com/job_detail/5f86d432f8f1f1681XJ-0t69EFdT.html",
+            "https://www.zhipin.com/gongsir/4e365fe07354695d1XV40ty8EFQ~.html",
+            "https://m.liepin.com/yichang/zpguifangongchengshi/"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -16221,7 +16461,8 @@
             "unknown：公***未披露该项目已证实的水质/水量/合规/运维痛点。已检索来源类型：环*、招标、处罚公示与媒体。待验证：是***在线监测超标、第三方运维缺口、人工巡检依赖等问题。"
           ],
           "sales_summary": [
-            "8月9日楚能新能源宜昌二期80GWh锂电池产业园正式投产"
+            "8月9日楚能新能源宜昌二期80GWh锂电池产业园正式投产",
+            "【JD推断】楚能宜昌环保工程师与襄阳基地环保体系工程师岗位职责高度一致(废水站管理+排污证后管理)，构成集团级REPEATABLE DEMAND SIGNAL；暖通技术员岗含纯水/NMP回收运维，进一步确认水系统运维为集团标配。跨基地数据对标是最强iMS叙事。"
           ],
           "time_window_basis": "信号记录日期：2026-08-21（首见）至2026-09-02（最近）。项目阶段：Potential Industrial Opportunity。",
           "next_validation_questions": [
@@ -16264,7 +16505,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "环保工程师(废水站运行管理)",
+              "employer": "宜昌楚能新能源创新科技有限公司",
+              "role_duties": "污染治理设施(废水站)运行管理、排污许可证申请及证后管理、污泥危废属性鉴别、环境体系建立(与襄阳基地环保体系工程师职责同构)",
+              "source_url": "https://www.zhipin.com/job_detail/5f86d432f8f1f1681XJ-0t69EFdT.html",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "废水站运行数据管理与排污证后合规记录；跨基地水系统数据对标(集团标准化岗位)",
+              "chain": "废水站运行管理+证后管理(岗位职责) → 与襄阳高度一致 → 集团级标准化+跨基地对标需求 → REPEATABLE DEMAND SIGNAL",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "aggregated",
         "record_status": "active",
@@ -19875,6 +20130,14 @@
             {
               "source_url": "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_1c7405aba6ba43788ba1144b2bc13e34.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://baike.baidu.com/item/扬州祖名豆制食品有限公司/20054473",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://hrss.yangzhou.gov.cn/rcm/yzjob/common/company/FCCA8ACBE2917CE3E053F9C64D0A63FA",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -19893,13 +20156,19 @@
               "配套建设污水处理站、560m³事故应急池、300m³雨水收集池",
               "项目已建成试生产，因产品/产线/废气治理设施/污染物排放量重大变动需重新报批",
               "新增臭豆腐、响铃卷、素鸡、烘干蛋白渣、干豆渣生产线",
-              "用地面积54586平方米"
+              "用地面积54586平方米",
+              "【项目·扬州祖名】百度百科：扬***豆制食品有限公司为祖名股份(003030)全资子公司；2021年启动迁建扩产项目，总投资增至5.5亿元，2024年2月新工厂竣工投产；2025年9月增资1.15亿元(注册资本增至2.8亿元)。",
+              "【JD·祖名】扬州人才市场官方页面显示扬州祖名在招(制造业,200-500人,上市公司)。"
             ],
             "inferences": [
               "配套建设污水处理站是Direct Water System Evidence",
               "但项目已建成试生产 → 主要水系统采购窗口大概率已过",
               "重新报批意味着可能需要调整/扩建现有水系统 → Installed Base/Lifecycle Opportunity",
-              "食品饮料行业首个有效信号：豆***造产生高浓度有机废水(COD高)"
+              "食品饮料行业首个有效信号：豆***造产生高浓度有机废水(COD高)",
+              "【JD推断】新工厂2024年投产+2025年增资，产能爬坡期水(豆制品高浓度有机废水)处理负荷与运行管理需求上升，但公开渠道未见水处理专岗JD，运维方式(自建/外包)未验证。"
+            ],
+            "unknowns": [
+              "【JD推断】扬州祖名未检索到公开水处理/环保专岗JD；水系统运维方式(自建/第三方)与在线监测现状未验证。"
             ]
           },
           "potential_ims_use_case": "",
@@ -19908,7 +20177,9 @@
           "estimated_time_window": "运行期持续（在线监测合规/运维，inference）",
           "priority": "P3",
           "source_urls": [
-            "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_1c7405aba6ba43788ba1144b2bc13e34.html"
+            "https://kfq.yangzhou.gov.cn/gk/spgg/ahlgg/art/2026/art_1c7405aba6ba43788ba1144b2bc13e34.html",
+            "https://baike.baidu.com/item/扬州祖名豆制食品有限公司/20054473",
+            "https://hrss.yangzhou.gov.cn/rcm/yzjob/common/company/FCCA8ACBE2917CE3E053F9C64D0A63FA"
           ],
           "to_verify": [
             "重新报批批复是否要求新增在线监测设备",
@@ -19937,7 +20208,8 @@
           ],
           "sales_summary": [
             "豆制品项目已试生产但重新报批获批（2026-08-28），配套污水站已投用→重新报批批复可能要求补全自行监测/在线监测配置，属合规驱动的小幅补强机会（事实+推断）",
-            "豆制品/植物蛋白生产废水为高浓度有机废水，配套污水站长期运行→运行期在线监测与运维备件需求属持续型机会（事实+行业推断）"
+            "豆制品/植物蛋白生产废水为高浓度有机废水，配套污水站长期运行→运行期在线监测与运维备件需求属持续型机会（事实+行业推断）",
+            "【JD/项目推断】扬州祖名新厂2024投产+2025增资(项目级事实)，但无水处理JD；JD推断不适用，维持项目级Watch，建议以环评/排污许可文件验证污水站配置。"
           ],
           "time_window_basis": "项目已建成试生产，因重大变动重新报批（2026-08-28批复）。主体水系统采购窗口已过；重新报批后如批复附加整改要求，监测补强窗口在2026Q4-2027，但无公开证据证实必有新增采购，故不设明确时间窗口。（以既有为准）",
           "next_validation_questions": [
@@ -20010,7 +20282,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "(未检索到水处理专岗JD)",
+              "employer": "扬州祖名豆制食品有限公司",
+              "role_duties": "未检索到水处理/环保专岗；扬州人才市场在招页存在(具体岗位未披露)",
+              "source_url": "https://hrss.yangzhou.gov.cn/rcm/yzjob/common/company/FCCA8ACBE2917CE3E053F9C64D0A63FA",
+              "evidence_type": "UNKNOWN",
+              "confidence": "LOW",
+              "software_need": "无法从JD推断；豆制品高浓度有机废水处理负荷大(行业常识INFERENCE)，需通过环评/验收渠道验证监测配置",
+              "chain": "无水处理JD → 无法JD推断 → 保持UNKNOWN，建议环评/验收渠道补充",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched_p2",
         "record_status": "active",
@@ -23578,6 +23864,14 @@
             {
               "source_url": "https://xueqiu.com/9958052416/406011917",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/994658/salary/j/huanbao/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/24034482/salary/j/qingjiegong/",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -23610,16 +23904,20 @@
               "项目总投资15亿元，总占地面积111,182平方米，建筑面积289,584平方米",
               "规划钠离子电池与AI创新园区，建成后年产钠离子电池456万套(2GWh)",
               "亿纬锂能2026上半年储能电池出货44.46GWh，钠电已完成海外百兆瓦级项目交付",
-              "湖北荆门钠离子储能系统已并网验证"
+              "湖北荆门钠离子储能系统已并网验证",
+              "【JD·亿纬锂能】jobui显示惠州在招环保工程师岗(2026-05-18发布,7-14k·14薪)：职***保三同时/排污许可申报/应急预案、环境信息公开(排污许可执行年报、环统、依法披露报告、ESG填写)、环保目标绩效管理(收集工厂/产品线环境绩效数据、月度/年度绩效报告、KPI不达标原因分析)。",
+              "【JD·亿纬锂能】jobui显示惠州在招环保助理工程师岗：职***水站运营管理、日常数据汇总、月度运营报告、操作规程/应急预案/作业指导书编制。"
             ],
             "inferences": [
               "锂电池生产废水含重金属/有机溶剂,需专业处理",
               "多基地布局意味着标准化仪表采购需求",
-              "厂务岗位明确含供水系统管理,说明有水处理系统"
+              "厂务岗位明确含供水系统管理,说明有水处理系统",
+              "【JD推断】亿纬锂能集团多基地(惠州/荆门/沈阳等)环保绩效数据收集整理依赖人工(岗位职责明确'收集整理+编制报告')，跨基地环境数据归集与报告自动化是明确需求场景；废水站'日常数据汇总+月度报告'是最直接的iMS切入点。"
             ],
             "unknowns": [
               "各基地现有水处理仪表品牌",
-              "Hach是否已在亿纬锂能有装机"
+              "Hach是否已在亿纬锂能有装机",
+              "【JD推断】各基地废水站在线监测仪表品牌/数据平台现状；环保工程师岗位编制层级(集团vs基地)。"
             ]
           },
           "potential_ims_use_case": "电池废水在线监测、多基地标准化仪表、合规记录自动化",
@@ -23629,7 +23927,9 @@
           "water_system_ownership": "A",
           "incrementality_status": "unknown",
           "source_urls": [
-            "https://xueqiu.com/9958052416/406011917"
+            "https://xueqiu.com/9958052416/406011917",
+            "https://www.jobui.com/company/994658/salary/j/huanbao/",
+            "https://www.jobui.com/company/24034482/salary/j/qingjiegong/"
           ],
           "last_signal_date": "2026-08-31",
           "customer_requirement": "惠州二期环评：生***经厂区自建废水处理设施处理达GB30484-2013新建企业水污染物间接排放限值后，排入惠州市第七污水处理厂；纯水制备浓水和生活污水排入潼湖污水处理厂 → 自建废水处理设施+执行电池工业污染物排放标准",
@@ -23639,7 +23939,8 @@
           ],
           "sales_summary": [
             "惠州二期环评明确生产废水经厂区自建废水处理设施处理并执行GB30484-2013间接排放限值（2026-01批准公示） → 自建站出水与排口在线监测为合规刚需",
-            "惠州/荆门/沈阳/武汉/成都/曲靖多基地扩产+NMP回收5万吨→10万吨扩能 → 标准化多基地采购与水系统扩展双窗口"
+            "惠州/荆门/沈阳/武汉/成都/曲靖多基地扩产+NMP回收5万吨→10万吨扩能 → 标准化多基地采购与水系统扩展双窗口",
+            "【JD推断】亿纬锂能环保岗位JD直接暴露两个痛点场景①废水站日常数据汇总+月度运营报告(手动)②多基地环境绩效数据收集+合规填报(排污许可年报/环统/ESG)。均为FACT级岗位职责，是本次JD放大中证据最扎实的线索之一。"
           ],
           "time_window_basis": "2026年1月惠州市生态环境局公示亿纬锂能新能源产业园二期项目环评审批信息；facts确认多基地扩产与荆门二期2026年内启动（以既有为准）",
           "next_validation_questions": [
@@ -23721,6 +24022,20 @@
               }
             ]
           },
+          "jd_inferences": [
+            {
+              "job_title": "环保工程师 / 环保助理工程师",
+              "employer": "惠州亿纬锂能股份有限公司",
+              "role_duties": "环保助理工程师：废***营管理、日常数据汇总、月度运营报告；环保工程师：排***执行年报/环统/依法披露/ESG填报、工厂/产品线环境绩效数据收集与月度年度绩效报告",
+              "source_url": "https://www.jobui.com/company/994658/salary/j/huanbao/",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "废水站日常数据汇总与月度运营报告自动化；集团多基地环境绩效数据归集与报告填报(排污许可年报/环统/ESG)自动化",
+              "chain": "废水站数据汇总+月度报告(岗位职责) → 人工整理耗时 → 数据自动归集与报告生成需求 → iMS可承接",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ],
           "to_verify": [
             "惠州自建废水处理站承建方与运行方？",
             "惠州废水站在线监测仪表现状与品牌？",
@@ -24106,6 +24421,14 @@
             {
               "source_url": "https://xny.mysteel.com/a/26082617/D68D56CE4A061C4C.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/13063791/jobs/all/yc/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/18602831/salary/j/jienenggongchengshi/",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -24138,16 +24461,20 @@
               "枧下窝锂矿是全球已探明最大的锂云母矿，设计满产年碳酸锂产能约10万吨",
               "矿区面积2.5平方千米，采矿权有效期为2022年8月9日至2025年8月9日(已过期)",
               "2025年8月采矿证到期后矿山处于停产状态，此次为复产环评",
-              "停产前产出约占全国总产量的8%-10%"
+              "停产前产出约占全国总产量的8%-10%",
+              "【JD·宁德时代宜春】jobui显示宜春基地在招节能工程师(动力&暖通)岗：职***源数据统计、能耗异常原因分析、统筹改善措施、每周能耗周会与能耗周报，任职要求'excel统计分析和ppt报告编写能力强'。",
+              "【JD·宁德时代宜春】jobui显示宜春基地在招FE运维经理(MJ055665,江西宜春项目,35-65k·20薪)。"
             ],
             "inferences": [
               "锂矿开采废水含重金属/酸碱,需专业处理",
               "环评撤销意味着需重新编制/公示,水处理方案可能调整",
-              "环评重新公示后仪表采购窗口将打开"
+              "环评重新公示后仪表采购窗口将打开",
+              "【JD推断】宜春基地能源/水数据管理依托excel周报(岗位任职要求印证)，数据归集、异常预警与报告自动化有明显价值空间；FE运维经理高薪在招反映厂务水电气系统运行管理受重视。"
             ],
             "unknowns": [
               "环评何时重新公示",
-              "具体水处理工艺方案"
+              "具体水处理工艺方案",
+              "【JD推断】宜春基地水系统(纯水/废水)监测仪表与平台现状；节能工程师是否兼管水数据。"
             ]
           },
           "potential_ims_use_case": "锂矿废水在线监测、环评配套仪表、合规记录自动化",
@@ -24158,7 +24485,9 @@
           "incrementality_status": "unknown",
           "source_urls": [
             "https://xny.mysteel.com/a/26081817/385133B11677DA76.html",
-            "https://xny.mysteel.com/a/26082617/D68D56CE4A061C4C.html"
+            "https://xny.mysteel.com/a/26082617/D68D56CE4A061C4C.html",
+            "https://www.jobui.com/company/13063791/jobs/all/yc/",
+            "https://www.jobui.com/company/18602831/salary/j/jienenggongchengshi/"
           ],
           "last_signal_date": "2026-08-31",
           "customer_requirement": "枧下窝锂矿3000万吨/年采矿规模复产需通过环评+选矿厂/尾矿库环评变更；矿山/选矿废水含重金属与酸碱需专业处理（推断）；环评路径受阻期间水处理方案细节未公开",
@@ -24169,7 +24498,8 @@
           ],
           "sales_summary": [
             "复产需通过环评+选矿厂/尾矿库变更审批，环评公示2026-08-26被撤销 → 短期无采购动作，以事件跟踪为主",
-            "一旦复产落地，3000万吨/年开采规模（全球最大单体锂云母矿、停产前约占全国产量8%-10%）配套选矿废水处理与监测是大型机会信号"
+            "一旦复产落地，3000万吨/年开采规模（全球最大单体锂云母矿、停产前约占全国产量8%-10%）配套选矿废水处理与监测是大型机会信号",
+            "【JD推断】宁德宜春节能工程师岗位要求'excel统计分析和ppt报告编写能力强'，直接印证厂务能源数据管理停留在电子表格阶段；对比楚能/亿纬线索，宁德时代宜春可定义为'数据管理成熟度中等、excel化'的潜在客户。"
           ],
           "time_window_basis": "环评拟受理公示2026-08-17发布、公示期至08-28，2026-08-26因群众质疑被撤销 → 需重新编制/公示，重启时间未定；停产前为复产环评（以既有为准）",
           "next_validation_questions": [
@@ -24251,6 +24581,20 @@
               }
             ]
           },
+          "jd_inferences": [
+            {
+              "job_title": "节能工程师(动力&暖通) / FE运维经理",
+              "employer": "宁德时代(宜春)新能源科技有限公司",
+              "role_duties": "节能工程师：能***统计、能耗异常分析、每周能耗周会与周报(excel统计/ppt报告)；FE运维经理：宜***厂务运维管理(35-65k·20薪)",
+              "source_url": "https://www.jobui.com/company/18602831/salary/j/jienenggongchengshi/",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "能源/水数据归集与周报自动化(替代excel手工统计)；水电气厂务数据集中管理",
+              "chain": "节能工程师excel周报+FE运维经理在招 → 厂务数据管理靠手工报表 → 数据归集/预警/报表自动化需求",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ],
           "to_verify": [
             "环评何时重新公示？",
             "选矿厂/尾矿库环评变更办理进展？",
@@ -31677,6 +32021,18 @@
             {
               "source_url": "https://zhuanlan.zhihu.com/p/2062117486665979468",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.zhipin.com/job_detail/79001d6dbaa510581XR-39W4FVJX.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/geipaishuigongchengshi/",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -31711,20 +32067,25 @@
               "中国建筑第八工程局中标二期I标总包工程，中标价26.91亿元(来源：招***)",
               "中芯国际在上海、北京、深圳、天津各有一座12英寸晶圆厂在建(来源：BOSS直聘招聘信息)",
               "一座12英寸晶圆厂每天消耗约1.82万吨超纯水(来源：知***分析)",
-              "参考案例：长***(北京)纯废水项目由中电环境承建，超纯水产能490T/H，废水处理规模47540T/D(来源：百***号)"
+              "参考案例：长***(北京)纯废水项目由中电环境承建，超纯水产能490T/H，废水处理规模47540T/D(来源：百***号)",
+              "【JD·中芯国际】jobui显示上海持续在招厂务水处理工程师(2026-03/08多个岗位,1.1-2万·15薪)：职***成日常纯水、废水等系统设备操作运行维护、仪表维护和巡检、系统设备维护保养与改善、系统问题处理与紧急事故应对、监督厂商施工并参与调试审核验收、评估系统风险。",
+              "【JD·中芯国际】jobui显示上海在招给排水工程师岗(2026-09-04,1.1-1.3万·15薪)：职***务水处理工程师一致(纯水/废水系统运维、仪表维护巡检)。",
+              "【JD·中芯国际】BOSS直聘显示北京中芯国际在招环保工程师岗(职责含废水处理系统建造和维护)；HSE安全环保工程师岗(上海12寸)职责含监督检查环保设施日常运行状况、执行环保安全卫生日常监测。"
             ],
             "inferences": [
               "CapEx 18.357亿美元/季度是财务指标，实际月产能仅增1.7%(107.83→109.65万片)，说明大部分CapEx用于设备采购和先进制程研发，非全部用于新建厂房",
               "但临港Fab9二期工程是明确的新建厂房项目(29.57亿元/357,141m²/P3土建+P4桩基)，必然需要新建超纯水系统和废水处理系统",
               "半导体晶圆制造每道工序(硅片清洗/光刻显影/刻蚀后清洗/CMP抛光/湿法清洗)均依赖超纯水，新建Fab=新建水系统基础设施",
-              "长鑫集电案例证明半导体新建厂房的超纯水+废水EPC项目规模可达490T/H+47540T/D级别"
+              "长鑫集电案例证明半导体新建厂房的超纯水+废水EPC项目规模可达490T/H+47540T/D级别",
+              "【JD推断】中芯国际多厂区(上海张江/临港12寸、北京)持续招聘厂务水处理工程师且职责明确含'仪表维护和巡检' → 水系统仪表运维人力需求大、跨厂区职责标准化；仪表状态管理、巡检数字化、水质预警与应急响应联动是iMS切入点。"
             ],
             "unknowns": [
               "临港Fab9二期水系统EPC由谁承建(是否已招标)",
               "中芯国际现有基地(上海/北京/天津/深圳)水系统供应商",
               "Hach在中芯国际的installed base(无法从公开信息确认)",
               "Fab9二期水系统具体技术规格和监测仪表需求清单",
-              "水系统招标时间窗口(目前处于厂房土建阶段)"
+              "水系统招标时间窗口(目前处于厂房土建阶段)",
+              "【JD推断】各厂区既有水处理数据系统(SCADA/平台)与iMS类工具使用情况；'评估系统风险'是否已有数字化支持。"
             ]
           },
           "potential_ims_use_case": "半导体超纯水系统监测 + 含氟/重金属废水在线监测 + IMS生命周期智能",
@@ -31740,7 +32101,10 @@
             "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc",
             "https://www.zhipin.com/job_detail/360226d185531436031739S-E1dY.html",
             "https://zhuanlan.zhihu.com/p/2058697357294827474",
-            "https://zhuanlan.zhihu.com/p/2062117486665979468"
+            "https://zhuanlan.zhihu.com/p/2062117486665979468",
+            "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+            "https://www.zhipin.com/job_detail/79001d6dbaa510581XR-39W4FVJX.html",
+            "https://www.jobui.com/company/11731330/salary/j/geipaishuigongchengshi/"
           ],
           "to_verify": [
             "临港Fab9二期水系统EPC承建方和招标状态",
@@ -31763,7 +32127,8 @@
           "sales_summary": [
             "中芯临港Fab9二期（P3+P4）2026-07-08由中建八局中标总包26.91亿元、7月13日核发施工许可，厂房土建/桩基刚动工——新建12英寸Fab必然配套新建超纯水与废水处理系统（fact）",
             "二期I标招标范围已明确包含CUB2动力厂房与DCS2废水检测间，且厂务动力系统（PCS）由发包人另行发包——水系统EPC/设备招标尚未见公开记录，跟踪窗口正开启（fact）",
-            "中芯国际2026Q2资本开支18.357亿美元（环比+17.5%）、季度营收首破30亿美元、产能利用率93.7%逼近满产、12英寸营收占比78.2%——扩产资金与需求动力强（fact）"
+            "中芯国际2026Q2资本开支18.357亿美元（环比+17.5%）、季度营收首破30亿美元、产能利用率93.7%逼近满产、12英寸营收占比78.2%——扩产资金与需求动力强（fact）",
+            "【JD推断】中芯国际厂务水处理工程师JD明确将'仪表维护和巡检'列为日常职责，且张江/临港/北京多厂区持续招聘该岗；半导体厂务数据管理成熟但岗位职责依然重人工运维，iMS应以'仪表健康管理+巡检数字化+预警联动'切入(需先验证既有平台)。"
           ],
           "time_window_basis": "二期I标总包工程（2026Fab9-P3厂房土建和Fab9-P4厂房桩基项目总承包工程）2026-07-04中标候选人公示、07-08中标结果公告（中建八局26.91亿元）、07-13核发建筑工程施工许可（企查查/天眼查招投标记录）；二期I标招标范围明确包含CUB2动力厂房、DCS2废水检测间及工艺动力系统（发包人另行发包的厂务动力系统PCS配合安装），水系统为二期必建工程；参考一期节奏（2021-12拿地→2022-12 P1封顶→2024底量产约36个月），水系统EPC/设备招标通常在土建开工后6-12个月展开，即2026 Q4-2027 H1。",
           "next_validation_questions": [
@@ -31898,7 +32263,21 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "厂务水处理工程师 / 给排水工程师 / 环保工程师",
+              "employer": "中芯国际(上海/北京多厂区)",
+              "role_duties": "厂务水处理工程师：纯*/废水系统设备运行维护、仪表维护和巡检、维护保养/改善、系统问题处理与紧急事故应对、系统风险评估；环保工程师(北京)：废***系统建造和维护；HSE安全环保工程师(上海12寸)：环***日常运行监督检查、环境日常监测",
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "水系统仪表状态管理与巡检数字化；水质异常预警与应急联动；跨厂区(张江/临港/北京)同类职责标准化数据管理",
+              "chain": "水处理工程师'仪表维护和巡检'+紧急事故应对(岗位职责) → 仪表运维/巡检/预警依赖人工 → 数字化管理需求 → iMS切入点",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -34153,6 +34532,18 @@
             {
               "source_url": "https://www.163.com/dy/article/L49LMNMO0519DDOA.html",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.zhipin.com/job_detail/79001d6dbaa510581XR-39W4FVJX.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/geipaishuigongchengshi/",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -34169,13 +34560,19 @@
               "Q2 2026销售收入30.06亿美元，首次突破30亿美元",
               "Q2资本开支18.357亿美元，环比+17.5%",
               "产能利用率93.7%，持续加码12英寸产线扩充",
-              "产能扩张持续，12英寸产线贡献主要增量"
+              "产能扩张持续，12英寸产线贡献主要增量",
+              "【JD·中芯国际】jobui显示上海持续在招厂务水处理工程师(2026-03/08多个岗位,1.1-2万·15薪)：职***成日常纯水、废水等系统设备操作运行维护、仪表维护和巡检、系统设备维护保养与改善、系统问题处理与紧急事故应对、监督厂商施工并参与调试审核验收、评估系统风险。",
+              "【JD·中芯国际】jobui显示上海在招给排水工程师岗(2026-09-04,1.1-1.3万·15薪)：职***务水处理工程师一致(纯水/废水系统运维、仪表维护巡检)。",
+              "【JD·中芯国际】BOSS直聘显示北京中芯国际在招环保工程师岗(职责含废水处理系统建造和维护)；HSE安全环保工程师岗(上海12寸)职责含监督检查环保设施日常运行状况、执行环保安全卫生日常监测。"
             ],
             "inferences": [
               "持续扩产意味着新厂房建设和水系统扩建",
-              "半导体工厂超纯水和废水处理需求持续"
+              "半导体工厂超纯水和废水处理需求持续",
+              "【JD推断】中芯国际多厂区厂务水处理/环保岗位JD(见IND-20260820-06同款证据)证明集团水系统运维人力投入大、职责标准化；本线索(中芯多基地综合)与12英寸专线共享该JD推断，跨厂区仪表/水质数据管理是集团层面切入点。"
             ],
-            "unknowns": []
+            "unknowns": [
+              "【JD推断】各厂区既有水处理数据系统(SCADA/平台)与iMS类工具使用情况；'评估系统风险'是否已有数字化支持。"
+            ]
           },
           "potential_ims_use_case": "",
           "logic": "",
@@ -34184,7 +34581,10 @@
           "priority": "P3",
           "source_urls": [
             "https://baijiahao.baidu.com/s?id=1873465234611291567&wfr=spider&for=pc",
-            "https://www.163.com/dy/article/L49LMNMO0519DDOA.html"
+            "https://www.163.com/dy/article/L49LMNMO0519DDOA.html",
+            "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+            "https://www.zhipin.com/job_detail/79001d6dbaa510581XR-39W4FVJX.html",
+            "https://www.jobui.com/company/11731330/salary/j/geipaishuigongchengshi/"
           ],
           "to_verify": [
             "该客户是否已有 Hach 机会/管线？",
@@ -34211,7 +34611,8 @@
             "unknown：项***新建/扩建阶段，公开信息未披露已证实的运行/合规/运维痛点。待验证：投***测合规、水量水质稳定性表现。"
           ],
           "sales_summary": [
-            "Q2 2026销售收入30.06亿美元，首次突破30亿美元"
+            "Q2 2026销售收入30.06亿美元，首次突破30亿美元",
+            "【JD推断】中芯国际集团层面水处理岗位JD多厂区一致(共享IND-20260820-06证据)，集团级仪表/水质数据管理为切入叙事。"
           ],
           "time_window_basis": "信号记录日期：2026-08-19（首见）至2026-08-19（最近）。项目阶段：Execution。",
           "next_validation_questions": [
@@ -34254,7 +34655,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "厂务水处理工程师(集团多厂区)",
+              "employer": "中芯国际(集团层面)",
+              "role_duties": "参考IND-20260820-06同款JD：纯*/废水系统运维、仪表维护和巡检、紧急事故应对、系统风险评估",
+              "source_url": "https://www.jobui.com/company/11731330/salary/j/shuichuligong/",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "集团跨厂区水系统仪表健康管理、巡检数字化、水质预警联动(与12英寸专线共享)",
+              "chain": "集团多厂区水处理岗位标准化(JD一致) → 跨厂区数据对标与管理需求 → iMS集团级切入",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "aggregated",
         "record_status": "active",
@@ -43421,6 +43836,14 @@
             {
               "source_url": "https://www.dowater.com/zhaobiao/2026-07-13/12398946.asp",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://job.haut.edu.cn/module/position_details/id-288242/nid-2075",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.bjbys.net.cn/c/2019-01-14/300969.shtml",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -43437,12 +43860,17 @@
               "采购范围包括废水/废气/无组织/噪声检测+VOC进口监测+在线设备比对监测",
               "采购公告编号SHXYGG202607110002",
               "依据HJ 883-2017《排污单位自行监测技术指南 化学合成类制药工业》",
-              "依据HJ 883-2017"
+              "依据HJ 883-2017",
+              "【JD·双鹤药业】双鹤药业(商丘)有限责任公司历史校招设污水/水处理/水务工程师岗(2022-2023年信息)：职***污水处理进行控制确保达标排放、每天上岗前检查设备、按规程操作、每天做好测试并做好相应记录、参与给排水工程项目设计实施。",
+              "【JD·华润双鹤】集团校招岗位含生产类-安全环保岗(历史信息)。"
             ],
             "inferences": [
-              "已有在线设备但需比对监测，说明已安装自动监测设备"
+              "已有在线设备但需比对监测，说明已安装自动监测设备",
+              "【JD推断】双鹤体系水处理岗位职责以'人工测试+手工记录'为骨架(商丘基地JD)；华润双鹤沧州分公司为原料药/制剂基地，若岗位配置与集团同类模式一致，手动记录电子化、合规记录归档与数据留痕有提升空间(参照集团模式推断，非沧州直接证据)。"
             ],
-            "unknowns": []
+            "unknowns": [
+              "【JD推断】沧州分公司现役水处理岗位编制与数字化现状；无沧州专属JD，岗位配置为集团模式推断。"
+            ]
           },
           "potential_ims_use_case": "",
           "logic": "",
@@ -43450,7 +43878,9 @@
           "estimated_time_window": "2026-08至2027-07服务年度（采购公告2026-07-13发布；年度自行监测服务执行期自2026年8月起）",
           "priority": "P3",
           "source_urls": [
-            "https://www.dowater.com/zhaobiao/2026-07-13/12398946.asp"
+            "https://www.dowater.com/zhaobiao/2026-07-13/12398946.asp",
+            "https://job.haut.edu.cn/module/position_details/id-288242/nid-2075",
+            "https://www.bjbys.net.cn/c/2019-01-14/300969.shtml"
           ],
           "to_verify": [
             "厂区现有在线监测设备品牌、数量与服役年限",
@@ -43478,7 +43908,8 @@
           ],
           "sales_summary": [
             "采购范围含'在线设备比对监测'→厂区已有在线监测设备在役，存在运维/备件/设备更新生命周期需求（事实）",
-            "化学合成原料药基地按HJ 883-2017执行自行监测+VOC进口监测→监测因子覆盖广、频次高，属药企污染源在线监测标杆客户（事实）"
+            "化学合成原料药基地按HJ 883-2017执行自行监测+VOC进口监测→监测因子覆盖广、频次高，属药企污染源在线监测标杆客户（事实）",
+            "【JD推断】双鹤体系商丘基地JD暴露'人工测试+手工记录'模式；沧州分公司无专属JD，应用为MEDIUM置信度集团模式推断，需以沧州基地实际验证(排水口在线监测/台账方式)为准。"
           ],
           "time_window_basis": "采购公告（2026-07-13）明确服务期为2026.8-2027.7年度、按HJ 883-2017执行；年度续签模式下2027年年中再招标，年度内为监测服务供应商替换/补充窗口。（以既有为准）",
           "next_validation_questions": [
@@ -43539,7 +43970,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "污水/水处理/水务工程师(校招,历史)",
+              "employer": "双鹤药业(商丘)有限责任公司(华润双鹤体系)",
+              "role_duties": "对污水处理进行控制确保达标排放、每天上岗前检查设备、按规程操作、每天做好测试并记录、参与给排水工程设计实施",
+              "source_url": "https://job.haut.edu.cn/module/position_details/id-288242/nid-2075",
+              "evidence_type": "FACT",
+              "confidence": "MEDIUM",
+              "software_need": "水处理日检记录电子化与合规留痕；沧州分公司为集团模式推断(需验证)",
+              "chain": "双鹤体系'人工测试+记录'岗位模式 → 记录电子化/合规归档空间 → 需验证沧州分公司配置",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched_p2",
         "record_status": "active",
@@ -48532,7 +48977,8 @@
               "规划年产能70GWh(动力20GWh+储能50GWh)",
               "项目明确列示配套建设污水站",
               "建设电芯洁净生产厂房、PACK生产线、储能/动力系统生产车间等",
-              "楚能已在孝感、宜昌有生产基地，总规划产能350GWh"
+              "楚能已在孝感、宜昌有生产基地，总规划产能350GWh",
+              "【JD·楚能襄阳】BOSS直聘/jobui在招'污水处理工程师'(职责：污***常管理、设备运行、药剂管理、污泥压滤、台账报表、除臭设备操作)与'环保体系工程师(襄阳基地储备)'(职责：排***证申领与证后管理、危废管理、污水站达标排放管理、环保三同时合规)。"
             ],
             "inferences": [
               "锂电池生产废水含重金属、有机溶剂、酸碱废水，需专业处理",
@@ -48668,7 +49114,33 @@
                 "evidence_type": "fact"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "环保体系工程师(襄阳基地储备)",
+              "employer": "襄阳楚能新能源有限公司",
+              "role_duties": "排污许可证申领与证后管理；制订危废年度计划、负责危废转移处置；负责管理污水站达标排放；环保突发事件应急处置；环保三同时合规",
+              "source_url": "https://www.jobui.com/company/17279318/salary/j/huanbaotixigongchengshi/",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "排污许可证后管理、污水站达标排放管理、危废台账数字化；投产初期合规监测与记录管理",
+              "chain": "环保体系工程师岗位职责(排污证后管理+污水站达标排放) → 合规记录与排放数据管理需求 → iMS切入",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference (原型线索)"
+            },
+            {
+              "job_title": "污水处理工程师",
+              "employer": "襄阳楚能新能源有限公司",
+              "role_duties": "污水站日常管理、设备运行、药剂管理、污泥压滤、台账报表、除臭设备操作",
+              "source_url": "https://www.zhipin.com/job_detail/4afbc1171ed4174e03163d2_F1dR.html",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "手动台账/报表/药剂管理电子化；设备运行状态与水质预警",
+              "chain": "污水处理工程师手动台账报表(岗位职责) → 数字化切换场景 → iMS切入(用户认可的方法原型)",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference (原型线索)"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched",
         "record_status": "active",
@@ -52028,6 +52500,10 @@
             {
               "source_url": "https://www.skhynix.com.cn/sustainEnvironOut01.jsp",
               "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://jobs.51job.com/dalian-jzq/coUzQAZFE3DjVWMQFiVzRWaQ.html",
+              "evidence_summary": "原始数据来源"
             }
           ]
         }
@@ -52058,17 +52534,21 @@
               "新产线月投片量约5万片，总产能增加约50%",
               "SK海力士官网显示大连厂区建有2座废水处理厂，配备在线监测+每日水质分析+第三方检测",
               "采用与1号工厂相同的设备配置",
-              "SK海力士重启大连2号工厂建设,将NAND产能扩大约50%,计划2026年底引入设备,2027年上半年投产"
+              "SK海力士重启大连2号工厂建设,将NAND产能扩大约50%,计划2026年底引入设备,2027年上半年投产",
+              "【JD·SK海力士大连】51job 发布厂务支持技术员(水科方向)岗位(9-12万/年,大连金州区,3-4年,大专)，职责含给排水系统、供水系统等动力设备维护(2026年招聘页)。",
+              "【JD·SK海力士大连】51job 同时发布厂务支持技术员(暖通能源动力方向)岗位，职责含空调水系统、锅炉系统、通风系统维护。"
             ],
             "inferences": [
               "2号工厂投产将增加废水产生量，可能需要扩展废水处理能力",
               "现有废水处理厂已配备在线监测，新厂可能复制相同监测架构",
-              "设备安装期(2026年底)可能是仪表采购窗口"
+              "设备安装期(2026年底)可能是仪表采购窗口",
+              "【JD推断】水科方向专职技术员持续在招表明厂务水系统运维人力投入大；结合二厂扩产(lead既有事实)增加废水处理负荷，水质/仪表运维数据管理与异常预警存在数字化空间。"
             ],
             "unknowns": [
               "2号工厂是否新建独立废水处理设施还是扩展现有设施",
               "Hach是否已在1号工厂有装机",
-              "具体水监测因子和技术规格要求"
+              "具体水监测因子和技术规格要求",
+              "【JD推断】SK海力士大连水系统运维是否已有DCS/SCADA/数据平台；仪表品牌与维护模式(自维vs外包)。"
             ]
           },
           "potential_ims_use_case": "半导体工厂废水处理监测、在线监测数据管理、合规记录自动化",
@@ -52081,7 +52561,8 @@
           "source_urls": [
             "https://baijiahao.baidu.com/s?id=1873522659612494836&wfr=spider&for=pc",
             "https://www.163.com/dy/article/L42T5QVO05198NMR.html",
-            "https://www.skhynix.com.cn/sustainEnvironOut01.jsp"
+            "https://www.skhynix.com.cn/sustainEnvironOut01.jsp",
+            "https://jobs.51job.com/dalian-jzq/coUzQAZFE3DjVWMQFiVzRWaQ.html"
           ],
           "to_verify": {
             "customer_identity": "确认SK海力士/Solidigm大连厂区Hach装机情况",
@@ -52103,7 +52584,8 @@
           ],
           "sales_summary": [
             "大连NAND基地已建2座废水处理厂并配在线监测+每日水质分析+第三方检测（官网公开），2号厂沿用1号厂配置 → 新厂大概率复制相同监测架构，是标准化仪表切入点",
-            "建设已重启、2026年11月起搬设备、2027上半年投产（2026-09-01中国新闻网） → 水系统与监测配套采购窗口集中在2026Q4-2027Q1"
+            "建设已重启、2026年11月起搬设备、2027上半年投产（2026-09-01中国新闻网） → 水系统与监测配套采购窗口集中在2026Q4-2027Q1",
+            "【JD推断】SK海力士大连三座晶圆厂持续招聘厂务水科/暖通方向技术员，水系统运维岗位专职化；二厂扩产50%增加水处理负荷，运维数据管理(巡检/仪表/水质)与跨系统预警是软性切入点——需先验证现有DCS/数据平台后再定位iMS角色。"
           ],
           "time_window_basis": "facts确认重启施工+计划2026年底前引入设备、2027上半年投产；2026-09-01中国新闻网报道确认新产线规划月投片5万片、预计2027年上半年量产（以既有为准）",
           "next_validation_questions": [
@@ -52204,7 +52686,21 @@
                 "evidence_type": "unknown"
               }
             ]
-          }
+          },
+          "jd_inferences": [
+            {
+              "job_title": "厂务支持技术员(水科方向)",
+              "employer": "爱思开海力士半导体(大连)有限公司",
+              "role_duties": "给排水系统、供水系统、动力设备维护；设备维护(水科方向)",
+              "source_url": "https://jobs.51job.com/dalian-jzq/coUzQAZFE3DjVWMQFiVzRWaQ.html",
+              "evidence_type": "FACT",
+              "confidence": "HIGH",
+              "software_need": "半导体厂务水系统运维数据(水质/仪表/巡检)管理；扩产期新增水处理负荷的运行监测与预警",
+              "chain": "水科专职技术员在招+二厂扩产 → 水系统运维规模扩大 → 仪表数据与运维记录管理需求",
+              "applied_at": "2026-09-13",
+              "method": "JD-First Demand Inference"
+            }
+          ]
         },
         "enrichment_status": "sales_usable_enriched_p2",
         "record_status": "active",
