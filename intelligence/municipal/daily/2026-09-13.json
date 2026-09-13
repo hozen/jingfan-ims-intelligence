@@ -1,0 +1,768 @@
+{
+  "date": "2026-09-13",
+  "weekday": "Sunday",
+  "version": "3.6",
+  "run_type": "v3.6 威立雅中国战略客户专题资格审定与富化（Stage 1 专题扫描 -> Stage 2 Qualification -> Stage 3 Enrichment），非工作日定时任务，用户指定专题运行",
+  "scanner_summary": {
+    "total_scanned": 11,
+    "valid_triggers": 5,
+    "p1_count": 1,
+    "p2_count": 4,
+    "p3_count": 0,
+    "background_monitoring_count": 2,
+    "stage_gate_moved_from_opportunities": 2,
+    "industry_trigger_count": 3,
+    "ecosystem_trigger_count": 2,
+    "policy_trigger_count": 3,
+    "competitive_trigger_count": 2,
+    "trigger_breakdown": {
+      "project_new": 1,
+      "account_operational": 5,
+      "account_strategic": 1,
+      "industry": 3,
+      "ecosystem": 2,
+      "policy": 3,
+      "competitive": 2
+    },
+    "stage3_enrichment_count": 5,
+    "method_note": "威立雅中国战略客户专题扫描（2026-09-13 用户指定）：主体=威立雅(中国)环境服务有限公司及下属项目公司（50城100+项目）；来源组=威立雅官网/公众号/水业年会分享/政府公告/招标平台/行业媒体，共10轮websearch；按v3.6规则对11条线索逐条Stage 2审定（Stage Gate+逻辑链+action_triad+评分），5条通过进入opportunities[]，2条转入background_monitoring[]（联油三期施工准备、泰达招标已成交），其余进入strategic_accounts/ecosystem/competitive等列表；全部5条通过线索完成Stage 3富化"
+  },
+  "top_5_match": [
+    {
+      "name": "威立雅科学城环保科技(广州)有限公司储备项目群（高品质回用水/SAF/动力电池资源化/废水深度治理，与广州开发区洽谈中）",
+      "trigger_type": "account",
+      "public_signal_score": 80,
+      "priority": "P1",
+      "match_reason": "合资公司2026年6月刚注册（威立雅×科学城广州投资集团），首个项目联油三期已签约落地验证合资平台，另与广州开发区洽谈高品质回用水/SAF/动力电池回收/废水深度治理四个储备方向——处于战略规划/立项早期，iMS可在项目定义期介入，提前量最大。",
+      "agent_checklist": "验证威立雅科学城(广州)是否为Hach客户/SFDC账户；广州开发区项目储备清单与决策链；联油三期已落地的仪表/数字化供应商；威立雅AQUAVISTA是否已绑定该项目",
+      "action_triad": {
+        "find_who": "威立雅科学城环保科技(广州)有限公司项目团队（2026年6月注册合资公司）",
+        "talk_what": "储备项目群（回用水/SAF/电池回收/废水深度治理）的技术路线选型窗口？联油三期已确定哪些在线监测/数字化供应商？合资公司数字化能力自建还是外购？",
+        "why_now": "合资公司刚成立、储备项目尚在洽谈阶段，技术路线与供应商均未锁定——影响需求定义的最佳窗口"
+      },
+      "sector": "municipal-industrial"
+    },
+    {
+      "name": "上海浦东威立雅：新版上海水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化深化",
+      "trigger_type": "account",
+      "public_signal_score": 79,
+      "priority": "P2",
+      "match_reason": "总经理王雪峰公开发文指出行业痛点：智慧平台沦为'数据展示工具'、缺复合型人才；副总孙坚伟提出新国标下氯酸盐/铝/微生物在线监测管控需求；居家桥智慧水厂2024年底通水进入运营期。运营型数字化建设窗口，逻辑链完整。",
+      "agent_checklist": "验证浦东威立雅是否为Hach客户；居家桥水厂在线仪表品牌与数字化白空间；王雪峰/孙坚伟决策影响力；AQUAVISTA是否已参与",
+      "action_triad": {
+        "find_who": "上海浦东威立雅总经理王雪峰、副总经理孙坚伟（水质监测）、管网所副所长乔兴博",
+        "talk_what": "新标准DB31/T 1091-2025下氯酸盐/铝/微生物监测点位与数据质量保障方案？居家桥智慧水厂'数运平台'是否覆盖仪表资产管理？",
+        "why_now": "新版上海水质标准2026年落地，监测体系升级窗口正在打开；王雪峰已公开论述转型痛点说明诉求明确"
+      },
+      "sector": "municipal"
+    },
+    {
+      "name": "威立雅(中国)环境服务：集团数智化平台建设 + AQUAVISTA/Hubgrade产品线 + 数字化岗位扩编",
+      "trigger_type": "account",
+      "public_signal_score": 74,
+      "priority": "P2",
+      "match_reason": "CEO顾丽华2025年4月上任强调'数字化转型为抓手'，2026年6月30日向广州官方介绍数智化平台建设应用；自有AQUAVISTA（100+水厂）与Hubgrade在推进；2026年公开招聘工业数字化高级经理/全栈开发工程师。集团级数字化投入期信号明确。",
+      "agent_checklist": "威立雅(中国)环境服务是否为Hach集团已有客户？AQUAVISTA在中国落地情况（宣传以全球为主）；数字团队规模与平台架构；与Hach合作vs竞争的空间",
+      "action_triad": {
+        "find_who": "威立雅中国区CEO顾丽华战略团队、工业数字化高级经理、数智化平台建设负责人",
+        "talk_what": "集团数智化平台中仪表层数据质量/资产管理的定位？AQUAVISTA在华推广计划？与第三方仪表管理工具的集成意愿？",
+        "why_now": "集团数智化平台建设期（2026年招聘软件/运维岗佐证投入扩编），技术架构未固化，是建立'仪表数据层合作'认知的窗口"
+      },
+      "sector": "cross"
+    },
+    {
+      "name": "天津津滨威立雅：智慧管网感知层持续扩容（卫星探漏+噪声监测500+点位+在线水力模型）",
+      "trigger_type": "account",
+      "public_signal_score": 72,
+      "priority": "P2",
+      "match_reason": "管网4074km、设施43919台、智能水表72.84%、综合漏损率9.19%仍要压降；智慧管网四层架构+综合运营管理平台已建成，感知层扩容持续（2025年公开分享成果）。存量仪表+持续扩容场景，iMS资产管理/数据质量可直接切入。",
+      "agent_checklist": "验证津滨威立雅是否Hach客户；感知层在线仪表品牌分布与数量；管网健康指数92.35的数据来源仪表；多系统数据一致性98.15%背后的仪表数据质量痛点",
+      "action_triad": {
+        "find_who": "津滨威立雅管网运行总监王燮（2025年供水高峰论坛主讲）、信息化负责人",
+        "talk_what": "感知层在线仪表的标定周期与故障管理现状？漏损压降目标下噪声/流量/压力仪表的数据质量保障？管网健康指数的仪表数据链路？",
+        "why_now": "2025年公开分享成果说明建设仍在推进；漏损压降9.19%目标驱动感知层持续扩容与既有仪表运维需求"
+      },
+      "sector": "municipal"
+    },
+    {
+      "name": "铜陵六国威立雅：提标改造2026年2月通水（一级A），运营初期在线监测配套建设",
+      "trigger_type": "account",
+      "public_signal_score": 70,
+      "priority": "P2",
+      "match_reason": "14400m3/d提标改造2025年3月开工、2026年2月通水转运营初期；一级A出水合规驱动在线监测配套；公司为高新技术企业/专精特新，体量小IT人力有限。新设施投运后的仪表配置与数字化建设窗口。",
+      "agent_checklist": "验证铜陵六国威立雅是否Hach客户；提标后在线仪表品牌/数量；一级A出水在线监测合规点配置；园区工业污水波动下的仪表运维痛点",
+      "action_triad": {
+        "find_who": "铜陵六国威立雅总经理米向荣（法定代表人）、运营/技术负责人",
+        "talk_what": "提标后在线监测仪表配置与标定管理？一级A出水数据质量保障？园区工业污水波动对仪表寿命的影响与运维投入？",
+        "why_now": "2026年2月刚通水，运营体系与数字化配置尚未固化——建立仪表资产管理习惯的最佳窗口期"
+      },
+      "sector": "municipal-industrial"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "OPS-20260913-VEOL-001",
+      "name": "威立雅科学城环保科技(广州)有限公司储备项目群",
+      "public_facts": "2026年6月威立雅与科学城(广州)投资集团合资成立威立雅科学城环保科技(广州)有限公司，聚焦绿色低碳/新污染物治理/CCUS等方向；首个项目联油三期炭黑工业烟气捕集与资源化利用零碳项目于2026年9月签约（总投资近1亿元，2026年10月施工、2027年6月投产试运营）；与广州开发区洽谈高品质回用水、可持续航空燃料(SAF)、动力电池资源化、工业废水深度治理与再生水回用等储备项目。威立雅中国CEO顾丽华2026年6月30日与广州市生态环境局座谈介绍集团业务与数智化平台。",
+      "ai_judgment": "合资公司刚注册+首个项目已签约落地（证明合资平台真实运转）+四个储备方向均在洽谈——这是威立雅在中国华南扩张的实体抓手。储备项目群处于战略规划/立项早期，若 iMS 在项目定义期建立'仪表数据层'标准认知，可在后续各项目招标/采购时自然进入技术规格。联油三期已进入施工准备（设计基本冻结）错过窗口可能性高，但同批次储备项目承接了提前量。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+      "opportunity_stage": "战略规划/立项",
+      "estimated_time_window": ">9 months",
+      "estimated_time_window_basis": "储备项目群处于洽谈/战略规划阶段（公开信息），对应>9个月介入窗口；联油三期已施工准备（2026-10），单独降级背景监控",
+      "logic_chain_check": "Customer Change(合资公司在华华南新布局+储备项目群) -> Digital Change(新建项目按威立雅集团数智化标准设计) -> Operational Problem(新设施需在线监测/数据采集/合规追溯，集团数智化平台需仪表层数据) -> Instrument/Data/Asset Management Need(新建项目仪表数字化配套) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链较完整但依赖'储备项目落地'，评WEAK偏上。",
+      "action_triad": {
+        "find_who": "威立雅科学城环保科技(广州)有限公司项目团队（合资公司2026年6月注册）；广州开发区投促局项目对接人",
+        "talk_what": "高品质回用水/SAF/电池回收/废水深度治理储备项目的技术路线选型时间表？联油三期已确定哪些在线监测与数字化供应商？合资公司数字化能力自建还是外购？",
+        "why_now": "合资公司刚注册三个月、储备项目尚在洽谈，技术路线与供应商锁定都未发生——影响需求定义的最佳窗口"
+      },
+      "to_verify": {
+        "customer_identity": "威立雅科学城环保科技(广州)是否为Hach已有客户/SFDC账户？威立雅中国整体是否为战略客户？",
+        "installed_base": "联油三期已采购的仪表品牌与数量？合资公司有无联网仪表/数字化白空间？广州开发区现有项目仪表？",
+        "commercial_history": "威立雅中国与Hach历史合作记录？广州区域当前Pipeline？服务合同？",
+        "ims": "威立雅AQUAVISTA是否已绑定该项目/储备项目？是否已接触类似仪表管理产品？",
+        "account_sales": "威立雅(中国)Account Owner？华南Regional Owner？合资公司是否有人认领？"
+      },
+      "score": 80,
+      "score_breakdown": {
+        "signal_strength": 80,
+        "ims_relevance": 85,
+        "project_customer_stage": 85,
+        "timing": 80,
+        "scale": 70,
+        "ecosystem_influence": 75,
+        "evidence_quality": 75
+      },
+      "confidence": "medium",
+      "source_url": "https://gd.cri.cn/2026-09-02/14db247e-bc20-4ed8-8ed2-dc847f3228ab.html",
+      "source_type": "official_news",
+      "continuity": {
+        "first_seen": "2026-09-13",
+        "new_facts_today": "首次发现（专题扫描）",
+        "changed": false
+      },
+      "enrichment_pointer": "ENR-20260913-VEOL-001",
+      "trigger_type": "Account",
+      "sector": "municipal-industrial",
+      "logic_chain_check_status": "WEAK"
+    },
+    {
+      "id": "OPS-20260913-VEOL-002",
+      "name": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+      "public_facts": "上海浦东威立雅（上海城投50%×威立雅50%，2002年成立50年合同）日供水200万m3，服务423万居民。居家桥智慧水厂10万m3/d 2023年9月开工、2024年底通水，采用深度处理（臭氧+生物活性炭）与'数运平台统管+机器人巡检'模式。总经理王雪峰公开发文：供水企业智慧化平台常沦为'数据展示工具'、不能直接解决业务问题、缺乏复合型人才。副总经理孙坚伟（2026年）提出新版上海水质标准DB31/T 1091-2025下氯酸盐、铝、微生物在线监测管控需求。浦威2025年大讨论确定智慧水厂建设+降低管网漏损率两大重点方向。",
+      "ai_judgment": "浦东威立雅是中国最大供水合资项目之一，管理层公开承认'数字化转型不能只展示数据'——这正是 iMS 的核心价值主张（仪表数据可信、可行动、驱动决策）。叠加2026年落地的新版上海水质标准（氯酸盐/铝/微生物指标收紧），监测点位增加+数据质量要求提高同时发生，是 iMS 进入的最佳时机：既有存量仪表健康管理需求，又有新标准驱动的新增监测需求。总经理是数字化转型意见领袖，决策层认知到位。",
+      "potential_ims_use_case": "Instrument Health Diagnostics / Data Quality / Digital Operations",
+      "opportunity_stage": "运营期数字化建设",
+      "estimated_time_window": "3-6 months",
+      "estimated_time_window_basis": "新版上海水质标准2026年落地，监测体系升级窗口当前打开（公开信息：孙坚伟2026年分享新标准管控需求）",
+      "logic_chain_check": "Customer Change(新水质标准DB31/T 1091-2025落地) -> Digital Change(智慧水厂'数运平台'运营深化) -> Operational Problem(平台沦为展示工具、缺复合型人才、新指标监测管控难) -> Instrument/Data/Asset Management Need(仪表数据质量与健康管理) -> Potential iMS Use Case(Instrument Health Diagnostics/Data Quality)。逻辑链完整且管理层公开发文印证，PASS。",
+      "action_triad": {
+        "find_who": "上海浦东威立雅总经理王雪峰、副总经理孙坚伟（水质监测分管）、管网所副所长乔兴博",
+        "talk_what": "新标准下氯酸盐/铝/微生物监测点位布置与数据质量保障方案？居家桥'数运平台'是否覆盖仪表资产管理与预测性维护？'平台沦为数据展示工具'的痛点是否已有改进计划？",
+        "why_now": "新版上海水质标准2026年落地，监测体系升级窗口正在打开；王雪峰已公开发文论述转型痛点、孙坚伟已公开谈新标准监测——诉求明确且决策层可接触"
+      },
+      "to_verify": {
+        "customer_identity": "上海浦东威立雅是否Hach已有客户？上海城投水务与Hach合作关系？",
+        "installed_base": "居家桥水厂及浦东水厂在线仪表品牌/数量？联网仪表比例？数字平台白空间？",
+        "commercial_history": "浦东威立雅历史Hach销售/Opportunity？当前Pipeline？服务合同？",
+        "ims": "数运平台是否已有仪表管理模块？是否接触过类似iMS产品？AQUAVISTA是否在浦东有部署？",
+        "account_sales": "Account Owner是谁？上海区域客户关系强度？"
+      },
+      "score": 79,
+      "score_breakdown": {
+        "signal_strength": 80,
+        "ims_relevance": 85,
+        "project_customer_stage": 75,
+        "timing": 78,
+        "scale": 80,
+        "ecosystem_influence": 75,
+        "evidence_quality": 80
+      },
+      "confidence": "high",
+      "source_url": "http://m.article.zhongqi.group/uznews/941330article_613.shtml; https://mp.weixin.qq.com/s?__biz=MzA4OTA2MjY1Nw==&mid=2655071774",
+      "source_type": "expert_article",
+      "continuity": {
+        "first_seen": "2026-09-13",
+        "new_facts_today": "首次发现（专题扫描）",
+        "changed": false
+      },
+      "enrichment_pointer": "ENR-20260913-VEOL-002",
+      "trigger_type": "Account",
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS"
+    },
+    {
+      "id": "OPS-20260913-VEOL-003",
+      "name": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+      "public_facts": "威立雅中国50城100+项目8500+员工；注册资本2026年7月增至29.55亿元。CEO顾丽华2025年4月2日就任，公开强调'以数字化转型为抓手'；2026年6月30日与广州市生态环境局座谈介绍集团业务与数智化平台建设、应用情况。自有数字化产品线AQUAVISTA（Portal/Insight/Assist/Plant四模块，源自丹麦Krüger精确曝气，宣称省20-50%运行成本，全球100+水厂应用）与Hubgrade智颖能效中心（康师傅工厂案例）。2026年公开招聘工业数字化高级经理、全栈开发工程师(Python)、IT高级运维工程师。",
+      "ai_judgment": "威立雅中国正处在集团级数智化投入期：新CEO定调+数智化平台建设+数字化岗位扩编三重信号共振。AQUAVISTA聚焦水厂运行优化（曝气/电耗/药耗），不覆盖仪表资产管理——iMS与其是互补层而非替代层。若能从集团层面建立'仪表数据层=第三方专业能力'的认知，或推动AQUAVISTA生态集成iMS，价值远大于单点项目。这是'集团/战略层面切入'方法论的最佳示范标的，需Company Agent先验证AQUAVISTA在华实际落地情况与集团数字团队的开放度。",
+      "potential_ims_use_case": "Asset Management / Lifecycle Management / Instrument Monitoring",
+      "opportunity_stage": "集团战略推进期",
+      "estimated_time_window": "6-18 months",
+      "estimated_time_window_basis": "集团数智化平台建设为中长期战略推进（顾丽华2026年6月公开介绍），对应6-18个月；AQUAVISTA生态集成需在平台架构固化前建立合作认知",
+      "logic_chain_check": "Customer Change(新CEO+集团数智化战略) -> Digital Change(数智化平台建设+岗位扩编) -> Operational Problem(100+项目仪表数据需统一管理；AQUAVISTA不覆盖仪表资产层) -> Instrument/Data/Asset Management Need(集团级仪表资产/数据管理平台) -> Potential iMS Use Case(Asset Management/Lifecycle)。逻辑链完整，PASS。",
+      "action_triad": {
+        "find_who": "威立雅(中国)环境服务数智化平台团队负责人、工业数字化高级经理（2026年公开招聘岗位）、CEO顾丽华战略团队",
+        "talk_what": "集团数智化平台中仪表层数据质量/资产管理/生命周期管理的定位？AQUAVISTA在华推广计划与生态集成策略？是否愿意集成第三方仪表管理能力？",
+        "why_now": "集团数智化平台建设期（2026年招聘软件/运维岗佐证投入扩编），技术架构未固化——建立'仪表数据层合作'认知的窗口，晚一年架构就锁定了"
+      },
+      "to_verify": {
+        "customer_identity": "威立雅(中国)环境服务有限公司是否为Hach集团已有客户？SFDC账户？",
+        "installed_base": "威立雅中国100+项目仪表统一管理现状？各项目公司联网仪表规模？数字化白空间总量？",
+        "commercial_history": "Hach与威立雅中国集团/子公司历史合作？当前Pipeline？",
+        "ims": "AQUAVISTA在中国实际落地客户名单？是否已评估过iMS或类似产品？平台是否预留第三方集成接口？",
+        "account_sales": "威立雅中国Account Owner？总部关系？区域协同机制？"
+      },
+      "score": 74,
+      "score_breakdown": {
+        "signal_strength": 75,
+        "ims_relevance": 80,
+        "project_customer_stage": 70,
+        "timing": 72,
+        "scale": 90,
+        "ecosystem_influence": 78,
+        "evidence_quality": 70
+      },
+      "confidence": "medium",
+      "source_url": "https://sthjj.gz.gov.cn/gkmlpt/content/10/10886/post_10886699.html; https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml",
+      "source_type": "government_meeting_record",
+      "continuity": {
+        "first_seen": "2026-09-13",
+        "new_facts_today": "首次发现（专题扫描）",
+        "changed": false
+      },
+      "enrichment_pointer": "ENR-20260913-VEOL-003",
+      "trigger_type": "Account",
+      "sector": "cross",
+      "logic_chain_check_status": "PASS"
+    },
+    {
+      "id": "OPS-20260913-VEOL-004",
+      "name": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+      "public_facts": "天津津滨威立雅（天津水务集团51%×威立雅49%，2005年成立）供水管网4074km、年供水3.2亿m3、用户142.8万户、智能水表占比72.84%（207.7万只）；2025年智慧管网系统分享：感知/网络/平台/应用四层架构、综合运营管理平台（GIS+资产管理+巡检+风险评估）、在线水力模型2021年上线、卫星探漏2021-2024检出率54%（1243个疑似点）、噪声相关监测布点500+、管网健康指数92.35分、漏损率9.19%。管网设施43919台、空间匹配率98.15%。",
+      "ai_judgment": "津滨是'存量仪表资产管理'的标准场景：43919台设施、500+噪声监测点、智能水表207万只——感知层规模可观且仍在扩容（漏损压降目标驱动）。其综合运营管理平台已含'资产管理'模块（GIS+巡检），但公开分享未展示仪表标定/健康/预测性维护能力。iMS价值在于：跨品牌仪表统一健康管理+标定周期管理+预测性维护，补足现有平台'仪表层'。管网运行总监公开分享成果，说明数字化建设是管理层关注重点。",
+      "potential_ims_use_case": "Asset Management / Instrument Health Diagnostics / Multi-site Management",
+      "opportunity_stage": "运营期数字化扩展",
+      "estimated_time_window": "6-12 months",
+      "estimated_time_window_basis": "感知层扩容持续推进（2025年公开分享成果，2026年仍处建设期），对应6-12个月",
+      "logic_chain_check": "Customer Change(管网设施43919台+感知层500+点位扩容) -> Digital Change(智慧管网四层架构及综合运营管理平台) -> Operational Problem(感知数据质量/仪表标定/故障管理/多系统一致性) -> Instrument/Data/Asset Management Need(仪表层资产管理) -> Potential iMS Use Case(Asset Management/Instrument Health Diagnostics)。逻辑链完整，PASS。",
+      "action_triad": {
+        "find_who": "津滨威立雅管网运行总监王燮（2025年供水高峰论坛主讲）、综合运营管理平台负责人",
+        "talk_what": "500+噪声监测点与流量/压力/水质仪表的标定周期与故障处理现状？管网健康指数92.35的仪表数据链路是否够稳？平台'资产管理'模块是否覆盖仪表生命周期？",
+        "why_now": "漏损压降9.19%目标驱动感知层持续扩容；2025年成果公开分享说明建设仍在推进，且既有感知仪表进入运维高峰期"
+      },
+      "to_verify": {
+        "customer_identity": "天津津滨威立雅是否Hach已有客户？天津水务集团体系关系？",
+        "installed_base": "感知层在线仪表品牌分布与数量？噪声监测设备厂商？联网情况？",
+        "commercial_history": "天津区域Hach历史销售？津滨威立雅采购记录？",
+        "ims": "综合运营管理平台是否有仪表健康/标定管理模块？是否接触过iMS？",
+        "account_sales": "天津Account Owner？滨海新区客户关系？"
+      },
+      "score": 72,
+      "score_breakdown": {
+        "signal_strength": 72,
+        "ims_relevance": 78,
+        "project_customer_stage": 68,
+        "timing": 72,
+        "scale": 80,
+        "ecosystem_influence": 68,
+        "evidence_quality": 78
+      },
+      "confidence": "high",
+      "source_url": "https://stock.10jqka.com.cn/20251104/c672227183.shtml",
+      "source_type": "industry_conference_report",
+      "continuity": {
+        "first_seen": "2026-09-13",
+        "new_facts_today": "首次发现（专题扫描）",
+        "changed": false
+      },
+      "enrichment_pointer": "ENR-20260913-VEOL-004",
+      "trigger_type": "Account",
+      "sector": "municipal",
+      "logic_chain_check_status": "PASS"
+    },
+    {
+      "id": "OPS-20260913-VEOL-005",
+      "name": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+      "public_facts": "铜陵六国威立雅（威立雅70%×安徽六国化工30%，2013年成立）污水处理设施提标改造工程14400m3/d、一级A标准，2025年3月开工奠基、2026年2月通水；公司为高新技术企业/专精特新中小企业，2024年营收6251万元；位于铜陵大桥经济开发区，服务园区工业污水。改造内容包括出水标准提升至一级A。",
+      "ai_judgment": "提标改造刚通水（2026年2月），新设施进入运营初期——这是配套在线监测与数字化建设最自然的窗口：一级A出水合规强制在线监测，园区工业污水（六国化工化肥/磷化工背景）水质波动大对仪表寿命与可靠性要求高。公司体量小（6251万营收）、技术力量有限，依赖外部专业能力概率高；同时是威立雅体系内向下沉项目，可作为威立雅中国集团合作的实践样板（small showcase）。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+      "opportunity_stage": "运营初期（已通水）",
+      "estimated_time_window": "3-6 months",
+      "estimated_time_window_basis": "2026年2月通水，运营体系与数字化配置尚未固化——3-6个月窗口期",
+      "logic_chain_check": "Customer Change(提标改造2026-02通水) -> Digital Change(新设施在线监测配套建设) -> Operational Problem(一级A合规+工业污水波动+体量小IT人力有限) -> Instrument/Data/Asset Management Need(在线监测仪表配置与运维) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链完整，PASS。",
+      "action_triad": {
+        "find_who": "铜陵六国威立雅总经理米向荣（法定代表人）、运营/技术负责人",
+        "talk_what": "提标后在线监测仪表配置与标定管理？一级A出水数据质量保障？园区工业污水对仪表寿命的影响与运维投入？",
+        "why_now": "2026年2月刚通水，运营体系与数字化配置尚未固化——建立仪表资产管理习惯的最佳窗口期"
+      },
+      "to_verify": {
+        "customer_identity": "铜陵六国威立雅是否Hach已有客户？六国化工集团其他厂区仪表关系？",
+        "installed_base": "提标改造后在线仪表品牌/数量？有无Hach仪表？联网情况？",
+        "commercial_history": "安徽/铜陵区域Hach历史销售？该厂采购记录？",
+        "ims": "厂区是否已有SCADA/数据平台？接触过仪表管理工具吗？",
+        "account_sales": "安徽Account Owner？六国化工/威立雅体系销售协同？"
+      },
+      "score": 70,
+      "score_breakdown": {
+        "signal_strength": 68,
+        "ims_relevance": 78,
+        "project_customer_stage": 80,
+        "timing": 78,
+        "scale": 55,
+        "ecosystem_influence": 60,
+        "evidence_quality": 70
+      },
+      "confidence": "medium",
+      "source_url": "https://baike.baidu.com/item/铜陵六国威立雅水务有限责任公司/51469532",
+      "source_type": "baike_corp_record",
+      "continuity": {
+        "first_seen": "2026-09-13",
+        "new_facts_today": "首次发现（专题扫描）",
+        "changed": false
+      },
+      "enrichment_pointer": "ENR-20260913-VEOL-005",
+      "trigger_type": "Account",
+      "sector": "municipal-industrial",
+      "logic_chain_check_status": "PASS"
+    }
+  ],
+  "background_monitoring": [
+    {
+      "name": "广州联油三期炭黑工业烟气捕集与资源化利用零碳项目",
+      "customer": "威立雅科学城环保科技(广州)有限公司（合资公司，威立雅×科学城广州投资集团）",
+      "region": "广东省广州市黄埔区/开发区",
+      "stage": "施工准备（2026年9月签约，2026年10月施工，2027年6月投产）",
+      "epc_contractor": "未公开，需追溯（合资公司/联油体系内EPC）",
+      "design_institute": "未公开，需追溯",
+      "feasibility_unit": "未公开，需追溯",
+      "key_dates": "2026-09签约；2026-10施工启动；2027-06投产试运营",
+      "trace_value": "设计已随签约基本冻结（错过主要窗口），但同批次合资公司储备项目群（回用水/SAF/电池回收/废水深度治理）处于早期——追溯本项目的EPC/设计院/仪表供应商，为储备项目提前布局",
+      "sector": "municipal-industrial",
+      "background_monitoring_note": "Stage Gate：施工准备阶段设计已冻结，从opportunities[]移出（2026-09-13）"
+    },
+    {
+      "name": "天津泰达威立雅2026年度服务采购（检测技术服务外包/设备设施维保管理服务/污泥处置/药剂采购）",
+      "customer": "天津泰达威立雅水务有限公司 / 天津泰达新水源科技开发有限公司",
+      "region": "天津市滨海新区/泰达",
+      "stage": "招标/采购（2026年6-8月招标，7-8月成交）",
+      "epc_contractor": "无（服务类采购）",
+      "design_institute": "无",
+      "feasibility_unit": "无",
+      "key_dates": "2026-06发布采购；2026-07/08成交公示",
+      "trace_value": "检测技术服务与设备维保依赖外部外包说明其自建运维力量有限——2026年底-2027年初新一轮维保采购评估窗口；维保外包模式本身是'仪表资产管理数字化替代'的切入点访谈素材",
+      "sector": "municipal",
+      "background_monitoring_note": "Stage Gate：已进入采购阶段，从opportunities[]移出（2026-09-13）"
+    },
+    {
+      "name": "乌鲁木齐河东威立雅（威立雅59%控股）运营数字化",
+      "customer": "乌鲁木齐河东威立雅水务有限公司",
+      "region": "新疆乌鲁木齐市",
+      "stage": "运营期（扩建已由威立雅水务技术监督完成）",
+      "epc_contractor": "未知",
+      "design_institute": "未知",
+      "feasibility_unit": "未知",
+      "key_dates": "2024年安全生产标准化三级达标",
+      "trace_value": "公开数字化证据不足、Use Case Unknown——待Company Agent确认厂区仪表存量与数字化现状后再决定是否升级为opportunity；西北项目远程运维/备件供应链天然痛点可作访谈切入点",
+      "sector": "municipal",
+      "background_monitoring_note": "证据不足待验证（2026-09-13），暂不入opportunities[]"
+    }
+  ],
+  "industry_triggers": [
+    {
+      "trigger": "外资水务集团在华运营数字化投入期（威立雅为代表）",
+      "facts": "威立雅中国50城100+项目、8500+员工，2026年公开招聘工业数字化高级经理/全栈开发工程师；CEO顾丽华2025-04就任定调数字化。苏伊士等外资水务集团在华同样处于数字化升级周期。",
+      "iMS_relevance": "高：外资/合资水务集团是iMS高匹配客户群（多站点+集团化管理+数字化预算+认可第三方专业软件），'集团层面切入'应成为例行扫描方法（v3.7新增）。",
+      "source": "https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml; 威立雅官网 veolia.cn"
+    },
+    {
+      "trigger": "供水企业数字化转型共性痛点：平台沦为'数据展示工具'",
+      "facts": "浦东威立雅总经理王雪峰公开发文：国内供水企业智慧化平台常沦为数据展示工具、不能直接解决业务问题、缺乏复合型数字化人才。",
+      "iMS_relevance": "高：这是iMS标准销售命题（仪表数据可信-可行动-驱动决策），可作为与任何供水集团高层对话的开场论据。",
+      "source": "http://m.article.zhongqi.group/uznews/941330article_613.shtml"
+    },
+    {
+      "trigger": "新版地方水质标准升级潮（上海DB31/T 1091-2025）",
+      "facts": "上海2026年落地新版生活饮用水水质标准，提高氯酸盐/铝/微生物等指标管控；新版《供水条例》2026-06-01施行要求过程控制/风险识别/异常响应。",
+      "iMS_relevance": "中-高：监测点位/频率/数据质量要求同时升级，仪表数量增加+数据质量要求提高= iMS场景叠加；威立雅、各地水司均在应对标准升级。",
+      "source": "https://news.sohu.com/a/1070979581_121106869; 孙坚伟2026分享"
+    }
+  ],
+  "ecosystem_triggers": [
+    {
+      "actor": "威立雅AQUAVISTA数字化服务（Portal/Insight/Assist/Plant）",
+      "role": "客户自有数字化产品线（同时也是潜在集成伙伴/竞品）",
+      "facts": "AQUAVISTA源自丹麦Krüger精确曝气技术，宣称节省20-50%运行成本，全球100+水厂应用，面向水厂运行优化（曝气/电耗/药耗）。中国本地落地客户名单未检索到。",
+      "iMS_assessment": "AQUAVISTA不覆盖仪表资产管理/健康诊断——iMS与其互补。两条路径：①进入威立雅采购体系作为仪表层产品；②推动AQUAVISTA生态集成iMS能力。优先验证其在华落地实况。",
+      "source": "威立雅官网 veolia.cn"
+    },
+    {
+      "actor": "威立雅Hubgrade智颖能效中心（康师傅重庆/成都工厂）",
+      "role": "数字化产品案例（工业现场服务）",
+      "facts": "康师傅重庆/成都工厂能源运营管理采用Hubgrade，含能源节省共享机制、运营数据可视化、即时管理报告，数字化价值已验证（2019年起）。",
+      "iMS_assessment": "威立雅工业现场服务线正推动数字化（Hubgrade水能协同），该模式下水系统仪表监控/数据质量是自然延伸——工业现场服务客户群可作为iMS+威立雅合作试点场景。",
+      "source": "https://www.veolia.cn/zh/我们的服务/为工业客户提供现场服务-0"
+    }
+  ],
+  "policy_triggers": [
+    {
+      "policy": "上海市《生活饮用水水质标准》DB31/T 1091-2025",
+      "effective_date": "2026年（落地年）",
+      "demand_type": "同时产生仪表需求和iMS需求",
+      "facts": "提高氯酸盐、铝、微生物等指标管控要求；供水企业需新增/调整监测点位并升级数据质量保障。",
+      "iMS_relevance": "高：新指标监测+数据质量要求= iMS Instrument Monitoring/Data Quality直接场景；浦东威立雅为受影响最大样本之一。",
+      "source": "https://news.sohu.com/a/1070979581_121106869; 孙坚伟2026年分享"
+    },
+    {
+      "policy": "新版《供水条例》（国务院令第831号令，2026-06-01施行）",
+      "effective_date": "2026-06-01",
+      "demand_type": "同时产生仪表需求和iMS需求",
+      "facts": "供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核；水质管控从'末端合格'转向'风险识别-过程控制-异常提前响应'。",
+      "iMS_relevance": "高：法定强制供水数字化考核直接驱动在线仪表采购与数据系统升级；数据追溯/过程控制= iMS Data Quality/Asset Management场景。",
+      "source": "https://news.sohu.com/a/1070979581_121106869"
+    },
+    {
+      "policy": "污水提标改造强制（一级A等）",
+      "effective_date": "持续（铜陵六国2026-02通水）",
+      "demand_type": "以仪表需求为主，配套iMS机会",
+      "facts": "威立雅参股项目（铜陵六国14400m3/d等）提标至一级A，出水合规强制在线监测。",
+      "iMS_relevance": "中：提标通水后在线监测配套与运维需求（仪表监测/数据质量），单厂规模小但可作为威立雅体系合作样板。",
+      "source": "https://baike.baidu.com/item/铜陵六国威立雅水务有限责任公司/51469532"
+    }
+  ],
+  "competitive_triggers": [
+    {
+      "competitor": "Schneider Electric（施耐德）",
+      "facts": "施耐德官网客户案例：威立雅水务采用EcoStruxure污水处理控制系统（宣称节能15%/效率提升20%）；昆明通用水务（威立雅特许经营）以EcoStruxure实现供水配水数字化；桂林水厂智慧化标杆由施耐德参与。",
+      "enters_ims_value_space": false,
+      "assessment": "施耐德占据内控/能管层（SCADA+配电+能效），未进入仪表资产管理层。iMS应从'仪表-数据'层差异化切入，与施耐德EcoStruxure互补而非正面冲突。威立雅体系内已有施耐德先例，说明其接受外部数字化供应商。",
+      "source": "https://www.schneider-electric.cn/zh/work/solutions/for-business/water/"
+    },
+    {
+      "competitor": "威立雅自研数字化（AQUAVISTA/Hubgrade）+ 生态联盟",
+      "facts": "威立雅自有AQUAVISTA面向外部客户销售（100+水厂）；2025环博会联合罗克韦尔自动化、施耐德、埃顿工业、普华永道、中金等6家发起'工业园区和企业服务联盟'。",
+      "enters_ims_value_space": false,
+      "assessment": "威立雅既是潜在客户（100+项目运营）也是潜在生态伙伴（自有产品线+联盟）。iMS需评估：进入威立雅采购体系 vs 成为其生态集成伙伴——竞争力取决于AQUAVISTA在华落地深度，待Company Agent验证。",
+      "source": "https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml"
+    }
+  ],
+  "strategic_accounts": [
+    {
+      "name": "威立雅(中国)环境服务有限公司（含全部在华项目公司）",
+      "type": "外资水务/环境集团（跨国）",
+      "first_seen": "2026-09-13",
+      "status": "monitoring",
+      "latest_signal": "50城100+项目；CEO顾丽华2025-04就任定调数字化；2026数智化平台建设+数字化岗位扩编；AQUAVISTA/Hubgrade产品线推进；华南新合资公司（广州科学城）注册落地。",
+      "iMS_fit": "Instrument Monitoring / Asset Management / Multi-site Management / Lifecycle Management",
+      "action_needed": "Company Agent验证：威立雅中国整体是否为Hach战略客户？AQUAVISTA在华落地名单？各项目公司（浦东/津滨/常州/泰达/铜陵/燕山/乌鲁木齐/广州）仪表装机与数字化白空间？是否与Hach有历史合作？",
+      "sub_accounts": [
+        "上海浦东威立雅（P1/P2，运营型）",
+        "天津津滨威立雅（P2，运营型）",
+        "天津泰达威立雅（背景监控，招标已成交）",
+        "北京燕山威立雅（运营型·工业水系统，action_triad可行动，待入池）",
+        "常州通用水司（运营型·二次供水智慧化，action_triad可行动，待入池）",
+        "铜陵六国威立雅（P2，改造转运营）",
+        "乌鲁木齐河东威立雅（背景监控，证据不足）",
+        "威立雅科学城环保科技(广州)（P1，新建储备项目群）"
+      ]
+    }
+  ],
+  "rejected_signals": [
+    {
+      "name": "兰州威立雅项目",
+      "rejection_reason": "威立雅2022-08已退出兰州（2007年17.1亿收购45%后退出），非当前机会线索。"
+    },
+    {
+      "name": "'常州威立雅环保科技有限公司'",
+      "rejection_reason": "同名民企（膜分离设备商，自然人股东），不属于法国威立雅集团，与威立雅(中国)无关，禁止混入线索池。"
+    },
+    {
+      "name": "威立雅ESG/品牌/CSR类新闻（参观、护河活动等）",
+      "rejection_reason": "无iMS逻辑，纯品牌宣传，不产生GTM信号。"
+    },
+    {
+      "name": "通用政府采购/水务局在线监测招标（非威立雅主体）",
+      "rejection_reason": "与威立雅主体无关的政府项目招标，不属于本专题范围（本专题限定威立雅在华主体）。"
+    }
+  ],
+  "data_source": {
+    "search_scope": "威立雅(中国)环境服务有限公司及下属全部在华项目公司（威立雅官网、公众号、水业年会分享、政府公告、招标平台、行业媒体）",
+    "search_date": "2026-09-13",
+    "run_note": "威立雅中国战略客户专题：10轮websearch，重点覆盖运营数字化尝试与问题（王雪峰/孙坚伟/津滨智慧管网）、新建/改造项目（广州联油三期/铜陵提标/泰达招标）、集团战略（顾丽华/数智化招聘）；全部为公开信息",
+    "radars_active": ["Radar 1: Project Trigger", "Radar 2: Account Trigger", "Radar 3: Existing Instrument Need", "Radar 4: Policy/Regulation/Funding", "Radar 5: Design Institute/EPC/SI", "Radar 6: Competitive Dynamics"],
+    "sources_used": ["威立雅官网 veolia.cn", "国际在线广东频道 gd.cri.cn", "广州生态环境局政府官网", "净水技术公众号（王雪峰署名文章）", "同花顺财经（供水论坛报道）", "千里马招标网（泰达采购）", "百度百科/企查查（铜陵/乌鲁木齐公司档案）", "施耐德官网客户案例", "北极星环保/中国水网", "常州市住建局官网"]
+  },
+  "disclaimer": "本报告所有信息均来自公开互联网。Public Signal Score不等于Hach Opportunity Score。DuMate负责发现公开信号，Company Agent负责内部数据验证。不得使用Hach内部数据作为已确认的评分输入。",
+  "qc_checklist": {
+    "all_from_public_sources": true,
+    "facts_and_ai_judgment_separated": true,
+    "no_internal_data_as_facts": true,
+    "no_unsupported_numbers": true,
+    "truly_ims_related": true,
+    "use_case_specified_or_unknown": true,
+    "time_window_reasonable": true,
+    "to_verify_structured_five_categories": true,
+    "action_triad_complete": true,
+    "stage_gate_applied": true,
+    "list_separation_respected": true,
+    "no_duplicate_from_yesterday": true,
+    "no_industry_news_as_opportunity": true,
+    "no_padding_p2_p3": true,
+    "github_schema_preserved": true,
+    "three_stage_complete": true,
+    "md_report_generated": true,
+    "no_pdf_generated": true,
+    "group_level_entry_applied": true
+  },
+  "stage1_summary": {
+    "stage": "Stage 1 · Radar Discovery",
+    "scanned_at": "2026-09-13",
+    "radar_coverage": [
+      "Radar 1 Project Trigger: 威立雅在华新建/扩建/改造项目（广州联油三期、铜陵六国提标、乌鲁木齐扩建、泰达采购）",
+      "Radar 2 Account Trigger: 威立雅中国集团战略/数字化布局/新管理层/招聘信号（顾丽华、数智化平台、数字化岗位扩编）",
+      "Radar 3 Existing Instrument Need: 威立雅各项目公司运营数字化尝试与痛点（王雪峰/孙坚伟/津滨管网/常州二供）",
+      "Radar 4 Policy/Regulation/Funding: 上海水质新标准/新版供水条例/污水提标",
+      "Radar 5 Design Institute/EPC/SI: 威立雅自研产品线AQUAVISTA/Hubgrade、施耐德等供应商合作",
+      "Radar 6 Competitive Dynamics: E+H/Siemens/Schneider/ABB/Emerson/Yokogawa 在威立雅体系渗透"
+    ],
+    "raw_signals_count": 30,
+    "total_scanned": 11,
+    "valid_triggers": 5,
+    "method_note": "威立雅中国战略客户专题（集团层面切入法首测）：10轮websearch，30条原始信号，合并去重为11条线索；Stage Gate分流后5条进入opportunities[]，2条转background_monitoring[]，4条进入strategic_accounts/triggers等列表"
+  },
+  "stage2_qualifications": [
+    {
+      "candidate_id": "VEOL-20260913-001",
+      "name": "威立雅科学城环保科技(广州)储备项目群",
+      "stage_gate_result": "进入opportunities[]",
+      "reason": "stage='战略规划/立项'通过Stage Gate（合资公司2026-06注册+储备项目洽谈中）；action_triad完整；逻辑链WEAK偏上（依赖储备项目落地）；得分80=P1",
+      "score_if_applicable": 80,
+      "estimated_time_window": ">9 months",
+      "note": "联油三期部分因施工准备单独转入background_monitoring[]"
+    },
+    {
+      "candidate_id": "VEOL-20260913-002",
+      "name": "上海浦东威立雅新标准驱动监测升级",
+      "stage_gate_result": "进入opportunities[]",
+      "reason": "stage='运营期数字化建设'（新标准2026落地窗口）；action_triad完整；逻辑链PASS（管理层公开发文印证）；得分79=P2",
+      "score_if_applicable": 79,
+      "estimated_time_window": "3-6 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-003",
+      "name": "天津津滨威立雅智慧管网感知扩容",
+      "stage_gate_result": "进入opportunities[]",
+      "reason": "stage='运营期数字化扩展'（感知层建设持续）；action_triad完整；逻辑链PASS；得分72=P2",
+      "score_if_applicable": 72,
+      "estimated_time_window": "6-12 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-004",
+      "name": "铜陵六国威立雅提标通水后运营配套",
+      "stage_gate_result": "进入opportunities[]",
+      "reason": "stage='运营初期（2026-02通水）'；action_triad完整；逻辑链PASS；得分70=P2",
+      "score_if_applicable": 70,
+      "estimated_time_window": "3-6 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-005",
+      "name": "常州通用水司数字化转型（二次供水智慧化）",
+      "stage_gate_result": "转strategic_accounts[]（待入池）",
+      "reason": "stage='运营期数字化升级'通过Stage Gate且action_triad可行动（分数65），但因当日opportunities已达5条上限，转strategic_accounts连续追踪，下期可评估入池",
+      "score_if_applicable": 65,
+      "estimated_time_window": "6-12 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-006",
+      "name": "北京燕山威立雅石化水系统数字化",
+      "stage_gate_result": "转strategic_accounts[]（待入池）",
+      "reason": "stage='运营期持续服务（2016-2041）'，action_triad可行动（分数62），工业水系统场景与市政雷达主线略偏；转strategic_accounts连续追踪",
+      "score_if_applicable": 62,
+      "estimated_time_window": "6-12 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-007",
+      "name": "昆明通用水务（施耐德EcoStruxure竞争情报）",
+      "stage_gate_result": "转competitive_triggers[]",
+      "reason": "核心价值为竞争情报（施耐德已进入威立雅体系内控层），非独立可拜访机会；转competitive_triggers[]",
+      "score_if_applicable": null,
+      "estimated_time_window": null
+    },
+    {
+      "candidate_id": "VEOL-20260913-008",
+      "name": "康师傅重庆/成都工厂Hubgrade案例",
+      "stage_gate_result": "转ecosystem_triggers[]",
+      "reason": "核心价值为生态情报（威立雅自有数字化产品落地样板），非独立机会；转ecosystem_triggers[]",
+      "score_if_applicable": null,
+      "estimated_time_window": null
+    },
+    {
+      "candidate_id": "VEOL-20260913-009",
+      "name": "天津泰达威立雅2026年度服务采购",
+      "stage_gate_result": "转background_monitoring[]",
+      "reason": "stage='招标/采购'（2026年6-8月已成交）——Stage Gate硬性：招标/采购阶段禁止进入opportunities[]",
+      "score_if_applicable": null,
+      "estimated_time_window": "<3 months"
+    },
+    {
+      "candidate_id": "VEOL-20260913-010",
+      "name": "乌鲁木齐河东威立雅运营数字化",
+      "stage_gate_result": "转background_monitoring[]",
+      "reason": "公开数字化证据不足、Use Case=Unknown——暂不入opportunities[]，待Company Agent验证后决定升级",
+      "score_if_applicable": null,
+      "estimated_time_window": "Unknown"
+    },
+    {
+      "candidate_id": "VEOL-20260913-011",
+      "name": "威立雅(中国)集团数智化平台（AQUAVISTA/Hubgrade/招聘）",
+      "stage_gate_result": "进入opportunities[]",
+      "reason": "stage='集团战略推进期'对应6-18个月窗口；action_triad完整；逻辑链PASS；得分74=P2；同时录入strategic_accounts[]",
+      "score_if_applicable": 74,
+      "estimated_time_window": "6-18 months"
+    }
+  ],
+  "stage3_enrichments": [
+    {
+      "opportunity_id": "OPS-20260913-VEOL-001",
+      "opportunity_name": "威立雅科学城环保科技(广州)有限公司储备项目群",
+      "customer_background": "威立雅科学城环保科技(广州)有限公司2026年6月注册（威立雅与科学城(广州)投资集团合资），聚焦绿色低碳/新污染物治理/CCUS方向。威立雅(中国)环境服务有限公司注册资本29.55亿元、50城100+项目。广州开发区为国家级开发区，制造业集聚（联油/汽车/半导体）。",
+      "project_background": "联油三期炭黑工业烟气捕集与资源化利用零碳项目：总投资近1亿元，2026-09签约、2026-10施工、2027-06投产。储备项目：高品质回用水、可持续航空燃料(SAF)、动力电池资源化、工业废水深度治理与再生水回用（与广州开发区洽谈中，公开信息）。",
+      "related_parties": [
+        {
+          "role": "合资股东（威立雅方）",
+          "name": "威立雅(中国)环境服务有限公司",
+          "note": "CEO顾丽华，2025-04就任"
+        },
+        {
+          "role": "合资股东（中方）",
+          "name": "科学城(广州)投资集团",
+          "note": "广州开发区区属国企，公开信息"
+        },
+        {
+          "role": "政府对接方",
+          "name": "广州市生态环境局/广州开发区投促局",
+          "note": "2026-06-30座谈记录公开"
+        },
+        {
+          "role": "项目业主",
+          "name": "联油（广州开发区石化企业）",
+          "note": "联油三期炭黑烟气项目业主方"
+        }
+      ],
+      "public_history": "威立雅广州布局：黄埔联油二期项目此前已有合作基础（本案为三期）；威立雅在华30年运营190+市政/250+工业项目。本合资公司为2026年新设，无历史采购记录可查。",
+      "market_context": "粤港澳大湾区绿色低碳转型推进期；广州开发区推动减污降碳协同（烟气捕集/SAF/电池回收均为政策热点）；广州开发区针对零碳项目有产业扶持资金；华南水务环境数字化投入上升期。",
+      "enrichment_sources": [
+        "https://gd.cri.cn/2026-09-02/14db247e-bc20-4ed8-8ed2-dc847f3228ab.html（国际在线广东，2026-09-02）",
+        "https://sthjj.gz.gov.cn/gkmlpt/content/10/10886/post_10886699.html（广州生态环境局，2026-06-30座谈）"
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPS-20260913-VEOL-002",
+      "opportunity_name": "上海浦东威立雅新标准驱动监测升级",
+      "customer_background": "上海浦东威立雅自来水有限公司：上海城投50%×威立雅50%，2002年成立50年合同，日供水200万m3，服务423万居民，浦东全域供水。为亚洲最大供水合资项目之一。",
+      "project_background": "居家桥智慧水厂10万m3/d（2023-09开工/2024年底通水）：深度处理（臭氧+生物活性炭）、'数运平台统管+机器人巡检'模式。浦威2025大讨论确定智慧水厂建设+降低管网漏损率两大方向。新版上海水质标准DB31/T 1091-2025（氯酸盐/铝/微生物）2026落地。",
+      "related_parties": [
+        {
+          "role": "总经理/数字化转型意见领袖",
+          "name": "王雪峰",
+          "note": "公开发文论述智慧平台痛点（'数据展示工具'、缺复合型人才）"
+        },
+        {
+          "role": "副总经理（水质监测）",
+          "name": "孙坚伟",
+          "note": "2026年公开分享新标准下氯酸盐/铝/微生物在线监测管控需求"
+        },
+        {
+          "role": "管网所副所长",
+          "name": "乔兴博",
+          "note": "漏损控制/产销差方向负责人"
+        }
+      ],
+      "public_history": "威立雅在上海深耕30+年（浦东自2002）；居家桥水厂为2023-2024重点项目；公司公开渠道大量分享数字化转型成果（净水技术/水业年会）——管理层有公开发言习惯，便于接触。",
+      "market_context": "新版上海水质标准2026落地 = 监测升级窗口；新版《供水条例》2026-06-01施行要求过程控制/风险识别；上海智慧水务建设全国领先、预算充足；上海城投与Hach可能有历史合作（需验证）。",
+      "enrichment_sources": [
+        "http://m.article.zhongqi.group/uznews/941330article_613.shtml（王雪峰文章转载）",
+        "https://mp.weixin.qq.com/s?__biz=MzA4OTA2MjY1Nw==&mid=2655071774（净水技术公众号孙坚伟分享）"
+      ],
+      "enrichment_confidence": "高"
+    },
+    {
+      "opportunity_id": "OPS-20260913-VEOL-003",
+      "opportunity_name": "威立雅(中国)集团数智化平台建设",
+      "customer_background": "威立雅(中国)环境服务有限公司：总部上海前滩，注册资本29.55亿元（2026-07），50城100+项目8500+员工，七大业务（供排水/固废/危废/区域能源/楼宇能源/工业现场服务/水务技术）。CEO顾丽华2025-04-02就任。",
+      "project_background": "集团数智化平台建设与应用（2026-06-30向广州市生态环境局介绍）；自有产品线AQUAVISTA（Portal/Insight/Assist/Plant）与Hubgrade；2026年公开招聘工业数字化高级经理/全栈开发工程师(Python)/IT高级运维工程师（数字化团队扩编）。",
+      "related_parties": [
+        {
+          "role": "CEO",
+          "name": "顾丽华",
+          "note": "2025-04就任，公开强调'数字化转型为抓手'"
+        },
+        {
+          "role": "工业数字化负责人（招聘岗）",
+          "name": "工业数字化高级经理（岗位名）",
+          "note": "2026年公开招聘，具体人选未公开"
+        },
+        {
+          "role": "自有数字化产品",
+          "name": "AQUAVISTA / Hubgrade",
+          "note": "全球100+水厂应用AQUAVISTA；Hubgrade康师傅案例"
+        }
+      ],
+      "public_history": "威立雅自有AQUAVISTA面向外部客户销售（全球100+水厂，华语市场推广情况未公开）；2025环博会设数智化互动展区并发起'工业园区和企业服务联盟'（罗克韦尔/施耐德/埃顿/普华永道/中金）。",
+      "market_context": "外资水务集团数字化投入周期（威立雅/苏伊士）；绿氢/AI应用等集团GreenUp战略框架下数字化是核心抓手；行业标准与数据合规趋严（新《供水条例》、生态环境法典）。",
+      "enrichment_sources": [
+        "https://sthjj.gz.gov.cn/gkmlpt/content/10/10886/post_10886699.html（广州座谈，2026-06-30）",
+        "https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml（北极星环博会报道，2025-04）"
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPS-20260913-VEOL-004",
+      "opportunity_name": "天津津滨威立雅智慧管网感知扩容",
+      "customer_background": "天津津滨威立雅水业有限公司：天津水务集团51%×威立雅49%，2005年成立。供水区域覆盖天津主城区/环城/滨海新区，日设计供水能力150万m3（新开河水厂+津滨水厂），管网4074km，用户142.8万户，年供水3.2亿m3。",
+      "project_background": "智慧管网系统（2021年水力模型上线→2025年四层架构分享）：感知层（智能水表207.7万只/72.84%、噪声监测500+点、卫星探漏）、网络/平台层（综合运营管理平台：GIS+资产管理+巡检+风险评估）、应用层（管网健康指数92.35分）。漏损率9.19%仍要压降。设施43919台、空间匹配率98.15%。",
+      "related_parties": [
+        {
+          "role": "管网运行总监",
+          "name": "王燮",
+          "note": "2025年供水高峰论坛公开分享（同花顺财经转载）"
+        },
+        {
+          "role": "董事长",
+          "name": "刘士阳",
+          "note": "公开信息可查"
+        }
+      ],
+      "public_history": "津滨威立雅数字化建设有连续公开成果（卫星探漏2021-2024、水力模型2021、健康指数2025）——建设节奏公开可循；感知层持续扩容说明数字化投入有连续性。",
+      "market_context": "天津水务漏损治理目标驱动（漏损率9.19%仍需压降）；新《供水条例》2026-06-01对供水数字化法定考核；北方缺水城市漏损控制是水务投资重点。",
+      "enrichment_sources": [
+        "https://stock.10jqka.com.cn/20251104/c672227183.shtml（同花顺财经转载供水论坛，2025-11）"
+      ],
+      "enrichment_confidence": "高"
+    },
+    {
+      "opportunity_id": "OPS-20260913-VEOL-005",
+      "opportunity_name": "铜陵六国威立雅提标通水后运营配套",
+      "customer_background": "铜陵六国威立雅水务有限责任公司：威立雅70%×安徽六国化工30%，2013年成立。高新技术企业/专精特新中小企业，2024年营收6251万元。位于铜陵大桥经济开发区，服务园区工业污水（六国化工磷化工/化肥背景）。",
+      "project_background": "污水处理设施提标改造工程：14400m3/d，出水一级A，2025-03开工奠基、2026-02通水。改造含设施升级（一级A标准）。",
+      "related_parties": [
+        {
+          "role": "法定代表人/总经理",
+          "name": "米向荣",
+          "note": "企查查公开信息"
+        },
+        {
+          "role": "中方股东",
+          "name": "安徽六国化工股份有限公司",
+          "note": "磷化工/化肥制造上市体系，园区工业污水来源"
+        }
+      ],
+      "public_history": "提标改造为近两年唯一公开大额工程（2025-03开工→2026-02通水）；公司年营收6000万级，体量小；无公开在线监测采购记录。",
+      "market_context": "安徽省污水提标改造推进期；化工园区（磷化工）污水COD/总磷/氟化物在线监测合规要求高；国家环保督察对化工园区污水监管趋严。",
+      "enrichment_sources": [
+        "https://baike.baidu.com/item/铜陵六国威立雅水务有限责任公司/51469532（百度百科+企查查）"
+      ],
+      "enrichment_confidence": "中"
+    }
+  ]
+}

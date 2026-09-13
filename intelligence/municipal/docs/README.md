@@ -15,6 +15,7 @@
 | `iMS_GTM_Public_Signal_Radar_prompt_v3.4.md` | v3.4（完整版） | 2026-09-11/12 | 三段管线（three-stage pipeline）完整版。当前 GitHub 远程已包含 |
 | `iMS_GTM_Public_Signal_Radar_prompt_v3.5.md` | v3.5（完整版） | 2026-09-12 | 基于 9/02—9/11 历史线索复盘的五项新增：①逻辑链质量门（BROKEN 禁入机会、WEAK 封顶 60）；②阶段-窗口绑定校验（档位统一 >9/6-9/3-6/<3）；③行业边界过滤（工业 Fab 归工业雷达）；④连续性强制执行（无新事实不重发）；⑤Schema 统一（version/trigger_type/top5 对齐） |
 | `iMS_GTM_Public_Signal_Radar_prompt_v3.6_20260913.md` | v3.6（v3.2 全量版 × v3.4 结合版） | 2026-09-13 | **当前全量线最新版**。以 v3.2 全量版为骨架（工作日周一至周五 8:00、latest.json/daily/enriched 回写、六大扫描雷达含工业、五类 to_verify、HARD CONSTRAINTS），吸收 v3.4 全部升级（三阶段流水线 Stage 1发现→2审定→3富化、Stage Gate、action_triad、介入窗口档位、评分第一权重+招标封顶 55）。**关键变更：明确移除 PDF 生成/交付条款**（用户硬性要求，本版起不再生成 PDF），输出结构升级为三阶段覆盖（Section 0 总览 / 3.5 富化包 / 4 Background Monitoring） |
+| `iMS_GTM_Public_Signal_Radar_prompt_v3.7_20260913.md` | v3.7（v3.6 × 集团层面切入法） | 2026-09-13 | **当前全量线最新版**。在 v3.6 基础上新增**集团/战略层面切入法（Group-Level Entry）**：对大型水务/环境集团（外资：威立雅/苏伊士；央企国企：北控/首创/粤海/重庆水务等）从集团战略、数智化平台、新建扩建、运营数字化尝试与痛点四个层面系统切入，发现跨项目提前量线索；Radar 2 扩展集团化主体维度；qc_checklist 新增 group_level_entry_applied；opportunities 可选增加 lead_type（运营型/新建型/改造型）。源自 2026-09-13 威立雅中国战略客户专题实践（P1×1/P2×4，5 条机会全部集团切入产出） |
 
 ## 版本演进要点
 
@@ -25,6 +26,7 @@
 - **v3.4 → v3.5**：针对 9/02—9/11 历史线索复盘的五个遗留缺陷固化：招标/采购项目仍混入机会（63%）→ 行业边界与逻辑链质量门；tw 档位口径混乱 → 阶段-窗口绑定校验；华虹等工业 Fab 混入市政 → 行业边界过滤；无新事实仍重复重发 → 连续性强制执行；schema 缺 version/trigger_type → 统一 Schema。同时按新规对历史 daily 线索做了"补充为主、合并与修正为辅"的修订（见 daily/ 各文件 v35_revision 记录）。
 - **v3.2 全量版（2026-09-13 归档）**：与 v3.2 市政专用版并行的一条主线——用于市政+工业全量线索归集、实体关联与销售洞察补全场景，产出 master consolidated JSON 并回写 `intelligence/municipal/enriched/` 与 `intelligence/industrial/enriched/`。当日同步归档至 `iMS_GTM_Public_Signal_Radar_prompt_v3.2_full_20260913.md`。
 - **v3.6（2026-09-13，结合版）**：结束"全量线 vs 市政线"文案分裂——以 v3.2 全量版为骨架、吸收 v3.4 三阶段流水线升级，形成全量线最新主 prompt。相比 v3.2 全量版的实质变化：**PDF 交付要求整体移除**（改为 MD 报告交付），引入 v3.4 的 Section 0/3.5/Background Monitoring 结构与 action_triad 硬性字段。若未来要切回市政精简线（周一/三/五、MD-only、无 latest.json），以 v3.4/v3.5 为准。
+- **v3.7（2026-09-13）**：在 v3.6 之上新增**集团/战略层面切入法（Group-Level Entry）**——源于威立雅中国战略客户专题实践：单一项目/招标关键词只能发现已进入设计/招标阶段的项目，提前量有限；从集团主体（战略/数智化平台/新建扩建/运营数字化尝试与痛点/生态竞争）切入可发现跨项目 3-18 个月提前量线索。新增：目标集团清单（外资/央企国企/跨区域集团）、四类切入源、线索下沉规则（集团信号必须下沉到具体项目/地区/城市/水厂，禁止停留在集团层面泛化）、lead_type 标注；qc_checklist 新增 group_level_entry_applied。
 
 ## 未找到的版本
 
