@@ -2,9 +2,11 @@
 """Create the public, mobile-first lead index from Radar and DuMate JSON."""
 import json
 import re
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCE_ROOT = ROOT
 OUT = ROOT / "customer" / "industrial-leads"
 PAGE, DATA = OUT / "index.html", OUT / "leads-data.json"
 
@@ -60,13 +62,18 @@ def contacts_for(item, contacts):
 
 def enriched_rows(segment, directory, patterns):
     files=sorted({p for pattern in patterns for p in directory.glob(pattern)}, key=lambda p:p.name)
+    # Dumate keeps pre-consolidation snapshots beside the canonical master.
+    # They remain provenance only; *_latest.json is the current record source.
+    canonical=next((p for p in files if p.name.endswith("_latest.json")), None)
     latest, history={},{}
     for path in files:
         source=read(path); contacts={x.get("contact_id"):x for x in source.get("contacts",[])}; projects={x.get("project_id"):x for x in source.get("projects",[])}; accounts={x.get("account_id"):x for x in source.get("accounts",[])}
         stamp=source.get("metadata",{}).get("last_update") or source.get("metadata",{}).get("generated_date") or path.stem
         for item in source.get("leads",[]):
             if item.get("lead_id"):
-                history.setdefault(item["lead_id"],[]).append({"file":path.name,"date":stamp}); latest[item["lead_id"]]=(item,contacts,projects,accounts,stamp)
+                history.setdefault(item["lead_id"],[]).append({"file":path.name,"date":stamp})
+                if canonical is None or path == canonical:
+                    latest[item["lead_id"]]=(item,contacts,projects,accounts,stamp)
     rows=[]
     for lead_id,(item,contacts,projects,accounts,stamp) in latest.items():
         signal=safe(item.get("original_signal") or {}); evidence=signal.get("evidence") or {}
@@ -111,10 +118,21 @@ def industrial_rows():
         lead=safe(item.get("lead") or {}); lead_id=lead.get("lead_id")
         if not lead_id: continue
         signal=lead.get("signal") or {}; row={"segment":"industrial","category":industrial_category({**(lead.get("company") or {}),**(lead.get("project") or {})}),"date":item.get("date") or signal.get("signal_date") or "未记录","lead":lead,"enriched_record":None,"enriched_contacts":[],"history":[]}; rows.append(row); by_id[lead_id]=row
-    for row in enriched_rows("industrial",ROOT/"intelligence"/"industrial"/"enriched",("indctx*.json",)):
+    for row in enriched_rows("industrial",SOURCE_ROOT/"intelligence"/"industrial"/"enriched",("indctx*.json",)):
         if row["lead"]["lead_id"] in by_id: by_id[row["lead"]["lead_id"]].update(row)
         else: rows.append(row); by_id[row["lead"]["lead_id"]]=row
-    for path in sorted((ROOT/"intelligence"/"industrial"/"daily").glob("*.json")):
+    # The consolidated Dumate master already contains the historical daily
+    # files. Their raw IDs sometimes differ from the merged lead IDs, so use
+    # company/project identity as a second guard before adding a daily row.
+    known=[normalize(value) for row in rows for value in (
+        row["lead"]["company"].get("company_name"),
+        row["lead"]["project"].get("project_name"),
+    ) if normalize(value)]
+    def already_known(value):
+        return any(value in item or item in value or
+                   (len(value)>8 and len(item)>8 and value[:8]==item[:8])
+                   for item in known)
+    for path in sorted((SOURCE_ROOT/"intelligence"/"industrial"/"daily").glob("*.json")):
         daily=read(path); match=re.search(r"\d{4}-\d{2}-\d{2}",path.name); date=daily.get("report_date") or daily.get("date") or (match.group(0) if match else "未记录")
         for signal in daily.get("signals",[]):
             lead_id=signal.get("id")
@@ -123,8 +141,12 @@ def industrial_rows():
             if lead_id in by_id:
                 if not by_id[lead_id].get("enriched_record"): by_id[lead_id]["enriched_record"]={"original_signal":radar,"enrichment_status":"radar_daily"}
                 continue
+            identity=normalize(signal.get("company") or signal.get("project") or signal.get("opportunity"))
+            if identity and already_known(identity):
+                continue
             lead={"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("project") or signal.get("opportunity") or signal.get("trigger"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("trigger"),"signal_date":date,"evidence":[{"source_url":x,"evidence_summary":"工业雷达日报"} for x in signal.get("source_urls",[])]}}
             row={"segment":"industrial","category":industrial_category(signal),"date":date,"lead":lead,"enriched_record":{"original_signal":radar,"enrichment_status":"radar_daily"},"enriched_contacts":[],"history":[]}; rows.append(row); by_id[lead_id]=row
+            if identity: known.append(identity)
     return rows
 
 def normalize(value):
@@ -132,14 +154,14 @@ def normalize(value):
 
 def municipal_rows():
     """Use the municipal master file, plus genuine new daily discoveries."""
-    directory=ROOT/"intelligence"/"municipal"/"enriched"
+    directory=SOURCE_ROOT/"intelligence"/"municipal"/"enriched"
     patterns=("indctx*.json",) if list(directory.glob("indctx*.json")) else ("ctx*.json",)
     rows=enriched_rows("municipal",directory,patterns)
     known=[normalize(v) for row in rows for v in (row["lead"]["company"].get("company_name"),row["lead"]["project"].get("project_name")) if normalize(v)]
     def already_known(value):
         return any(value in key or key in value or (len(value)>8 and len(key)>8 and value[:8]==key[:8]) for key in known)
     industrial_terms=("半导体","电池","化工","工业污水","工业园区","工业废水","石化")
-    for path in sorted((ROOT/"intelligence"/"municipal"/"daily").glob("*.json")):
+    for path in sorted((SOURCE_ROOT/"intelligence"/"municipal"/"daily").glob("*.json")):
         daily=read(path); date=daily.get("date") or re.search(r"\d{4}-\d{2}-\d{2}",path.name).group(0)
         for number,item in enumerate(daily.get("opportunities",[]),1):
             name=item.get("name") or item.get("opportunity")
@@ -178,9 +200,45 @@ def page():
     new_details = '''<details><summary>原始资料与来源</summary>${matrix([['数据状态',e.enrichment_status],['关联项目／账户',`${(e.projects||[]).length} / ${(e.accounts||[]).length}`],['关联联系人',contacts.length],['公开来源',sources.length]])}<ul>${sources.map(x=>`<li><a target="_blank" rel="noreferrer" href="${esc(x)}">${esc(x)}</a></li>`).join('')||'<li>未记录来源链接</li>'}</ul></details>'''
     js = js.replace(old_details, new_details)
     css += '.matrix div{min-width:0;overflow-wrap:anywhere;word-break:break-word}'
+    # Dumate v3.2/v3.5 keeps location structured and uses arrays for several
+    # sales fields. Format those values for people rather than rendering JS
+    # object text or a raw JSON dump.
+    js = js.replace(
+        "list=document.querySelector('.list')",
+        "fmt=v=>Array.isArray(v)?v.filter(Boolean).join('；'):(v&&typeof v==='object'?Object.values(v).filter(x=>typeof x==='string').join('；'):v),loc=v=>v&&typeof v==='object'?([v.province,v.city,v.district_county].filter(Boolean).join(' ')||v.raw||'未记录'):(v||'未记录'),list=document.querySelector('.list')",
+    )
+    js = js.replace("${esc(v||'未记录')}", "${esc(fmt(v)||'未记录')}")
+    js = js.replace(
+        "`${s.industry||l.company?.industry||'未记录'} / ${s.location||l.company?.location||'未记录'}`",
+        "`${s.industry||l.company?.industry||'未记录'} / ${loc(s.location||l.company?.location)}`",
+    )
+    js = js.replace(
+        "['客户需求',s.customer_requirement||s.customer_need],['当前方案／痛点',(ev.inferences||[]).join('；')],['待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')]",
+        "['客户明确需求',s.customer_requirement||s.customer_need],['当前方案',s.current_solution],['业务痛点',s.operational_pain_points||s.pain_points],['时间窗口依据',s.time_window_basis],['待核实',s.next_validation_questions||s.to_verify]",
+    )
+    js = js.replace(
+        "['潜在应用',s.potential_ims_use_case],['判断逻辑',s.logic],['建议行动',e.ims_recommendation?.recommended_action||s.pull_box?.next_validation_question]",
+        "['销售摘要',s.sales_summary],['既往尝试',s.prior_attempts],['未解决原因',s.why_unresolved],['潜在应用',s.potential_ims_use_case],['建议行动',e.ims_recommendation?.recommended_action||s.pull_box?.next_validation_question]",
+    )
+    js = js.replace(
+        "(c.phone||[]).map(p=>p.value).join('；')",
+        "(Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')",
+    )
+    js = js.replace(
+        "<details><summary>原始资料字段与来源</summary>${matrix(Object.entries(e).filter(([k])=>k!=='original_signal').map(([k,v])=>[k,typeof v==='string'?v:JSON.stringify(v)]))}<ul>${sources.map(x=>`<li><a target=\"_blank\" rel=\"noreferrer\" href=\"${esc(x)}\">${esc(x)}</a></li>`).join('')||'<li>未记录来源链接</li>'}</ul></details>",
+        "<details><summary>原始资料与来源</summary>${matrix([['数据状态',e.enrichment_status],['关联项目／账户',`${(e.projects||[]).length} / ${(e.accounts||[]).length}`],['关联联系人',contacts.length],['公开来源',sources.length]])}<ul>${sources.map(x=>`<li><a target=\"_blank\" rel=\"noreferrer\" href=\"${esc(x)}\">${esc(x)}</a></li>`).join('')||'<li>未记录来源链接</li>'}</ul></details>",
+    )
+    css += '.matrix div{min-width:0;overflow-wrap:anywhere;word-break:break-word}'
     mobile_css = r'''@media(max-width:760px){.back-to-list{display:inline-block;margin:0 0 12px;padding:6px 10px;border:1px solid #b8cbd4;border-radius:8px;background:#fff;color:#0e628c;font:inherit}.show-detail .list{display:none}.show-detail .detail{margin-top:0}}@media(min-width:761px){.back-to-list{display:none}}'''
     mobile_js = r'''if(matchMedia('(max-width:760px)').matches){document.addEventListener('click',event=>{if(event.target.closest('.row'))setTimeout(()=>{document.body.classList.add('show-detail');if(!detail.querySelector('.back-to-list'))detail.insertAdjacentHTML('afterbegin','<button class="back-to-list" type="button">← 返回线索列表</button>');window.scrollTo(0,0)},0)});detail.addEventListener('click',event=>{if(event.target.closest('.back-to-list')){document.body.classList.remove('show-detail');window.scrollTo(0,0)}})}'''
     return f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>靖帆IMS Intelligence</title><style>{css}{mobile_css}</style><main><h1>靖帆IMS Intelligence</h1><p class="muted">工业与市政线索 · 数据自动同步仓库 JSON</p><div class="toolbar"><input id="search" class="search" placeholder="搜索公司、项目、省份、城市、事实或联系人"><div id="segment" class="filters"></div><div id="category" class="filters"></div></div><div class="layout"><aside class="list"></aside><article class="detail"></article></div></main><script type="module">{js}{mobile_js}</script></html>'
 
 if __name__ == "__main__":
-    OUT.mkdir(parents=True, exist_ok=True); DATA.write_text(json.dumps(model(),ensure_ascii=False,indent=2),encoding="utf-8"); PAGE.write_text(page(),encoding="utf-8")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source-root", type=Path, default=ROOT,
+                        help="Repository snapshot containing intelligence JSON inputs.")
+    args = parser.parse_args()
+    SOURCE_ROOT = args.source_root.resolve()
+    OUT.mkdir(parents=True, exist_ok=True)
+    DATA.write_text(json.dumps(model(), ensure_ascii=False, indent=2), encoding="utf-8")
+    PAGE.write_text(page(), encoding="utf-8")
