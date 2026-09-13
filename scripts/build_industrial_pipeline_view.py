@@ -307,7 +307,8 @@ def page():
     css += '.matrix div{min-width:0;overflow-wrap:anywhere;word-break:break-word}'
     mobile_css = r'''@media(max-width:760px){.back-to-list{display:inline-block;margin:0 0 12px;padding:6px 10px;border:1px solid #b8cbd4;border-radius:8px;background:#fff;color:#0e628c;font:inherit}.show-detail .list{display:none}.show-detail .detail{margin-top:0}}@media(min-width:761px){.back-to-list{display:none}}'''
     mobile_js = r'''if(matchMedia('(max-width:760px)').matches){document.addEventListener('click',event=>{if(event.target.closest('.row'))setTimeout(()=>{document.body.classList.add('show-detail');if(!detail.querySelector('.back-to-list'))detail.insertAdjacentHTML('afterbegin','<button class="back-to-list" type="button">← 返回线索列表</button>');window.scrollTo(0,0)},0)});detail.addEventListener('click',event=>{if(event.target.closest('.back-to-list')){document.body.classList.remove('show-detail');window.scrollTo(0,0)}})}'''
-    js = js.replace('复制公司 Agent 核实提示（提示词）', '复制公司 Agent 核实提示（Prompt）')
+    js = js.replace('复制公司 Agent 核实提示（提示词）', '复制公司Agent核实提示词（Prompt）')
+    js = js.replace('复制公司 Agent 核实提示（Prompt）', '复制公司Agent核实提示词（Prompt）')
     return f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>靖帆IMS Intelligence</title><style>{css}{mobile_css}</style><main><h1>靖帆IMS Intelligence</h1><p class="muted">工业与市政线索 · 数据自动同步仓库 JSON</p><div class="toolbar"><input id="search" class="search" placeholder="搜索公司、项目、省份、城市、事实或联系人"><div id="segment" class="filters"></div><div id="category" class="filters"></div><div id="quality" class="filters"></div></div><div class="layout"><aside class="list"></aside><article class="detail"></article></div></main><script type="module">{js}{mobile_js}</script></html>'
 
 if __name__ == "__main__":
