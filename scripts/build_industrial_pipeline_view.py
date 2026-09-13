@@ -214,12 +214,16 @@ def page():
     # object text or a raw JSON dump.
     js = js.replace(
         "list=document.querySelector('.list')",
-        "fmt=v=>Array.isArray(v)?v.filter(Boolean).join('；'):(v&&typeof v==='object'?Object.values(v).filter(x=>typeof x==='string').join('；'):v),loc=v=>v&&typeof v==='object'?([v.province,v.city,v.district_county].filter(Boolean).join(' ')||v.raw||'未记录'):(v||'未记录'),list=document.querySelector('.list')",
+        "clean=v=>{const x=String(v??'').trim();return !x||/^(unknown|null|n\\/a|未记录|未知)$/i.test(x)?'待核实（公开资料未披露）':x.replace(/\\bunknown\\b/ig,'待核实')},fmt=v=>clean(Array.isArray(v)?v.filter(Boolean).join('；'):(v&&typeof v==='object'?Object.values(v).filter(x=>typeof x==='string').join('；'):v)),stage=v=>{const x=String(v||'').trim();const map={'Tender/Procurement':'招标／采购','EIA-Approval':'环评／审批','Permitting':'环评／审批','Planning-Feasibility':'立项／规划','Planning/Feasibility':'立项／规划','Early Trigger':'立项／规划','EPC/Project Prep':'立项／规划','EPC-Project Prep':'立项／规划','Design':'设计','Execution':'建设／实施','Expansion':'扩产','Industrial iMS Opportunity':'数字化机会','Completed-Too Late':'已投运／过期'};return map[x]||(/^(Agent Discovery|Industrial Signal|Signal|Potential|Potential Industrial Opportunity)$/i.test(x)||!x?'待核实':clean(x))},loc=v=>v&&typeof v==='object'?([v.province,v.city,v.district_county].filter(Boolean).join(' ')||v.raw||'待核实（公开资料未披露）'):clean(v),list=document.querySelector('.list')",
     )
     js = js.replace("${esc(v||'未记录')}", "${esc(fmt(v)||'未记录')}")
     js = js.replace(
         "`${s.industry||l.company?.industry||'未记录'} / ${s.location||l.company?.location||'未记录'}`",
         "`${s.industry||l.company?.industry||'未记录'} / ${loc(s.location||l.company?.location)}`",
+    )
+    js = js.replace(
+        "['项目阶段',s.opportunity_stage||l.project?.project_stage]",
+        "['项目阶段',stage(s.opportunity_stage||l.project?.project_stage)]",
     )
     js = js.replace(
         "['客户需求',s.customer_requirement||s.customer_need],['当前方案／痛点',(ev.inferences||[]).join('；')],['待核实',(Array.isArray(s.to_verify)?s.to_verify:Object.values(s.to_verify||{})).join('；')]",
