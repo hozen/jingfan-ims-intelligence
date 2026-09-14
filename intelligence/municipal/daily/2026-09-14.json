@@ -1,0 +1,586 @@
+{
+  "report_date": "2026-09-14",
+  "report_type": "iMS GTM Public Signal Radar v3.4",
+  "generated_at": "2026-09-14T08:07:27+08:00",
+
+  "stage1_summary": {
+    "scanned_at": "2026-09-14T08:07:27+08:00",
+    "radar_coverage": [
+      "Radar 1: Project Trigger (水务/工业项目)",
+      "Radar 2: Account Trigger (客户战略变化)",
+      "Radar 3: Installed Base Need (存量仪表需求)",
+      "Radar 4: Policy/Regulation/Funding (政策法规资金)",
+      "Radar 5: Design Institute/EPC/System Integrator (设计院EPC)",
+      "Radar 6: Competitive Dynamics (竞争动态)"
+    ],
+    "raw_signals_count": 32,
+    "total_scanned": 32,
+    "valid_triggers": 8
+  },
+
+  "stage2_qualifications": [
+    {
+      "candidate_id": "CAND-001",
+      "candidate_name": "上海浦东迎宾水厂（一期）新建工程",
+      "stage_gate_result": "进入opportunities",
+      "reason": "设计方案公示阶段，仪表选型未锁定，通过Stage Gate",
+      "score_if_applicable": 78
+    },
+    {
+      "candidate_id": "CAND-002",
+      "candidate_name": "平顶山二次供水数字化转型战略合作",
+      "stage_gate_result": "进入opportunities",
+      "reason": "战略规划阶段，合作框架刚签署，通过Stage Gate",
+      "score_if_applicable": 73
+    },
+    {
+      "candidate_id": "CAND-003",
+      "candidate_name": "南阳六张网地下管网战略规划",
+      "stage_gate_result": "进入opportunities",
+      "reason": "战略规划阶段，项目库谋划中，通过Stage Gate",
+      "score_if_applicable": 61
+    },
+    {
+      "candidate_id": "CAND-004",
+      "candidate_name": "武穴三利水厂扩建EPC",
+      "stage_gate_result": "转background",
+      "reason": "已中标（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-005",
+      "candidate_name": "赣州赣县区第三水厂管网工程",
+      "stage_gate_result": "转background",
+      "reason": "招标阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-006",
+      "candidate_name": "重庆綦江区易旱区域供水保障工程",
+      "stage_gate_result": "转background",
+      "reason": "招标阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-007",
+      "candidate_name": "乌鲁木齐水资源配置工程智慧建管系统",
+      "stage_gate_result": "转background",
+      "reason": "中标候选人公示（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-008",
+      "candidate_name": "中交水利贵港供水项目智慧水务系统",
+      "stage_gate_result": "转background",
+      "reason": "招标阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-009",
+      "candidate_name": "青岛崂山水厂AI智慧系统",
+      "stage_gate_result": "排除",
+      "reason": "已上线运行，非新项目，无介入窗口",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-010",
+      "candidate_name": "茂名滨海水投分布式光伏项目",
+      "stage_gate_result": "排除",
+      "reason": "核心为光伏发电非水务数字化，无iMS需求",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-011",
+      "candidate_name": "广州花都水压波动通知",
+      "stage_gate_result": "排除",
+      "reason": "设备故障抢修通知，非项目信号",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-012",
+      "candidate_name": "通用行业趋势报告",
+      "stage_gate_result": "排除",
+      "reason": "无具体客户/项目/行动三要素，仅为背景参考",
+      "score_if_applicable": null
+    }
+  ],
+
+  "stage3_enrichments": [
+    {
+      "opportunity_id": "OPP-2026-09-14-001",
+      "customer_background": "上海浦东新区自来水有限公司，浦东新区主要供水企业，上海水投（集团）旗下。区域地位：上海最大行政区供水服务商。母公司上海城投水务（集团）未直接上市。",
+      "project_background": "迎宾水厂（一期）新建工程，实为川沙城镇水厂迁建。2026年9月10日设计方案总平面图调整公示。建设地点：浦东新区川沙新镇。资金来源未公开，预算金额未公开。",
+      "related_parties": [
+        {"role": "建设单位", "name": "上海浦东新区自来水有限公司", "info": "公开信息"},
+        {"role": "审批单位", "name": "上海市浦东新区规划和自然资源局", "info": "公开信息"},
+        {"role": "设计单位", "name": "未公开", "info": "需Company Agent确认"},
+        {"role": "EPC", "name": "未确定", "info": "设计阶段"},
+        {"role": "资金来源方", "name": "未公开", "info": "需Company Agent确认"}
+      ],
+      "public_history": [
+        "川沙城镇水厂迁建为既有项目延续",
+        "上海城投水务集团定期发布仪表采购招标",
+        "上海水务集团已有智慧水务平台建设记录"
+      ],
+      "market_context": "上海市水务行业处于存量升级阶段，新建水厂较少。迎宾水厂新建为区域内少有的新建水厂项目。上海城投水务集团已有智慧水务平台部署。",
+      "enrichment_sources": [
+        {"url": "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html", "date": "2026-09-10"}
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-14-002",
+      "customer_background": "平顶山自来水二次供水有限公司，平顶山市二次供水专业化运营平台。接管泵房211座，服务居民11.5万户，覆盖人口约35万人。母公司：平顶山市自来水有限公司。总经理：代德山。",
+      "project_background": "战略合作框架协议2026年9月9日签署。合作方：河南智慧水务公司。合作内容：泵房智慧升级、数字化规划、智慧水务产品研发。双方将组建联合事业部。项目预算/资金来源未公开。",
+      "related_parties": [
+        {"role": "客户方", "name": "平顶山自来水二次供水有限公司", "info": "总经理代德山（公开报道）"},
+        {"role": "合作方", "name": "河南智慧水务公司", "info": "数字化技术提供方"},
+        {"role": "母公司", "name": "平顶山市自来水有限公司", "info": "公开报道提及"},
+        {"role": "政府主管部门", "name": "未公开", "info": "需Company Agent确认"}
+      ],
+      "public_history": [
+        "二次供水统建统管已有多年运维经验",
+        "平顶山水务系统仪表采购招标记录较少公开",
+        "从被动运维向智慧化运营转变"
+      ],
+      "market_context": "全国二次供水行业正经历数字化转型期。行业新规对水质安全、运维管护提出更高标准。二次供水泵房分散管理是行业普遍痛点。平顶山案例具有中部地级市代表性。",
+      "enrichment_sources": [
+        {"url": "https://baijiahao.baidu.com/s?id=1875927833954203215", "date": "2026-09-09"}
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-14-003",
+      "customer_background": "南阳市住建局。南阳市为河南省地级市，中心城区人口约100万。南阳市水务集团/供水公司具体信息未在本次搜索中确认。区域地位：河南省第三大城市。",
+      "project_background": "2026年9月9日召开地下管网项目谋划储备座谈会。政策背景：城市地下管网升级为国家重点工程，十五五期间全国改造77万公里。2026年地下管网专项支持资金1600亿元。南阳市正在建立四级梯次项目库，划分12个流域治理片区。具体项目/预算/工期均未确定。",
+      "related_parties": [
+        {"role": "召集方", "name": "南阳市住建局", "info": "公开信息"},
+        {"role": "参会方", "name": "中心城区相关部门", "info": "公开信息"},
+        {"role": "设计院/EPC", "name": "未确定", "info": "谋划阶段"},
+        {"role": "资金来源", "name": "国债、专项债等", "info": "政策明确"}
+      ],
+      "public_history": [
+        "南阳市水务系统公开项目记录有限",
+        "南阳市近年有城市更新、内涝治理相关项目",
+        "数字化投入习惯未公开"
+      ],
+      "market_context": "全国管网更新进入加速期。2026年地下管网专项支持资金1600亿元。重点投向排水、供水、燃气、综合管廊、智慧监测。六张网政策是全国性机会窗口。管网台账不清、分级管养割裂是普遍短板。",
+      "enrichment_sources": [
+        {"url": "https://m.nanyang.gov.cn/2026/09-09/1432795.html", "date": "2026-09-09"}
+      ],
+      "enrichment_confidence": "低"
+    }
+  ],
+
+  "scanner_summary": {
+    "scan_date": "2026-09-14",
+    "radars_executed": 6,
+    "total_signals_collected": 32,
+    "valid_triggers": 8,
+    "opportunities_identified": 3,
+    "background_monitoring_count": 5,
+    "rejected_signals_count": 4
+  },
+
+  "top_5_match": [
+    {
+      "name": "迎宾水厂（一期）新建工程（川沙城镇水厂迁建工程）",
+      "trigger_type": "Project Trigger — 水厂新建",
+      "public_signal_score": 78,
+      "priority": "P2",
+      "match_reason": "设计阶段公示刚发布，新建水厂意味着全新在线仪表采购需求，仪表选型尚未锁定",
+      "action_triad": {
+        "find_who": "上海浦东新区自来水有限公司工程部/设备部负责人；设计单位给排水专业负责人（设计单位未公开，需Company Agent确认）",
+        "talk_what": "新水厂在线水质监测仪表选型方案是否已确定？智慧水务平台是否规划第三方仪表数据接入接口？",
+        "why_now": "建设工程设计方案总平面图调整于9月10日公示，仪表选型尚未进入施工图设计阶段"
+      },
+      "agent_checklist": [
+        "确认浦东自来水公司是否为Hach客户",
+        "确认设计单位身份",
+        "确认水厂规模与仪表需求量",
+        "确认是否已有数字化平台"
+      ]
+    },
+    {
+      "name": "平顶山二次供水智慧化升级战略合作",
+      "trigger_type": "Account Trigger — 客户战略变化",
+      "public_signal_score": 73,
+      "priority": "P2",
+      "match_reason": "211座泵房分散管理、设备老化、智慧化基础薄弱，客户已明确数字化转型方向并签署合作",
+      "action_triad": {
+        "find_who": "平顶山自来水二次供水有限公司总经理代德山（公开报道提及）；联合事业部技术负责人（需Company Agent确认具体人选）",
+        "talk_what": "211座泵房现有在线仪表配置与故障率数据如何？数字化平台是否支持多品牌仪表统一接入与远程校准？",
+        "why_now": "战略合作框架9月9日刚签署，联合事业部正在组建，具体技术路线和设备选型尚未确定"
+      },
+      "agent_checklist": [
+        "确认平顶山自来水是否为Hach客户",
+        "211座泵房现有仪表品牌/数量",
+        "是否已有数字化平台",
+        "河南智慧水务公司技术能力评估"
+      ]
+    },
+    {
+      "name": "南阳市地下管网项目谋划储备（六张网政策）",
+      "trigger_type": "Policy + Project Trigger — 战略规划",
+      "public_signal_score": 61,
+      "priority": "P3",
+      "match_reason": "国家1600亿元管网专项资金落地，智慧监测为六网之一，南阳正在谋划项目库，阶段最早",
+      "action_triad": {
+        "find_who": "南阳市住建局管网科/市政科负责人（公开会议由市住建局召集）",
+        "talk_what": "智慧监测作为六网之一，项目库建设中对在线仪表监测的预算编制口径是什么？排水/供水管网改造是否配套在线水质监测？",
+        "why_now": "项目谋划储备座谈会刚召开（9月9日），四级梯次项目库正在建立，标准化路径刚明确"
+      },
+      "agent_checklist": [
+        "确认南阳市住建局是否为Hach客户",
+        "项目库中是否有具体水厂/管网监测项目",
+        "竞争对手是否已有接触"
+      ]
+    }
+  ],
+
+  "opportunities": [
+    {
+      "opportunity_id": "OPP-2026-09-14-001",
+      "name": "上海浦东迎宾水厂（一期）新建工程",
+      "public_facts": "2026年9月10日，上海市浦东新区规划和自然资源局发布迎宾水厂（一期）新建工程（川沙城镇水厂迁建工程）建设工程设计方案总平面图调整公示。建设单位为上海浦东新区自来水有限公司。建设地点：浦东新区川沙新镇。建设工程性质：新建水厂。来源：pudong.gov.cn（官方权威）。",
+      "ai_judgment": "新建水厂意味着全新的在线水质监测仪表采购需求。当前处于设计方案公示阶段，仪表选型尚未进入施工图设计。如果浦东自来水公司计划建设智慧水厂或数字化平台，iMS的仪表健康诊断、数据质量管理和多站点管理Use Case具有逻辑合理性。但iMS是否适用取决于客户是否有数字化管理需求和多厂统一管理需求，目前公开信息不足以确认。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+      "opportunity_stage": "初步设计/设计阶段",
+      "estimated_time_window": "3-6 months",
+      "logic_chain_check": "新建水厂→需要在线仪表→仪表数据需接入平台→多厂管理可能存在数字化白空间→iMS Use Case成立但需验证 ✅逻辑链通顺",
+      "action_triad": {
+        "find_who": "上海浦东新区自来水有限公司工程部/设备部负责人；设计单位给排水专业负责人（设计单位未公开，需Company Agent确认）",
+        "talk_what": "新水厂在线水质监测仪表选型方案是否已确定？智慧水务平台是否规划第三方仪表数据接入接口？",
+        "why_now": "建设工程设计方案总平面图调整于9月10日公示，仪表选型尚未进入施工图设计阶段"
+      },
+      "to_verify": {
+        "customer_identity": "浦东新区自来水有限公司是否为Hach客户？SFDC Account是否存在？是否为战略客户？",
+        "installed_base": "浦东自来水公司现有水厂数量？在线仪表类型/数量？是否有联网仪表？",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+        "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+        "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+      },
+      "score": 78,
+      "priority": "P2",
+      "score_breakdown": {
+        "signal_strength": 15,
+        "ims_relevance": 12,
+        "project_customer_stage": 18,
+        "timing": 16,
+        "scale": 14,
+        "ecosystem_influence": 10,
+        "evidence_quality": 13
+      },
+      "confidence": "中",
+      "source_url": "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html",
+      "source_type": "政府公示",
+      "continuity": {
+        "first_seen": "2026-09-14",
+        "new_facts_today": "设计方案总平面图调整公示",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-14-001)"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-14-002",
+      "name": "平顶山二次供水数字化转型战略合作",
+      "public_facts": "2026年9月9日，平顶山自来水二次供水有限公司与河南智慧水务公司签署战略合作框架协议。双方聚焦二次供水数字化、智慧化升级。平顶山自来水二次供水有限公司接管泵房211座，服务居民11.5万户，覆盖人口约35万人。总经理代德山在签约仪式上表示企业数字化转型势在眉睫。来源：baijiahao.baidu.com（中可信度）。",
+      "ai_judgment": "211座分散管理的泵房、设备老化、智慧化基础薄弱是典型的多站点管理痛点。客户已明确数字化转型方向，正在组建联合事业部制定技术路线。如果泵房智慧升级涉及在线仪表部署和数据采集，iMS的多站点管理、仪表健康诊断和预测性维护Use Case具有直接逻辑。",
+      "potential_ims_use_case": "Multi-site Management / Instrument Health Diagnostics / Predictive Maintenance",
+      "opportunity_stage": "战略规划/方案",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "211座分散泵房→设备老化+智慧化基础薄弱→需要统一监控与诊断→多站点仪表管理需求→iMS Multi-site Management Use Case ✅逻辑链通顺",
+      "action_triad": {
+        "find_who": "平顶山自来水二次供水有限公司总经理代德山（公开报道提及）；联合事业部技术负责人（需Company Agent确认具体人选）",
+        "talk_what": "211座泵房现有在线仪表配置与故障率数据如何？数字化平台是否支持多品牌仪表统一接入与远程校准？",
+        "why_now": "战略合作框架9月9日刚签署，联合事业部正在组建，具体技术路线和设备选型尚未确定"
+      },
+      "to_verify": {
+        "customer_identity": "平顶山自来水（二次供水）有限公司是否为Hach客户？SFDC Account是否存在？",
+        "installed_base": "211座泵房现有在线仪表类型/数量？是否有联网仪表？故障率数据？",
+        "commercial_history": "历史销售/Opportunity？当前Pipeline？服务合同？",
+        "ims": "是否已有iMS或类似数字化产品？河南智慧水务公司的平台是否已部署？",
+        "account_sales": "Account Owner？Regional Owner？当前客户关系？竞争对手是否已接触？"
+      },
+      "score": 73,
+      "priority": "P2",
+      "score_breakdown": {
+        "signal_strength": 15,
+        "ims_relevance": 14,
+        "project_customer_stage": 16,
+        "timing": 14,
+        "scale": 12,
+        "ecosystem_influence": 10,
+        "evidence_quality": 12
+      },
+      "confidence": "中",
+      "source_url": "https://baijiahao.baidu.com/s?id=1875927833954203215",
+      "source_type": "新闻报道",
+      "continuity": {
+        "first_seen": "2026-09-14",
+        "new_facts_today": "战略合作框架协议签署",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-14-002)"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-14-003",
+      "name": "南阳六张网地下管网战略规划",
+      "public_facts": "2026年9月9日，南阳市住建局召开地下管网项目谋划储备座谈会。会议明确：城市地下管网升级为国家重点工程，十五五期间全国改造77万公里；2026年地下管网专项支持资金1600亿元；重点投向含智慧监测。会议提出四级梯次项目库和标准化谋划路径。来源：nanyang.gov.cn（官方权威）。",
+      "ai_judgment": "智慧监测被明确列为六网之一，政策资金1600亿元已落地。南阳正在建立项目库，阶段最早。但iMS逻辑链偏弱：管网改造→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case可能适用。中间逻辑有多层可能，因为管网监测更偏流量/压力而非水质仪表。",
+      "potential_ims_use_case": "Multi-site Management / Asset Management / Unknown",
+      "opportunity_stage": "战略规划",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "管网改造+智慧监测→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case ⚠️逻辑链有断层，Use Case标注含Unknown",
+      "action_triad": {
+        "find_who": "南阳市住建局管网科/市政科负责人（公开会议由市住建局召集）",
+        "talk_what": "智慧监测作为六网之一，项目库建设中对在线仪表监测的预算编制口径是什么？排水/供水管网改造是否配套在线水质监测？",
+        "why_now": "项目谋划储备座谈会刚召开（9月9日），四级梯次项目库正在建立，标准化路径刚明确"
+      },
+      "to_verify": {
+        "customer_identity": "南阳市住建局/南阳市水务集团是否为Hach客户？",
+        "installed_base": "南阳市现有管网在线监测站点数量？仪表类型？",
+        "commercial_history": "历史销售？Pipeline？",
+        "ims": "是否已有iMS？是否有数字化平台？",
+        "account_sales": "Account Owner？Regional Owner？"
+      },
+      "score": 61,
+      "priority": "P3",
+      "score_breakdown": {
+        "signal_strength": 12,
+        "ims_relevance": 8,
+        "project_customer_stage": 20,
+        "timing": 15,
+        "scale": 10,
+        "ecosystem_influence": 8,
+        "evidence_quality": 10
+      },
+      "confidence": "低",
+      "source_url": "https://m.nanyang.gov.cn/2026/09-09/1432795.html",
+      "source_type": "政府官网",
+      "continuity": {
+        "first_seen": "2026-09-14",
+        "new_facts_today": "地下管网项目谋划储备座谈会召开",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-14-003)"
+    }
+  ],
+
+  "background_monitoring": [
+    {
+      "name": "武穴三利水厂扩建及新建供水管网工程EPC",
+      "customer": "武穴市三利制水有限公司",
+      "region": "湖北省武穴市",
+      "epc": "湖北铭昕建筑工程有限公司、中晏建设集团有限公司（联合体）",
+      "design_institute": "未公开（EPC含设计60天）",
+      "feasibility_unit": "武穴市发改局（武发改审〔2024〕243号、289号）",
+      "key_date": "中标公告2026-09-07，中标价1.17亿元",
+      "trace_value": "设计院和EPC总包方信息可用于下一个同类项目提前布局"
+    },
+    {
+      "name": "赣州赣县区第三水厂管网工程",
+      "customer": "赣州市赣县区乡投发展集团有限公司",
+      "region": "江西省赣州市赣县区",
+      "epc": "招标中",
+      "design_institute": "未公开",
+      "feasibility_unit": "赣县区发改投资字〔2024〕35号",
+      "key_date": "招标公告2026-09，总投资1.9亿元",
+      "trace_value": "赣县区乡投发展集团为区域供水平台，后续水厂主体工程招标可关注"
+    },
+    {
+      "name": "重庆綦江区易旱区域供水保障工程（一期+二期）",
+      "customer": "重庆市綦南给排水有限公司",
+      "region": "重庆市綦江区",
+      "epc": "招标中",
+      "design_institute": "未公开",
+      "feasibility_unit": "綦发改审批〔2025〕151号/165号",
+      "key_date": "招标公告2026-09-07",
+      "trace_value": "綦南给排水为綦江区主要供水企业，含在线监测设施，后续运维阶段可关注仪表管理需求"
+    },
+    {
+      "name": "乌鲁木齐水资源配置工程智慧建管系统",
+      "customer": "乌鲁木齐市水资源配置工程项目建设单位",
+      "region": "新疆乌鲁木齐",
+      "epc": "第一中标候选人：深圳市科荣软件股份有限公司",
+      "design_institute": "未公开",
+      "feasibility_unit": "未公开",
+      "key_date": "中标候选人公示2026-09-11至09-14",
+      "trace_value": "科荣软件为智慧水务信息化领域活跃企业，其项目业绩可作为设计院生态参考"
+    },
+    {
+      "name": "中交水利贵港供水项目智慧水务管理系统",
+      "customer": "中交水利电力工程有限公司/贵港市港南区",
+      "region": "广西贵港市港南区",
+      "epc": "中交水利电力工程有限公司",
+      "design_institute": "未公开",
+      "feasibility_unit": "未公开",
+      "key_date": "招标公告2026-09-11，约400km供水管网",
+      "trace_value": "中交水利为央企背景，农村供水智慧水务平台含物联网统一接入，后续运维阶段仪表数据接入需求可关注"
+    }
+  ],
+
+  "industry_triggers": [
+    {
+      "name": "重庆农村饮水质量提升专项行动",
+      "description": "2026年规模化水厂在线监测率80.1%，县域统管率84.2%，已开工1558个项目",
+      "ims_gtm_implication": "80.1%在线监测率目标意味着约20%规模化水厂尚需补建在线监测。县域统管模式下多水厂集中管理是iMS多站点管理Use Case的直接需求场景",
+      "need_type": "产生仪表需求+产生iMS需求",
+      "source": "cnr.cn（官方权威）",
+      "date": "2026-09-13"
+    },
+    {
+      "name": "半导体行业水处理需求加速",
+      "description": "SEMI上调2026年全球半导体设备销售额至1659亿美元。艺康完成收购Ovivo电子超纯水业务。台积电全球近20座晶圆厂同步推进。国内华虹无锡三期、粤芯四期等扩产",
+      "ims_gtm_implication": "半导体晶圆厂超纯水系统设计在项目早期确定。iMS在工业水处理场景的Use Case适用性需进一步验证",
+      "need_type": "产生仪表需求+可能产生iMS需求（待验证）",
+      "source": "baijiahao.baidu.com / eastmoney.com",
+      "date": "2026-09-09~11"
+    },
+    {
+      "name": "供水管网漏损控制政策趋严",
+      "description": "2026年地级及以上城市漏损率≤7%，超目标部分成本不得计入定价。数字孪生覆盖率>60%",
+      "ims_gtm_implication": "漏损管控与定价挂钩倒逼企业主动治理，在线流量/压力仪表需求增加。数字孪生推动仪表数据采集与质量管理需求",
+      "need_type": "产生仪表需求+产生iMS需求",
+      "source": "行业公开信息",
+      "date": "2026年"
+    }
+  ],
+
+  "ecosystem_triggers": [
+    {
+      "name": "全联环境商会推动AI+环境标准体系",
+      "description": "2026年9月7日十五五环境产业智能化升级专题研讨会。全联环境商会牵头制定AI应用分级评价标准",
+      "ims_gtm_implication": "AI+环境标准体系构建将影响未来水务项目技术路线选型。iMS作为AI驱动的仪表管理工具，标准制定阶段是介入窗口",
+      "source": "finance.sina.com.cn",
+      "date": "2026-09-07"
+    },
+    {
+      "name": "华立股份（尚源智能）双主业布局智慧水务",
+      "description": "华立收购尚源智能51%股权，确立装饰建材+智慧水务双主业。自研磐石数字化平台。与东莞水务环境集团合作分质供水",
+      "ims_gtm_implication": "尚源智能磐石平台与iMS在数据采集/运行监控层面可能形成竞合关系。东莞分质供水项目是潜在iMS多站点管理场景",
+      "source": "baijiahao.baidu.com",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "乌鲁木齐智慧建管系统中标方业绩图谱",
+      "description": "科荣软件/东深智水/中水三立为前三名中标候选人，均有大型水资源配置工程信息化项目业绩",
+      "ims_gtm_implication": "这三家公司在智慧水务信息化领域活跃，是未来项目设计阶段影响技术路线的生态参与者",
+      "source": "ggzy.xinjiang.gov.cn",
+      "date": "2026-09-11"
+    }
+  ],
+
+  "policy_triggers": [
+    {
+      "name": "城市地下管网升级为国家重点工程",
+      "content": "十五五期间全国改造77万公里，2026年专项支持资金1600亿元，含智慧监测",
+      "need_type": "产生仪表需求+可能产生iMS需求",
+      "gtm_impact": "高—1600亿元专项资金直接驱动管网监测仪表采购",
+      "source": "nanyang.gov.cn",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "重庆农村饮水质量提升专项行动",
+      "content": "2026年规模化水厂在线监测率80.1%，县域统管率84.2%",
+      "need_type": "产生仪表需求+产生iMS需求",
+      "gtm_impact": "中高—重庆市场iMS多站点管理Use Case直接适用",
+      "source": "cnr.cn",
+      "date": "2026-09-13"
+    },
+    {
+      "name": "供水管网漏损率管控与定价挂钩",
+      "content": "2026年地级及以上城市漏损率≤7%，超目标部分不得计入定价。数字孪生覆盖率>60%",
+      "need_type": "产生仪表需求+产生iMS需求",
+      "gtm_impact": "中—全国性政策，间接驱动仪表数据管理需求",
+      "source": "行业公开信息",
+      "date": "2026年"
+    }
+  ],
+
+  "competitive_triggers": [
+    {
+      "name": "艺康（Ecolab）加速布局半导体超纯水",
+      "description": "艺康完成收购Ovivo电子超纯水业务后全面亮相半导体。目标成为全球半导体超纯水及水循环解决方案领导者",
+      "ims_value_space_impact": "艺康正在构建水处理→超纯水→水循环闭环，但尚未进入仪表→数据→诊断→资产管理的iMS核心价值空间",
+      "conclusion": "不构成直接竞争威胁，但需关注艺康是否进一步向仪表管理延伸",
+      "source": "baijiahao.baidu.com",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "E+H在水务领域的定位",
+      "description": "E+H Promag W系列面向水行业全应用场景。Liquiline CM444多参数变送器支持水处理全流程水质监测。Memosens和Heartbeat Technology具备仪表自诊断能力",
+      "ims_value_space_impact": "E+H在仪表层面是Hach直接竞争对手，Heartbeat Technology已具备仪表自诊断能力，正在向iMS价值空间延伸",
+      "conclusion": "需持续关注E+H是否在中国水务市场推广仪表资产管理解决方案",
+      "source": "行业公开信息",
+      "date": "2026年"
+    },
+    {
+      "name": "国产仪表品牌加速渗透水务市场",
+      "description": "康宝莱水务、行澳科技等国产电磁流量计品牌在市政水务市场加速替代进口品牌，价格低30-60%",
+      "ims_value_space_impact": "国产仪表在硬件层面对Hach形成价格竞争，但在数据质量和诊断能力层面尚不构成iMS替代。国产仪表+智慧水务平台的组合正在形成轻量闭环",
+      "conclusion": "中期竞争压力增大，iMS的数据质量/诊断/资产管理差异化价值需强化",
+      "source": "sohu.com / CSDN",
+      "date": "2026-09"
+    }
+  ],
+
+  "strategic_accounts": [
+    {
+      "name": "万家寨水务控股集团（山西）",
+      "change": "2026年7-9月领导层重大调整：郭建文升任董事长，常建忠任总经理。集团注册资本100亿元，资产总额近千亿元",
+      "ims_gtm_implication": "新管理层上任是影响数字化战略方向的关键节点。千亿级省级水务集团的数字化/设备管理战略可能在换届后重新评估",
+      "first_seen": "2026-09-14",
+      "continuity": "新发现",
+      "source": "huanbao.bjx.com.cn",
+      "date": "2026-09-11"
+    },
+    {
+      "name": "株洲水务集团",
+      "change": "2026年9月获全国数据要素应用创新大赛一等奖。已有自研水务大数据资源池和移动智能终端",
+      "ims_gtm_implication": "株洲水务集团已具备较强数据要素能力，iMS数据质量管理Use Case可能与客户已有能力互补或竞争",
+      "first_seen": "2026-09-14",
+      "continuity": "新发现",
+      "source": "baijiahao.baidu.com",
+      "date": "2026-09-13"
+    }
+  ],
+
+  "rejected_signals": [
+    {"name": "青岛崂山水厂AI智慧系统", "reason": "已上线运行，非新项目，无介入窗口"},
+    {"name": "茂名滨海水投分布式光伏项目", "reason": "核心为光伏发电非水务数字化，无iMS需求"},
+    {"name": "广州花都水压波动通知", "reason": "设备故障抢修通知，非项目信号"},
+    {"name": "通用行业趋势报告", "reason": "无具体客户/项目/行动三要素，仅为背景参考"}
+  ],
+
+  "data_source": {
+    "search_engine": "websearch",
+    "search_date": "2026-09-14",
+    "queries_executed": 9,
+    "sources_accessed": ["政府官网", "公共资源交易平台", "行业媒体", "企业公告", "百度百科"],
+    "scan_coverage": "全国（重点覆盖上海/重庆/河南/新疆/湖北/广西/山东等）"
+  },
+
+  "qc_checklist": {
+    "all_public_info": true,
+    "facts_and_judgment_separated": true,
+    "no_internal_info_as_fact": true,
+    "no_unsupported_numbers": true,
+    "truly_ims_relevant": true,
+    "use_case_specified_or_unknown": true,
+    "reasonable_time_window": true,
+    "action_triad_complete": true,
+    "stage_gate_applied": true,
+    "list_separation_respected": true,
+    "to_verify_structured": true,
+    "no_duplicate_signals": true,
+    "no_news_misjudged_as_opportunity": true,
+    "no_padding_p2_p3": true,
+    "schema_preserved": true,
+    "three_stage_complete": true,
+    "no_latest_json_generated": true,
+    "md_report_generated": true
+  },
+
+  "disclaimer": "本报告仅基于公开互联网信息编制，不包含任何Hach内部数据。所有to_verify字段需Company Agent使用内部系统验证。Public Signal Score不等于Hach Opportunity Score。"
+}
