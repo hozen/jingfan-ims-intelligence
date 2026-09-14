@@ -9,6 +9,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "WB-6-Xiaogan",
         "company": {
@@ -647,6 +648,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "WB-5-Xinxiang",
         "company": {
@@ -1385,6 +1387,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "WB-4-Changyang",
         "company": {
@@ -2072,6 +2075,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "WB-1-Yaomeng",
         "company": {
@@ -2687,6 +2691,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260817-012",
         "company": {
@@ -2923,6 +2928,7 @@
         "需求与现状",
         "公开证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260817-007",
         "company": {
@@ -3169,7 +3175,8 @@
           "file": "2026-09-13.json",
           "date": "2026-09-13"
         }
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -3233,7 +3240,8 @@
           "file": "2026-09-13.json",
           "date": "2026-09-13"
         }
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -3297,7 +3305,8 @@
           "file": "2026-09-13.json",
           "date": "2026-09-13"
         }
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -3361,7 +3370,8 @@
           "file": "2026-09-13.json",
           "date": "2026-09-13"
         }
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -3425,7 +3435,8 @@
           "file": "2026-09-13.json",
           "date": "2026-09-13"
         }
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -3433,6 +3444,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260911-021",
         "company": {
@@ -3776,6 +3788,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260911-014",
         "company": {
@@ -4083,6 +4096,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260911-009",
         "company": {
@@ -4288,6 +4302,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260911-007",
         "company": {
@@ -4540,6 +4555,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260911-004",
         "company": {
@@ -4762,6 +4778,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260909-017",
         "company": {
@@ -4980,6 +4997,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260909-015",
         "company": {
@@ -5194,6 +5212,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260907-018",
         "company": {
@@ -5433,6 +5452,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-020",
         "company": {
@@ -5627,6 +5647,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-019",
         "company": {
@@ -5840,6 +5861,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-016",
         "company": {
@@ -6089,6 +6111,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260902-011",
         "company": {
@@ -6316,6 +6339,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260902-006",
         "company": {
@@ -6569,6 +6593,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-005",
         "company": {
@@ -6855,6 +6880,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-003",
         "company": {
@@ -7134,6 +7160,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-002",
         "company": {
@@ -7360,6 +7387,7 @@
       "date": "2026-09-12",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260902-001",
         "company": {
@@ -7679,6 +7707,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-010",
         "company": {
@@ -7889,6 +7918,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-009",
         "company": {
@@ -8094,6 +8124,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-008",
         "company": {
@@ -8305,6 +8336,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-007",
         "company": {
@@ -8522,6 +8554,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-006",
         "company": {
@@ -8755,6 +8788,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260912-005",
         "company": {
@@ -8979,6 +9013,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260912-004",
         "company": {
@@ -9194,6 +9229,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260912-002",
         "company": {
@@ -9460,6 +9496,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260912-001",
         "company": {
@@ -9683,6 +9720,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260911-002",
         "company": {
@@ -9851,6 +9889,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260911-001",
         "company": {
@@ -10022,6 +10061,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260910-007",
         "company": {
@@ -10261,6 +10301,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-006",
         "company": {
@@ -10525,6 +10566,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-005",
         "company": {
@@ -10766,6 +10808,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-004",
         "company": {
@@ -10991,6 +11034,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-003",
         "company": {
@@ -11243,6 +11287,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-002",
         "company": {
@@ -11470,6 +11515,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260910-001",
         "company": {
@@ -11708,6 +11754,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-005",
         "company": {
@@ -11920,6 +11967,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260908-003",
         "company": {
@@ -12140,6 +12188,7 @@
       "quality_missing": [
         "阶段与时间窗口"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-002",
         "company": {
@@ -12412,6 +12461,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260908-001",
         "company": {
@@ -12661,6 +12711,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-011",
         "company": {
@@ -12860,6 +12911,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-010",
         "company": {
@@ -13054,6 +13106,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260908-009",
         "company": {
@@ -13263,6 +13316,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-008",
         "company": {
@@ -13462,6 +13516,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-007",
         "company": {
@@ -13685,6 +13740,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260908-006",
         "company": {
@@ -13941,6 +13997,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260908-004",
         "company": {
@@ -14140,6 +14197,7 @@
         "需求与现状",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260902-012",
         "company": {
@@ -14328,6 +14386,7 @@
       "date": "2026-09-02",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-011",
         "company": {
@@ -14578,6 +14637,7 @@
       "date": "2026-09-02",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-010",
         "company": {
@@ -14840,6 +14900,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-008",
         "company": {
@@ -15066,6 +15127,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-007",
         "company": {
@@ -15272,6 +15334,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-006",
         "company": {
@@ -15492,6 +15555,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-005",
         "company": {
@@ -15711,6 +15775,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260902-004",
         "company": {
@@ -15941,6 +16006,7 @@
       "date": "2026-09-02",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-003",
         "company": {
@@ -16219,6 +16285,7 @@
       "date": "2026-09-02",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-002",
         "company": {
@@ -16483,6 +16550,7 @@
       "date": "2026-09-02",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260902-001",
         "company": {
@@ -16772,6 +16840,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260901-007",
         "company": {
@@ -17020,6 +17089,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260825-002",
         "company": {
@@ -17503,7 +17573,8 @@
       "quality_score": 4,
       "quality_missing": [
         "需求与现状"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -17513,6 +17584,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260901-010",
         "company": {
@@ -17745,6 +17817,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-009",
         "company": {
@@ -17978,6 +18051,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260901-008",
         "company": {
@@ -18216,6 +18290,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-006",
         "company": {
@@ -18423,6 +18498,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-005",
         "company": {
@@ -18636,6 +18712,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-004",
         "company": {
@@ -18842,6 +18919,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-003",
         "company": {
@@ -19059,6 +19137,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-002",
         "company": {
@@ -19264,6 +19343,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260901-001",
         "company": {
@@ -19520,6 +19600,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260825-004",
         "company": {
@@ -19807,6 +19888,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-001",
         "company": {
@@ -20065,6 +20147,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-011",
         "company": {
@@ -20279,6 +20362,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260831-010",
         "company": {
@@ -20467,6 +20551,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-009",
         "company": {
@@ -20667,6 +20752,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-008",
         "company": {
@@ -20879,6 +20965,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-007",
         "company": {
@@ -21068,6 +21155,7 @@
         "公开证据",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-006",
         "company": {
@@ -21255,6 +21343,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-005",
         "company": {
@@ -21514,6 +21603,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-004",
         "company": {
@@ -21735,6 +21825,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-003",
         "company": {
@@ -21955,6 +22046,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260831-002",
         "company": {
@@ -22199,6 +22291,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260831-001",
         "company": {
@@ -22459,6 +22552,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-014",
         "company": {
@@ -22692,6 +22786,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-013",
         "company": {
@@ -22934,6 +23029,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260825-012",
         "company": {
@@ -23190,6 +23286,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-011",
         "company": {
@@ -23398,6 +23495,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-010",
         "company": {
@@ -23608,6 +23706,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-009",
         "company": {
@@ -23835,6 +23934,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-008",
         "company": {
@@ -24281,6 +24381,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-007",
         "company": {
@@ -24499,6 +24600,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-006",
         "company": {
@@ -24716,6 +24818,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260825-005",
         "company": {
@@ -24953,6 +25056,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260825-003",
         "company": {
@@ -25182,6 +25286,7 @@
       "date": "2026-08-25",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260824-006",
         "company": {
@@ -25745,6 +25850,7 @@
       "date": "2026-08-25",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260824-005",
         "company": {
@@ -26037,6 +26143,7 @@
       "date": "2026-08-25",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260824-004",
         "company": {
@@ -26359,6 +26466,7 @@
       "date": "2026-08-22",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260819-005",
         "company": {
@@ -26811,6 +26919,7 @@
       "date": "2026-08-22",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260817-013",
         "company": {
@@ -27188,6 +27297,7 @@
       "date": "2026-08-22",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-008",
         "company": {
@@ -27474,6 +27584,7 @@
       "date": "2026-08-22",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-006",
         "company": {
@@ -27866,6 +27977,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260821-002",
         "company": {
@@ -28051,6 +28163,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260821-001",
         "company": {
@@ -28273,6 +28386,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260820-001",
         "company": {
@@ -28466,6 +28580,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260810-003",
         "company": {
@@ -28897,7 +29012,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -29108,7 +29224,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -29318,7 +29435,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -29523,7 +29641,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -29731,7 +29850,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -29942,7 +30062,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -30177,7 +30298,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -30394,7 +30516,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -30610,7 +30733,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -30826,7 +30950,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -31055,7 +31180,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "industrial",
@@ -31294,7 +31420,8 @@
       "quality_score": 4,
       "quality_missing": [
         "联系人或招聘证据"
-      ]
+      ],
+      "procurement_signal": false
     },
     {
       "segment": "municipal",
@@ -31305,6 +31432,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260820-003",
         "company": {
@@ -31524,6 +31652,7 @@
         "项目与地区",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260820-002",
         "company": {
@@ -31707,6 +31836,7 @@
       "quality_missing": [
         "需求与现状"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-12",
         "company": {
@@ -32153,6 +32283,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-11",
         "company": {
@@ -32523,6 +32654,7 @@
       "quality_missing": [
         "需求与现状"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-09",
         "company": {
@@ -32871,6 +33003,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-08",
         "company": {
@@ -33210,6 +33343,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-07",
         "company": {
@@ -33617,6 +33751,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260820-06",
         "company": {
@@ -34119,6 +34254,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-05",
         "company": {
@@ -34507,6 +34643,7 @@
       "date": "2026-08-20",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-04",
         "company": {
@@ -34922,6 +35059,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-03",
         "company": {
@@ -35191,6 +35329,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260820-001",
         "company": {
@@ -35396,6 +35535,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260819-002",
         "company": {
@@ -35587,6 +35727,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260819-001",
         "company": {
@@ -35772,6 +35913,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260817-001",
         "company": {
@@ -35998,6 +36140,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260812-001",
         "company": {
@@ -36214,6 +36357,7 @@
       "quality_missing": [
         "需求与现状"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-011",
         "company": {
@@ -37682,6 +37826,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-010",
         "company": {
@@ -38399,6 +38544,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-009",
         "company": {
@@ -38719,6 +38865,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-008",
         "company": {
@@ -39190,6 +39337,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260819-007",
         "company": {
@@ -39812,6 +39960,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260819-006",
         "company": {
@@ -40584,6 +40733,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-004",
         "company": {
@@ -41057,6 +41207,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-003",
         "company": {
@@ -41411,6 +41562,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260819-002",
         "company": {
@@ -41732,6 +41884,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-005",
         "company": {
@@ -42133,6 +42286,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-004",
         "company": {
@@ -42341,6 +42495,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-003",
         "company": {
@@ -42584,6 +42739,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-002",
         "company": {
@@ -42998,6 +43154,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-010",
         "company": {
@@ -43400,6 +43557,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-009",
         "company": {
@@ -43751,6 +43909,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-008",
         "company": {
@@ -44105,6 +44264,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-007",
         "company": {
@@ -44306,6 +44466,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-006",
         "company": {
@@ -44678,6 +44839,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-005",
         "company": {
@@ -45120,6 +45282,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-004",
         "company": {
@@ -45538,6 +45701,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-003",
         "company": {
@@ -45742,6 +45906,7 @@
       "date": "2026-08-19",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "IND-20260814-002",
         "company": {
@@ -46379,6 +46544,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260814-001",
         "company": {
@@ -46648,6 +46814,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260817-002",
         "company": {
@@ -46877,6 +47044,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260813-001",
         "company": {
@@ -47151,6 +47319,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260812-002",
         "company": {
@@ -47405,6 +47574,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260811-001",
         "company": {
@@ -47634,6 +47804,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-012",
         "company": {
@@ -48523,6 +48694,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-011",
         "company": {
@@ -49670,6 +49842,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-010",
         "company": {
@@ -50339,6 +50512,7 @@
       "quality_missing": [
         "需求与现状"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-009",
         "company": {
@@ -50934,6 +51108,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-008",
         "company": {
@@ -52901,6 +53076,7 @@
       "quality_missing": [
         "需求与现状"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-007",
         "company": {
@@ -53674,6 +53850,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-006",
         "company": {
@@ -54510,6 +54687,7 @@
       "date": "2026-08-18",
       "quality_score": 5,
       "quality_missing": [],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-005",
         "company": {
@@ -55554,6 +55732,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-004",
         "company": {
@@ -55786,6 +55965,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-003",
         "company": {
@@ -56019,6 +56199,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260818-001",
         "company": {
@@ -56577,6 +56758,7 @@
         "项目与地区",
         "阶段与时间窗口"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "IND-20260817-001",
         "company": {
@@ -56981,6 +57163,7 @@
       "quality_missing": [
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260812-003",
         "company": {
@@ -57189,6 +57372,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": true,
       "lead": {
         "lead_id": "MUN-20260810-002",
         "company": {
@@ -57374,6 +57558,7 @@
         "阶段与时间窗口",
         "联系人或招聘证据"
       ],
+      "procurement_signal": false,
       "lead": {
         "lead_id": "MUN-20260810-001",
         "company": {

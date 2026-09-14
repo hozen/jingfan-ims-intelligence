@@ -90,6 +90,14 @@ def completeness(signal, contacts):
     return sum(checks), [label for label, ok in zip(
         ("项目与地区", "阶段与时间窗口", "需求与现状", "公开证据", "联系人或招聘证据"), checks) if not ok]
 
+def is_procurement_signal(signal):
+    """Classify published tender/procurement signals without treating EPC alone as a tender."""
+    stage=str(signal.get("opportunity_stage") or "").lower()
+    text=" ".join(str(signal.get(key) or "") for key in (
+        "opportunity", "project", "trigger", "signal_type", "sales_summary", "estimated_time_window"))
+    return stage == "tender/procurement" or any(word in text for word in (
+        "招标", "投标", "采购公告", "采购项目", "开标", "中标", "竞争性磋商", "竞争性谈判"))
+
 def enriched_rows(segment, directory, patterns):
     files=sorted({p for pattern in patterns for p in directory.glob(pattern)}, key=lambda p:p.name)
     # Dumate keeps pre-consolidation snapshots beside the canonical master.
@@ -152,7 +160,7 @@ def enriched_rows(segment, directory, patterns):
         category=municipal_category(signal) if segment=="municipal" else industrial_category(signal); date=item.get("last_updated") or item.get("first_seen") or stamp
         enriched_contacts=contacts_for(item,contacts)
         quality_score, quality_missing=completeness(signal, enriched_contacts)
-        rows.append({"segment":segment,"category":category,"date":date,"quality_score":quality_score,"quality_missing":quality_missing,"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"record_status":item.get("record_status","active"),"ims_recommendation":safe(item.get("ims_recommendation") or {}),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":enriched_contacts,"history":history.get(lead_id,[])})
+        rows.append({"segment":segment,"category":category,"date":date,"quality_score":quality_score,"quality_missing":quality_missing,"procurement_signal":is_procurement_signal(signal),"lead":{"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("opportunity"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("opportunity"),"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"原始数据来源"} for u in signal.get("source_urls",[])]}},"enriched_record":{"original_signal":signal,"enrichment_status":item.get("enrichment_status"),"record_status":item.get("record_status","active"),"ims_recommendation":safe(item.get("ims_recommendation") or {}),"projects":linked_projects,"accounts":linked_accounts},"enriched_contacts":enriched_contacts,"history":history.get(lead_id,[])})
     return rows
 
 def industrial_rows():
@@ -223,7 +231,12 @@ def municipal_rows():
     return rows
 
 def model():
-    rows=industrial_rows()+municipal_rows(); rows.sort(key=lambda x:(str(x["date"]),x["lead"]["lead_id"]),reverse=True); return {"leads":rows}
+    rows=industrial_rows()+municipal_rows()
+    for row in rows:
+        signal=(row.get("enriched_record") or {}).get("original_signal") or {}
+        row["procurement_signal"]=is_procurement_signal(signal)
+    rows.sort(key=lambda x:(str(x["date"]),x["lead"]["lead_id"]),reverse=True)
+    return {"leads":rows}
 
 def page():
     css=r''':root{--ink:#17212b;--muted:#647582;--line:#d9e4e8;--bg:#f4f7f8;--blue:#0e628c;--mun:#176a49}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}main{max-width:1180px;margin:auto;padding:16px}h1,h2,h3,p{margin:0}h1{font-size:clamp(25px,5vw,36px)}.muted{font-size:14px;color:var(--muted)}.toolbar{padding:8px 0}.search{width:100%;padding:12px;border:1px solid #b8cbd4;border-radius:10px;background:#fff;font:inherit}.filters{display:flex;gap:7px;overflow-x:auto;padding:9px 0 2px}.filter{flex:0 0 auto;border:1px solid #b8cbd4;border-radius:99px;padding:6px 11px;background:#fff;font:14px inherit;cursor:pointer}.filter.selected{background:var(--blue);border-color:var(--blue);color:#fff}.filter.municipal.selected{background:var(--mun);border-color:var(--mun)}.layout{display:grid;grid-template-columns:335px minmax(0,1fr);gap:14px;align-items:start}.list,.detail,details{background:#fff;border:1px solid var(--line);border-radius:13px}.list{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}.day{padding:8px 12px;background:#f7fafb;border-bottom:1px solid var(--line);font-size:13px;font-weight:700;color:var(--muted)}.row{display:block;width:100%;padding:10px 12px;text-align:left;border:0;border-bottom:1px solid #edf2f4;background:#fff;font:inherit;cursor:pointer}.row.active,.row:hover{background:#e8f4f8}.row b,.row span,.row small{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.row small{color:var(--muted);font-size:13px}.tag{display:inline-block;margin:5px 5px 0 0;padding:2px 7px;border-radius:99px;background:#e8f2f7;color:var(--blue);font-size:12px}.tag.mun{background:#e7f5ed;color:var(--mun)}.detail{padding:16px}.detail h2{font-size:25px;line-height:1.25}.matrix{display:grid;grid-template-columns:120px 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:12px}.matrix div{padding:8px 10px;border-bottom:1px solid var(--line)}.matrix div:nth-last-child(-n+2){border-bottom:0}.matrix .k{background:#f5f8fa;color:var(--muted);font-size:13px}.section{margin-top:12px;padding:13px;border:1px solid;border-radius:12px}.section.blue{background:#edf7fb;border-color:#b8dbe9}.section.amber{background:#fff8e8;border-color:#e7d39b}.section.green{background:#eef8f1;border-color:#badcc5}.section h3{font-size:17px;margin-bottom:7px}.section ul{margin:0;padding-left:20px}.section li+li{margin-top:7px}.contact{padding:9px 0;border-bottom:1px solid #cfe3d5}.contact:last-child{border:0}details{margin-top:12px;padding:11px}summary{cursor:pointer;color:var(--blue);font-weight:700}.empty{padding:20px;color:var(--muted)}a{color:var(--blue);word-break:break-all}@media(max-width:760px){main{padding:12px}.layout{display:block}.list{position:static;max-height:none;margin-bottom:12px}.detail{padding:13px}.matrix{grid-template-columns:96px 1fr}.filters{padding-bottom:8px}}'''
@@ -231,15 +244,15 @@ def page():
     js = js.replace("const labels=", "for(const r of data.leads){for(const c of r.enriched_contacts||[]){if(c.phone&&!Array.isArray(c.phone))c.phone=[typeof c.phone==='object'?c.phone:{value:c.phone}]}}const labels=")
     js = js.replace(
         "category=document.querySelector('#category');let seg='all',cat='all',chosen=0;",
-        "category=document.querySelector('#category'),quality=document.querySelector('#quality');let seg='all',cat='all',qualityFilter='five',chosen=0;",
+        "category=document.querySelector('#category'),quality=document.querySelector('#quality'),timing=document.querySelector('#timing');let seg='all',cat='all',qualityFilter='five',timeFilter='all',chosen=0;",
     )
     js = js.replace(
         "function rows(){",
-        "function makeQuality(){quality.innerHTML=[['all','资料完整度：全部'],['five','完整 5 分'],['four','较完整 4 分'],['low','待补 0–3 分']].map(([v,t])=>`<button class=\"filter ${qualityFilter===v?'selected':''}\" data-q=\"${v}\">${t}</button>`).join('');quality.querySelectorAll('button').forEach(b=>b.onclick=()=>{qualityFilter=b.dataset.q;makeQuality();render()})}function rows(){",
+        "function makeQuality(){quality.innerHTML=[['all','资料完整度：全部'],['five','完整 5 分'],['four','较完整 4 分'],['low','待补 0–3 分']].map(([v,t])=>`<button class=\"filter ${qualityFilter===v?'selected':''}\" data-q=\"${v}\">${t}</button>`).join('');quality.querySelectorAll('button').forEach(b=>b.onclick=()=>{qualityFilter=b.dataset.q;makeQuality();makeTiming();render()})}function makeTiming(){const pool=data.leads.filter(r=>(seg==='all'||r.segment===seg)&&(cat==='all'||r.category===cat)&&(qualityFilter==='all'||qualityFilter==='five'&&r.quality_score===5||qualityFilter==='four'&&r.quality_score===4||qualityFilter==='low'&&(r.quality_score||0)<=3)),n=pick=>pool.filter(r=>pick==='all'||pick==='tender'&&r.procurement_signal||pick==='early'&&!r.procurement_signal).length;timing.innerHTML=[['all',`时点：全部（${n('all')}）`],['early',`营销前置（非招投标，${n('early')}）`],['tender',`招投标／销售急跟（${n('tender')}）`]].map(([v,t])=>`<button class=\"filter ${timeFilter===v?'selected':''}\" data-t=\"${v}\">${t}</button>`).join('');timing.querySelectorAll('button').forEach(b=>b.onclick=()=>{timeFilter=b.dataset.t;makeTiming();render()})}function rows(){",
     )
     js = js.replace(
         "&&(cat==='all'||x.r.category===cat)&&(!q||JSON.stringify(x.r).toLowerCase().includes(q))",
-        "&&(cat==='all'||x.r.category===cat)&&(qualityFilter==='all'||qualityFilter==='five'&&x.r.quality_score===5||qualityFilter==='four'&&x.r.quality_score===4||qualityFilter==='low'&&(x.r.quality_score||0)<=3)&&(!q||JSON.stringify(x.r).toLowerCase().includes(q))",
+        "&&(cat==='all'||x.r.category===cat)&&(qualityFilter==='all'||qualityFilter==='five'&&x.r.quality_score===5||qualityFilter==='four'&&x.r.quality_score===4||qualityFilter==='low'&&(x.r.quality_score||0)<=3)&&(timeFilter==='all'||timeFilter==='tender'&&x.r.procurement_signal||timeFilter==='early'&&!x.r.procurement_signal)&&(!q||JSON.stringify(x.r).toLowerCase().includes(q))",
     )
     js = js.replace(
         "${labels[x.r.segment]}／${esc(x.r.category)}</i></small>",
@@ -249,7 +262,9 @@ def page():
         "['时间窗口依据',s.time_window_basis]])}<section",
         "['时间窗口依据',s.time_window_basis],['资料完整度',`${r.quality_score||0}／5（待补：${(r.quality_missing||[]).join('、')||'无'}）`]])}<section",
     )
-    js = js.replace("makeFilters();render();", "makeFilters();makeQuality();render();")
+    js = js.replace("makeFilters();render();", "makeFilters();makeQuality();makeTiming();render();")
+    js = js.replace("cat='all';makeFilters();render()", "cat='all';makeFilters();makeTiming();render()")
+    js = js.replace("x.classList.toggle('selected',x===b));render()})", "x.classList.toggle('selected',x===b));makeTiming();render()})")
     js = js.replace("(c.phone||[]).map(p=>p.value).join('；')", "(Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')")
     old_contact = '''<b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||c.role||'职务未记录')}<br>${esc((Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')||'联系方式未公开')}'''
     new_contact = '''<b>${esc(c.name||'姓名未记录')}</b> · ${esc(c.title||c.role||'职务未记录')}${c.unit?`<br><span class="muted">${esc(c.unit)}</span>`:''}<br>${esc((Array.isArray(c.phone)?c.phone:(c.phone?[c.phone]:[])).map(p=>typeof p==='object'?(p.value||p.number||p.mobile||''):p).filter(Boolean).join('；')||'联系方式未公开')}'''
@@ -310,7 +325,7 @@ def page():
     js = js.replace('复制公司 Agent 核实提示（提示词）', '复制公司Agent核实提示词（Prompt）')
     js = js.replace('复制公司 Agent 核实提示（Prompt）', '复制公司Agent核实提示词（Prompt）')
     js = js.replace("setInterval(()=>location.reload(),300000)", "setInterval(()=>location.reload(),600000)")
-    return f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>靖帆IMS Intelligence</title><style>{css}{mobile_css}</style><main><h1>靖帆IMS Intelligence</h1><p class="muted">工业与市政线索 · 数据自动同步仓库 JSON</p><div class="toolbar"><input id="search" class="search" placeholder="搜索公司、项目、省份、城市、事实或联系人"><div id="segment" class="filters"></div><div id="category" class="filters"></div><div id="quality" class="filters"></div></div><div class="layout"><aside class="list"></aside><article class="detail"></article></div></main><script type="module">{js}{mobile_js}</script></html>'
+    return f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>靖帆IMS Intelligence</title><style>{css}{mobile_css}</style><main><h1>靖帆IMS Intelligence</h1><p class="muted">工业与市政线索 · 数据自动同步仓库 JSON</p><div class="toolbar"><input id="search" class="search" placeholder="搜索公司、项目、省份、城市、事实或联系人"><div id="segment" class="filters"></div><div id="category" class="filters"></div><div id="quality" class="filters"></div><div id="timing" class="filters"></div></div><div class="layout"><aside class="list"></aside><article class="detail"></article></div></main><script type="module">{js}{mobile_js}</script></html>'
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
