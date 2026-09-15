@@ -1,0 +1,639 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "report_date": "2026-09-15",
+  "experiment_week": "5+",
+  "scanner_summary": {
+    "engine_a_count": 1,
+    "engine_b_count": 3,
+    "engine_c_count": 1,
+    "mixed_engine_count": 3,
+    "industry_breakdown": {
+      "petrochemical": 2,
+      "semiconductor": 1,
+      "food_beverage": 1,
+      "metallurgy_coking": 1
+    },
+    "trigger_distribution": {
+      "eia_approval": 3,
+      "environmental_rectification": 1,
+      "large_investment": 1
+    },
+    "pull_score_distribution": {
+      "strong_16_20": 0,
+      "promising_11_15": 2,
+      "weak_6_10": 3,
+      "speculation_0_5": 0
+    },
+    "search_bias_check": {
+      "early_signal_pct": 50,
+      "pre_tender_pct": 33,
+      "tender_pct": 17,
+      "awarded_pct": 0,
+      "tender_plus_awarded": 17,
+      "warning_triggered": false,
+      "note": "Early Signal占比50%，Tender+Awarded=17%<50%，无Search Bias Warning"
+    },
+    "filtered_municipal": 2,
+    "municipal_filter_detail": ["普洱西盟县城市污水处理厂", "江安北城片区供水项目"],
+    "total_signals": 5,
+    "p1_count": 0,
+    "p2_count": 0,
+    "p3_count": 5
+  },
+  "top_5_match": [],
+  "signals": [
+    {
+      "id": "IND-20260915-01",
+      "company": "东明石化集团",
+      "industry": "石化化工",
+      "location": "山东省菏泽市东明县",
+      "opportunity_project": "30万吨/年UPC（原油直接催化裂解制烯烃）科技试验项目，总投资超110亿元",
+      "signal_tier": "Tier 2",
+      "engine": "B+C",
+      "evidence": {
+        "facts": [
+          "项目总投资超110亿元，被列为山东省重大项目",
+          "全球首套商业化规模原油直接裂解制烯烃装置，预计年内竣工投产",
+          "双烯收率50%+，化学品收率81%+，每吨降低水耗30%"
+        ],
+        "inferences": [
+          "项目已进入建设冲刺阶段，主要水系统设备采购窗口可能已过"
+        ],
+        "unknowns": [
+          "具体水处理系统设计/采购状态",
+          "EPC方",
+          "仪表集成商"
+        ]
+      },
+      "potential_ims_use_case": "Lifecycle/Phase 2 — 新工艺装置投产后水系统运行监测、数据管理",
+      "logic_rationale": "UPC为新工艺，水耗降低30%意味着水系统设计有创新，投产后运行优化和监测需求可能增加",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "entry_timing": "LATE",
+      "entry_timing_evidence": {
+        "source": "INFERENCE",
+        "note": "项目已进入建设冲刺阶段，预计年内投产，主要水系统采购窗口可能已过"
+      },
+      "influence_window": "LOW",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "建设冲刺期，技术规格已冻结，后续为运维管理窗口"
+      },
+      "estimated_time_window": "投产后Phase 2窗口（2027H1+）",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1876098708011746485",
+        "https://www.sohu.com/a/1075041555_121856153"
+      ],
+      "to_verify": [
+        "水系统EPC是谁？",
+        "水处理仪表是否已采购？",
+        "投产后运维模式？"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 2,
+        "leverage": 2,
+        "total": 12
+      },
+      "pull_box": {
+        "p_project": "新建全球首套原油直接裂解制烯烃装置，¥110亿+，建设冲刺期 | FACT",
+        "u_unavoidable": "成品油需求萎缩+烯烃需求增长，技术突破驱动，市场必须 | FACT",
+        "l_limitations": "新工艺，水耗降低30%，具体水系统配置未知 | UNKNOWN",
+        "l_leverage": "投产后运行监测优化可能需要iMS，但建设阶段采购窗口可能已过 | INFERENCE",
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "水系统仪表是否已完成采购？",
+        "next_validation_question": "UPC装置的水处理系统和在线监测仪表由哪家EPC/集成商负责？是否已完成安装？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "东明石化集团",
+          "owner_role": "业主/运营方",
+          "evaluation": "FACT",
+          "note": "山东省重大项目业主，副总裁李栋为公开联系人"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未公开"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未公开EPC方"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未公开"
+        },
+        "missing_roles": ["design_institute", "epc", "instrument_integrator"],
+        "next_validation_action": "查询东明石化UPC项目环评报告或招标记录，确认水系统EPC和仪表集成商"
+      }
+    },
+    {
+      "id": "IND-20260915-02",
+      "company": "高美可科技(惠州)有限公司",
+      "industry": "半导体/电子",
+      "location": "广东省惠州市仲恺高新区潼湖生态智慧区",
+      "opportunity_project": "半导体设备核心部件研发制造项目（一期），总投资5000万元，年产下部电极零部件300套",
+      "signal_tier": "Tier 2",
+      "engine": "B+C",
+      "evidence": {
+        "facts": [
+          "环评批准公示期2026/9/11-9/17，一期投资5000万，50人，年产300套",
+          "废水包括研磨废水、研磨清洗废水（委托有资质单位处理）、超纯水制备浓水、超声波清洗废水",
+          "生活污水+超纯水浓水+锅炉排水+间接冷却水+超声波清洗废水→市政管网→潼湖镇三和污水处理厂"
+        ],
+        "inferences": [
+          "半导体设备部件制造，研磨工序产生废水，可能有水质监测需求"
+        ],
+        "unknowns": [
+          "具体水处理工艺",
+          "是否有在线监测要求"
+        ]
+      },
+      "potential_ims_use_case": "研磨废水排放监测、超纯水制备过程水质监测",
+      "logic_rationale": "半导体设备部件制造涉及研磨和清洗，产生含金属/颗粒物废水；委托外部处理但可能需要排放口监测",
+      "opportunity_stage": "Industrial Signal",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评批准公示中，尚未进入设计/施工阶段，技术规格窗口仍可影响"
+      },
+      "influence_window": "MEDIUM",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "环评刚批准，水系统方案和监测策略尚未定义，可影响方案架构和监测需求"
+      },
+      "estimated_time_window": "环评批准后→设计阶段（2026Q4-2027Q1）",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "New Facility",
+      "source_urls": [
+        "https://www.hzzk.gov.cn/hzzksthjj/gkmlpt/content/5/5850/post_5850726.html"
+      ],
+      "to_verify": [
+        "排污许可证是否要求在线监测？",
+        "研磨废水水量和水质特征？",
+        "超纯水系统供应商？"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 3,
+        "limitations": 2,
+        "leverage": 2,
+        "total": 10
+      },
+      "pull_box": {
+        "p_project": "新建半导体设备核心部件制造产线，一期¥5000万，300套/年 | FACT",
+        "u_unavoidable": "环评已批准，项目建设为合规要求；半导体扩产周期 | FACT",
+        "l_limitations": "研磨废水委托外处理，可能不自行建设水处理设施 | INFERENCE",
+        "l_leverage": "如果需要排放口在线监测，iMS+仪表可提供合规监测；但规模小，采购概率低 | INFERENCE",
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "排污许可证是否要求安装在线监测设备？",
+        "next_validation_question": "高美可一期项目排污许可证是否要求废水排放口安装在线监测设备？研磨废水量有多大？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "高美可科技(惠州)有限公司",
+          "owner_role": "建设单位/业主",
+          "evaluation": "FACT",
+          "note": "环评公示明确建设单位"
+        },
+        "design_institute": {
+          "name": "广东惠之蓝环保科技有限公司",
+          "owner_role": "环评机构",
+          "evaluation": "FACT",
+          "note": "环评公示明确环评机构"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "尚未进入施工阶段"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "尚未进入设备采购阶段"
+        },
+        "missing_roles": ["epc", "instrument_integrator"],
+        "next_validation_action": "跟踪项目排污许可证申领情况，确认是否要求在线监测；关注后续设计/施工招标"
+      }
+    },
+    {
+      "id": "IND-20260915-03",
+      "company": "云南洽洽老魔坊魔芋生物科技有限公司",
+      "industry": "食品饮料",
+      "location": "云南省曲靖市马龙区马龙产业园区",
+      "opportunity_project": "鲜魔芋休闲食品生产加工项目，投资1亿元，年产9000吨魔芋胚和魔芋制品，2条生产线",
+      "signal_tier": "Tier 2",
+      "engine": "B+C",
+      "evidence": {
+        "facts": [
+          "环评公示期2026/9/11-9/17，投资1亿元，2026/1/15备案",
+          "租用原曲靖老魔坊整厂场地，保留原有标准厂房、办公楼、污水处理站",
+          "扩建7258.93m2，新建2条鲜魔芋毛肚生产线"
+        ],
+        "inferences": [
+          "食品加工（魔芋）产生高COD废水，保留现有污水站但新生产线可能增加水量"
+        ],
+        "unknowns": [
+          "现有污水站处理能力是否匹配新增水量",
+          "是否有在线监测"
+        ]
+      },
+      "potential_ims_use_case": "食品加工废水排放监测、污水站运行优化",
+      "logic_rationale": "魔芋加工产生高有机物废水，现有污水站可能需要扩容或增加监测点",
+      "opportunity_stage": "Industrial Signal",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评公示中，尚未进入设计/施工阶段，可影响污水站改造方案和监测策略"
+      },
+      "influence_window": "MEDIUM",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "环评刚批准，现有污水站是否需要扩容/增加监测点尚未确定，可影响方案"
+      },
+      "estimated_time_window": "环评批准后→设计/施工阶段（2026Q4-2027Q1）",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "source_urls": [
+        "https://malong.gov.cn/gov/public/detail/tzgg/92066.html"
+      ],
+      "to_verify": [
+        "现有污水站处理能力和工艺？",
+        "新增废水量？",
+        "是否需要新增监测点？"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 3,
+        "limitations": 2,
+        "leverage": 2,
+        "total": 10
+      },
+      "pull_box": {
+        "p_project": "魔芋食品加工新项目，¥1亿，9000吨/年，保留现有污水站 | FACT",
+        "u_unavoidable": "环评已公示，食品加工废水必须达标排放 | FACT",
+        "l_limitations": "现有污水站保留使用，但新生产线可能增加废水负荷 | INFERENCE",
+        "l_leverage": "如果水量增加导致污水站扩容，可能需要新增监测点；但依赖现有设施 | INFERENCE",
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "现有污水站处理能力是否足够？是否需要扩容？",
+        "next_validation_question": "现有污水处理站设计处理能力是多少？新项目投产后废水量会增加多少？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "云南洽洽老魔坊魔芋生物科技有限公司",
+          "owner_role": "建设单位/业主",
+          "evaluation": "FACT",
+          "note": "环评公示明确建设单位，洽洽食品关联企业"
+        },
+        "design_institute": {
+          "name": "云南舫舶环境工程有限公司",
+          "owner_role": "环评机构",
+          "evaluation": "FACT",
+          "note": "环评公示明确"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "尚未进入施工阶段"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "尚未进入设备采购"
+        },
+        "missing_roles": ["epc", "instrument_integrator"],
+        "next_validation_action": "查询原老魔坊食品科技污水站设计参数；跟踪项目设计阶段是否涉及污水站改造"
+      }
+    },
+    {
+      "id": "IND-20260915-04",
+      "company": "江苏宏邦化工科技有限公司",
+      "industry": "石化化工",
+      "location": "江苏省淮安工业园区实联大道16号",
+      "opportunity_project": "铃兰吡喃、苯乐戊醇、二氢系列、龙涎酮系列、MDJ系列技改项目，依托原有公辅工程",
+      "signal_tier": "Tier 2",
+      "engine": "B+C",
+      "evidence": {
+        "facts": [
+          "环评审查公示期2026/9/11-9/17，新增多种香料化学品产能",
+          "依托原有公辅工程，新建车间三中间仓库，改造车间九",
+          "合成樟脑系列产能削减，利用释放设备新建产品线"
+        ],
+        "inferences": [
+          "技改项目使用现有公辅设施，新增水系统可能性低"
+        ],
+        "unknowns": [
+          "是否有新增废水排放口",
+          "是否需要新增监测"
+        ]
+      },
+      "potential_ims_use_case": "技改后废水排放监测变化、新增排放口在线监测",
+      "logic_rationale": "化工技改可能改变废水水质/水量，但依托现有公辅设施，增量有限",
+      "opportunity_stage": "Industrial Signal",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评审查公示中，尚未进入施工，可影响监测方案"
+      },
+      "influence_window": "LOW",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "依托原有公辅工程，无新建水系统，可影响空间有限"
+      },
+      "estimated_time_window": "环评批准后→设计/施工（2026Q4-2027Q2）",
+      "priority": "P3",
+      "water_system_ownership": "A",
+      "incrementality_status": "Existing Facility Modification",
+      "source_urls": [
+        "https://sthjj.huaian.gov.cn/col/13403_336214/art/17881920/1789107161420hitkadtM.html"
+      ],
+      "to_verify": [
+        "技改是否新增废水排放口？",
+        "排污许可证是否变更？",
+        "是否需要新增在线监测？"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 3,
+        "limitations": 1,
+        "leverage": 1,
+        "total": 8
+      },
+      "pull_box": {
+        "p_project": "化工技改，新增多种香料产品线，依托现有公辅 | FACT",
+        "u_unavoidable": "环评审查中，技改为产能调整需要 | FACT",
+        "l_limitations": "使用现有公辅工程，新增水系统可能性低 | INFERENCE",
+        "l_leverage": "如果废水水质变化需要更新监测因子，iMS可能有价值；但增量不明 | INFERENCE",
+        "evidence_quality": "LOW",
+        "key_unknown": "技改是否导致废水排放口或监测因子变化？",
+        "next_validation_question": "技改后废水排放口数量和监测因子是否有变化？排污许可证是否需要变更？"
+      },
+      "evidence_quality": "LOW",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "江苏宏邦化工科技有限公司",
+          "owner_role": "建设单位/业主",
+          "evaluation": "FACT",
+          "note": "环评公示明确建设单位"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "环评机构",
+          "evaluation": "UNKNOWN",
+          "note": "环评报告未明确独立设计院"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "依托原有公辅，可能自行实施"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未公开"
+        },
+        "missing_roles": ["design_institute", "epc", "instrument_integrator"],
+        "next_validation_action": "查询宏邦化工排污许可证变更情况，确认废水排放口和监测因子是否变化"
+      }
+    },
+    {
+      "id": "IND-20260915-05",
+      "company": "武安市宝烨煤焦化工业有限公司 / 裕华钢铁有限公司",
+      "industry": "冶炼/焦化",
+      "location": "河北省邯郸市武安市",
+      "opportunity_project": "第三轮省环保督察整改完成，589个在线监测排口强化动态监管",
+      "signal_tier": "Tier 2",
+      "engine": "A+C",
+      "evidence": {
+        "facts": [
+          "省环保督察指出排污量增长异常，已完成整改并通过验收",
+          "宝烨煤焦化焦炭产量+26.12%，三项污染物排放+92.17%",
+          "全市589个在线监测排口拉网式排查，建立异常数据闭环管理机制",
+          "重点核查钢铁、焦化、水泥、电力四大行业脱硫脱硝除尘设施运行和在线监测数据真实性"
+        ],
+        "inferences": [
+          "在线监测已强化完成，新增设备采购窗口可能已过，但数据管理需求存在"
+        ],
+        "unknowns": [
+          "589个排口中废水排口数量",
+          "是否有水水质监测仪表"
+        ]
+      },
+      "potential_ims_use_case": "Installed Base/Lifecycle — 589个排口的数据管理、运维优化、仪表生命周期管理",
+      "logic_rationale": "督察整改已完成，但持续监管压力下，数据质量管理和仪表运维是长期需求",
+      "opportunity_stage": "Industrial Signal (Installed Base/Lifecycle)",
+      "entry_timing": "LATE",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "督察整改已完成并通过验收，设备采购窗口已关闭"
+      },
+      "influence_window": "LOW",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "整改已完成，后续为运维管理，可影响空间有限"
+      },
+      "estimated_time_window": "整改已完成，后续为运维管理窗口",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "No Clear Incrementality",
+      "source_urls": [
+        "http://www.wuan.gov.cn/ggtz/202609/t20260908_2216489.html"
+      ],
+      "to_verify": [
+        "589个排口中废水排口有多少？",
+        "水质在线监测仪表品牌和数量？",
+        "是否有数据管理平台需求？"
+      ],
+      "continuity": "first_seen",
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 4,
+        "limitations": 2,
+        "leverage": 2,
+        "total": 11
+      },
+      "pull_box": {
+        "p_project": "环保督察整改完成，589个在线监测排口强化监管 | FACT",
+        "u_unavoidable": "省环保督察强制整改，已完成验收 | FACT",
+        "l_limitations": "已建立异常数据闭环管理机制，但589个排口管理复杂 | INFERENCE",
+        "l_leverage": "iMS可帮助跨排口数据管理和仪表运维，但整改阶段采购可能已完成 | INFERENCE",
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "589个排口中废水排口数量和仪表配置？",
+        "next_validation_question": "589个在线监测排口中有多少是废水排口？水质在线监测仪表是什么品牌？是否有集中数据管理需求？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "武安市宝烨煤焦化工业有限公司 / 裕华钢铁有限公司",
+          "owner_role": "排污单位/业主",
+          "evaluation": "FACT",
+          "note": "督察整改公示明确企业名称"
+        },
+        "design_institute": {
+          "name": "N/A",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "整改已完成，不适用"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "整改可能已由运维商完成"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "运维服务商",
+          "evaluation": "UNKNOWN",
+          "note": "通知鼓励联系运维服务商"
+        },
+        "missing_roles": ["instrument_integrator"],
+        "next_validation_action": "查询武安市589个在线监测排口清单，确认废水排口数量和仪表配置；了解数据管理平台现状"
+      }
+    }
+  ],
+  "market_background": [
+    {
+      "id": "MI-01",
+      "title": "中山市 HJ 212-2025 自动监测设备强制升级（10/31截止）",
+      "source": "中山市生态环境局 9/8 通知",
+      "key_points": [
+        "HJ 212-2025已于2026/1/1实施",
+        "所有现有自动监测设备须在10/31前完成升级或更换",
+        "连续型排放废水重点单位按HJ 355要求执行"
+      ],
+      "tags": ["policy_background", "compliance_trigger", "deadline_20261031"],
+      "impact_scope": "中山市所有持证排污单位"
+    },
+    {
+      "id": "MI-02",
+      "title": "苏州市5行业初期雨水污染管控整治",
+      "source": "苏州市生态环境局 9/14 征求意见稿",
+      "key_points": [
+        "化工/电镀/印染/原料药/冶炼5个重点行业",
+        "排查阶段9月-10/31，整治阶段11/1-12/31",
+        "要求自行监测合规"
+      ],
+      "tags": ["policy_background", "compliance_trigger", "self_monitoring_requirement"],
+      "impact_scope": "苏州市5个重点行业所有持证企业"
+    },
+    {
+      "id": "MI-03",
+      "title": "山东省石化化工老旧装置更新改造2026-2029",
+      "source": "工信部等七部门行动方案",
+      "key_points": [
+        "20年以上装置摸底评估、加快改造",
+        "2029年全面完成",
+        "山东印发省级实施方案"
+      ],
+      "tags": ["policy_background", "investment_trigger", "long_term_window"],
+      "impact_scope": "山东省石化化工行业"
+    },
+    {
+      "id": "MI-04",
+      "title": "生态环境法典排污许可制度升级",
+      "source": "生态环境法典 8/15 施行",
+      "key_points": [
+        "一口一表一码管理",
+        "5年有效期",
+        "水气声渣2026年底全覆盖"
+      ],
+      "tags": ["policy_background", "regulatory_infrastructure", "national_level"],
+      "impact_scope": "全国所有排污单位"
+    },
+    {
+      "id": "MI-05",
+      "title": "HJ 853-2026 石化工业排污许可技术规范",
+      "source": "生态环境部 7/31 发布",
+      "key_points": [
+        "2027/1/1实施",
+        "修订自行监测、环境管理台账要求",
+        "增加水/固废/噪声管理"
+      ],
+      "tags": ["policy_background", "standard_update", "petrochemical", "effective_20270101"],
+      "impact_scope": "全国石化工业排污单位"
+    },
+    {
+      "id": "MI-06",
+      "title": "宁波制造业绿色低碳联盟260个改造项目",
+      "source": "宁波智博会 9/12",
+      "key_points": [
+        "3年内5大产业集群260个低碳改造项目",
+        "绿色石化/NEV/金属冶炼/纺织造纸",
+        "数字化平台由联通建设"
+      ],
+      "tags": ["policy_background", "digitalization_trigger", "ningbo"],
+      "impact_scope": "宁波市5大产业集群"
+    }
+  ],
+  "source_effectiveness": {
+    "government_ecology_bureau": 4,
+    "industry_media": 3,
+    "enterprise_announcement": 2,
+    "policy_document": 3,
+    "tender_platform": 2,
+    "note": "生态环境局环评公示为最可靠信号来源；行业媒体多重复报道同一事件"
+  },
+  "experiment_observations": {
+    "municipal_vs_industrial_differentiation": "成功过滤2条市政信号（普洱污水厂/江安供水），未纳入工业报告。工业信号聚焦于企业级环评/整改/投资，与市政线索区分清晰。",
+    "demand_learning_summary": {
+      "new_strong_pull": false,
+      "repeatable_pull_patterns": [
+        "合规截止日驱动监测设备升级: HJ 212-2025 → 10/31截止 → 全国多地同时触发",
+        "环保督察驱动在线监管强化: 省级督察 → 排口排查 → 数据管理需求",
+        "EIA批准窗口: 环评公示 → 设计阶段 → 可影响方案"
+      ],
+      "downgraded_due_to_demand": "宏邦化工技改项目因使用现有公辅设施、无明确新增水系统需求，从Potential降为Signal",
+      "gtm_hypothesis_update": "生态环境法典'一口一表一码'管理可能系统性增加排放口级监测管理需求；山东省老旧装置更新是2026-2029长期窗口，需不同GTM节奏"
+    },
+    "repeatable_demand_signals": [
+      {
+        "pattern": "compliance_deadline_drives_monitoring_upgrade",
+        "evidence": "HJ 212-2025在中山市和晋丰公司(山西)同时触发升级需求，10/31为统一截止日期",
+        "status": "confirmed_repeatable"
+      },
+      {
+        "pattern": "environmental_inspection_drives_online_monitoring_strengthening",
+        "evidence": "武安案例：省督察 → 589排口排查 → 数据闭环管理机制",
+        "status": "confirmed_repeatable"
+      },
+      {
+        "pattern": "eia_approval_window_for_influence",
+        "evidence": "高美可/洽洽/宏邦均处于环评公示阶段，可影响方案但增量需验证",
+        "status": "emerging_pattern"
+      }
+    ]
+  },
+  "v4_validation_gate": {
+    "total_signals": 5,
+    "signals_with_all_three_fields": 5,
+    "validation_result": "5/5 三字段完整，校验通过",
+    "fields_checked": ["influence_window", "entry_timing", "stage3_handoff"],
+    "passed": true
+  }
+}
