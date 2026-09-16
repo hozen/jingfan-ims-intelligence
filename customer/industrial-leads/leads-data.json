@@ -1,6 +1,201 @@
 {
   "leads": [
     {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-16",
+      "lead": {
+        "lead_id": "MUN-DAILY-2026-09-16-003",
+        "company": {
+          "company_name": "中芯京城二期-500亿12英寸晶圆厂新建",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "中芯京城二期-500亿12英寸晶圆厂新建",
+          "project_stage": "立项/规划"
+        },
+        "signal": {
+          "signal_description": "中芯京城二期-500亿12英寸晶圆厂新建",
+          "signal_date": "2026-09-16",
+          "evidence": [
+            {
+              "source_url": "https://caifuhao.eastmoney.com/news/20260913055359380377170",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "中芯京城二期-500亿12英寸晶圆厂新建",
+          "opportunity": "中芯京城二期-500亿12英寸晶圆厂新建",
+          "opportunity_stage": "立项/规划",
+          "priority": "P3",
+          "score": 63,
+          "potential_ims_use_case": "Unknown",
+          "logic": "新晶圆厂建设→超纯水系统需求→在线监测仪表(TOC/电导率/pH)→仪表数据管理需求？→iMS Use Case不确定 ⚠️逻辑链在仪表数据管理需求环节存在断裂",
+          "to_verify": {
+            "customer_identity": "中芯国际/中芯京城是否为Hach客户？SFDC Account是否存在？",
+            "installed_base": "中芯京城一期水系统仪表配置？在线仪表类型/数量？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？",
+            "ims": "是否已有iMS？半导体行业是否有类似数字化产品？",
+            "account_sales": "Account Owner？Regional Owner？"
+          },
+          "source_urls": [
+            "https://caifuhao.eastmoney.com/news/20260913055359380377170"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月12日，据财联社报道，中芯京城二期用地成交，总投资不低于500亿元。为12英寸晶圆厂新建项目。全国12寸扩产潮共振：长***设计产能12万片产线投产、中芯京城二期用地成交。来源：caifuhao.eastmoney.com(官方权威)。"
+            ],
+            "inferences": [
+              "12英寸晶圆厂建设涉及大量超纯水(UPW)系统，需要在线监测TOC、电导率、pH等水质参数。新建晶圆厂意味着全新的在线监测仪表采购需求。但iMS的核心价值(仪表健康诊断/数据质量/资产管理)在半导体场景的适用性取决于客户是否有仪表统一管理需求，半导体行业仪表管理通常由工艺工程师和设备工程师负责，数字化管理需求与水务行业不同。逻辑链中等。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-16.json",
+          "date": "2026-09-16"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
+      "segment": "municipal",
+      "category": "污水／再生水／管网",
+      "date": "2026-09-16",
+      "lead": {
+        "lead_id": "MUN-DAILY-2026-09-16-002",
+        "company": {
+          "company_name": "合肥排水一体化改革-区级排水设施统一运维",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "合肥排水一体化改革-区级排水设施统一运维",
+          "project_stage": "运营模式变化/正在执行"
+        },
+        "signal": {
+          "signal_description": "合肥排水一体化改革-区级排水设施统一运维",
+          "signal_date": "2026-09-16",
+          "evidence": [
+            {
+              "source_url": "https://www.h2o-china.com/news/364804.html",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "合肥排水一体化改革-区级排水设施统一运维",
+          "opportunity": "合肥排水一体化改革-区级排水设施统一运维",
+          "opportunity_stage": "运营模式变化/正在执行",
+          "priority": "P2",
+          "score": 72,
+          "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
+          "logic": "排水一体化→580km管网+36座泵站统一运维→设备台账建立+运维标准统一→仪表统一接入与资产管理需求→iMS Multi-site Management/Asset Management Use Case ✅逻辑链通顺",
+          "to_verify": {
+            "customer_identity": "合肥水务集团是否为Hach客户？SFDC Account是否存在？",
+            "installed_base": "36座泵站现有在线仪表品牌/数量？管网监测设备类型？合肥城市生命线工程是否使用Hach仪表？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？泵站运维服务招标是否包含仪表采购？",
+            "ims": "是否已有iMS？合肥城市生命线工程监测中心数据底座是否支持第三方仪表接入？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+          },
+          "source_urls": [
+            "https://www.h2o-china.com/news/364804.html"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月3日，庐阳区人民政府与合肥水务集团签订公共排水设施移交委托运维管理协议。庐阳区辖区内580.43公里公共排水管网、36座排水泵站及雨水调蓄池等设施正式移交水务集团运维管理。此前8月4日，瑶海区已率先签约。合肥已入选全国首批供排水综合管理重点城市，力争2026年底前全面实现市区两级排水设施统一管理。来源：h2o-china.com/hbzhan.com(官方权威/中)。"
+            ],
+            "inferences": [
+              "排水一体化改革核心是从分散管理走向统一运维。580公里管网+36座泵站的统一管理意味着大量设备台账需要建立、在线监测仪表需要统一接入、运维标准需要统一制定。合肥已有城市生命线工程安全运行监测中心(7x24小时值守，数万套前端感知设备)，具备数字化基础。但排水设施统一运维后的设备生命周期管理、仪表健康诊断和预测性维护需求尚未被公开提及，这正是iMS可能切入的空间。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-16.json",
+          "date": "2026-09-16"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-16",
+      "lead": {
+        "lead_id": "MUN-DAILY-2026-09-16-001",
+        "company": {
+          "company_name": "万家寨水务控股集团新管理层+数字化转型窗口",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "万家寨水务控股集团新管理层+数字化转型窗口",
+          "project_stage": "战略规划"
+        },
+        "signal": {
+          "signal_description": "万家寨水务控股集团新管理层+数字化转型窗口",
+          "signal_date": "2026-09-16",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1875928422953056244",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "万家寨水务控股集团新管理层+数字化转型窗口",
+          "opportunity": "万家寨水务控股集团新管理层+数字化转型窗口",
+          "opportunity_stage": "战略规划",
+          "priority": "P2",
+          "score": 75,
+          "potential_ims_use_case": "Digital Operations / Multi-site Management / Asset Management",
+          "logic": "省级千亿水务国企新管理层→十五五数字化转型需求→多水厂/多工程统一管理→设备/仪表资产管理需求→iMS Multi-site Management/Digital Operations Use Case ✅逻辑链通顺",
+          "to_verify": {
+            "customer_identity": "万家寨水控集团是否为Hach客户？SFDC Account是否存在？是否为战略客户？下属176家成员企业中是否有Hach客户？",
+            "installed_base": "集团下属水厂/泵站数量？在线仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+            "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+          },
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1875928422953056244"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年8月31日，山西省人民政府发布任命(晋政任〔2026〕51号)：常***万家寨水务控股集团有限公司副董事长，提名为总经理人选。9月7日，常建忠以集团党委副书记、副董事长、总经理身份主持集团党委(扩大)会议。此前7月25日，郭建文已升任集团党委书记、董事长。集团注册资本100亿元，资产总额931亿元，从业人员12000余人，是山西省唯一全产业链水务水利企业。来源：山***府公报/baijiahao.baidu.com(官方权威)。"
+            ],
+            "inferences": [
+              "省级千亿水务国企新管理层全面就位，正值十五五规划编制窗口。集团已有BIM和水利数字孪生应用突破，覆盖原水供应、引调水、污水处理全产业链，下属176家成员企业。如此规模的多水厂/多工程统一管理，天然产生设备资产管理、仪表统一监控和数据质量管理需求。新管理层有动力在十五五开局年推动数字化转型，但具体数字化路线和设备管理架构尚未公开。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-16.json",
+          "date": "2026-09-16"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
