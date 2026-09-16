@@ -1,0 +1,783 @@
+{
+  "report_date": "2026-09-16",
+  "report_type": "iMS GTM Public Signal Radar v3.4",
+  "generated_at": "2026-09-16T08:35:18+08:00",
+  "stage1_summary": {
+    "scanned_at": "2026-09-16T08:35:18+08:00",
+    "radar_coverage": [
+      "Radar 1: Project Trigger (水务/工业项目)",
+      "Radar 2: Account Trigger (客户战略变化)",
+      "Radar 3: Installed Base Need (存量仪表需求)",
+      "Radar 4: Policy/Regulation/Funding (政策法规资金)",
+      "Radar 5: Design Institute/EPC/System Integrator (设计院EPC)",
+      "Radar 6: Competitive Dynamics (竞争动态)"
+    ],
+    "raw_signals_count": 28,
+    "total_scanned": 28,
+    "valid_triggers": 12
+  },
+  "stage2_qualifications": [
+    {
+      "candidate_id": "CAND-001",
+      "candidate_name": "万家寨水务控股集团新管理层+数字化转型",
+      "stage_gate_result": "进入opportunities",
+      "reason": "战略规划阶段，新管理层刚到位，十五五规划编制中，通过Stage Gate",
+      "score_if_applicable": 75
+    },
+    {
+      "candidate_id": "CAND-002",
+      "candidate_name": "合肥排水一体化-区级排水设施统一运维",
+      "stage_gate_result": "进入opportunities",
+      "reason": "运营模式变化，设备管理架构搭建中，通过Stage Gate",
+      "score_if_applicable": 72
+    },
+    {
+      "candidate_id": "CAND-003",
+      "candidate_name": "中芯京城二期500亿12英寸晶圆厂",
+      "stage_gate_result": "进入opportunities",
+      "reason": "立项/规划阶段，用地刚成交，通过Stage Gate",
+      "score_if_applicable": 63
+    },
+    {
+      "candidate_id": "CAND-004",
+      "candidate_name": "粤芯半导体四期252亿12英寸晶圆厂",
+      "stage_gate_result": "进入opportunities",
+      "reason": "立项/建设准备阶段，2026年1月启动，通过Stage Gate",
+      "score_if_applicable": 60
+    },
+    {
+      "candidate_id": "CAND-005",
+      "candidate_name": "江安县北城片区供水项目勘察设计",
+      "stage_gate_result": "转background",
+      "reason": "评标结果公示（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-006",
+      "candidate_name": "随县农村供水保障工程(一期)EPC",
+      "stage_gate_result": "转background",
+      "reason": "已定标（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-007",
+      "candidate_name": "阜康市四工河片区农村供水设计服务",
+      "stage_gate_result": "转background",
+      "reason": "中标候选人公示（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-008",
+      "candidate_name": "黎川县城区供水管网+智能设备升级EPC",
+      "stage_gate_result": "转background",
+      "reason": "中标候选人公示（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-009",
+      "candidate_name": "重庆排水大九污水厂西彭车间在线监测仪表",
+      "stage_gate_result": "转background",
+      "reason": "询比采购阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-010",
+      "candidate_name": "滨海园区污水水质在线监测运维项目",
+      "stage_gate_result": "转background",
+      "reason": "竞争性磋商阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-011",
+      "candidate_name": "合肥水务集团排水泵站运维服务",
+      "stage_gate_result": "转background",
+      "reason": "招标阶段，降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-012",
+      "candidate_name": "乌鲁木齐水资源配置工程信息化I标",
+      "stage_gate_result": "转background",
+      "reason": "中标候选人公示（招标阶段），降级为background_monitoring",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-013",
+      "candidate_name": "通用产品营销/行业知识文章",
+      "stage_gate_result": "排除",
+      "reason": "无具体客户/项目/行动三要素，仅为产品营销或行业知识科普",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "CAND-014",
+      "candidate_name": "房地产广告/地方水质日报/海外项目",
+      "stage_gate_result": "排除",
+      "reason": "非项目信号、非中国大陆市场或例行监测公示",
+      "score_if_applicable": null
+    }
+  ],
+  "stage3_enrichments": [
+    {
+      "opportunity_id": "OPP-2026-09-16-001",
+      "customer_background": "万家寨水务控股集团有限公司，山西省国资委监管大型省属国企，2020年3月成立，注册资本100亿元，资产总额931亿元，从业人员12000余人。全省唯一全产业链水务水利企业，业务覆盖原水供应、引调水、污水处理、生态环保等。拥有万家寨引黄工程、四大水网、多座水库。2024年营收72.53亿元。下属176家成员企业、29家投资企业。",
+      "project_background": "无具体项目，为战略级信号。2026年8-9月集团领导班子完成调整。集团2023年完成供水11.3亿立方米，BIM和水利数字孪生应用实现突破，获省级科技进步奖两项。阳泉水务公司2026年6月发布水务一体化咨询项目中标公告。",
+      "related_parties": [
+        {
+          "role": "控股股东",
+          "name": "山西省国资委(90%)/山西省财政厅(10%)",
+          "info": "公开信息"
+        },
+        {
+          "role": "业务指导",
+          "name": "山西省水利厅",
+          "info": "公开信息"
+        },
+        {
+          "role": "下属单位",
+          "name": "省水利设计院/省水工局",
+          "info": "划转进入集团"
+        },
+        {
+          "role": "子公司",
+          "name": "万家寨水控集团阳泉水务有限公司",
+          "info": "已有水务一体化咨询项目"
+        }
+      ],
+      "public_history": [
+        "2023年完成供水11.3亿立方米",
+        "BIM和水利数字孪生应用获省级科技进步奖",
+        "阳泉水务公司2026年6月发布水务一体化咨询项目中标公告",
+        "万家寨引黄北干支线工程8月30日提前3个月通水"
+      ],
+      "market_context": "山西省十五五规划编制窗口期，省级国企新领导班子有动力推动数字化转型。全国水务行业进入存量提质、数字赋能新阶段。",
+      "enrichment_sources": [
+        {
+          "url": "https://baijiahao.baidu.com/s?id=1875928422953056244",
+          "date": "2026-09-11"
+        },
+        {
+          "url": "https://baike.baidu.com/item/万家寨水务控股集团有限公司",
+          "date": "百科"
+        },
+        {
+          "url": "https://gxj.yq.gov.cn/gzwtszs/202609/t20260914_2238408.html",
+          "date": "2026-09-14"
+        }
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-002",
+      "customer_background": "合肥水务集团，合肥市主要供水排水运营企业。合肥已入选全国首批供排水综合管理重点城市。合肥城市生命线工程安全运行监测中心2017年成立（全国首个），7x24小时值守，数万套前端感知设备，日均处理信息超百亿条。",
+      "project_background": "排水一体化改革：瑶海区8月4日签约、庐阳区9月3日签约，580.43公里管网+36座泵站移交统一运维。力争2026年底前全面实现市区两级排水设施一体化管理。合肥水务集团排水公司发布2026-2028年排水泵站运维服务招标(2026BFFWZ50114)。",
+      "related_parties": [
+        {
+          "role": "运维主体",
+          "name": "合肥水务集团",
+          "info": "公开信息"
+        },
+        {
+          "role": "移交方",
+          "name": "瑶海区/庐阳区政府",
+          "info": "公开信息"
+        },
+        {
+          "role": "数字化基础",
+          "name": "合肥城市生命线工程安全运行监测中心",
+          "info": "清华大学合肥公共安全研究院运营"
+        },
+        {
+          "role": "招标代理",
+          "name": "安徽公共资源交易集团",
+          "info": "公开信息"
+        }
+      ],
+      "public_history": [
+        "合肥2017年成立全国首个城市生命线工程安全运行监测中心",
+        "城市生命线工程以噪声法漏损控制后管网事故下降60%",
+        "泵站运维招标要求配备机械/电气/自动化/工民建专业人员",
+        "合肥水务集团2026年招聘管网运维岗和工程管理岗"
+      ],
+      "market_context": "全国排水一体化改革加速，合肥为首批供排水综合管理重点城市。城镇污水按效付费改革推进中。合肥城市生命线工程已有数字化基础。",
+      "enrichment_sources": [
+        {
+          "url": "https://www.h2o-china.com/news/364804.html",
+          "date": "2026-09"
+        },
+        {
+          "url": "https://www.ahggzyjt.com:8810/dybg/003001/003001001/20260911/ea75ea13-ee26-4076-97cd-ffb50fe276a0.html",
+          "date": "2026-09-11"
+        },
+        {
+          "url": "https://www.hfwater.cn/content/detail/6aa24fd5ccc0b42c59000029.html",
+          "date": "2026-09-10"
+        }
+      ],
+      "enrichment_confidence": "中"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-003",
+      "customer_background": "中芯国际(SMIC)，中国大陆最大晶圆代工企业，全球份额约5.5%。科创板上市(688981.SH)，2026上半年营收386.35亿元。中芯京城为中芯国际北京项目公司。",
+      "project_background": "中芯京城二期，总投资不低于500亿元，9月12日用地成交。12英寸晶圆厂新建项目。处于前期规划阶段。具体建设内容/工期/预算未公开。",
+      "related_parties": [
+        {
+          "role": "母公司",
+          "name": "中芯国际",
+          "info": "公开信息"
+        },
+        {
+          "role": "用地提供",
+          "name": "北京经济技术开发区",
+          "info": "公开信息"
+        },
+        {
+          "role": "设计院/EPC",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        },
+        {
+          "role": "超纯水系统供应商",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        }
+      ],
+      "public_history": [
+        "中芯国际已形成金桥/临港/南昌三大生产基地",
+        "中芯京城一期已运营",
+        "台积电持续上修2026年设备采购预期至1.9X"
+      ],
+      "market_context": "全球AI算力需求驱动半导体扩产潮。2026年全球半导体市场规模超1.5万亿美元。国内12英寸晶圆厂持续扩产。半导体行业对超纯水要求极为苛刻。",
+      "enrichment_sources": [
+        {
+          "url": "https://caifuhao.eastmoney.com/news/20260913055359380377170",
+          "date": "2026-09-12"
+        },
+        {
+          "url": "https://baijiahao.baidu.com/s?id=1875992627087775449",
+          "date": "2026-09-11"
+        }
+      ],
+      "enrichment_confidence": "低"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-004",
+      "customer_background": "粤芯半导体技术有限公司，广州开发区12英寸晶圆制造企业。现有两座12英寸厂，规划合计8万片/月，2025年末实际月产4.33万片，产能利用率96.38%。客户超200家，在手订单75亿元。创业板首家晶圆制造IPO。",
+      "project_background": "四期项目2026年1月22日启动，总投资约252亿元，规划月产能4万片12英寸数模混合特色工艺产线，预计2029年底建成投产。建成后三厂总产能12万片/月。",
+      "related_parties": [
+        {
+          "role": "项目推动方",
+          "name": "广州开发区/黄埔区政府",
+          "info": "公开信息"
+        },
+        {
+          "role": "建设单位",
+          "name": "粤芯半导体",
+          "info": "公开信息"
+        },
+        {
+          "role": "设计院/EPC",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        },
+        {
+          "role": "超纯水系统供应商",
+          "name": "高频科技（公开报道提及）",
+          "info": "公开信息"
+        }
+      ],
+      "public_history": [
+        "粤芯一期2018年投产，二期2021年投产",
+        "持有大陆唯一12英寸硅光量产牌",
+        "IPO注册生效，募资75亿",
+        "四期2026年1月启动"
+      ],
+      "market_context": "全球半导体扩产潮。SEMI预计2026年全球半导体设备销售额1659亿美元(+23.2%)。大湾区半导体产业链集聚。一座晶圆厂年耗水量可供1700万人。",
+      "enrichment_sources": [
+        {
+          "url": "https://caifuhao.eastmoney.com/news/20260913055359380377170",
+          "date": "2026-09-12"
+        },
+        {
+          "url": "https://finance.ifeng.com/c/8wMLFdRqTQQ",
+          "date": "2026-09"
+        },
+        {
+          "url": "https://baijiahao.baidu.com/s?id=1875846981402454887",
+          "date": "艺康半导体水处理"
+        }
+      ],
+      "enrichment_confidence": "低"
+    }
+  ],
+  "scanner_summary": {
+    "scan_date": "2026-09-16",
+    "radars_executed": 6,
+    "total_signals_collected": 28,
+    "valid_triggers": 12,
+    "opportunities_identified": 4,
+    "background_monitoring_count": 8,
+    "rejected_signals_count": 2
+  },
+  "top_5_match": [
+    {
+      "name": "万家寨水务控股集团新管理层+数字化转型窗口",
+      "trigger_type": "Account Trigger — 客户战略变化/新管理层",
+      "public_signal_score": 75,
+      "priority": "P2",
+      "match_reason": "山西省级千亿水务国企，新管理层9月正式就位，已有BIM和数字孪生基础，十五五数字化转型方向正在定调",
+      "action_triad": {
+        "find_who": "万家寨水控集团信息化/设备管理部负责人（具体人选未公开，需Company Agent确认）；或集团下属阳泉水务公司",
+        "talk_what": "集团十五五数字化转型规划中，多水厂/多工程在线监测仪表统一管理平台是否已纳入？BIM和数字孪生系统是否支持第三方仪表数据接入？",
+        "why_now": "新任总经理常建忠9月7日首次以该身份主持集团党委会议，新班子刚到位，十五五规划正在编制"
+      },
+      "agent_checklist": [
+        "确认万家寨水控集团是否为Hach客户",
+        "集团下属水厂/泵站数量与仪表存量",
+        "是否已有数字化/智慧水务平台",
+        "BIM和数字孪生项目具体进展"
+      ]
+    },
+    {
+      "name": "合肥排水一体化-区级排水设施统一运维",
+      "trigger_type": "Account Trigger — 运营模式变化/集团化统一管理",
+      "public_signal_score": 72,
+      "priority": "P2",
+      "match_reason": "580公里管网+36座泵站移交合肥水务集团统一运维，逐站建立一站一册台账，2026年底前全面实现市区两级排水设施一体化管理",
+      "action_triad": {
+        "find_who": "合肥水务集团排水公司设备管理部/运维管理负责人；或合肥城市生命线工程安全运行监测中心",
+        "talk_what": "统一运维后36座泵站在线监测仪表台账建立进展？设备生命周期管理和远程运维平台是否规划多品牌仪表统一接入？",
+        "why_now": "庐阳区9月3日刚签约移交，正在逐站建立一站一册泵站台账，设备管理架构和运维标准正在搭建"
+      },
+      "agent_checklist": [
+        "确认合肥水务集团是否为Hach客户",
+        "36座泵站现有仪表品牌/数量",
+        "合肥城市生命线工程是否使用Hach仪表",
+        "泵站运维服务招标是否包含仪表采购"
+      ]
+    },
+    {
+      "name": "中芯京城二期-500亿12英寸晶圆厂新建",
+      "trigger_type": "Project Trigger — 半导体晶圆厂建设",
+      "public_signal_score": 63,
+      "priority": "P3",
+      "match_reason": "9月12日用地成交，总投资不低于500亿，处于前期规划阶段，超纯水系统在线监测仪表需求预期",
+      "action_triad": {
+        "find_who": "中芯国际设备工程部/水系统负责人（未公开，需Company Agent确认）；或新厂设计院水工艺工程师",
+        "talk_what": "新厂超纯水系统在线监测仪表配置方案是否启动？仪表数据管理平台是否有统一管理需求？",
+        "why_now": "二期用地9月12日刚成交，处于前期规划阶段，技术方案和设备选型远未启动"
+      },
+      "agent_checklist": [
+        "确认中芯国际是否为Hach客户",
+        "中芯京城一期水系统仪表配置",
+        "超纯水系统设计单位",
+        "是否已有仪表数据管理平台"
+      ]
+    },
+    {
+      "name": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+      "trigger_type": "Project Trigger — 半导体晶圆厂扩建",
+      "public_signal_score": 60,
+      "priority": "P3",
+      "match_reason": "2026年1月启动，总投资252亿，月产能4万片12英寸，预计2029年底建成，超纯水系统建设周期内仪表需求",
+      "action_triad": {
+        "find_who": "粤芯半导体水系统工程师/设备管理部负责人（未公开，需Company Agent确认）；或四期EPC水处理总包方",
+        "talk_what": "四期超纯水系统在线监测仪表选型方案是否启动？现有三座厂超纯水仪表管理是否有数字化升级需求？",
+        "why_now": "四期2026年1月启动，当前处于建设准备阶段，超纯水系统设计尚未进入设备选型"
+      },
+      "agent_checklist": [
+        "确认粤芯半导体是否为Hach客户",
+        "现有两座厂水系统仪表配置",
+        "四期设计院/EPC身份",
+        "超纯水系统供应商"
+      ]
+    }
+  ],
+  "opportunities": [
+    {
+      "opportunity_id": "OPP-2026-09-16-001",
+      "name": "万家寨水务控股集团新管理层+数字化转型窗口",
+      "public_facts": "2026年8月31日，山西省人民政府发布任命(晋政任〔2026〕51号)：常建忠任万家寨水务控股集团有限公司副董事长，提名为总经理人选。9月7日，常建忠以集团党委副书记、副董事长、总经理身份主持集团党委(扩大)会议。此前7月25日，郭建文已升任集团党委书记、董事长。集团注册资本100亿元，资产总额931亿元，从业人员12000余人，是山西省唯一全产业链水务水利企业。来源：山西省政府公报/baijiahao.baidu.com(官方权威)。",
+      "ai_judgment": "省级千亿水务国企新管理层全面就位，正值十五五规划编制窗口。集团已有BIM和水利数字孪生应用突破，覆盖原水供应、引调水、污水处理全产业链，下属176家成员企业。如此规模的多水厂/多工程统一管理，天然产生设备资产管理、仪表统一监控和数据质量管理需求。新管理层有动力在十五五开局年推动数字化转型，但具体数字化路线和设备管理架构尚未公开。",
+      "potential_ims_use_case": "Digital Operations / Multi-site Management / Asset Management",
+      "opportunity_stage": "战略规划",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "省级千亿水务国企新管理层→十五五数字化转型需求→多水厂/多工程统一管理→设备/仪表资产管理需求→iMS Multi-site Management/Digital Operations Use Case ✅逻辑链通顺",
+      "action_triad": {
+        "find_who": "万家寨水控集团信息化/设备管理部负责人（具体人选未公开，需Company Agent确认）；或集团下属阳泉水务公司",
+        "talk_what": "集团十五五数字化转型规划中，多水厂/多工程在线监测仪表统一管理平台是否已纳入？BIM和数字孪生系统是否支持第三方仪表数据接入？",
+        "why_now": "新任总经理常建忠9月7日首次以该身份主持集团党委会议，新班子刚到位，十五五规划正在编制，数字化转型方向未锁定"
+      },
+      "to_verify": {
+        "customer_identity": "万家寨水控集团是否为Hach客户？SFDC Account是否存在？是否为战略客户？下属176家成员企业中是否有Hach客户？",
+        "installed_base": "集团下属水厂/泵站数量？在线仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+        "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+        "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+      },
+      "score": 75,
+      "priority": "P2",
+      "score_breakdown": {
+        "signal_strength": 14,
+        "ims_relevance": 13,
+        "project_customer_stage": 18,
+        "timing": 14,
+        "scale": 14,
+        "ecosystem_influence": 7,
+        "evidence_quality": 12
+      },
+      "confidence": "中",
+      "source_url": "https://baijiahao.baidu.com/s?id=1875928422953056244",
+      "source_type": "政府公报/官方权威",
+      "continuity": {
+        "first_seen": "2026-09-16",
+        "new_facts_today": "新任总经理9/7正式就位",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-16-001)"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-002",
+      "name": "合肥排水一体化改革-区级排水设施统一运维",
+      "public_facts": "2026年9月3日，庐阳区人民政府与合肥水务集团签订公共排水设施移交委托运维管理协议。庐阳区辖区内580.43公里公共排水管网、36座排水泵站及雨水调蓄池等设施正式移交水务集团运维管理。此前8月4日，瑶海区已率先签约。合肥已入选全国首批供排水综合管理重点城市，力争2026年底前全面实现市区两级排水设施统一管理。来源：h2o-china.com/hbzhan.com(官方权威/中)。",
+      "ai_judgment": "排水一体化改革核心是从分散管理走向统一运维。580公里管网+36座泵站的统一管理意味着大量设备台账需要建立、在线监测仪表需要统一接入、运维标准需要统一制定。合肥已有城市生命线工程安全运行监测中心(7x24小时值守，数万套前端感知设备)，具备数字化基础。但排水设施统一运维后的设备生命周期管理、仪表健康诊断和预测性维护需求尚未被公开提及，这正是iMS可能切入的空间。",
+      "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
+      "opportunity_stage": "运营模式变化/正在执行",
+      "estimated_time_window": "3-6 months",
+      "logic_chain_check": "排水一体化→580km管网+36座泵站统一运维→设备台账建立+运维标准统一→仪表统一接入与资产管理需求→iMS Multi-site Management/Asset Management Use Case ✅逻辑链通顺",
+      "action_triad": {
+        "find_who": "合肥水务集团排水公司设备管理部/运维管理负责人；或合肥城市生命线工程安全运行监测中心",
+        "talk_what": "统一运维后36座泵站在线监测仪表台账建立进展？设备生命周期管理和远程运维平台是否规划多品牌仪表统一接入？",
+        "why_now": "庐阳区9月3日刚签约移交，正在逐站建立一站一册泵站台账，设备管理架构和运维标准正在搭建"
+      },
+      "to_verify": {
+        "customer_identity": "合肥水务集团是否为Hach客户？SFDC Account是否存在？",
+        "installed_base": "36座泵站现有在线仪表品牌/数量？管网监测设备类型？合肥城市生命线工程是否使用Hach仪表？",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？泵站运维服务招标是否包含仪表采购？",
+        "ims": "是否已有iMS？合肥城市生命线工程监测中心数据底座是否支持第三方仪表接入？",
+        "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+      },
+      "score": 72,
+      "priority": "P2",
+      "score_breakdown": {
+        "signal_strength": 14,
+        "ims_relevance": 14,
+        "project_customer_stage": 15,
+        "timing": 14,
+        "scale": 12,
+        "ecosystem_influence": 8,
+        "evidence_quality": 13
+      },
+      "confidence": "中",
+      "source_url": "https://www.h2o-china.com/news/364804.html",
+      "source_type": "行业媒体/官方权威",
+      "continuity": {
+        "first_seen": "2026-09-16",
+        "new_facts_today": "庐阳区9/3签约移交",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-16-002)"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-003",
+      "name": "中芯京城二期-500亿12英寸晶圆厂新建",
+      "public_facts": "2026年9月12日，据财联社报道，中芯京城二期用地成交，总投资不低于500亿元。为12英寸晶圆厂新建项目。全国12寸扩产潮共振：长鑫存储设计产能12万片产线投产、中芯京城二期用地成交。来源：caifuhao.eastmoney.com(官方权威)。",
+      "ai_judgment": "12英寸晶圆厂建设涉及大量超纯水(UPW)系统，需要在线监测TOC、电导率、pH等水质参数。新建晶圆厂意味着全新的在线监测仪表采购需求。但iMS的核心价值(仪表健康诊断/数据质量/资产管理)在半导体场景的适用性取决于客户是否有仪表统一管理需求，半导体行业仪表管理通常由工艺工程师和设备工程师负责，数字化管理需求与水务行业不同。逻辑链中等。",
+      "potential_ims_use_case": "Unknown",
+      "opportunity_stage": "立项/规划",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "新晶圆厂建设→超纯水系统需求→在线监测仪表(TOC/电导率/pH)→仪表数据管理需求？→iMS Use Case不确定 ⚠️逻辑链在仪表数据管理需求环节存在断裂",
+      "action_triad": {
+        "find_who": "中芯国际设备工程部/水系统负责人（未公开，需Company Agent确认）；或新厂设计院水工艺工程师",
+        "talk_what": "新厂超纯水系统在线监测仪表配置方案是否启动？仪表数据管理平台是否有统一管理需求？",
+        "why_now": "二期用地9月12日刚成交，处于前期规划阶段，技术方案和设备选型远未启动"
+      },
+      "to_verify": {
+        "customer_identity": "中芯国际/中芯京城是否为Hach客户？SFDC Account是否存在？",
+        "installed_base": "中芯京城一期水系统仪表配置？在线仪表类型/数量？",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？",
+        "ims": "是否已有iMS？半导体行业是否有类似数字化产品？",
+        "account_sales": "Account Owner？Regional Owner？"
+      },
+      "score": 63,
+      "priority": "P3",
+      "score_breakdown": {
+        "signal_strength": 13,
+        "ims_relevance": 8,
+        "project_customer_stage": 16,
+        "timing": 13,
+        "scale": 14,
+        "ecosystem_influence": 6,
+        "evidence_quality": 12
+      },
+      "confidence": "低",
+      "source_url": "https://caifuhao.eastmoney.com/news/20260913055359380377170",
+      "source_type": "财经媒体/官方权威",
+      "continuity": {
+        "first_seen": "2026-09-16",
+        "new_facts_today": "二期用地成交",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-16-003)"
+    },
+    {
+      "opportunity_id": "OPP-2026-09-16-004",
+      "name": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+      "public_facts": "粤芯半导体四期项目2026年1月22日在广州开发区启动，总投资约252亿元，规划建设月产能4万片的12英寸数模混合特色工艺生产线，预计2029年底建成投产。现有两座12英寸厂规划合计8万片/月，四期建成后三厂总产能12万片/月。产能利用率96.38%，在手订单75亿元。来源：caifuhao.eastmoney.com(官方权威)。",
+      "ai_judgment": "与中芯京城二期逻辑类似，12英寸晶圆厂扩建涉及超纯水系统建设和在线监测仪表需求。粤芯已有两座厂运营，四期新建可能带来仪表增量以及现有三座厂统一管理的数字化需求。但iMS在半导体场景的适用性仍需验证。",
+      "potential_ims_use_case": "Unknown",
+      "opportunity_stage": "立项/建设准备",
+      "estimated_time_window": ">9 months",
+      "logic_chain_check": "新晶圆厂扩建→超纯水系统需求→在线监测仪表→多厂统一管理需求？→iMS Use Case不确定 ⚠️逻辑链在多厂统一管理需求环节存在断裂",
+      "action_triad": {
+        "find_who": "粤芯半导体水系统工程师/设备管理部负责人（未公开，需Company Agent确认）；或四期EPC水处理总包方",
+        "talk_what": "四期超纯水系统在线监测仪表选型方案是否启动？现有三座厂超纯水仪表管理是否有数字化升级需求？",
+        "why_now": "四期2026年1月启动，当前处于建设准备阶段，超纯水系统设计尚未进入设备选型"
+      },
+      "to_verify": {
+        "customer_identity": "粤芯半导体是否为Hach客户？SFDC Account是否存在？",
+        "installed_base": "现有两座厂水系统仪表配置？",
+        "commercial_history": "历史销售/Opportunity/Win-Loss？",
+        "ims": "是否已有iMS？",
+        "account_sales": "Account Owner？Regional Owner？"
+      },
+      "score": 60,
+      "priority": "P3",
+      "score_breakdown": {
+        "signal_strength": 12,
+        "ims_relevance": 8,
+        "project_customer_stage": 15,
+        "timing": 12,
+        "scale": 13,
+        "ecosystem_influence": 5,
+        "evidence_quality": 12
+      },
+      "confidence": "低",
+      "source_url": "https://caifuhao.eastmoney.com/news/20260913055359380377170",
+      "source_type": "财经媒体/官方权威",
+      "continuity": {
+        "first_seen": "2026-09-16",
+        "new_facts_today": "首次纳入雷达扫描",
+        "changed": false
+      },
+      "enrichment_pointer": "见stage3_enrichments[3] (OPP-2026-09-16-004)"
+    }
+  ],
+  "industry_triggers": [
+    {
+      "name": "重庆水务存量提质数字赋能战略转型",
+      "description": "重庆水务2026年中报将行业判断收敛为全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段。重点政策锚点为供水条例831号令。公司战略从做专做精转向以存量整合与效率提升为轴心。污水处理服务收入23.46亿元(+8.98%)。",
+      "source_url": "https://stock.stockstar.com/RB2026090900020058.shtml",
+      "gtm_relevance": "重庆水务作为大型上市水务企业，数字赋能战略方向直接关联iMS Digital Operations和Asset Management Use Case"
+    },
+    {
+      "name": "重庆农村规模化水厂在线监测率80.1%",
+      "description": "9月11日全市提升农村饮水质量现场推进会披露：2026年全市农村规模化水厂在线监测率达80.1%，县域统管率84.2%。",
+      "source_url": "https://www.cq.gov.cn/ywdt/jrcq/202609/t20260912_16067350_app.html",
+      "gtm_relevance": "在线监测率80.1%意味着存量仪表运维和资产管理需求正在形成"
+    },
+    {
+      "name": "远程抄表系统渗透率提升至62%",
+      "description": "国内远程抄表系统渗透率从2020年27%提升至2026年62%，水务行业优先关注计量精度与漏损率。",
+      "source_url": "https://www.sohu.com/a/1075727011_120889904",
+      "gtm_relevance": "数字化基础设施成熟为iMS多站点管理和数据质量管理创造基础条件"
+    }
+  ],
+  "ecosystem_triggers": [
+    {
+      "name": "上海市政总院成立智慧水务院",
+      "description": "2026年8月31日揭牌成立。九年组织化过程：2017年智慧水务技术中心→2025年城市市政基础设施智能化运维技术研究中心→2026年iWATER Pro产品体系。设计院从定义工程怎么建向做成模型算法平台和持续服务延伸。",
+      "source_url": "https://mp.ofweek.com/ecep/a156714876677",
+      "gtm_relevance": "华东地区重要设计院，其智慧水务院可能影响未来水务项目技术路线选择和仪表选型标准"
+    },
+    {
+      "name": "温州设计控股集团水利院浙水云验平台",
+      "description": "浙水云验多算法赋能工程云端智验新范式获2026年数据要素x大赛浙江分赛智慧水利赛道创新奖。构建云采集-云复测-云审查-云存证全链路。",
+      "source_url": "https://wzgzw.wenzhou.gov.cn/col/col1221492/art/2026/art_37591020b0b24bceb1246311d440e627.html",
+      "gtm_relevance": "区域设计院构建水利工程数字化验收能力，可能影响仪表数据接入标准"
+    }
+  ],
+  "policy_triggers": [
+    {
+      "name": "供水条例(国务院831号令)2026年6月施行",
+      "description": "供水数字化纳入法定强制考核；水质全链条溯源；二次供水规范化管理(第二十九条首次写入法定条款)；新国标GB 17051-2025要求巡查清洗消毒检测一年至少一次。",
+      "source_url": "https://www.sohu.com/a/1073640620_100224770",
+      "demand_type": "产生仪表需求(二次供水在线余氯/浊度监测)+产生iMS需求(多站点统一管理/仪表数据溯源/设备生命周期管理)",
+      "gtm_relevance": "直接推动供水企业数字化转型和在线监测仪表部署"
+    }
+  ],
+  "competitive_triggers": [
+    {
+      "name": "E+H智能水务管理方案",
+      "description": "E+H公开宣传90%现场数据未利用，智能现场仪表结合数字解决方案，提供远程访问/数据监测/数据分析以实施预测性维护。一个现代化水厂或污水厂分布50-1000个测量点。产品覆盖Promag电磁流量计等多品类。",
+      "source_url": "https://www.apsc.endress.com/zh/industries/water-wastewater/smart-water-management",
+      "competitor": "E+H (Endress+Hauser)",
+      "enters_ims_space": true,
+      "assessment": "E+H正在构建仪表→数据→诊断→资产管理→生命周期管理闭环，已进入iMS核心价值空间，构成直接竞争。iMS差异化在于多品牌统一管理。"
+    },
+    {
+      "name": "艺康收购Ovivo电子超纯水业务",
+      "description": "艺康集团完成收购Ovivo电子超纯水业务后面向半导体产业链亮相国际半导体展。定位为全球半导体行业超纯水及水循环解决方案领导者。",
+      "source_url": "https://baijiahao.baidu.com/s?id=1875846981402454887",
+      "competitor": "艺康 (Ecolab)",
+      "enters_ims_space": false,
+      "assessment": "艺康聚焦半导体超纯水全流程水处理，与iMS核心场景不在同一赛道，不构成直接竞争但影响半导体场景渠道关系。"
+    }
+  ],
+  "strategic_accounts": [
+    {
+      "name": "万家寨水务控股集团",
+      "change": "新管理层就位，十五五数字化转型窗口",
+      "first_seen": "2026-09-16",
+      "continuity": "首次发现",
+      "ims_relevance": "高(Multi-site Management)"
+    },
+    {
+      "name": "合肥水务集团",
+      "change": "排水一体化改革，区级设施统一运维",
+      "first_seen": "2026-09-16",
+      "continuity": "首次发现",
+      "ims_relevance": "高(Asset Management)"
+    },
+    {
+      "name": "重庆水务",
+      "change": "存量提质数字赋能战略转型",
+      "first_seen": "2026-09-16",
+      "continuity": "首次发现",
+      "ims_relevance": "中(Digital Operations)"
+    },
+    {
+      "name": "中芯国际",
+      "change": "京城二期500亿新建",
+      "first_seen": "2026-09-16",
+      "continuity": "首次发现",
+      "ims_relevance": "低(Unknown Use Case)"
+    }
+  ],
+  "background_monitoring": [
+    {
+      "name": "江安县北城片区供水项目勘察设计",
+      "customer": "江安县",
+      "region": "四川宜宾",
+      "epc": "评标结果公示",
+      "key_date": "2026-09-09",
+      "trace_value": "设计单位确定后可追溯下一个同类项目"
+    },
+    {
+      "name": "随县农村供水保障工程(一期)EPC",
+      "customer": "随县水利和湖泊局",
+      "region": "湖北随州",
+      "epc": "随州市建筑设计院/汉阳市政/随州市水务集团建设工程联合体",
+      "key_date": "2026-09-01定标",
+      "trace_value": "EPC联合体含设计院"
+    },
+    {
+      "name": "阜康市四工河片区农村供水设计",
+      "customer": "阜康市",
+      "region": "新疆",
+      "epc": "辽宁省水利水电勘测设计研究院(中标)",
+      "key_date": "2026-09-10公示",
+      "trace_value": "设计院确定"
+    },
+    {
+      "name": "黎川县城区供水管网+智能设备升级EPC",
+      "customer": "黎川县水利建设投资开发有限责任公司",
+      "region": "江西抚州",
+      "epc": "黎川县鑫源建筑/广西交通设计集团(中标)",
+      "key_date": "2026-09-14公示",
+      "trace_value": "EPC含智能设备升级和智慧水务工程"
+    },
+    {
+      "name": "重庆排水大九污水厂西彭车间在线监测仪表",
+      "customer": "重庆市排水有限公司",
+      "region": "重庆九龙坡",
+      "epc": "未公开",
+      "key_date": "2026-09-11询比采购",
+      "trace_value": "在线监测仪表采购，可追溯仪表品牌偏好"
+    },
+    {
+      "name": "滨海园区污水水质在线监测运维项目",
+      "customer": "滨海园区",
+      "region": "浙江",
+      "epc": "未公开",
+      "key_date": "2026-09-15磋商",
+      "trace_value": "在线监测运维项目"
+    },
+    {
+      "name": "合肥水务集团排水泵站运维服务",
+      "customer": "合肥水务集团",
+      "region": "安徽合肥",
+      "epc": "未公开(招标中)",
+      "key_date": "2026-08-27招标",
+      "trace_value": "泵站运维含设备维修人员配备"
+    },
+    {
+      "name": "乌鲁木齐水资源配置工程信息化I标",
+      "customer": "乌鲁木齐市",
+      "region": "新疆",
+      "epc": "深圳市科荣软件(中标候选人)",
+      "key_date": "2026-09-11公示",
+      "trace_value": "智慧建管系统，可追溯系统集成商"
+    }
+  ],
+  "rejected_signals": [
+    {
+      "name": "房地产广告(中建天钰)",
+      "reason": "非水务信号，无iMS需求"
+    },
+    {
+      "name": "通用产品推荐文章(臭氧/紫外线/远程抄表/浊度仪)",
+      "reason": "无具体客户/项目/行动三要素，仅为产品营销内容"
+    },
+    {
+      "name": "地方水质监测日报(肖山/石首/通山/奉节)",
+      "reason": "例行水质监测公示，非项目信号"
+    },
+    {
+      "name": "环评文件编制单位备案(福建省生态环境厅)",
+      "reason": "行政备案信息，非项目信号"
+    },
+    {
+      "name": "通用行业知识文章(制药GMP/药典/数据中心冷却水)",
+      "reason": "行业知识科普，无具体客户/项目"
+    },
+    {
+      "name": "海外项目(马来西亚数据中心水处理)",
+      "reason": "非中国大陆市场"
+    },
+    {
+      "name": "沧州明珠华南基地锂电隔膜项目",
+      "reason": "锂电隔膜生产，非水处理/水务项目"
+    },
+    {
+      "name": "四川省重点项目申报指导目录",
+      "reason": "政策框架文件，无具体客户/项目"
+    }
+  ],
+  "data_source": {
+    "search_engine": "百度搜索",
+    "search_count": 16,
+    "search_date": "2026-09-16",
+    "coverage": "水务项目/工业项目/客户战略/政策法规/设计院EPC/竞争动态"
+  },
+  "disclaimer": "本报告所有信息均来自公开互联网。DuMate负责发现、审定与富化公开市场信号。Company Agent负责验证这是否为Hach真实客户机会。不使用Hach内部数据作为已确认的评分输入。",
+  "qc_checklist": {
+    "all_from_public_sources": true,
+    "facts_separated_from_ai_judgment": true,
+    "no_internal_data_as_facts": true,
+    "no_unfounded_numbers": true,
+    "truly_ims_related": true,
+    "use_case_or_unknown_specified": true,
+    "reasonable_time_window": true,
+    "action_triad_complete": true,
+    "stage_gate_applied": true,
+    "list_separation_respected": true,
+    "to_verify_provided": true,
+    "no_duplicate_signals": true,
+    "no_news_as_opportunity": true,
+    "no_inflated_priority": true,
+    "schema_preserved": true,
+    "three_stage_complete": true,
+    "no_latest_json_generated": true,
+    "md_report_generated": true
+  }
+}
