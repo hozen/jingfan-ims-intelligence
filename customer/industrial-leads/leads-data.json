@@ -1,6 +1,1122 @@
 {
   "leads": [
     {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-10",
+        "company": {
+          "company_name": "常德宏杉新能源科技有限公司",
+          "location": "湖南省常德市武陵区(常德经开区德润智造产业园)",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "年处理20000吨废锂电池正极材料资源化综合利用新建项目",
+          "project_stage": "Signal"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1876027161339350348",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-10",
+          "market_segment": "industrial",
+          "company": "常德宏杉新能源科技有限公司",
+          "industry": "新能源/电池",
+          "location": "湖南省常德市武陵区(常德经开区德润智造产业园)",
+          "project": "年处理20000吨废锂电池正极材料资源化综合利用新建项目",
+          "signal_tier": "Tier 3",
+          "engine": "B",
+          "evidence": {
+            "facts": [
+              "常德市生态环境局经开区分局拟审批公示",
+              "投资5000万元",
+              "租赁厂房建设",
+              "处理未注液磷酸铁锂正极片",
+              "母公司四川宏杉新能源科技"
+            ],
+            "inferences": [
+              "废锂电池正极材料处理可能涉及少量废水",
+              "项目处于环评拟审批阶段"
+            ],
+            "unknowns": [
+              "废水特征污染物和水量",
+              "水系统相关性程度"
+            ]
+          },
+          "potential_ims_use_case": "废水在线监测(可能性较低，水量可能很小)",
+          "logic": "废正极材料处理→可能产生少量废水→监测需求(关联性弱)",
+          "opportunity_stage": "Signal",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评拟审批阶段，方案可能仍有调整空间"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "项目规模较小(¥5000万)，水系统相关性弱，影响空间有限"
+          },
+          "estimated_time_window": "2026Q4-2027Q2",
+          "priority": "P3",
+          "water_system_ownership": "D",
+          "incrementality_status": "new_facility",
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1876027161339350348"
+          ],
+          "to_verify": [
+            "废水特征污染物和水量",
+            "水系统相关性程度",
+            "项目实际推进可能性"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable_urgency": 2,
+            "existing_limitation": 2,
+            "ims_leverage": 1,
+            "total": 7,
+            "grade": "Weak Demand Evidence"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "20000吨废锂电池正极材料资源化利用",
+              "evidence_type": "FACT",
+              "note": "环评拟审批公示明确"
+            },
+            "u_unavoidable": {
+              "description": "可能涉及少量废水，但处理需求不确定",
+              "evidence_type": "UNKNOWN",
+              "note": "无废水处理具体信息"
+            },
+            "l_limitations": {
+              "description": "Unknown",
+              "evidence_type": "UNKNOWN",
+              "note": "无方案信息"
+            },
+            "l_leverage": {
+              "description": "iMS价值有限",
+              "evidence_type": "INFERENCE",
+              "note": "项目规模小，水系统相关性弱"
+            },
+            "key_unknown": "废水水量和特征污染物是什么？是否需要在线监测？",
+            "next_validation_question": "项目废水主要污染物是什么？水量多大？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "常德宏杉新能源科技有限公司",
+              "owner_role": "建设单位",
+              "evaluation": "FACT",
+              "note": "环评公示明确"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "关注环评审批结果；联系常德经开区环保分局了解废水排放要求"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-09",
+        "company": {
+          "company_name": "江西陆丰新能源科技发展有限公司",
+          "location": "江西省宜春市奉新县高新技术产业园区",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "年拆解回收利用5万吨锂电池项目",
+          "project_stage": "Signal"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1876389527820146368",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-09",
+          "market_segment": "industrial",
+          "company": "江西陆丰新能源科技发展有限公司",
+          "industry": "新能源/电池",
+          "location": "江西省宜春市奉新县高新技术产业园区",
+          "project": "年拆解回收利用5万吨锂电池项目",
+          "signal_tier": "Tier 3",
+          "engine": "B",
+          "evidence": {
+            "facts": [
+              "江西省投资项目备案已完成",
+              "总投资12000万元",
+              "拟2026年12月开始施工，预计2028年11月完工",
+              "占地45亩，利用部分闲置厂房改造升级+新建三栋车间",
+              "年拆解回收利用废旧锂电池5万吨"
+            ],
+            "inferences": [
+              "锂电池拆解回收涉及含氟含锂废水",
+              "项目处于备案阶段，设计尚未开始"
+            ],
+            "unknowns": [
+              "废水处理方案",
+              "设计院/EPC",
+              "公司工程联系人"
+            ]
+          },
+          "potential_ims_use_case": "含氟含锂废水在线监测(可能性中等)",
+          "logic": "锂电池拆解→含氟含锂废水→废水处理→在线监测需求(需验证)",
+          "opportunity_stage": "Signal",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "项目仅完成备案，设计尚未开始，2026年12月才开始施工"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "项目极早期，但水系统相关性需验证"
+          },
+          "estimated_time_window": "2026Q4-2028Q4",
+          "priority": "P3",
+          "water_system_ownership": "D",
+          "incrementality_status": "new_facility",
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1876389527820146368"
+          ],
+          "to_verify": [
+            "锂电池拆解废水特征污染物",
+            "废水处理方案",
+            "项目实际推进可能性"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable_urgency": 2,
+            "existing_limitation": 2,
+            "ims_leverage": 1,
+            "total": 7,
+            "grade": "Weak Demand Evidence"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "5万吨锂电池拆解回收项目",
+              "evidence_type": "FACT",
+              "note": "备案信息明确"
+            },
+            "u_unavoidable": {
+              "description": "锂电池拆解涉及废水，但处理方案未明确",
+              "evidence_type": "UNKNOWN",
+              "note": "无废水处理具体信息"
+            },
+            "l_limitations": {
+              "description": "Unknown",
+              "evidence_type": "UNKNOWN",
+              "note": "项目极早期，无方案信息"
+            },
+            "l_leverage": {
+              "description": "iMS价值待验证",
+              "evidence_type": "UNKNOWN",
+              "note": "水系统相关性不确定"
+            },
+            "key_unknown": "锂电池拆解废水的主要污染物是什么？处理方案是什么？",
+            "next_validation_question": "项目废水主要污染物是什么？是否需要在线监测？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "江西陆丰新能源科技发展有限公司",
+              "owner_role": "建设单位",
+              "evaluation": "FACT",
+              "note": "备案信息明确"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "项目极早期，设计未开始"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "关注项目环评公示进展；联系奉新县高新区管委会获取联系人"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-07",
+        "company": {
+          "company_name": "沧州彩客锂能有限公司",
+          "location": "河北东光经济开发区精细化工产业园",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "年处理60000吨磷酸铁黑粉资源综合再生改建项目(含配套废水治理)",
+          "project_stage": "Signal"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1876359309944255411",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-07",
+          "market_segment": "industrial",
+          "company": "沧州彩客锂能有限公司",
+          "industry": "新能源/电池",
+          "location": "河北东光经济开发区精细化工产业园",
+          "project": "年处理60000吨磷酸铁黑粉资源综合再生改建项目(含配套废水治理)",
+          "signal_tier": "Tier 2",
+          "engine": "B",
+          "evidence": {
+            "facts": [
+              "项目获批",
+              "投资3180万元，环保投资162万元",
+              "主要建设内容：拆***碱净化工艺线，购置除杂反应釜、压滤机、储罐等设备",
+              "完善配套废水、废气治理、储罐区等辅助设施",
+              "新增磷酸铁黑粉处理规模60000吨/年"
+            ],
+            "inferences": [
+              "磷酸铁黑粉处理涉及含磷含铁废水",
+              "配套废水治理设施需要改造或新建",
+              "项目已获批，可能进入设计或施工阶段"
+            ],
+            "unknowns": [
+              "废水治理方案设计状态",
+              "设计院/EPC信息",
+              "公司工程联系人"
+            ]
+          },
+          "potential_ims_use_case": "含磷含铁废水在线监测、废水治理设施仪表、数据管理",
+          "logic": "磷酸铁黑粉处理→含磷含铁废水→配套废水治理→在线监测需求→iMS机会",
+          "opportunity_stage": "Signal",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "INFERENCE",
+            "note": "项目已获批但配套废水治理设施可能仍在设计中"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "配套废水治理设施方案可能仍有影响空间"
+          },
+          "estimated_time_window": "2026Q4-2027Q2",
+          "priority": "P2",
+          "water_system_ownership": "A",
+          "incrementality_status": "existing_facility_modification",
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1876359309944255411"
+          ],
+          "to_verify": [
+            "废水治理方案设计状态",
+            "设计院/EPC信息",
+            "磷酸铁黑粉废水特征污染物"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable_urgency": 3,
+            "existing_limitation": 2,
+            "ims_leverage": 2,
+            "total": 10,
+            "grade": "Weak Demand Evidence"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "60000吨磷酸铁黑粉再生改建，含配套废水治理",
+              "evidence_type": "FACT",
+              "note": "获批文件明确"
+            },
+            "u_unavoidable": {
+              "description": "配套废水治理是改建内容之一",
+              "evidence_type": "FACT",
+              "note": "获批文件明确含废水治理"
+            },
+            "l_limitations": {
+              "description": "现有废水治理设施需要改造",
+              "evidence_type": "UNKNOWN",
+              "note": "无具体方案信息"
+            },
+            "l_leverage": {
+              "description": "iMS可提供废水在线监测+数据管理",
+              "evidence_type": "INFERENCE",
+              "note": "需验证客户具体需求"
+            },
+            "key_unknown": "废水治理方案是否已设计？设计院是谁？",
+            "next_validation_question": "配套废水治理设施方案是否已委托设计院？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "沧州彩客锂能有限公司",
+              "owner_role": "建设单位",
+              "evaluation": "FACT",
+              "note": "获批文件明确"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "联系河北东光经济开发区管委会获取项目联系人"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-06",
+        "company": {
+          "company_name": "云天化集团",
+          "location": "云南省",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "智改数转网联数字化转型(在线监测/预测性维护/智能安全环保系统)",
+          "project_stage": "Signal"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://m.qcc.com/postnews/59a64e4fe026bad238f14c2717543e0c.html",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-06",
+          "market_segment": "industrial",
+          "company": "云天化集团",
+          "industry": "石化/化工",
+          "location": "云南省",
+          "project": "智改数转网联数字化转型(在线监测/预测性维护/智能安全环保系统)",
+          "signal_tier": "Tier 2",
+          "engine": "C",
+          "evidence": {
+            "facts": [
+              "云天化集团全面推进智改数转网联",
+              "云南云天化信息科技公司是云南省唯一入选全国首批制造业数字化转型促进中心建设主体名单的企业",
+              "云南天安化工智控中心集中控制30套大型生产装置",
+              "已在矿山开采、化工生产、玻纤制造等环节推进自动化控制、在线监测、设备预测性维护",
+              "云天化大为制氨使用AI慧眼+红外测温智能巡检机器人",
+              "人民日报整版推介"
+            ],
+            "inferences": [
+              "化工生产涉及水质监测，数字化转型可能扩展在线监测覆盖范围",
+              "已有智控中心基础，iMS可切入数据整合和扩展监测点",
+              "集团级统一管理需求可能带来多厂数据整合机会"
+            ],
+            "unknowns": [
+              "现有水质在线监测点位覆盖率和缺口",
+              "是否已有SCADA/DCS覆盖水质监测",
+              "集团统一管理需求的具体内容",
+              "iMS数据平台是否已与现有系统集成"
+            ]
+          },
+          "potential_ims_use_case": "扩展在线水质监测覆盖、多厂数据整合、预测性维护、环保数字化",
+          "logic": "数字化转型→扩展在线监测覆盖→水质监测点位增加→iMS数据管理和预测性维护机会",
+          "opportunity_stage": "Signal",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "INFERENCE",
+            "note": "数字化转型持续推进中，新的监测需求和数据整合需求可能仍在形成"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "已有智控中心基础，但持续扩展中，新的监测点和数据整合需求可能仍有影响空间"
+          },
+          "estimated_time_window": "2026Q4-2027Q4 (持续推进)",
+          "priority": "P2",
+          "water_system_ownership": "A",
+          "incrementality_status": "existing_facility_modification",
+          "source_urls": [
+            "https://m.qcc.com/postnews/59a64e4fe026bad238f14c2717543e0c.html"
+          ],
+          "to_verify": [
+            "现有水质在线监测覆盖率和缺口",
+            "集团统一管理需求的具体内容",
+            "是否已有SCADA/DCS覆盖水质监测",
+            "云天化信息科技公司数字化项目负责人"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable_urgency": 2,
+            "existing_limitation": 3,
+            "ims_leverage": 3,
+            "total": 11,
+            "grade": "Promising, requires validation"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "集团级智改数转网联，推进在线监测、预测性维护、智能安全环保",
+              "evidence_type": "FACT",
+              "note": "人民日报报道明确"
+            },
+            "u_unavoidable": {
+              "description": "数字化转型是集团战略，但具体水质监测扩展的urgency未明确",
+              "evidence_type": "UNKNOWN",
+              "note": "无明确时间线和强制要求"
+            },
+            "l_limitations": {
+              "description": "已有智控中心和部分在线监测，但覆盖范围和数据整合程度未知",
+              "evidence_type": "INFERENCE",
+              "note": "从报道推断已有基础但可能不完整"
+            },
+            "l_leverage": {
+              "description": "iMS可帮助扩展水质监测覆盖、多厂数据整合、预测性维护",
+              "evidence_type": "INFERENCE",
+              "note": "基于数字化转型需求推断"
+            },
+            "key_unknown": "现有水质在线监测覆盖率多少？集团统一管理需求的具体内容是什么？",
+            "next_validation_question": "贵司现有水质在线监测覆盖率多少？集团统一管理是否需要多厂数据整合？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "云南云天化信息科技有限公司",
+              "owner_role": "数字化转型实施主体",
+              "evaluation": "FACT",
+              "note": "公开报道明确云天化信息科技负责数字化转型"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "联系云南云天化信息科技有限公司获取数字化项目负责人；了解现有在线监测覆盖范围"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-05",
+        "company": {
+          "company_name": "宜章志存新材料有限公司",
+          "location": "湖南省宜章氟化学循环产业开发区",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "2万吨碳酸锂生产线综合利用技改项目(含浸出渣无害化处理和综合回收利用)",
+          "project_stage": "Potential Industrial Opportunity"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1875899928977069301",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-05",
+          "market_segment": "industrial",
+          "company": "宜章志存新材料有限公司",
+          "industry": "新能源/电池",
+          "location": "湖南省宜章氟化学循环产业开发区",
+          "project": "2万吨碳酸锂生产线综合利用技改项目(含浸出渣无害化处理和综合回收利用)",
+          "signal_tier": "Tier 2",
+          "engine": "B",
+          "evidence": {
+            "facts": [
+              "环评信息在郴州日报公示",
+              "志存锂业全资子公司",
+              "原项目总投资25亿元，含碳酸锂+氟化锂+尾渣综合利用生产线",
+              "2022年12月投产，2024-2025年停产，2026年初复产",
+              "技改内容：浸***害化+综合回收利用，年处理浸出渣110万吨"
+            ],
+            "inferences": [
+              "锂盐生产涉及含氟含锂废水",
+              "技改项目处于环评公示阶段",
+              "复产+技改窗口提供了新的采购机会"
+            ],
+            "unknowns": [
+              "技改废水处理方案是否已设计",
+              "现有废水处理设施状态",
+              "公司工程联系人"
+            ]
+          },
+          "potential_ims_use_case": "含氟含锂废水在线监测、技改后废水处理设施仪表、数据管理",
+          "logic": "锂盐生产→含氟含锂废水→技改涉及废水处理→在线监测需求→iMS机会",
+          "opportunity_stage": "Potential Industrial Opportunity",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评公示中，技改方案尚未最终确定"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "环评公示阶段，技改方案中的废水处理部分可能仍有影响空间"
+          },
+          "estimated_time_window": "2026Q4-2027Q3",
+          "priority": "P2",
+          "water_system_ownership": "A",
+          "incrementality_status": "existing_facility_modification",
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1875899928977069301"
+          ],
+          "to_verify": [
+            "技改废水处理方案设计状态",
+            "宜章氟化学循环产业开发区排放标准",
+            "志存锂业工程联系人",
+            "复产时间线和技改工程进度"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable_urgency": 3,
+            "existing_limitation": 2,
+            "ims_leverage": 2,
+            "total": 11,
+            "grade": "Promising, requires validation"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "2万吨碳酸锂生产线技改，含浸出渣无害化和综合回收利用",
+              "evidence_type": "FACT",
+              "note": "环评公示明确"
+            },
+            "u_unavoidable": {
+              "description": "浸出渣无害化处理涉及废水，需要环保合规",
+              "evidence_type": "INFERENCE",
+              "note": "技改内容涉及废物处理"
+            },
+            "l_limitations": {
+              "description": "现有废水处理设施可能需要改造",
+              "evidence_type": "UNKNOWN",
+              "note": "无公开信息显示技改废水处理方案"
+            },
+            "l_leverage": {
+              "description": "iMS可帮助监测含氟含锂废水，优化运维",
+              "evidence_type": "INFERENCE",
+              "note": "需验证客户具体需求"
+            },
+            "key_unknown": "技改废水处理方案是否已设计？现有设施是否满足技改后需求？",
+            "next_validation_question": "技改项目废水处理方案是否已确定设计院？现有废水处理设施是否需要改造？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "宜章志存新材料有限公司",
+              "owner_role": "建设单位",
+              "evaluation": "FACT",
+              "note": "环评公示明确"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "环评编制单位未在公示中明确"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "联系宜章氟化学循环产业开发区管委会获取项目联系人；通过志存锂业(江西)总部获取工程部门信息"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "半导体",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-03",
+        "company": {
+          "company_name": "苏州市吴江经开区水质净化有限公司",
+          "location": "江苏省苏州市吴江经济技术开发区龙津路北侧龙港路东侧",
+          "industry": "半导体/电子"
+        },
+        "project": {
+          "project_name": "水质净化厂新增预处理线(半导体废水)，日处理工业废水1.5万吨",
+          "project_stage": "Signal"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://www.wujiang.gov.cn/zgwj/zrghgsgg/202607/e310a032b68e4863ab9c89f65f6ab775.shtml",
+              "evidence_summary": "工业雷达日报"
+            },
+            {
+              "source_url": "https://m.bidcenter.com.cn/news-1-440873810.html",
+              "evidence_summary": "工业雷达日报"
+            },
+            {
+              "source_url": "https://m.bidcenter.com.cn/news-1-442613805.html",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-03",
+          "market_segment": "industrial",
+          "company": "苏州市吴江经开区水质净化有限公司",
+          "industry": "半导体/电子",
+          "location": "江苏省苏州市吴江经济技术开发区龙津路北侧龙港路东侧",
+          "project": "水质净化厂新增预处理线(半导体废水)，日处理工业废水1.5万吨",
+          "signal_tier": "Tier 2",
+          "engine": "B",
+          "evidence": {
+            "facts": [
+              "2026年7月24日规划批前公示",
+              "设计单位：上***工程设计研究院(集团)有限公司",
+              "2026年9月8日施工资格预审文件提前公示",
+              "2026年9月17日环评编制竞争性磋商采购公告发布",
+              "原厂区建构筑物不变，在厂区南侧预留用地新增预处理线"
+            ],
+            "inferences": [
+              "半导体废水预处理需要多种水质参数在线监测",
+              "施工招标已发布，设计可能已接近完成",
+              "上海市政工程设计研究院是设计单位，可能决定仪表选型"
+            ],
+            "unknowns": [
+              "仪表规格是否已最终确定",
+              "是否有后续二期扩展计划",
+              "具体水质监测点位设计"
+            ]
+          },
+          "potential_ims_use_case": "半导体废水在线监测、进出水水质仪表、数据管理平台",
+          "logic": "半导体废水预处理→多种特征污染物监测→在线仪表需求→iMS数据管理可能",
+          "opportunity_stage": "Signal",
+          "entry_timing": "LATE",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "施工资格预审已发布，设计方案基本确定，规格可能已冻结"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "施工招标已发布，设计方案大概率已冻结，但仍有少量仪表选型空间"
+          },
+          "estimated_time_window": "2026Q4-2027Q2 (施工→安装→调试)",
+          "priority": "P2",
+          "water_system_ownership": "B",
+          "incrementality_status": "new_facility",
+          "source_urls": [
+            "https://www.wujiang.gov.cn/zgwj/zrghgsgg/202607/e310a032b68e4863ab9c89f65f6ab775.shtml",
+            "https://m.bidcenter.com.cn/news-1-440873810.html",
+            "https://m.bidcenter.com.cn/news-1-442613805.html"
+          ],
+          "to_verify": [
+            "上海市政工程设计研究院仪表选型是否已确定",
+            "是否有二期/三期扩展计划可提前介入",
+            "半导体废水特征污染物监测需求"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable_urgency": 3,
+            "existing_limitation": 2,
+            "ims_leverage": 2,
+            "total": 11,
+            "grade": "Promising, requires validation"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "新增半导体废水预处理线，日处理1.5万吨工业废水",
+              "evidence_type": "FACT",
+              "note": "规划公示和招标文件明确"
+            },
+            "u_unavoidable": {
+              "description": "半导体废水必须处理达标，预处理线是公用设施",
+              "evidence_type": "FACT",
+              "note": "环保法典要求"
+            },
+            "l_limitations": {
+              "description": "设计院已确定方案，规格可能已冻结",
+              "evidence_type": "INFERENCE",
+              "note": "施工招标已发布意味着设计接近完成"
+            },
+            "l_leverage": {
+              "description": "iMS可提供进出水监测数据管理，但仪表选型空间有限",
+              "evidence_type": "INFERENCE",
+              "note": "需验证规格是否仍有影响空间"
+            },
+            "key_unknown": "仪表选型是否已最终确定？是否有后续扩展计划？",
+            "next_validation_question": "上海市政工程设计研究院的仪表选型是否已冻结？是否有后续扩展计划？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "苏州市吴江经开区水质净化有限公司",
+              "owner_role": "建设单位/业主",
+              "evaluation": "FACT",
+              "note": "规划公示明确建设单位"
+            },
+            "design_institute": {
+              "name": "上海市政工程设计研究院(集团)有限公司",
+              "owner_role": "设计单位",
+              "evaluation": "FACT",
+              "note": "规划公示明确设计单位"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "施工资格预审进行中，EPC尚未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "联系上海市政工程设计研究院了解仪表选型状态；关注施工中标结果确认EPC"
+          },
+          "vm_rules_check": {
+            "vm1_business_relevance": "PASS - 半导体废水处理涉及水质监测",
+            "vm2_industry_priority": "PASS - 半导体行业",
+            "vm3_specific_project": "PASS - 具体项目+具体处理量",
+            "vm4_project_content": "PASS - 明确预处理线+设计单位",
+            "vm5_investment_size": "PASS - 1.5万吨/日规模",
+            "vm6_epc_signal": "PASS - 设计院已确定",
+            "vm7_customer_need": "PASS - 半导体废水处理是环保合规需求",
+            "vm8_stage2_gate": "PASS - 但降级为Tender Monitoring",
+            "vm9_stage3_priority": "确认规格状态→寻找后续扩展机会",
+            "vm10_good_lead": "WATCH - 招标阶段，影响窗口收窄，但有后续机会"
+          },
+          "tender_monitoring": true
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-17",
+      "lead": {
+        "lead_id": "IND-20260917-01",
+        "company": {
+          "company_name": "贵州圣钘新材料有限公司",
+          "location": "贵州省黔南州福泉市牛场镇双龙工业园区",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "年产7万吨新能源含氟材料生产项目(一期2.5万吨锂电池专用含氟溶剂)",
+          "project_stage": "Potential Industrial Opportunity"
+        },
+        "signal": {
+          "signal_description": null,
+          "signal_date": "2026-09-17",
+          "evidence": [
+            {
+              "source_url": "https://baijiahao.baidu.com/s?id=1876110047035880673",
+              "evidence_summary": "工业雷达日报"
+            },
+            {
+              "source_url": "http://finance.sina.com.cn/roll/2026-09-11/doc-inirpyzh6645894.shtml",
+              "evidence_summary": "工业雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260917-01",
+          "market_segment": "industrial",
+          "company": "贵州圣钘新材料有限公司",
+          "industry": "新能源/电池",
+          "location": "贵州省黔南州福泉市牛场镇双龙工业园区",
+          "project": "年产7万吨新能源含氟材料生产项目(一期2.5万吨锂电池专用含氟溶剂)",
+          "signal_tier": "Tier 1",
+          "engine": "C",
+          "evidence": {
+            "facts": [
+              "2026年9月9日环评信息首次公示",
+              "总投资约20亿元人民币，建设工期24个月",
+              "一期2.5万吨/年锂电池专用含氟溶剂生产线",
+              "二期2万吨/年含氟锂盐+2.5万吨/年含氟溶剂",
+              "公司成立于2026年8月26日，浙江圣钘科技全资子公司",
+              "圣钘科技由宁德时代前研发联席总裁梁成都创立",
+              "配套设施含三废治理设施"
+            ],
+            "inferences": [
+              "含氟材料生产必然产生含氟废水，需要配套废水处理设施",
+              "EIA首次公示阶段表明项目处于极早期，技术规格尚未冻结",
+              "投资方背景(宁德时代前高管)可能带来更高标准要求"
+            ],
+            "unknowns": [
+              "废水处理方案设计院/EPC尚未确定",
+              "具体废水排放去向和排放标准要求",
+              "公司环保/工程联系人信息",
+              "现有installed base无信息"
+            ]
+          },
+          "potential_ims_use_case": "含氟废水在线监测、废水处理设施仪表、水质数据管理平台",
+          "logic": "含氟材料生产→含氟废水产生→环保合规要求废水处理→在线监测仪表需求→iMS数据管理机会",
+          "opportunity_stage": "Potential Industrial Opportunity",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评第一次公示，项目处于极早期阶段，技术规格和废水处理方案均未冻结"
+          },
+          "influence_window": "HIGH",
+          "influence_window_evidence": {
+            "source": "FACT",
+            "note": "环评首次公示阶段，方案架构/水处理概念/监测策略/仪表规格/iMS需求均可影响"
+          },
+          "estimated_time_window": "2026Q4-2027Q4 (EIA→设计→施工→调试)",
+          "priority": "P1",
+          "water_system_ownership": "D",
+          "incrementality_status": "new_facility",
+          "source_urls": [
+            "https://baijiahao.baidu.com/s?id=1876110047035880673",
+            "http://finance.sina.com.cn/roll/2026-09-11/doc-inirpyzh6645894.shtml"
+          ],
+          "to_verify": [
+            "废水处理方案是否已委托设计院",
+            "福泉市双龙工业园区污水排放标准和去向",
+            "圣钘科技总部(杭州)工程/环保负责人",
+            "含氟废水具体特征污染物和排放限值"
+          ],
+          "continuity": "first_seen",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable_urgency": 4,
+            "existing_limitation": 2,
+            "ims_leverage": 3,
+            "total": 13,
+            "grade": "Promising, requires validation"
+          },
+          "pull_box": {
+            "p_project": {
+              "description": "新建7万吨/年含氟材料生产线，配套三废治理设施",
+              "evidence_type": "FACT",
+              "note": "环评公示明确项目内容和产能"
+            },
+            "u_unavoidable": {
+              "description": "含氟废水必须处理达标才能排放，环保合规是投产前置条件",
+              "evidence_type": "INFERENCE",
+              "note": "含氟材料行业性质决定，环保法典明确要求"
+            },
+            "l_limitations": {
+              "description": "新建项目，现有解决方案未知",
+              "evidence_type": "UNKNOWN",
+              "note": "无公开信息显示废水处理方案已确定"
+            },
+            "l_leverage": {
+              "description": "iMS可提供含氟废水在线监测+数据管理，帮助合规和运维优化",
+              "evidence_type": "INFERENCE",
+              "note": "基于iMS能力推断，需验证客户具体需求"
+            },
+            "key_unknown": "废水处理方案是否已委托设计院？排放标准是什么？",
+            "next_validation_question": "贵司含氟废水处理方案是否已确定设计院？排放标准要求是什么？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "公司2026年8月刚成立，公开信息有限"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "EIA首次公示阶段，设计院尚未确定"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "项目处于极早期，EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "无公开信息"
+            },
+            "missing_roles": [
+              "account_owner",
+              "design_institute",
+              "epc",
+              "instrument_integrator"
+            ],
+            "next_validation_action": "通过福泉市环保局或双龙工业园区管委会获取项目联系人；联系圣钘科技杭州总部工程部门"
+          },
+          "vm_rules_check": {
+            "vm1_business_relevance": "PASS - 含氟材料生产涉及含氟废水，水质监测刚需",
+            "vm2_industry_priority": "PASS - 新能源/电池行业，高优先级",
+            "vm3_specific_project": "PASS - 具体公司+具体项目+具体产能",
+            "vm4_project_content": "PASS - 明确生产线+配套三废治理",
+            "vm5_investment_size": "PASS - ¥20亿，规模充足",
+            "vm6_epc_signal": "PASS - EIA阶段无EPC，属正常",
+            "vm7_customer_need": "PASS - 含氟废水环保合规是真实需求",
+            "vm8_stage2_gate": "PASS - 进入Stage 3",
+            "vm9_stage3_priority": "EPC/设计院→联系人→时间线→工艺流程",
+            "vm10_good_lead": "PASS - 业务相关+行业合适+项目具体+有需求+采购概率高+时间窗口可进入"
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [],
+      "procurement_signal": false
+    },
+    {
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-16",
