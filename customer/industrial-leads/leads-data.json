@@ -1,6 +1,71 @@
 {
   "leads": [
     {
+      "segment": "municipal",
+      "category": "供水／二次供水",
+      "date": "2026-09-18",
+      "lead": {
+        "lead_id": "OPP-2026-09-18-001",
+        "company": {
+          "company_name": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+          "project_stage": "可研/环评"
+        },
+        "signal": {
+          "signal_description": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+          "signal_date": "2026-09-18",
+          "evidence": [
+            {
+              "source_url": "https://hbj.cngy.gov.cn/mshow/3f7dd6124c1c4b1e9183c97897de212e.html",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+          "opportunity": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+          "opportunity_stage": "可研/环评",
+          "priority": "P3",
+          "score": 55,
+          "potential_ims_use_case": "Instrument Monitoring / Multi-site Management",
+          "logic": "Customer Change(旺苍县自来水厂提标改造+智慧水务建设) -> Digital Change(项目名含'智慧水务'，意味着数字化建设) -> Operational Problem(提标后需在线监测水质/运行参数) -> Instrument/Data Need(在线仪表部署+数据采集) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management)。逻辑链完整但规模待确认。",
+          "to_verify": {
+            "customer_identity": "旺苍县水务建设发展有限公司是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
+            "installed_base": "旺苍县现有水厂仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+            "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+          },
+          "source_urls": [
+            "https://hbj.cngy.gov.cn/mshow/3f7dd6124c1c4b1e9183c97897de212e.html"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月15日广元市旺苍生态环境局受理旺苍县自来水厂提标改造及智慧水务建设项目（一期）环境影响评价文件。建设单位：旺***务建设发展有限公司。环评机构：四***鼎锋环境科技有限公司。公示期至9月21日。项目明确包含'智慧水务'建设内容。"
+            ],
+            "inferences": [
+              "县级自来水厂提标改造+智慧水务建设项目，处于环评受理阶段(可研/环评)，项目名称明确包含'智慧水务'。逻辑链：水***改造→智慧水务建设→在线监测仪表部署需求→iMS Use Case(Instrument Monitoring/Multi-site Management)。虽然规模为县级，但'智慧水务'建设内容意味着需要在线仪表+数据采集+平台对接，存在iMS切入点。需Company Agent确认是否为Hach客户及规模。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-18.json",
+          "date": "2026-09-18"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
