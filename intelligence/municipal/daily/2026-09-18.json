@@ -1,7 +1,7 @@
 {
   "date": "2026-09-18",
   "weekday": "Friday",
-  "version": "3.4.1-latest-snapshot",
+  "version": "v3.4",
   "scanner_summary": {
     "total_scanned": 30,
     "valid_triggers": 12,
@@ -17,21 +17,7 @@
     "stage3_enrichment_count": 24,
     "new_opportunities_today": 1,
     "updated_opportunities_today": 4,
-    "new_background_monitoring_today": 4,
-    "method_note": "累积快照持续更新；本次扫描新发现1条新Opportunity(旺苍智慧水务)，4条已存在Opportunity有新事实更新(万家寨/中芯京城/粤芯/重庆水务)，4条新background_monitoring(包头/随县/全椒/重庆大九仪表)，2条新Policy(生态环境法典/二次供水在线监测)，3条新Competitive(E+H/ABB/粤海水务)。",
-    "cumulative_sources": [
-      "2026-09-02",
-      "2026-09-04",
-      "2026-09-07",
-      "2026-09-09",
-      "2026-09-11",
-      "2026-09-13",
-      "2026-09-13-snapshot",
-      "2026-09-14",
-      "2026-09-16",
-      "2026-09-18",
-      "2026-09-18"
-    ]
+    "new_background_monitoring_today": 4
   },
   "top_5_match": [
     {
@@ -4479,6 +4465,5 @@
     "three_stage_complete": true,
     "latest_json_updated": true,
     "md_report_generated": true
-  },
-  "run_type": "latest.json 累积快照（每次运行同步更新，反映当前所有仍有效线索）"
+  }
 }
