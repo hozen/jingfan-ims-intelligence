@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "subject": "杨崇和动向追踪",
+    "report_type": "weekly",
+    "period_label": "2026-09-W38",
+    "year": 2026,
+    "month": 9,
+    "week": 38,
+    "start_date": "2026-09-14",
+    "end_date": "2026-09-19",
+    "generated_at": "2026-09-19T11:14:23+08:00",
+    "source": "公开信息搜索",
+    "framework": "巴菲特价值投资 v1.0",
+    "perspective": "以杨崇和为投资向导"
+  },
+  "core_events": [
+    "CXL 3.2 MXC芯片导入三星、SK海力士下一代产品，PCIe Switch研发中、以太网PHY Retimer计划年内流片",
+    "横琴子公司完成近5亿增资，云锋基金出资5175万，CXL MXC和PCIe Switch专攻平台落地",
+    "韩国反垄断调查持续发酵，检方突击搜查澜起/瑞萨/瑞萨电子韩国办事处"
+  ],
+  "yang_chonghe_dynamics": {
+    "earnings_call": {
+      "date": "2026-09-08",
+      "title": "2026年半年度业绩说明会",
+      "speaker": "杨崇和（董事长兼首席执行官）",
+      "key_points": [
+        "AI工作负载正从训练端大规模向推理端及智能体迁移，CPU通用计算架构价值凸显",
+        "AI服务器中CPU与GPU配置比例预计持续提升，CPU需求增加推动内存模组用量增加",
+        "直接拉动澜起互连芯片需求"
+      ],
+      "source": "e公司/澜起科技半年度业绩说明会"
+    },
+    "investor_relations": {
+      "date": "2026-09-17",
+      "institutions": 261,
+      "key_points": {
+        "cxl_mxc": "CXL 3.2 MXC已试产并导入三星、SK海力士等主要内存模组厂商下一代产品",
+        "pcie_retimer": "PCIe 5.0已量产出货，PCIe 6.x/CXL 3.x通过PCI-SIG认证列入供应商名录",
+        "pcie_switch": "仍处工程研发阶段，未计入已实现收入",
+        "ethernet_phy_retimer": "计划年内完成工程样片流片，用于AI服务器与交换机间高速互连",
+        "optical_interconnect_strategy": "明确'自研、合作或投资并购'多种方式布局，SerDes IP可迁移至光互连领域",
+        "four_directions": "内存互连（DDR5迭代+MRCD/MDB）、PCIe/CXL互连、以太网/光互连、时钟芯片"
+      },
+      "source": "澜起科技投资者关系活动记录表2026-011"
+    },
+    "announcements": [
+      {
+        "date": "2026-09-17",
+        "title": "2023年、2024年限制性股票激励计划部分归属结果公告",
+        "detail": "合计85.76万股过户，9月15日完成登记",
+        "source": "上交所公告"
+      },
+      {
+        "date": "2026-09-17",
+        "title": "H股公告-翌日披露报表",
+        "source": "上交所公告"
+      },
+      {
+        "date": "2026-09-02",
+        "title": "A股回购进展公告",
+        "detail": "持续回购中",
+        "source": "上交所公告"
+      },
+      {
+        "date": "2026-08-29",
+        "title": "2026年中期利润分配方案公告",
+        "source": "上交所公告"
+      }
+    ],
+    "events": [
+      {
+        "date_range": "2026-09-09~2026-09-11",
+        "event": "IICIE 2026深圳展亮相",
+        "detail": "展出PCIe Retimer、CXL MXC、高性能时钟芯片",
+        "source": "澜起科技新闻动态"
+      },
+      {
+        "date": "2026-08-24",
+        "event": "PCIe 6.x/CXL 3.x Retimer列入PCI-SIG供应商名录",
+        "detail": "助力下一代数据中心部署",
+        "source": "澜起科技新闻动态"
+      }
+    ],
+    "financials": {
+      "period_2026H1": {
+        "revenue": {"value": 33.35, "unit": "billion_cny", "yoy_growth_pct": 26.66},
+        "net_profit_attributable": {"value": 19.97, "unit": "billion_cny", "yoy_growth_pct": 72.33},
+        "deducted_net_profit": {"value": 13.22, "unit": "billion_cny", "yoy_growth_pct": 21.17},
+        "operating_cash_flow": {"value": 13.28, "unit": "billion_cny", "yoy_growth_pct": 25.44},
+        "eps": {"value": 1.64, "unit": "cny", "yoy_growth_pct": 63.73}
+      },
+      "period_2025FY": {
+        "revenue": {"value": 54.56, "unit": "billion_cny"},
+        "net_profit_attributable": {"value": 22.36, "unit": "billion_cny"},
+        "roe_pct": 18.25,
+        "roic_pct": 15.47,
+        "operating_cash_flow": {"value": 20.22, "unit": "billion_cny"},
+        "gross_margin_pct": 65.3,
+        "net_margin_pct": 58.2
+      }
+    }
+  },
+  "zhivei_lingfeng_fund": {
+    "fund_update": {
+      "fund_name": "上海智微凌峰创业投资合伙企业（有限合伙）",
+      "target_scale": {"value": 30, "unit": "billion_cny"},
+      "gp": "智微资本（中微公司旗下）",
+      "lp_list": ["中微公司", "澜起科技", "上海国投先导"],
+      "focus": "半导体/泛半导体和战略新兴领域，聚焦半导体设备/零部件/材料'隐形冠军'",
+      "model": "'投资+订单'捆绑模式，被投企业嵌入龙头供应链",
+      "source": "上海证券报/天天基金网"
+    },
+    "yin_zhiyao": {
+      "share_reduction": {
+        "date": "2026-09-13报道",
+        "detail": "尹志尧减持13.74万股，套现约5371万元（占总股本0.014%，微量减持）",
+        "signal": "创始人微量减持，与同期大股东巽鑫投资减持不超2%形成对比"
+      },
+      "activity": "9月11日在上海做半导体设备产业报告，强调'中国刻蚀'精工品质与产业链自主",
+      "source": "新浪财经/中微公司公告"
+    },
+    "portfolio": [],
+    "source": "上海证券报 2026-09-12"
+  },
+  "ecosystem": {
+    "hengqin_subsidiary": {
+      "event": "横琴子公司增资扩股完成",
+      "date": "2026-06-25公告",
+      "detail": "注册资本从1.435亿增至1.657亿，增资方合计出资约5亿（49,950万元）",
+      "investors": [
+        {"name": "海南云锋基金中心（有限合伙）", "amount": {"value": 5175, "unit": "million_cny"}},
+        {"name": "YF Hestia II Limited", "amount": null}
+      ],
+      "focus": "专攻CXL MXC和PCIe Switch",
+      "source": "东方财富/同花顺F10"
+    },
+    "optical_interconnect_holding": {
+      "company": "熹联光芯",
+      "stake_pct": 3.87,
+      "detail": "硅光光引擎+CXL MXC成套方案，匹配CPO光电共封装趋势",
+      "source": "公开信息"
+    },
+    "changxin": {
+      "strategic_placement": {"value": 1.58, "unit": "billion_cny"},
+      "detail": "与中微/拓荆/安集等构成供应链生态闭环",
+      "source": "历史背景"
+    },
+    "customers": {
+      "cxl_mxc": "已导入三星、SK海力士下一代内存模组产品",
+      "note": "美光采购动态待跟踪"
+    },
+    "korea_antitrust": {
+      "status": "调查持续",
+      "detail": "韩国检方公平贸易调查部突击搜查澜起科技、瑞萨电子、Renesas三家DDR5接口芯片供应商韩国办事处，扣押合同及内部文件",
+      "concerns": ["罚款风险", "三星/SK海力士订单是否受影响", "MR-DIMM/DDR5供货是否正常"],
+      "company_response": "调查进展正常，业务未受实质影响",
+      "industry_note": "三家为全球仅有的可量产DDR5接口芯片供应商",
+      "source": "网易/东方财富舆情"
+    },
+    "acquisition_targets": {
+      "direction": "光互连",
+      "strategy": "自研、合作或投资并购",
+      "watch_list": [
+        {"name": "熹联光芯", "relation": "已持股3.87%", "note": "硅光光引擎"},
+        {"name": "龙迅股份", "relation": "产业推演", "note": "SerDes+Retimer技术栈潜在整合对象，非投资建议"}
+      ],
+      "source": "杨崇和战略表态/产业推演"
+    }
+  },
+  "targets": [
+    {
+      "ticker": "688008",
+      "name": "澜起科技",
+      "role": "core_holding",
+      "position_note": "ABC组合中0.9%仓位",
+      "moat": {
+        "score": "A",
+        "detail": "DDR5接口芯片全球双寡头，JEDEC董事会唯一中国企业，PCIe 6.x/CXL 3.x通过PCI-SIG认证"
+      },
+      "buffett_scores": {
+        "roe": {"value": 18.25, "unit": "%", "period": "2025FY", "threshold": 15, "passed": true},
+        "roic": {"value": 15.47, "unit": "%", "period": "2025FY", "threshold": 15, "passed": true},
+        "fcf": {
+          "value": 1.85,
+          "unit": "billion_cny",
+          "detail": "2025年经营现金流20.22亿，Fabless资本开支极低（估计18-19亿，取中值）",
+          "positive": true,
+          "trend": "healthy"
+        }
+      },
+      "valuation": {"pe_ttm": 80.42, "pb": 11.43, "gross_margin_pct": 65.3, "net_margin_pct": 58.2},
+      "management": {"score": "A", "detail": "杨崇和：IEEE终身院士+JEDEC标准制定者"},
+      "combined_rating": "持有/回调加仓",
+      "action": "三大指标均达标，FCF极强。估值偏高，耐心等待回调至PE60以下分批加仓至2-3%"
+    },
+    {
+      "ticker": "688486",
+      "name": "龙迅股份",
+      "role": "watchlist",
+      "moat": {
+        "score": "B+",
+        "detail": "自研112G SerDes IP，PCIe5.0/CXL2.0 Retimer+Switch布局，光互连纳入长期战略"
+      },
+      "buffett_scores": {
+        "roe": {"value": 11.0, "unit": "%", "period": "2025FY", "threshold": 15, "passed": false, "forecast_2026E": 17.1},
+        "roic": {"value": 9.6, "unit": "%", "period": "2025FY", "threshold": 15, "passed": false, "forecast_2026E": 16.9},
+        "fcf": {
+          "value": 0.072,
+          "unit": "billion_cny",
+          "detail": "经营现金流1.12亿-资本开支约4000万=约7200万，趋势+40%",
+          "positive": true,
+          "trend": "improving"
+        }
+      },
+      "valuation": {"pe_ttm": 46.58, "pb": 5.6, "gross_margin_pct": 53.4, "debt_ratio_pct": 7},
+      "management": {"score": "B+", "detail": "创始人团队，专注技术，Fabless轻资产"},
+      "combined_rating": "观察/待ROE达标后介入",
+      "action": "FCF为正且趋势改善。ROE/ROIC处于15%门槛下方但2026E跨过，符合'成长期看趋势'原则。与澜起同赛道技术同源，是'运力'方向备选标的"
+    }
+  ],
+  "action_advice": "澜起三大指标均达标且FCF极强，当前0.9%仓位可持有，耐心等待PE回落至60以下分批加仓至2-3%；龙迅股份ROE/ROIC预计2026年跨过15%门槛，FCF已转正且趋势+40%，列入观察名单，待半年报确认ROE趋势后小仓位试探"
+}
