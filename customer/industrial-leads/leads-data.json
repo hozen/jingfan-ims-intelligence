@@ -4,6 +4,12 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-21",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260921-WCSW-003",
         "company": {
@@ -42,6 +48,8 @@
             "ims": "武水集团是否已有iMS？数能科技分公司是否提供类似仪表管理产品？",
             "account_sales": "武水集团Account Owner？华中Regional Owner？"
           },
+          "estimated_time_window": "6-9 months",
+          "time_window_basis": "统一监管平台已竣工（9/17），乡镇水厂数字化延伸（泡桐水厂）刚启动实景三维底座搭建，从数字底座到仪表数据层建设约6-9个月。",
           "source_urls": [
             "https://swj.wuhan.gov.cn/tzdt/jcss/202609/t20260914_2847205.html"
           ],
@@ -69,6 +77,12 @@
       "segment": "municipal",
       "category": "水务集团／跨区域",
       "date": "2026-09-21",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260921-SYNY-001",
         "company": {
@@ -107,6 +121,8 @@
             "ims": "沈阳水务是否已有iMS或类似数字化产品？三川智慧+软通动力合作是否排他性？",
             "account_sales": "沈阳水务Account Owner？东北Regional Owner？"
           },
+          "estimated_time_window": "6-9 months",
+          "time_window_basis": "三方座谈刚启动（9/14），常态化合作机制刚明确，尚未进入设备采购/招标阶段。从战略对谈到设备选型通常6-9个月。",
           "source_urls": [
             "https://www.sohu.com/a/1075841997_121106822"
           ],
@@ -134,6 +150,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-21",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260921-DQSY-002",
         "company": {
@@ -172,6 +194,8 @@
             "ims": "大运河水务是否已有iMS或类似数字化产品？华立智慧水务平台是否排他？",
             "account_sales": "大运河水务Account Owner？北京Regional Owner？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": "战略合作刚签约（9/17），华芯数科刚注册落地，尚未有具体项目启动。从战略合作到首批项目落地通常>9个月。",
           "source_urls": [
             "https://www.cnstock.com/commonDetail/792174"
           ],
@@ -199,6 +223,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-21",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260921-CXTC-004",
         "company": {
@@ -237,6 +267,8 @@
             "ims": "长鑫科技是否已有iMS或类似数字化产品？超纯水系统在线监测是否有数字化管理？",
             "account_sales": "长鑫科技Account Owner？半导体Regional Owner？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": "北京亦庄第二座12英寸仍处于'正考虑'阶段（战略规划）；上海新厂已进入设备招标（<3个月）。北京亦庄新厂对应>9个月窗口。",
           "source_urls": [
             "http://finance.sina.cn/2026-09-20/detail-inisnhay9263398.d.html"
           ],
@@ -264,6 +296,11 @@
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-10",
         "company": {
@@ -378,18 +415,29 @@
               "仪表采购方"
             ],
             "next_validation_action": "确认现有仪表品牌和配置，评估升级/替换机会"
+          },
+          "opportunity": "在线水质监测系统运行维护项目（已中标）",
+          "estimated_time_window": "MEDIUM",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "已有installed base，初始采购窗口关闭，但仪表生命周期/升级/替换机会存在"
           }
         },
         "enrichment_status": "radar_daily"
       },
       "enriched_contacts": [],
       "history": [],
-      "procurement_signal": false
+      "procurement_signal": true
     },
     {
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-09",
         "company": {
@@ -503,6 +551,12 @@
               "运维方"
             ],
             "next_validation_action": "确认后续运维需求和现有仪表配置"
+          },
+          "opportunity": "8英寸功率IDM晶圆产线升级：新*90m³/h纯水系统增容施工",
+          "estimated_time_window": "NONE",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "已中标，初始采购窗口关闭；后续生命周期机会待评估"
           }
         },
         "enrichment_status": "radar_daily"
@@ -515,6 +569,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-08",
         "company": {
@@ -628,6 +687,12 @@
               "EPC"
             ],
             "next_validation_action": "确认具体改造内容和是否涉及监测设备"
+          },
+          "opportunity": "化工园区环保污水零直排提升、园区复评",
+          "estimated_time_window": "LOW",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "已进入竞争性磋商阶段，影响窗口有限"
           }
         },
         "enrichment_status": "radar_daily"
@@ -640,6 +705,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-07",
         "company": {
@@ -753,6 +823,12 @@
               "仪表集成商"
             ],
             "next_validation_action": "确认具体改造内容和是否涉及新增监测仪表"
+          },
+          "opportunity": "水处理系统减排改造项目",
+          "estimated_time_window": "LOW",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "已进入招标阶段，技术规格基本冻结，影响窗口有限"
           }
         },
         "enrichment_status": "radar_daily"
@@ -765,6 +841,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-06",
         "company": {
@@ -881,6 +962,12 @@
               "水务运维"
             ],
             "next_validation_action": "调研兴发化工水系统现状和数字化平台范围"
+          },
+          "opportunity": "AI融入生产环节，打造全自主运行工厂；多模态感知与预测能力，实时监测设备状态",
+          "estimated_time_window": "LOW",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "数字化转型处于概念/规划阶段，水系统监测未明确纳入范围"
           }
         },
         "enrichment_status": "radar_daily"
@@ -893,6 +980,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-05",
         "company": {
@@ -1007,6 +1099,12 @@
               "环保部门联系人"
             ],
             "next_validation_action": "获取环评报告全文，确认水系统需求"
+          },
+          "opportunity": "两大含氟新材料扩建、技改项目（电子氟化液、多氟酯、全氟烯烃等产能扩容）",
+          "estimated_time_window": "LOW",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "环评公示阶段，但水系统需求未明确，需进一步验证才能判断影响窗口"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1019,6 +1117,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-04",
         "company": {
@@ -1136,6 +1239,12 @@
               "仪表集成商"
             ],
             "next_validation_action": "查环评报告中的设计单位和纯水系统方案"
+          },
+          "opportunity": "年产530吨中间体及兽用原药建设：新***车间+纯水系统+注射用水系统+废水处理设施",
+          "estimated_time_window": "MEDIUM",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "环评拟审批公示9/20-9/24，处于审批阶段，监测方案仍可影响"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1148,6 +1257,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-03",
         "company": {
@@ -1264,6 +1378,12 @@
               "仪表集成商"
             ],
             "next_validation_action": "搜索项目设计院和EPC招标信息"
+          },
+          "opportunity": "全厂废水改造：一***酸碱废水修缮+新建再生水深度处理+脱硫废水零排放+生活污水修缮+管线改造",
+          "estimated_time_window": "MEDIUM",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "环评拟审批公示阶段9/18-9/24，处于设计/审批阶段，可影响监测方案"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1276,6 +1396,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-02",
         "company": {
@@ -1391,6 +1516,12 @@
               "EPC"
             ],
             "next_validation_action": "搜索上马化工园区完整名称和位置，获取EIA报告全文"
+          },
+          "opportunity": "新建化工园区集中式废水处理设施一期",
+          "estimated_time_window": "MEDIUM",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "环评报告书公示稿阶段，处于环评审批中，监测方案和仪表规格仍在定义中"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1403,6 +1534,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-19",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260919-01",
         "company": {
@@ -1525,6 +1661,12 @@
               "仪表集成商"
             ],
             "next_validation_action": "搜索吴江经开区水质净化厂项目业主信息，联系吴江水务或经开集团"
+          },
+          "opportunity": "新建日处理1.5万吨工业废水水质净化厂 + 新增半导体废水预处理线",
+          "estimated_time_window": "HIGH",
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "环评编制正在竞争性磋商阶段（截止9/29），施工资格预审刚发布9/17，规格尚未冻结，可影响水质监测策略和仪表规格"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1537,6 +1679,12 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-18",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPP-2026-09-18-001",
         "company": {
@@ -1575,6 +1723,8 @@
             "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
             "account_sales": "Account Owner？Regional Owner？当前客户关系？"
           },
+          "estimated_time_window": "6-9 months",
+          "time_window_basis": "环评报告表于2026-09-15受理(广元市旺苍生态环境局)，处于环评审批阶段，对应可研/环评环节。后续还需初步设计→设计→招标，预计6-9个月进入设计阶段。",
           "source_urls": [
             "https://hbj.cngy.gov.cn/mshow/3f7dd6124c1c4b1e9183c97897de212e.html"
           ],
@@ -1602,6 +1752,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-10",
         "company": {
@@ -1741,6 +1897,10 @@
               "instrument_integrator"
             ],
             "next_validation_action": "关注环评审批结果；联系常德经开区环保分局了解废水排放要求"
+          },
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "项目规模较小(¥5000万)，水系统相关性弱，影响空间有限"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1753,6 +1913,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-09",
         "company": {
@@ -1893,6 +2059,10 @@
               "instrument_integrator"
             ],
             "next_validation_action": "关注项目环评公示进展；联系奉新县高新区管委会获取联系人"
+          },
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "项目极早期，但水系统相关性需验证"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1905,6 +2075,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-07",
         "company": {
@@ -2046,6 +2222,10 @@
               "instrument_integrator"
             ],
             "next_validation_action": "联系河北东光经济开发区管委会获取项目联系人"
+          },
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "配套废水治理设施方案可能仍有影响空间"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2058,6 +2238,12 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-06",
         "company": {
@@ -2202,6 +2388,10 @@
               "instrument_integrator"
             ],
             "next_validation_action": "联系云南云天化信息科技有限公司获取数字化项目负责人；了解现有在线监测覆盖范围"
+          },
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "已有智控中心基础，但持续扩展中，新的监测点和数据整合需求可能仍有影响空间"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2214,6 +2404,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-05",
         "company": {
@@ -2356,6 +2552,10 @@
               "instrument_integrator"
             ],
             "next_validation_action": "联系宜章氟化学循环产业开发区管委会获取项目联系人；通过志存锂业(江西)总部获取工程部门信息"
+          },
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "环评公示阶段，技改方案中的废水处理部分可能仍有影响空间"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2368,6 +2568,12 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-03",
         "company": {
@@ -2531,7 +2737,11 @@
             "vm9_stage3_priority": "确认规格状态→寻找后续扩展机会",
             "vm10_good_lead": "WATCH - 招标阶段，影响窗口收窄，但有后续机会"
           },
-          "tender_monitoring": true
+          "tender_monitoring": true,
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "施工招标已发布，设计方案大概率已冻结，但仍有少量仪表选型空间"
+          }
         },
         "enrichment_status": "radar_daily"
       },
@@ -2543,6 +2753,12 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260917-01",
         "company": {
@@ -2706,6 +2922,10 @@
             "vm8_stage2_gate": "PASS - 进入Stage 3",
             "vm9_stage3_priority": "EPC/设计院→联系人→时间线→工艺流程",
             "vm10_good_lead": "PASS - 业务相关+行业合适+项目具体+有需求+采购概率高+时间窗口可进入"
+          },
+          "time_window_basis": {
+            "source": "FACT",
+            "note": "环评首次公示阶段，方案架构/水处理概念/监测策略/仪表规格/iMS需求均可影响"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2718,6 +2938,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-16",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-16-003",
         "company": {
@@ -2756,6 +2982,8 @@
             "ims": "是否已有iMS？半导体行业是否有类似数字化产品？",
             "account_sales": "Account Owner？Regional Owner？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://caifuhao.eastmoney.com/news/20260913055359380377170"
           ],
@@ -2783,6 +3011,12 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-16",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-16-002",
         "company": {
@@ -2821,6 +3055,8 @@
             "ims": "是否已有iMS？合肥城市生命线工程监测中心数据底座是否支持第三方仪表接入？",
             "account_sales": "Account Owner？Regional Owner？当前客户关系？"
           },
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://www.h2o-china.com/news/364804.html"
           ],
@@ -2848,6 +3084,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-16",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-16-001",
         "company": {
@@ -2886,6 +3128,8 @@
             "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
             "account_sales": "Account Owner？Regional Owner？当前客户关系？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://baijiahao.baidu.com/s?id=1875928422953056244"
           ],
@@ -2913,6 +3157,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260915-05",
         "company": {
@@ -3031,6 +3280,11 @@
               "instrument_integrator"
             ],
             "next_validation_action": "查询武安市589个在线监测排口清单，确认废水排口数量和仪表配置；了解数据管理平台现状"
+          },
+          "opportunity": "第三轮省环保督察整改完成，589个在线监测排口强化动态监管",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "整改已完成，后续为运维管理，可影响空间有限"
           }
         },
         "enrichment_status": "radar_daily"
@@ -3043,6 +3297,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260915-04",
         "company": {
@@ -3162,6 +3421,11 @@
               "instrument_integrator"
             ],
             "next_validation_action": "查询宏邦化工排污许可证变更情况，确认废水排放口和监测因子是否变化"
+          },
+          "opportunity": "铃兰吡喃、苯乐戊醇、二氢系列、龙涎酮系列、MDJ系列技改项目，依托原有公辅工程",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "依托原有公辅工程，无新建水系统，可影响空间有限"
           }
         },
         "enrichment_status": "radar_daily"
@@ -3174,6 +3438,11 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-15",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260915-03",
         "company": {
@@ -3292,6 +3561,11 @@
               "instrument_integrator"
             ],
             "next_validation_action": "查询原老魔坊食品科技污水站设计参数；跟踪项目设计阶段是否涉及污水站改造"
+          },
+          "opportunity": "鲜魔芋休闲食品生产加工项目，投资1亿元，年产9000吨魔芋胚和魔芋制品，2条生产线",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "环评刚批准，现有污水站是否需要扩容/增加监测点尚未确定，可影响方案"
           }
         },
         "enrichment_status": "radar_daily"
@@ -3304,6 +3578,11 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-15",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260915-02",
         "company": {
@@ -3422,6 +3701,11 @@
               "instrument_integrator"
             ],
             "next_validation_action": "跟踪项目排污许可证申领情况，确认是否要求在线监测；关注后续设计/施工招标"
+          },
+          "opportunity": "半导体设备核心部件研发制造项目（一期），总投资5000万元，年产下部电极零部件300套",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "环评刚批准，水系统方案和监测策略尚未定义，可影响方案架构和监测需求"
           }
         },
         "enrichment_status": "radar_daily"
@@ -3434,6 +3718,11 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
+      "quality_score": 3,
+      "quality_missing": [
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "IND-20260915-01",
         "company": {
@@ -3559,6 +3848,11 @@
               "instrument_integrator"
             ],
             "next_validation_action": "查询东明石化UPC项目环评报告或招标记录，确认水系统EPC和仪表集成商"
+          },
+          "opportunity": "30万吨/年UPC（原油直接催化裂解制烯烃）科技试验项目，总投资超110亿元",
+          "time_window_basis": {
+            "source": "INFERENCE",
+            "note": "建设冲刺期，技术规格已冻结，后续为运维管理窗口"
           }
         },
         "enrichment_status": "radar_daily"
@@ -3571,6 +3865,12 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-14",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-14-003",
         "company": {
@@ -3609,6 +3909,8 @@
             "ims": "是否已有iMS？是否有数字化平台？",
             "account_sales": "Account Owner？Regional Owner？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://m.nanyang.gov.cn/2026/09-09/1432795.html"
           ],
@@ -3636,6 +3938,12 @@
       "segment": "municipal",
       "category": "供水／二次供水",
       "date": "2026-09-14",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-14-002",
         "company": {
@@ -3674,6 +3982,8 @@
             "ims": "是否已有iMS或类似数字化产品？河南智慧水务公司的平台是否已部署？",
             "account_sales": "Account Owner？Regional Owner？当前客户关系？竞争对手是否已接触？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://baijiahao.baidu.com/s?id=1875927833954203215"
           ],
@@ -3701,6 +4011,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-14",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "MUN-DAILY-2026-09-14-001",
         "company": {
@@ -3739,6 +4055,8 @@
             "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
             "account_sales": "Account Owner？Regional Owner？当前客户关系？"
           },
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": null,
           "source_urls": [
             "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html"
           ],
@@ -6879,6 +7197,12 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-13",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260913-VEOL-005",
         "company": {
@@ -6917,6 +7241,8 @@
             "ims": "厂区是否已有SCADA/数据平台？接触过仪表管理工具吗？",
             "account_sales": "安徽Account Owner？六国化工/威立雅体系销售协同？"
           },
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "2026年2月通水，运营体系与数字化配置尚未固化——3-6个月窗口期",
           "source_urls": [
             "https://baike.baidu.com/item/铜陵六国威立雅水务有限责任公司/51469532"
           ],
@@ -6944,6 +7270,12 @@
       "segment": "municipal",
       "category": "污水／再生水／管网",
       "date": "2026-09-13",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260913-VEOL-004",
         "company": {
@@ -6982,6 +7314,8 @@
             "ims": "综合运营管理平台是否有仪表健康/标定管理模块？是否接触过iMS？",
             "account_sales": "天津Account Owner？滨海新区客户关系？"
           },
+          "estimated_time_window": "6-12 months",
+          "time_window_basis": "感知层扩容持续推进（2025年公开分享成果，2026年仍处建设期），对应6-12个月",
           "source_urls": [
             "https://stock.10jqka.com.cn/20251104/c672227183.shtml"
           ],
@@ -7009,6 +7343,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-13",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260913-VEOL-003",
         "company": {
@@ -7047,6 +7387,8 @@
             "ims": "AQUAVISTA在中国实际落地客户名单？是否已评估过iMS或类似产品？平台是否预留第三方集成接口？",
             "account_sales": "威立雅中国Account Owner？总部关系？区域协同机制？"
           },
+          "estimated_time_window": "6-18 months",
+          "time_window_basis": "集团数智化平台建设为中长期战略推进（顾丽华2026年6月公开介绍），对应6-18个月；AQUAVISTA生态集成需在平台架构固化前建立合作认知",
           "source_urls": [
             "https://sthjj.gz.gov.cn/gkmlpt/content/10/10886/post_10886699.html; https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml"
           ],
@@ -7074,6 +7416,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-13",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260913-VEOL-002",
         "company": {
@@ -7112,6 +7460,8 @@
             "ims": "数运平台是否已有仪表管理模块？是否接触过类似iMS产品？AQUAVISTA是否在浦东有部署？",
             "account_sales": "Account Owner是谁？上海区域客户关系强度？"
           },
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "新版上海水质标准2026年落地，监测体系升级窗口当前打开（公开信息：孙**2026年分享新标准管控需求）",
           "source_urls": [
             "http://m.article.zhongqi.group/uznews/941330article_613.shtml; https://mp.weixin.qq.com/s?__biz=MzA4OTA2MjY1Nw==&mid=2655071774"
           ],
@@ -7139,6 +7489,12 @@
       "segment": "municipal",
       "category": "其他市政水务",
       "date": "2026-09-13",
+      "quality_score": 2,
+      "quality_missing": [
+        "项目与地区",
+        "需求与现状",
+        "联系人或招聘证据"
+      ],
       "lead": {
         "lead_id": "OPS-20260913-VEOL-001",
         "company": {
@@ -7177,6 +7533,8 @@
             "ims": "威立雅AQUAVISTA是否已绑定该项目/储备项目？是否已接触类似仪表管理产品？",
             "account_sales": "威立雅(中国)Account Owner？华南Regional Owner？合资公司是否有人认领？"
           },
+          "estimated_time_window": ">9 months",
+          "time_window_basis": "储备项目群处于洽谈/战略规划阶段（公开信息），对应>9个月介入窗口；联油三期已施工准备（2026-10），单独降级背景监控",
           "source_urls": [
             "https://gd.cri.cn/2026-09-02/14db247e-bc20-4ed8-8ed2-dc847f3228ab.html"
           ],
