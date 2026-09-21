@@ -60,7 +60,12 @@
             "inferences": [
               "武汉城投水务集团47座水厂统一监管平台已竣工——平台层已建，但47座水厂中'其余通过业务填报或系统对接归集'说明很多水厂仍缺在线仪表自动数据采集。乡镇水厂（泡桐水厂）数字化延伸刚刚启动，正是仪表数据层白空间。武水集团正在从'平台已建'转向'数据深化应用+乡镇延伸'阶段，iMS可在乡镇水厂仪表数据采集和质量管理环节介入。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -133,7 +138,12 @@
             "inferences": [
               "沈阳水务集团正处于智慧水务体系建设的战略规划/启动期——党委副书记亲自确认'全力推进'但尚未到设备采购阶段。三方合作聚焦鸿蒙水表迭代和漏损管控，说明仪表层正在规划升级但技术路线尚未锁定。三川智慧+软通动力提供国产终端+软件平台，但在线水质监测仪表、仪表健康诊断、多站点数据质量管理等环节仍可能有iMS接入空间——特别是如果iMS能在'仪表数据层'标准定义阶段介入。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -206,7 +216,12 @@
             "inferences": [
               "大运河水务是北京城市副中心水务建设投资主体，华立股份提供超滤膜+智慧水务数字化平台——这是一个刚签约的战略合作，处于项目定义/技术路线规划阶段。智慧水务数字化平台开发意味着仪表数据采集层、在线监测数据接入标准尚未锁定。如果iMS能在'数字化平台仪表数据层'定义阶段介入，有机会嵌入北京副中心水务数字底座。但华立股份自身有数字化平台能力，iMS需找到互补切入点。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -279,7 +294,12 @@
             "inferences": [
               "长鑫科技第五代量产确认+上海新厂设备招标启动+北京亦庄第二座12英寸规划——半导体超纯水系统需求将随扩产持续释放。上海新厂已进入设备招标（采购阶段），但北京亦庄第二座仍处于'正考虑'（战略规划阶段）。超纯水系统是晶圆厂核心工艺配套，iMS可在新厂超纯水系统仪表数据层建设和水质在线监测环节介入。北京亦庄第二座处于规划阶段，介入窗口最佳。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -421,7 +441,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "已有installed base，初始采购窗口关闭，但仪表生命周期/升级/替换机会存在"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -557,7 +580,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "已中标，初始采购窗口关闭；后续生命周期机会待评估"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -693,7 +719,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "已进入竞争性磋商阶段，影响窗口有限"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -829,7 +858,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "已进入招标阶段，技术规格基本冻结，影响窗口有限"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -968,7 +1000,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "数字化转型处于概念/规划阶段，水系统监测未明确纳入范围"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1105,7 +1140,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "环评公示阶段，但水系统需求未明确，需进一步验证才能判断影响窗口"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1245,7 +1283,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "环评拟审批公示9/20-9/24，处于审批阶段，监测方案仍可影响"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1384,7 +1425,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "环评拟审批公示阶段9/18-9/24，处于设计/审批阶段，可影响监测方案"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1522,7 +1566,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "环评报告书公示稿阶段，处于环评审批中，监测方案和仪表规格仍在定义中"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1667,7 +1714,10 @@
           "time_window_basis": {
             "source": "FACT",
             "note": "环评编制正在竞争性磋商阶段（截止9/29），施工资格预审刚发布9/17，规格尚未冻结，可影响水质监测策略和仪表规格"
-          }
+          },
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1735,7 +1785,12 @@
             "inferences": [
               "县级自来水厂提标改造+智慧水务建设项目，处于环评受理阶段(可研/环评)，项目名称明确包含'智慧水务'。逻辑链：水***改造→智慧水务建设→在线监测仪表部署需求→iMS Use Case(Instrument Monitoring/Multi-site Management)。虽然规模为县级，但'智慧水务'建设内容意味着需要在线仪表+数据采集+平台对接，存在iMS切入点。需Company Agent确认是否为Hach客户及规模。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -1752,10 +1807,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -1898,9 +1951,25 @@
             ],
             "next_validation_action": "关注环评审批结果；联系常德经开区环保分局了解废水排放要求"
           },
+          "opportunity": "年处理20000吨废锂电池正极材料资源化综合利用新建项目",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "项目规模较小(¥5000万)，水系统相关性弱，影响空间有限"
+          },
+          "customer_need": {
+            "description": "可能涉及少量废水，但处理需求不确定",
+            "evidence_type": "UNKNOWN",
+            "note": "无废水处理具体信息"
+          },
+          "operational_pain_points": {
+            "description": "Unknown",
+            "evidence_type": "UNKNOWN",
+            "note": "无方案信息"
+          },
+          "sales_summary": {
+            "description": "20000吨废锂电池正极材料资源化利用",
+            "evidence_type": "FACT",
+            "note": "环评拟审批公示明确"
           }
         },
         "enrichment_status": "radar_daily"
@@ -1913,10 +1982,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2060,9 +2127,25 @@
             ],
             "next_validation_action": "关注项目环评公示进展；联系奉新县高新区管委会获取联系人"
           },
+          "opportunity": "年拆解回收利用5万吨锂电池项目",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "项目极早期，但水系统相关性需验证"
+          },
+          "customer_need": {
+            "description": "锂电池拆解涉及废水，但处理方案未明确",
+            "evidence_type": "UNKNOWN",
+            "note": "无废水处理具体信息"
+          },
+          "operational_pain_points": {
+            "description": "Unknown",
+            "evidence_type": "UNKNOWN",
+            "note": "项目极早期，无方案信息"
+          },
+          "sales_summary": {
+            "description": "5万吨锂电池拆解回收项目",
+            "evidence_type": "FACT",
+            "note": "备案信息明确"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2075,10 +2158,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2223,9 +2304,25 @@
             ],
             "next_validation_action": "联系河北东光经济开发区管委会获取项目联系人"
           },
+          "opportunity": "年处理60000吨磷酸铁黑粉资源综合再生改建项目(含配套废水治理)",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "配套废水治理设施方案可能仍有影响空间"
+          },
+          "customer_need": {
+            "description": "配套废水治理是改建内容之一",
+            "evidence_type": "FACT",
+            "note": "获批文件明确含废水治理"
+          },
+          "operational_pain_points": {
+            "description": "现有废水治理设施需要改造",
+            "evidence_type": "UNKNOWN",
+            "note": "无具体方案信息"
+          },
+          "sales_summary": {
+            "description": "60000吨磷酸铁黑粉再生改建，含配套废水治理",
+            "evidence_type": "FACT",
+            "note": "获批文件明确"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2238,10 +2335,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2389,9 +2484,25 @@
             ],
             "next_validation_action": "联系云南云天化信息科技有限公司获取数字化项目负责人；了解现有在线监测覆盖范围"
           },
+          "opportunity": "智改数转网联数字化转型(在线监测/预测性维护/智能安全环保系统)",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "已有智控中心基础，但持续扩展中，新的监测点和数据整合需求可能仍有影响空间"
+          },
+          "customer_need": {
+            "description": "数字化转型是集团战略，但具体水质监测扩展的urgency未明确",
+            "evidence_type": "UNKNOWN",
+            "note": "无明确时间线和强制要求"
+          },
+          "operational_pain_points": {
+            "description": "已有智控中心和部分在线监测，但覆盖范围和数据整合程度未知",
+            "evidence_type": "INFERENCE",
+            "note": "从报道推断已有基础但可能不完整"
+          },
+          "sales_summary": {
+            "description": "集团级智改数转网联，推进在线监测、预测性维护、智能安全环保",
+            "evidence_type": "FACT",
+            "note": "人民日报报道明确"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2404,10 +2515,8 @@
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2553,9 +2662,25 @@
             ],
             "next_validation_action": "联系宜章氟化学循环产业开发区管委会获取项目联系人；通过志存锂业(江西)总部获取工程部门信息"
           },
+          "opportunity": "2万吨碳酸锂生产线综合利用技改项目(含浸出渣无害化处理和综合回收利用)",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "环评公示阶段，技改方案中的废水处理部分可能仍有影响空间"
+          },
+          "customer_need": {
+            "description": "浸出渣无害化处理涉及废水，需要环保合规",
+            "evidence_type": "INFERENCE",
+            "note": "技改内容涉及废物处理"
+          },
+          "operational_pain_points": {
+            "description": "现有废水处理设施可能需要改造",
+            "evidence_type": "UNKNOWN",
+            "note": "无公开信息显示技改废水处理方案"
+          },
+          "sales_summary": {
+            "description": "2万吨碳酸锂生产线技改，含浸出渣无害化和综合回收利用",
+            "evidence_type": "FACT",
+            "note": "环评公示明确"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2568,10 +2693,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2738,25 +2861,39 @@
             "vm10_good_lead": "WATCH - 招标阶段，影响窗口收窄，但有后续机会"
           },
           "tender_monitoring": true,
+          "opportunity": "水质净化厂新增预处理线(半导体废水)，日处理工业废水1.5万吨",
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "施工招标已发布，设计方案大概率已冻结，但仍有少量仪表选型空间"
+          },
+          "customer_need": {
+            "description": "半导体废水必须处理达标，预处理线是公用设施",
+            "evidence_type": "FACT",
+            "note": "环保法典要求"
+          },
+          "operational_pain_points": {
+            "description": "设计院已确定方案，规格可能已冻结",
+            "evidence_type": "INFERENCE",
+            "note": "施工招标已发布意味着设计接近完成"
+          },
+          "sales_summary": {
+            "description": "新增半导体废水预处理线，日处理1.5万吨工业废水",
+            "evidence_type": "FACT",
+            "note": "规划公示和招标文件明确"
           }
         },
         "enrichment_status": "radar_daily"
       },
       "enriched_contacts": [],
       "history": [],
-      "procurement_signal": false
+      "procurement_signal": true
     },
     {
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-17",
-      "quality_score": 2,
+      "quality_score": 4,
       "quality_missing": [
-        "项目与地区",
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -2923,9 +3060,25 @@
             "vm9_stage3_priority": "EPC/设计院→联系人→时间线→工艺流程",
             "vm10_good_lead": "PASS - 业务相关+行业合适+项目具体+有需求+采购概率高+时间窗口可进入"
           },
+          "opportunity": "年产7万吨新能源含氟材料生产项目(一期2.5万吨锂电池专用含氟溶剂)",
           "time_window_basis": {
             "source": "FACT",
             "note": "环评首次公示阶段，方案架构/水处理概念/监测策略/仪表规格/iMS需求均可影响"
+          },
+          "customer_need": {
+            "description": "含氟废水必须处理达标才能排放，环保合规是投产前置条件",
+            "evidence_type": "INFERENCE",
+            "note": "含氟材料行业性质决定，环保法典明确要求"
+          },
+          "operational_pain_points": {
+            "description": "新建项目，现有解决方案未知",
+            "evidence_type": "UNKNOWN",
+            "note": "无公开信息显示废水处理方案已确定"
+          },
+          "sales_summary": {
+            "description": "新建7万吨/年含氟材料生产线，配套三废治理设施",
+            "evidence_type": "FACT",
+            "note": "环评公示明确项目内容和产能"
           }
         },
         "enrichment_status": "radar_daily"
@@ -2945,7 +3098,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-16-003",
+        "lead_id": "OPP-2026-09-16-003",
         "company": {
           "company_name": "中芯京城二期-500亿12英寸晶圆厂新建",
           "location": null,
@@ -2994,7 +3147,12 @@
             "inferences": [
               "12英寸晶圆厂建设涉及大量超纯水(UPW)系统，需要在线监测TOC、电导率、pH等水质参数。新建晶圆厂意味着全新的在线监测仪表采购需求。但iMS的核心价值(仪表健康诊断/数据质量/资产管理)在半导体场景的适用性取决于客户是否有仪表统一管理需求，半导体行业仪表管理通常由工艺工程师和设备工程师负责，数字化管理需求与水务行业不同。逻辑链中等。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -3018,7 +3176,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-16-002",
+        "lead_id": "OPP-2026-09-16-002",
         "company": {
           "company_name": "合肥排水一体化改革-区级排水设施统一运维",
           "location": null,
@@ -3067,7 +3225,12 @@
             "inferences": [
               "排水一体化改革核心是从分散管理走向统一运维。580公里管网+36座泵站的统一管理意味着大量设备台账需要建立、在线监测仪表需要统一接入、运维标准需要统一制定。合肥已有城市生命线工程安全运行监测中心(7x24小时值守，数万套前端感知设备)，具备数字化基础。但排水设施统一运维后的设备生命周期管理、仪表健康诊断和预测性维护需求尚未被公开提及，这正是iMS可能切入的空间。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -3091,7 +3254,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-16-001",
+        "lead_id": "OPP-2026-09-16-001",
         "company": {
           "company_name": "万家寨水务控股集团新管理层+数字化转型窗口",
           "location": null,
@@ -3140,7 +3303,12 @@
             "inferences": [
               "省级千亿水务国企新管理层全面就位，正值十五五规划编制窗口。集团已有BIM和水利数字孪生应用突破，覆盖原水供应、引调水、污水处理全产业链，下属176家成员企业。如此规模的多水厂/多工程统一管理，天然产生设备资产管理、仪表统一监控和数据质量管理需求。新管理层有动力在十五五开局年推动数字化转型，但具体数字化路线和设备管理架构尚未公开。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -3157,9 +3325,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
-      "quality_score": 3,
+      "quality_score": 4,
       "quality_missing": [
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -3285,7 +3452,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "整改已完成，后续为运维管理，可影响空间有限"
-          }
+          },
+          "customer_need": "省环保督察强制整改，已完成验收 | FACT",
+          "operational_pain_points": "已建立异常数据闭环管理机制，但589个排口管理复杂 | INFERENCE",
+          "sales_summary": "环保督察整改完成，589个在线监测排口强化监管 | FACT"
         },
         "enrichment_status": "radar_daily"
       },
@@ -3297,9 +3467,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
-      "quality_score": 3,
+      "quality_score": 4,
       "quality_missing": [
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -3426,7 +3595,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "依托原有公辅工程，无新建水系统，可影响空间有限"
-          }
+          },
+          "customer_need": "环评审查中，技改为产能调整需要 | FACT",
+          "operational_pain_points": "使用现有公辅工程，新增水系统可能性低 | INFERENCE",
+          "sales_summary": "化工技改，新增多种香料产品线，依托现有公辅 | FACT"
         },
         "enrichment_status": "radar_daily"
       },
@@ -3438,9 +3610,8 @@
       "segment": "industrial",
       "category": "其他工业",
       "date": "2026-09-15",
-      "quality_score": 3,
+      "quality_score": 4,
       "quality_missing": [
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -3566,7 +3737,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "环评刚批准，现有污水站是否需要扩容/增加监测点尚未确定，可影响方案"
-          }
+          },
+          "customer_need": "环评已公示，食品加工废水必须达标排放 | FACT",
+          "operational_pain_points": "现有污水站保留使用，但新生产线可能增加废水负荷 | INFERENCE",
+          "sales_summary": "魔芋食品加工新项目，¥1亿，9000吨/年，保留现有污水站 | FACT"
         },
         "enrichment_status": "radar_daily"
       },
@@ -3578,9 +3752,8 @@
       "segment": "industrial",
       "category": "半导体",
       "date": "2026-09-15",
-      "quality_score": 3,
+      "quality_score": 4,
       "quality_missing": [
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -3706,7 +3879,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "环评刚批准，水系统方案和监测策略尚未定义，可影响方案架构和监测需求"
-          }
+          },
+          "customer_need": "环评已批准，项目建设为合规要求；半导体扩产周期 | FACT",
+          "operational_pain_points": "研磨废水委托外处理，可能不自行建设水处理设施 | INFERENCE",
+          "sales_summary": "新建半导体设备核心部件制造产线，一期¥5000万，300套/年 | FACT"
         },
         "enrichment_status": "radar_daily"
       },
@@ -3718,9 +3894,8 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-15",
-      "quality_score": 3,
+      "quality_score": 4,
       "quality_missing": [
-        "需求与现状",
         "联系人或招聘证据"
       ],
       "lead": {
@@ -3853,7 +4028,10 @@
           "time_window_basis": {
             "source": "INFERENCE",
             "note": "建设冲刺期，技术规格已冻结，后续为运维管理窗口"
-          }
+          },
+          "customer_need": "成品油需求萎缩+烯烃需求增长，技术突破驱动，市场必须 | FACT",
+          "operational_pain_points": "新工艺，水耗降低30%，具体水系统配置未知 | UNKNOWN",
+          "sales_summary": "新建全球首套原油直接裂解制烯烃装置，¥110亿+，建设冲刺期 | FACT"
         },
         "enrichment_status": "radar_daily"
       },
@@ -3872,7 +4050,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-14-003",
+        "lead_id": "OPP-2026-09-14-003",
         "company": {
           "company_name": "南阳六张网地下管网战略规划",
           "location": null,
@@ -3921,7 +4099,12 @@
             "inferences": [
               "智慧监测被明确列为六网之一，政策资金1600亿元已落地。南阳正在建立项目库，阶段最早。但iMS逻辑链偏弱：管***→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case可能适用。中间逻辑有多层可能，因为管网监测更偏流量/压力而非水质仪表。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -3945,7 +4128,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-14-002",
+        "lead_id": "OPP-2026-09-14-002",
         "company": {
           "company_name": "平顶山二次供水数字化转型战略合作",
           "location": null,
@@ -3994,7 +4177,12 @@
             "inferences": [
               "211座分散管理的泵房、设备老化、智慧化基础薄弱是典型的多站点管理痛点。客户已明确数字化转型方向，正在组建联合事业部制定技术路线。如果泵房智慧升级涉及在线仪表部署和数据采集，iMS的多站点管理、仪表健康诊断和预测性维护Use Case具有直接逻辑。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -4018,7 +4206,7 @@
         "联系人或招聘证据"
       ],
       "lead": {
-        "lead_id": "MUN-DAILY-2026-09-14-001",
+        "lead_id": "OPP-2026-09-14-001",
         "company": {
           "company_name": "上海浦东迎宾水厂（一期）新建工程",
           "location": null,
@@ -4067,7 +4255,12 @@
             "inferences": [
               "新建水厂意味着全新的在线水质监测仪表采购需求。当前处于设计方案公示阶段，仪表选型尚未进入施工图设计。如果浦东自来水公司计划建设智慧水厂或数字化平台，iMS的仪表健康诊断、数据质量管理和多站点管理Use Case具有逻辑合理性。但iMS是否适用取决于客户是否有数字化管理需求和多厂统一管理需求，目前公开信息不足以确认。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -7253,7 +7446,12 @@
             "inferences": [
               "提标改造刚通水（2026年2月），新设施进入运营初期——这是配套在线监测与数字化建设最自然的窗口：一*A出水合规强制在线监测，园区工业污水（六国化工化肥/磷化工背景）水质波动大对仪表寿命与可靠性要求高。公司体量小（6251万营收）、技术力量有限，依赖外部专业能力概率高；同时是威立雅体系内向下沉项目，可作为威立雅中国集团合作的实践样板（small showcase）。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -7326,7 +7524,12 @@
             "inferences": [
               "津滨是'存量仪表资产管理'的标准场景：43919台设施、500+噪声监测点、智能水表207万只——感知层规模可观且仍在扩容（漏损压降目标驱动）。其综合运营管理平台已含'资产管理'模块（GIS+巡检），但公开分享未展示仪表标定/健康/预测性维护能力。iMS价值在于：跨***表统一健康管理+标定周期管理+预测性维护，补足现有平台'仪表层'。管网运行总监公开分享成果，说明数字化建设是管理层关注重点。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -7399,7 +7602,12 @@
             "inferences": [
               "威立雅中国正处在集团级数智化投入期：新CEO定调+数智化平台建设+数字化岗位扩编三重信号共振。AQUAVISTA聚焦水厂运行优化（曝气/电耗/药耗），不覆盖仪表资产管理——iMS与其是互补层而非替代层。若能从集团层面建立'仪表数据层=第三方专业能力'的认知，或推动AQUAVISTA生态集成iMS，价值远大于单点项目。这是'集团/战略层面切入'方法论的最佳示范标的，需Company Agent先验证AQUAVISTA在华实际落地情况与集团数字团队的开放度。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -7472,7 +7680,12 @@
             "inferences": [
               "浦东威立雅是中国最大供水合资项目之一，管理层公开承认'数字化转型不能只展示数据'——这正是 iMS 的核心价值主张（仪表数据可信、可行动、驱动决策）。叠加2026年落地的新版上海水质标准（氯酸盐/铝/微生物指标收紧），监测点位增加+数据质量要求提高同时发生，是 iMS 进入的最佳时机：既***仪表健康管理需求，又有新标准驱动的新增监测需求。总经理是数字化转型意见领袖，决策层认知到位。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
@@ -7545,7 +7758,12 @@
             "inferences": [
               "合资公司刚注册+首个项目已签约落地（证明合资平台真实运转）+四个储备方向均在洽谈——这是威立雅在中国华南扩张的实体抓手。储备项目群处于战略规划/立项早期，若 iMS 在项目定义期建立'仪表数据层'标准认知，可在后续各项目招标/采购时自然进入技术规格。联油三期已进入施工准备（设计基本冻结）错过窗口可能性高，但同批次储备项目承接了提前量。"
             ]
-          }
+          },
+          "location": null,
+          "industry": null,
+          "customer_need": null,
+          "operational_pain_points": null,
+          "sales_summary": null
         },
         "enrichment_status": "radar_daily"
       },
