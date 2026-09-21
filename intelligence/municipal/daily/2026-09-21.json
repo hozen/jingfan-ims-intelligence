@@ -1,7 +1,7 @@
 {
   "date": "2026-09-21",
   "weekday": "Monday",
-  "version": "3.4.1-latest-snapshot",
+  "version": "v3.4",
   "scanner_summary": {
     "total_scanned": 39,
     "valid_triggers": 15,
@@ -18,7 +18,7 @@
     "new_opportunities_today": 4,
     "updated_opportunities_today": 0,
     "new_background_monitoring_today": 5,
-    "method_note": "累积快照持续更新；本次扫描新发现4条新Opportunity(沈阳水务/华立大运河/武汉城投47水厂/长鑫第五代量产)，5条新background_monitoring，4条新ecosystem，2条新policy，2条新competitive，4条新strategic_accounts。23条已存在Opportunity无阶段变化保持连续追踪。",
+    "method_note": "累积快照持续更新；本次扫描新发现4条新Opportunity(沈阳水务/华立大运河/武汉城投47水厂/长鑫第五代量产)，5条新background_monitoring(汉川/石首/彭山/乐山/武昌设备更新)，4条新ecosystem(鸿蒙水务/水发对标/甘肃水投/华立大运河)，2条新policy(浦东十五五/广西县域统管)，2条新competitive(E+H SAP HANA/E+H Heartbeat)，4条新strategic_accounts。23条已存在Opportunity无阶段变化保持连续追踪。",
     "cumulative_sources": [
       "2026-09-02",
       "2026-09-04",
@@ -5061,6 +5061,5 @@
     "three_stage_complete": true,
     "latest_json_updated": true,
     "md_report_generated": true
-  },
-  "run_type": "latest.json 累积快照（每次运行同步更新，反映当前所有仍有效线索）"
+  }
 }
