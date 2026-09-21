@@ -1,8 +1,8 @@
 {
  "metadata": {
   "version": "v3.3-master-consolidated",
-  "generated_date": "2026-09-12",
-  "last_update": "2026-09-13T08:00:00+08:00",
+  "generated_date": "2026-09-21",
+  "last_update": "2026-09-21T17:26:33+08:00",
   "description": "iMS Municipal Master Intelligence - Enriched Context (17 municipal leads incl. Pingdingshan, industrial content excluded per scope decision 2026-09-12)",
   "data_sources": [
    "intelligence/municipal/daily/2026-09-02.json",
@@ -16,7 +16,9 @@
   "consolidation": {
    "engine": "collect+merge+apply v1",
    "note": "全量归集历史 daily 至 master；跨日合并保留 history/source_lead_ids；contacts 回填 lead.contact_ids"
-  }
+  },
+  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-12; 24 added, 34 skipped, 5 pre-window)",
+  "merge_point": "2026-09-21"
  },
  "leads": [
   {
@@ -5793,6 +5795,1950 @@
     ]
    },
    "sales_insight_status": "strong"
+  },
+  {
+   "lead_id": "OPS-20260913-VEOL-001",
+   "original_signal": {
+    "company": "威立雅科学城环保科技(广州)有限公司储备项目群",
+    "opportunity": "威立雅科学城环保科技(广州)有限公司储备项目群",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划/立项",
+    "priority": 80,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+    "logic": "Customer Change(合资公司在华华南新布局+储备项目群) -> Digital Change(新建项目按威立雅集团数智化标准设计) -> Operational Problem(新设施需在线监测/数据采集/合规追溯，集团数智化平台需仪表层数据) -> Instrument/Data/Asset Management Need(新建项目仪表数字化配套) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链较完整但依赖'储备项目落地'，评WEAK偏上。",
+    "to_verify": {
+     "customer_identity": "威立雅科学城环保科技(广州)是否为Hach已有客户/SFDC账户？威立雅中国整体是否为战略客户？",
+     "installed_base": "联油三期已采购的仪表品牌与数量？合资公司有无联网仪表/数字化白空间？广州开发区现有项目仪表？",
+     "commercial_history": "威立雅中国与Hach历史合作记录？广州区域当前Pipeline？服务合同？",
+     "ims": "威立雅AQUAVISTA是否已绑定该项目/储备项目？是否已接触类似仪表管理产品？",
+     "account_sales": "威立雅(中国)Account Owner？华南Regional Owner？合资公司是否有人认领？"
+    },
+    "customer_need": "Customer Change(合资公司在华华南新布局+储备项目群) -> Digital Change(新建项目按威立雅集团数智化标准设计) -> Operational Problem(新设施需在线监测/数据采集/合规追溯，集团数智化平台需仪表层数据) -> Instrument/Data/Asset Management Need(新建项目仪表数字化配套) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链较完整但依赖'储备项目落地'，评WEAK偏上。",
+    "demand_hypothesis": "合资公司刚注册+首个项目已签约落地（证明合资平台真实运转）+四个储备方向均在洽谈——这是威立雅在中国华南扩张的实体抓手。储备项目群处于战略规划/立项早期，若 iMS 在项目定义期建立'仪表数据层'标准认知，可在后续各项目招标/采购时自然进入技术规格。联油三期已进入施工准备（设计基本冻结）错过窗口可能性高，但同批次储备项目承接了提前量。",
+    "contact_hint": "威立雅科学城环保科技(广州)有限公司项目团队（合资公司2026年6月注册）；广州开发区投促局项目对接人",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": "储备项目群处于洽谈/战略规划阶段（公开信息），对应>9个月介入窗口；联油三期已施工准备（2026-10），单独降级背景监控",
+    "source_urls": [
+     "https://gd.cri.cn/2026-09-02/14db247e-bc20-4ed8-8ed2-dc847f3228ab.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年6月威立雅与科学城(广州)投资集团合资成立威立雅科学城环保科技(广州)有限公司，聚焦绿色低碳/新污染物治理/CCUS等方向；首个项目联油三期炭黑工业烟气捕集与资源化利用零碳项目于2026年9月签约（总投资近1亿元，2026年10月施工、2027年6月投产试运营）；与广州开发区洽谈高品质回用水、可持续航空燃料(SAF)、动力电池资源化、工业废水深度治理与再生水回用等储备项目。威立雅中国CEO顾丽华2026年6月30日与广州市生态环境局座谈介绍集团业务与数智化平台。"
+     ],
+     "inferences": [
+      "合资公司刚注册+首个项目已签约落地（证明合资平台真实运转）+四个储备方向均在洽谈——这是威立雅在中国华南扩张的实体抓手。储备项目群处于战略规划/立项早期，若 iMS 在项目定义期建立'仪表数据层'标准认知，可在后续各项目招标/采购时自然进入技术规格。联油三期已进入施工准备（设计基本冻结）错过窗口可能性高，但同批次储备项目承接了提前量。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "威立雅科学城环保科技(广州)有限公司项目团队（合资公司2026年6月注册）；广州开发区投促局项目对接人",
+     "talk_what": "高品质回用水/SAF/电池回收/废水深度治理储备项目的技术路线选型时间表？联油三期已确定哪些在线监测与数字化供应商？合资公司数字化能力自建还是外购？",
+     "why_now": "合资公司刚注册三个月、储备项目尚在洽谈，技术路线与供应商锁定都未发生——影响需求定义的最佳窗口"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-13",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260913-VEOL-001"
+   ],
+   "source_files": [
+    "2026-09-13.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "威立雅科学城环保科技(广州)有限公司储备项目群",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Digital Operations",
+   "next_validation_questions": "高品质回用水/SAF/电池回收/废水深度治理储备项目的技术路线选型时间表？联油三期已确定哪些在线监测与数字化供应商？合资公司数字化能力自建还是外购？",
+   "history": [
+    {
+     "date": "2026-09-13",
+     "source_file": "2026-09-13.json",
+     "record_id": "OPS-20260913-VEOL-001",
+     "name": "威立雅科学城环保科技(广州)有限公司储备项目群"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260913-VEOL-001"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260913-VEOL-001"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260913-VEOL-002",
+   "original_signal": {
+    "company": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+    "opportunity": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+    "industry": "市政水务",
+    "opportunity_stage": "运营期数字化建设",
+    "priority": 79,
+    "potential_ims_use_case": "Instrument Health Diagnostics / Data Quality / Digital Operations",
+    "logic": "Customer Change(新水质标准DB31/T 1091-2025落地) -> Digital Change(智慧水厂'数运平台'运营深化) -> Operational Problem(平台沦为展示工具、缺复合型人才、新指标监测管控难) -> Instrument/Data/Asset Management Need(仪表数据质量与健康管理) -> Potential iMS Use Case(Instrument Health Diagnostics/Data Quality)。逻辑链完整且管理层公开发文印证，PASS。",
+    "to_verify": {
+     "customer_identity": "上海浦东威立雅是否Hach已有客户？上海城投水务与Hach合作关系？",
+     "installed_base": "居家桥水厂及浦东水厂在线仪表品牌/数量？联网仪表比例？数字平台白空间？",
+     "commercial_history": "浦东威立雅历史Hach销售/Opportunity？当前Pipeline？服务合同？",
+     "ims": "数运平台是否已有仪表管理模块？是否接触过类似iMS产品？AQUAVISTA是否在浦东有部署？",
+     "account_sales": "Account Owner是谁？上海区域客户关系强度？"
+    },
+    "customer_need": "Customer Change(新水质标准DB31/T 1091-2025落地) -> Digital Change(智慧水厂'数运平台'运营深化) -> Operational Problem(平台沦为展示工具、缺复合型人才、新指标监测管控难) -> Instrument/Data/Asset Management Need(仪表数据质量与健康管理) -> Potential iMS Use Case(Instrument Health Diagnostics/Data Quality)。逻辑链完整且管理层公开发文印证，PASS。",
+    "demand_hypothesis": "浦东威立雅是中国最大供水合资项目之一，管理层公开承认'数字化转型不能只展示数据'——这正是 iMS 的核心价值主张（仪表数据可信、可行动、驱动决策）。叠加2026年落地的新版上海水质标准（氯酸盐/铝/微生物指标收紧），监测点位增加+数据质量要求提高同时发生，是 iMS 进入的最佳时机：既有存量仪表健康管理需求，又有新标准驱动的新增监测需求。总经理是数字化转型意见领袖，决策层认知到位。",
+    "contact_hint": "上海浦东威立雅总经理王雪峰、副总经理孙坚伟（水质监测分管）、管网所副所长乔兴博",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "新版上海水质标准2026年落地，监测体系升级窗口当前打开（公开信息：孙坚伟2026年分享新标准管控需求）",
+    "source_urls": [
+     "http://m.article.zhongqi.group/uznews/941330article_613.shtml; https://mp.weixin.qq.com/s?__biz=MzA4OTA2MjY1Nw==&mid=2655071774"
+    ],
+    "evidence": {
+     "facts": [
+      "上海浦东威立雅（上海城投50%×威立雅50%，2002年成立50年合同）日供水200万m3，服务423万居民。居家桥智慧水厂10万m3/d 2023年9月开工、2024年底通水，采用深度处理（臭氧+生物活性炭）与'数运平台统管+机器人巡检'模式。总经理王雪峰公开发文：供水企业智慧化平台常沦为'数据展示工具'、不能直接解决业务问题、缺乏复合型人才。副总经理孙坚伟（2026年）提出新版上海水质标准DB31/T 1091-2025下氯酸盐、铝、微生物在线监测管控需求。浦威2025年大讨论确定智慧水厂建设+降低管网漏损率两大重点方向。"
+     ],
+     "inferences": [
+      "浦东威立雅是中国最大供水合资项目之一，管理层公开承认'数字化转型不能只展示数据'——这正是 iMS 的核心价值主张（仪表数据可信、可行动、驱动决策）。叠加2026年落地的新版上海水质标准（氯酸盐/铝/微生物指标收紧），监测点位增加+数据质量要求提高同时发生，是 iMS 进入的最佳时机：既有存量仪表健康管理需求，又有新标准驱动的新增监测需求。总经理是数字化转型意见领袖，决策层认知到位。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "上海浦东威立雅总经理王雪峰、副总经理孙坚伟（水质监测分管）、管网所副所长乔兴博",
+     "talk_what": "新标准下氯酸盐/铝/微生物监测点位布置与数据质量保障方案？居家桥'数运平台'是否覆盖仪表资产管理与预测性维护？'平台沦为数据展示工具'的痛点是否已有改进计划？",
+     "why_now": "新版上海水质标准2026年落地，监测体系升级窗口正在打开；王雪峰已公开发文论述转型痛点、孙坚伟已公开谈新标准监测——诉求明确且决策层可接触"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-13",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260913-VEOL-002"
+   ],
+   "source_files": [
+    "2026-09-13.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Health Diagnostics / Data Quality / Digital Operations",
+   "next_validation_questions": "新标准下氯酸盐/铝/微生物监测点位布置与数据质量保障方案？居家桥'数运平台'是否覆盖仪表资产管理与预测性维护？'平台沦为数据展示工具'的痛点是否已有改进计划？",
+   "history": [
+    {
+     "date": "2026-09-13",
+     "source_file": "2026-09-13.json",
+     "record_id": "OPS-20260913-VEOL-002",
+     "name": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260913-VEOL-002"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260913-VEOL-002"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260913-VEOL-003",
+   "original_signal": {
+    "company": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+    "opportunity": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+    "industry": "市政水务",
+    "opportunity_stage": "集团战略推进期",
+    "priority": 74,
+    "potential_ims_use_case": "Asset Management / Lifecycle Management / Instrument Monitoring",
+    "logic": "Customer Change(新CEO+集团数智化战略) -> Digital Change(数智化平台建设+岗位扩编) -> Operational Problem(100+项目仪表数据需统一管理；AQUAVISTA不覆盖仪表资产层) -> Instrument/Data/Asset Management Need(集团级仪表资产/数据管理平台) -> Potential iMS Use Case(Asset Management/Lifecycle)。逻辑链完整，PASS。",
+    "to_verify": {
+     "customer_identity": "威立雅(中国)环境服务有限公司是否为Hach集团已有客户？SFDC账户？",
+     "installed_base": "威立雅中国100+项目仪表统一管理现状？各项目公司联网仪表规模？数字化白空间总量？",
+     "commercial_history": "Hach与威立雅中国集团/子公司历史合作？当前Pipeline？",
+     "ims": "AQUAVISTA在中国实际落地客户名单？是否已评估过iMS或类似产品？平台是否预留第三方集成接口？",
+     "account_sales": "威立雅中国Account Owner？总部关系？区域协同机制？"
+    },
+    "customer_need": "Customer Change(新CEO+集团数智化战略) -> Digital Change(数智化平台建设+岗位扩编) -> Operational Problem(100+项目仪表数据需统一管理；AQUAVISTA不覆盖仪表资产层) -> Instrument/Data/Asset Management Need(集团级仪表资产/数据管理平台) -> Potential iMS Use Case(Asset Management/Lifecycle)。逻辑链完整，PASS。",
+    "demand_hypothesis": "威立雅中国正处在集团级数智化投入期：新CEO定调+数智化平台建设+数字化岗位扩编三重信号共振。AQUAVISTA聚焦水厂运行优化（曝气/电耗/药耗），不覆盖仪表资产管理——iMS与其是互补层而非替代层。若能从集团层面建立'仪表数据层=第三方专业能力'的认知，或推动AQUAVISTA生态集成iMS，价值远大于单点项目。这是'集团/战略层面切入'方法论的最佳示范标的，需Company Agent先验证AQUAVISTA在华实际落地情况与集团数字团队的开放度。",
+    "contact_hint": "威立雅(中国)环境服务数智化平台团队负责人、工业数字化高级经理（2026年公开招聘岗位）、CEO顾丽华战略团队",
+    "estimated_time_window": "6-18 months",
+    "time_window_basis": "集团数智化平台建设为中长期战略推进（顾丽华2026年6月公开介绍），对应6-18个月；AQUAVISTA生态集成需在平台架构固化前建立合作认知",
+    "source_urls": [
+     "https://sthjj.gz.gov.cn/gkmlpt/content/10/10886/post_10886699.html; https://mhuanbao.bjx.com.cn/mnews/20250403/1435425.shtml"
+    ],
+    "evidence": {
+     "facts": [
+      "威立雅中国50城100+项目8500+员工；注册资本2026年7月增至29.55亿元。CEO顾丽华2025年4月2日就任，公开强调'以数字化转型为抓手'；2026年6月30日与广州市生态环境局座谈介绍集团业务与数智化平台建设、应用情况。自有数字化产品线AQUAVISTA（Portal/Insight/Assist/Plant四模块，源自丹麦Krüger精确曝气，宣称省20-50%运行成本，全球100+水厂应用）与Hubgrade智颖能效中心（康师傅工厂案例）。2026年公开招聘工业数字化高级经理、全栈开发工程师(Python)、IT高级运维工程师。"
+     ],
+     "inferences": [
+      "威立雅中国正处在集团级数智化投入期：新CEO定调+数智化平台建设+数字化岗位扩编三重信号共振。AQUAVISTA聚焦水厂运行优化（曝气/电耗/药耗），不覆盖仪表资产管理——iMS与其是互补层而非替代层。若能从集团层面建立'仪表数据层=第三方专业能力'的认知，或推动AQUAVISTA生态集成iMS，价值远大于单点项目。这是'集团/战略层面切入'方法论的最佳示范标的，需Company Agent先验证AQUAVISTA在华实际落地情况与集团数字团队的开放度。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "威立雅(中国)环境服务数智化平台团队负责人、工业数字化高级经理（2026年公开招聘岗位）、CEO顾丽华战略团队",
+     "talk_what": "集团数智化平台中仪表层数据质量/资产管理/生命周期管理的定位？AQUAVISTA在华推广计划与生态集成策略？是否愿意集成第三方仪表管理能力？",
+     "why_now": "集团数智化平台建设期（2026年招聘软件/运维岗佐证投入扩编），技术架构未固化——建立'仪表数据层合作'认知的窗口，晚一年架构就锁定了"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-13",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260913-VEOL-003"
+   ],
+   "source_files": [
+    "2026-09-13.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+   "industry": "市政水务",
+   "customer_requirement": "Asset Management / Lifecycle Management / Instrument Monitoring",
+   "next_validation_questions": "集团数智化平台中仪表层数据质量/资产管理/生命周期管理的定位？AQUAVISTA在华推广计划与生态集成策略？是否愿意集成第三方仪表管理能力？",
+   "history": [
+    {
+     "date": "2026-09-13",
+     "source_file": "2026-09-13.json",
+     "record_id": "OPS-20260913-VEOL-003",
+     "name": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260913-VEOL-003"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260913-VEOL-003"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260913-VEOL-004",
+   "original_signal": {
+    "company": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+    "opportunity": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+    "industry": "市政水务",
+    "opportunity_stage": "运营期数字化扩展",
+    "priority": 72,
+    "potential_ims_use_case": "Asset Management / Instrument Health Diagnostics / Multi-site Management",
+    "logic": "Customer Change(管网设施43919台+感知层500+点位扩容) -> Digital Change(智慧管网四层架构及综合运营管理平台) -> Operational Problem(感知数据质量/仪表标定/故障管理/多系统一致性) -> Instrument/Data/Asset Management Need(仪表层资产管理) -> Potential iMS Use Case(Asset Management/Instrument Health Diagnostics)。逻辑链完整，PASS。",
+    "to_verify": {
+     "customer_identity": "天津津滨威立雅是否Hach已有客户？天津水务集团体系关系？",
+     "installed_base": "感知层在线仪表品牌分布与数量？噪声监测设备厂商？联网情况？",
+     "commercial_history": "天津区域Hach历史销售？津滨威立雅采购记录？",
+     "ims": "综合运营管理平台是否有仪表健康/标定管理模块？是否接触过iMS？",
+     "account_sales": "天津Account Owner？滨海新区客户关系？"
+    },
+    "customer_need": "Customer Change(管网设施43919台+感知层500+点位扩容) -> Digital Change(智慧管网四层架构及综合运营管理平台) -> Operational Problem(感知数据质量/仪表标定/故障管理/多系统一致性) -> Instrument/Data/Asset Management Need(仪表层资产管理) -> Potential iMS Use Case(Asset Management/Instrument Health Diagnostics)。逻辑链完整，PASS。",
+    "demand_hypothesis": "津滨是'存量仪表资产管理'的标准场景：43919台设施、500+噪声监测点、智能水表207万只——感知层规模可观且仍在扩容（漏损压降目标驱动）。其综合运营管理平台已含'资产管理'模块（GIS+巡检），但公开分享未展示仪表标定/健康/预测性维护能力。iMS价值在于：跨品牌仪表统一健康管理+标定周期管理+预测性维护，补足现有平台'仪表层'。管网运行总监公开分享成果，说明数字化建设是管理层关注重点。",
+    "contact_hint": "津滨威立雅管网运行总监王燮（2025年供水高峰论坛主讲）、综合运营管理平台负责人",
+    "estimated_time_window": "6-12 months",
+    "time_window_basis": "感知层扩容持续推进（2025年公开分享成果，2026年仍处建设期），对应6-12个月",
+    "source_urls": [
+     "https://stock.10jqka.com.cn/20251104/c672227183.shtml"
+    ],
+    "evidence": {
+     "facts": [
+      "天津津滨威立雅（天津水务集团51%×威立雅49%，2005年成立）供水管网4074km、年供水3.2亿m3、用户142.8万户、智能水表占比72.84%（207.7万只）；2025年智慧管网系统分享：感知/网络/平台/应用四层架构、综合运营管理平台（GIS+资产管理+巡检+风险评估）、在线水力模型2021年上线、卫星探漏2021-2024检出率54%（1243个疑似点）、噪声相关监测布点500+、管网健康指数92.35分、漏损率9.19%。管网设施43919台、空间匹配率98.15%。"
+     ],
+     "inferences": [
+      "津滨是'存量仪表资产管理'的标准场景：43919台设施、500+噪声监测点、智能水表207万只——感知层规模可观且仍在扩容（漏损压降目标驱动）。其综合运营管理平台已含'资产管理'模块（GIS+巡检），但公开分享未展示仪表标定/健康/预测性维护能力。iMS价值在于：跨品牌仪表统一健康管理+标定周期管理+预测性维护，补足现有平台'仪表层'。管网运行总监公开分享成果，说明数字化建设是管理层关注重点。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "津滨威立雅管网运行总监王燮（2025年供水高峰论坛主讲）、综合运营管理平台负责人",
+     "talk_what": "500+噪声监测点与流量/压力/水质仪表的标定周期与故障处理现状？管网健康指数92.35的仪表数据链路是否够稳？平台'资产管理'模块是否覆盖仪表生命周期？",
+     "why_now": "漏损压降9.19%目标驱动感知层持续扩容；2025年成果公开分享说明建设仍在推进，且既有感知仪表进入运维高峰期"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-13",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260913-VEOL-004"
+   ],
+   "source_files": [
+    "2026-09-13.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+   "industry": "市政水务",
+   "customer_requirement": "Asset Management / Instrument Health Diagnostics / Multi-site Management",
+   "next_validation_questions": "500+噪声监测点与流量/压力/水质仪表的标定周期与故障处理现状？管网健康指数92.35的仪表数据链路是否够稳？平台'资产管理'模块是否覆盖仪表生命周期？",
+   "history": [
+    {
+     "date": "2026-09-13",
+     "source_file": "2026-09-13.json",
+     "record_id": "OPS-20260913-VEOL-004",
+     "name": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260913-VEOL-004"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260913-VEOL-004"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260913-VEOL-005",
+   "original_signal": {
+    "company": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+    "opportunity": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+    "industry": "市政水务",
+    "opportunity_stage": "运营初期（已通水）",
+    "priority": 70,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+    "logic": "Customer Change(提标改造2026-02通水) -> Digital Change(新设施在线监测配套建设) -> Operational Problem(一级A合规+工业污水波动+体量小IT人力有限) -> Instrument/Data/Asset Management Need(在线监测仪表配置与运维) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链完整，PASS。",
+    "to_verify": {
+     "customer_identity": "铜陵六国威立雅是否Hach已有客户？六国化工集团其他厂区仪表关系？",
+     "installed_base": "提标改造后在线仪表品牌/数量？有无Hach仪表？联网情况？",
+     "commercial_history": "安徽/铜陵区域Hach历史销售？该厂采购记录？",
+     "ims": "厂区是否已有SCADA/数据平台？接触过仪表管理工具吗？",
+     "account_sales": "安徽Account Owner？六国化工/威立雅体系销售协同？"
+    },
+    "customer_need": "Customer Change(提标改造2026-02通水) -> Digital Change(新设施在线监测配套建设) -> Operational Problem(一级A合规+工业污水波动+体量小IT人力有限) -> Instrument/Data/Asset Management Need(在线监测仪表配置与运维) -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链完整，PASS。",
+    "demand_hypothesis": "提标改造刚通水（2026年2月），新设施进入运营初期——这是配套在线监测与数字化建设最自然的窗口：一级A出水合规强制在线监测，园区工业污水（六国化工化肥/磷化工背景）水质波动大对仪表寿命与可靠性要求高。公司体量小（6251万营收）、技术力量有限，依赖外部专业能力概率高；同时是威立雅体系内向下沉项目，可作为威立雅中国集团合作的实践样板（small showcase）。",
+    "contact_hint": "铜陵六国威立雅总经理米向荣（法定代表人）、运营/技术负责人",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "2026年2月通水，运营体系与数字化配置尚未固化——3-6个月窗口期",
+    "source_urls": [
+     "https://baike.baidu.com/item/铜陵六国威立雅水务有限责任公司/51469532"
+    ],
+    "evidence": {
+     "facts": [
+      "铜陵六国威立雅（威立雅70%×安徽六国化工30%，2013年成立）污水处理设施提标改造工程14400m3/d、一级A标准，2025年3月开工奠基、2026年2月通水；公司为高新技术企业/专精特新中小企业，2024年营收6251万元；位于铜陵大桥经济开发区，服务园区工业污水。改造内容包括出水标准提升至一级A。"
+     ],
+     "inferences": [
+      "提标改造刚通水（2026年2月），新设施进入运营初期——这是配套在线监测与数字化建设最自然的窗口：一级A出水合规强制在线监测，园区工业污水（六国化工化肥/磷化工背景）水质波动大对仪表寿命与可靠性要求高。公司体量小（6251万营收）、技术力量有限，依赖外部专业能力概率高；同时是威立雅体系内向下沉项目，可作为威立雅中国集团合作的实践样板（small showcase）。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "铜陵六国威立雅总经理米向荣（法定代表人）、运营/技术负责人",
+     "talk_what": "提标后在线监测仪表配置与标定管理？一级A出水数据质量保障？园区工业污水对仪表寿命的影响与运维投入？",
+     "why_now": "2026年2月刚通水，运营体系与数字化配置尚未固化——建立仪表资产管理习惯的最佳窗口期"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-13",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260913-VEOL-005"
+   ],
+   "source_files": [
+    "2026-09-13.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Digital Operations",
+   "next_validation_questions": "提标后在线监测仪表配置与标定管理？一级A出水数据质量保障？园区工业污水对仪表寿命的影响与运维投入？",
+   "history": [
+    {
+     "date": "2026-09-13",
+     "source_file": "2026-09-13.json",
+     "record_id": "OPS-20260913-VEOL-005",
+     "name": "铜陵六国威立雅：提标改造通水后运营数字化配套"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260913-VEOL-005"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260913-VEOL-005"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-14-001",
+   "original_signal": {
+    "company": "上海浦东迎宾水厂（一期）新建工程",
+    "opportunity": "上海浦东迎宾水厂（一期）新建工程",
+    "industry": "市政水务",
+    "opportunity_stage": "初步设计/设计阶段",
+    "priority": "P2",
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+    "logic": "新建水厂→需要在线仪表→仪表数据需接入平台→多厂管理可能存在数字化白空间→iMS Use Case成立但需验证 ✅逻辑链通顺",
+    "to_verify": {
+     "customer_identity": "浦东新区自来水有限公司是否为Hach客户？SFDC Account是否存在？是否为战略客户？",
+     "installed_base": "浦东自来水公司现有水厂数量？在线仪表类型/数量？是否有联网仪表？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "新建水厂→需要在线仪表→仪表数据需接入平台→多厂管理可能存在数字化白空间→iMS Use Case成立但需验证 ✅逻辑链通顺",
+    "demand_hypothesis": "新建水厂意味着全新的在线水质监测仪表采购需求。当前处于设计方案公示阶段，仪表选型尚未进入施工图设计。如果浦东自来水公司计划建设智慧水厂或数字化平台，iMS的仪表健康诊断、数据质量管理和多站点管理Use Case具有逻辑合理性。但iMS是否适用取决于客户是否有数字化管理需求和多厂统一管理需求，目前公开信息不足以确认。",
+    "contact_hint": "上海浦东新区自来水有限公司工程部/设备部负责人；设计单位给排水专业负责人（设计单位未公开，需Company Agent确认）",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月10日，上海市浦东新区规划和自然资源局发布迎宾水厂（一期）新建工程（川沙城镇水厂迁建工程）建设工程设计方案总平面图调整公示。建设单位为上海浦东新区自来水有限公司。建设地点：浦东新区川沙新镇。建设工程性质：新建水厂。来源：pudong.gov.cn（官方权威）。"
+     ],
+     "inferences": [
+      "新建水厂意味着全新的在线水质监测仪表采购需求。当前处于设计方案公示阶段，仪表选型尚未进入施工图设计。如果浦东自来水公司计划建设智慧水厂或数字化平台，iMS的仪表健康诊断、数据质量管理和多站点管理Use Case具有逻辑合理性。但iMS是否适用取决于客户是否有数字化管理需求和多厂统一管理需求，目前公开信息不足以确认。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "上海浦东新区自来水有限公司工程部/设备部负责人；设计单位给排水专业负责人（设计单位未公开，需Company Agent确认）",
+     "talk_what": "新水厂在线水质监测仪表选型方案是否已确定？智慧水务平台是否规划第三方仪表数据接入接口？",
+     "why_now": "建设工程设计方案总平面图调整于9月10日公示，仪表选型尚未进入施工图设计阶段"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-14",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-14-001"
+   ],
+   "source_files": [
+    "2026-09-14.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "上海浦东迎宾水厂（一期）新建工程",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Multi-site Management",
+   "next_validation_questions": "新水厂在线水质监测仪表选型方案是否已确定？智慧水务平台是否规划第三方仪表数据接入接口？",
+   "history": [
+    {
+     "date": "2026-09-14",
+     "source_file": "2026-09-14.json",
+     "record_id": "OPP-2026-09-14-001",
+     "name": "上海浦东迎宾水厂（一期）新建工程"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-14-001"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-14-001"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-14-002",
+   "original_signal": {
+    "company": "平顶山二次供水数字化转型战略合作",
+    "opportunity": "平顶山二次供水数字化转型战略合作",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划/方案",
+    "priority": "P2",
+    "potential_ims_use_case": "Multi-site Management / Instrument Health Diagnostics / Predictive Maintenance",
+    "logic": "211座分散泵房→设备老化+智慧化基础薄弱→需要统一监控与诊断→多站点仪表管理需求→iMS Multi-site Management Use Case ✅逻辑链通顺",
+    "to_verify": {
+     "customer_identity": "平顶山自来水（二次供水）有限公司是否为Hach客户？SFDC Account是否存在？",
+     "installed_base": "211座泵房现有在线仪表类型/数量？是否有联网仪表？故障率数据？",
+     "commercial_history": "历史销售/Opportunity？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS或类似数字化产品？河南智慧水务公司的平台是否已部署？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？竞争对手是否已接触？"
+    },
+    "customer_need": "211座分散泵房→设备老化+智慧化基础薄弱→需要统一监控与诊断→多站点仪表管理需求→iMS Multi-site Management Use Case ✅逻辑链通顺",
+    "demand_hypothesis": "211座分散管理的泵房、设备老化、智慧化基础薄弱是典型的多站点管理痛点。客户已明确数字化转型方向，正在组建联合事业部制定技术路线。如果泵房智慧升级涉及在线仪表部署和数据采集，iMS的多站点管理、仪表健康诊断和预测性维护Use Case具有直接逻辑。",
+    "contact_hint": "平顶山自来水二次供水有限公司总经理代德山（公开报道提及）；联合事业部技术负责人（需Company Agent确认具体人选）",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://baijiahao.baidu.com/s?id=1875927833954203215"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月9日，平顶山自来水二次供水有限公司与河南智慧水务公司签署战略合作框架协议。双方聚焦二次供水数字化、智慧化升级。平顶山自来水二次供水有限公司接管泵房211座，服务居民11.5万户，覆盖人口约35万人。总经理代德山在签约仪式上表示企业数字化转型势在眉睫。来源：baijiahao.baidu.com（中可信度）。"
+     ],
+     "inferences": [
+      "211座分散管理的泵房、设备老化、智慧化基础薄弱是典型的多站点管理痛点。客户已明确数字化转型方向，正在组建联合事业部制定技术路线。如果泵房智慧升级涉及在线仪表部署和数据采集，iMS的多站点管理、仪表健康诊断和预测性维护Use Case具有直接逻辑。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "平顶山自来水二次供水有限公司总经理代德山（公开报道提及）；联合事业部技术负责人（需Company Agent确认具体人选）",
+     "talk_what": "211座泵房现有在线仪表配置与故障率数据如何？数字化平台是否支持多品牌仪表统一接入与远程校准？",
+     "why_now": "战略合作框架9月9日刚签署，联合事业部正在组建，具体技术路线和设备选型尚未确定"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-14",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-14-002"
+   ],
+   "source_files": [
+    "2026-09-14.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "平顶山二次供水数字化转型战略合作",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Instrument Health Diagnostics / Predictive Maintenance",
+   "next_validation_questions": "211座泵房现有在线仪表配置与故障率数据如何？数字化平台是否支持多品牌仪表统一接入与远程校准？",
+   "history": [
+    {
+     "date": "2026-09-14",
+     "source_file": "2026-09-14.json",
+     "record_id": "OPP-2026-09-14-002",
+     "name": "平顶山二次供水数字化转型战略合作"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-14-002"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-14-002"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-14-003",
+   "original_signal": {
+    "company": "南阳六张网地下管网战略规划",
+    "opportunity": "南阳六张网地下管网战略规划",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": "P3",
+    "potential_ims_use_case": "Multi-site Management / Asset Management / Unknown",
+    "logic": "管网改造+智慧监测→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case ⚠️逻辑链有断层，Use Case标注含Unknown",
+    "to_verify": {
+     "customer_identity": "南阳市住建局/南阳市水务集团是否为Hach客户？",
+     "installed_base": "南阳市现有管网在线监测站点数量？仪表类型？",
+     "commercial_history": "历史销售？Pipeline？",
+     "ims": "是否已有iMS？是否有数字化平台？",
+     "account_sales": "Account Owner？Regional Owner？"
+    },
+    "customer_need": "管网改造+智慧监测→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case ⚠️逻辑链有断层，Use Case标注含Unknown",
+    "demand_hypothesis": "智慧监测被明确列为六网之一，政策资金1600亿元已落地。南阳正在建立项目库，阶段最早。但iMS逻辑链偏弱：管网改造→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case可能适用。中间逻辑有多层可能，因为管网监测更偏流量/压力而非水质仪表。",
+    "contact_hint": "南阳市住建局管网科/市政科负责人（公开会议由市住建局召集）",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://m.nanyang.gov.cn/2026/09-09/1432795.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月9日，南阳市住建局召开地下管网项目谋划储备座谈会。会议明确：城市地下管网升级为国家重点工程，十五五期间全国改造77万公里；2026年地下管网专项支持资金1600亿元；重点投向含智慧监测。会议提出四级梯次项目库和标准化谋划路径。来源：nanyang.gov.cn（官方权威）。"
+     ],
+     "inferences": [
+      "智慧监测被明确列为六网之一，政策资金1600亿元已落地。南阳正在建立项目库，阶段最早。但iMS逻辑链偏弱：管网改造→可能配套在线监测仪表→可能产生多站点管理需求→iMS Use Case可能适用。中间逻辑有多层可能，因为管网监测更偏流量/压力而非水质仪表。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "南阳市住建局管网科/市政科负责人（公开会议由市住建局召集）",
+     "talk_what": "智慧监测作为六网之一，项目库建设中对在线仪表监测的预算编制口径是什么？排水/供水管网改造是否配套在线水质监测？",
+     "why_now": "项目谋划储备座谈会刚召开（9月9日），四级梯次项目库正在建立，标准化路径刚明确"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-14",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-14-003"
+   ],
+   "source_files": [
+    "2026-09-14.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "南阳六张网地下管网战略规划",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Asset Management / Unknown",
+   "next_validation_questions": "智慧监测作为六网之一，项目库建设中对在线仪表监测的预算编制口径是什么？排水/供水管网改造是否配套在线水质监测？",
+   "history": [
+    {
+     "date": "2026-09-14",
+     "source_file": "2026-09-14.json",
+     "record_id": "OPP-2026-09-14-003",
+     "name": "南阳六张网地下管网战略规划"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-14-003"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-14-003"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-16-001",
+   "original_signal": {
+    "company": "万家寨水务控股集团新管理层+数字化转型窗口",
+    "opportunity": "万家寨水务控股集团新管理层+数字化转型窗口",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": "P2",
+    "potential_ims_use_case": "Digital Operations / Multi-site Management / Asset Management",
+    "logic": "省级千亿水务国企新管理层→十五五数字化转型需求→多水厂/多工程统一管理→设备/仪表资产管理需求→iMS Multi-site Management/Digital Operations Use Case ✅逻辑链通顺",
+    "to_verify": {
+     "customer_identity": "万家寨水控集团是否为Hach客户？SFDC Account是否存在？是否为战略客户？下属176家成员企业中是否有Hach客户？",
+     "installed_base": "集团下属水厂/泵站数量？在线仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "省级千亿水务国企新管理层→十五五数字化转型需求→多水厂/多工程统一管理→设备/仪表资产管理需求→iMS Multi-site Management/Digital Operations Use Case ✅逻辑链通顺",
+    "demand_hypothesis": "省级千亿水务国企新管理层全面就位，正值十五五规划编制窗口。集团已有BIM和水利数字孪生应用突破，覆盖原水供应、引调水、污水处理全产业链，下属176家成员企业。如此规模的多水厂/多工程统一管理，天然产生设备资产管理、仪表统一监控和数据质量管理需求。新管理层有动力在十五五开局年推动数字化转型，但具体数字化路线和设备管理架构尚未公开。",
+    "contact_hint": "万家寨水控集团信息化/设备管理部负责人（具体人选未公开，需Company Agent确认）；或集团下属阳泉水务公司",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://baijiahao.baidu.com/s?id=1875928422953056244"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年8月31日，山西省人民政府发布任命(晋政任〔2026〕51号)：常建忠任万家寨水务控股集团有限公司副董事长，提名为总经理人选。9月7日，常建忠以集团党委副书记、副董事长、总经理身份主持集团党委(扩大)会议。此前7月25日，郭建文已升任集团党委书记、董事长。集团注册资本100亿元，资产总额931亿元，从业人员12000余人，是山西省唯一全产业链水务水利企业。来源：山西省政府公报/baijiahao.baidu.com(官方权威)。"
+     ],
+     "inferences": [
+      "省级千亿水务国企新管理层全面就位，正值十五五规划编制窗口。集团已有BIM和水利数字孪生应用突破，覆盖原水供应、引调水、污水处理全产业链，下属176家成员企业。如此规模的多水厂/多工程统一管理，天然产生设备资产管理、仪表统一监控和数据质量管理需求。新管理层有动力在十五五开局年推动数字化转型，但具体数字化路线和设备管理架构尚未公开。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "万家寨水控集团信息化/设备管理部负责人（具体人选未公开，需Company Agent确认）；或集团下属阳泉水务公司",
+     "talk_what": "集团十五五数字化转型规划中，多水厂/多工程在线监测仪表统一管理平台是否已纳入？BIM和数字孪生系统是否支持第三方仪表数据接入？",
+     "why_now": "新任总经理常建忠9月7日首次以该身份主持集团党委会议，新班子刚到位，十五五规划正在编制，数字化转型方向未锁定"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-16",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-16-001"
+   ],
+   "source_files": [
+    "2026-09-16.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "万家寨水务控股集团新管理层+数字化转型窗口",
+   "industry": "市政水务",
+   "customer_requirement": "Digital Operations / Multi-site Management / Asset Management",
+   "next_validation_questions": "集团十五五数字化转型规划中，多水厂/多工程在线监测仪表统一管理平台是否已纳入？BIM和数字孪生系统是否支持第三方仪表数据接入？",
+   "history": [
+    {
+     "date": "2026-09-16",
+     "source_file": "2026-09-16.json",
+     "record_id": "OPP-2026-09-16-001",
+     "name": "万家寨水务控股集团新管理层+数字化转型窗口"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-16-001"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-16-001"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-16-002",
+   "original_signal": {
+    "company": "合肥排水一体化改革-区级排水设施统一运维",
+    "opportunity": "合肥排水一体化改革-区级排水设施统一运维",
+    "industry": "市政水务",
+    "opportunity_stage": "运营模式变化/正在执行",
+    "priority": "P2",
+    "potential_ims_use_case": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
+    "logic": "排水一体化→580km管网+36座泵站统一运维→设备台账建立+运维标准统一→仪表统一接入与资产管理需求→iMS Multi-site Management/Asset Management Use Case ✅逻辑链通顺",
+    "to_verify": {
+     "customer_identity": "合肥水务集团是否为Hach客户？SFDC Account是否存在？",
+     "installed_base": "36座泵站现有在线仪表品牌/数量？管网监测设备类型？合肥城市生命线工程是否使用Hach仪表？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？泵站运维服务招标是否包含仪表采购？",
+     "ims": "是否已有iMS？合肥城市生命线工程监测中心数据底座是否支持第三方仪表接入？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "排水一体化→580km管网+36座泵站统一运维→设备台账建立+运维标准统一→仪表统一接入与资产管理需求→iMS Multi-site Management/Asset Management Use Case ✅逻辑链通顺",
+    "demand_hypothesis": "排水一体化改革核心是从分散管理走向统一运维。580公里管网+36座泵站的统一管理意味着大量设备台账需要建立、在线监测仪表需要统一接入、运维标准需要统一制定。合肥已有城市生命线工程安全运行监测中心(7x24小时值守，数万套前端感知设备)，具备数字化基础。但排水设施统一运维后的设备生命周期管理、仪表健康诊断和预测性维护需求尚未被公开提及，这正是iMS可能切入的空间。",
+    "contact_hint": "合肥水务集团排水公司设备管理部/运维管理负责人；或合肥城市生命线工程安全运行监测中心",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://www.h2o-china.com/news/364804.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月3日，庐阳区人民政府与合肥水务集团签订公共排水设施移交委托运维管理协议。庐阳区辖区内580.43公里公共排水管网、36座排水泵站及雨水调蓄池等设施正式移交水务集团运维管理。此前8月4日，瑶海区已率先签约。合肥已入选全国首批供排水综合管理重点城市，力争2026年底前全面实现市区两级排水设施统一管理。来源：h2o-china.com/hbzhan.com(官方权威/中)。"
+     ],
+     "inferences": [
+      "排水一体化改革核心是从分散管理走向统一运维。580公里管网+36座泵站的统一管理意味着大量设备台账需要建立、在线监测仪表需要统一接入、运维标准需要统一制定。合肥已有城市生命线工程安全运行监测中心(7x24小时值守，数万套前端感知设备)，具备数字化基础。但排水设施统一运维后的设备生命周期管理、仪表健康诊断和预测性维护需求尚未被公开提及，这正是iMS可能切入的空间。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "合肥水务集团排水公司设备管理部/运维管理负责人；或合肥城市生命线工程安全运行监测中心",
+     "talk_what": "统一运维后36座泵站在线监测仪表台账建立进展？设备生命周期管理和远程运维平台是否规划多品牌仪表统一接入？",
+     "why_now": "庐阳区9月3日刚签约移交，正在逐站建立一站一册泵站台账，设备管理架构和运维标准正在搭建"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-16",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-16-002"
+   ],
+   "source_files": [
+    "2026-09-16.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "合肥排水一体化改革-区级排水设施统一运维",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Asset Management / Instrument Health Diagnostics",
+   "next_validation_questions": "统一运维后36座泵站在线监测仪表台账建立进展？设备生命周期管理和远程运维平台是否规划多品牌仪表统一接入？",
+   "history": [
+    {
+     "date": "2026-09-16",
+     "source_file": "2026-09-16.json",
+     "record_id": "OPP-2026-09-16-002",
+     "name": "合肥排水一体化改革-区级排水设施统一运维"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-16-002"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-16-002"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-16-003",
+   "original_signal": {
+    "company": "中芯京城二期-500亿12英寸晶圆厂新建",
+    "opportunity": "中芯京城二期-500亿12英寸晶圆厂新建",
+    "industry": "市政水务",
+    "opportunity_stage": "立项/规划",
+    "priority": "P3",
+    "potential_ims_use_case": "Unknown",
+    "logic": "新晶圆厂建设→超纯水系统需求→在线监测仪表(TOC/电导率/pH)→仪表数据管理需求？→iMS Use Case不确定 ⚠️逻辑链在仪表数据管理需求环节存在断裂",
+    "to_verify": {
+     "customer_identity": "中芯国际/中芯京城是否为Hach客户？SFDC Account是否存在？",
+     "installed_base": "中芯京城一期水系统仪表配置？在线仪表类型/数量？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？",
+     "ims": "是否已有iMS？半导体行业是否有类似数字化产品？",
+     "account_sales": "Account Owner？Regional Owner？"
+    },
+    "customer_need": "新晶圆厂建设→超纯水系统需求→在线监测仪表(TOC/电导率/pH)→仪表数据管理需求？→iMS Use Case不确定 ⚠️逻辑链在仪表数据管理需求环节存在断裂",
+    "demand_hypothesis": "12英寸晶圆厂建设涉及大量超纯水(UPW)系统，需要在线监测TOC、电导率、pH等水质参数。新建晶圆厂意味着全新的在线监测仪表采购需求。但iMS的核心价值(仪表健康诊断/数据质量/资产管理)在半导体场景的适用性取决于客户是否有仪表统一管理需求，半导体行业仪表管理通常由工艺工程师和设备工程师负责，数字化管理需求与水务行业不同。逻辑链中等。",
+    "contact_hint": "中芯国际设备工程部/水系统负责人（未公开，需Company Agent确认）；或新厂设计院水工艺工程师",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://caifuhao.eastmoney.com/news/20260913055359380377170"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月12日，据财联社报道，中芯京城二期用地成交，总投资不低于500亿元。为12英寸晶圆厂新建项目。全国12寸扩产潮共振：长鑫存储设计产能12万片产线投产、中芯京城二期用地成交。来源：caifuhao.eastmoney.com(官方权威)。"
+     ],
+     "inferences": [
+      "12英寸晶圆厂建设涉及大量超纯水(UPW)系统，需要在线监测TOC、电导率、pH等水质参数。新建晶圆厂意味着全新的在线监测仪表采购需求。但iMS的核心价值(仪表健康诊断/数据质量/资产管理)在半导体场景的适用性取决于客户是否有仪表统一管理需求，半导体行业仪表管理通常由工艺工程师和设备工程师负责，数字化管理需求与水务行业不同。逻辑链中等。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "中芯国际设备工程部/水系统负责人（未公开，需Company Agent确认）；或新厂设计院水工艺工程师",
+     "talk_what": "新厂超纯水系统在线监测仪表配置方案是否启动？仪表数据管理平台是否有统一管理需求？",
+     "why_now": "二期用地9月12日刚成交，处于前期规划阶段，技术方案和设备选型远未启动"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-16",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-16-003"
+   ],
+   "source_files": [
+    "2026-09-16.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "中芯京城二期-500亿12英寸晶圆厂新建",
+   "industry": "市政水务",
+   "customer_requirement": "Unknown",
+   "next_validation_questions": "新厂超纯水系统在线监测仪表配置方案是否启动？仪表数据管理平台是否有统一管理需求？",
+   "history": [
+    {
+     "date": "2026-09-16",
+     "source_file": "2026-09-16.json",
+     "record_id": "OPP-2026-09-16-003",
+     "name": "中芯京城二期-500亿12英寸晶圆厂新建"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-16-003"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-16-003"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-16-004",
+   "original_signal": {
+    "company": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+    "opportunity": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+    "industry": "市政水务",
+    "opportunity_stage": "立项/建设准备",
+    "priority": "P3",
+    "potential_ims_use_case": "Unknown",
+    "logic": "新晶圆厂扩建→超纯水系统需求→在线监测仪表→多厂统一管理需求？→iMS Use Case不确定 ⚠️逻辑链在多厂统一管理需求环节存在断裂",
+    "to_verify": {
+     "customer_identity": "粤芯半导体是否为Hach客户？SFDC Account是否存在？",
+     "installed_base": "现有两座厂水系统仪表配置？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？",
+     "ims": "是否已有iMS？",
+     "account_sales": "Account Owner？Regional Owner？"
+    },
+    "customer_need": "新晶圆厂扩建→超纯水系统需求→在线监测仪表→多厂统一管理需求？→iMS Use Case不确定 ⚠️逻辑链在多厂统一管理需求环节存在断裂",
+    "demand_hypothesis": "与中芯京城二期逻辑类似，12英寸晶圆厂扩建涉及超纯水系统建设和在线监测仪表需求。粤芯已有两座厂运营，四期新建可能带来仪表增量以及现有三座厂统一管理的数字化需求。但iMS在半导体场景的适用性仍需验证。",
+    "contact_hint": "粤芯半导体水系统工程师/设备管理部负责人（未公开，需Company Agent确认）；或四期EPC水处理总包方",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://caifuhao.eastmoney.com/news/20260913055359380377170"
+    ],
+    "evidence": {
+     "facts": [
+      "粤芯半导体四期项目2026年1月22日在广州开发区启动，总投资约252亿元，规划建设月产能4万片的12英寸数模混合特色工艺生产线，预计2029年底建成投产。现有两座12英寸厂规划合计8万片/月，四期建成后三厂总产能12万片/月。产能利用率96.38%，在手订单75亿元。来源：caifuhao.eastmoney.com(官方权威)。"
+     ],
+     "inferences": [
+      "与中芯京城二期逻辑类似，12英寸晶圆厂扩建涉及超纯水系统建设和在线监测仪表需求。粤芯已有两座厂运营，四期新建可能带来仪表增量以及现有三座厂统一管理的数字化需求。但iMS在半导体场景的适用性仍需验证。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "粤芯半导体水系统工程师/设备管理部负责人（未公开，需Company Agent确认）；或四期EPC水处理总包方",
+     "talk_what": "四期超纯水系统在线监测仪表选型方案是否启动？现有三座厂超纯水仪表管理是否有数字化升级需求？",
+     "why_now": "四期2026年1月启动，当前处于建设准备阶段，超纯水系统设计尚未进入设备选型"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-16",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-16-004"
+   ],
+   "source_files": [
+    "2026-09-16.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+   "industry": "市政水务",
+   "customer_requirement": "Unknown",
+   "next_validation_questions": "四期超纯水系统在线监测仪表选型方案是否启动？现有三座厂超纯水仪表管理是否有数字化升级需求？",
+   "history": [
+    {
+     "date": "2026-09-16",
+     "source_file": "2026-09-16.json",
+     "record_id": "OPP-2026-09-16-004",
+     "name": "粤芯半导体四期-252亿12英寸晶圆厂扩建"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-16-004"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-16-004"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260911-V33-002",
+   "original_signal": {
+    "company": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+    "opportunity": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+    "industry": "市政水务",
+    "opportunity_stage": "设计",
+    "priority": 69,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Instrument Health Diagnostics",
+    "logic": "Customer Change(工业污水提标改造+收集能力提升) -> Digital Change(提标工程含自控与在线监测配套) -> Operational Problem(复杂工业废水需多参数连续监测) -> Instrument/Data Management Need(在线监测点位+数据质量) -> Potential iMS Use Case。逻辑链较强：工业污水提标直接产生在线监测刚需。",
+    "to_verify": {
+     "customer_identity": "宿迁运河港产业园/润民环境集团是否为Hach客户？",
+     "installed_base": "洋北污水厂现有仪表类型/数量？提标后新增在线监测需求？",
+     "commercial_history": "宿迁/苏北区域历史Hach销售记录？",
+     "ims": "智慧化改造的具体架构？是否已有类似数字化产品？",
+     "account_sales": "Account Owner是谁？江苏区域Regional Owner？"
+    },
+    "customer_need": "Customer Change(工业污水提标改造+收集能力提升) -> Digital Change(提标工程含自控与在线监测配套) -> Operational Problem(复杂工业废水需多参数连续监测) -> Instrument/Data Management Need(在线监测点位+数据质量) -> Potential iMS Use Case。逻辑链较强：工业污水提标直接产生在线监测刚需。",
+    "demand_hypothesis": "工业污水提标改造项目（运河港产业园背景，含工业污水收集能力提升），提标通常意味着更严格的排放标准与更多在线监测参数（氟/重金属/电导率/COD等）。项目正处于设计阶段（初步设计+施工图设计采购中），设备清单完全未定。工业污水场景对在线监测的依赖度高于市政污水，iMS的Data Quality/Instrument Monitoring价值明确。设计周期仅30天，时间紧凑——设计单位一旦入场，设备选型窗口会快速收窄，需尽快通过设计院建立技术输入。",
+    "contact_hint": "江苏润民环境集团有限公司（采购人/招标人）项目负责人；设计服务中标单位给排水专业负责人",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "设计磋商2026-09-20截止（公告），设计30日历天完成后进入施工图与设备采购；依据Stage Gate，设计阶段对应3-6个月",
+    "source_urls": [
+     "https://www.sqsc.gov.cn/scq/zbgg/202609/9ced420fe04a45d5ace415421fc0349d.shtml"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月9日宿迁市宿城区人民政府发布竞争性磋商公告（SCGQ30304[202609]8号）：运河港产业园工业污水收集能力提升项目-洋北污水处理厂提标改造工程设计项目，预算69万元，采购人江苏润民环境集团有限公司，9月20日15:00递交响应文件。服务内容包括初步设计、施工图设计及施工现场全程技术指导，配合申请上级专项资金。设计周期30日历天。"
+     ],
+     "inferences": [
+      "工业污水提标改造项目（运河港产业园背景，含工业污水收集能力提升），提标通常意味着更严格的排放标准与更多在线监测参数（氟/重金属/电导率/COD等）。项目正处于设计阶段（初步设计+施工图设计采购中），设备清单完全未定。工业污水场景对在线监测的依赖度高于市政污水，iMS的Data Quality/Instrument Monitoring价值明确。设计周期仅30天，时间紧凑——设计单位一旦入场，设备选型窗口会快速收窄，需尽快通过设计院建立技术输入。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "江苏润民环境集团有限公司（采购人/招标人）项目负责人；设计服务中标单位给排水专业负责人",
+     "talk_what": "工业污水提标对氟/重金属/电导率的在线监测点位与精度要求？初步设计阶段设备表是否含在线仪表？",
+     "why_now": "9/20设计磋商截止、设计即将展开（设计周期仅30天）——设备清单尚未编制，此时向设计院提供在线监测技术支撑最有效"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-11",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260911-V33-002"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Instrument Health Diagnostics",
+   "next_validation_questions": "工业污水提标对氟/重金属/电导率的在线监测点位与精度要求？初步设计阶段设备表是否含在线仪表？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260911-V33-002",
+     "name": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260911-V33-002"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260911-V33-002"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260911-V33-001",
+   "original_signal": {
+    "company": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+    "opportunity": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+    "industry": "市政水务",
+    "opportunity_stage": "设计",
+    "priority": 68,
+    "potential_ims_use_case": "Instrument Monitoring / Asset Management / Instrument Health Diagnostics",
+    "logic": "Customer Change(2万m3/d污水厂设备更新改造) -> Digital Change(智慧化系统明确列入优化升级内容) -> Operational Problem(改造后需自控+在线监测协同运行) -> Instrument/Data/Asset Management Need(设备更新+智慧化监控) -> Potential iMS Use Case(Instrument Monitoring/Asset Management)。逻辑链中等偏强：智慧化升级为明示建设内容，但具体数字化架构待设计确定。",
+    "to_verify": {
+     "customer_identity": "图木舒克/新疆兵团区域水务主体是否为Hach客户？Salesforce Account是否存在？",
+     "installed_base": "现有2万m3/d污水厂安装哪些品牌在线仪表？升级后新增仪表需求？是否有联网仪表？",
+     "commercial_history": "新疆兵团/图木舒克区域历史Hach销售记录？当前Pipeline？",
+     "ims": "是否已有iMS或类似数字化产品？智慧化系统方案是否支持第三方仪表数据接入？",
+     "account_sales": "Account Owner是谁？新疆/西北区域Regional Owner？"
+    },
+    "customer_need": "Customer Change(2万m3/d污水厂设备更新改造) -> Digital Change(智慧化系统明确列入优化升级内容) -> Operational Problem(改造后需自控+在线监测协同运行) -> Instrument/Data/Asset Management Need(设备更新+智慧化监控) -> Potential iMS Use Case(Instrument Monitoring/Asset Management)。逻辑链中等偏强：智慧化升级为明示建设内容，但具体数字化架构待设计确定。",
+    "demand_hypothesis": "该项目处于设计阶段（设计服务刚招标、设计院未定），且建设内容明确列出'智慧化系统优化升级'+自控设备更新——这意味着在线监测点位设计、自控系统架构、仪表选型均未冻结，是影响设计输入的最佳窗口。2万m3/d改造项目的智慧化升级必然会涉及在线仪表的数据采集/监控/资产管理问题，与iMS的Instrument Monitoring/Asset Management场景直接相关。改造项目（非新建）意味着存在存量仪表，仪表健康诊断与多品牌兼容价值更高。",
+    "contact_hint": "新疆生产建设兵团第三师住房和城乡发展服务中心项目负责人（招标人）；设计服务中标后设计院给排水/自控专业负责人",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "设计服务招标公告2026-09-08发布（公开招标公告），设计完成后将进入施工图与设备采购阶段；依据Stage Gate，设计阶段对应3-6个月介入窗口",
+    "source_urls": [
+     "https://ggzy.xjbt.gov.cn/jygk/004001/004001002/004001002001/20260908/4f3b6a8f-fd3f-486e-b498-ce360ae4b8d2.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月8日发布初步设计及施工图设计招标公告（招标项目编号E6603004002260509，师市发改发[2026]389号文批准）。新疆生产建设兵团第三师住房和城乡发展服务中心为招标人。对日处理量2万m3/d污水处理厂进行设备更新改造：工艺设备、电气设备、自控设备更新；污水处理单体、污泥处理系统、加药系统、曝气系统、除臭系统、智慧化系统优化升级。资金来源为政府。"
+     ],
+     "inferences": [
+      "该项目处于设计阶段（设计服务刚招标、设计院未定），且建设内容明确列出'智慧化系统优化升级'+自控设备更新——这意味着在线监测点位设计、自控系统架构、仪表选型均未冻结，是影响设计输入的最佳窗口。2万m3/d改造项目的智慧化升级必然会涉及在线仪表的数据采集/监控/资产管理问题，与iMS的Instrument Monitoring/Asset Management场景直接相关。改造项目（非新建）意味着存在存量仪表，仪表健康诊断与多品牌兼容价值更高。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "新疆生产建设兵团第三师住房和城乡发展服务中心项目负责人（招标人）；设计服务中标后设计院给排水/自控专业负责人",
+     "talk_what": "改造方案中智慧化系统优化升级覆盖哪些在线监测点位？工艺/自控设备更新清单（含在线仪表）初步口径？",
+     "why_now": "设计服务刚于9/8招标，设计院未定，仪表选型未进入任何图纸——现在进场影响设计输入最有效"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-11",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260911-V33-001"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Asset Management / Instrument Health Diagnostics",
+   "next_validation_questions": "改造方案中智慧化系统优化升级覆盖哪些在线监测点位？工艺/自控设备更新清单（含在线仪表）初步口径？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260911-V33-001",
+     "name": "第三师图木舒克市城市污水处理厂一期提升改造项目"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260911-V33-001"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260911-V33-001"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260911-V33-003",
+   "original_signal": {
+    "company": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+    "opportunity": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": 70,
+    "potential_ims_use_case": "Instrument Monitoring / Instrument Health Diagnostics / Data Quality / Digital Operations",
+    "logic": "Customer Change(新董事长+战略转向数字赋能) -> Digital Change(供水数字化/水质溯源法定考核) -> Operational Problem(数百座厂集中管理/产销差15.36%) -> Instrument/Data/Asset Management Need(多站点管理/资产管理) -> Potential iMS Use Case(Multi-site Management)。逻辑链较强：集团级战略变化+法定考核驱动，但缺具体项目落地点。",
+    "to_verify": {
+     "customer_identity": "重庆水务集团是否为Hach战略客户？SFDC Account状态？客户等级？",
+     "installed_base": "重庆水务旗下水厂/污水厂总数？Hach仪表装机数量？是否有联网仪表？数字化白空间？",
+     "commercial_history": "历史Hach销售记录？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS或类似数字化产品？北控水务SED/Enki是否已渗透？",
+     "account_sales": "Account Owner是谁？重庆区域Regional Owner？新董事长上任后IT/数字化部门联系人？"
+    },
+    "customer_need": "Customer Change(新董事长+战略转向数字赋能) -> Digital Change(供水数字化/水质溯源法定考核) -> Operational Problem(数百座厂集中管理/产销差15.36%) -> Instrument/Data/Asset Management Need(多站点管理/资产管理) -> Potential iMS Use Case(Multi-site Management)。逻辑链较强：集团级战略变化+法定考核驱动，但缺具体项目落地点。",
+    "demand_hypothesis": "重庆水务是中国最大水务运营商之一（约81%重庆市污水处理市场份额）。新董事长上任+战略明确转向'数字赋能'，叠加新《供水条例》法定强制数字化考核，构成Account-level战略变化信号。数百座水厂/污水厂多站点集中管理痛点明确（产销差15.36%）。这是v3.3 Stage Gate下典型的'战略规划'阶段Account Trigger：介入窗口最宽（>9个月）、影响需求定义价值最高。逻辑链：集团战略变化 -> 存量提质运营模式变化 -> 多水厂集中管理/仪表资产管理痛点 -> iMS Multi-site Management。 【2026-09-18更新】两个新事实确认重庆水务集团数字化战略已进入执行阶段：(1)大九污水厂西彭车间新增出水在线监测仪表采购——明确要求仪表数据上传集团大数据平台，证明平台已建成且正在扩容仪表接入；(2)环投集团永川试点AI智能监测系统——从人工值守到AI自动报警，实现3分钟响应。这些事实强化iMS Use Case(Instrument Monitoring/Instrument Health Diagnostics/Data Quality)的现实需求。 【2026-09-18更新】两个新事实确认重庆水务集团数字化战略已进入执行阶段：(1)大九污水厂西彭车间新增出水在线监测仪表采购——明确要求仪表数据上传集团大数据平台，证明平台已建成且正在扩容仪表接入；(2)环投集团永川试点AI智能监测系统——从人工值守到AI自动报警，实现3分钟响应。这些事实强化iMS Use Case(Instrument Monitoring/Instrument Health Diagnostics/Data Quality)的现实需求。",
+    "contact_hint": "重庆水务集团数字化/信息化部门负责人（新董事长上任后数智化落地负责人）；设备运营管理部门负责人",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": "战略定调刚在中报明确（2026-08发布），处于战略规划到立项的可研编制前窗；依据Stage Gate，战略规划对应>9个月",
+    "source_urls": [
+     "https://stock.stockstar.com/RB2026090900020058.shtml"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年8月31日重庆水务公告选举王小军为第六届董事会董事长。2026年中报行业判断收敛为'全面进入存量提质、绿色深耕、数字赋能的高质量发展新阶段'。新《供水条例》(国务院831号令)6月1日施行，将供水数字化、水质全链条溯源、二次供水规范化纳入法定强制考核。供水板块收入-2.94%、毛利率-4.26pp；污水板块收入+8.98%、毛利率+2.65pp。日供水设计能力343.97万m3，日污水处理设计能力600.945万m3，产销差率15.36%。'十五五'规划改造供排水管网超35万公里。"
+     ],
+     "inferences": [
+      "重庆水务是中国最大水务运营商之一（约81%重庆市污水处理市场份额）。新董事长上任+战略明确转向'数字赋能'，叠加新《供水条例》法定强制数字化考核，构成Account-level战略变化信号。数百座水厂/污水厂多站点集中管理痛点明确（产销差15.36%）。这是v3.3 Stage Gate下典型的'战略规划'阶段Account Trigger：介入窗口最宽（>9个月）、影响需求定义价值最高。逻辑链：集团战略变化 -> 存量提质运营模式变化 -> 多水厂集中管理/仪表资产管理痛点 -> iMS Multi-site Management。 【2026-09-18更新】两个新事实确认重庆水务集团数字化战略已进入执行阶段：(1)大九污水厂西彭车间新增出水在线监测仪表采购——明确要求仪表数据上传集团大数据平台，证明平台已建成且正在扩容仪表接入；(2)环投集团永川试点AI智能监测系统——从人工值守到AI自动报警，实现3分钟响应。这些事实强化iMS Use Case(Instrument Monitoring/Instrument Health Diagnostics/Data Quality)的现实需求。 【2026-09-18更新】两个新事实确认重庆水务集团数字化战略已进入执行阶段：(1)大九污水厂西彭车间新增出水在线监测仪表采购——明确要求仪表数据上传集团大数据平台，证明平台已建成且正在扩容仪表接入；(2)环投集团永川试点AI智能监测系统——从人工值守到AI自动报警，实现3分钟响应。这些事实强化iMS Use Case(Instrument Monitoring/Instrument Health Diagnostics/Data Quality)的现实需求。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "重庆水务集团数字化/信息化部门负责人（新董事长上任后数智化落地负责人）；设备运营管理部门负责人",
+     "talk_what": "'存量提质、数字赋能'落地路径中，多水厂仪表资产管理/远程运维是否已立项？产销差15.36%的漏损治理优先序？",
+     "why_now": "新董事长刚上任+中报刚定调'数字赋能'，预算与组织尚未定型——正是影响需求定义的最佳窗口"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-11",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260911-V33-003"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Instrument Health Diagnostics / Data Quality / Digital Operations",
+   "next_validation_questions": "'存量提质、数字赋能'落地路径中，多水厂仪表资产管理/远程运维是否已立项？产销差15.36%的漏损治理优先序？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260911-V33-003",
+     "name": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260911-V33-003"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260911-V33-003"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260911-V33-004",
+   "original_signal": {
+    "company": "灵山县十里污水处理厂及配套管网工程",
+    "opportunity": "灵山县十里污水处理厂及配套管网工程",
+    "industry": "市政水务",
+    "opportunity_stage": "设计",
+    "priority": 66,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+    "logic": "Customer Change(新建污水厂+管网) -> Digital Change(厂区建设含仪表间与在线监测设计) -> Operational Problem(新厂需在线监测点位设计与数据管理) -> Instrument/Data Management Need -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等。",
+    "to_verify": {
+     "customer_identity": "灵山县水务主体/灵广土地整治开发公司是否为Hach客户？",
+     "installed_base": "灵山县现有水厂/污水厂仪表情况？新建厂仪表配置设计？",
+     "commercial_history": "广西钦州区域历史Hach销售记录？",
+     "ims": "是否已有iMS或类似数字化产品？",
+     "account_sales": "Account Owner是谁？广西区域Regional Owner？"
+    },
+    "customer_need": "Customer Change(新建污水厂+管网) -> Digital Change(厂区建设含仪表间与在线监测设计) -> Operational Problem(新厂需在线监测点位设计与数据管理) -> Instrument/Data Management Need -> Potential iMS Use Case(Instrument Monitoring/Data Quality)。逻辑链中等。",
+    "demand_hypothesis": "新建1万m3/d污水厂+配套管网，设计服务刚发布招标计划（正式招标在即），处于设计阶段早期。新建厂必然配置进出水在线监测（COD/氨氮/总磷等）与仪表间（公告明确含'仪表间危废间'），智慧平台与仪表数据接入架构尚未设计。设计院未定是影响设备清单的最佳时间点。虽为县级小型项目（单厂1万m3/d），但新建项目对iMS的意义在于：切入新建厂的数字化设计（平台预留第三方仪表接口）可形成标杆。",
+    "contact_hint": "灵山县灵广土地整治开发有限公司项目联系人方工（0777-6880299，公告公开）；设计服务中标单位",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "设计服务招标计划2026-09-10发布（招标计划公告），正式设计招标在即；依据Stage Gate，设计阶段对应3-6个月",
+    "source_urls": [
+     "https://ggzy.jgswj.gxzf.gov.cn/qzggzy/jyxx/001001/001001001/001001001006/20260910/8d061ac4-96c2-4d53-a5c2-d9fca3e8699b.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月10日发布招标计划：灵山县十里污水处理厂及配套管网工程方案设计、初步设计及施工图设计服务，招标人灵山县灵广土地整治开发有限公司，预算220万元。新建1座1.0万吨/天污水处理厂（配水井/细格栅间及旋流沉砂池/调节池水解酸化池/CASS生物池/高效沉淀池/纤维转盘滤池/紫外线消毒渠+巴氏计量槽/仪表间危废间/污泥深度脱水车间等）及配套管网7950米（含污水提升泵站、DN1000污水管5150米、DN500球墨铸铁管2800米等）。项目联系人方工 0777-6880299（公开）。"
+     ],
+     "inferences": [
+      "新建1万m3/d污水厂+配套管网，设计服务刚发布招标计划（正式招标在即），处于设计阶段早期。新建厂必然配置进出水在线监测（COD/氨氮/总磷等）与仪表间（公告明确含'仪表间危废间'），智慧平台与仪表数据接入架构尚未设计。设计院未定是影响设备清单的最佳时间点。虽为县级小型项目（单厂1万m3/d），但新建项目对iMS的意义在于：切入新建厂的数字化设计（平台预留第三方仪表接口）可形成标杆。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "灵山县灵广土地整治开发有限公司项目联系人方工（0777-6880299，公告公开）；设计服务中标单位",
+     "talk_what": "新建厂在线监测点位设计（出水COD/氨氮/总磷在线）与仪表间配置？智慧平台是否预留第三方仪表接口？",
+     "why_now": "设计招标计划9/10刚发布、正式招标在即——设计单位未定，可同步接触业主与设计候选单位"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-11",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260911-V33-004"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "灵山县十里污水处理厂及配套管网工程",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality",
+   "next_validation_questions": "新建厂在线监测点位设计（出水COD/氨氮/总磷在线）与仪表间配置？智慧平台是否预留第三方仪表接口？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260911-V33-004",
+     "name": "灵山县十里污水处理厂及配套管网工程"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260911-V33-004"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260911-V33-004"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260909-004",
+   "original_signal": {
+    "company": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+    "opportunity": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+    "industry": "市政水务",
+    "opportunity_stage": "可研/初步设计",
+    "priority": 64,
+    "potential_ims_use_case": "Instrument Monitoring / Digital Operations / Predictive Maintenance",
+    "logic": "Customer Change(园区污水厂升级+新建) -> Digital Change(信息化建设+智慧厂站运营管控平台+AI专家系统) -> Operational Problem(实时监测+远程运维需求) -> Instrument/Data Management Need(仪表监控+数据管理+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Digital Operations/Predictive Maintenance)。逻辑链较强：仪表和数字化平台同步建设，实时监测与远程运维是明确目标。",
+    "to_verify": {
+     "customer_identity": "兴宁产业园区污水处理厂运营主体是否为Hach客户？Salesforce Account是否存在？广东梅州区域是否有Hach销售记录？",
+     "installed_base": "现有10000m3/d生活污水厂在线仪表品牌/数量？新建工业污水厂仪表选型是否已定？",
+     "commercial_history": "兴宁/梅州区域历史Hach销售记录？当前Pipeline？",
+     "ims": "是否已有iMS或类似数字化产品？智慧厂站运营管控平台架构是否支持第三方仪表数据接入？设计院/集成商是谁？",
+     "account_sales": "Account Owner？广东区域Regional Owner？与兴宁产业园区的关系？"
+    },
+    "customer_need": "Customer Change(园区污水厂升级+新建) -> Digital Change(信息化建设+智慧厂站运营管控平台+AI专家系统) -> Operational Problem(实时监测+远程运维需求) -> Instrument/Data Management Need(仪表监控+数据管理+预测性维护) -> Potential iMS Use Case(Instrument Monitoring/Digital Operations/Predictive Maintenance)。逻辑链较强：仪表和数字化平台同步建设，实时监测与远程运维是明确目标。",
+    "demand_hypothesis": "项目明确将'仪表'和'信息化建设'作为独立建设内容，且信息化建设包含'智能控制、实时监测与远程运维的智慧厂站运营管控平台'。这意味着仪表层和数字平台层同步建设，iMS可以作为仪表数据采集/监控/诊断层接入智慧厂站平台。工业污水+生活污水双线模式下，进出水在线监测仪表(COD/氨氮/总磷/总氮/pH等)需求明确。AI专家系统的引入说明客户对'数据->模型->决策'链条有认可度。关键不确定点：项目处于早期阶段(可研/设计)，仪表选型和平台架构尚未确定；设计院信息缺失；兴宁产业园区客户主体不明确。",
+    "contact_hint": "兴宁产业园区管委会、EPC/设计单位（可研/初步设计阶段）",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "可研/初步设计阶段按v3.5绑定表标6-9个月（原6-12非档位值，修正）",
+    "source_urls": [
+     "https://plan.dowater.com/info/132571.asp"
+    ],
+    "evidence": {
+     "facts": [
+      "广东梅州兴宁产业园区污水处理厂智慧化升级改造工程，投资预算14441.83万元。建设内容：(1)10000m3/d生活污水处理厂设备更新，含配套电气工程、自控工程；(2)园区雨污水管网错混接改造；(3)新建10000m3/d工业污水处理厂，含废水处理设施及配套电气、仪表、自控、总图及公用工程；(4)新建尾水排放管；(5)污水厂信息化建设——构建智能AI专家系统、安防系统，搭建涵盖智能控制、实时监测与远程运维的智慧厂站运营管控平台。项目最近追踪日期2026年9月5日。"
+     ],
+     "inferences": [
+      "项目明确将'仪表'和'信息化建设'作为独立建设内容，且信息化建设包含'智能控制、实时监测与远程运维的智慧厂站运营管控平台'。这意味着仪表层和数字平台层同步建设，iMS可以作为仪表数据采集/监控/诊断层接入智慧厂站平台。工业污水+生活污水双线模式下，进出水在线监测仪表(COD/氨氮/总磷/总氮/pH等)需求明确。AI专家系统的引入说明客户对'数据->模型->决策'链条有认可度。关键不确定点：项目处于早期阶段(可研/设计)，仪表选型和平台架构尚未确定；设计院信息缺失；兴宁产业园区客户主体不明确。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "兴宁产业园区管委会、EPC/设计单位（可研/初步设计阶段）",
+     "talk_what": "智慧厂站运营管控平台与AI专家系统的仪表数据接入要求，在线监测设备选型与点位",
+     "why_now": "可研/初步设计阶段，技术路线与设备清单未锁定，可植入iMS概念"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-09",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260909-004"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Digital Operations / Predictive Maintenance",
+   "next_validation_questions": "智慧厂站运营管控平台与AI专家系统的仪表数据接入要求，在线监测设备选型与点位",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260909-004",
+     "name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260909-004"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260909-004"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260907-003",
+   "original_signal": {
+    "company": "清江浦区农村供水提升改造项目(初步设计已批复)",
+    "opportunity": "清江浦区农村供水提升改造项目(初步设计已批复)",
+    "industry": "市政水务",
+    "opportunity_stage": "初步设计/可研",
+    "priority": 63,
+    "potential_ims_use_case": "Multi-site Management / Instrument Monitoring",
+    "logic": "Customer Change(农村供水改造) -> Digital Change(配备在线监测设备+分区计量水表) -> Operational Problem(分散站点集中管理) -> Instrument/Data Management Need(在线仪表监控+多站点管理) -> Potential iMS Use Case(Multi-site Management/Instrument Monitoring)。逻辑链较强：在线监测设备是明确的建设内容，集约化管理是明确的目标。",
+    "to_verify": {
+     "customer_identity": "淮安自来水有限公司是否为Hach客户？Salesforce Account是否存在？",
+     "installed_base": "现有在线水质仪表品牌/数量？供水站数量？是否有联网仪表？",
+     "commercial_history": "淮安区域历史Hach销售记录？当前Pipeline？",
+     "ims": "是否已有iMS或类似数字化产品？设计院是否已确定在线监测设备选型？",
+     "account_sales": "Account Owner？江苏区域Regional Owner？与淮安自来水有限公司的关系？"
+    },
+    "customer_need": "Customer Change(农村供水改造) -> Digital Change(配备在线监测设备+分区计量水表) -> Operational Problem(分散站点集中管理) -> Instrument/Data Management Need(在线仪表监控+多站点管理) -> Potential iMS Use Case(Multi-site Management/Instrument Monitoring)。逻辑链较强：在线监测设备是明确的建设内容，集约化管理是明确的目标。",
+    "demand_hypothesis": "项目明确配备'分区计量水表及在线监测等设备'，建设目标是'专业化、集约化水务运营管理'。这直接指向Multi-site Management和Instrument Monitoring场景：分散供水站点的在线监测设备集中管理是iMS的核心价值点。923.85km管网+23559个水表规模可观。但项目仍处于初步设计阶段，设备选型尚未确定，设计院信息缺失。淮安自来水有限公司作为集中建设单位，是关键客户主体。",
+    "contact_hint": "清江浦区水利/供水主管部门负责人、可研编制单位（初步设计已批复，进入施工图阶段）",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://www.haqjp.gov.cn/col/1835_433615/art/17828352/1784279109378PO5U19Gf.html"
+    ],
+    "evidence": {
+     "facts": [
+      "淮安市清江浦区农村供水提升改造项目初步设计于2026年7月15日获区发改委批复，7月13日区财政局完成概算评审。项目对约923.85km供水管网进行改造新建，对约466.15km管网进行增压净化提标；更换水表约23559个，配套阀门/井室/增压站/二次供水等附属设施提标更新，配备分区计量水表及在线监测等设备，实现专业化、集约化水务运营管理。集中建设单位为淮安自来水有限公司，清江浦区农业农村和水利局为实施单位。"
+     ],
+     "inferences": [
+      "项目明确配备'分区计量水表及在线监测等设备'，建设目标是'专业化、集约化水务运营管理'。这直接指向Multi-site Management和Instrument Monitoring场景：分散供水站点的在线监测设备集中管理是iMS的核心价值点。923.85km管网+23559个水表规模可观。但项目仍处于初步设计阶段，设备选型尚未确定，设计院信息缺失。淮安自来水有限公司作为集中建设单位，是关键客户主体。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "清江浦区水利/供水主管部门负责人、可研编制单位（初步设计已批复，进入施工图阶段）",
+     "talk_what": "初步设计中在线监测设备的具体点位与选型，分区计量水表的数据接入方案",
+     "why_now": "初步设计已批复、设备清单尚未完全锁定，是影响选型的最后窗口"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-07",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260907-003"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "清江浦区农村供水提升改造项目(初步设计已批复)",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Instrument Monitoring",
+   "next_validation_questions": "初步设计中在线监测设备的具体点位与选型，分区计量水表的数据接入方案",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260907-003",
+     "name": "清江浦区农村供水提升改造项目(初步设计已批复)"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260907-003"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260907-003"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260911-V33-005",
+   "original_signal": {
+    "company": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+    "opportunity": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": 63,
+    "potential_ims_use_case": "Multi-site Management / Instrument Monitoring / Predictive Maintenance",
+    "logic": "Customer Change(211座泵房分散管理+设备老化) -> Digital Change(战略合作推进泵房智慧升级/数字化规划) -> Operational Problem(被动运维转主动预警、水质安全管控风险) -> Instrument/Data/Asset Management Need(泵房水质监测+设备资产管理) -> Potential iMS Use Case(Multi-site Management)。逻辑链较强：痛点明确（211座泵房分散管理）。",
+    "to_verify": {
+     "customer_identity": "平顶山自来水是否为Hach客户？二次供水公司是否独立Account？",
+     "installed_base": "211座泵房水质监测仪表现状（品牌/数量/联网情况）？",
+     "commercial_history": "平顶山/河南区域历史Hach销售记录？",
+     "ims": "是否已有iMS或类似数字化产品？河南智慧水务平台是否兼容第三方仪表？",
+     "account_sales": "Account Owner是谁？河南区域Regional Owner？"
+    },
+    "customer_need": "Customer Change(211座泵房分散管理+设备老化) -> Digital Change(战略合作推进泵房智慧升级/数字化规划) -> Operational Problem(被动运维转主动预警、水质安全管控风险) -> Instrument/Data/Asset Management Need(泵房水质监测+设备资产管理) -> Potential iMS Use Case(Multi-site Management)。逻辑链较强：痛点明确（211座泵房分散管理）。",
+    "demand_hypothesis": "这是典型的Account Trigger+存量仪表需求形成条件信号：211座分散泵房的设备资产管理/运维是明确的iMS Multi-site Management场景。二次供水水质安全管控（余氯/浊度在线监测）是新《供水条例》法定考核内容，泵房水质监测仪表数据采集与远程运维需求明确。但注意：合作方河南智慧水务是地方数字化伙伴，iMS切入可能通过'仪表数据层+平台兼容'路径（向客户证明平台可接入多品牌仪表）或直接竞争平台。战略合作刚签署，处于战略规划阶段，介入窗口最宽。",
+    "contact_hint": "平顶山自来水二次供水有限公司党支部书记/董事申毅或总经理代德山（公开报道列名）；联合事业部负责人",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "战略合作框架2026-09-09签署，联合事业部组建中，泵房改造技术路线未定（新闻稿）；依据Stage Gate，战略合作向立项演进的窗口为6-9个月",
+    "source_urls": [
+     "https://baijiahao.baidu.com/s?id=1875927833954203215&wfr=spider&for=pc"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月9日平顶山自来水二次供水有限公司与河南智慧水务公司签署战略合作框架协议，聚焦二次供水数字化、智慧化升级。平顶山自来水二次供水已接管泵房211座、服务居民11.5万余户、覆盖人口约35万。双方将组建联合事业部，推进泵房智慧升级、数字化规划、高新技术企业培育及智慧水务产品研发。总经理代德山公开表述痛点：存量泵房分散管理、设备老旧、智慧化基础薄弱、被动运维模式难以匹配监管要求。\n2026-09-12补全：签约主体为平顶山自来水二次供水有限公司（隶属平顶山发展投资控股集团，法定代表人申毅，注册地河南省平顶山市新华区光明路4号光明路水厂院内，行业：其他水的处理、利用与分配D4690，注册资本1000万元，员工约190人），主体已接管泵房211座、服务11.5万余户、覆盖约35万人、约占平顶山城区高层住宅用户52%；公司为河南省首家专业化二次供水统建统管企业，具备市政/机电总承包二级资质，拥有泵房智能化数据监控平台等6项专利，被河南省住建厅指定为《河南省城市供水调压调蓄设施技术标准》主编单位，2024年做法入选住建部漏损治理可复制政策机制清单全国推广。母公司平顶山市自来水有限公司（法定代表人毕志伟）：5座水厂、设计日供水51万m3、管网约1200公里、用户22万多户，已建成智慧水务一体化管理平台。合作方全称按平顶山日报官方口径为'河南智慧水务股份有限公司'（原记录'河南智慧水务科技有限公司'存疑，需工商核实）。二次供水设备采购参考：平公资采2025606号入围框架，包1上海熊猫机械、包2浙江利欧环境科技（2年期）。"
+     ],
+     "inferences": [
+      "这是典型的Account Trigger+存量仪表需求形成条件信号：211座分散泵房的设备资产管理/运维是明确的iMS Multi-site Management场景。二次供水水质安全管控（余氯/浊度在线监测）是新《供水条例》法定考核内容，泵房水质监测仪表数据采集与远程运维需求明确。但注意：合作方河南智慧水务是地方数字化伙伴，iMS切入可能通过'仪表数据层+平台兼容'路径（向客户证明平台可接入多品牌仪表）或直接竞争平台。战略合作刚签署，处于战略规划阶段，介入窗口最宽。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "平顶山自来水二次供水有限公司党支部书记/董事申毅或总经理代德山（公开报道列名）；联合事业部负责人",
+     "talk_what": "211座泵房智慧化升级的设备清单/在线水质监测点位？与河南智慧水务共建的平台是否支持第三方仪表接入？",
+     "why_now": "战略合作框架9/9刚签署，联合事业部刚开始组建——泵房改造技术路线与设备选型尚未锁定"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-11",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260911-V33-005"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    "河南省平顶山市（新华区光明路4号光明路水厂院内）"
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "河南省平顶山市（新华区光明路4号光明路水厂院内）",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Instrument Monitoring / Predictive Maintenance",
+   "next_validation_questions": "211座泵房智慧化升级的设备清单/在线水质监测点位？与河南智慧水务共建的平台是否支持第三方仪表接入？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPS-20260911-V33-005",
+     "name": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260911-V33-005"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260911-V33-005"
+   ]
+  },
+  {
+   "lead_id": "OPP-2026-09-18-001",
+   "original_signal": {
+    "company": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+    "opportunity": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+    "industry": "市政水务",
+    "opportunity_stage": "可研/环评",
+    "priority": "P3",
+    "potential_ims_use_case": "Instrument Monitoring / Multi-site Management",
+    "logic": "Customer Change(旺苍县自来水厂提标改造+智慧水务建设) -> Digital Change(项目名含'智慧水务'，意味着数字化建设) -> Operational Problem(提标后需在线监测水质/运行参数) -> Instrument/Data Need(在线仪表部署+数据采集) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management)。逻辑链完整但规模待确认。",
+    "to_verify": {
+     "customer_identity": "旺苍县水务建设发展有限公司是否为Hach客户？Salesforce Account是否存在？是否为战略客户？",
+     "installed_base": "旺苍县现有水厂仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS？是否已有类似数字化产品？是否存在扩展机会？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "Customer Change(旺苍县自来水厂提标改造+智慧水务建设) -> Digital Change(项目名含'智慧水务'，意味着数字化建设) -> Operational Problem(提标后需在线监测水质/运行参数) -> Instrument/Data Need(在线仪表部署+数据采集) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management)。逻辑链完整但规模待确认。",
+    "demand_hypothesis": "县级自来水厂提标改造+智慧水务建设项目，处于环评受理阶段(可研/环评)，项目名称明确包含'智慧水务'。逻辑链：水厂提标改造→智慧水务建设→在线监测仪表部署需求→iMS Use Case(Instrument Monitoring/Multi-site Management)。虽然规模为县级，但'智慧水务'建设内容意味着需要在线仪表+数据采集+平台对接，存在iMS切入点。需Company Agent确认是否为Hach客户及规模。",
+    "contact_hint": "旺苍县水务建设发展有限公司项目负责人（未公开具体姓名，需Company Agent确认）；环评机构四川蓉创鼎锋环境科技有限公司可追溯项目技术方案",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "环评报告表于2026-09-15受理(广元市旺苍生态环境局)，处于环评审批阶段，对应可研/环评环节。后续还需初步设计→设计→招标，预计6-9个月进入设计阶段。",
+    "source_urls": [
+     "https://hbj.cngy.gov.cn/mshow/3f7dd6124c1c4b1e9183c97897de212e.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月15日广元市旺苍生态环境局受理旺苍县自来水厂提标改造及智慧水务建设项目（一期）环境影响评价文件。建设单位：旺苍县水务建设发展有限公司。环评机构：四川蓉创鼎锋环境科技有限公司。公示期至9月21日。项目明确包含'智慧水务'建设内容。"
+     ],
+     "inferences": [
+      "县级自来水厂提标改造+智慧水务建设项目，处于环评受理阶段(可研/环评)，项目名称明确包含'智慧水务'。逻辑链：水厂提标改造→智慧水务建设→在线监测仪表部署需求→iMS Use Case(Instrument Monitoring/Multi-site Management)。虽然规模为县级，但'智慧水务'建设内容意味着需要在线仪表+数据采集+平台对接，存在iMS切入点。需Company Agent确认是否为Hach客户及规模。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "旺苍县水务建设发展有限公司项目负责人（未公开具体姓名，需Company Agent确认）；环评机构四川蓉创鼎锋环境科技有限公司可追溯项目技术方案",
+     "talk_what": "智慧水务建设方案中在线监测仪表的选型标准是什么？是否需要第三方仪表数据接入平台？提标改造后的在线水质监测点位规划如何？",
+     "why_now": "环评报告表刚于9月15日受理，技术方案和设备清单尚未冻结。后续需经历环评批复→初步设计→设计图纸→招标，仪表选型环节尚未到达。"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-18",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPP-2026-09-18-001"
+   ],
+   "source_files": [
+    "2026-09-18.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Multi-site Management",
+   "next_validation_questions": "智慧水务建设方案中在线监测仪表的选型标准是什么？是否需要第三方仪表数据接入平台？提标改造后的在线水质监测点位规划如何？",
+   "history": [
+    {
+     "date": "2026-09-18",
+     "source_file": "2026-09-18.json",
+     "record_id": "OPP-2026-09-18-001",
+     "name": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPP-2026-09-18-001"
+   ],
+   "account_ids": [
+    "ACC-OPP-2026-09-18-001"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260921-SYNY-001",
+   "original_signal": {
+    "company": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+    "opportunity": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": 68,
+    "potential_ims_use_case": "Instrument Monitoring / Multi-site Management / Data Quality",
+    "logic": "Customer Change(沈阳水务正全力推进智慧水务体系建设，引入鸿蒙生态国产终端) -> Digital Change(鸿蒙水表迭代+漏损管控+数据资产化=仪表层数字化升级) -> Operational Problem(多水厂/多站点在线仪表数据采集、质量管理、运维管理需求) -> Instrument/Data/Asset Management Need(仪表监测、多站点管理、数据质量) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality)。逻辑链较完整，但iMS能否切入取决于鸿蒙生态是否已覆盖仪表健康管理。",
+    "to_verify": {
+     "customer_identity": "沈阳水务集团是否为Hach已有客户/SFDC账户？是否为战略客户？",
+     "installed_base": "沈阳水务集团水厂数量？在线仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+     "commercial_history": "Hach与沈阳水务历史合作记录？当前Pipeline？服务合同？",
+     "ims": "沈阳水务是否已有iMS或类似数字化产品？三川智慧+软通动力合作是否排他性？",
+     "account_sales": "沈阳水务Account Owner？东北Regional Owner？"
+    },
+    "customer_need": "Customer Change(沈阳水务正全力推进智慧水务体系建设，引入鸿蒙生态国产终端) -> Digital Change(鸿蒙水表迭代+漏损管控+数据资产化=仪表层数字化升级) -> Operational Problem(多水厂/多站点在线仪表数据采集、质量管理、运维管理需求) -> Instrument/Data/Asset Management Need(仪表监测、多站点管理、数据质量) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality)。逻辑链较完整，但iMS能否切入取决于鸿蒙生态是否已覆盖仪表健康管理。",
+    "demand_hypothesis": "沈阳水务集团正处于智慧水务体系建设的战略规划/启动期——党委副书记亲自确认'全力推进'但尚未到设备采购阶段。三方合作聚焦鸿蒙水表迭代和漏损管控，说明仪表层正在规划升级但技术路线尚未锁定。三川智慧+软通动力提供国产终端+软件平台，但在线水质监测仪表、仪表健康诊断、多站点数据质量管理等环节仍可能有iMS接入空间——特别是如果iMS能在'仪表数据层'标准定义阶段介入。",
+    "contact_hint": "沈阳水务集团智慧水务/信息化部门负责人（党委副书记郭正学已表态，具体项目对接人未公开，需Company Agent确认）；三川智慧副总裁钱龙团队（已知合作方）；软通动力高级副总裁吴江团队",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "三方座谈刚启动（9/14），常态化合作机制刚明确，尚未进入设备采购/招标阶段。从战略对谈到设备选型通常6-9个月。",
+    "source_urls": [
+     "https://www.sohu.com/a/1075841997_121106822"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月14日，三川智慧副总裁钱龙、软通动力高级副总裁吴江赴沈阳水务集团开展三方专项座谈。沈阳水务集团党委副书记郭正学表示'数智化转型是水务行业高质量发展的核心抓手，目前沈阳水务集团正全力推进智慧水务体系建设'。三方围绕供水漏损精细化管控、鸿蒙水表适配改造、水务数据资产化开发、水务国产化数智化等重点领域展开深度磋商，明确了常态化协同合作机制与后续重点推进方向。三川智慧开源鸿蒙水表已在华为全联接大会(9/17-19)亮相，多款产品获OpenHarmony生态兼容性认证。"
+     ],
+     "inferences": [
+      "沈阳水务集团正处于智慧水务体系建设的战略规划/启动期——党委副书记亲自确认'全力推进'但尚未到设备采购阶段。三方合作聚焦鸿蒙水表迭代和漏损管控，说明仪表层正在规划升级但技术路线尚未锁定。三川智慧+软通动力提供国产终端+软件平台，但在线水质监测仪表、仪表健康诊断、多站点数据质量管理等环节仍可能有iMS接入空间——特别是如果iMS能在'仪表数据层'标准定义阶段介入。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "沈阳水务集团智慧水务/信息化部门负责人（党委副书记郭正学已表态，具体项目对接人未公开，需Company Agent确认）；三川智慧副总裁钱龙团队（已知合作方）；软通动力高级副总裁吴江团队",
+     "talk_what": "鸿蒙水表迭代方案是否覆盖水质在线监测仪表的数据接入？漏损管控系统对在线仪表数据质量和健康状态管理有什么要求？沈阳水务47座水厂（类比武汉）的在线仪表统一监管平台是否已规划？",
+     "why_now": "三方座谈刚启动（9/14），常态化合作机制刚明确，设备选型和技术路线均未锁定——这是在仪表数据层标准定义阶段介入的最佳窗口"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-21",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260921-SYNY-001"
+   ],
+   "source_files": [
+    "2026-09-21.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Multi-site Management / Data Quality",
+   "next_validation_questions": "鸿蒙水表迭代方案是否覆盖水质在线监测仪表的数据接入？漏损管控系统对在线仪表数据质量和健康状态管理有什么要求？沈阳水务47座水厂（类比武汉）的在线仪表统一监管平台是否已规划？",
+   "history": [
+    {
+     "date": "2026-09-21",
+     "source_file": "2026-09-21.json",
+     "record_id": "OPS-20260921-SYNY-001",
+     "name": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260921-SYNY-001"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260921-SYNY-001"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260921-DQSY-002",
+   "original_signal": {
+    "company": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+    "opportunity": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+    "industry": "市政水务",
+    "opportunity_stage": "战略规划",
+    "priority": 66,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+    "logic": "Customer Change(大运河水务引入上市公司技术能力推进副中心水务绿色转型) -> Digital Change(智慧水务数字化平台开发是合作核心) -> Operational Problem(副中心水厂在线监测仪表数据采集/质量管理/多站点管理需求) -> Instrument/Data/Asset Management Need(仪表监测/数据质量/数字运营) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链完整但依赖'首批项目落地'，且华立自有平台可能排他。",
+    "to_verify": {
+     "customer_identity": "大运河(北京)水务是否为Hach已有客户/SFDC账户？华立股份是否为Hach客户？",
+     "installed_base": "大运河水务现有水厂数量/规模？在线仪表类型/数量？是否有联网仪表？",
+     "commercial_history": "Hach与大运河水务/华立股份历史合作记录？当前Pipeline？",
+     "ims": "大运河水务是否已有iMS或类似数字化产品？华立智慧水务平台是否排他？",
+     "account_sales": "大运河水务Account Owner？北京Regional Owner？"
+    },
+    "customer_need": "Customer Change(大运河水务引入上市公司技术能力推进副中心水务绿色转型) -> Digital Change(智慧水务数字化平台开发是合作核心) -> Operational Problem(副中心水厂在线监测仪表数据采集/质量管理/多站点管理需求) -> Instrument/Data/Asset Management Need(仪表监测/数据质量/数字运营) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链完整但依赖'首批项目落地'，且华立自有平台可能排他。",
+    "demand_hypothesis": "大运河水务是北京城市副中心水务建设投资主体，华立股份提供超滤膜+智慧水务数字化平台——这是一个刚签约的战略合作，处于项目定义/技术路线规划阶段。智慧水务数字化平台开发意味着仪表数据采集层、在线监测数据接入标准尚未锁定。如果iMS能在'数字化平台仪表数据层'定义阶段介入，有机会嵌入北京副中心水务数字底座。但华立股份自身有数字化平台能力，iMS需找到互补切入点。",
+    "contact_hint": "大运河(北京)水务建设投资管理有限公司党总支书记/总经理刘樱泉（签约人）；华立股份副总裁/董事会秘书孙伟（签约人）；华芯数科北京副中心落地负责人（未公开，需Company Agent确认）",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": "战略合作刚签约（9/17），华芯数科刚注册落地，尚未有具体项目启动。从战略合作到首批项目落地通常>9个月。",
+    "source_urls": [
+     "https://www.cnstock.com/commonDetail/792174"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月17日，在2026北京绿色发展论坛上，华立股份(603038)与大运河(北京)水务建设投资管理有限公司签署战略合作协议。华立股份控股子公司华芯数科(北京)科技发展有限公司正式注册落地北京城市副中心。合作以'超滤膜绿色净水工艺+智慧水务数字化平台'为核心技术，华立股份负责超滤膜材料研发、量子水务、净水装备、智慧水务数字化平台开发；大运河水务提供属地资源统筹和应用场景。双方计划打造超滤膜净水与智慧水务融合发展的示范样板，逐步向京津冀及全国复制推广。"
+     ],
+     "inferences": [
+      "大运河水务是北京城市副中心水务建设投资主体，华立股份提供超滤膜+智慧水务数字化平台——这是一个刚签约的战略合作，处于项目定义/技术路线规划阶段。智慧水务数字化平台开发意味着仪表数据采集层、在线监测数据接入标准尚未锁定。如果iMS能在'数字化平台仪表数据层'定义阶段介入，有机会嵌入北京副中心水务数字底座。但华立股份自身有数字化平台能力，iMS需找到互补切入点。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "大运河(北京)水务建设投资管理有限公司党总支书记/总经理刘樱泉（签约人）；华立股份副总裁/董事会秘书孙伟（签约人）；华芯数科北京副中心落地负责人（未公开，需Company Agent确认）",
+     "talk_what": "智慧水务数字化平台的仪表数据层是否已定义技术标准？超滤膜净水工艺配套的在线水质监测仪表选型方案是否已制定？副中心水厂数字化改造时间表？华立自有平台与第三方仪表数据接入的兼容方案？",
+     "why_now": "战略合作刚签约（9/17），华芯数科刚注册落地，数字化平台尚未开发——仪表数据层标准定义的最佳窗口"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-21",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260921-DQSY-002"
+   ],
+   "source_files": [
+    "2026-09-21.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Digital Operations",
+   "next_validation_questions": "智慧水务数字化平台的仪表数据层是否已定义技术标准？超滤膜净水工艺配套的在线水质监测仪表选型方案是否已制定？副中心水厂数字化改造时间表？华立自有平台与第三方仪表数据接入的兼容方案？",
+   "history": [
+    {
+     "date": "2026-09-21",
+     "source_file": "2026-09-21.json",
+     "record_id": "OPS-20260921-DQSY-002",
+     "name": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260921-DQSY-002"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260921-DQSY-002"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260921-WCSW-003",
+   "original_signal": {
+    "company": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+    "opportunity": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+    "industry": "市政水务",
+    "opportunity_stage": "运营期数字化建设",
+    "priority": 71,
+    "potential_ims_use_case": "Instrument Monitoring / Multi-site Management / Data Quality / Digital Operations",
+    "logic": "Customer Change(武水集团47座水厂一网统管平台竣工，正从市级向乡镇延伸数字化) -> Digital Change(统一监管平台已建但多水厂仍靠业务填报、乡镇水厂数字化白空间) -> Operational Problem(47座水厂中多数缺在线仪表自动采集、数据质量参差、乡镇水厂运维管理薄弱) -> Instrument/Data/Asset Management Need(在线仪表部署、多站点数据质量管理、仪表运维) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality/Digital Operations)。逻辑链完整。",
+    "to_verify": {
+     "customer_identity": "武汉城投水务集团/武水集团是否为Hach已有客户/SFDC账户？是否为战略客户？",
+     "installed_base": "47座水厂在线仪表类型/数量？哪些水厂有联网仪表？泡桐水厂现有仪表？",
+     "commercial_history": "Hach与武水集团历史合作记录？当前Pipeline？服务合同？",
+     "ims": "武水集团是否已有iMS？数能科技分公司是否提供类似仪表管理产品？",
+     "account_sales": "武水集团Account Owner？华中Regional Owner？"
+    },
+    "customer_need": "Customer Change(武水集团47座水厂一网统管平台竣工，正从市级向乡镇延伸数字化) -> Digital Change(统一监管平台已建但多水厂仍靠业务填报、乡镇水厂数字化白空间) -> Operational Problem(47座水厂中多数缺在线仪表自动采集、数据质量参差、乡镇水厂运维管理薄弱) -> Instrument/Data/Asset Management Need(在线仪表部署、多站点数据质量管理、仪表运维) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality/Digital Operations)。逻辑链完整。",
+    "demand_hypothesis": "武汉城投水务集团47座水厂统一监管平台已竣工——平台层已建，但47座水厂中'其余通过业务填报或系统对接归集'说明很多水厂仍缺在线仪表自动数据采集。乡镇水厂（泡桐水厂）数字化延伸刚刚启动，正是仪表数据层白空间。武水集团正在从'平台已建'转向'数据深化应用+乡镇延伸'阶段，iMS可在乡镇水厂仪表数据采集和质量管理环节介入。",
+    "contact_hint": "武汉城投水务集团数能科技分公司负责人（平台研发方）；武汉市自来水公司设计分公司负责人（泡桐水厂数字化项目方）；武水集团信息技术岗招聘对接人",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "统一监管平台已竣工（9/17），乡镇水厂数字化延伸（泡桐水厂）刚启动实景三维底座搭建，从数字底座到仪表数据层建设约6-9个月。",
+    "source_urls": [
+     "https://swj.wuhan.gov.cn/tzdt/jcss/202609/t20260914_2847205.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月17日，由武汉城投水务集团数能科技分公司自主研发的武汉市供水信息统一监管平台通过竣工验收，正式交付调度指挥中心投用。平台接入47座水厂（14座武水集团水厂+各区属水厂）重点数据，集中展示供水量、水压、水质、余氯、浊度等关键运行指标，含106项功能模块（35项平台功能+71项大屏展示）。同时，武汉市自来水公司设计分公司已启动黄陂区泡桐水厂实景三维数字底座搭建，探索乡镇水厂智慧化管理。武水集团正以数字化转型为抓手打造国内一流水务综合运营服务商。此外，武水集团2026年公开招聘信息技术岗（截止9/27），武昌供水分公司设备更新及系统调试项目比选（截止9/23）。"
+     ],
+     "inferences": [
+      "武汉城投水务集团47座水厂统一监管平台已竣工——平台层已建，但47座水厂中'其余通过业务填报或系统对接归集'说明很多水厂仍缺在线仪表自动数据采集。乡镇水厂（泡桐水厂）数字化延伸刚刚启动，正是仪表数据层白空间。武水集团正在从'平台已建'转向'数据深化应用+乡镇延伸'阶段，iMS可在乡镇水厂仪表数据采集和质量管理环节介入。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "武汉城投水务集团数能科技分公司负责人（平台研发方）；武汉市自来水公司设计分公司负责人（泡桐水厂数字化项目方）；武水集团信息技术岗招聘对接人",
+     "talk_what": "47座水厂中哪些仍靠业务填报而非在线采集？泡桐水厂实景三维底座搭建后，在线仪表数据采集层的规划是什么？乡镇水厂智慧化管理对在线监测仪表有什么选型偏好？武水集团设备更新及系统调试项目的仪表范围？",
+     "why_now": "统一监管平台刚竣工（9/17），乡镇水厂数字化延伸刚启动实景三维底座（9月），信息技术岗正在招聘——正是仪表数据层建设规划阶段"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-21",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260921-WCSW-003"
+   ],
+   "source_files": [
+    "2026-09-21.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Multi-site Management / Data Quality / Digital Operations",
+   "next_validation_questions": "47座水厂中哪些仍靠业务填报而非在线采集？泡桐水厂实景三维底座搭建后，在线仪表数据采集层的规划是什么？乡镇水厂智慧化管理对在线监测仪表有什么选型偏好？武水集团设备更新及系统调试项目的仪表范围？",
+   "history": [
+    {
+     "date": "2026-09-21",
+     "source_file": "2026-09-21.json",
+     "record_id": "OPS-20260921-WCSW-003",
+     "name": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260921-WCSW-003"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260921-WCSW-003"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260921-CXTC-004",
+   "original_signal": {
+    "company": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+    "opportunity": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+    "industry": "市政水务",
+    "opportunity_stage": "立项/规划",
+    "priority": 67,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Lifecycle Management",
+    "logic": "Customer Change(长鑫科技第五代量产+扩产加速，新晶圆厂建设) -> Digital Change(新厂超纯水系统建设需在线仪表监测水质) -> Operational Problem(超纯水系统18MΩ水质要求极高，在线TOC/电导率/pH监测是刚需) -> Instrument/Data/Asset Management Need(超纯水系统在线仪表部署、数据质量管理、生命周期管理) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Lifecycle Management)。逻辑链完整，但iMS能否切入取决于Hach在半导体超纯水监测的已有基础。",
+    "to_verify": {
+     "customer_identity": "长鑫科技是否为Hach已有客户/SFDC账户？合肥/北京现有3座晶圆厂是否已有Hach仪表？",
+     "installed_base": "长鑫3座晶圆厂超纯水系统现有在线仪表类型/数量？是否有联网仪表？上海新厂超纯水系统设计是否已开始？",
+     "commercial_history": "Hach与长鑫科技历史合作记录？当前Pipeline？服务合同？",
+     "ims": "长鑫科技是否已有iMS或类似数字化产品？超纯水系统在线监测是否有数字化管理？",
+     "account_sales": "长鑫科技Account Owner？半导体Regional Owner？"
+    },
+    "customer_need": "Customer Change(长鑫科技第五代量产+扩产加速，新晶圆厂建设) -> Digital Change(新厂超纯水系统建设需在线仪表监测水质) -> Operational Problem(超纯水系统18MΩ水质要求极高，在线TOC/电导率/pH监测是刚需) -> Instrument/Data/Asset Management Need(超纯水系统在线仪表部署、数据质量管理、生命周期管理) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Lifecycle Management)。逻辑链完整，但iMS能否切入取决于Hach在半导体超纯水监测的已有基础。",
+    "demand_hypothesis": "长鑫科技第五代量产确认+上海新厂设备招标启动+北京亦庄第二座12英寸规划——半导体超纯水系统需求将随扩产持续释放。上海新厂已进入设备招标（采购阶段），但北京亦庄第二座仍处于'正考虑'（战略规划阶段）。超纯水系统是晶圆厂核心工艺配套，iMS可在新厂超纯水系统仪表数据层建设和水质在线监测环节介入。北京亦庄第二座处于规划阶段，介入窗口最佳。",
+    "contact_hint": "长鑫科技北京亦庄新厂项目负责人（未公开，需Company Agent确认）；长鑫科技设备采购部门（上海新厂已启动招标，可查招标信息）；超纯水系统EPC/设计院（未公开）",
+    "estimated_time_window": ">9 months",
+    "time_window_basis": "北京亦庄第二座12英寸仍处于'正考虑'阶段（战略规划）；上海新厂已进入设备招标（<3个月）。北京亦庄新厂对应>9个月窗口。",
+    "source_urls": [
+     "http://finance.sina.cn/2026-09-20/detail-inisnhay9263398.d.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月20日，长鑫科技在2026世界制造业大会上宣布第五代工艺技术平台正式量产（11.95纳米有源区半间距，电容深宽比45:1，每张晶圆产出比上一代提升50%+，24GB LPDDR5X已量产量产）。长鑫科技7月科创板上市，募投项目总投资345亿元。最新信息显示：(1)上海新晶圆厂已启动设备招标程序；(2)长鑫正考虑在北京亦庄建设第二座12英寸晶圆厂；(3)2026年底月产能预计提升至约35万片（目前合肥2座+北京1座各约10万片/月），远期目标60万片/月；(4)国金证券按2026年扩产5-6万片测算设备采购额约350-430亿元。"
+     ],
+     "inferences": [
+      "长鑫科技第五代量产确认+上海新厂设备招标启动+北京亦庄第二座12英寸规划——半导体超纯水系统需求将随扩产持续释放。上海新厂已进入设备招标（采购阶段），但北京亦庄第二座仍处于'正考虑'（战略规划阶段）。超纯水系统是晶圆厂核心工艺配套，iMS可在新厂超纯水系统仪表数据层建设和水质在线监测环节介入。北京亦庄第二座处于规划阶段，介入窗口最佳。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "长鑫科技北京亦庄新厂项目负责人（未公开，需Company Agent确认）；长鑫科技设备采购部门（上海新厂已启动招标，可查招标信息）；超纯水系统EPC/设计院（未公开）",
+     "talk_what": "北京亦庄第二座12英寸晶圆厂的超纯水系统技术规格是否已定义？上海新厂超纯水系统在线监测仪表选型是否已锁定？超纯水TOC在线监测、电导率监测的数据管理和追溯需求？",
+     "why_now": "北京亦庄第二座仍处于'正考虑'规划阶段，上海新厂刚启动设备招标——超纯水系统仪表选型和技术路线尚未完全锁定"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-21",
+   "last_updated": "2026-09-21",
+   "source_lead_ids": [
+    "OPS-20260921-CXTC-004"
+   ],
+   "source_files": [
+    "2026-09-21.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Lifecycle Management",
+   "next_validation_questions": "北京亦庄第二座12英寸晶圆厂的超纯水系统技术规格是否已定义？上海新厂超纯水系统在线监测仪表选型是否已锁定？超纯水TOC在线监测、电导率监测的数据管理和追溯需求？",
+   "history": [
+    {
+     "date": "2026-09-21",
+     "source_file": "2026-09-21.json",
+     "record_id": "OPS-20260921-CXTC-004",
+     "name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260921-CXTC-004"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260921-CXTC-004"
+   ]
   }
  ],
  "projects": [
@@ -6697,6 +8643,318 @@
    "lead_ids": [
     "MUN-20260819-002"
    ]
+  },
+  {
+   "project_id": "PRJ-OPS-20260913-VEOL-001",
+   "lead_id": "OPS-20260913-VEOL-001",
+   "account_id": "ACC-OPS-20260913-VEOL-001",
+   "project_name": "威立雅科学城环保科技(广州)有限公司储备项目群",
+   "owner": "威立雅科学城环保科技(广州)有限公司储备项目群",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260913-VEOL-002",
+   "lead_id": "OPS-20260913-VEOL-002",
+   "account_id": "ACC-OPS-20260913-VEOL-002",
+   "project_name": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+   "owner": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Health Diagnostics / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260913-VEOL-003",
+   "lead_id": "OPS-20260913-VEOL-003",
+   "account_id": "ACC-OPS-20260913-VEOL-003",
+   "project_name": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+   "owner": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Asset Management / Lifecycle Management / Instrument Monitoring"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260913-VEOL-004",
+   "lead_id": "OPS-20260913-VEOL-004",
+   "account_id": "ACC-OPS-20260913-VEOL-004",
+   "project_name": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+   "owner": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Asset Management / Instrument Health Diagnostics / Multi-site Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260913-VEOL-005",
+   "lead_id": "OPS-20260913-VEOL-005",
+   "account_id": "ACC-OPS-20260913-VEOL-005",
+   "project_name": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+   "owner": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-14-001",
+   "lead_id": "OPP-2026-09-14-001",
+   "account_id": "ACC-OPP-2026-09-14-001",
+   "project_name": "上海浦东迎宾水厂（一期）新建工程",
+   "owner": "上海浦东迎宾水厂（一期）新建工程",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Multi-site Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-14-002",
+   "lead_id": "OPP-2026-09-14-002",
+   "account_id": "ACC-OPP-2026-09-14-002",
+   "project_name": "平顶山二次供水数字化转型战略合作",
+   "owner": "平顶山二次供水数字化转型战略合作",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Instrument Health Diagnostics / Predictive Maintenance"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-14-003",
+   "lead_id": "OPP-2026-09-14-003",
+   "account_id": "ACC-OPP-2026-09-14-003",
+   "project_name": "南阳六张网地下管网战略规划",
+   "owner": "南阳六张网地下管网战略规划",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Asset Management / Unknown"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-16-001",
+   "lead_id": "OPP-2026-09-16-001",
+   "account_id": "ACC-OPP-2026-09-16-001",
+   "project_name": "万家寨水务控股集团新管理层+数字化转型窗口",
+   "owner": "万家寨水务控股集团新管理层+数字化转型窗口",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Digital Operations / Multi-site Management / Asset Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-16-002",
+   "lead_id": "OPP-2026-09-16-002",
+   "account_id": "ACC-OPP-2026-09-16-002",
+   "project_name": "合肥排水一体化改革-区级排水设施统一运维",
+   "owner": "合肥排水一体化改革-区级排水设施统一运维",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Asset Management / Instrument Health Diagnostics"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-16-003",
+   "lead_id": "OPP-2026-09-16-003",
+   "account_id": "ACC-OPP-2026-09-16-003",
+   "project_name": "中芯京城二期-500亿12英寸晶圆厂新建",
+   "owner": "中芯京城二期-500亿12英寸晶圆厂新建",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Unknown"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-16-004",
+   "lead_id": "OPP-2026-09-16-004",
+   "account_id": "ACC-OPP-2026-09-16-004",
+   "project_name": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+   "owner": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Unknown"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260911-V33-002",
+   "lead_id": "OPS-20260911-V33-002",
+   "account_id": "ACC-OPS-20260911-V33-002",
+   "project_name": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+   "owner": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Instrument Health Diagnostics"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260911-V33-001",
+   "lead_id": "OPS-20260911-V33-001",
+   "account_id": "ACC-OPS-20260911-V33-001",
+   "project_name": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+   "owner": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Asset Management / Instrument Health Diagnostics"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260911-V33-003",
+   "lead_id": "OPS-20260911-V33-003",
+   "account_id": "ACC-OPS-20260911-V33-003",
+   "project_name": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+   "owner": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Instrument Health Diagnostics / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260911-V33-004",
+   "lead_id": "OPS-20260911-V33-004",
+   "account_id": "ACC-OPS-20260911-V33-004",
+   "project_name": "灵山县十里污水处理厂及配套管网工程",
+   "owner": "灵山县十里污水处理厂及配套管网工程",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260909-004",
+   "lead_id": "OPS-20260909-004",
+   "account_id": "ACC-OPS-20260909-004",
+   "project_name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+   "owner": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Digital Operations / Predictive Maintenance"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260907-003",
+   "lead_id": "OPS-20260907-003",
+   "account_id": "ACC-OPS-20260907-003",
+   "project_name": "清江浦区农村供水提升改造项目(初步设计已批复)",
+   "owner": "清江浦区农村供水提升改造项目(初步设计已批复)",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Instrument Monitoring"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260911-V33-005",
+   "lead_id": "OPS-20260911-V33-005",
+   "account_id": "ACC-OPS-20260911-V33-005",
+   "project_name": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+   "owner": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Instrument Monitoring / Predictive Maintenance"
+   }
+  },
+  {
+   "project_id": "PRJ-OPP-2026-09-18-001",
+   "lead_id": "OPP-2026-09-18-001",
+   "account_id": "ACC-OPP-2026-09-18-001",
+   "project_name": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+   "owner": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Multi-site Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260921-SYNY-001",
+   "lead_id": "OPS-20260921-SYNY-001",
+   "account_id": "ACC-OPS-20260921-SYNY-001",
+   "project_name": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+   "owner": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Multi-site Management / Data Quality"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260921-DQSY-002",
+   "lead_id": "OPS-20260921-DQSY-002",
+   "account_id": "ACC-OPS-20260921-DQSY-002",
+   "project_name": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+   "owner": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260921-WCSW-003",
+   "lead_id": "OPS-20260921-WCSW-003",
+   "account_id": "ACC-OPS-20260921-WCSW-003",
+   "project_name": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+   "owner": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Multi-site Management / Data Quality / Digital Operations"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260921-CXTC-004",
+   "lead_id": "OPS-20260921-CXTC-004",
+   "account_id": "ACC-OPS-20260921-CXTC-004",
+   "project_name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+   "owner": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Lifecycle Management"
+   }
   }
  ],
  "accounts": [
@@ -7221,6 +9479,246 @@
    "latest_signal": "75座厂站升级焕新+智慧调度平台一盘棋统筹",
    "ims_fit": "",
    "enrichment_level": 1
+  },
+  {
+   "account_id": "ACC-OPS-20260913-VEOL-001",
+   "lead_id": "OPS-20260913-VEOL-001",
+   "account_name": "威立雅科学城环保科技(广州)有限公司储备项目群",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260913-VEOL-002",
+   "lead_id": "OPS-20260913-VEOL-002",
+   "account_name": "上海浦东威立雅：新版水质标准(DB31/T 1091-2025)驱动监测升级 + 居家桥智慧水厂运营数字化",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260913-VEOL-003",
+   "lead_id": "OPS-20260913-VEOL-003",
+   "account_name": "威立雅(中国)环境服务：集团数智化平台建设与自有产品线推进",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260913-VEOL-004",
+   "lead_id": "OPS-20260913-VEOL-004",
+   "account_name": "天津津滨威立雅：智慧管网感知层持续扩容与仪表运维",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260913-VEOL-005",
+   "lead_id": "OPS-20260913-VEOL-005",
+   "account_name": "铜陵六国威立雅：提标改造通水后运营数字化配套",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-14-001",
+   "lead_id": "OPP-2026-09-14-001",
+   "account_name": "上海浦东迎宾水厂（一期）新建工程",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-14-002",
+   "lead_id": "OPP-2026-09-14-002",
+   "account_name": "平顶山二次供水数字化转型战略合作",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-14-003",
+   "lead_id": "OPP-2026-09-14-003",
+   "account_name": "南阳六张网地下管网战略规划",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-16-001",
+   "lead_id": "OPP-2026-09-16-001",
+   "account_name": "万家寨水务控股集团新管理层+数字化转型窗口",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-16-002",
+   "lead_id": "OPP-2026-09-16-002",
+   "account_name": "合肥排水一体化改革-区级排水设施统一运维",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-16-003",
+   "lead_id": "OPP-2026-09-16-003",
+   "account_name": "中芯京城二期-500亿12英寸晶圆厂新建",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-16-004",
+   "lead_id": "OPP-2026-09-16-004",
+   "account_name": "粤芯半导体四期-252亿12英寸晶圆厂扩建",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260911-V33-002",
+   "lead_id": "OPS-20260911-V33-002",
+   "account_name": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260911-V33-001",
+   "lead_id": "OPS-20260911-V33-001",
+   "account_name": "第三师图木舒克市城市污水处理厂一期提升改造项目",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260911-V33-003",
+   "lead_id": "OPS-20260911-V33-003",
+   "account_name": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260911-V33-004",
+   "lead_id": "OPS-20260911-V33-004",
+   "account_name": "灵山县十里污水处理厂及配套管网工程",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260909-004",
+   "lead_id": "OPS-20260909-004",
+   "account_name": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260907-003",
+   "lead_id": "OPS-20260907-003",
+   "account_name": "清江浦区农村供水提升改造项目(初步设计已批复)",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260911-V33-005",
+   "lead_id": "OPS-20260911-V33-005",
+   "account_name": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPP-2026-09-18-001",
+   "lead_id": "OPP-2026-09-18-001",
+   "account_name": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260921-SYNY-001",
+   "lead_id": "OPS-20260921-SYNY-001",
+   "account_name": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260921-DQSY-002",
+   "lead_id": "OPS-20260921-DQSY-002",
+   "account_name": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260921-WCSW-003",
+   "lead_id": "OPS-20260921-WCSW-003",
+   "account_name": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260921-CXTC-004",
+   "lead_id": "OPS-20260921-CXTC-004",
+   "account_name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
   }
  ],
  "contacts": [
@@ -11251,6 +13749,22 @@
     "https://baike.baidu.com/item/平顶山市自来水有限公司/20509685",
     "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml"
    ]
+  },
+  {
+   "date": "2026-09-21",
+   "version": "radar-daily-merge",
+   "agent": "merge_radar_daily_to_enriched",
+   "action": "incremental radar daily merge",
+   "new_leads_added": 24,
+   "new_contacts_added": 0,
+   "sources": [
+    "2026-09-13.json",
+    "2026-09-14.json",
+    "2026-09-16.json",
+    "2026-09-18.json",
+    "2026-09-21.json"
+   ],
+   "notes": "automated merge of radar daily output into enriched master (window after 2026-09-12)"
   }
  ],
  "policy_intelligence": [
