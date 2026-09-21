@@ -72,6 +72,37 @@ def is_recorded(value):
     return bool(text) and not (text in {"unknown", "null", "n/a", "未记录", "未知"}
                               or text.startswith(("unknown：", "待核实")))
 
+def normalize_daily_signal(signal):
+    """Map stable Radar variants into the customer-page schema without changing Radar input."""
+    data=safe(signal)
+    def first(*keys):
+        for key in keys:
+            if is_recorded(data.get(key)):
+                return data[key]
+        return None
+    data["opportunity"]=first("opportunity", "opportunity_project", "project", "trigger")
+    data["opportunity_stage"]=first("opportunity_stage", "project_stage")
+    data["estimated_time_window"]=first("estimated_time_window", "influence_window", "entry_window", "entry_timing")
+    data["time_window_basis"]=first("time_window_basis", "influence_window_evidence", "entry_timing_evidence")
+    data["location"]=first("location", "region")
+    data["industry"]=first("industry", "sector")
+    sources=data.get("source_urls") or data.get("source_url") or []
+    data["source_urls"]=[sources] if isinstance(sources, str) else sources
+    evidence=data.get("evidence")
+    if not isinstance(evidence, dict):
+        evidence={"facts": evidence or data.get("public_facts") or []}
+    facts=evidence.get("facts") or data.get("public_facts") or []
+    evidence["facts"]=[facts] if isinstance(facts, str) else facts
+    data["evidence"]=evidence
+    pull=data.get("pull_box") or {}
+    if isinstance(pull, dict):
+        if not is_recorded(data.get("customer_need")):
+            data["customer_need"]=pull.get("unavoidable") or pull.get("u_unavoidable")
+        if not is_recorded(data.get("operational_pain_points")):
+            data["operational_pain_points"]=pull.get("limitations") or pull.get("l_limitations")
+        if not is_recorded(data.get("sales_summary")):
+            data["sales_summary"]=pull.get("project") or pull.get("p_project")
+    return data
 def completeness(signal, contacts):
     """Score record completeness only; it must never imply commercial priority."""
     evidence=signal.get("evidence") or {}
@@ -83,7 +114,8 @@ def completeness(signal, contacts):
         "customer_requirement", "customer_need", "current_solution", "operational_pain_points",
         "sales_summary", "demand_hypothesis")) >= 2
     support=is_recorded(evidence.get("facts")) and is_recorded(signal.get("source_urls"))
-    actionability=bool(contacts) or any(
+    stage3_contacts=((signal.get("stage3_enrichment") or {}).get("contacts") or {})
+    actionability=bool(contacts) or is_recorded(stage3_contacts) or any(
         str(item.get("confidence", "")).upper() in {"HIGH", "MEDIUM"}
         for item in signal.get("jd_inferences") or [])
     checks=(basic, timeline, demand, support, actionability)
@@ -189,17 +221,7 @@ def industrial_rows():
         for signal in daily.get("signals",[]):
             lead_id=signal.get("id")
             if not lead_id: continue
-            radar=safe(signal)
-            # Radar daily files keep the opportunity under opportunity_project and
-            # the time window under influence_window; completeness() expects the
-            # enriched field names, so align them before scoring so daily rows get
-            # the same quality_score/quality_missing as enriched rows.
-            if not radar.get("opportunity") and radar.get("opportunity_project"):
-                radar["opportunity"]=radar["opportunity_project"]
-            if not radar.get("estimated_time_window") and radar.get("influence_window"):
-                radar["estimated_time_window"]=radar["influence_window"]
-            if not radar.get("time_window_basis") and radar.get("influence_window_evidence"):
-                radar["time_window_basis"]=radar["influence_window_evidence"]
+            radar=normalize_daily_signal(signal)
             daily_contacts=by_id[lead_id].get("enriched_contacts") if lead_id in by_id else []
             quality_score, quality_missing=completeness(radar, daily_contacts or [])
             if lead_id in by_id:
@@ -240,7 +262,8 @@ def municipal_rows():
             facts=item.get("public_facts") or []
             if not isinstance(facts,list): facts=[facts]
             signal=safe({"company":name,"opportunity":name,"opportunity_stage":item.get("opportunity_stage"),"priority":item.get("priority"),"score":item.get("score") or item.get("public_signal_score"),"potential_ims_use_case":item.get("potential_ims_use_case"),"logic":item.get("logic_chain_check") or item.get("ai_judgment"),"to_verify":item.get("to_verify") or item.get("agent_checklist"),"estimated_time_window":item.get("estimated_time_window"),"time_window_basis":item.get("estimated_time_window_basis") or item.get("time_window_basis"),"source_urls":[item.get("source_url")] if item.get("source_url") else [],"evidence":{"facts":facts,"inferences":[item.get("ai_judgment")] if item.get("ai_judgment") else []}})
-            lead={"lead_id":item.get("id") or f"MUN-DAILY-{date}-{number:03d}","company":{"company_name":name,"location":None,"industry":None},"project":{"project_name":name,"project_stage":item.get("opportunity_stage")},"signal":{"signal_description":name,"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"市政雷达日报"} for u in signal["source_urls"]]}}
+            signal=normalize_daily_signal(signal)
+            lead={"lead_id":item.get("id") or item.get("opportunity_id") or f"MUN-DAILY-{date}-{number:03d}","company":{"company_name":name,"location":None,"industry":None},"project":{"project_name":name,"project_stage":item.get("opportunity_stage")},"signal":{"signal_description":name,"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"市政雷达日报"} for u in signal["source_urls"]]}}
             quality_score, quality_missing=completeness(signal, [])
             rows.append({"segment":"municipal","category":municipal_category(signal),"date":date,"quality_score":quality_score,"quality_missing":quality_missing,"lead":lead,"enriched_record":{"original_signal":signal,"enrichment_status":"radar_daily"},"enriched_contacts":[],"history":[{"file":path.name,"date":date}]})
             known.append(compact)
@@ -260,7 +283,7 @@ def page():
     js = js.replace("const labels=", "for(const r of data.leads){for(const c of r.enriched_contacts||[]){if(c.phone&&!Array.isArray(c.phone))c.phone=[typeof c.phone==='object'?c.phone:{value:c.phone}]}}const labels=")
     js = js.replace(
         "category=document.querySelector('#category');let seg='all',cat='all',chosen=0;",
-        "category=document.querySelector('#category'),quality=document.querySelector('#quality'),timing=document.querySelector('#timing');let seg='all',cat='all',qualityFilter='all',timeFilter='all',chosen=0;",
+        "category=document.querySelector('#category'),quality=document.querySelector('#quality'),timing=document.querySelector('#timing');let seg='all',cat='all',qualityFilter='five',timeFilter='all',chosen=0;",
     )
     js = js.replace(
         "function rows(){",
