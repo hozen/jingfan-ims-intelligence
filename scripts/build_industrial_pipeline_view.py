@@ -117,7 +117,7 @@ def completeness(signal, contacts):
     stage3_contacts=((signal.get("stage3_enrichment") or {}).get("contacts") or {})
     actionability=bool(contacts) or is_recorded(stage3_contacts) or any(
         str(item.get("confidence", "")).upper() in {"HIGH", "MEDIUM"}
-        for item in signal.get("jd_inferences") or [])
+        for item in signal.get("jd_inferences") or []) or is_recorded(signal.get("contact_hint"))
     checks=(basic, timeline, demand, support, actionability)
     return sum(checks), [label for label, ok in zip(
         ("项目与地区", "阶段与时间窗口", "需求与现状", "公开证据", "联系人或招聘证据"), checks) if not ok]
@@ -162,6 +162,15 @@ def enriched_rows(segment, directory, patterns):
                     "sales_insight_evidence", "jd_inferences"):
             if item.get(key) is not None:
                 signal[key] = safe(item[key])
+        # Legacy enriched records used company_name and kept opportunity_stage /
+        # industry on the lead row; carry those across so completeness() scores
+        # them with the same fields as newer records.
+        if not is_recorded(signal.get("company")) and is_recorded(signal.get("company_name")):
+            signal["company"]=signal["company_name"]
+        if not is_recorded(signal.get("industry")) and is_recorded(item.get("industry")):
+            signal["industry"]=item["industry"]
+        if not is_recorded(signal.get("opportunity_stage")) and is_recorded(item.get("opportunity_stage")):
+            signal["opportunity_stage"]=item["opportunity_stage"]
         if not signal.get("to_verify"):
             signal["to_verify"] = (signal.get("next_validation_questions")
                                    if signal.get("next_validation_questions") is not None
@@ -236,6 +245,30 @@ def industrial_rows():
             lead_id=signal.get("id")
             if not lead_id: continue
             radar=normalize_daily_signal(signal)
+            # Beyond normalize_daily_signal(): 09-17-era daily files keep the
+            # opportunity only in pull_box P/p_project or in evidence.facts,
+            # and carry the demand picture in pull_box P/U/L1/L2 plus
+            # evidence.inferences. Surface those to the fields completeness()
+            # checks, without overwriting real data.
+            pb=radar.get("pull_box") or {}
+            def pick(*keys):
+                for k in keys:
+                    v=pb.get(k)
+                    if is_recorded(v):
+                        return v if isinstance(v, str) else json.dumps(v, ensure_ascii=False)
+                return None
+            if not is_recorded(radar.get("opportunity")):
+                radar["opportunity"]=(pick("P","p_project")
+                                      or (((radar.get("evidence") or {}).get("facts") or [None])[0])
+                                      or radar.get("company"))
+            infs=((radar.get("evidence") or {}).get("inferences") or [])
+            demand_fields=(("customer_requirement",("P","p_project")),("customer_need",("U","u_unavoidable")),("current_solution",("L1","l_limitations")),("demand_hypothesis",("key_unknown","next_validation_question")))
+            for field,keys in demand_fields:
+                if not is_recorded(radar.get(field)):
+                    radar[field]=pick(*keys)
+            for field,idx in (("customer_need",0),("current_solution",1),("demand_hypothesis",2)):
+                if not is_recorded(radar.get(field)) and idx<len(infs):
+                    radar[field]=infs[idx]
             daily_contacts=by_id[lead_id].get("enriched_contacts") if lead_id in by_id else []
             quality_score, quality_missing=completeness(radar, daily_contacts or [])
             if lead_id in by_id:
@@ -278,7 +311,10 @@ def municipal_rows():
                 continue
             facts=item.get("public_facts") or []
             if not isinstance(facts,list): facts=[facts]
-            signal=safe({"company":name,"opportunity":name,"opportunity_stage":item.get("opportunity_stage"),"priority":item.get("priority"),"score":item.get("score") or item.get("public_signal_score"),"potential_ims_use_case":item.get("potential_ims_use_case"),"logic":item.get("logic_chain_check") or item.get("ai_judgment"),"to_verify":item.get("to_verify") or item.get("agent_checklist"),"estimated_time_window":item.get("estimated_time_window"),"time_window_basis":item.get("estimated_time_window_basis") or item.get("time_window_basis"),"source_urls":[item.get("source_url")] if item.get("source_url") else [],"evidence":{"facts":facts,"inferences":[item.get("ai_judgment")] if item.get("ai_judgment") else []}})
+            action_triad=item.get("action_triad") or {}
+            logic_chain=item.get("logic_chain_check") or item.get("ai_judgment")
+            demand_hint=item.get("ai_judgment") or (action_triad.get("talk_what") if isinstance(action_triad, dict) else None) or logic_chain
+            signal=safe({"company":name,"opportunity":name,"industry":"市政水务","opportunity_stage":item.get("opportunity_stage"),"priority":item.get("priority"),"score":item.get("score") or item.get("public_signal_score"),"potential_ims_use_case":item.get("potential_ims_use_case"),"logic":item.get("logic_chain_check") or item.get("ai_judgment"),"to_verify":item.get("to_verify") or item.get("agent_checklist"),"customer_need":logic_chain,"demand_hypothesis":demand_hint,"contact_hint":action_triad.get("find_who") if isinstance(action_triad, dict) else None,"estimated_time_window":item.get("estimated_time_window"),"time_window_basis":item.get("estimated_time_window_basis") or item.get("time_window_basis"),"source_urls":[item.get("source_url")] if item.get("source_url") else [],"evidence":{"facts":facts,"inferences":[item.get("ai_judgment")] if item.get("ai_judgment") else []}})
             signal=normalize_daily_signal(signal)
             lead={"lead_id":item.get("id") or item.get("opportunity_id") or f"MUN-DAILY-{date}-{number:03d}","company":{"company_name":name,"location":None,"industry":None},"project":{"project_name":name,"project_stage":item.get("opportunity_stage")},"signal":{"signal_description":name,"signal_date":date,"evidence":[{"source_url":u,"evidence_summary":"市政雷达日报"} for u in signal["source_urls"]]}}
             quality_score, quality_missing=completeness(signal, [])
