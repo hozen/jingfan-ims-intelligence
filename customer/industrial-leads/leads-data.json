@@ -1,6 +1,266 @@
 {
   "leads": [
     {
+      "segment": "municipal",
+      "category": "水务集团／跨区域",
+      "date": "2026-09-21",
+      "lead": {
+        "lead_id": "OPS-20260921-WCSW-003",
+        "company": {
+          "company_name": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+          "project_stage": "运营期数字化建设"
+        },
+        "signal": {
+          "signal_description": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+          "signal_date": "2026-09-21",
+          "evidence": [
+            {
+              "source_url": "https://swj.wuhan.gov.cn/tzdt/jcss/202609/t20260914_2847205.html",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+          "opportunity": "武汉城投水务集团47座水厂一网统管平台竣工+乡镇水厂数字化延伸",
+          "opportunity_stage": "运营期数字化建设",
+          "priority": null,
+          "score": 71,
+          "potential_ims_use_case": "Instrument Monitoring / Multi-site Management / Data Quality / Digital Operations",
+          "logic": "Customer Change(武水集团47座水厂一网统管平台竣工，正从市级向乡镇延伸数字化) -> Digital Change(统一监管平台已建但多水厂仍靠业务填报、乡镇水厂数字化白空间) -> Operational Problem(47座水厂中多数缺在线仪表自动采集、数据质量参差、乡镇水厂运维管理薄弱) -> Instrument/Data/Asset Management Need(在线仪表部署、多站点数据质量管理、仪表运维) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality/Digital Operations)。逻辑链完整。",
+          "to_verify": {
+            "customer_identity": "武汉城投水务集团/武水集团是否为Hach已有客户/SFDC账户？是否为战略客户？",
+            "installed_base": "47座水厂在线仪表类型/数量？哪些水厂有联网仪表？泡桐水厂现有仪表？",
+            "commercial_history": "Hach与武水集团历史合作记录？当前Pipeline？服务合同？",
+            "ims": "武水集团是否已有iMS？数能科技分公司是否提供类似仪表管理产品？",
+            "account_sales": "武水集团Account Owner？华中Regional Owner？"
+          },
+          "source_urls": [
+            "https://swj.wuhan.gov.cn/tzdt/jcss/202609/t20260914_2847205.html"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月17日，由武汉城投水务集团数能科技分公司自主研发的武汉市供水信息统一监管平台通过竣工验收，正式交付调度指挥中心投用。平台接入47座水厂（14座武水集团水厂+各区属水厂）重点数据，集中展示供水量、水压、水质、余氯、浊度等关键运行指标，含106项功能模块（35项平台功能+71项大屏展示）。同时，武汉市自来水公司设计分公司已启动黄陂区泡桐水厂实景三维数字底座搭建，探索乡镇水厂智慧化管理。武水集团正以数字化转型为抓手打造国内一流水务综合运营服务商。此外，武水集团2026年公开招聘信息技术岗（截止9/27），武昌供水分公司设备更新及系统调试项目比选（截止9/23）。"
+            ],
+            "inferences": [
+              "武汉城投水务集团47座水厂统一监管平台已竣工——平台层已建，但47座水厂中'其余通过业务填报或系统对接归集'说明很多水厂仍缺在线仪表自动数据采集。乡镇水厂（泡桐水厂）数字化延伸刚刚启动，正是仪表数据层白空间。武水集团正在从'平台已建'转向'数据深化应用+乡镇延伸'阶段，iMS可在乡镇水厂仪表数据采集和质量管理环节介入。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-21.json",
+          "date": "2026-09-21"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
+      "segment": "municipal",
+      "category": "水务集团／跨区域",
+      "date": "2026-09-21",
+      "lead": {
+        "lead_id": "OPS-20260921-SYNY-001",
+        "company": {
+          "company_name": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+          "project_stage": "战略规划"
+        },
+        "signal": {
+          "signal_description": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代",
+          "signal_date": "2026-09-21",
+          "evidence": [
+            {
+              "source_url": "https://www.sohu.com/a/1075841997_121106822",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "沈阳水务集团×三川智慧×软通动力：鸿***水务生态共建+漏损管控+水表迭代",
+          "opportunity": "沈阳水务集团×三川智慧×软通动力：鸿***水务生态共建+漏损管控+水表迭代",
+          "opportunity_stage": "战略规划",
+          "priority": null,
+          "score": 68,
+          "potential_ims_use_case": "Instrument Monitoring / Multi-site Management / Data Quality",
+          "logic": "Customer Change(沈阳水务正全力推进智慧水务体系建设，引入鸿蒙生态国产终端) -> Digital Change(鸿蒙水表迭代+漏损管控+数据资产化=仪表层数字化升级) -> Operational Problem(多水厂/多站点在线仪表数据采集、质量管理、运维管理需求) -> Instrument/Data/Asset Management Need(仪表监测、多站点管理、数据质量) -> Potential iMS Use Case(Instrument Monitoring/Multi-site Management/Data Quality)。逻辑链较完整，但iMS能否切入取决于鸿蒙生态是否已覆盖仪表健康管理。",
+          "to_verify": {
+            "customer_identity": "沈阳水务集团是否为Hach已有客户/SFDC账户？是否为战略客户？",
+            "installed_base": "沈阳水务集团水厂数量？在线仪表类型/数量？是否有联网仪表？是否存在数字化白空间？",
+            "commercial_history": "Hach与沈阳水务历史合作记录？当前Pipeline？服务合同？",
+            "ims": "沈阳水务是否已有iMS或类似数字化产品？三川智慧+软通动力合作是否排他性？",
+            "account_sales": "沈阳水务Account Owner？东北Regional Owner？"
+          },
+          "source_urls": [
+            "https://www.sohu.com/a/1075841997_121106822"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月14日，三川智慧副总裁钱龙、软通动力高级副总裁吴江赴沈阳水务集团开展三方专项座谈。沈阳水务集团党委副书记郭正学表示'数智化转型是水务行业高质量发展的核心抓手，目前沈阳水务集团正全力推进智慧水务体系建设'。三方围绕供水漏损精细化管控、鸿蒙水表适配改造、水务数据资产化开发、水务国产化数智化等重点领域展开深度磋商，明确了常态化协同合作机制与后续重点推进方向。三川智慧开源鸿蒙水表已在华为全联接大会(9/17-19)亮相，多款产品获OpenHarmony生态兼容性认证。"
+            ],
+            "inferences": [
+              "沈阳水务集团正处于智慧水务体系建设的战略规划/启动期——党委副书记亲自确认'全力推进'但尚未到设备采购阶段。三方合作聚焦鸿蒙水表迭代和漏损管控，说明仪表层正在规划升级但技术路线尚未锁定。三川智慧+软通动力提供国产终端+软件平台，但在线水质监测仪表、仪表健康诊断、多站点数据质量管理等环节仍可能有iMS接入空间——特别是如果iMS能在'仪表数据层'标准定义阶段介入。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-21.json",
+          "date": "2026-09-21"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-21",
+      "lead": {
+        "lead_id": "OPS-20260921-DQSY-002",
+        "company": {
+          "company_name": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+          "project_stage": "战略规划"
+        },
+        "signal": {
+          "signal_description": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）",
+          "signal_date": "2026-09-21",
+          "evidence": [
+            {
+              "source_url": "https://www.cnstock.com/commonDetail/792174",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "华立股份×大运河水务：北***心绿色智慧水务战略合作（超滤膜+数字化平台）",
+          "opportunity": "华立股份×大运河水务：北***心绿色智慧水务战略合作（超滤膜+数字化平台）",
+          "opportunity_stage": "战略规划",
+          "priority": null,
+          "score": 66,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality / Digital Operations",
+          "logic": "Customer Change(大运河水务引入上市公司技术能力推进副中心水务绿色转型) -> Digital Change(智慧水务数字化平台开发是合作核心) -> Operational Problem(副中心水厂在线监测仪表数据采集/质量管理/多站点管理需求) -> Instrument/Data/Asset Management Need(仪表监测/数据质量/数字运营) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Digital Operations)。逻辑链完整但依赖'首批项目落地'，且华立自有平台可能排他。",
+          "to_verify": {
+            "customer_identity": "大运河(北京)水务是否为Hach已有客户/SFDC账户？华立股份是否为Hach客户？",
+            "installed_base": "大运河水务现有水厂数量/规模？在线仪表类型/数量？是否有联网仪表？",
+            "commercial_history": "Hach与大运河水务/华立股份历史合作记录？当前Pipeline？",
+            "ims": "大运河水务是否已有iMS或类似数字化产品？华立智慧水务平台是否排他？",
+            "account_sales": "大运河水务Account Owner？北京Regional Owner？"
+          },
+          "source_urls": [
+            "https://www.cnstock.com/commonDetail/792174"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月17日，在2026北京绿色发展论坛上，华立股份(603038)与大运河(北京)水务建设投资管理有限公司签署战略合作协议。华立股份控股子公司华芯数科(北京)科技发展有限公司正式注册落地北京城市副中心。合作以'超滤膜绿色净水工艺+智慧水务数字化平台'为核心技术，华立股份负责超滤膜材料研发、量子水务、净水装备、智慧水务数字化平台开发；大运河水务提供属地资源统筹和应用场景。双方计划打造超滤膜净水与智慧水务融合发展的示范样板，逐步向京津冀及全国复制推广。"
+            ],
+            "inferences": [
+              "大运河水务是北京城市副中心水务建设投资主体，华立股份提供超滤膜+智慧水务数字化平台——这是一个刚签约的战略合作，处于项目定义/技术路线规划阶段。智慧水务数字化平台开发意味着仪表数据采集层、在线监测数据接入标准尚未锁定。如果iMS能在'数字化平台仪表数据层'定义阶段介入，有机会嵌入北京副中心水务数字底座。但华立股份自身有数字化平台能力，iMS需找到互补切入点。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-21.json",
+          "date": "2026-09-21"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-21",
+      "lead": {
+        "lead_id": "OPS-20260921-CXTC-004",
+        "company": {
+          "company_name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+          "project_stage": "立项/规划"
+        },
+        "signal": {
+          "signal_description": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+          "signal_date": "2026-09-21",
+          "evidence": [
+            {
+              "source_url": "http://finance.sina.cn/2026-09-20/detail-inisnhay9263398.d.html",
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+          "opportunity": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+          "opportunity_stage": "立项/规划",
+          "priority": null,
+          "score": 67,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality / Lifecycle Management",
+          "logic": "Customer Change(长鑫科技第五代量产+扩产加速，新晶圆厂建设) -> Digital Change(新厂超纯水系统建设需在线仪表监测水质) -> Operational Problem(超纯水系统18MΩ水质要求极高，在线TOC/电导率/pH监测是刚需) -> Instrument/Data/Asset Management Need(超纯水系统在线仪表部署、数据质量管理、生命周期管理) -> Potential iMS Use Case(Instrument Monitoring/Data Quality/Lifecycle Management)。逻辑链完整，但iMS能否切入取决于Hach在半导体超纯水监测的已有基础。",
+          "to_verify": {
+            "customer_identity": "长鑫科技是否为Hach已有客户/SFDC账户？合肥/北京现有3座晶圆厂是否已有Hach仪表？",
+            "installed_base": "长鑫3座晶圆厂超纯水系统现有在线仪表类型/数量？是否有联网仪表？上海新厂超纯水系统设计是否已开始？",
+            "commercial_history": "Hach与长鑫科技历史合作记录？当前Pipeline？服务合同？",
+            "ims": "长鑫科技是否已有iMS或类似数字化产品？超纯水系统在线监测是否有数字化管理？",
+            "account_sales": "长鑫科技Account Owner？半导体Regional Owner？"
+          },
+          "source_urls": [
+            "http://finance.sina.cn/2026-09-20/detail-inisnhay9263398.d.html"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月20日，长鑫科技在2026世界制造业大会上宣布第五代工艺技术平台正式量产（11.95纳米有源区半间距，电容深宽比45:1，每张晶圆产出比上一代提升50%+，24GB LPDDR5X已量产量产）。长鑫科技7月科创板上市，募投项目总投资345亿元。最新信息显示：(1)上海新晶圆厂已启动设备招标程序；(2)长鑫正考虑在北京亦庄建设第二座12英寸晶圆厂；(3)2026年底月产能预计提升至约35万片（目前合肥2座+北京1座各约10万片/月），远期目标60万片/月；(4)国金证券按2026年扩产5-6万片测算设备采购额约350-430亿元。"
+            ],
+            "inferences": [
+              "长鑫科技第五代量产确认+上海新厂设备招标启动+北京亦庄第二座12英寸规划——半导体超纯水系统需求将随扩产持续释放。上海新厂已进入设备招标（采购阶段），但北京亦庄第二座仍处于'正考虑'（战略规划阶段）。超纯水系统是晶圆厂核心工艺配套，iMS可在新厂超纯水系统仪表数据层建设和水质在线监测环节介入。北京亦庄第二座处于规划阶段，介入窗口最佳。"
+            ]
+          }
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-21.json",
+          "date": "2026-09-21"
+        }
+      ],
+      "procurement_signal": true
+    },
+    {
       "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-19",
