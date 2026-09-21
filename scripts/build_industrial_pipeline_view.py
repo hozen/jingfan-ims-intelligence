@@ -216,6 +216,20 @@ def industrial_rows():
         return any(value in item or item in value or
                    (len(value)>8 and len(item)>8 and value[:8]==item[:8])
                    for item in known)
+    def matching_row(value):
+        candidates=[]
+        for row in rows:
+            names=(row["lead"]["company"].get("company_name"), row["lead"]["project"].get("project_name"))
+            if any(value in normalize(name) or normalize(name) in value for name in names if normalize(name)):
+                candidates.append(row)
+        return candidates[0] if len(candidates)==1 else None
+    def merge_daily_evidence(row, radar):
+        original=row["enriched_record"].get("original_signal") or {}
+        for key in ("opportunity", "opportunity_stage", "estimated_time_window", "time_window_basis", "location", "industry", "customer_requirement", "customer_need", "current_solution", "operational_pain_points", "sales_summary", "demand_hypothesis", "source_urls", "evidence", "stage3_enrichment", "jd_inferences", "pull_box"):
+            if not is_recorded(original.get(key)) and is_recorded(radar.get(key)):
+                original[key]=radar[key]
+        row["enriched_record"]["original_signal"]=original
+        row["quality_score"],row["quality_missing"]=completeness(original, row.get("enriched_contacts") or [])
     for path in sorted((SOURCE_ROOT/"intelligence"/"industrial"/"daily").glob("*.json")):
         daily=read(path); match=re.search(r"\d{4}-\d{2}-\d{2}",path.name); date=daily.get("report_date") or daily.get("date") or (match.group(0) if match else "未记录")
         for signal in daily.get("signals",[]):
@@ -232,6 +246,9 @@ def industrial_rows():
                 continue
             identity=normalize(signal.get("company") or signal.get("project") or signal.get("opportunity"))
             if identity and already_known(identity):
+                existing=matching_row(identity)
+                if existing:
+                    merge_daily_evidence(existing, radar)
                 continue
             lead={"lead_id":lead_id,"company":{"company_name":signal.get("company"),"location":signal.get("location"),"industry":signal.get("industry")},"project":{"project_name":signal.get("project") or signal.get("opportunity") or signal.get("trigger"),"project_stage":signal.get("opportunity_stage")},"signal":{"signal_description":signal.get("trigger"),"signal_date":date,"evidence":[{"source_url":x,"evidence_summary":"工业雷达日报"} for x in signal.get("source_urls",[])]}}
             row={"segment":"industrial","category":industrial_category(signal),"date":date,"quality_score":quality_score,"quality_missing":quality_missing,"lead":lead,"enriched_record":{"original_signal":radar,"enrichment_status":"radar_daily"},"enriched_contacts":[],"history":[]}; rows.append(row); by_id[lead_id]=row
