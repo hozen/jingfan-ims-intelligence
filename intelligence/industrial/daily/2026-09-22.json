@@ -15,558 +15,1423 @@
       "煤化工": 1
     },
     "trigger_breakdown": {
-      "环评受理/公示": 4,
-      "环评批复/拟审批": 2,
-      "规划许可/施工推进": 2,
-      "EPC采购增补": 1,
-      "已实施/利旧改造": 1
+      "环评受理/一次公示": 2,
+      "环评征求意见/拟审批": 2,
+      "环评批复/补办公示": 2,
+      "EPC中标/规划许可": 2,
+      "运营期改造/BT运维": 2
     },
     "pull_score_distribution": {
       "16-20": 0,
-      "11-15": 2,
-      "6-10": 7,
-      "0-5": 1
+      "11-15": 5,
+      "6-10": 5,
+      "0-5": 0
     },
     "search_bias_check": {
       "early_signal_pct": "40%",
-      "pre_tender_pct": "30%",
+      "pre_tender_pct": "20%",
       "tender_pct": "10%",
-      "awarded_pct": "20%",
-      "tender_plus_awarded": "30%",
+      "awarded_pct": "30%",
+      "tender_plus_awarded": "40%",
       "pass": true
     },
     "priority_distribution": {
       "P1": 0,
-      "P2": 2,
+      "P2": 3,
       "P3": 5,
-      "Tender Monitoring": 2,
-      "REJECT": 1
+      "P3-Lifecycle": 1,
+      "Tender Monitoring": 1
     },
     "filtered_municipal": 0,
     "three_field_validation": "10/10 三字段完整"
   },
   "top_5_match": [
     {
-      "signal_id": "IND-20260922-01",
-      "company": "宿迁镭明半导体设备有限公司",
-      "reason": "晶圆制造项目环评受理阶段，半导体行业强相关，水系统规格尚未冻结",
-      "agent_checklist": "确认晶圆项目水系统方案/设计院/超纯水+废水处理需求"
-    },
-    {
       "signal_id": "IND-20260922-03",
-      "company": "定边县化工产业区管理委员会",
-      "reason": "化工园区污水处理厂一期环评征求意见稿，明确零排放工艺，监测方案可影响",
-      "agent_checklist": "确认园区业主/处理规模/监测因子/仪表规格"
+      "company": "定边县产业园区管理委员会",
+      "reason": "化工园区污水厂一期1500m³/d零排放，规模/工艺/联系人全落实，监测方案可影响",
+      "agent_checklist": "联系顾主任/侯工确认设计院与监测点位表"
     },
     {
-      "signal_id": "IND-20260922-06",
-      "company": "长电科技(宿迁)有限公司",
-      "reason": "半导体封装磨划废水回收间建设，Installed Base信号，规划许可刚批",
-      "agent_checklist": "确认废水回收间监测方案/仪表选型/运维需求"
+      "signal_id": "IND-20260922-08",
+      "company": "山西兰花煤化工",
+      "reason": "全厂废水零排放+BOO运营（≥1000m³/h），大仪表需求，但设备安装中窗口紧",
+      "agent_checklist": "确认BOO中标方与监测系统供应商"
     },
     {
       "signal_id": "IND-20260922-07",
-      "company": "重庆新宙邦新材料有限公司",
-      "reason": "电池化学品二期扩建环评第一次公示，电解液生产废水需求，极早期窗口",
-      "agent_checklist": "确认水系统方案/设计院/废水处理工艺"
+      "company": "重庆新宙邦",
+      "reason": "二期20+5万吨电解液扩建，一期污水站+在线监测已投产，JD显示环保数据上报刚需",
+      "agent_checklist": "联系杨旭确认二期污水站规划与现有在线监测品牌"
     },
     {
-      "signal_id": "IND-20260922-02",
-      "company": "淮安东煦电子材料有限公司",
-      "reason": "半导体晶圆深加工封装测试项目环评一次公示，新建/迁建项目",
-      "agent_checklist": "确认水系统需求/纯水系统/废水处理方案"
+      "signal_id": "IND-20260922-01",
+      "company": "宿迁镭明半导体",
+      "reason": "晶圆加工项目环评今日截止，性质待核但窗口开放",
+      "agent_checklist": "核实项目工艺与设计院"
+    },
+    {
+      "signal_id": "IND-20260922-06",
+      "company": "长电科技(宿迁)",
+      "reason": "55m³/h磨划废水回用EPC已定标（清朗达316.75万），转EPC关系+厂级数据平台",
+      "agent_checklist": "通过EPC确认仪表品牌，调研厂区自控改造范围"
     }
   ],
   "signals": [
     {
       "id": "IND-20260922-01",
-      "company": "宿迁镭明半导体设备有限公司",
+      "company": "宿迁镭明半导体设备有限公司（苏州镭明激光科技子公司）",
       "industry": "半导体/电子",
       "location": "江苏省宿迁市",
-      "project": "年产15万片晶圆项目",
+      "project": "年产15万片晶圆项目（晶圆加工/切割，非晶圆制造，性质待核）",
       "engine": "B/C",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["环评受理公示2026-09-17发布（FACT-官方来源）", "年产15万片晶圆项目（FACT-环评公示）"],
-        "inferences": ["晶圆制造需要超纯水系统+含氟废水处理（INFERENCE-行业常规）", "水系统规格尚未冻结（INFERENCE-环评受理阶段）"],
-        "unknowns": ["水系统设计方案未明确", "设计院/EPC未明确", "具体投资额未明确"]
+        "facts": [
+          "环评受理公示2026-09-17至09-22（5个工作日，今日公示截止）（FACT-宿迁市生态环境局）",
+          "项目为'年产15万片晶圆项目'，位于宿城区经济开发区南区织锦路东侧微电子产业园2号厂房（FACT）",
+          "环评技术单位（编制单位）：江苏海雯能碳环境科技有限公司（FACT-宿迁市生态环境局公示表）",
+          "建设单位2026-06-18成立，注册资本2000万元，股东为苏州镭明激光科技有限公司（2026-06-20对外投资）（FACT-启信宝/企查查）",
+          "苏州镭明激光为半导体激光切割设备商（激光开槽/隐形切割/晶圆裂片/TSV钻孔），非晶圆制造厂（FACT-启信宝/集微网）",
+          "此前'年产6万片晶圆项目'备案（2607-321352-89-01-366460，2026-07-24）与本次15万片为同一项目代码，规模/口径关系待核（FACT-备案信息）"
+        ],
+        "inferences": [
+          "晶圆切割/研磨工序产生研磨废水（含硅粉悬浮物）、切割冷却水；若含清洗则需小规模纯水（INFERENCE-行业常规，项目性质待核）",
+          "原'超纯水系统+含氟废水（Fab级）'推断不成立或规模显著缩小——母公司为激光设备商，15万片更可能为晶圆加工而非Fab制造（INFERENCE-修正）"
+        ],
+        "unknowns": [
+          "项目实际工艺（晶圆切割/研磨/再生/封装任一）与设计院",
+          "是否配套纯水/废水处理设施及规模",
+          "6万片备案与15万片项目的关系",
+          "哈希仪表装机、品牌与数量（全网无公开证据）"
+        ]
       },
-      "potential_ims_use_case": "进出水水质在线监测+含氟废水监测+仪表资产管理+运维数据闭环",
-      "logic_rationale": "晶圆制造 → 超纯水需求+含氟废水处理 → 水质监测需求 → iMS多参数监测+数据管理",
+      "potential_ims_use_case": "研磨废水/切割冷却水水质监测+仪表资产管理（规模小于Fab，机会中等）",
+      "logic_rationale": "晶圆加工 → 研磨/切割废水+冷却水 → 水质监测（规模待核） → iMS多参数监测+数据管理",
       "opportunity_stage": "Potential Industrial Opportunity",
       "entry_timing": "GOOD",
-      "entry_timing_evidence": {"source": "INFERENCE", "note": "环评受理阶段9/17-9/22，技术规格尚未冻结"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评受理公示今日（9/22）截止，技术规格未冻结，但仍处极前期，设计院未定"
+      },
       "influence_window": "MEDIUM",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "环评受理阶段，可影响水系统方案/监测策略/仪表规格"},
-      "estimated_time_window": "6-9月（环评→设计→施工→设备安装）",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "环评报批前窗口，可影响水系统方案与监测设计；受限于项目性质不明"
+      },
+      "estimated_time_window": "6-9月（环评→可研设计→施工）",
       "priority": "P2",
       "water_system_ownership": "D-Unknown",
       "incrementality_status": "New Facility",
-      "source_urls": ["http://sthj.suqian.gov.cn/shbj/jsxm/202609/145daaadc23840f38a3a5163420bb336.shtml"],
-      "to_verify": ["水系统设计方案", "设计院是谁", "超纯水系统供应商", "废水处理工艺路线"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评受理公示", "changed": "new"},
+      "source_urls": [
+        "http://sthj.suqian.gov.cn/shbj/jsxm/202609/145daaadc23840f38a3a5163420bb336.shtml"
+      ],
+      "to_verify": [
+        "项目实际工艺（晶圆切割/研磨/再生/封装任一）与设计院",
+        "是否配套纯水/废水处理设施及规模",
+        "6万片备案与15万片项目的关系",
+        "哈希仪表装机、品牌与数量（全网无公开证据）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评受理公示",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 4, "unavoidable": 4, "limitations": 2, "leverage": 3, "total": 13},
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 2,
+        "leverage": 3,
+        "total": 12
+      },
       "pull_box": {
-        "project": "年产15万片晶圆项目，环评受理阶段 — FACT",
-        "unavoidable": "晶圆制造需要超纯水系统+含氟废水处理，环保合规 — FACT",
-        "limitations": "新建项目，具体水系统方案未明确 — UNKNOWN",
-        "leverage": "iMS可提供进出水水质监测+仪表管理+运维数据闭环 — INFERENCE",
+        "project": "年产15万片晶圆项目（晶圆加工，性质待核），环评受理今日截止 — FACT",
+        "unavoidable": "晶圆加工研磨/切割废水须处理达标，环保合规 — FACT（水需求规模待核）",
+        "limitations": "新建项目，水系统方案/设计院均未明确 — UNKNOWN",
+        "leverage": "iMS可提供废水/冷却水监测+仪表管理+数据闭环 — INFERENCE",
         "evidence_quality": "MEDIUM",
-        "key_unknown": "水系统设计方案和设计院是谁",
-        "next_validation_question": "项目超纯水系统和废水处理方案由哪家设计院负责，目前处于什么阶段？"
+        "key_unknown": "项目实际工艺（加工/再生）与设计院、水系统规模",
+        "next_validation_question": "项目是晶圆切割/研磨/再生哪种工艺？设计院和纯废水系统供应商是谁？"
       },
       "evidence_quality": "MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "宿迁镭明半导体设备有限公司", "owner_role": "厂务/EHS部门", "evaluation": "FACT", "note": "环评公示确认建设单位"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "环评编制单位未公开"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC", "仪表集成商", "水系统供应商"],
-        "next_validation_action": "搜索镭明半导体项目设计院和超纯水系统供应商信息"
-      }
+        "account_owner": {
+          "name": "宿迁镭明半导体设备有限公司",
+          "owner_role": "未公开（推测厂务/项目组）",
+          "evaluation": "FACT",
+          "note": "环评公示确认建设单位"
+        },
+        "design_institute": {
+          "name": "Unknown（环评技术单位：江苏海雯能碳环境科技有限公司）",
+          "owner_role": "环评技术单位",
+          "evaluation": "FACT",
+          "note": "环评编制单位≠水系统设计院"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "EPC未定"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "水系统设计院",
+          "EPC",
+          "仪表集成商",
+          "超纯水/废水供应商"
+        ],
+        "next_validation_action": "联系宿迁市生态环境局（0527-84396253）或企业核实项目工艺与设计院；推动环评报告全文公开后查水系统方案"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "哈希仪表装机/品牌/数量无公开证据，需经设计院或EPC技术协议确认"
+        },
+        "key_parameters": [
+          "pH",
+          "浊度/SS",
+          "电导率",
+          "温度",
+          "COD（如回用）",
+          "含氟/含硅专项（视工艺）"
+        ],
+        "parameters_basis": "晶圆研磨/切割废水常规监测参数（行业基准INFERENCE）+法定自动监控（重点排污单位COD/氨氮/pH/流量必装，HJ353-2019）",
+        "instrument_quantity_hint": "研磨废水处理系统典型在线点位5-15个（行业基准），待项目设计确认"
+      },
+      "software_necessity": {
+        "summary": "排污许可自行监测+数据联网合规是企业义务，但本项目无公开软件采购证据",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "水污染源在线监测数据须上传环保平台（法规Fact）",
+          "无JD/招标/环评软件条款公开证据（UNKNOWN）"
+        ]
+      },
+      "icp_attempts": []
     },
     {
       "id": "IND-20260922-02",
       "company": "淮安东煦电子材料有限公司",
       "industry": "半导体/电子",
       "location": "江苏省淮安市清江浦区",
-      "project": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+      "project": "半导体晶圆再生/深加工项目（12英寸再生晶圆，月产40万片，投资10亿元）",
       "engine": "B/C",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["环评报告表全本公示2026-09-16（FACT-eiacloud）", "半导体晶圆深加工及封装测试项目（FACT-环评公示）", "新建/迁建项目（FACT）"],
-        "inferences": ["封装测试环节有纯水/清洗废水需求（INFERENCE-行业常规）", "水系统规模可能小于前道制造（INFERENCE）"],
-        "unknowns": ["具体水系统方案未明确", "投资额未明确", "设计院未明确"]
+        "facts": [
+          "项目2025-08-23开工，2026-01已主体封顶，属'补办'环评公示（9/16）（FACT-环评公示/媒体报道）",
+          "再生晶圆12英寸、月产40万片、投资10亿元，位于清江浦区华清西路1号（FACT-报道）",
+          "用地18842㎡，2026-02-10设计方案批前公示（FACT-规划公示）",
+          "环评编制单位：淮安市清泰技术咨询有限公司（FACT）"
+        ],
+        "inferences": [
+          "晶圆再生工序含化学清洗（酸/碱/SC1/SC2）、CMP研磨，产生酸碱废液+含硅研磨废水+小规模纯水需求（INFERENCE-行业常规）",
+          "主体已封顶，水处理设备采购大概率已完成或接近完成，介入窗口很小（INFERENCE-修正）"
+        ],
+        "unknowns": [
+          "环评报告表全本用水量/废水种类/监测因子（eiacloud页面未取到正文）",
+          "纯水/废水处理设施供应商与仪表品牌",
+          "哈希仪表装机证据（无公开）"
+        ]
       },
-      "potential_ims_use_case": "纯水水质监测+清洗废水监测+数据管理",
-      "logic_rationale": "半导体封装测试 → 纯水/清洗需求 → 水质监测 → iMS数据管理",
+      "potential_ims_use_case": "纯水/废水监测+数据管理（窗口已基本关闭，转运营期Installed Base机会）",
+      "logic_rationale": "晶圆再生 → 酸碱清洗+CMP废水 → 已封顶 → 窗口关闭，运营期替换/扩容机会",
       "opportunity_stage": "Industrial Signal",
-      "entry_timing": "EARLY",
-      "entry_timing_evidence": {"source": "FACT", "note": "环评一次公示9/16-9/30，极早期阶段"},
+      "entry_timing": "LATE",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "2026-01主体封顶，当前设备安装/调试阶段，环评为补办性质"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "封装测试水系统规模较小，但可影响纯水监测方案"},
-      "estimated_time_window": "9-12月",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "主体封顶、设备采购大部分完成，影响仪表规格空间很小"
+      },
+      "estimated_time_window": "运营期（2026Q4-2027投产）",
       "priority": "P3",
       "water_system_ownership": "D-Unknown",
       "incrementality_status": "New Facility",
-      "source_urls": ["https://www.eiacloud.com/gs/detail/1?id=60916uiqQ1"],
-      "to_verify": ["水系统具体需求", "纯水系统规模", "废水处理方案"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评一次公示", "changed": "new"},
+      "source_urls": [
+        "https://www.eiacloud.com/gs/detail/1?id=60916uiqQ1"
+      ],
+      "to_verify": [
+        "环评报告表全本用水量/废水种类/监测因子（eiacloud页面未取到正文）",
+        "纯水/废水处理设施供应商与仪表品牌",
+        "哈希仪表装机证据（无公开）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评一次公示",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 2, "leverage": 3, "total": 10},
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 1,
+        "leverage": 2,
+        "total": 8
+      },
       "pull_box": {
-        "project": "半导体晶圆深加工及封装测试项目，新建/迁建 — FACT",
-        "unavoidable": "封装测试环节有纯水/清洗废水需求，环保合规 — INFERENCE",
-        "limitations": "新建项目，具体水系统方案未明确 — UNKNOWN",
-        "leverage": "iMS可提供纯水水质监测+废水监测+数据管理 — INFERENCE",
+        "project": "12英寸再生晶圆月产40万片，主体已封顶 — FACT",
+        "unavoidable": "晶圆再生酸碱清洗废水须处理达标 — INFERENCE",
+        "limitations": "设备采购大概率已完成，介入窗口关闭 — INFERENCE",
+        "leverage": "iMS可提供运营期水质监测+仪表运维+数据管理 — INFERENCE",
         "evidence_quality": "LOW-MEDIUM",
-        "key_unknown": "封装测试环节具体用水量和废水种类",
-        "next_validation_question": "项目封装测试环节的纯水需求和废水种类是什么？"
+        "key_unknown": "水系统设备是否已采购、供应商与仪表品牌",
+        "next_validation_question": "水处理系统供应商是否已定？投产时间与运营团队是否到位？"
       },
       "evidence_quality": "LOW-MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "淮安东煦电子材料有限公司", "owner_role": "厂务/工程部门", "evaluation": "FACT", "note": "环评公示确认建设单位，成立于2023年"},
-        "design_institute": {"name": "淮安市清泰技术咨询有限公司", "owner_role": "环评编制", "evaluation": "FACT", "note": "环评报告表编制单位"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["EPC", "仪表集成商", "纯水系统供应商"],
-        "next_validation_action": "获取环评报告表全文，确认水系统具体需求"
-      }
+        "account_owner": {
+          "name": "淮安东煦电子材料有限公司",
+          "owner_role": "厂务/工程部门（推测）",
+          "evaluation": "FACT",
+          "note": "环评公示+规划公示确认"
+        },
+        "design_institute": {
+          "name": "淮安市清泰技术咨询有限公司",
+          "owner_role": "环评编制",
+          "evaluation": "FACT",
+          "note": "环评报告表编制单位"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "设备安装承包商未公开"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "水系统EPC/供应商",
+          "仪表集成商",
+          "运营团队"
+        ],
+        "next_validation_action": "访问清江浦区华清西路1号厂区或通过环评报告表获取废水系统供应商信息；询问投产计划"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；现场已装仪表品牌需现场拜访确认"
+        },
+        "key_parameters": [
+          "pH",
+          "电导率/电阻率",
+          "SS/浊度",
+          "COD",
+          "氟化物（视工艺）",
+          "总氮（含硝酸清洗时）"
+        ],
+        "parameters_basis": "半导体清洗/CMP废水常规监测参数（行业基准INFERENCE）+法定自动监控（HJ353-2019）",
+        "instrument_quantity_hint": "晶圆再生废水站典型在线点位10-20个（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "媒体提及项目引入'AI视觉检测+低碳清洗工艺'（信息化/智能化信号），但无具体软件采购证据",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "AI视觉检测+低碳清洗提及（低可信媒体，INFERENCE）",
+          "无JD/招标软件条款公开证据（UNKNOWN）"
+        ]
+      },
+      "icp_attempts": [
+        "计划引入AI视觉检测+低碳清洗工艺（信息化倾向，INFERENCE-媒体报道）"
+      ]
     },
     {
       "id": "IND-20260922-03",
-      "company": "定边县化工产业区管理委员会",
+      "company": "定边县产业园区管理委员会",
       "industry": "石化/化工",
       "location": "陕西省榆林市定边县",
-      "project": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+      "project": "化工产业园区污水处理厂（一期）工程：远期6000m³/d，本期土建3000m³/d、设备1500m³/d，零排放工艺",
       "engine": "B",
       "signal_tier": "Tier 1",
       "evidence": {
-        "facts": ["环评征求意见稿公示2026-09-20（FACT-定边县政府）", "收集化工产业区生活污水/工业废水/初期雨水（FACT）", "工艺含隔油/气浮/芬顿/蒸发结晶，实现废水零排放（FACT）"],
-        "inferences": ["化工园区废水须集中处理达标排放（INFERENCE-环保法规）", "监测方案尚未最终确定（INFERENCE-征求意见阶段）"],
-        "unknowns": ["处理规模未明确", "设计院/EPC未明确", "具体投资额未明确"]
+        "facts": [
+          "环评征求意见稿公示2026-09-20至10-09（FACT-定边县政府）",
+          "建设单位：定边县产业园区管理委员会（非'化工产业区管委会'）；环评编制：陕西中环碳能科技有限公司（FACT）",
+          "规模：远期6000m³/d，本期土建3000m³/d、设备1500m³/d，占地29.33亩（FACT-环评公示）",
+          "工艺链：隔油→气浮→芬顿氧化→水解酸化→多级A/O→臭氧氧化→高效沉淀→多级除杂→超滤→反渗透→蒸发结晶（零排放+资源化）（FACT）",
+          "联系人：顾主任/侯工，0912-4223688，495278550@qq.com（FACT-环评公示）"
+        ],
+        "inferences": [
+          "零排放系统多段工艺对在线水质监测点位需求大（进/出水+膜系统+蒸发结晶多节点）（INFERENCE-行业基准）",
+          "园区现有处理能力不足，新建集中处理设施（INFERENCE）"
+        ],
+        "unknowns": [
+          "各工艺段在线监测点位表与仪表品牌（环评全文未公开）",
+          "设计院/EPC/运营单位",
+          "哈希仪表装机证据（无公开）"
+        ]
       },
-      "potential_ims_use_case": "进出水水质在线监测+零排放系统监控+运营管理+数据合规",
-      "logic_rationale": "化工园区 → 废水集中处理+零排放 → 水质监测需求 → iMS多参数监测+运营数据闭环",
+      "potential_ims_use_case": "进出水+零排放多工艺段水质在线监测+运营数据合规（今日最强线索）",
+      "logic_rationale": "园区污水厂新建+零排放 → 多段在线监测+数据联网 → iMS多参数+数据管理（强关联）",
       "opportunity_stage": "Potential Industrial Opportunity",
       "entry_timing": "GOOD",
-      "entry_timing_evidence": {"source": "FACT", "note": "环评征求意见稿9/20-10/9，监测方案可影响"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评征求意见9/20-10/9，监测方案/仪表规格可影响"
+      },
       "influence_window": "MEDIUM",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式"},
-      "estimated_time_window": "6-9月",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "环评意见征求阶段，可影响设计输入中的监测配置与仪表规格"
+      },
+      "estimated_time_window": "6-12月（环评→初设→施工图→采购）",
       "priority": "P2",
       "water_system_ownership": "B-园区集中处理",
       "incrementality_status": "New Facility",
-      "source_urls": ["https://www.dingbian.gov.cn/zfxxgk/fdzdgknr/hjpj/202609/t20260920_2129246.html"],
-      "to_verify": ["处理规模", "设计院/EPC", "监测因子要求", "具体化工企业废水水质"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评征求意见稿公示", "changed": "new"},
+      "source_urls": [
+        "https://www.dingbian.gov.cn/zfxxgk/fdzdgknr/hjpj/202609/t20260920_2129246.html"
+      ],
+      "to_verify": [
+        "各工艺段在线监测点位表与仪表品牌（环评全文未公开）",
+        "设计院/EPC/运营单位",
+        "哈希仪表装机证据（无公开）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评征求意见稿公示",
+        "changed": "new"
+      },
       "qualification": "PASS",
-      "pull_score": {"project_clarity": 4, "unavoidable": 4, "limitations": 2, "leverage": 3, "total": 13},
+      "pull_score": {
+        "project_clarity": 5,
+        "unavoidable": 4,
+        "limitations": 2,
+        "leverage": 3,
+        "total": 14
+      },
       "pull_box": {
-        "project": "化工产业区污水处理厂一期，含零排放工艺 — FACT",
-        "unavoidable": "化工园区废水须集中处理达标排放，环保法规要求 — FACT",
-        "limitations": "园区现有处理能力不足 — INFERENCE",
-        "leverage": "iMS可提供进出水水质监测+零排放系统监控+运营管理+数据合规 — INFERENCE",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "处理规模和设计院/EPC是谁",
-        "next_validation_question": "污水处理厂的设计规模是多少吨/日？设计院和EPC分别是谁？"
+        "project": "定边化工产业园区污水厂一期，3000/1500m³/d，零排放工艺 — FACT",
+        "unavoidable": "化工园区废水集中处理+零排放+达标排放是法定要求 — FACT",
+        "limitations": "园区现有处理能力不足，需新建 — INFERENCE",
+        "leverage": "iMS可提供进出水+零排放工艺段在线监测+数据合规 — INFERENCE",
+        "evidence_quality": "HIGH（规模/工艺/联系方式全部落实）",
+        "key_unknown": "设计院/EPC与各段在线监测配置表",
+        "next_validation_question": "项目设计院/EPC是谁？零排放各工艺段在线监测点位表与仪表品牌是否已定？"
       },
       "evidence_quality": "MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "定边县化工产业区管理委员会", "owner_role": "园区管理方", "evaluation": "FACT", "note": "环评公示确认建设单位，联系人顾主任/侯工"},
-        "design_institute": {"name": "陕西某环保公司（环评编制）", "owner_role": "环评编制", "evaluation": "FACT", "note": "环评编制单位为陕西某公司，具体名称待确认"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["EPC", "仪表集成商", "运营管理方"],
-        "next_validation_action": "获取环评报告书全文，确认处理规模、设计院和监测方案"
-      }
+        "account_owner": {
+          "name": "定边县产业园区管理委员会",
+          "owner_role": "园区管理方（业主）",
+          "evaluation": "FACT",
+          "note": "联系人顾主任/侯工，0912-4223688"
+        },
+        "design_institute": {
+          "name": "Unknown（环评编制：陕西中环碳能科技有限公司）",
+          "owner_role": "环评编制",
+          "evaluation": "FACT",
+          "note": "待确认设计院"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "EPC未定"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "运营单位",
+          "仪表集成商"
+        ],
+        "next_validation_action": "联系顾主任/侯工确认项目设计院与进度；索取环评报告书全文获取监测点位表"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；园区污水厂仪表多走设计院品牌短名单，可作接触点"
+        },
+        "key_parameters": [
+          "COD",
+          "氨氮",
+          "总磷",
+          "总氮",
+          "pH",
+          "SS",
+          "电导率/TDS",
+          "浊度",
+          "氟化物（化工废水）",
+          "蒸发结晶浓缩液电导率"
+        ],
+        "parameters_basis": "园区工业废水+零排放工艺标准监测参数（行业基准INFERENCE）+HJ353-2019法定必装（COD/氨氮/pH/流量）",
+        "instrument_quantity_hint": "零排放（UF/RO/蒸发结晶）系统在线仪表典型25-50个点位（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "零排放系统对连续监测+数据归档+环保平台联网要求高，运营期数据管理是标配需求",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "自动监控数据上传+验收是法规义务（Fact）",
+          "园区污水厂运营需日报/台账/预警（行业基准INFERENCE）"
+        ]
+      },
+      "icp_attempts": []
     },
     {
       "id": "IND-20260922-04",
       "company": "泰兴怡达化学有限公司",
       "industry": "石化/化工",
       "location": "江苏省泰兴经济开发区",
-      "project": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+      "project": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资64199万元，新建厂区+厂内污水预处理装置",
       "engine": "B",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["环评拟审批公示2026-09-20（FACT-泰州市生态环境局）", "年产20万吨环氧丙烷衍生产品扩建（FACT）", "总投资64199万元（FACT）", "工艺废水接管至泰兴经济开发区工业污水处理厂（FACT-环评公示）"],
-        "inferences": ["环氧丙烷生产产生工艺废水（INFERENCE-行业常规）", "废水接管园区污水处理厂，自建水系统可能不大（INFERENCE）"],
-        "unknowns": ["自建水系统具体方案未明确", "设计院/EPC未明确", "纯水系统需求未明确"]
+        "facts": [
+          "环评拟审批公示2026-09-20（FACT-泰州市生态环境局）",
+          "项目性质'扩建'，新征用地距原厂1.4km，总投资64199万元（环保投资1600万元，占2.5%）（FACT）",
+          "环评编制单位：南京国环科技股份有限公司（FACT）",
+          "废水经厂内新建污水处理装置预处理后，与原厂废水一起接管排入泰兴市工业污水处理有限公司集中处理（FACT-环评公示；原日报'苏伊士'表述待核，本版以官方公示为准）",
+          "联系人：黄总/袁工（FACT-环评公示）"
+        ],
+        "inferences": [
+          "环氧丙烷衍生产品工艺废水需厂内预处理，含COD/盐分等特征污染物（INFERENCE-行业常规）",
+          "接管园区污水厂→排口自动监控（COD/氨氮/pH/流量）为法定要求（INFERENCE-HJ353）"
+        ],
+        "unknowns": [
+          "厂内污水预处理装置规模与工艺细节",
+          "纯水/循环水系统规模",
+          "哈希仪表装机证据（无公开）"
+        ]
       },
-      "potential_ims_use_case": "工艺废水监测+接管水质监测+数据合规",
-      "logic_rationale": "环氧丙烷扩建 → 工艺废水 → 接管园区污水厂 → 接管水质监测需求",
+      "potential_ims_use_case": "厂内预处理装置+接管排口水质在线监测+数据合规（自建水系统规模中等）",
+      "logic_rationale": "化工扩建+厂内预处理+接管 → 排口自动监控+预处理监测 → iMS监测+数据管理",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "GOOD",
-      "entry_timing_evidence": {"source": "FACT", "note": "环评拟审批阶段9/20，规格可影响"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评拟审批9/20，设计尚未完成，可影响监测设计"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测"},
-      "estimated_time_window": "6-9月",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "废水主要接管园区，自建预处理装置规模有限，但接管排口监测必装"
+      },
+      "estimated_time_window": "6-12月（环评审批→设计→施工）",
       "priority": "P3",
       "water_system_ownership": "B-园区集中处理",
       "incrementality_status": "Capacity Expansion",
-      "source_urls": ["https://hbj.taizhou.gov.cn/ztzl/jsxm/xmnspgs/art/2026/art_eaae95ece7864ea0bdbc33df14bc2182.html"],
-      "to_verify": ["自建水系统方案", "设计院/EPC", "接管水质监测需求"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评拟审批公示", "changed": "new"},
+      "source_urls": [
+        "https://hbj.taizhou.gov.cn/ztzl/jsxm/xmnspgs/art/2026/art_eaae95ece7864ea0bdbc33df14bc2182.html"
+      ],
+      "to_verify": [
+        "厂内污水预处理装置规模与工艺细节",
+        "纯水/循环水系统规模",
+        "哈希仪表装机证据（无公开）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评拟审批公示",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 3, "unavoidable": 3, "limitations": 1, "leverage": 2, "total": 9},
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 2,
+        "leverage": 2,
+        "total": 11
+      },
       "pull_box": {
-        "project": "年产20万吨环氧丙烷衍生产品扩建 — FACT",
-        "unavoidable": "环保达标要求，工艺废水须处理 — FACT",
-        "limitations": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
-        "leverage": "iMS可提供接管水质监测+数据合规 — INFERENCE",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "是否有自建水系统（纯水/循环水等）",
-        "next_validation_question": "项目除废水接管外，是否有自建纯水系统或循环水系统？"
+        "project": "20万吨环氧丙烷衍生产品扩建+厂内污水预处理 — FACT",
+        "unavoidable": "化工废水须厂内预处理+接管达标，自动监控为法定义务 — FACT",
+        "limitations": "自建水系统规模有限（环保投资1600万），主要接管园区 — FACT",
+        "leverage": "iMS可提供排口自动监控+预处理监测+数据合规 — INFERENCE",
+        "evidence_quality": "MEDIUM-HIGH",
+        "key_unknown": "厂内预处理装置规模工艺与设计院",
+        "next_validation_question": "厂内污水预处理装置的规模与工艺？设计院/EPC是谁？"
       },
       "evidence_quality": "MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "泰兴怡达化学有限公司", "owner_role": "环保/工程部门", "evaluation": "FACT", "note": "环评公示确认建设单位"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未明确"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC", "仪表集成商"],
-        "next_validation_action": "获取环评报告书全文，确认自建水系统方案和设计院"
-      }
+        "account_owner": {
+          "name": "泰兴怡达化学有限公司",
+          "owner_role": "环保/工程部门",
+          "evaluation": "FACT",
+          "note": "联系人黄总/袁工"
+        },
+        "design_institute": {
+          "name": "Unknown（环评编制：南京国环科技股份有限公司）",
+          "owner_role": "环评编制",
+          "evaluation": "FACT",
+          "note": "待确认水系统设计院"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "EPC未定"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "污水预处理供应商"
+        ],
+        "next_validation_action": "通过环评拟审批公示获取全本，确认厂内预处理装置规模/工艺与设计院"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；现有厂区可在装仪表需现场确认"
+        },
+        "key_parameters": [
+          "COD",
+          "氨氮",
+          "总磷",
+          "总氮",
+          "pH",
+          "SS",
+          "盐度/电导率",
+          "石油类（视工艺）"
+        ],
+        "parameters_basis": "化工废水预处理+接管排口监测标准参数（行业基准INFERENCE）+HJ353-2019法定必装",
+        "instrument_quantity_hint": "排口自动监控（4-6点位）+预处理装置（5-15点位），总量有限（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "接管排口自动监控+数据联网为法规义务；化工企业环保台账/排污许可执行报告管理是运营必需",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "自动监控数据上传法规义务（Fact）",
+          "排污许可执行报告/台账要求（Fact）"
+        ]
+      },
+      "icp_attempts": []
     },
     {
       "id": "IND-20260922-05",
       "company": "滨化集团股份有限公司",
       "industry": "石化/化工",
       "location": "山东省滨州市鲁北化工产业园",
-      "project": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+      "project": "无棣国家区域性特殊危险废物（废盐）集中处置中心资源化利用项目（一期）：新建30万t/a离子膜烧碱，再生盐比例42%",
       "engine": "B/C",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["山东省生态环境厅环评批复2026-09-15（FACT-官方）", "新建30万t/a离子膜烧碱装置（FACT）", "利用工业废盐42%（FACT）", "配套膜法脱硝等工序（FACT）"],
-        "inferences": ["离子膜烧碱涉及盐水精制+废水处理（INFERENCE-行业常规）", "环评已批复，进入设计/施工准备阶段（INFERENCE）"],
-        "unknowns": ["水系统具体方案未明确", "EPC未明确", "仪表规格是否已定"]
+        "facts": [
+          "山东省生态环境厅环评批复2026-09-15（FACT-官方）",
+          "新建30万t/a离子膜烧碱，利用工业废盐比例42%，工序含盐场/一次盐水/二次盐水/电解/氯氢处理/氯气液化（FACT）",
+          "关联'北鲲计划'废盐处置+盐化工循环（FACT-媒体报道）"
+        ],
+        "inferences": [
+          "一次/二次盐水精制需浊度/硬度/钙镁/硅等在线监测（INFERENCE-行业标准）",
+          "环评已批复，进入设计/采购阶段，仪表规格部分可能已定（INFERENCE）"
+        ],
+        "unknowns": [
+          "离子膜烧碱盐水精制与废水系统监测点位表",
+          "设计院/EPC",
+          "哈希仪表装机证据（无公开）"
+        ]
       },
-      "potential_ims_use_case": "盐水精制水质监测+废水排放监测+数据管理",
-      "logic_rationale": "废盐资源化→离子膜烧碱→盐水精制+废水→水质监测需求→iMS数据管理",
+      "potential_ims_use_case": "盐水精制过程监测+废水排放监测+数据管理（水系统为辅助工序）",
+      "logic_rationale": "废盐资源化→离子膜烧碱→盐水精制+废水→水质监测→iMS数据管理",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "LATE",
-      "entry_timing_evidence": {"source": "FACT", "note": "环评已批复9/15，进入设计/施工准备，仪表规格可能部分已定"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评已批复9/15，进入设计/采购，规格部分已定"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定"},
-      "estimated_time_window": "3-6月（已进入设计施工阶段）",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "批复后窗口，可影响仪表选型/品牌，但方案架构已定"
+      },
+      "estimated_time_window": "3-6月（设计/采购阶段）",
       "priority": "P3",
       "water_system_ownership": "A-客户自建自营",
       "incrementality_status": "New Facility",
-      "source_urls": ["http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995076.html"],
-      "to_verify": ["水系统具体方案", "EPC/设计院", "仪表规格状态"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评批复", "changed": "new"},
+      "source_urls": [
+        "http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995076.html"
+      ],
+      "to_verify": [
+        "离子膜烧碱盐水精制与废水系统监测点位表",
+        "设计院/EPC",
+        "哈希仪表装机证据（无公开）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评批复",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 1, "leverage": 2, "total": 8},
+      "pull_score": {
+        "project_clarity": 3,
+        "unavoidable": 2,
+        "limitations": 1,
+        "leverage": 2,
+        "total": 8
+      },
       "pull_box": {
-        "project": "新建30万t/a离子膜烧碱装置，利用工业废盐 — FACT",
-        "unavoidable": "废盐资源化+环保合规 — INFERENCE",
-        "limitations": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
-        "leverage": "iMS可提供盐水精制水质监测+废水排放监测 — INFERENCE",
-        "evidence_quality": "LOW-MEDIUM",
-        "key_unknown": "水系统是否包含新建废水处理设施",
-        "next_validation_question": "项目配套的废水处理设施规模和工艺是什么？"
+        "project": "30万t/a离子膜烧碱+废盐利用，环评已批复 — FACT",
+        "unavoidable": "盐水精制+废水排放合规 — INFERENCE",
+        "limitations": "水系统为辅助工序，且环评已批复 — FACT",
+        "leverage": "iMS可提供盐水精制过程监测+废水排放监测 — INFERENCE",
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "盐水精制/废水的监测点位表与设计院",
+        "next_validation_question": "盐水精制系统与废水处理设施的监测配置由哪家设计院/EPC负责？"
       },
       "evidence_quality": "LOW-MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "滨化集团股份有限公司", "owner_role": "环保/工程部门", "evaluation": "FACT", "note": "环评批复确认建设单位"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未明确"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC", "仪表集成商"],
-        "next_validation_action": "搜索滨化集团项目设计院和EPC招标信息"
-      }
+        "account_owner": {
+          "name": "滨化集团股份有限公司",
+          "owner_role": "环保/工程部门",
+          "evaluation": "FACT",
+          "note": "环评批复确认"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未明确"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未明确"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "盐水系统供应商"
+        ],
+        "next_validation_action": "检索滨化废盐项目环评批复全文，确认盐水精制与废水系统设计单位"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据"
+        },
+        "key_parameters": [
+          "pH",
+          "浊度",
+          "硬度",
+          "硅",
+          "电导率",
+          "COD",
+          "氨氮",
+          "SS"
+        ],
+        "parameters_basis": "离子膜烧碱盐水精制+废水监测常规参数（行业基准INFERENCE）",
+        "instrument_quantity_hint": "盐水精制在线点位5-15个+排口自动监控（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "烧碱企业环保合规要求自动监控+台账；无公开软件采购证据",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "重点排污单位自动监控法规义务（Fact）",
+          "无软件条款公开证据（UNKNOWN）"
+        ]
+      },
+      "icp_attempts": []
     },
     {
       "id": "IND-20260922-06",
       "company": "长电科技(宿迁)有限公司",
       "industry": "半导体/电子",
       "location": "江苏省宿迁市苏州宿迁工业园区",
-      "project": "磨划废水回收间建设项目",
+      "project": "55m³/h磨划废水回用处理系统（交钥匙EPC，1320t/d，316.75万元）",
       "engine": "C",
       "signal_tier": "Tier 1",
       "evidence": {
-        "facts": ["建设工程规划许可证批后公布2026-09-16（FACT-园区管委会）", "磨划废水回收间建设项目（FACT）", "8月已有改造项目招标公告（FACT-企查查）"],
-        "inferences": ["半导体封装磨划工序产生含硅/含铜废水（INFERENCE-行业常规）", "废水回收间用于废水资源化处理（INFERENCE）", "规划许可刚批，施工未开始（INFERENCE）"],
-        "unknowns": ["废水回收间具体工艺未明确", "仪表选型是否已定", "投资额未明确"]
+        "facts": [
+          "2026-06-11招标公告（交钥匙工程：设备采购/安装/调试/土建指导/培训/竣工资料移交）（FACT-招标公告）",
+          "2026-07-09中标候选人公示；2026-07-14中标结果公告：中标人上海清朗达环境科技有限公司，金316.75万元，标段CR05909000120260611GC0015（FACT-中标公告）",
+          "2026-09-16建设工程规划许可证批后公布（磨划废水回收间土建）（FACT-园区管委会）",
+          "设计处理规模1320t/d（55t/h），针对磨划工序废水（FACT）",
+          "7/23建设方案批前公示、9/1厂区安防自控改造谈判采购结果公告（FACT）",
+          "2025年员工2295人（FACT-公开年报）"
+        ],
+        "inferences": [
+          "交钥匙EPC已定标（清朗达），仪表规格由总包决定，iMS项目级窗口基本关闭（INFERENCE-修正：原'GOOD'不成立）",
+          "厂区自控改造招标显示客户在推进厂级自动控制/数字化（INFERENCE-线索）"
+        ],
+        "unknowns": [
+          "EPC选用的监测仪表品牌（清朗达供应清单未公开）",
+          "回用水系统是否配套在线监测与数据平台"
+        ]
       },
-      "potential_ims_use_case": "废水回收水质监测+仪表运维+数据管理+生命周期管理",
-      "logic_rationale": "半导体封装→磨划废水→回收间建设→水质监测+运维需求→iMS仪表管理+数据闭环",
+      "potential_ims_use_case": "运营期仪表替换/扩容+厂级水务数据管理（项目级窗口关闭，转EPC关系+Installed Base）",
+      "logic_rationale": "磨划废水回用→EPC已定→项目级机会关闭→运营期仪表生命周期+厂级数据平台",
       "opportunity_stage": "Potential Industrial Opportunity",
-      "entry_timing": "GOOD",
-      "entry_timing_evidence": {"source": "INFERENCE", "note": "规划许可证刚批9/16，施工未开始，仪表规格可影响"},
-      "influence_window": "MEDIUM",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求"},
-      "estimated_time_window": "3-6月",
-      "priority": "P2",
+      "entry_timing": "LATE",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "EPC已于7/14定标（清朗达），9/16规划许可为土建开工，仪表规格由总包掌握"
+      },
+      "influence_window": "LOW",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "交钥匙EPC模式，品牌/规格由总包决定；可争取影响回用水系统监测点位扩充与厂级平台"
+      },
+      "estimated_time_window": "当前-2026Q4（土建+安装）→运营期",
+      "priority": "P3",
       "water_system_ownership": "A-客户自建自营",
       "incrementality_status": "Existing Facility Modification",
-      "source_urls": ["https://ssipac.suqian.gov.cn/ssyq/yqgg/202609/bbbbddf2f28347ce9b3ea6ed6cce454d.shtml", "https://www.qcc.com/creport/6e6c7bf2abeca50da9a935a208685e5d.html"],
-      "to_verify": ["废水回收间具体工艺", "仪表选型状态", "投资额", "运维需求"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "规划许可证批后公布+8月改造招标", "changed": "new"},
-      "qualification": "PASS",
-      "pull_score": {"project_clarity": 4, "unavoidable": 3, "limitations": 2, "leverage": 3, "total": 12},
+      "source_urls": [
+        "https://ssipac.suqian.gov.cn/ssyq/yqgg/202609/bbbbddf2f28347ce9b3ea6ed6cce454d.shtml",
+        "https://www.qcc.com/creport/6e6c7bf2abeca50da9a935a208685e5d.html"
+      ],
+      "to_verify": [
+        "EPC选用的监测仪表品牌（清朗达供应清单未公开）",
+        "回用水系统是否配套在线监测与数据平台"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "规划许可证批后公布+8月改造招标",
+        "changed": "new"
+      },
+      "qualification": "WATCH",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 1,
+        "leverage": 2,
+        "total": 10
+      },
       "pull_box": {
-        "project": "磨划废水回收间建设项目，规划许可刚批 — FACT",
-        "unavoidable": "半导体封装磨划废水须回收处理，环保合规 — FACT",
-        "limitations": "现有废水处理可能不足，新建回收间 — INFERENCE",
-        "leverage": "iMS可提供废水回收水质监测+仪表运维+数据管理+生命周期管理 — INFERENCE",
-        "evidence_quality": "MEDIUM",
-        "key_unknown": "废水回收间具体工艺和仪表选型状态",
-        "next_validation_question": "废水回收间采用的工艺路线是什么？水质监测仪表是否已选型？"
+        "project": "55m³/h磨划废水回用系统，EPC已定标（清朗达，316.75万） — FACT",
+        "unavoidable": "半导体磨划废水须回收处理，环保合规 — FACT",
+        "limitations": "交钥匙EPC已定标，规格由总包掌握，业主直接采购窗口关闭 — FACT",
+        "leverage": "iMS可提供运营期仪表替换+厂级水务数据平台（对接自控改造） — INFERENCE",
+        "evidence_quality": "HIGH（招标中标全流程可查）",
+        "key_unknown": "EPC仪表供应清单与厂级数据平台规划",
+        "next_validation_question": "清朗达EPC使用的监测仪表品牌？厂区自控改造是否含水务数据平台？"
       },
       "evidence_quality": "MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "长电科技(宿迁)有限公司", "owner_role": "厂务/EHS/设施部门", "evaluation": "FACT", "note": "规划公示确认建设单位，长电科技全资子公司"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未明确"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "8月有改造项目招标，EPC可能已确定但名称未公开"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC确认", "仪表集成商"],
-        "next_validation_action": "搜索长电科技宿迁磨划废水回收间改造项目EPC和设计院"
-      }
+        "account_owner": {
+          "name": "长电科技(宿迁)有限公司",
+          "owner_role": "厂务/EHS部门",
+          "evaluation": "FACT",
+          "note": "长电科技全资子公司，员工2295人"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "交钥匙EPC负责设计"
+        },
+        "epc": {
+          "name": "上海清朗达环境科技有限公司",
+          "owner_role": "EPC总包（交钥匙）",
+          "evaluation": "FACT",
+          "note": "2026-07-14中标，316.75万元，标段CR05909000120260611GC0015"
+        },
+        "instrument_integrator": {
+          "name": "Unknown（含于EPC合同范围）",
+          "owner_role": "EPC分包",
+          "evaluation": "UNKNOWN",
+          "note": "清朗达技术协议内仪表分包待确认"
+        },
+        "missing_roles": [
+          "仪表集成商（EPC分包）",
+          "厂级水务数据平台决策人"
+        ],
+        "next_validation_action": "通过清朗达技术协议确认仪表品牌；调研厂区安防自控改造范围是否含水务数据管理"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；可尝试通过EPC总包（清朗达）技术协议确认仪表品牌"
+        },
+        "key_parameters": [
+          "pH",
+          "SS/浊度",
+          "电导率",
+          "COD",
+          "总铜/总镍（磨划后道）",
+          "氟化物（视工艺）"
+        ],
+        "parameters_basis": "半导体磨划废水回用监测参数（行业基准INFERENCE）+回用水标准GB/T19923",
+        "instrument_quantity_hint": "磨划废水回用系统在线点位10-25个（行业基准），316.75万投资额内含仪表采购"
+      },
+      "software_necessity": {
+        "summary": "回用水系统+厂级自控改造均需数据接入；'厂区安防自控改造'招标是厂级数字化的直接证据",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "9/1厂区安防自控改造谈判采购（Fact）",
+          "交钥匙合同含调试培训（Fact，隐含数据系统）",
+          "无IMS类软件采购公开证据（UNKNOWN）"
+        ]
+      },
+      "icp_attempts": [
+        "55m³/h回用系统交钥匙招标（含调试/培训/资料移交）",
+        "9/1厂区安防自控改造采购（厂级数字化推进）",
+        "近期招聘'环保专员'（6千以下，11天前，无线索级水处理专岗）"
+      ]
     },
     {
       "id": "IND-20260922-07",
-      "company": "重庆新宙邦新材料有限公司",
+      "company": "重庆新宙邦新材料有限公司（新宙邦300037全资子公司）",
       "industry": "新能源/电池",
       "location": "重庆市长寿区晏家街道",
-      "project": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+      "project": "电池化学品二期：新增20万吨锂电电解液+5万吨钠电电解液+0.6万吨碳酸乙烯酯（一期10万吨已投产）",
       "engine": "B/C",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["环评第一次公示2026-09-04（FACT-新宙邦官网）", "电池化学品二期项目（FACT）", "新增20万吨锂电+5万吨钠电电解液（FACT）"],
-        "inferences": ["电解液生产产生工艺废水/清洗废水（INFERENCE-行业常规）", "极早期阶段，水系统方案未形成（INFERENCE）"],
-        "unknowns": ["水系统具体方案未明确", "设计院/EPC未明确", "废水处理工艺未明确", "工信部锂电扩产审批暂停是否影响电解液项目"]
+        "facts": [
+          "二期环评第一次公示2026-09-04（官网9/7发布）（FACT-官网）",
+          "地点：重庆长寿区晏家街道化南八支路5号，全厂168亩，二期在预留地块扩建（FACT）",
+          "一期（10万吨/年电解液含污水站+RTO）已于2023年水保备案、2025-03竣工环保验收（FACT-官网/水保回执）",
+          "上市公司互动平台2026-05-07回应：'高标准建设污水处理站、废气处理设施（RTO等）、在线监测系统等污染物防治设施'（FACT-巨潮互动易）",
+          "集团在惠/南平/宜昌/荆门持续招聘环保工程师/EHS工程师，JD包含'项目污水站安装管理跟进和调试''环境监测、环保数据、资料的上报'（FACT-招聘平台）",
+          "环评单位：重庆环科源博达环保科技有限公司；联系人杨旭 15310841521（FACT）"
+        ],
+        "inferences": [
+          "一期污水站+在线监测已建成投运，二期复制扩充是自然路径（INFERENCE）",
+          "集团环保岗JD显示'环保数据上报/台账管理'是刚需，数据管理软件价值明确（INFERENCE-JD反推）"
+        ],
+        "unknowns": [
+          "二期是否新建/扩建污水站及在线监测点位",
+          "现有污水站在线监测仪表品牌（哈希装机证据无公开）",
+          "监测参数具体清单（报告全本未公示）"
+        ]
       },
-      "potential_ims_use_case": "工艺废水监测+纯水水质监测+数据管理",
-      "logic_rationale": "电解液扩产→工艺废水→废水处理需求→水质监测→iMS数据管理",
+      "potential_ims_use_case": "一期在线监测仪表+二期扩建点位扩容+集团环保数据上报管理（上市公司合规驱动，强iMS拟合）",
+      "logic_rationale": "电解液扩产→污水站在线监测（一期已有）→二期扩容+集团数据上报刚需→iMS监测+数据管理",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "EARLY",
-      "entry_timing_evidence": {"source": "FACT", "note": "环评第一次公示9/4，极早期阶段"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "二期环评一次公示9/4，设计未定，可影响监测方案"
+      },
       "influence_window": "MEDIUM",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "极早期阶段，可影响水系统方案/监测策略/仪表规格"},
-      "estimated_time_window": "9-12月",
-      "priority": "P3",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "极早期+一期同址可参照，iMS可提供与一期基线一致的监测+数据方案"
+      },
+      "estimated_time_window": "6-15月（环评→设计→施工→投产）",
+      "priority": "P2",
       "water_system_ownership": "D-Unknown",
       "incrementality_status": "Capacity Expansion",
-      "source_urls": ["https://www.capchem.com/News.html", "https://new-energy.smm.cn/content/14042/104113906"],
-      "to_verify": ["水系统方案", "设计院/EPC", "废水处理工艺", "锂电扩产审批影响"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "环评第一次公示", "changed": "new"},
-      "qualification": "WATCH",
-      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 2, "leverage": 3, "total": 10},
+      "source_urls": [
+        "https://www.capchem.com/News.html",
+        "https://new-energy.smm.cn/content/14042/104113906"
+      ],
+      "to_verify": [
+        "二期是否新建/扩建污水站及在线监测点位",
+        "现有污水站在线监测仪表品牌（哈希装机证据无公开）",
+        "监测参数具体清单（报告全本未公示）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "环评第一次公示",
+        "changed": "new"
+      },
+      "qualification": "PASS",
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 3,
+        "limitations": 2,
+        "leverage": 3,
+        "total": 12
+      },
       "pull_box": {
-        "project": "电池化学品二期扩建，20万吨锂电+5万吨钠电 — FACT",
-        "unavoidable": "电解液生产环保合规 — INFERENCE",
-        "limitations": "具体水系统方案未明确 — UNKNOWN",
-        "leverage": "iMS可提供工艺废水监测+纯水水质监测+数据管理 — INFERENCE",
-        "evidence_quality": "LOW-MEDIUM",
-        "key_unknown": "电解液生产具体废水种类和水系统方案",
-        "next_validation_question": "二期项目配套的水处理设施方案是什么？是否涉及新建废水处理系统？"
+        "project": "电池化学品二期20+5万吨电解液，一期已投产（含污水站+在线监测） — FACT",
+        "unavoidable": "电解液生产环保合规+上市公司在线监测制度化 — FACT（互动平台回应）",
+        "limitations": "二期水系统方案未明确，需扩容 — INFERENCE",
+        "leverage": "iMS可提供一期基线复制+二期扩容+集团环保数据上报管理 — INFERENCE",
+        "evidence_quality": "MEDIUM-HIGH（JD+互动回应双证据）",
+        "key_unknown": "二期污水站扩建范围与在线监测配置",
+        "next_validation_question": "二期是否扩建污水站？在线监测点位与仪表品牌如何规划？现有系统运维方是谁？"
       },
       "evidence_quality": "LOW-MEDIUM",
       "stage3_handoff": {
-        "account_owner": {"name": "重庆新宙邦新材料有限公司", "owner_role": "环保/工程部门", "evaluation": "FACT", "note": "环评公示确认建设单位，新宙邦(300037)全资子公司"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未确定"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC", "仪表集成商", "水系统供应商"],
-        "next_validation_action": "跟踪环评后续公示，确认水系统方案和设计院"
-      }
+        "account_owner": {
+          "name": "重庆新宙邦新材料有限公司",
+          "owner_role": "环保/EHS部门",
+          "evaluation": "FACT",
+          "note": "联系人物旭15310841521"
+        },
+        "design_institute": {
+          "name": "Unknown（环评编制：重庆环科源博达环保科技有限公司）",
+          "owner_role": "环评编制",
+          "evaluation": "FACT",
+          "note": "水系统设计院待确认"
+        },
+        "epc": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "一期EPC供应商可追溯（验收报告）"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "一期在线监测供应商待查"
+        },
+        "missing_roles": [
+          "二期水系统设计院",
+          "EPC",
+          "在线监测供应商"
+        ],
+        "next_validation_action": "联系杨旭确认二期污水站规划；通过一期竣工环保验收报告获取现有在线监测配置与仪表品牌"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；一期污水站仪表品牌可通过竣工环保验收报告或现场确认"
+        },
+        "key_parameters": [
+          "COD",
+          "氨氮",
+          "总磷",
+          "总氮",
+          "pH",
+          "电导率",
+          "氟化物（含氟电解液）",
+          "SS"
+        ],
+        "parameters_basis": "电解液/锂电材料废水监测参数（行业基准INFERENCE）+HJ353-2019法定必装",
+        "instrument_quantity_hint": "一期污水站已有在线点位5-15个；二期扩点后预计增加（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "上市公司环保数据上报/台账为刚需：集团环保岗JD明确'环境监测、环保数据、资料的上报'职责（FACT）",
+        "evidence_type": "FACT/INFERENCE",
+        "evidence_items": [
+          "集团环保专员/环保工程师JD含数据上报职责（FACT-招聘JD）",
+          "互动平台'在线监测系统'声明（FACT）",
+          "EHS工程师(能碳)JD：收集统计分析集团能源、碳管理、污染物排放数据（FACT-招聘JD）"
+        ]
+      },
+      "icp_attempts": [
+        "一期污水站+在线监测建成并验收（FACT）",
+        "集团持续设置环保数据上报岗（FACT-JD）",
+        "EHS能碳岗收集集团污染物排放数据（FACT-JD）"
+      ]
     },
     {
       "id": "IND-20260922-08",
-      "company": "山西兰花煤化工有限责任公司",
+      "company": "山西兰花煤化工有限责任公司（兰花科创600123控股）",
       "industry": "煤化工",
       "location": "山西省晋城市",
-      "project": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+      "project": "节能环保升级改造（全厂废水零排放技术改造，总投资约35.5-39.6亿元，其中新建污水零排放装置）",
       "engine": "B/C",
       "signal_tier": "Tier 2",
       "evidence": {
-        "facts": ["集团董事长现场办公推进9/12（FACT-兰花集团官网）", "主装置土建基础完工（FACT-兰花科创公告）", "节能环保升级改造项目（FACT）"],
-        "inferences": ["煤化工涉及废水处理需求（INFERENCE-行业常规）", "主装置土建完工，可能已进入设备安装阶段（INFERENCE）", "水系统规格可能已部分冻结（INFERENCE）"],
-        "unknowns": ["水系统具体方案未明确", "仪表规格是否已定", "废水处理设施进展"]
+        "facts": [
+          "山西省生态环境厅2025-04环评批复（FACT-省厅）",
+          "项目含新建废水零排放处理设施/全厂废水零排放技术改造，总投资355019.99万元（环评口径）/39.62亿元（新闻口径）（FACT）",
+          "配套污水零排放装置项目按BOO模式（建设-拥有-运营）实施，规模≥1000m³/h、年运行8400h（FACT-招采/公告；单位'1000m3/s'疑为笔误，以官方为准）",
+          "2026-07已进入设备、管道安装阶段（FACT-公告）",
+          "2026-08-25兰花科创公告技改进展、部分化工化肥企业停产（FACT-上市公司公告）",
+          "改造后年减新鲜水约150万吨、减排污约120万吨（FACT-报道）"
+        ],
+        "inferences": [
+          "全厂废水零排放=多段浓缩结晶+回用，在线监测点位多（RO浓缩/蒸发结晶/回用水多节点）（INFERENCE-行业基准）",
+          "BOO模式=运营方长期运维，监测数据+运维管理需求强（INFERENCE）",
+          "设备安装阶段，仪表规格可能已冻结或临近冻结（INFERENCE）"
+        ],
+        "unknowns": [
+          "废水零排放装置BOO运营中标方名称",
+          "各段在线监测配置与仪表品牌",
+          "哈希仪表装机证据（无公开）"
+        ]
       },
-      "potential_ims_use_case": "废水处理水质监测+数据管理+生命周期管理",
-      "logic_rationale": "煤化工升级→废水处理需求→水质监测→iMS数据管理",
+      "potential_ims_use_case": "废水零排放多段在线监测+BOO运营数据管理（大项目，机会明确但窗口紧）",
+      "logic_rationale": "煤化工全厂零排放+BOO → 多段监测+运维数据 → iMS监测+数据平台（强关联）",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "LATE",
-      "entry_timing_evidence": {"source": "INFERENCE", "note": "主装置土建基础完工，进入施工/设备安装，规格可能已部分冻结"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "2025-04环评批，2026-07设备管道安装中，规格大概率已冻结"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "施工阶段，方案已定，可影响有限仪表选型"},
-      "estimated_time_window": "3-6月（施工阶段）",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "设备安装阶段，规格已定；可影响运维期替换与数据平台选择"
+      },
+      "estimated_time_window": "2026Q4-运营期（年底试生产）",
       "priority": "P3",
       "water_system_ownership": "A-客户自建自营",
       "incrementality_status": "Existing Facility Modification",
-      "source_urls": ["http://www.chinalanhua.com/html/lhjt/gsdd/2026/29024.html"],
-      "to_verify": ["水系统方案状态", "废水处理设施进展", "仪表选型状态"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "现场办公推进+土建完工", "changed": "new"},
+      "source_urls": [
+        "http://www.chinalanhua.com/html/lhjt/gsdd/2026/29024.html"
+      ],
+      "to_verify": [
+        "废水零排放装置BOO运营中标方名称",
+        "各段在线监测配置与仪表品牌",
+        "哈希仪表装机证据（无公开）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "现场办公推进+土建完工",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 3, "unavoidable": 2, "limitations": 1, "leverage": 2, "total": 8},
+      "pull_score": {
+        "project_clarity": 4,
+        "unavoidable": 4,
+        "limitations": 2,
+        "leverage": 3,
+        "total": 13
+      },
       "pull_box": {
-        "project": "煤化工节能环保升级改造，主装置土建完工 — FACT",
-        "unavoidable": "节能环保升级，环保合规 — INFERENCE",
-        "limitations": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
-        "leverage": "iMS可提供废水处理水质监测+数据管理 — INFERENCE",
-        "evidence_quality": "LOW",
-        "key_unknown": "废水处理设施是否已建设，仪表是否已选型",
-        "next_validation_question": "项目配套的废水处理设施目前处于什么建设阶段？仪表是否已选型？"
+        "project": "全厂废水零排放技术改造+BOO零排放装置，设备安装中 — FACT",
+        "unavoidable": "煤化工高盐废水零排放是环评批复硬约束+水资源约束 — FACT",
+        "limitations": "设备安装阶段规格已冻结，项目级窗口窄 — FACT",
+        "leverage": "iMS可提供零排放多段监测+BOO运营数据管理+仪表生命周期 — INFERENCE",
+        "evidence_quality": "HIGH（环评批复+公告+BOO模式）",
+        "key_unknown": "BOO运营中标方与零排放装置监测配置",
+        "next_validation_question": "废水零排放装置BOO中标方是谁？监测系统与数据平台由谁供应？"
       },
       "evidence_quality": "LOW",
       "stage3_handoff": {
-        "account_owner": {"name": "山西兰花煤化工有限责任公司", "owner_role": "环保/工程部门", "evaluation": "FACT", "note": "兰花科创(600123)控股子公司"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未明确"},
-        "epc": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "EPC未明确"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["设计院", "EPC", "仪表集成商"],
-        "next_validation_action": "搜索兰花煤化工项目设计院和废水处理设施进展"
-      }
+        "account_owner": {
+          "name": "山西兰花煤化工有限责任公司",
+          "owner_role": "工程/环保部门",
+          "evaluation": "FACT",
+          "note": "兰花科创控股子公司"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "设计院未公开"
+        },
+        "epc": {
+          "name": "Unknown（BOO运营方待确认）",
+          "owner_role": "BOO运营",
+          "evaluation": "UNKNOWN",
+          "note": "污水零排放装置BOO中标方待确认"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "零排放BOO运营方",
+          "仪表集成商",
+          "监测系统供应商"
+        ],
+        "next_validation_action": "检索兰花煤化工废水零排放BOO招标公告确认中标方；查环评批复全文获取监测要求"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据；可通过BOO公告/EPC技术协议确认"
+        },
+        "key_parameters": [
+          "COD",
+          "氨氮",
+          "总磷",
+          "总氮",
+          "pH",
+          "电导率/TDS",
+          "硬度",
+          "硅",
+          "浊度",
+          "蒸发结晶浓缩液浓度"
+        ],
+        "parameters_basis": "煤化工高盐废水零排放（RO/蒸发结晶）监测参数（行业基准INFERENCE）",
+        "instrument_quantity_hint": "≥1000m³/h零排放系统在线监测点位30-60个（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "零排放系统+BOO运营对连续监测、数据归档、达标预警要求高；BOO合同通常含数据交付义务",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "零排放自动监控+数据联网法规义务（Fact）",
+          "BOO模式运营数据管理是合同必需（INFERENCE）",
+          "无公开软件采购证据（UNKNOWN）"
+        ]
+      },
+      "icp_attempts": [
+        "全厂废水零排放技术改造+BOO模式引入（FACT）",
+        "技改期间部分产能停产（FACT-公告，显示决心）"
+      ]
     },
     {
       "id": "IND-20260922-09",
       "company": "国电投远达水务有限公司",
       "industry": "石化/化工",
       "location": "福建省漳州市古雷石化基地",
-      "project": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+      "project": "古雷石化基地脱硫废水零排放EPC（增补采购阶段）",
       "engine": "B",
       "signal_tier": "Tier 3",
       "evidence": {
-        "facts": ["保温材料增补结果公告2026-09-09（FACT-中项网）", "脱硫废水零排放EPC项目（FACT）"],
-        "inferences": ["EPC已中标，进入施工/采购阶段（INFERENCE）", "仪表规格已基本确定（INFERENCE）"],
-        "unknowns": ["具体仪表品牌", "运维模式"]
+        "facts": [
+          "保温材料增补采购结果公告2026-09-09（FACT-中项网）",
+          "远达水务2025年中标淮南平圩电厂四期2×1000MW机组烟气脱硫废水零排放EPC（1.85亿元）（FACT-企查查，供参考背景）"
+        ],
+        "inferences": [
+          "EPC已中标，进入施工/采购增补阶段，仪表规格已定（INFERENCE）"
+        ],
+        "unknowns": [
+          "古雷项目EPC合同金额与详细范围",
+          "仪表品牌与运维模式",
+          "该线索与古雷石化基地的关联强度（需复核）"
+        ]
       },
-      "potential_ims_use_case": "零排放系统水质监测+运维",
-      "logic_rationale": "脱硫废水零排放→水质监测需求→iMS运维",
+      "potential_ims_use_case": "零排放系统运维期仪表替换+数据管理（EPC窗口关闭，转运维关系）",
+      "logic_rationale": "脱硫废水零排放EPC→施工增补→仪表规格已定→运维期机会",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "LATE",
-      "entry_timing_evidence": {"source": "FACT", "note": "EPC已中标，增补采购阶段"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "EPC已中标，增补采购阶段"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "EPC已中标，方案和规格已基本确定"},
-      "estimated_time_window": "已进入施工采购阶段",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "EPC已定标，方案与规格已定"
+      },
+      "estimated_time_window": "施工期-运维期",
       "priority": "Tender Monitoring",
       "water_system_ownership": "C-第三方EPC运营",
       "incrementality_status": "New Facility",
-      "source_urls": ["https://m2.ccpc360.com/tags/hamimeihuagongfeishuilingpaifangjishufangan.html"],
-      "to_verify": ["仪表品牌是否已定", "运维模式"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "增补采购公告", "changed": "new"},
+      "source_urls": [
+        "https://m2.ccpc360.com/tags/hamimeihuagongfeishuilingpaifangjishufangan.html"
+      ],
+      "to_verify": [
+        "古雷项目EPC合同金额与详细范围",
+        "仪表品牌与运维模式",
+        "该线索与古雷石化基地的关联强度（需复核）"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "增补采购公告",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 2, "unavoidable": 2, "limitations": 1, "leverage": 1, "total": 6},
+      "pull_score": {
+        "project_clarity": 2,
+        "unavoidable": 2,
+        "limitations": 1,
+        "leverage": 1,
+        "total": 6
+      },
       "pull_box": {
-        "project": "脱硫废水零排放EPC，增补采购 — FACT",
+        "project": "脱硫废水零排放EPC增补采购 — FACT",
         "unavoidable": "脱硫废水零排放环保要求 — FACT",
-        "limitations": "EPC已中标，规格已定 — FACT",
-        "leverage": "iMS可提供零排放系统运维+生命周期管理 — INFERENCE",
+        "limitations": "EPC已中标规格已定 — FACT",
+        "leverage": "iMS可提供运维期替换+数据管理 — INFERENCE",
         "evidence_quality": "LOW",
-        "key_unknown": "仪表品牌是否已定",
-        "next_validation_question": "零排放系统的水质监测仪表是否已选型？品牌是什么？"
+        "key_unknown": "仪表品牌与运维模式",
+        "next_validation_question": "零排放系统监测仪表品牌是否已定？运维是否外包？"
       },
       "evidence_quality": "LOW",
       "stage3_handoff": {
-        "account_owner": {"name": "国电投远达水务有限公司", "owner_role": "EPC总包方", "evaluation": "FACT", "note": "EPC总包单位"},
-        "design_institute": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "设计院未明确"},
-        "epc": {"name": "国电投远达水务有限公司", "owner_role": "EPC总包", "evaluation": "FACT", "note": "EPC已确定"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["仪表集成商", "运维方"],
-        "next_validation_action": "确认仪表品牌选型和运维模式"
-      }
+        "account_owner": {
+          "name": "国电投远达水务有限公司",
+          "owner_role": "EPC总包方",
+          "evaluation": "FACT",
+          "note": "EPC承包单位"
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未明确"
+        },
+        "epc": {
+          "name": "国电投远达水务有限公司",
+          "owner_role": "EPC总包",
+          "evaluation": "FACT",
+          "note": "EPC已确定"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "仪表集成商",
+          "运维方"
+        ],
+        "next_validation_action": "确认古雷项目EPC合同范围与仪表供应商；判断与古雷石化基地的关联"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据"
+        },
+        "key_parameters": [
+          "pH",
+          "电导率/TDS",
+          "浊度",
+          "COD",
+          "氯离子",
+          "硬度"
+        ],
+        "parameters_basis": "脱硫废水零排放监测参数（行业基准INFERENCE）",
+        "instrument_quantity_hint": "零排放系统典型在线点位20-40个（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "无公开软件证据；运维期数据管理需求待验证",
+        "evidence_type": "UNKNOWN",
+        "evidence_items": []
+      },
+      "icp_attempts": []
     },
     {
       "id": "IND-20260922-10",
       "company": "福建古雷石化有限公司",
       "industry": "石化/化工",
       "location": "福建省漳州市古雷石化基地",
-      "project": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+      "project": "全厂水处理装置膜元件利旧改造（超滤/反渗透膜性能评估与优化，运营期）",
       "engine": "C",
       "signal_tier": "Tier 3",
       "evidence": {
-        "facts": ["福建日报报道9/21（FACT-官方媒体）", "膜元件利旧改造已实施（FACT）", "超滤/反渗透膜是水处理核心部件（FACT）"],
-        "inferences": ["膜性能衰减→降本增效需求（INFERENCE）", "已实施利旧改造，处于运营优化阶段（INFERENCE）"],
-        "unknowns": ["具体监测仪表配置", "是否已有在线水质监测系统", "运维外包模式"]
+        "facts": [
+          "福建日报报道（9/21）：膜元件利旧改造已实施（FACT-官方媒体）",
+          "古雷石化基地配套2026-2029年排海管道水质在线监测设备运行维护项目（漳州市古雷水务发展有限公司，预算95万元）（FACT-招采公告）",
+          "古雷开发区南部污水处理厂4万m³/d，2025-04化验室仪器采购（FACT-官方）"
+        ],
+        "inferences": [
+          "膜性能衰减→降本增效，运营期监测升级需求（INFERENCE）",
+          "园区排海在线监测维保由第三方承担，石化企业自身水系统运维模式待确认（INFERENCE）"
+        ],
+        "unknowns": [
+          "现场现有在线监测仪表配置与品牌",
+          "膜性能监控方式（人工/在线）",
+          "运维自管还是外包"
+        ]
       },
-      "potential_ims_use_case": "水处理装置水质监测+膜性能监控+运维数据管理+生命周期管理",
-      "logic_rationale": "石化水处理→膜元件性能衰减→利旧改造→运营期水质监测+膜性能监控→iMS生命周期管理",
+      "potential_ims_use_case": "水处理装置在线监测升级+膜性能监控+运维数据管理（Installed Base/Lifecycle）",
+      "logic_rationale": "石化水处理→膜利旧改造→运营期监测+膜性能优化→iMS生命周期管理",
       "opportunity_stage": "Industrial Signal",
       "entry_timing": "CLOSED",
-      "entry_timing_evidence": {"source": "FACT", "note": "利旧改造已实施，处于运营阶段"},
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "改造已实施，运营优化阶段"
+      },
       "influence_window": "LOW",
-      "influence_window_evidence": {"source": "INFERENCE", "note": "已实施改造，可影响运营期监测优化/仪表生命周期管理"},
-      "estimated_time_window": "已运营，生命周期机会",
-      "priority": "P3",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "可影响运营期监测补点与维保数字化"
+      },
+      "estimated_time_window": "运营期（长期）",
+      "priority": "P3-Lifecycle",
       "water_system_ownership": "A-客户自建自营",
       "incrementality_status": "Installed Base/Lifecycle",
-      "source_urls": ["http://m.toutiao.com/group/7687941002221093376/"],
-      "to_verify": ["现有监测仪表配置", "膜性能监控方式", "运维外包模式"],
-      "continuity": {"first_seen": "2026-09-22", "new_facts_today": "膜元件利旧改造报道", "changed": "new"},
+      "source_urls": [
+        "http://m.toutiao.com/group/7687941002221093376/"
+      ],
+      "to_verify": [
+        "现场现有在线监测仪表配置与品牌",
+        "膜性能监控方式（人工/在线）",
+        "运维自管还是外包"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-22",
+        "new_facts_today": "膜元件利旧改造报道",
+        "changed": "new"
+      },
       "qualification": "WATCH",
-      "pull_score": {"project_clarity": 2, "unavoidable": 2, "limitations": 1, "leverage": 2, "total": 7},
+      "pull_score": {
+        "project_clarity": 2,
+        "unavoidable": 2,
+        "limitations": 1,
+        "leverage": 2,
+        "total": 7
+      },
       "pull_box": {
-        "project": "全厂水处理装置膜元件利旧改造 — FACT",
+        "project": "全厂水处理膜元件利旧改造，已实施 — FACT",
         "unavoidable": "膜性能衰减→降本增效 — INFERENCE",
-        "limitations": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
-        "leverage": "iMS可提供膜性能监控+运维数据管理+生命周期管理 — INFERENCE",
-        "evidence_quality": "LOW",
-        "key_unknown": "现有在线水质监测仪表配置和运维模式",
-        "next_validation_question": "水处理装置现有的在线水质监测仪表有哪些？运维是自管还是外包？"
+        "limitations": "现有监测配置与运维模式未知 — UNKNOWN",
+        "leverage": "iMS可提供膜性能监控+数据管理+生命周期 — INFERENCE",
+        "evidence_quality": "LOW-MEDIUM",
+        "key_unknown": "现有在线监测配置与运维模式",
+        "next_validation_question": "水处理装置现有在线监测仪表有哪些？膜性能靠人工还是在线监控？"
       },
       "evidence_quality": "LOW",
       "stage3_handoff": {
-        "account_owner": {"name": "福建古雷石化有限公司", "owner_role": "公用工程分部", "evaluation": "FACT", "note": "福建日报报道确认，公用工程分部负责水处理装置"},
-        "design_institute": {"name": "N/A", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "已运营设施，无设计院环节"},
-        "epc": {"name": "N/A", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "已运营设施"},
-        "instrument_integrator": {"name": "Unknown", "owner_role": "N/A", "evaluation": "UNKNOWN", "note": "未确定"},
-        "missing_roles": ["仪表运维负责人", "水处理工艺工程师"],
-        "next_validation_action": "调研古雷石化水处理装置现有监测仪表配置和运维模式"
-      }
+        "account_owner": {
+          "name": "福建古雷石化有限公司",
+          "owner_role": "公用工程分部",
+          "evaluation": "FACT",
+          "note": "报道确认"
+        },
+        "design_institute": {
+          "name": "N/A",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "运营期"
+        },
+        "epc": {
+          "name": "N/A",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "运营期"
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "owner_role": "N/A",
+          "evaluation": "UNKNOWN",
+          "note": "未确定"
+        },
+        "missing_roles": [
+          "水处理运维负责人",
+          "仪表运维服务商"
+        ],
+        "next_validation_action": "调研古雷石化水处理装置现有监测配置与运维模式；结合园区排海监测维保招标接触运维服务商"
+      },
+      "instrument_evidence": {
+        "hach_evidence": {
+          "status": "UNKNOWN",
+          "note": "无公开证据"
+        },
+        "key_parameters": [
+          "pH",
+          "电导率",
+          "浊度",
+          "SDI（膜前）",
+          "ORP",
+          "氯离子（RO进水）",
+          "COD"
+        ],
+        "parameters_basis": "膜法水处理系统监测参数（行业基准INFERENCE）",
+        "instrument_quantity_hint": "石化水处理装置在线点位10-30个（行业基准）"
+      },
+      "software_necessity": {
+        "summary": "园区排海在线监测维保外包（95万/3年）显示第三方运维市场活跃，石化企业自建数据平台需求待验",
+        "evidence_type": "INFERENCE",
+        "evidence_items": [
+          "园区排海监测维保外包公告（FACT）"
+        ]
+      },
+      "icp_attempts": [
+        "膜元件利旧改造（降本增效主动优化）（FACT）"
+      ]
     }
   ],
   "market_background": [
+    "水污染源在线监测法定必装：重点排污单位COD/氨氮/pH/流量强制自动监控（HJ353-2019，法规Fact）",
     "HJ 1480-2026自行监测视频监控标准10月1日实施，政策驱动需落到具体企业",
-    "石化排放新标拟首次管控全盐量，煤化工与焦化高盐废水处置承压",
+    "石化排放新标拟首次管控全盐量，煤化工与焦化高盐废水处置承压（直接利好兰花/化工零排放项目监测需求）",
     "2026三项国家强制水污染物排放标准（食品加工/屠宰肉类/酒类制造）",
-    "工信部暂停锂电扩产审批，H2 2026起各地基本停止受理常规液态锂电池扩产备案",
-    "半导体废水处理合规地图：水系统已从辅助配套变成产能节拍制约因素，Fab的拿地/能评/环评都把水摆在台前",
-    "GMP纯化水微生物限度收紧：100→50 CFU/mL，注射用水→10 CFU/100mL",
-    "工业园区治污从建好转向用好：园区水务正从单点达标转向长周期运营，运营期水质监测+数据管理是增量机会"
+    "半导体废水处理合规地图：水系统已从辅助配套变成产能节拍制约因素，但封装/加工环节需求规模小于Fab",
+    "工业园区治污从建好转向用好：园区水务单点达标转向长周期运营，运营期水质监测+数据管理是增量机会"
   ],
   "source_effectiveness": {
     "生态环境局官网": "高（环评公示/批复一手来源）",
@@ -579,23 +1444,23 @@
   "experiment_observations": {
     "municipal_vs_industrial_differentiation": "本次扫描未遇到市政信号，filtered_municipal=0。所有信号均为工业领域（半导体/石化/新能源/煤化工）",
     "demand_learning_summary": {
-      "new_strong_pull": "否。最高PULL Score为13/20（宿迁镭明晶圆+定边化工园区污水厂），仍属Promising, requires validation",
-      "repeatable_pattern": "是。'园区集中式废水处理设施新建/提标'模式连续第三周出现——本周定边县化工产业区污水处理厂。共同特征：园区层面合规驱动、需进出水水质监测、零排放工艺。标记REPEATABLE DEMAND SIGNAL",
-      "downgraded_leads": "泰兴怡达化学20万吨环氧丙烷扩建——总投资6.4亿但废水接管园区污水处理厂，自建水系统可能不大，Influence Window降低",
-      "gtm_assumption_change": "有。本周发现两个信号值得注意：1)半导体封装环节'磨划废水回收间'建设（长电科技宿迁）——封装测试环节也在建废水回收设施，说明水质监测需求正从前道制造向后道封装延伸；2)古雷石化'膜元件利旧改造'——已运营石化装置的膜性能优化需求，iMS运营期生命周期管理价值可能被低估"
+      "new_strong_pull": "否。最高PULL Score 14/20（定边零排放污水厂），今日无16+强需求信号；但兰花BOO零排放（13）与新宙邦（12）提供了高价值补充",
+      "repeatable_pattern": "是。'园区集中式废水处理设施新建/提标'连续第三周出现（本周定边）；新增'煤化工全厂废水零排放'模式（兰花）",
+      "downgraded_leads": "长电磨划废水回用EPC已定标（清朗达316.75万）→项目级窗口关闭，降P3转EPC关系+运营期；东煦主体封顶→LATE",
+      "gtm_assumption_change": "有。①交钥匙EPC模式（长电）说明大型客户水系统走向总包化，iMS在项目级的决策链路转向EPC/设计院，须建立'EPC渠道策略'；②上市公司环保数据上报是刚需（新宙邦JD），iMS数据管理价值被低估；③兰花的BOO模式开辟'运营方'新ICP类型"
     },
     "repeatable_demand_signals": [
       {
         "pattern": "园区集中式废水处理设施新建/提标",
-        "evidence_count": "连续3周出现（9/15上马化工园区、9/17中捷产业园区、9/22定边化工产业区）",
-        "common_features": "园区层面合规驱动+进出水水质监测+零排放工艺+运营管理需求",
-        "status": "积累Evidence中，不急于形成结论"
+        "evidence_count": "连续3周（9/15上马化工园区、9/17中捷、9/22定边）",
+        "common_features": "园区合规驱动+进出水监测+零排放+运营管理",
+        "status": "积累Evidence中"
       },
       {
-        "pattern": "半导体行业水系统从辅助配套转向产能制约",
-        "evidence_count": "多周持续（晶圆厂扩产+封装废水回收+行业分析确认）",
-        "common_features": "水系统规格影响投产节奏+环评把水摆在前台+超纯水/废水处理双需求",
-        "status": "积累Evidence中"
+        "pattern": "煤化工/化工全厂废水零排放+第三方运营（BOO/BOT）",
+        "evidence_count": "本周新增（兰花BOO零排放≥1000m³/h）",
+        "common_features": "高盐废水零排放+长期运营+数据交付义务",
+        "status": "新增，值得跟踪"
       }
     ]
   }
