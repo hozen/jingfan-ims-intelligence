@@ -2,6 +2,1971 @@
   "leads": [
     {
       "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-10",
+        "company": {
+          "company_name": "福建古雷石化有限公司",
+          "location": "福建省漳州市古雷石化基地",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "http://m.toutiao.com/group/7687941002221093376/",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-10",
+          "company": "福建古雷石化有限公司",
+          "industry": "石化/化工",
+          "location": "福建省漳州市古雷石化基地",
+          "project": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+          "engine": "C",
+          "signal_tier": "Tier 3",
+          "evidence": {
+            "facts": [
+              "福建日报报道9/21（FACT-官方媒体）",
+              "膜元件利旧改造已实施（FACT）",
+              "超滤/反渗透膜是水处理核心部件（FACT）"
+            ],
+            "inferences": [
+              "膜性能衰减→降本增效需求（INFERENCE）",
+              "已实施利旧改造，处于运营优化阶段（INFERENCE）"
+            ],
+            "unknowns": [
+              "具体监测仪表配置",
+              "是否已有在线水质监测系统",
+              "运维外包模式"
+            ]
+          },
+          "potential_ims_use_case": "水处理装置水质监测+膜性能监控+运维数据管理+生命周期管理",
+          "logic_rationale": "石化水处理→膜元件性能衰减→利旧改造→运营期水质监测+膜性能监控→iMS生命周期管理",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "CLOSED",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "利旧改造已实施，处于运营阶段"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "已实施改造，可影响运营期监测优化/仪表生命周期管理"
+          },
+          "estimated_time_window": "已运营，生命周期机会",
+          "priority": "P3",
+          "water_system_ownership": "A-客户自建自营",
+          "incrementality_status": "Installed Base/Lifecycle",
+          "source_urls": [
+            "http://m.toutiao.com/group/7687941002221093376/"
+          ],
+          "to_verify": [
+            "现有监测仪表配置",
+            "膜性能监控方式",
+            "运维外包模式"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "膜元件利旧改造报道",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable": 2,
+            "limitations": 1,
+            "leverage": 2,
+            "total": 7
+          },
+          "pull_box": {
+            "project": "全厂水处理装置膜元件利旧改造 — FACT",
+            "unavoidable": "膜性能衰减→降本增效 — INFERENCE",
+            "limitations": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
+            "leverage": "iMS可提供膜性能监控+运维数据管理+生命周期管理 — INFERENCE",
+            "evidence_quality": "LOW",
+            "key_unknown": "现有在线水质监测仪表配置和运维模式",
+            "next_validation_question": "水处理装置现有的在线水质监测仪表有哪些？运维是自管还是外包？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "福建古雷石化有限公司",
+              "owner_role": "公用工程分部",
+              "evaluation": "FACT",
+              "note": "福建日报报道确认，公用工程分部负责水处理装置"
+            },
+            "design_institute": {
+              "name": "N/A",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "已运营设施，无设计院环节"
+            },
+            "epc": {
+              "name": "N/A",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "已运营设施"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "仪表运维负责人",
+              "水处理工艺工程师"
+            ],
+            "next_validation_action": "调研古雷石化水处理装置现有监测仪表配置和运维模式"
+          },
+          "opportunity": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+          "time_window_basis": "已实施改造，可影响运营期监测优化/仪表生命周期管理",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "调研古雷石化水处理装置现有监测仪表配置和运维模式",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 福建日报报道确认，公用工程分部负责水处理装置",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://m.toutiao.com/group/7687941002221093376/"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-10",
+            "lead_id": "IND-20260922-10",
+            "account_id": "ACC-IND-20260922-10",
+            "project_name": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
+            "owner": "福建古雷石化有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-10",
+            "lead_id": "IND-20260922-10",
+            "account_name": "福建古雷石化有限公司",
+            "group_name": "",
+            "industry": "石化/化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-09",
+        "company": {
+          "company_name": "国电投远达水务有限公司",
+          "location": "福建省漳州市古雷石化基地",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://m2.ccpc360.com/tags/hamimeihuagongfeishuilingpaifangjishufangan.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-09",
+          "company": "国电投远达水务有限公司",
+          "industry": "石化/化工",
+          "location": "福建省漳州市古雷石化基地",
+          "project": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+          "engine": "B",
+          "signal_tier": "Tier 3",
+          "evidence": {
+            "facts": [
+              "保温材料增补结果公告2026-09-09（FACT-中项网）",
+              "脱硫废水零排放EPC项目（FACT）"
+            ],
+            "inferences": [
+              "EPC已中标，进入施工/采购阶段（INFERENCE）",
+              "仪表规格已基本确定（INFERENCE）"
+            ],
+            "unknowns": [
+              "具体仪表品牌",
+              "运维模式"
+            ]
+          },
+          "potential_ims_use_case": "零排放系统水质监测+运维",
+          "logic_rationale": "脱硫废水零排放→水质监测需求→iMS运维",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "LATE",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "EPC已中标，增补采购阶段"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "EPC已中标，方案和规格已基本确定"
+          },
+          "estimated_time_window": "已进入施工采购阶段",
+          "priority": "Tender Monitoring",
+          "water_system_ownership": "C-第三方EPC运营",
+          "incrementality_status": "New Facility",
+          "source_urls": [
+            "https://m2.ccpc360.com/tags/hamimeihuagongfeishuilingpaifangjishufangan.html"
+          ],
+          "to_verify": [
+            "仪表品牌是否已定",
+            "运维模式"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "增补采购公告",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable": 2,
+            "limitations": 1,
+            "leverage": 1,
+            "total": 6
+          },
+          "pull_box": {
+            "project": "脱硫废水零排放EPC，增补采购 — FACT",
+            "unavoidable": "脱硫废水零排放环保要求 — FACT",
+            "limitations": "EPC已中标，规格已定 — FACT",
+            "leverage": "iMS可提供零排放系统运维+生命周期管理 — INFERENCE",
+            "evidence_quality": "LOW",
+            "key_unknown": "仪表品牌是否已定",
+            "next_validation_question": "零排放系统的水质监测仪表是否已选型？品牌是什么？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "国电投远达水务有限公司",
+              "owner_role": "EPC总包方",
+              "evaluation": "FACT",
+              "note": "EPC总包单位"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未明确"
+            },
+            "epc": {
+              "name": "国电投远达水务有限公司",
+              "owner_role": "EPC总包",
+              "evaluation": "FACT",
+              "note": "EPC已确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "仪表集成商",
+              "运维方"
+            ],
+            "next_validation_action": "确认仪表品牌选型和运维模式"
+          },
+          "opportunity": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+          "time_window_basis": "EPC已中标，方案和规格已基本确定",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "确认仪表品牌选型和运维模式",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: EPC总包单位；[EPC] FACT: EPC已确定",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://m2.ccpc360.com/tags/hamimeihuagongfeishuilingpaifangjishufangan.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-09",
+            "lead_id": "IND-20260922-09",
+            "account_id": "ACC-IND-20260922-09",
+            "project_name": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
+            "owner": "国电投远达水务有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-09",
+            "lead_id": "IND-20260922-09",
+            "account_name": "国电投远达水务有限公司",
+            "group_name": "",
+            "industry": "石化/化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-08",
+        "company": {
+          "company_name": "山西兰花煤化工有限责任公司",
+          "location": "山西省晋城市",
+          "industry": "煤化工"
+        },
+        "project": {
+          "project_name": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "http://www.chinalanhua.com/html/lhjt/gsdd/2026/29024.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-08",
+          "company": "山西兰花煤化工有限责任公司",
+          "industry": "煤化工",
+          "location": "山西省晋城市",
+          "project": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "集团董事长现场办公推进9/12（FACT-兰花集团官网）",
+              "主装置土建基础完工（FACT-兰花科创公告）",
+              "节能环保升级改造项目（FACT）"
+            ],
+            "inferences": [
+              "煤化工涉及废水处理需求（INFERENCE-行业常规）",
+              "主装置土建完工，可能已进入设备安装阶段（INFERENCE）",
+              "水系统规格可能已部分冻结（INFERENCE）"
+            ],
+            "unknowns": [
+              "水系统具体方案未明确",
+              "仪表规格是否已定",
+              "废水处理设施进展"
+            ]
+          },
+          "potential_ims_use_case": "废水处理水质监测+数据管理+生命周期管理",
+          "logic_rationale": "煤化工升级→废水处理需求→水质监测→iMS数据管理",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "LATE",
+          "entry_timing_evidence": {
+            "source": "INFERENCE",
+            "note": "主装置土建基础完工，进入施工/设备安装，规格可能已部分冻结"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "施工阶段，方案已定，可影响有限仪表选型"
+          },
+          "estimated_time_window": "3-6月（施工阶段）",
+          "priority": "P3",
+          "water_system_ownership": "A-客户自建自营",
+          "incrementality_status": "Existing Facility Modification",
+          "source_urls": [
+            "http://www.chinalanhua.com/html/lhjt/gsdd/2026/29024.html"
+          ],
+          "to_verify": [
+            "水系统方案状态",
+            "废水处理设施进展",
+            "仪表选型状态"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "现场办公推进+土建完工",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 2,
+            "limitations": 1,
+            "leverage": 2,
+            "total": 8
+          },
+          "pull_box": {
+            "project": "煤化工节能环保升级改造，主装置土建完工 — FACT",
+            "unavoidable": "节能环保升级，环保合规 — INFERENCE",
+            "limitations": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+            "leverage": "iMS可提供废水处理水质监测+数据管理 — INFERENCE",
+            "evidence_quality": "LOW",
+            "key_unknown": "废水处理设施是否已建设，仪表是否已选型",
+            "next_validation_question": "项目配套的废水处理设施目前处于什么建设阶段？仪表是否已选型？"
+          },
+          "evidence_quality": "LOW",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "山西兰花煤化工有限责任公司",
+              "owner_role": "环保/工程部门",
+              "evaluation": "FACT",
+              "note": "兰花科创(600123)控股子公司"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未明确"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未明确"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商"
+            ],
+            "next_validation_action": "搜索兰花煤化工项目设计院和废水处理设施进展"
+          },
+          "opportunity": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+          "time_window_basis": "施工阶段，方案已定，可影响有限仪表选型",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "搜索兰花煤化工项目设计院和废水处理设施进展",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 兰花科创(600123)控股子公司",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://www.chinalanhua.com/html/lhjt/gsdd/2026/29024.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-08",
+            "lead_id": "IND-20260922-08",
+            "account_id": "ACC-IND-20260922-08",
+            "project_name": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
+            "owner": "山西兰花煤化工有限责任公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-08",
+            "lead_id": "IND-20260922-08",
+            "account_name": "山西兰花煤化工有限责任公司",
+            "group_name": "",
+            "industry": "煤化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-07",
+        "company": {
+          "company_name": "重庆新宙邦新材料有限公司",
+          "location": "重庆市长寿区晏家街道",
+          "industry": "新能源/电池"
+        },
+        "project": {
+          "project_name": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://www.capchem.com/News.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://new-energy.smm.cn/content/14042/104113906",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-07",
+          "company": "重庆新宙邦新材料有限公司",
+          "industry": "新能源/电池",
+          "location": "重庆市长寿区晏家街道",
+          "project": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "环评第一次公示2026-09-04（FACT-新宙邦官网）",
+              "电池化学品二期项目（FACT）",
+              "新增20万吨锂电+5万吨钠电电解液（FACT）"
+            ],
+            "inferences": [
+              "电解液生产产生工艺废水/清洗废水（INFERENCE-行业常规）",
+              "极早期阶段，水系统方案未形成（INFERENCE）"
+            ],
+            "unknowns": [
+              "水系统具体方案未明确",
+              "设计院/EPC未明确",
+              "废水处理工艺未明确",
+              "工信部锂电扩产审批暂停是否影响电解液项目"
+            ]
+          },
+          "potential_ims_use_case": "工艺废水监测+纯水水质监测+数据管理",
+          "logic_rationale": "电解液扩产→工艺废水→废水处理需求→水质监测→iMS数据管理",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评第一次公示9/4，极早期阶段"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "极早期阶段，可影响水系统方案/监测策略/仪表规格"
+          },
+          "estimated_time_window": "9-12月",
+          "priority": "P3",
+          "water_system_ownership": "D-Unknown",
+          "incrementality_status": "Capacity Expansion",
+          "source_urls": [
+            "https://www.capchem.com/News.html",
+            "https://new-energy.smm.cn/content/14042/104113906"
+          ],
+          "to_verify": [
+            "水系统方案",
+            "设计院/EPC",
+            "废水处理工艺",
+            "锂电扩产审批影响"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评第一次公示",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 2,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 10
+          },
+          "pull_box": {
+            "project": "电池化学品二期扩建，20万吨锂电+5万吨钠电 — FACT",
+            "unavoidable": "电解液生产环保合规 — INFERENCE",
+            "limitations": "具体水系统方案未明确 — UNKNOWN",
+            "leverage": "iMS可提供工艺废水监测+纯水水质监测+数据管理 — INFERENCE",
+            "evidence_quality": "LOW-MEDIUM",
+            "key_unknown": "电解液生产具体废水种类和水系统方案",
+            "next_validation_question": "二期项目配套的水处理设施方案是什么？是否涉及新建废水处理系统？"
+          },
+          "evidence_quality": "LOW-MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "重庆新宙邦新材料有限公司",
+              "owner_role": "环保/工程部门",
+              "evaluation": "FACT",
+              "note": "环评公示确认建设单位，新宙邦(300037)全资子公司"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未确定"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商",
+              "水系统供应商"
+            ],
+            "next_validation_action": "跟踪环评后续公示，确认水系统方案和设计院"
+          },
+          "opportunity": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+          "time_window_basis": "极早期阶段，可影响水系统方案/监测策略/仪表规格",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "跟踪环评后续公示，确认水系统方案和设计院",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评公示确认建设单位，新宙邦(300037)全资子公司",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://www.capchem.com/News.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-07",
+            "lead_id": "IND-20260922-07",
+            "account_id": "ACC-IND-20260922-07",
+            "project_name": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
+            "owner": "重庆新宙邦新材料有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-07",
+            "lead_id": "IND-20260922-07",
+            "account_name": "重庆新宙邦新材料有限公司",
+            "group_name": "",
+            "industry": "新能源/电池",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "半导体",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-06",
+        "company": {
+          "company_name": "长电科技(宿迁)有限公司",
+          "location": "江苏省宿迁市苏州宿迁工业园区",
+          "industry": "半导体/电子"
+        },
+        "project": {
+          "project_name": "磨划废水回收间建设项目",
+          "project_stage": "Potential Industrial Opportunity"
+        },
+        "signal": {
+          "signal_description": "磨划废水回收间建设项目",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://ssipac.suqian.gov.cn/ssyq/yqgg/202609/bbbbddf2f28347ce9b3ea6ed6cce454d.shtml",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://www.qcc.com/creport/6e6c7bf2abeca50da9a935a208685e5d.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-06",
+          "company": "长电科技(宿迁)有限公司",
+          "industry": "半导体/电子",
+          "location": "江苏省宿迁市苏州宿迁工业园区",
+          "project": "磨划废水回收间建设项目",
+          "engine": "C",
+          "signal_tier": "Tier 1",
+          "evidence": {
+            "facts": [
+              "建设工程规划许可证批后公布2026-09-16（FACT-园区管委会）",
+              "磨划废水回收间建设项目（FACT）",
+              "8月已有改造项目招标公告（FACT-企查查）"
+            ],
+            "inferences": [
+              "半导体封装磨划工序产生含硅/含铜废水（INFERENCE-行业常规）",
+              "废水回收间用于废水资源化处理（INFERENCE）",
+              "规划许可刚批，施工未开始（INFERENCE）"
+            ],
+            "unknowns": [
+              "废水回收间具体工艺未明确",
+              "仪表选型是否已定",
+              "投资额未明确"
+            ]
+          },
+          "potential_ims_use_case": "废水回收水质监测+仪表运维+数据管理+生命周期管理",
+          "logic_rationale": "半导体封装→磨划废水→回收间建设→水质监测+运维需求→iMS仪表管理+数据闭环",
+          "opportunity_stage": "Potential Industrial Opportunity",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "INFERENCE",
+            "note": "规划许可证刚批9/16，施工未开始，仪表规格可影响"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求"
+          },
+          "estimated_time_window": "3-6月",
+          "priority": "P2",
+          "water_system_ownership": "A-客户自建自营",
+          "incrementality_status": "Existing Facility Modification",
+          "source_urls": [
+            "https://ssipac.suqian.gov.cn/ssyq/yqgg/202609/bbbbddf2f28347ce9b3ea6ed6cce454d.shtml",
+            "https://www.qcc.com/creport/6e6c7bf2abeca50da9a935a208685e5d.html"
+          ],
+          "to_verify": [
+            "废水回收间具体工艺",
+            "仪表选型状态",
+            "投资额",
+            "运维需求"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "规划许可证批后公布+8月改造招标",
+            "changed": "new"
+          },
+          "qualification": "PASS",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable": 3,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 12
+          },
+          "pull_box": {
+            "project": "磨划废水回收间建设项目，规划许可刚批 — FACT",
+            "unavoidable": "半导体封装磨划废水须回收处理，环保合规 — FACT",
+            "limitations": "现有废水处理可能不足，新建回收间 — INFERENCE",
+            "leverage": "iMS可提供废水回收水质监测+仪表运维+数据管理+生命周期管理 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "废水回收间具体工艺和仪表选型状态",
+            "next_validation_question": "废水回收间采用的工艺路线是什么？水质监测仪表是否已选型？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "长电科技(宿迁)有限公司",
+              "owner_role": "厂务/EHS/设施部门",
+              "evaluation": "FACT",
+              "note": "规划公示确认建设单位，长电科技全资子公司"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未明确"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "8月有改造项目招标，EPC可能已确定但名称未公开"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC确认",
+              "仪表集成商"
+            ],
+            "next_validation_action": "搜索长电科技宿迁磨划废水回收间改造项目EPC和设计院"
+          },
+          "opportunity": "磨划废水回收间建设项目",
+          "time_window_basis": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "搜索长电科技宿迁磨划废水回收间改造项目EPC和设计院",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 规划公示确认建设单位，长电科技全资子公司",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://ssipac.suqian.gov.cn/ssyq/yqgg/202609/bbbbddf2f28347ce9b3ea6ed6cce454d.shtml"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-06",
+            "lead_id": "IND-20260922-06",
+            "account_id": "ACC-IND-20260922-06",
+            "project_name": "磨划废水回收间建设项目",
+            "owner": "长电科技(宿迁)有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-06",
+            "lead_id": "IND-20260922-06",
+            "account_name": "长电科技(宿迁)有限公司",
+            "group_name": "",
+            "industry": "半导体/电子",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-05",
+        "company": {
+          "company_name": "滨化集团股份有限公司",
+          "location": "山东省滨州市鲁北化工产业园",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995076.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-05",
+          "company": "滨化集团股份有限公司",
+          "industry": "石化/化工",
+          "location": "山东省滨州市鲁北化工产业园",
+          "project": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "山东省生态环境厅环评批复2026-09-15（FACT-官方）",
+              "新建30万t/a离子膜烧碱装置（FACT）",
+              "利用工业废盐42%（FACT）",
+              "配套膜法脱硝等工序（FACT）"
+            ],
+            "inferences": [
+              "离子膜烧碱涉及盐水精制+废水处理（INFERENCE-行业常规）",
+              "环评已批复，进入设计/施工准备阶段（INFERENCE）"
+            ],
+            "unknowns": [
+              "水系统具体方案未明确",
+              "EPC未明确",
+              "仪表规格是否已定"
+            ]
+          },
+          "potential_ims_use_case": "盐水精制水质监测+废水排放监测+数据管理",
+          "logic_rationale": "废盐资源化→离子膜烧碱→盐水精制+废水→水质监测需求→iMS数据管理",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "LATE",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评已批复9/15，进入设计/施工准备，仪表规格可能部分已定"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定"
+          },
+          "estimated_time_window": "3-6月（已进入设计施工阶段）",
+          "priority": "P3",
+          "water_system_ownership": "A-客户自建自营",
+          "incrementality_status": "New Facility",
+          "source_urls": [
+            "http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995076.html"
+          ],
+          "to_verify": [
+            "水系统具体方案",
+            "EPC/设计院",
+            "仪表规格状态"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评批复",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 2,
+            "limitations": 1,
+            "leverage": 2,
+            "total": 8
+          },
+          "pull_box": {
+            "project": "新建30万t/a离子膜烧碱装置，利用工业废盐 — FACT",
+            "unavoidable": "废盐资源化+环保合规 — INFERENCE",
+            "limitations": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+            "leverage": "iMS可提供盐水精制水质监测+废水排放监测 — INFERENCE",
+            "evidence_quality": "LOW-MEDIUM",
+            "key_unknown": "水系统是否包含新建废水处理设施",
+            "next_validation_question": "项目配套的废水处理设施规模和工艺是什么？"
+          },
+          "evidence_quality": "LOW-MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "滨化集团股份有限公司",
+              "owner_role": "环保/工程部门",
+              "evaluation": "FACT",
+              "note": "环评批复确认建设单位"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未明确"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商"
+            ],
+            "next_validation_action": "搜索滨化集团项目设计院和EPC招标信息"
+          },
+          "opportunity": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+          "time_window_basis": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "搜索滨化集团项目设计院和EPC招标信息",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评批复确认建设单位",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995076.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-05",
+            "lead_id": "IND-20260922-05",
+            "account_id": "ACC-IND-20260922-05",
+            "project_name": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
+            "owner": "滨化集团股份有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-05",
+            "lead_id": "IND-20260922-05",
+            "account_name": "滨化集团股份有限公司",
+            "group_name": "",
+            "industry": "石化/化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-04",
+        "company": {
+          "company_name": "泰兴怡达化学有限公司",
+          "location": "江苏省泰兴经济开发区",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://hbj.taizhou.gov.cn/ztzl/jsxm/xmnspgs/art/2026/art_eaae95ece7864ea0bdbc33df14bc2182.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-04",
+          "company": "泰兴怡达化学有限公司",
+          "industry": "石化/化工",
+          "location": "江苏省泰兴经济开发区",
+          "project": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+          "engine": "B",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "环评拟审批公示2026-09-20（FACT-泰州市生态环境局）",
+              "年产20万吨环氧丙烷衍生产品扩建（FACT）",
+              "总投资64199万元（FACT）",
+              "工艺废水接管至泰兴经济开发区工业污水处理厂（FACT-环评公示）"
+            ],
+            "inferences": [
+              "环氧丙烷生产产生工艺废水（INFERENCE-行业常规）",
+              "废水接管园区污水处理厂，自建水系统可能不大（INFERENCE）"
+            ],
+            "unknowns": [
+              "自建水系统具体方案未明确",
+              "设计院/EPC未明确",
+              "纯水系统需求未明确"
+            ]
+          },
+          "potential_ims_use_case": "工艺废水监测+接管水质监测+数据合规",
+          "logic_rationale": "环氧丙烷扩建 → 工艺废水 → 接管园区污水厂 → 接管水质监测需求",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评拟审批阶段9/20，规格可影响"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测"
+          },
+          "estimated_time_window": "6-9月",
+          "priority": "P3",
+          "water_system_ownership": "B-园区集中处理",
+          "incrementality_status": "Capacity Expansion",
+          "source_urls": [
+            "https://hbj.taizhou.gov.cn/ztzl/jsxm/xmnspgs/art/2026/art_eaae95ece7864ea0bdbc33df14bc2182.html"
+          ],
+          "to_verify": [
+            "自建水系统方案",
+            "设计院/EPC",
+            "接管水质监测需求"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评拟审批公示",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 3,
+            "limitations": 1,
+            "leverage": 2,
+            "total": 9
+          },
+          "pull_box": {
+            "project": "年产20万吨环氧丙烷衍生产品扩建 — FACT",
+            "unavoidable": "环保达标要求，工艺废水须处理 — FACT",
+            "limitations": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
+            "leverage": "iMS可提供接管水质监测+数据合规 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "是否有自建水系统（纯水/循环水等）",
+            "next_validation_question": "项目除废水接管外，是否有自建纯水系统或循环水系统？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "泰兴怡达化学有限公司",
+              "owner_role": "环保/工程部门",
+              "evaluation": "FACT",
+              "note": "环评公示确认建设单位"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "设计院未明确"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商"
+            ],
+            "next_validation_action": "获取环评报告书全文，确认自建水系统方案和设计院"
+          },
+          "opportunity": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+          "time_window_basis": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "获取环评报告书全文，确认自建水系统方案和设计院",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评公示确认建设单位",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://hbj.taizhou.gov.cn/ztzl/jsxm/xmnspgs/art/2026/art_eaae95ece7864ea0bdbc33df14bc2182.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-04",
+            "lead_id": "IND-20260922-04",
+            "account_id": "ACC-IND-20260922-04",
+            "project_name": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
+            "owner": "泰兴怡达化学有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-04",
+            "lead_id": "IND-20260922-04",
+            "account_name": "泰兴怡达化学有限公司",
+            "group_name": "",
+            "industry": "石化/化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-03",
+        "company": {
+          "company_name": "定边县化工产业区管理委员会",
+          "location": "陕西省榆林市定边县",
+          "industry": "石化/化工"
+        },
+        "project": {
+          "project_name": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+          "project_stage": "Potential Industrial Opportunity"
+        },
+        "signal": {
+          "signal_description": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://www.dingbian.gov.cn/zfxxgk/fdzdgknr/hjpj/202609/t20260920_2129246.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-03",
+          "company": "定边县化工产业区管理委员会",
+          "industry": "石化/化工",
+          "location": "陕西省榆林市定边县",
+          "project": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+          "engine": "B",
+          "signal_tier": "Tier 1",
+          "evidence": {
+            "facts": [
+              "环评征求意见稿公示2026-09-20（FACT-定边县政府）",
+              "收集化工产业区生活污水/工业废水/初期雨水（FACT）",
+              "工艺含隔油/气浮/芬顿/蒸发结晶，实现废水零排放（FACT）"
+            ],
+            "inferences": [
+              "化工园区废水须集中处理达标排放（INFERENCE-环保法规）",
+              "监测方案尚未最终确定（INFERENCE-征求意见阶段）"
+            ],
+            "unknowns": [
+              "处理规模未明确",
+              "设计院/EPC未明确",
+              "具体投资额未明确"
+            ]
+          },
+          "potential_ims_use_case": "进出水水质在线监测+零排放系统监控+运营管理+数据合规",
+          "logic_rationale": "化工园区 → 废水集中处理+零排放 → 水质监测需求 → iMS多参数监测+运营数据闭环",
+          "opportunity_stage": "Potential Industrial Opportunity",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评征求意见稿9/20-10/9，监测方案可影响"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式"
+          },
+          "estimated_time_window": "6-9月",
+          "priority": "P2",
+          "water_system_ownership": "B-园区集中处理",
+          "incrementality_status": "New Facility",
+          "source_urls": [
+            "https://www.dingbian.gov.cn/zfxxgk/fdzdgknr/hjpj/202609/t20260920_2129246.html"
+          ],
+          "to_verify": [
+            "处理规模",
+            "设计院/EPC",
+            "监测因子要求",
+            "具体化工企业废水水质"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评征求意见稿公示",
+            "changed": "new"
+          },
+          "qualification": "PASS",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable": 4,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 13
+          },
+          "pull_box": {
+            "project": "化工产业区污水处理厂一期，含零排放工艺 — FACT",
+            "unavoidable": "化工园区废水须集中处理达标排放，环保法规要求 — FACT",
+            "limitations": "园区现有处理能力不足 — INFERENCE",
+            "leverage": "iMS可提供进出水水质监测+零排放系统监控+运营管理+数据合规 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "处理规模和设计院/EPC是谁",
+            "next_validation_question": "污水处理厂的设计规模是多少吨/日？设计院和EPC分别是谁？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "定边县化工产业区管理委员会",
+              "owner_role": "园区管理方",
+              "evaluation": "FACT",
+              "note": "环评公示确认建设单位，联系人顾主任/侯工"
+            },
+            "design_institute": {
+              "name": "陕西某环保公司（环评编制）",
+              "owner_role": "环评编制",
+              "evaluation": "FACT",
+              "note": "环评编制单位为陕西某公司，具体名称待确认"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "EPC",
+              "仪表集成商",
+              "运营管理方"
+            ],
+            "next_validation_action": "获取环评报告书全文，确认处理规模、设计院和监测方案"
+          },
+          "opportunity": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+          "time_window_basis": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "获取环评报告书全文，确认处理规模、设计院和监测方案",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评公示确认建设单位，联系人顾主任/侯工；[设计院] FACT: 环评编制单位为陕西某公司，具体名称待确认",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://www.dingbian.gov.cn/zfxxgk/fdzdgknr/hjpj/202609/t20260920_2129246.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-03",
+            "lead_id": "IND-20260922-03",
+            "account_id": "ACC-IND-20260922-03",
+            "project_name": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
+            "owner": "定边县化工产业区管理委员会",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-03",
+            "lead_id": "IND-20260922-03",
+            "account_name": "定边县化工产业区管理委员会",
+            "group_name": "",
+            "industry": "石化/化工",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "半导体",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-02",
+        "company": {
+          "company_name": "淮安东煦电子材料有限公司",
+          "location": "江苏省淮安市清江浦区",
+          "industry": "半导体/电子"
+        },
+        "project": {
+          "project_name": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+          "project_stage": "Industrial Signal"
+        },
+        "signal": {
+          "signal_description": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "https://www.eiacloud.com/gs/detail/1?id=60916uiqQ1",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-02",
+          "company": "淮安东煦电子材料有限公司",
+          "industry": "半导体/电子",
+          "location": "江苏省淮安市清江浦区",
+          "project": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "环评报告表全本公示2026-09-16（FACT-eiacloud）",
+              "半导体晶圆深加工及封装测试项目（FACT-环评公示）",
+              "新建/迁建项目（FACT）"
+            ],
+            "inferences": [
+              "封装测试环节有纯水/清洗废水需求（INFERENCE-行业常规）",
+              "水系统规模可能小于前道制造（INFERENCE）"
+            ],
+            "unknowns": [
+              "具体水系统方案未明确",
+              "投资额未明确",
+              "设计院未明确"
+            ]
+          },
+          "potential_ims_use_case": "纯水水质监测+清洗废水监测+数据管理",
+          "logic_rationale": "半导体封装测试 → 纯水/清洗需求 → 水质监测 → iMS数据管理",
+          "opportunity_stage": "Industrial Signal",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "环评一次公示9/16-9/30，极早期阶段"
+          },
+          "influence_window": "LOW",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "封装测试水系统规模较小，但可影响纯水监测方案"
+          },
+          "estimated_time_window": "9-12月",
+          "priority": "P3",
+          "water_system_ownership": "D-Unknown",
+          "incrementality_status": "New Facility",
+          "source_urls": [
+            "https://www.eiacloud.com/gs/detail/1?id=60916uiqQ1"
+          ],
+          "to_verify": [
+            "水系统具体需求",
+            "纯水系统规模",
+            "废水处理方案"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评一次公示",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 2,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 10
+          },
+          "pull_box": {
+            "project": "半导体晶圆深加工及封装测试项目，新建/迁建 — FACT",
+            "unavoidable": "封装测试环节有纯水/清洗废水需求，环保合规 — INFERENCE",
+            "limitations": "新建项目，具体水系统方案未明确 — UNKNOWN",
+            "leverage": "iMS可提供纯水水质监测+废水监测+数据管理 — INFERENCE",
+            "evidence_quality": "LOW-MEDIUM",
+            "key_unknown": "封装测试环节具体用水量和废水种类",
+            "next_validation_question": "项目封装测试环节的纯水需求和废水种类是什么？"
+          },
+          "evidence_quality": "LOW-MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "淮安东煦电子材料有限公司",
+              "owner_role": "厂务/工程部门",
+              "evaluation": "FACT",
+              "note": "环评公示确认建设单位，成立于2023年"
+            },
+            "design_institute": {
+              "name": "淮安市清泰技术咨询有限公司",
+              "owner_role": "环评编制",
+              "evaluation": "FACT",
+              "note": "环评报告表编制单位"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "EPC",
+              "仪表集成商",
+              "纯水系统供应商"
+            ],
+            "next_validation_action": "获取环评报告表全文，确认水系统具体需求"
+          },
+          "opportunity": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+          "time_window_basis": "封装测试水系统规模较小，但可影响纯水监测方案",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "获取环评报告表全文，确认水系统具体需求",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评公示确认建设单位，成立于2023年；[设计院] FACT: 环评报告表编制单位",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://www.eiacloud.com/gs/detail/1?id=60916uiqQ1"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-02",
+            "lead_id": "IND-20260922-02",
+            "account_id": "ACC-IND-20260922-02",
+            "project_name": "半导体晶圆深加工及封装测试项目（新建/迁建）",
+            "owner": "淮安东煦电子材料有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-02",
+            "lead_id": "IND-20260922-02",
+            "account_name": "淮安东煦电子材料有限公司",
+            "group_name": "",
+            "industry": "半导体/电子",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "半导体",
+      "date": "2026-09-22",
+      "quality_score": 4,
+      "quality_missing": [
+        "需求与现状"
+      ],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260922-01",
+        "company": {
+          "company_name": "宿迁镭明半导体设备有限公司",
+          "location": "江苏省宿迁市",
+          "industry": "半导体/电子"
+        },
+        "project": {
+          "project_name": "年产15万片晶圆项目",
+          "project_stage": "Potential Industrial Opportunity"
+        },
+        "signal": {
+          "signal_description": "年产15万片晶圆项目",
+          "signal_date": "2026-09-22",
+          "evidence": [
+            {
+              "source_url": "http://sthj.suqian.gov.cn/shbj/jsxm/202609/145daaadc23840f38a3a5163420bb336.shtml",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260922-01",
+          "company": "宿迁镭明半导体设备有限公司",
+          "industry": "半导体/电子",
+          "location": "江苏省宿迁市",
+          "project": "年产15万片晶圆项目",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "环评受理公示2026-09-17发布（FACT-官方来源）",
+              "年产15万片晶圆项目（FACT-环评公示）"
+            ],
+            "inferences": [
+              "晶圆制造需要超纯水系统+含氟废水处理（INFERENCE-行业常规）",
+              "水系统规格尚未冻结（INFERENCE-环评受理阶段）"
+            ],
+            "unknowns": [
+              "水系统设计方案未明确",
+              "设计院/EPC未明确",
+              "具体投资额未明确"
+            ]
+          },
+          "potential_ims_use_case": "进出水水质在线监测+含氟废水监测+仪表资产管理+运维数据闭环",
+          "logic_rationale": "晶圆制造 → 超纯水需求+含氟废水处理 → 水质监测需求 → iMS多参数监测+数据管理",
+          "opportunity_stage": "Potential Industrial Opportunity",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "INFERENCE",
+            "note": "环评受理阶段9/17-9/22，技术规格尚未冻结"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "INFERENCE",
+            "note": "环评受理阶段，可影响水系统方案/监测策略/仪表规格"
+          },
+          "estimated_time_window": "6-9月（环评→设计→施工→设备安装）",
+          "priority": "P2",
+          "water_system_ownership": "D-Unknown",
+          "incrementality_status": "New Facility",
+          "source_urls": [
+            "http://sthj.suqian.gov.cn/shbj/jsxm/202609/145daaadc23840f38a3a5163420bb336.shtml"
+          ],
+          "to_verify": [
+            "水系统设计方案",
+            "设计院是谁",
+            "超纯水系统供应商",
+            "废水处理工艺路线"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-22",
+            "new_facts_today": "环评受理公示",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable": 4,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 13
+          },
+          "pull_box": {
+            "project": "年产15万片晶圆项目，环评受理阶段 — FACT",
+            "unavoidable": "晶圆制造需要超纯水系统+含氟废水处理，环保合规 — FACT",
+            "limitations": "新建项目，具体水系统方案未明确 — UNKNOWN",
+            "leverage": "iMS可提供进出水水质监测+仪表管理+运维数据闭环 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "水系统设计方案和设计院是谁",
+            "next_validation_question": "项目超纯水系统和废水处理方案由哪家设计院负责，目前处于什么阶段？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "宿迁镭明半导体设备有限公司",
+              "owner_role": "厂务/EHS部门",
+              "evaluation": "FACT",
+              "note": "环评公示确认建设单位"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "环评编制单位未公开"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未确定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商",
+              "水系统供应商"
+            ],
+            "next_validation_action": "搜索镭明半导体项目设计院和超纯水系统供应商信息"
+          },
+          "opportunity": "年产15万片晶圆项目",
+          "time_window_basis": "环评受理阶段，可影响水系统方案/监测策略/仪表规格",
+          "customer_requirement": "",
+          "operational_pain_points": "",
+          "sales_summary": "",
+          "next_validation_questions": "搜索镭明半导体项目设计院和超纯水系统供应商信息",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 环评公示确认建设单位",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://sthj.suqian.gov.cn/shbj/jsxm/202609/145daaadc23840f38a3a5163420bb336.shtml"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260922-01",
+            "lead_id": "IND-20260922-01",
+            "account_id": "ACC-IND-20260922-01",
+            "project_name": "年产15万片晶圆项目",
+            "owner": "宿迁镭明半导体设备有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": ""
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260922-01",
+            "lead_id": "IND-20260922-01",
+            "account_name": "宿迁镭明半导体设备有限公司",
+            "group_name": "",
+            "industry": "半导体/电子",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
       "category": "工业园区／工业污水",
       "date": "2026-09-21",
       "quality_score": 5,
@@ -706,7 +2671,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -715,6 +2680,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -1457,7 +3426,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -1466,6 +3435,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -2200,7 +4173,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -2209,6 +4182,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -2869,7 +4846,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -2878,6 +4855,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -5794,11 +7775,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -6040,11 +8025,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -6278,11 +8267,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -6524,11 +8517,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -6789,11 +8786,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -7036,11 +9037,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -7273,11 +9278,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -7524,11 +9533,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -7792,11 +9805,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -8051,11 +10068,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -8322,11 +10343,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -8610,11 +10635,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -8815,11 +10844,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -9104,11 +11137,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -9380,11 +11417,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -9656,11 +11697,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -9863,11 +11908,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -10092,11 +12141,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -10315,11 +12368,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -10610,11 +12667,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -10867,11 +12928,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -11125,11 +13190,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -11382,11 +13451,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -11641,11 +13714,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -11898,11 +13975,15 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         }
       ]
     },
@@ -12184,7 +14265,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -12193,6 +14274,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -12433,7 +14518,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -12442,6 +14527,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -16922,7 +19011,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -16931,6 +19020,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -17145,7 +19238,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -17154,6 +19247,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -17376,7 +19473,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -17385,6 +19482,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -17613,7 +19714,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -17622,6 +19723,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -17866,7 +19971,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -17875,6 +19980,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -18108,7 +20217,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -18117,6 +20226,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -18328,7 +20441,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -18337,6 +20450,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -18614,7 +20731,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -18623,6 +20740,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -18856,7 +20977,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -18865,6 +20986,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -19485,7 +21610,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -19494,6 +21619,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -19798,7 +21927,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -19807,6 +21936,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20121,7 +22254,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20130,6 +22263,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20392,7 +22529,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20401,6 +22538,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20693,7 +22834,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20702,6 +22843,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20967,7 +23112,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20976,6 +23121,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21255,7 +23404,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21264,6 +23413,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21513,7 +23666,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21522,6 +23675,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21781,7 +23938,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21790,6 +23947,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22099,7 +24260,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22108,6 +24269,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22395,7 +24560,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22404,6 +24569,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22610,7 +24779,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22619,6 +24788,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22821,7 +24994,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22830,6 +25003,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23049,7 +25226,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23058,6 +25235,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23265,7 +25446,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23274,6 +25455,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23507,7 +25692,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23516,6 +25701,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23780,7 +25969,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23789,6 +25978,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23996,7 +26189,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24005,6 +26198,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24192,7 +26389,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24201,6 +26398,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24447,7 +26648,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24456,6 +26657,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24712,7 +26917,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24721,6 +26926,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24943,7 +27152,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24952,6 +27161,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25154,7 +27367,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25163,6 +27376,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25379,7 +27596,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25388,6 +27605,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25603,7 +27824,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25612,6 +27833,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25840,7 +28065,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25849,6 +28074,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26123,7 +28352,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26132,6 +28361,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26392,7 +28625,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26401,6 +28634,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26684,7 +28921,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26693,6 +28930,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26937,7 +29178,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26946,6 +29187,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27183,7 +29428,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27192,6 +29437,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27436,7 +29685,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27445,6 +29694,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27678,7 +29931,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27687,6 +29940,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27916,7 +30173,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27925,6 +30182,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28159,7 +30420,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28168,6 +30429,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28371,7 +30636,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28380,6 +30645,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28589,7 +30858,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28598,6 +30867,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28800,7 +31073,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28809,6 +31082,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29022,7 +31299,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29031,6 +31308,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29232,7 +31513,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29241,6 +31522,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29493,7 +31778,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29502,6 +31787,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29785,7 +32074,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29794,6 +32083,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30047,7 +32340,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30056,6 +32349,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30265,7 +32562,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30274,6 +32571,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30459,7 +32760,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30468,6 +32769,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30664,7 +32969,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30673,6 +32978,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30880,7 +33189,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30889,6 +33198,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31074,7 +33387,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31083,6 +33396,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31268,7 +33585,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31277,6 +33594,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31532,7 +33853,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31541,6 +33862,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31758,7 +34083,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31767,6 +34092,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31983,7 +34312,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31992,6 +34321,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32232,7 +34565,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32241,6 +34574,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32497,7 +34834,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32506,6 +34843,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32735,7 +35076,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32744,6 +35085,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32982,7 +35327,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32991,6 +35336,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33243,7 +35592,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33252,6 +35601,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33456,7 +35809,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33465,6 +35818,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33671,7 +36028,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33680,6 +36037,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33903,7 +36264,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33912,6 +36273,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34354,7 +36719,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34363,6 +36728,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34577,7 +36946,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34586,6 +36955,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34799,7 +37172,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34808,6 +37181,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35041,7 +37418,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35050,6 +37427,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35277,7 +37658,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35286,6 +37667,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35845,7 +38230,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35854,6 +38239,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36142,7 +38531,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36151,6 +38540,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36469,7 +38862,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36478,6 +38871,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36926,7 +39323,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36935,6 +39332,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37308,7 +39709,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -37317,6 +39718,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37599,7 +40004,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -37608,6 +40013,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37993,7 +40402,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -38002,6 +40411,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39039,7 +41452,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39048,6 +41461,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39255,7 +41672,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39264,6 +41681,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39470,7 +41891,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39479,6 +41900,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39680,7 +42105,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39689,6 +42114,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39893,7 +42322,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39902,6 +42331,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40109,7 +42542,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40118,6 +42551,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40349,7 +42786,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40358,6 +42795,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40571,7 +43012,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40580,6 +43021,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40792,7 +43237,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40801,6 +43246,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -41013,7 +43462,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -41022,6 +43471,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -41247,7 +43700,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -41256,6 +43709,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -41491,7 +43948,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -41500,6 +43957,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -42354,7 +44815,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -42363,6 +44824,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -42727,7 +45192,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -42736,6 +45201,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43082,7 +45551,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43091,6 +45560,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43426,7 +45899,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43435,6 +45908,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43838,7 +46315,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43847,6 +46324,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44345,7 +46826,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44354,6 +46835,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44738,7 +47223,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44747,6 +47232,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -45156,7 +47645,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -45165,6 +47654,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -45430,7 +47923,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -45439,6 +47932,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -45640,7 +48137,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -45649,6 +48146,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -47937,7 +50438,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -47946,6 +50447,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -48659,7 +51164,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -48668,6 +51173,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -48984,7 +51493,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -48993,6 +51502,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -49460,7 +51973,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -49469,6 +51982,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -50087,7 +52604,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -50096,6 +52613,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -50864,7 +53385,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -50873,6 +53394,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -51342,7 +53867,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -51351,6 +53876,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -51699,7 +54228,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -51708,6 +54237,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52027,7 +54560,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52036,6 +54569,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52431,7 +54968,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52440,6 +54977,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52644,7 +55185,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52653,6 +55194,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52894,7 +55439,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52903,6 +55448,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -53313,7 +55862,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -53322,6 +55871,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -53720,7 +56273,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -53729,6 +56282,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -54076,7 +56633,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -54085,6 +56642,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -54433,7 +56994,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -54442,6 +57003,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -54641,7 +57206,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -54650,6 +57215,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -55018,7 +57587,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -55027,6 +57596,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -55465,7 +58038,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -55474,6 +58047,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -55886,7 +58463,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -55895,6 +58472,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56097,7 +58678,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56106,6 +58687,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56737,7 +59322,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56746,6 +59331,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -57011,7 +59600,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -57020,6 +59609,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -58897,7 +61490,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -58906,6 +61499,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -60049,7 +62646,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -60058,6 +62655,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -60721,7 +63322,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -60730,6 +63331,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -61323,7 +63928,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -61332,6 +63937,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -63293,7 +65902,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -63302,6 +65911,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -64073,7 +66686,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -64082,6 +66695,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -64914,7 +67531,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -64923,6 +67540,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -65961,7 +68582,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -65970,6 +68591,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -66198,7 +68823,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -66207,6 +68832,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -66436,7 +69065,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -66445,6 +69074,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -66998,7 +69631,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -67007,6 +69640,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -67408,7 +70045,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T12:30:00+08:00"
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -67417,6 +70054,10 @@
         {
           "file": "indctx_latest_jd_2026-09-21.json",
           "date": "2026-09-21T12:30:00+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-22.json",
+          "date": "2026-09-22T08:46:19+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
