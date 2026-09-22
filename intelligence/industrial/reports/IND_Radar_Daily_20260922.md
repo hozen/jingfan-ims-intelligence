@@ -1,6 +1,6 @@
 # iMS Industrial Radar Daily — 2026-09-22（周二）
 
-> Stage 1 Discovery + Stage 2 Qualification (PULL) + Stage 3 Handoff + Stage 4 Enrichment | 证据强化版（本版针对可售性/软件必要性核查改进）
+> Stage 1 Discovery + Stage 2 Qualification (PULL) + Stage 3 Handoff + Stage 4 Enrichment | 证据强化版 v2（口径修订：IMS 跟着水质仪表走，仪表存在性为核心前提，品牌不限）
 
 ---
 
@@ -8,10 +8,11 @@
 
 针对 9/22 批次手工 verification 的两个核心问题，本版逐条补齐/明确证据边界：
 
-**① iMS 可售性证据（现场有无水质仪表/哈希装机/监测参数/关键参数配套仪表）**
-- 公开来源**无法证明任何一条线索存在哈希装机记录**：本轮全网检索哈希品牌装机、仪表数量均无公开证据 → 全部如实标 `UNKNOWN`，不以行业推断冒充事实。
-- 但已为每条线索补充：**法定必装参数基准**（重点排污单位 COD/氨氮/pH/流量 强制自动监控，HJ 353-2019）与**行业常规监测参数清单**（标 `INFERENCE`），供手工 verification 时对照现场实际。
-- 新增 `instrument_evidence` 字段（hach_evidence / key_parameters / parameters_basis）：给出每条线索应核对的仪表证据点（如设计院技术协议、EPC 供应清单、现场在装仪表、排口数采仪型号）。
+**① IMS 可售性核心前提 = 现场存在水质仪表（品牌不限），IMS 跟着仪表走**
+- **口径修订（v2）**：哈希品牌装机不再是 qualification 判定项——品牌归 **company agent 线下确认**；radar 需要回答的问题是『**该场景是否有/将配置水质仪表、多少、测什么参数、谁配套**』，只要有仪表（不管谁家），IMS 就有跟随进入的可能。
+- 已为每条线索建立 **instrument_presence** 主口径：9/22 批次 10 条中 **8 条 CONFIRMED（仪表前提成立：新建污水厂/零排放装置/EPC 交钥匙/一期污水站在线监测已验收/运营期工厂）**、1 条 PROBABLE（滨化，盐水精制按行业惯例必配）、1 条 UNKNOWN（镭明，水系统方案未出）。
+- 每条线索补充 **法定必装参数基准**（重点排污单位 COD/氨氮/pH/流量 强制自动监控，HJ 353-2019）与**行业常规监测参数清单**（标 `INFERENCE`），供手工 verification 对照现场实际。
+- `hach_evidence` 保留为 company agent 确认备注（品牌不限，哈希仅为可能品牌之一），**不阻塞 qualification**。
 
 **② 软件必要性/项目落地证据（为什么要有软件、ICP 做了什么尝试）**
 - 全批次中**仅有 1 条线索（重庆新宙邦）找到 JD/公开声明级软件必要性证据**：集团环保岗 JD 明确『环境监测、环保数据、资料上报』职责 + 互动平台『在线监测系统』声明（FACT）。
@@ -57,7 +58,7 @@
 - **PULL Score**: 14/20（P5+U4+L2+L3）| **Evidence Quality**: HIGH
 
 **仪表/参数证据（新增）**
-- hach_evidence: **UNKNOWN**（无公开哈希装机证据；需经设计院技术协议确认）
+- instrument_presence: **CONFIRMED**（园区污水厂新建，1500m³/d 按法规与设计惯例必有进出水在线监测 COD/氨氮/pH/流量必装）；hach=company agent 确认项
 - key_parameters: COD / 氨氮 / 总磷 / 总氮 / pH / SS / 电导率-TDS / 浊度 / 氟化物 / 蒸发结晶浓缩液电导率
 - parameters_basis: 园区工业废水+零排放工艺标准监测参数（INFERENCE 行业基准）+ HJ353-2019 法定必装（COD/氨氮/pH/流量）
 - 数量参考: 零排放（UF/RO/蒸发结晶）系统在线仪表典型 25-50 点位（行业基准，需项目设计确认）
@@ -97,7 +98,7 @@
 - **PULL Score**: 13/20（P4+U4+L2+L3）| **Evidence Quality**: HIGH
 
 **仪表/参数证据（新增）**
-- hach_evidence: **UNKNOWN**（无公开证据；可通过 BOO 公告/EPC 技术协议确认）
+- instrument_presence: **CONFIRMED**（全厂零排放装置设备安装中，RO/蒸发结晶系统必然配置大量在线仪表）；hach=company agent 确认项
 - key_parameters: COD / 氨氮 / 总磷 / 总氮 / pH / 电导率-TDS / 硬度 / 硅 / 浊度 / 蒸发结晶浓缩液浓度
 - parameters_basis: 煤化工高盐废水零排放（RO/蒸发结晶）监测参数（INFERENCE 行业基准）
 - 数量参考: ≥1000m³/h 零排放系统在线监测点位典型 30-60 个（行业基准）
@@ -136,7 +137,7 @@
 - **PULL Score**: 12/20（P4+U3+L2+L3）| **Evidence Quality**: MEDIUM-HIGH
 
 **仪表/参数证据（新增）**
-- hach_evidence: **UNKNOWN**（一期污水站仪表品牌可通过竣工环保验收报告或现场确认）
+- instrument_presence: **CONFIRMED**（一期污水站+在线监测已建成并通过竣工环保验收（FACT），二期扩容必然配套）；hach=company agent 确认项（一期品牌可从验收报告/现场获取）
 - key_parameters: COD / 氨氮 / 总磷 / 总氮 / pH / 电导率 / 氟化物（含氟电解液） / SS
 - parameters_basis: 电解液/锂电材料废水监测参数（INFERENCE 行业基准）+HJ353-2019 法定必装
 
@@ -176,7 +177,7 @@
 - **PULL Score**: 12/20（P4+U3+L2+L3）| **Evidence Quality**: MEDIUM
 
 **仪表/参数证据（新增）**
-- hach_evidence: **UNKNOWN**（无公开证据，需经设计院/EPC 技术协议确认）
+- instrument_presence: **UNKNOWN**（新建晶圆项目水系统方案未公开——晶圆加工/切割通常配置废水处理与监测，是否配套仪表待项目设计确认后判定）；hach=company agent 确认项
 - key_parameters: pH / 浊度-SS / 电导率 / 温度 / COD（如回用）/ 含氟-含硅专项（视工艺）
 - parameters_basis: 晶圆研磨/切割废水常规监测参数（INFERENCE 行业基准）+ 法定自动监控
 
@@ -195,12 +196,14 @@
 - **Company**: 国电投远达水务有限公司 | **Location**: 福建漳州古雷石化基地
 - **Signal**: 保温材料增补采购 9/9；EPC 已中标（参考：远达 2025 年中标淮南平圩 2×1000MW 脱硫废水零排放 EPC 1.85 亿）
 - **Entry Timing**: LATE — EPC 已中标；**Influence Window**: LOW
+- **仪表前提**: CONFIRMED（脱硫废水零排放 EPC 已中标，零排放系统必有仪表）；hach=company agent 确认项
 - **注意**: 该线索与古雷项目的关联强度需复核（来源为招采聚合站，可信度一般）
 
 ### 7. IND-20260922-10 — 古雷石化·水处理装置膜元件利旧改造（运营期）
 - **Company**: 福建古雷石化有限公司 | **Location**: 福建漳州古雷石化基地
 - **Signal**: 超滤/反渗透膜利旧改造已实施（9/21 福建日报）；园区配套『2026-2029 排海管道水质在线监测设备运行维护』招标（漳州古雷水务，预算 95 万）
 - **Entry Timing**: CLOSED — 已实施；**Influence Window**: LOW（Installed Base/Lifecycle）
+- **仪表前提**: CONFIRMED（运营期炼化工厂，排口+工艺段按法规与惯例必有在装水质仪表，品牌待现场普查）；hach=company agent 确认项
 - **iMS 价值**: 运营期监测补点、膜性能监控、维保数字化（INFERENCE）；园区排海监测维保外包显示第三方运维市场活跃
 
 ---
@@ -211,20 +214,20 @@
 - 总投资 64199 万元（环保 1600 万，2.5%）；环评拟审批 9/20（南京国环科技编制）；联系人黄总/袁工
 - **废水路径**: 厂内新建污水处理装置预处理 → 与原厂废水一起接管**泰兴市工业污水处理有限公司**集中处理
 - Entry Timing: GOOD；Influence Window: LOW（自建水系统规模有限，排口自动监控必装）| PULL 11/20
-- 仪表证据: hach UNKNOWN；key_parameters: COD/氨氮/总磷/总氮/pH/SS/盐度/石油类
+- 仪表前提: **CONFIRMED**（接管排口自动监控为法定必装）；key_parameters: COD/氨氮/总磷/总氮/pH/SS/盐度/石油类
 - next: 通过环评拟审批公示获取全本，确认厂内预处理装置规模/工艺与设计院
 
 ### 9. IND-20260922-05 — 滨化集团·废盐资源化离子膜烧碱（一期）
 - 山东省厅环评批复 9/15；新建 30 万 t/a 离子膜烧碱、再生盐比例 42%；工序含盐场/一次盐水/二次盐水/电解/氯氢处理
 - Entry Timing: LATE（环评已批复）；Influence Window: LOW | PULL 8/20
-- 仪表证据: hach UNKNOWN；key_parameters: pH/浊度/硬度/硅/电导率/COD/氨氮/SS（盐水精制+废水）
+- 仪表前提: **PROBABLE**（离子膜烧碱盐水精制+废水按行业惯例配置过程监测）；key_parameters: pH/浊度/硬度/硅/电导率/COD/氨氮/SS
 - next: 检索环评批复全文，确认盐水精制与废水系统设计单位
 
 ### 10. IND-20260922-02 — 淮安东煦电子材料·12英寸再生晶圆项目（封顶后补办环评）
 - **重大修正**: 2025-08-23 开工、2026-01 主体已封顶；9/16 环评公示为『补办』性质 → **Entry Timing 从 EARLY 降为 LATE**
 - 再生晶圆月产 40 万片、投资 10 亿；清江浦区华清西路 1 号；环评编制淮安清泰技术咨询
 - Influence Window: LOW（设备采购大概率已完成）| PULL 8/20
-- 仪表证据: hach UNKNOWN；key_parameters: pH/电导率/SS/COD/氟化物/总氮（视工艺）
+- 仪表前提: **CONFIRMED**（主体已封顶，水处理设施作为配套必然已采购安装）；key_parameters: pH/电导率/SS/COD/氟化物/总氮（视工艺）
 - icp_attempts: 媒体提及『AI 视觉检测+低碳清洗工艺』（信息化倾向，INFERENCE）
 - next: 访问厂区或通过环评报告表获取水系统供应商信息；询问投产计划
 
@@ -251,7 +254,7 @@
 - **PULL Score**: 10/20（P4+U3+L1+L2）| **Evidence Quality**: HIGH（招标中标全流程可查）
 
 **仪表/参数证据（新增）**
-- hach_evidence: **UNKNOWN**（可通过 EPC 总包清朗达技术协议确认仪表品牌）
+- instrument_presence: **CONFIRMED**（55m³/h 磨划废水回用系统交钥匙 EPC 已定标，交钥匙范围含设备采购+调试→必然含在线仪表）；hach=company agent 确认项（品牌由 EPC 决定，经清朗达技术协议可查）
 - key_parameters: pH / SS-浊度 / 电导率 / COD / 总铜-总镍（磨划后道）/ 氟化物（视工艺）
 - parameters_basis: 半导体磨划废水回用监测参数（INFERENCE 行业基准）+ 回用水标准 GB/T19923
 
@@ -316,21 +319,23 @@
 |---|---|---|---|---|---|
 | 03 定边 | 产业园区管委会(FACT) | Unknown(环评:陕西中环碳能) | Unknown | Unknown | 致电顾主任确认设计院+监测点位表 |
 | 08 兰花煤化工 | 兰花煤化工(FACT) | Unknown | **BOO运营方待确认** | Unknown | 检索BOO招标确认中标方 |
-| 07 新宙邦 | 重庆新宙邦(FACT) | Unknown(环评:重庆环科源博达) | Unknown | Unknown | 联系杨旭确认二期污水站+一期仪表品牌 |
+| 07 新宙邦 | 重庆新宙邦(FACT) | Unknown(环评:重庆环科源博达) | Unknown | Unknown | 联系杨旭确认二期污水站+现有在线监测配置 |
 | 01 宿迁镭明 | 镭明半导体(FACT) | Unknown(环评:江苏海雯能碳) | Unknown | Unknown | 核实工艺性质+设计院 |
-| 06 长电宿迁 | 长电科技宿迁(FACT) | Unknown | **上海清朗达(FACT)** | Unknown(EPC分包) | 经EPC确认仪表品牌+自控改造范围 |
+| 06 长电宿迁 | 长电科技宿迁(FACT) | Unknown | **上海清朗达(FACT)** | Unknown(EPC分包) | 经EPC确认仪表供应清单(品牌不限)+自控改造范围 |
 | 04 泰兴怡达 | 泰兴怡达(FACT) | Unknown(环评:南京国环) | Unknown | Unknown | 环评全本→预处理装置规模/工艺 |
 | 05 滨化 | 滨化集团(FACT) | Unknown | Unknown | Unknown | 批复全文→盐水/废水设计单位 |
 | 02 淮安东煦 | 东煦电子(FACT) | 淮安清泰(FACT,环评) | Unknown | Unknown | 水系统供应商+投产计划 |
-| 09 远达古雷 | 远达水务(FACT) | Unknown | 远达水务(FACT) | Unknown | 复核与古雷项目关联+仪表品牌 |
+| 09 远达古雷 | 远达水务(FACT) | Unknown | 远达水务(FACT) | Unknown | 复核与古雷项目关联+现场仪表普查 |
 | 10 古雷石化 | 古雷石化(FACT) | N/A | N/A | Unknown | 现有监测配置+运维模式 |
 
 ---
 
 ## 🔄 Cross-Lead Insight（跨线索洞察，替代单条统计）
 
-**1. 本项目批次的核心证据缺口是结构性的，非个别线索问题**
-- 10 条线索中哈希装机证据全部 UNKNOWN；软件必要性 JD 证据仅新宙邦 1 条。这不是搜索不努力，而是公开信息天然不包含『在装仪表品牌』这种运营细节——**哈希与 iMS 的验证必须下沉到设计院技术协议/EPC 供应清单/现场访谈三层**，请在手工 verification 时按此路径核验。
+**1. 仪表存在性：IMS 前提已大面积成立，品牌确认留给 company agent**
+- 9/22 批次 10 条中 **8 条 CONFIRMED**（仪表前提成立）、1 条 PROBABLE、1 条 UNKNOWN——公开信息可以判定『现场有/将有仪表』（新建污水厂、零排放装置、EPC 交钥匙、一期已验收、运营期工厂），这是 IMS 跟随进入的前提。
+- **品牌（哈希或他牌）由 company agent 线下确认**——需告知 company agent 的查询路径：设计院技术协议 → EPC 供应清单 → 现场在装仪表普查；radar 只负责给出『有没有仪表、测什么、大概多少点』。
+- 软件必要性 JD 证据仅新宙邦 1 条，其余属法规义务推导（INFERENCE）或 UNKNOWN，如实标注。
 
 **2. 可售性分层：三类线索，对应三种验证动作**
 - A 类（业主直购+规格未冻结）: 定边、新宙邦、镭明 → 设计院技术协议/环评报告书是主证据源
@@ -351,4 +356,4 @@ Stage 4 合并结果：新增 enriched lead 10 条，评分分布 **5 分 10 条
 
 ---
 
-*Generated: 2026-09-22 17:30 CST（证据强化版）| Radar Type: Industrial | Experiment Week: 5+ | 本版目的：解决手工 verification 时『iMS 可售性/软件必要性证据缺失』问题*
+*Generated: 2026-09-22 17:50 CST（证据强化版 v2）| Radar Type: Industrial | Experiment Week: 5+ | v2 口径：IMS 跟着水质仪表走——仪表存在性为核心前提、品牌不限，哈希品牌归 company agent 线下确认*

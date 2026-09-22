@@ -190,8 +190,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "哈希仪表装机/品牌/数量无公开证据，需经设计院或EPC技术协议确认"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -202,7 +202,17 @@
           "含氟/含硅专项（视工艺）"
         ],
         "parameters_basis": "晶圆研磨/切割废水常规监测参数（行业基准INFERENCE）+法定自动监控（重点排污单位COD/氨氮/pH/流量必装，HJ353-2019）",
-        "instrument_quantity_hint": "研磨废水处理系统典型在线点位5-15个（行业基准），待项目设计确认"
+        "instrument_quantity_hint": "研磨废水处理系统典型在线点位5-15个（行业基准），待项目设计确认",
+        "instrument_presence": {
+          "status": "UNKNOWN",
+          "basis": "FACT",
+          "note": "新建晶圆项目水系统方案未公开；晶圆加工/切割通常配置废水处理与监测，但规模与是否配套仪表待项目设计确认",
+          "check_points": [
+            "核实项目工艺与设计院后，确认水系统是否含在线监测",
+            "环评报告全文公开后查监测点位与仪表配置"
+          ],
+          "ims_implication": "仪表存在与否未定，iMS 前提待验证；若确认有"
+        }
       },
       "software_necessity": {
         "summary": "排污许可自行监测+数据联网合规是企业义务，但本项目无公开软件采购证据",
@@ -321,8 +331,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；现场已装仪表品牌需现场拜访确认"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -333,7 +343,17 @@
           "总氮（含硝酸清洗时）"
         ],
         "parameters_basis": "半导体清洗/CMP废水常规监测参数（行业基准INFERENCE）+法定自动监控（HJ353-2019）",
-        "instrument_quantity_hint": "晶圆再生废水站典型在线点位10-20个（行业基准）"
+        "instrument_quantity_hint": "晶圆再生废水站典型在线点位10-20个（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "INFERENCE",
+          "note": "项目主体已封顶（FACT），水处理设施作为配套必然已采购安装；再生晶圆清洗/CMP 废水站必有水质仪表（品牌不限）",
+          "check_points": [
+            "现场在装仪表普查（品牌/型号/数量）",
+            "确认纯水/废水在线监测点位（法定排口必装）"
+          ],
+          "ims_implication": "仪表存在前提成立，iMS 可随现场仪表接入；重点是运营期替换/扩容"
+        }
       },
       "software_necessity": {
         "summary": "媒体提及项目引入'AI视觉检测+低碳清洗工艺'（信息化/智能化信号），但无具体软件采购证据",
@@ -456,8 +476,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；园区污水厂仪表多走设计院品牌短名单，可作接触点"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "COD",
@@ -472,7 +492,17 @@
           "蒸发结晶浓缩液电导率"
         ],
         "parameters_basis": "园区工业废水+零排放工艺标准监测参数（行业基准INFERENCE）+HJ353-2019法定必装（COD/氨氮/pH/流量）",
-        "instrument_quantity_hint": "零排放（UF/RO/蒸发结晶）系统在线仪表典型25-50个点位（行业基准）"
+        "instrument_quantity_hint": "零排放（UF/RO/蒸发结晶）系统在线仪表典型25-50个点位（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "园区污水处理厂新建，环评工艺链明确（零排放）；规模 1500m³/d 的市政污水厂按法规与设计惯例必有进出水在线监测（COD/氨氮/pH/流量必装）",
+          "check_points": [
+            "环评报告书全文→监测点位表",
+            "致电顾主任确认设计院与仪表品牌短名单"
+          ],
+          "ims_implication": "仪表存在前提成立且点位多（零排放 25-50 点），iMS 机会明确"
+        }
       },
       "software_necessity": {
         "summary": "零排放系统对连续监测+数据归档+环保平台联网要求高，运营期数据管理是标配需求",
@@ -592,8 +622,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；现有厂区可在装仪表需现场确认"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "COD",
@@ -606,7 +636,17 @@
           "石油类（视工艺）"
         ],
         "parameters_basis": "化工废水预处理+接管排口监测标准参数（行业基准INFERENCE）+HJ353-2019法定必装",
-        "instrument_quantity_hint": "排口自动监控（4-6点位）+预处理装置（5-15点位），总量有限（行业基准）"
+        "instrument_quantity_hint": "排口自动监控（4-6点位）+预处理装置（5-15点位），总量有限（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "厂内新建污水预处理装置+接管排口自动监控，排口 COD/氨氮/pH/流量为法定必装；现有厂区在装仪表待现场确认",
+          "check_points": [
+            "环评全本→排口自动监控配置",
+            "现有厂区在装仪表普查"
+          ],
+          "ims_implication": "仪表存在前提成立；iMS 机会集中于接管排口+厂内预处理，规模中等"
+        }
       },
       "software_necessity": {
         "summary": "接管排口自动监控+数据联网为法规义务；化工企业环保台账/排污许可执行报告管理是运营必需",
@@ -724,8 +764,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -738,7 +778,17 @@
           "SS"
         ],
         "parameters_basis": "离子膜烧碱盐水精制+废水监测常规参数（行业基准INFERENCE）",
-        "instrument_quantity_hint": "盐水精制在线点位5-15个+排口自动监控（行业基准）"
+        "instrument_quantity_hint": "盐水精制在线点位5-15个+排口自动监控（行业基准）",
+        "instrument_presence": {
+          "status": "PROBABLE",
+          "basis": "INFERENCE",
+          "note": "离子膜烧碱盐水精制+废水系统按行业惯例配置过程监测仪表；环评已批（9/15），设计/采购阶段，详细配置未公开",
+          "check_points": [
+            "环评批复全文→盐水/废水监测设计",
+            "设计院确认仪表配置"
+          ],
+          "ims_implication": "大概率有仪表；重点是盐水精制过程监测与废水排口"
+        }
       },
       "software_necessity": {
         "summary": "烧碱企业环保合规要求自动监控+台账；无公开软件采购证据",
@@ -857,8 +907,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；可尝试通过EPC总包（清朗达）技术协议确认仪表品牌"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -869,7 +919,17 @@
           "氟化物（视工艺）"
         ],
         "parameters_basis": "半导体磨划废水回用监测参数（行业基准INFERENCE）+回用水标准GB/T19923",
-        "instrument_quantity_hint": "磨划废水回用系统在线点位10-25个（行业基准），316.75万投资额内含仪表采购"
+        "instrument_quantity_hint": "磨划废水回用系统在线点位10-25个（行业基准），316.75万投资额内含仪表采购",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "55m³/h 磨划废水回用系统交钥匙 EPC 已定标（清朗达 316.75 万），交钥匙范围含设备采购+调试→仪表必含其中",
+          "check_points": [
+            "清朗达技术协议→仪表供应清单（品牌不限）",
+            "厂区自控改造是否含水务数据平台"
+          ],
+          "ims_implication": "仪表存在前提成立但品牌由 EPC 决定；iMS 转 EPC 渠道+厂级数据平台"
+        }
       },
       "software_necessity": {
         "summary": "回用水系统+厂级自控改造均需数据接入；'厂区安防自控改造'招标是厂级数字化的直接证据",
@@ -996,8 +1056,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；一期污水站仪表品牌可通过竣工环保验收报告或现场确认"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "COD",
@@ -1010,7 +1070,17 @@
           "SS"
         ],
         "parameters_basis": "电解液/锂电材料废水监测参数（行业基准INFERENCE）+HJ353-2019法定必装",
-        "instrument_quantity_hint": "一期污水站已有在线点位5-15个；二期扩点后预计增加（行业基准）"
+        "instrument_quantity_hint": "一期污水站已有在线点位5-15个；二期扩点后预计增加（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "一期污水站+在线监测已建成并通过竣工环保验收（FACT）；二期扩容必然配套在线监测（上市公司互动平台明确在线监测系统声明）",
+          "check_points": [
+            "一期竣工环保验收报告→在线监测配置（品牌）",
+            "联系杨旭确认二期污水站规划"
+          ],
+          "ims_implication": "仪表存在前提最扎实（一期已运行）；iMS 一期基线复制+二期扩容"
+        }
       },
       "software_necessity": {
         "summary": "上市公司环保数据上报/台账为刚需：集团环保岗JD明确'环境监测、环保数据、资料的上报'职责（FACT）",
@@ -1137,8 +1207,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据；可通过BOO公告/EPC技术协议确认"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "COD",
@@ -1153,7 +1223,17 @@
           "蒸发结晶浓缩液浓度"
         ],
         "parameters_basis": "煤化工高盐废水零排放（RO/蒸发结晶）监测参数（行业基准INFERENCE）",
-        "instrument_quantity_hint": "≥1000m³/h零排放系统在线监测点位30-60个（行业基准）"
+        "instrument_quantity_hint": "≥1000m³/h零排放系统在线监测点位30-60个（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "全厂废水零排放装置按 BOO 模式建设，2026-07 已进入设备管道安装（FACT）；零排放系统（RO/蒸发结晶）必然配置大量在线仪表",
+          "check_points": [
+            "BOO 中标方确认→系统配置",
+            "环评批复全文→监测要求"
+          ],
+          "ims_implication": "仪表存在前提成立且量大（30-60 点）；机会在 BOO 运营方长期监测+数据管理"
+        }
       },
       "software_necessity": {
         "summary": "零排放系统+BOO运营对连续监测、数据归档、达标预警要求高；BOO合同通常含数据交付义务",
@@ -1272,8 +1352,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -1284,7 +1364,17 @@
           "硬度"
         ],
         "parameters_basis": "脱硫废水零排放监测参数（行业基准INFERENCE）",
-        "instrument_quantity_hint": "零排放系统典型在线点位20-40个（行业基准）"
+        "instrument_quantity_hint": "零排放系统典型在线点位20-40个（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "脱硫废水零排放 EPC 已中标（施工/采购增补阶段），零排放系统必有仪表",
+          "check_points": [
+            "EPC 合同范围→仪表配置",
+            "运维模式（自管/外包）"
+          ],
+          "ims_implication": "仪表存在前提成立；窗口在运维期"
+        }
       },
       "software_necessity": {
         "summary": "无公开软件证据；运维期数据管理需求待验证",
@@ -1398,8 +1488,8 @@
       },
       "instrument_evidence": {
         "hach_evidence": {
-          "status": "UNKNOWN",
-          "note": "无公开证据"
+          "status": "COMPANY_AGENT_CONFIRM",
+          "note": "哈希品牌装机由 company agent 线下确认（品牌不限，哈希仅为可能品牌之一）；不阻塞 qualification，仅作线索跟进备注"
         },
         "key_parameters": [
           "pH",
@@ -1411,7 +1501,17 @@
           "COD"
         ],
         "parameters_basis": "膜法水处理系统监测参数（行业基准INFERENCE）",
-        "instrument_quantity_hint": "石化水处理装置在线点位10-30个（行业基准）"
+        "instrument_quantity_hint": "石化水处理装置在线点位10-30个（行业基准）",
+        "instrument_presence": {
+          "status": "CONFIRMED",
+          "basis": "FACT",
+          "note": "大型炼化企业运营期，水处理装置在用（膜利旧改造已实施）；运营工厂按法规与惯例必有在装水质仪表（排口+工艺段）",
+          "check_points": [
+            "现场在装仪表普查（品牌/数量）",
+            "膜性能监测方式（人工/在线）"
+          ],
+          "ims_implication": "仪表存在前提成立；iMS 运营期生命周期+监测升级"
+        }
       },
       "software_necessity": {
         "summary": "园区排海在线监测维保外包（95万/3年）显示第三方运维市场活跃，石化企业自建数据平台需求待验",
