@@ -2,7 +2,7 @@
  "metadata": {
   "version": "v3.3-master-consolidated",
   "generated_date": "2026-09-22",
-  "last_update": "2026-09-22T08:46:19+08:00",
+  "last_update": "2026-09-22T12:58:24+08:00",
   "description": "iMS Industrial Master Intelligence - Sales Readiness Deep Enrichment (P1/P2/P3, 2026-09-21, merged 9/13+ radar daily leads)",
   "data_sources": [
    "DuMate websearch",
@@ -24,7 +24,7 @@
    "note": "Enrichment restore 第1批：9/13后工业线索合并+评分恢复",
    "linked_prompt": "docs/iMS_GTM_Public_Signal_Radar_prompt_v3.2_full_20260913.md"
   },
-  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-13; 10 added, 25 skipped, 6 pre-window)",
+  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-22; 0 added, 0 skipped, 10 pre-window)",
   "merge_point": "2026-09-22"
  },
  "leads": [
@@ -40115,7 +40115,13 @@
      "next_validation_action": "搜索镭明半导体项目设计院和超纯水系统供应商信息"
     },
     "opportunity": "年产15万片晶圆项目",
-    "time_window_basis": "环评受理阶段，可影响水系统方案/监测策略/仪表规格"
+    "time_window_basis": "环评受理阶段，可影响水系统方案/监测策略/仪表规格",
+    "customer_requirement": "年产15万片晶圆项目，环评受理阶段 — FACT",
+    "customer_need": "晶圆制造需要超纯水系统+含氟废水处理，环保合规 — FACT",
+    "current_solution": "新建项目，具体水系统方案未明确 — UNKNOWN",
+    "operational_pain_points": "新建项目，具体水系统方案未明确 — UNKNOWN",
+    "sales_summary": "iMS可提供进出水水质监测+仪表管理+运维数据闭环 — INFERENCE",
+    "demand_hypothesis": "水系统设计方案和设计院是谁"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40142,9 +40148,9 @@
     "raw": "江苏省宿迁市"
    },
    "industry": "半导体/电子",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "年产15万片晶圆项目，环评受理阶段 — FACT",
+   "operational_pain_points": "新建项目，具体水系统方案未明确 — UNKNOWN",
+   "sales_summary": "iMS可提供进出水水质监测+仪表管理+运维数据闭环 — INFERENCE",
    "estimated_time_window": "6-9月（环评→设计→施工→设备安装）",
    "time_window_basis": "环评受理阶段，可影响水系统方案/监测策略/仪表规格",
    "jd_inferences": [
@@ -40171,7 +40177,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-01"
-   ]
+   ],
+   "customer_need": "晶圆制造需要超纯水系统+含氟废水处理，环保合规 — FACT",
+   "current_solution": "新建项目，具体水系统方案未明确 — UNKNOWN",
+   "demand_hypothesis": "水系统设计方案和设计院是谁"
   },
   {
    "lead_id": "IND-20260922-02",
@@ -40280,7 +40289,13 @@
      "next_validation_action": "获取环评报告表全文，确认水系统具体需求"
     },
     "opportunity": "半导体晶圆深加工及封装测试项目（新建/迁建）",
-    "time_window_basis": "封装测试水系统规模较小，但可影响纯水监测方案"
+    "time_window_basis": "封装测试水系统规模较小，但可影响纯水监测方案",
+    "customer_requirement": "半导体晶圆深加工及封装测试项目，新建/迁建 — FACT",
+    "customer_need": "封装测试环节有纯水/清洗废水需求，环保合规 — INFERENCE",
+    "current_solution": "新建项目，具体水系统方案未明确 — UNKNOWN",
+    "operational_pain_points": "新建项目，具体水系统方案未明确 — UNKNOWN",
+    "sales_summary": "iMS可提供纯水水质监测+废水监测+数据管理 — INFERENCE",
+    "demand_hypothesis": "封装测试环节具体用水量和废水种类"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40307,9 +40322,9 @@
     "raw": "江苏省淮安市清江浦区"
    },
    "industry": "半导体/电子",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "半导体晶圆深加工及封装测试项目，新建/迁建 — FACT",
+   "operational_pain_points": "新建项目，具体水系统方案未明确 — UNKNOWN",
+   "sales_summary": "iMS可提供纯水水质监测+废水监测+数据管理 — INFERENCE",
    "estimated_time_window": "9-12月",
    "time_window_basis": "封装测试水系统规模较小，但可影响纯水监测方案",
    "jd_inferences": [
@@ -40336,7 +40351,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-02"
-   ]
+   ],
+   "customer_need": "封装测试环节有纯水/清洗废水需求，环保合规 — INFERENCE",
+   "current_solution": "新建项目，具体水系统方案未明确 — UNKNOWN",
+   "demand_hypothesis": "封装测试环节具体用水量和废水种类"
   },
   {
    "lead_id": "IND-20260922-03",
@@ -40446,7 +40464,13 @@
      "next_validation_action": "获取环评报告书全文，确认处理规模、设计院和监测方案"
     },
     "opportunity": "化工产业区污水处理厂（一期）工程，含隔油/气浮/芬顿/蒸发结晶，实现废水零排放",
-    "time_window_basis": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式"
+    "time_window_basis": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式",
+    "customer_requirement": "化工产业区污水处理厂一期，含零排放工艺 — FACT",
+    "customer_need": "化工园区废水须集中处理达标排放，环保法规要求 — FACT",
+    "current_solution": "园区现有处理能力不足 — INFERENCE",
+    "operational_pain_points": "园区现有处理能力不足 — INFERENCE",
+    "sales_summary": "iMS可提供进出水水质监测+零排放系统监控+运营管理+数据合规 — INFERENCE",
+    "demand_hypothesis": "处理规模和设计院/EPC是谁"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40473,9 +40497,9 @@
     "raw": "陕西省榆林市定边县"
    },
    "industry": "石化/化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "化工产业区污水处理厂一期，含零排放工艺 — FACT",
+   "operational_pain_points": "园区现有处理能力不足 — INFERENCE",
+   "sales_summary": "iMS可提供进出水水质监测+零排放系统监控+运营管理+数据合规 — INFERENCE",
    "estimated_time_window": "6-9月",
    "time_window_basis": "环评征求意见阶段，可影响监测方案/仪表规格/运营模式",
    "jd_inferences": [
@@ -40502,7 +40526,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-03"
-   ]
+   ],
+   "customer_need": "化工园区废水须集中处理达标排放，环保法规要求 — FACT",
+   "current_solution": "园区现有处理能力不足 — INFERENCE",
+   "demand_hypothesis": "处理规模和设计院/EPC是谁"
   },
   {
    "lead_id": "IND-20260922-04",
@@ -40612,7 +40639,13 @@
      "next_validation_action": "获取环评报告书全文，确认自建水系统方案和设计院"
     },
     "opportunity": "年产20万吨环氧丙(乙)烷衍生产品扩建，总投资6.4亿元",
-    "time_window_basis": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测"
+    "time_window_basis": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测",
+    "customer_requirement": "年产20万吨环氧丙烷衍生产品扩建 — FACT",
+    "customer_need": "环保达标要求，工艺废水须处理 — FACT",
+    "current_solution": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
+    "operational_pain_points": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
+    "sales_summary": "iMS可提供接管水质监测+数据合规 — INFERENCE",
+    "demand_hypothesis": "是否有自建水系统（纯水/循环水等）"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40639,9 +40672,9 @@
     "raw": "江苏省泰兴经济开发区"
    },
    "industry": "石化/化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "年产20万吨环氧丙烷衍生产品扩建 — FACT",
+   "operational_pain_points": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
+   "sales_summary": "iMS可提供接管水质监测+数据合规 — INFERENCE",
    "estimated_time_window": "6-9月",
    "time_window_basis": "废水接管园区污水厂，自建水系统可能不大，但可影响接管水质监测",
    "jd_inferences": [
@@ -40668,7 +40701,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-04"
-   ]
+   ],
+   "customer_need": "环保达标要求，工艺废水须处理 — FACT",
+   "current_solution": "废水接管园区污水厂，自建水系统可能不大 — INFERENCE",
+   "demand_hypothesis": "是否有自建水系统（纯水/循环水等）"
   },
   {
    "lead_id": "IND-20260922-05",
@@ -40778,7 +40814,13 @@
      "next_validation_action": "搜索滨化集团项目设计院和EPC招标信息"
     },
     "opportunity": "无棣国家区域性特殊危险废物(废盐)集中处置中心资源化利用项目(一期)，新建30万t/a离子膜烧碱装置",
-    "time_window_basis": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定"
+    "time_window_basis": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定",
+    "customer_requirement": "新建30万t/a离子膜烧碱装置，利用工业废盐 — FACT",
+    "customer_need": "废盐资源化+环保合规 — INFERENCE",
+    "current_solution": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+    "operational_pain_points": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+    "sales_summary": "iMS可提供盐水精制水质监测+废水排放监测 — INFERENCE",
+    "demand_hypothesis": "水系统是否包含新建废水处理设施"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40805,9 +40847,9 @@
     "raw": "山东省滨州市鲁北化工产业园"
    },
    "industry": "石化/化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "新建30万t/a离子膜烧碱装置，利用工业废盐 — FACT",
+   "operational_pain_points": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+   "sales_summary": "iMS可提供盐水精制水质监测+废水排放监测 — INFERENCE",
    "estimated_time_window": "3-6月（已进入设计施工阶段）",
    "time_window_basis": "环评已批复，可影响仪表选型/品牌选择，但方案架构已定",
    "jd_inferences": [
@@ -40834,7 +40876,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-05"
-   ]
+   ],
+   "customer_need": "废盐资源化+环保合规 — INFERENCE",
+   "current_solution": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+   "demand_hypothesis": "水系统是否包含新建废水处理设施"
   },
   {
    "lead_id": "IND-20260922-06",
@@ -40946,7 +40991,13 @@
      "next_validation_action": "搜索长电科技宿迁磨划废水回收间改造项目EPC和设计院"
     },
     "opportunity": "磨划废水回收间建设项目",
-    "time_window_basis": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求"
+    "time_window_basis": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求",
+    "customer_requirement": "磨划废水回收间建设项目，规划许可刚批 — FACT",
+    "customer_need": "半导体封装磨划废水须回收处理，环保合规 — FACT",
+    "current_solution": "现有废水处理可能不足，新建回收间 — INFERENCE",
+    "operational_pain_points": "现有废水处理可能不足，新建回收间 — INFERENCE",
+    "sales_summary": "iMS可提供废水回收水质监测+仪表运维+数据管理+生命周期管理 — INFERENCE",
+    "demand_hypothesis": "废水回收间具体工艺和仪表选型状态"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -40973,9 +41024,9 @@
     "raw": "江苏省宿迁市苏州宿迁工业园区"
    },
    "industry": "半导体/电子",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "磨划废水回收间建设项目，规划许可刚批 — FACT",
+   "operational_pain_points": "现有废水处理可能不足，新建回收间 — INFERENCE",
+   "sales_summary": "iMS可提供废水回收水质监测+仪表运维+数据管理+生命周期管理 — INFERENCE",
    "estimated_time_window": "3-6月",
    "time_window_basis": "规划许可阶段，可影响废水回收间监测方案/仪表选型/运维需求",
    "jd_inferences": [
@@ -41002,7 +41053,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-06"
-   ]
+   ],
+   "customer_need": "半导体封装磨划废水须回收处理，环保合规 — FACT",
+   "current_solution": "现有废水处理可能不足，新建回收间 — INFERENCE",
+   "demand_hypothesis": "废水回收间具体工艺和仪表选型状态"
   },
   {
    "lead_id": "IND-20260922-07",
@@ -41115,7 +41169,13 @@
      "next_validation_action": "跟踪环评后续公示，确认水系统方案和设计院"
     },
     "opportunity": "电池化学品二期项目，新增20万吨锂电电解液+5万吨钠电电解液产能",
-    "time_window_basis": "极早期阶段，可影响水系统方案/监测策略/仪表规格"
+    "time_window_basis": "极早期阶段，可影响水系统方案/监测策略/仪表规格",
+    "customer_requirement": "电池化学品二期扩建，20万吨锂电+5万吨钠电 — FACT",
+    "customer_need": "电解液生产环保合规 — INFERENCE",
+    "current_solution": "具体水系统方案未明确 — UNKNOWN",
+    "operational_pain_points": "具体水系统方案未明确 — UNKNOWN",
+    "sales_summary": "iMS可提供工艺废水监测+纯水水质监测+数据管理 — INFERENCE",
+    "demand_hypothesis": "电解液生产具体废水种类和水系统方案"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -41142,9 +41202,9 @@
     "raw": "重庆市长寿区晏家街道"
    },
    "industry": "新能源/电池",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "电池化学品二期扩建，20万吨锂电+5万吨钠电 — FACT",
+   "operational_pain_points": "具体水系统方案未明确 — UNKNOWN",
+   "sales_summary": "iMS可提供工艺废水监测+纯水水质监测+数据管理 — INFERENCE",
    "estimated_time_window": "9-12月",
    "time_window_basis": "极早期阶段，可影响水系统方案/监测策略/仪表规格",
    "jd_inferences": [
@@ -41171,7 +41231,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-07"
-   ]
+   ],
+   "customer_need": "电解液生产环保合规 — INFERENCE",
+   "current_solution": "具体水系统方案未明确 — UNKNOWN",
+   "demand_hypothesis": "电解液生产具体废水种类和水系统方案"
   },
   {
    "lead_id": "IND-20260922-08",
@@ -41281,7 +41344,13 @@
      "next_validation_action": "搜索兰花煤化工项目设计院和废水处理设施进展"
     },
     "opportunity": "节能环保升级改造项目，含锅炉/气化/合成氨装置",
-    "time_window_basis": "施工阶段，方案已定，可影响有限仪表选型"
+    "time_window_basis": "施工阶段，方案已定，可影响有限仪表选型",
+    "customer_requirement": "煤化工节能环保升级改造，主装置土建完工 — FACT",
+    "customer_need": "节能环保升级，环保合规 — INFERENCE",
+    "current_solution": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+    "operational_pain_points": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+    "sales_summary": "iMS可提供废水处理水质监测+数据管理 — INFERENCE",
+    "demand_hypothesis": "废水处理设施是否已建设，仪表是否已选型"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -41308,9 +41377,9 @@
     "raw": "山西省晋城市"
    },
    "industry": "煤化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "煤化工节能环保升级改造，主装置土建完工 — FACT",
+   "operational_pain_points": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+   "sales_summary": "iMS可提供废水处理水质监测+数据管理 — INFERENCE",
    "estimated_time_window": "3-6月（施工阶段）",
    "time_window_basis": "施工阶段，方案已定，可影响有限仪表选型",
    "jd_inferences": [
@@ -41337,7 +41406,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-08"
-   ]
+   ],
+   "customer_need": "节能环保升级，环保合规 — INFERENCE",
+   "current_solution": "水系统为辅助工序，具体方案未明确 — UNKNOWN",
+   "demand_hypothesis": "废水处理设施是否已建设，仪表是否已选型"
   },
   {
    "lead_id": "IND-20260922-09",
@@ -41442,7 +41514,13 @@
      "next_validation_action": "确认仪表品牌选型和运维模式"
     },
     "opportunity": "古雷石化基地热电联产南部二期脱硫废水零排放EPC总承包",
-    "time_window_basis": "EPC已中标，方案和规格已基本确定"
+    "time_window_basis": "EPC已中标，方案和规格已基本确定",
+    "customer_requirement": "脱硫废水零排放EPC，增补采购 — FACT",
+    "customer_need": "脱硫废水零排放环保要求 — FACT",
+    "current_solution": "EPC已中标，规格已定 — FACT",
+    "operational_pain_points": "EPC已中标，规格已定 — FACT",
+    "sales_summary": "iMS可提供零排放系统运维+生命周期管理 — INFERENCE",
+    "demand_hypothesis": "仪表品牌是否已定"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -41469,9 +41547,9 @@
     "raw": "福建省漳州市古雷石化基地"
    },
    "industry": "石化/化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "脱硫废水零排放EPC，增补采购 — FACT",
+   "operational_pain_points": "EPC已中标，规格已定 — FACT",
+   "sales_summary": "iMS可提供零排放系统运维+生命周期管理 — INFERENCE",
    "estimated_time_window": "已进入施工采购阶段",
    "time_window_basis": "EPC已中标，方案和规格已基本确定",
    "jd_inferences": [
@@ -41498,7 +41576,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-09"
-   ]
+   ],
+   "customer_need": "脱硫废水零排放环保要求 — FACT",
+   "current_solution": "EPC已中标，规格已定 — FACT",
+   "demand_hypothesis": "仪表品牌是否已定"
   },
   {
    "lead_id": "IND-20260922-10",
@@ -41606,7 +41687,13 @@
      "next_validation_action": "调研古雷石化水处理装置现有监测仪表配置和运维模式"
     },
     "opportunity": "全厂水处理装置膜元件利旧改造，超滤/反渗透膜性能评估与优化",
-    "time_window_basis": "已实施改造，可影响运营期监测优化/仪表生命周期管理"
+    "time_window_basis": "已实施改造，可影响运营期监测优化/仪表生命周期管理",
+    "customer_requirement": "全厂水处理装置膜元件利旧改造 — FACT",
+    "customer_need": "膜性能衰减→降本增效 — INFERENCE",
+    "current_solution": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
+    "operational_pain_points": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
+    "sales_summary": "iMS可提供膜性能监控+运维数据管理+生命周期管理 — INFERENCE",
+    "demand_hypothesis": "现有在线水质监测仪表配置和运维模式"
    },
    "enrichment_status": "sales_usable_enriched",
    "record_status": "active",
@@ -41633,9 +41720,9 @@
     "raw": "福建省漳州市古雷石化基地"
    },
    "industry": "石化/化工",
-   "customer_requirement": "",
-   "operational_pain_points": "",
-   "sales_summary": "",
+   "customer_requirement": "全厂水处理装置膜元件利旧改造 — FACT",
+   "operational_pain_points": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
+   "sales_summary": "iMS可提供膜性能监控+运维数据管理+生命周期管理 — INFERENCE",
    "estimated_time_window": "已运营，生命周期机会",
    "time_window_basis": "已实施改造，可影响运营期监测优化/仪表生命周期管理",
    "jd_inferences": [
@@ -41662,7 +41749,10 @@
    ],
    "account_ids": [
     "ACC-IND-20260922-10"
-   ]
+   ],
+   "customer_need": "膜性能衰减→降本增效 — INFERENCE",
+   "current_solution": "现有膜性能监控可能依赖人工/本地仪表 — UNKNOWN",
+   "demand_hypothesis": "现有在线水质监测仪表配置和运维模式"
   }
  ],
  "projects": [

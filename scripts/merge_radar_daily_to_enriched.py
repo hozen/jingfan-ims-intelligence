@@ -119,9 +119,21 @@ def build_lead_from_industrial_signal(sig, source_file, today):
         signal["time_window_basis"] = signal["time_window_basis"].get("note") or signal["time_window_basis"].get("source") or ""
     pull = sig.get("pull_box") or {}
     if isinstance(pull, dict):
-        for key, pull_key in (("customer_requirement", "P"), ("operational_pain_points", "L1"), ("sales_summary", "L2")):
-            if pull.get(pull_key):
-                signal[key] = str(pull[pull_key])
+        # Accept both legacy keys (P/U/L1/L2) and named keys
+        # (project/unavoidable/limitations/leverage) so demand fields survive
+        # the merge regardless of which radar template produced the daily signal.
+        for key, legacy, named in (("customer_requirement", "P", "project"),
+                                   ("operational_pain_points", "L1", "limitations"),
+                                   ("sales_summary", "L2", "leverage")):
+            value = pull.get(legacy) or pull.get(named)
+            if value:
+                signal[key] = str(value)
+        if not signal.get("customer_need"):
+            signal["customer_need"] = str(pull.get("U") or pull.get("unavoidable") or "")
+        if not signal.get("current_solution"):
+            signal["current_solution"] = str(pull.get("L1") or pull.get("limitations") or "")
+        if not signal.get("demand_hypothesis"):
+            signal["demand_hypothesis"] = str(pull.get("key_unknown") or pull.get("next_validation_question") or "")
     jd_inferences = signal.get("jd_inferences") or []
     if not jd_inferences and handoff_evidence:
         jd_inferences = [{
