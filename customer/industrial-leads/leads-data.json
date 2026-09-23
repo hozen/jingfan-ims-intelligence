@@ -1,6 +1,217 @@
 {
   "leads": [
     {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-23",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "OPS-20260923-RAWA-001",
+        "company": {
+          "company_name": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "location": null,
+          "industry": "市政水务"
+        },
+        "project": {
+          "project_name": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "project_stage": "运营期数字化建设/试点推广"
+        },
+        "signal": {
+          "signal_description": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "signal_date": "2026-09-23",
+          "evidence": [
+            {
+              "source_url": [
+                "https://www.66wz.com/wendu/system/2026/09/16/105840794.shtml",
+                "https://ggzy.zj.gov.cn/jyxxgk/002011/002011001/20260917/88ccbf3f-d34f-4bf5-b078-0ce66bdbc5b2.html",
+                "https://www.wzgytz.com/wap/col/col1414822260686848/index.html"
+              ],
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "opportunity": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "industry": "市政水务",
+          "opportunity_stage": "运营期数字化建设/试点推广",
+          "priority": 68,
+          "potential_ims_use_case": "Multi-site Management / Instrument Health Diagnostics / Digital Operations",
+          "logic": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+          "to_verify": {
+            "customer_identity": "瑞安水务是否为Hach客户？Salesforce Account是否存在？温州市公用集团是否为战略客户？",
+            "installed_base": "瑞安水务水厂数量？现有在线仪表类型/数量？是否已有联网仪表？是否存在数字化白空间？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+            "ims": "是否已有iMS或类似数字化产品？是否存在扩展机会？无人水厂试点的数字化合作伙伴是谁？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？温州公用集团层面的客户关系？"
+          },
+          "customer_need": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+          "demand_hypothesis": "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一***革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。",
+          "contact_hint": "温州公用事业发展集团瑞安水务有限公司负责人（未公开具体姓名，需Company Agent确认）；温州市公用集团数字化/信息化部门负责人（集团层面推动者，需Company Agent确认）",
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "瑞安水务已启动无人水厂试点和智能装备投入（正在执行），VPN/服务器运维招标9月29日截止——数字化基础设施正在搭建中，仪表数据层需求尚未锁定。'瑞安路径'尚未正式定型，介入窗口仍在。",
+          "source_urls": [
+            [
+              "https://www.66wz.com/wendu/system/2026/09/16/105840794.shtml",
+              "https://ggzy.zj.gov.cn/jyxxgk/002011/002011001/20260917/88ccbf3f-d34f-4bf5-b078-0ce66bdbc5b2.html",
+              "https://www.wzgytz.com/wap/col/col1414822260686848/index.html"
+            ]
+          ],
+          "evidence": {
+            "facts": [
+              "2026-09-16 温州新闻网报道：瑞***推进公用事业一体化改革，加大智能化装备投入，布设智能闷盖物联网终端（消火栓盗水预警），无人机执行山区巡视任务",
+              "瑞安水务正通过无人水厂试点建设，优化智能传感与自动调控系统，形成可复制推广的水厂数字化升级'瑞安路径'，创新'有人水厂管控无人水厂'管理模式",
+              "数智化建设持续向水厂运维、漏损管控、防汛应急等业务延伸",
+              "2026-09-17 浙江公共资源交易网：瑞***VPN设备采购与机房、服务器一体化运维项目公开招标（预算20万元，运维服务期1年）",
+              "温州市公用集团供水能力全国第12位，运营71座制水厂，总供水能力351万m3/日，DN100以上管网14176km，用水客户277.8万户"
+            ],
+            "inferences": [
+              "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一***革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。"
+            ],
+            "unknowns": []
+          },
+          "action_triad": {
+            "find_who": "温州公用事业发展集团瑞安水务有限公司负责人（未公开具体姓名，需Company Agent确认）；温州市公用集团数字化/信息化部门负责人（集团层面推动者，需Company Agent确认）",
+            "talk_what": "无人水厂试点中在线仪表数据采集与自动调控系统的选型方案是否已确定？智能传感设备的品牌偏好与接入标准？'瑞安路径'数字化升级方案中是否规划了仪表健康管理与数据质量管理模块？多水厂统一管理平台是否支持第三方仪表数据接入？",
+            "why_now": "无人水厂试点正在推进中、智能传感与自动调控系统尚未定型；VPN/服务器一体化运维9月29日招标——数字化基础设施正在搭建，仪表数据层需求窗口正在打开；'瑞安路径'尚未锁定，是影响技术路线选型的最佳时机"
+          },
+          "enrichment": {},
+          "customer_requirement": "Multi-site Management / Instrument Health Diagnostics / Digital Operations",
+          "next_validation_questions": "无人水厂试点中在线仪表数据采集与自动调控系统的选型方案是否已确定？智能传感设备的品牌偏好与接入标准？'瑞安路径'数字化升级方案中是否规划了仪表健康管理与数据质量管理模块？多水厂统一管理平台是否支持第三方仪表数据接入？",
+          "location": null
+        },
+        "enrichment_status": "consolidated_from_radar_daily",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-OPS-20260923-RAWA-001",
+            "lead_id": "OPS-20260923-RAWA-001",
+            "account_id": "ACC-OPS-20260923-RAWA-001",
+            "project_name": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+            "owner": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "Multi-site Management / Instrument Health Diagnostics / Digital Operations"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-OPS-20260923-RAWA-001",
+            "lead_id": "OPS-20260923-RAWA-001",
+            "account_name": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+            "group_name": "",
+            "industry": "市政水务",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-23T08:52:55+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "municipal",
+      "category": "其他市政水务",
+      "date": "2026-09-23",
+      "quality_score": 5,
+      "quality_missing": [],
+      "lead": {
+        "lead_id": "OPS-20260923-RAWA-001",
+        "company": {
+          "company_name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "location": null,
+          "industry": null
+        },
+        "project": {
+          "project_name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "project_stage": "运营期数字化建设/试点推广"
+        },
+        "signal": {
+          "signal_description": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "signal_date": "2026-09-23",
+          "evidence": [
+            {
+              "source_url": [
+                "https://www.66wz.com/wendu/system/2026/09/16/105840794.shtml",
+                "https://ggzy.zj.gov.cn/jyxxgk/002011/002011001/20260917/88ccbf3f-d34f-4bf5-b078-0ce66bdbc5b2.html",
+                "https://www.wzgytz.com/wap/col/col1414822260686848/index.html"
+              ],
+              "evidence_summary": "市政雷达日报"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "opportunity": "瑞安水务：公***一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+          "industry": "市政水务",
+          "opportunity_stage": "运营期数字化建设/试点推广",
+          "priority": null,
+          "score": 68,
+          "potential_ims_use_case": "Multi-site Management / Instrument Health Diagnostics / Digital Operations",
+          "logic": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+          "to_verify": {
+            "customer_identity": "瑞安水务是否为Hach客户？Salesforce Account是否存在？温州市公用集团是否为战略客户？",
+            "installed_base": "瑞安水务水厂数量？现有在线仪表类型/数量？是否已有联网仪表？是否存在数字化白空间？",
+            "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+            "ims": "是否已有iMS或类似数字化产品？是否存在扩展机会？无人水厂试点的数字化合作伙伴是谁？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？温州公用集团层面的客户关系？"
+          },
+          "customer_need": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+          "demand_hypothesis": "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一***革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。",
+          "contact_hint": "温州公用事业发展集团瑞安水务有限公司负责人（未公开具体姓名，需Company Agent确认）；温州市公用集团数字化/信息化部门负责人（集团层面推动者，需Company Agent确认）",
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "瑞安水务已启动无人水厂试点和智能装备投入（正在执行），VPN/服务器运维招标9月29日截止——数字化基础设施正在搭建中，仪表数据层需求尚未锁定。'瑞安路径'尚未正式定型，介入窗口仍在。",
+          "source_urls": [
+            [
+              "https://www.66wz.com/wendu/system/2026/09/16/105840794.shtml",
+              "https://ggzy.zj.gov.cn/jyxxgk/002011/002011001/20260917/88ccbf3f-d34f-4bf5-b078-0ce66bdbc5b2.html",
+              "https://www.wzgytz.com/wap/col/col1414822260686848/index.html"
+            ]
+          ],
+          "evidence": {
+            "facts": [
+              "2026-09-16 温州新闻网报道：瑞***推进公用事业一体化改革，加大智能化装备投入，布设智能闷盖物联网终端（消火栓盗水预警），无人机执行山区巡视任务",
+              "瑞安水务正通过无人水厂试点建设，优化智能传感与自动调控系统，形成可复制推广的水厂数字化升级'瑞安路径'，创新'有人水厂管控无人水厂'管理模式",
+              "数智化建设持续向水厂运维、漏损管控、防汛应急等业务延伸",
+              "2026-09-17 浙江公共资源交易网：瑞***VPN设备采购与机房、服务器一体化运维项目公开招标（预算20万元，运维服务期1年）",
+              "温州市公用集团供水能力全国第12位，运营71座制水厂，总供水能力351万m3/日，DN100以上管网14176km，用水客户277.8万户"
+            ],
+            "inferences": [
+              "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一***革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。"
+            ]
+          },
+          "location": null,
+          "operational_pain_points": null,
+          "sales_summary": null
+        },
+        "enrichment_status": "radar_daily"
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "2026-09-23.json",
+          "date": "2026-09-23"
+        }
+      ],
+      "procurement_signal": false
+    },
+    {
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-22",
@@ -4987,7 +5198,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5098,7 +5309,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5209,7 +5420,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5320,7 +5531,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5431,7 +5642,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5542,7 +5753,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5653,7 +5864,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5764,7 +5975,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5875,7 +6086,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -5986,7 +6197,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6097,7 +6308,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6208,7 +6419,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6319,7 +6530,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6430,7 +6641,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6541,7 +6752,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6652,7 +6863,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6763,7 +6974,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6874,7 +7085,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -6985,7 +7196,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -7096,7 +7307,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -7207,7 +7418,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -7318,7 +7529,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -7429,7 +7640,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -7540,7 +7751,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -14892,7 +15103,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -15196,7 +15407,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -15402,7 +15613,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -15655,7 +15866,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -15878,7 +16089,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -16097,7 +16308,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -16312,7 +16523,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -16552,7 +16763,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -16747,7 +16958,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -16961,7 +17172,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -17211,7 +17422,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -17439,7 +17650,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -17693,7 +17904,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -17980,7 +18191,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -18260,7 +18471,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -18487,7 +18698,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -18805,7 +19016,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -21176,7 +21387,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -21349,7 +21560,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -40618,7 +40829,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -40841,7 +41052,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -41035,7 +41246,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -41268,7 +41479,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -44203,7 +44414,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -44388,7 +44599,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -48359,7 +48570,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -48545,7 +48756,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -48772,7 +48983,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -48989,7 +49200,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -59860,7 +60071,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -60135,7 +60346,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -60390,7 +60601,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -60622,7 +60833,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -70282,7 +70493,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -70468,7 +70679,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     },
@@ -70654,7 +70865,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-21T17:26:33+08:00"
+          "date": "2026-09-23T08:52:55+08:00"
         }
       ]
     }

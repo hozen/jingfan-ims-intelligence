@@ -1,7 +1,7 @@
 {
  "date": "2026-09-23",
  "weekday": "Wednesday",
- "version": "3.4.1-latest-snapshot",
+ "version": "3.4.1",
  "scanner_summary": {
   "total_scanned": 43,
   "valid_triggers": 14,
@@ -20,18 +20,18 @@
   "new_background_monitoring_today": 11,
   "method_note": "本次扫描9轮检索覆盖6大雷达，采集43个原始信号。新发现1条Opportunity(瑞安水务)，更新1条已存在Opportunity(沈阳水务+移动战略合作)，11条新background_monitoring(EPC招标/中标项目)，2条新industry_trigger，3条新ecosystem_trigger，2条新policy_trigger，3条新competitive_trigger。27条已存在Opportunity中1条有新事实更新(沈阳水务)，26条无阶段变化保持连续追踪。",
   "cumulative_sources": [
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-18",
+   "2026-09-23",
+   "2026-09-13",
+   "2026-09-09",
    "2026-09-02",
    "2026-09-04",
-   "2026-09-07",
-   "2026-09-09",
-   "2026-09-11",
-   "2026-09-13",
-   "2026-09-13-snapshot",
-   "2026-09-14",
    "2026-09-16",
-   "2026-09-18",
-   "2026-09-21",
-   "2026-09-23"
+   "2026-09-11",
+   "2026-09-13-snapshot",
+   "2026-09-21"
   ]
  },
  "top_5_match": [
@@ -4183,6 +4183,5 @@
   "three_stage_complete": true,
   "latest_json_updated": true,
   "md_report_generated": true
- },
- "run_type": "scheduled"
+ }
 }

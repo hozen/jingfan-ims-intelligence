@@ -1,8 +1,8 @@
 {
  "metadata": {
   "version": "v3.3-master-consolidated",
-  "generated_date": "2026-09-21",
-  "last_update": "2026-09-21T17:26:33+08:00",
+  "generated_date": "2026-09-23",
+  "last_update": "2026-09-23T08:52:55+08:00",
   "description": "iMS Municipal Master Intelligence - Enriched Context (17 municipal leads incl. Pingdingshan, industrial content excluded per scope decision 2026-09-12)",
   "data_sources": [
    "intelligence/municipal/daily/2026-09-02.json",
@@ -17,8 +17,8 @@
    "engine": "collect+merge+apply v1",
    "note": "全量归集历史 daily 至 master；跨日合并保留 history/source_lead_ids；contacts 回填 lead.contact_ids"
   },
-  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-12; 24 added, 34 skipped, 5 pre-window)",
-  "merge_point": "2026-09-21"
+  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-21; 1 added, 25 skipped, 10 pre-window)",
+  "merge_point": "2026-09-23"
  },
  "leads": [
   {
@@ -7739,6 +7739,95 @@
    "account_ids": [
     "ACC-OPS-20260921-CXTC-004"
    ]
+  },
+  {
+   "lead_id": "OPS-20260923-RAWA-001",
+   "original_signal": {
+    "company": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+    "opportunity": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+    "industry": "市政水务",
+    "opportunity_stage": "运营期数字化建设/试点推广",
+    "priority": 68,
+    "potential_ims_use_case": "Multi-site Management / Instrument Health Diagnostics / Digital Operations",
+    "logic": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+    "to_verify": {
+     "customer_identity": "瑞安水务是否为Hach客户？Salesforce Account是否存在？温州市公用集团是否为战略客户？",
+     "installed_base": "瑞安水务水厂数量？现有在线仪表类型/数量？是否已有联网仪表？是否存在数字化白空间？",
+     "commercial_history": "历史销售/Opportunity/Win-Loss？当前Pipeline？服务合同？",
+     "ims": "是否已有iMS或类似数字化产品？是否存在扩展机会？无人水厂试点的数字化合作伙伴是谁？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？温州公用集团层面的客户关系？"
+    },
+    "customer_need": "Customer Change(一体化改革)→Digital Change(智能装备+无人水厂)→Operational Problem(多水厂运维人力不足+数据采集)→Instrument/Data/Asset Management Need(在线仪表数据采集+自动调控+仪表健康管理)→Potential iMS Use Case(Multi-site/Instrument Health/Digital Ops)。逻辑链完整，中间无断裂。",
+    "demand_hypothesis": "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一体化改革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。",
+    "contact_hint": "温州公用事业发展集团瑞安水务有限公司负责人（未公开具体姓名，需Company Agent确认）；温州市公用集团数字化/信息化部门负责人（集团层面推动者，需Company Agent确认）",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "瑞安水务已启动无人水厂试点和智能装备投入（正在执行），VPN/服务器运维招标9月29日截止——数字化基础设施正在搭建中，仪表数据层需求尚未锁定。'瑞安路径'尚未正式定型，介入窗口仍在。",
+    "source_urls": [
+     [
+      "https://www.66wz.com/wendu/system/2026/09/16/105840794.shtml",
+      "https://ggzy.zj.gov.cn/jyxxgk/002011/002011001/20260917/88ccbf3f-d34f-4bf5-b078-0ce66bdbc5b2.html",
+      "https://www.wzgytz.com/wap/col/col1414822260686848/index.html"
+     ]
+    ],
+    "evidence": {
+     "facts": [
+      "2026-09-16 温州新闻网报道：瑞安水务推进公用事业一体化改革，加大智能化装备投入，布设智能闷盖物联网终端（消火栓盗水预警），无人机执行山区巡视任务",
+      "瑞安水务正通过无人水厂试点建设，优化智能传感与自动调控系统，形成可复制推广的水厂数字化升级'瑞安路径'，创新'有人水厂管控无人水厂'管理模式",
+      "数智化建设持续向水厂运维、漏损管控、防汛应急等业务延伸",
+      "2026-09-17 浙江公共资源交易网：瑞安水务VPN设备采购与机房、服务器一体化运维项目公开招标（预算20万元，运维服务期1年）",
+      "温州市公用集团供水能力全国第12位，运营71座制水厂，总供水能力351万m3/日，DN100以上管网14176km，用水客户277.8万户"
+     ],
+     "inferences": [
+      "瑞安水务是温州市公用集团旗下县域水务子公司，正经历从'物理合并'到'数智赋能'的转型窗口期。关键信号：①公用事业一体化改革后出现多水厂统一管理需求——这正是iMS多站点管理Use Case的入口；②明确投入智能装备（物联网终端、无人机、智能传感）——说明客户已进入数字化采购阶段；③无人水厂试点需要在线仪表数据采集与自动调控——仪表健康管理需求与iMS逻辑链成立；④'瑞安路径'被定位为可复制模板——意味着如果iMS能在瑞安建立标杆，可向温州公用集团16家水务子公司推广。逻辑链：一体化改革→多水厂统一管理→运维人力不足→智能装备+无人水厂试点→在线仪表数据采集与自动调控需求→仪表健康诊断与数据质量管理iMS Use Case。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "温州公用事业发展集团瑞安水务有限公司负责人（未公开具体姓名，需Company Agent确认）；温州市公用集团数字化/信息化部门负责人（集团层面推动者，需Company Agent确认）",
+     "talk_what": "无人水厂试点中在线仪表数据采集与自动调控系统的选型方案是否已确定？智能传感设备的品牌偏好与接入标准？'瑞安路径'数字化升级方案中是否规划了仪表健康管理与数据质量管理模块？多水厂统一管理平台是否支持第三方仪表数据接入？",
+     "why_now": "无人水厂试点正在推进中、智能传感与自动调控系统尚未定型；VPN/服务器一体化运维9月29日招标——数字化基础设施正在搭建，仪表数据层需求窗口正在打开；'瑞安路径'尚未锁定，是影响技术路线选型的最佳时机"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-23",
+   "last_updated": "2026-09-23",
+   "source_lead_ids": [
+    "OPS-20260923-RAWA-001"
+   ],
+   "source_files": [
+    "2026-09-23.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+   "industry": "市政水务",
+   "customer_requirement": "Multi-site Management / Instrument Health Diagnostics / Digital Operations",
+   "next_validation_questions": "无人水厂试点中在线仪表数据采集与自动调控系统的选型方案是否已确定？智能传感设备的品牌偏好与接入标准？'瑞安路径'数字化升级方案中是否规划了仪表健康管理与数据质量管理模块？多水厂统一管理平台是否支持第三方仪表数据接入？",
+   "history": [
+    {
+     "date": "2026-09-23",
+     "source_file": "2026-09-23.json",
+     "record_id": "OPS-20260923-RAWA-001",
+     "name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260923-RAWA-001"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260923-RAWA-001"
+   ]
   }
  ],
  "projects": [
@@ -8955,6 +9044,19 @@
     "confirmed": false,
     "description": "Instrument Monitoring / Data Quality / Lifecycle Management"
    }
+  },
+  {
+   "project_id": "PRJ-OPS-20260923-RAWA-001",
+   "lead_id": "OPS-20260923-RAWA-001",
+   "account_id": "ACC-OPS-20260923-RAWA-001",
+   "project_name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+   "owner": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Multi-site Management / Instrument Health Diagnostics / Digital Operations"
+   }
   }
  ],
  "accounts": [
@@ -9714,6 +9816,16 @@
    "account_id": "ACC-OPS-20260921-CXTC-004",
    "lead_id": "OPS-20260921-CXTC-004",
    "account_name": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260923-RAWA-001",
+   "lead_id": "OPS-20260923-RAWA-001",
+   "account_name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
    "group_name": "",
    "industry": "市政水务",
    "plant_location": "",
@@ -13765,6 +13877,19 @@
     "2026-09-21.json"
    ],
    "notes": "automated merge of radar daily output into enriched master (window after 2026-09-12)"
+  },
+  {
+   "date": "2026-09-23",
+   "version": "radar-daily-merge",
+   "agent": "merge_radar_daily_to_enriched",
+   "action": "incremental radar daily merge",
+   "new_leads_added": 1,
+   "new_contacts_added": 0,
+   "sources": [
+    "2026-09-21.json",
+    "2026-09-23.json"
+   ],
+   "notes": "automated merge of radar daily output into enriched master (window after 2026-09-21)"
   }
  ],
  "policy_intelligence": [
