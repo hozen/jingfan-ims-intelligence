@@ -1,0 +1,223 @@
+{
+ "radar_type": "industrial",
+ "market_segment": "industrial",
+ "report_date": "2026-09-24",
+ "experiment_week": "Week 6",
+ "scanner_summary": {
+  "engine_a_count": 0,
+  "engine_b_count": 0,
+  "engine_c_count": 1,
+  "handoff_count": 0,
+  "total_signals": 1,
+  "industry_breakdown": {
+   "石化/化工": 1
+  },
+  "trigger_breakdown": {
+   "运营期数字化/仪表运维": 1
+  },
+  "pull_score_distribution": {
+   "16-20": 0,
+   "11-15": 1,
+   "6-10": 0,
+   "0-5": 0
+  },
+  "search_bias_check": {
+   "early_signal_pct": "100%",
+   "pre_tender_pct": "0%",
+   "tender_pct": "0%",
+   "awarded_pct": "0%",
+   "tender_plus_awarded": "0%",
+   "pass": true
+  },
+  "priority_distribution": {
+   "P1": 0,
+   "P2": 1,
+   "P3": 0,
+   "P3-Lifecycle": 0,
+   "Tender Monitoring": 0
+  },
+  "filtered_municipal": 0,
+  "three_field_validation": "1/1 三字段完整",
+  "handoff_note": "基于公开信息的运营期数字化信号：盛虹石化智能工厂+设备健康预测性维护平台"
+ },
+ "top_5_match": [
+  {
+   "signal_id": "IND-20260924-01",
+   "company": "盛虹炼化（连云港）有限公司",
+   "reason": "省级先进级智能工厂+设备健康预测性维护平台持续投入，运营期仪表运维数字化深化机会（公开信息）",
+   "agent_checklist": "线下核实在线分析仪表运维现状与数字化投入规划"
+  }
+ ],
+ "signals": [
+  {
+   "id": "IND-20260924-01",
+   "company": "盛虹炼化（连云港）有限公司",
+   "industry": "石油化工/炼化一体化",
+   "location": "江苏省连云港市徐圩新区石化三路59号（连云港石化产业基地）",
+   "project": "盛虹石化数字化转型深化：1600万吨/年炼化一体化智能工厂（江苏省先进级智能工厂）+设备健康预测性维护平台；2026年6-8月完成全厂例行大检修",
+   "engine": "C",
+   "signal_tier": "Tier 2",
+   "evidence": {
+    "facts": [
+     "注册资本235.45亿元，成立于2014-07-23，江苏盛虹石化产业集团有限公司100%持股（东方盛虹000301子公司），员工约3572人",
+     "1600万吨/年炼油+280万吨/年对二甲苯+110万吨/年乙烯炼化一体化项目，总投资约677亿元，2022年12月28日全面投产，位于国家七大石化基地之一的江苏省连云港市徐圩新区",
+     "盛虹炼化1600万吨炼化一体化智能工厂获评2025年江苏省先进级智能工厂；盛虹石化建成设备健康预测性维护平台、自动化分析实验室，构建AI+大数据+物联网数字化体系",
+     "东方盛虹2026-06-21公告：1600万吨/年炼化一体化项目自6月底起例行性停产检修，净检修期约45天，分炼油/煤气化/氧化衍生物等事业部开展",
+     "集团旗下江苏斯尔邦石化生产装置均配备智能仪表（Modbus RTU通信+PI实时数据库）"
+    ],
+    "inferences": [
+     "石化行业仪表运维数字化趋势明确：大庆石化等已上线仪表运维综合管理平台；盛虹作为省级智能工厂标杆，在线分析仪表运维信息化存在深化空间",
+     "集团设备健康预测性维护平台聚焦设备侧健康，在线分析仪表（水质/在线监测）运维数字化或是同类补位方向"
+    ],
+    "unknowns": [
+     "盛虹炼化在线分析仪表运维现状与信息化覆盖程度（公开信息有限）",
+     "集团数字化平台是否覆盖在线分析仪表及后续采购规划（未公开）",
+     "中项网流传的盛虹二期智能仪表采购意向信息（低可信度来源，真实性待核实）"
+    ]
+   },
+   "potential_ims_use_case": "石化防爆场景水质与在线分析仪表远程集中运维：仪表健康诊断、报警与维修任务闭环、移动端作业（软件辅助仪表运维）",
+   "logic_rationale": "石化炼化一体化运营期 → 行业仪表运维数字化趋势（公开案例）→ 盛虹数字化战略持续投入（智能工厂/设备健康平台）→ 在线分析仪表运维数字化深化机会",
+   "opportunity_stage": "Industrial Signal",
+   "entry_timing": "GOOD",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "2026年6-8月全厂大检修完成（东方盛虹公告），检修后运维数字化与数据归档为自然窗口"
+   },
+   "influence_window": "MEDIUM",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "盛虹数字化战略持续投入（公开），在线分析仪表运维数字化方案/平台选型仍处可影响期"
+   },
+   "estimated_time_window": "2026Q4-2027Q1",
+   "priority": "P2",
+   "water_system_ownership": "B",
+   "incrementality_status": "Existing Facility Modification",
+   "source_urls": [
+    "https://m.qcc.com/firm/2f321b9f99b2615c0cc2fe21fa2e5810.html",
+    "https://www.jsessh.com/cyjg/lhcy/",
+    "https://data.eastmoney.com/notices/detail/000301/AN202606211823708870.html",
+    "http://www.shenghongpec.com/gb2312/xwzx/gsxw/821.html",
+    "http://www.js.xinhuanet.com/20260302/4db1e37714b84f8180f6ed9ced32bdc5/c.html",
+    "http://www.shenghongpec.com/gb2312/xwzx/mtjj/706.html"
+   ],
+   "to_verify": [
+    "盛虹在线分析仪表规模、品牌与运维信息化现状（公开信息有限）",
+    "集团设备健康预测性维护平台是否覆盖在线分析仪表",
+    "2026年3月斯尔邦丙烯腈装置DCS/SIS采购公告（徐圩招字[2026]第021号）真实性（低可信度来源）",
+    "盛虹二期智能仪表采购意向信息真实性（低可信度来源）",
+    "虹港石化等姊妹厂是否有仪表运维数字化采购计划"
+   ],
+   "continuity": {
+    "first_seen": "2026-09-24",
+    "new_facts_today": "全厂大检修完成（东方盛虹公告）",
+    "changed": "new"
+   },
+   "qualification": "WATCH",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 2,
+    "limitations": 3,
+    "leverage": 3,
+    "total": 11
+   },
+   "pull_box": {
+    "project": "盛虹石化数字化转型持续投入：省级先进级智能工厂+设备健康预测性维护平台建成；2026年6-8月完成全厂45天大检修（FACT）",
+    "unavoidable": "集团智改数转战略持续投入（公开），检修后仪表校验/标定/数据归档形成运维数字化自然需求；无强制合规要求（INFERENCE）",
+    "limitations": "石化炼化厂在线分析仪表点位多、防爆区现场作业受限，人工巡检+分散数据是行业普遍现状（INFERENCE）；集团设备健康平台以设备侧为主、仪表侧覆盖未证实（UNKNOWN）",
+    "leverage": "iMS Web+IoT架构配合远程/无线通讯套件可实现水质与在线分析仪表远程集中运维与健康诊断，契合石化防爆场景；与集团设备健康预测性维护平台可形成仪表侧补位（产品能力FACT+行业场景INFERENCE）",
+    "evidence_quality": "MEDIUM",
+    "key_unknown": "盛虹在线分析仪表运维数字化的具体投入计划与平台覆盖范围（未公开）",
+    "next_validation_question": "盛虹集团设备健康预测性维护平台是否覆盖在线分析仪表？仪表运维数字化是否有公开采购或合作计划？"
+   },
+   "evidence_quality": "MEDIUM",
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "盛虹炼化（连云港）有限公司",
+     "owner_role": "炼化一体化运营主体（公开工商信息）",
+     "evaluation": "FACT",
+     "note": "公开注册信息可查"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "owner_role": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "epc": {
+     "name": "N/A",
+     "owner_role": "N/A",
+     "evaluation": "UNKNOWN",
+     "note": "项目2022年已建成运营，运维期"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "owner_role": "未知",
+     "evaluation": "UNKNOWN",
+     "note": "公开信息未披露"
+    },
+    "group_relationship": {
+     "name": "盛虹石化产业集团（斯尔邦石化、虹港石化同园区姊妹厂）",
+     "owner_role": "集团数字化统筹",
+     "evaluation": "FACT",
+     "note": "集团统一推进智改数转与智能工厂建设（公开披露）"
+    },
+    "missing_roles": [
+     "在线分析仪表运维/设备管理部门",
+     "集团数字化部门"
+    ],
+    "next_validation_action": "基于公开渠道核实盛虹在线分析仪表运维现状与数字化投入规划；关注集团采购平台公开信号"
+   },
+   "instrument_evidence": {
+    "hach_evidence": {
+     "status": "UNKNOWN",
+     "note": "公开信息未见哈希仪表/软件装机证据（不排除存在，需线下核实）"
+    },
+    "key_parameters": [
+     "pH",
+     "浊度",
+     "电导率",
+     "温度",
+     "COD（如适用）"
+    ],
+    "parameters_basis": "石化炼化水质/在线分析仪表常规监测参数（行业基准 INFERENCE）",
+    "instrument_quantity_hint": "1600万吨级炼化一体化项目在线仪表点位规模大（行业基准）",
+    "instrument_presence": {
+     "status": "UNKNOWN",
+     "basis": "PUBLIC",
+     "note": "在线分析仪表规模与品牌未公开",
+     "check_points": [
+      "核实在线分析仪表数量与品牌",
+      "确认运维信息化现状"
+     ],
+     "ims_implication": "若确认仪表规模与数字化缺口，iMS具备产品匹配度（待验证）"
+    }
+   },
+   "software_necessity": {
+    "summary": "石化行业仪表运维数字化趋势+盛虹数字化战略投入（公开信息推断），软件辅助仪表运维为可选路径；无公开软件采购证据",
+    "evidence_type": "INFERENCE",
+    "evidence_items": [
+     "石化行业仪表运维综合管理平台公开案例（大庆石化等公开报道）",
+     "盛虹获评省级先进级智能工厂并建成设备健康预测性维护平台（公开披露）",
+     "在线分析仪表运维数字化采购无公开证据（UNKNOWN）"
+    ]
+   },
+   "icp_attempts": [
+    "公司工商与项目信息（企查查/东方盛虹公告/盛虹石化官网/新华网，FACT）",
+    "2026年6月底起45天大检修公告（东方盛虹公告，FACT）",
+    "集团先进级智能工厂与设备健康预测性维护平台（盛虹官网/新华网，FACT）",
+    "斯尔邦2026-03 DCS/SIS采购公告线索（低可信度来源，待核实）"
+   ]
+  }
+ ],
+ "market_background": [
+  "石化行业仪表运维数字化趋势：大庆石化等已上线仪表运维综合管理平台（公开案例）",
+  "盛虹石化获评江苏省先进级智能工厂，建成设备健康预测性维护平台（集团数字化战略，FACT）",
+  "2026年6-8月盛虹炼化一体化全厂大检修完成（东方盛虹公告），检修后数据归档与运维数字化为自然窗口"
+ ],
+ "source_effectiveness": [
+  "公司/项目公开信息（企查查/公告/官网/新华网）"
+ ],
+ "experiment_observations": [
+  "运营期数字化信号雨雷达引擎C可复用公开工具信号"
+ ]
+}
