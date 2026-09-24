@@ -4,6 +4,1009 @@
       "segment": "industrial",
       "category": "化工／材料",
       "date": "2026-09-24",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260924-05",
+        "company": {
+          "company_name": "卫星化学股份有限公司（连云港石化基地，徐圩新区）",
+          "location": "江苏省连云港市徐圩新区连云港石化产业基地",
+          "industry": "石油化工/芳烃"
+        },
+        "project": {
+          "project_name": "连云港石化26万吨/年芳烃联合处理项目设备安装进入冲刺期（徐圩新区管委会2026年报道）；同园区另有亚培烯28亿元项目2026-01-08开工、长华化学58.6亿元项目一期投产，园区新装置集中期",
+          "project_stage": "Tender Monitoring（设备安装冲刺期，采购窗口收窄）"
+        },
+        "signal": {
+          "signal_description": "连云港石化26万吨/年芳烃联合处理项目设备安装进入冲刺期（徐圩新区管委会2026年报道）；同园区另有亚培烯28亿元项目2026-01-08开工、长华化学58.6亿元项目一期投产，园区新装置集中期",
+          "signal_date": "2026-09-24",
+          "evidence": [
+            {
+              "source_url": "http://www.xwxq.gov.cn/xxxq/xwzx2/content/49570cf9-e651-43a2-9315-95d1499d2405.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://www.xwxq.gov.cn/xxxq/xwzx2/content/f885e829-8258-4eb4-82bc-a787dd52b0b7.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260924-05",
+          "company": "卫星化学股份有限公司（连云港石化基地，徐圩新区）",
+          "industry": "石油化工/芳烃",
+          "location": "江苏省连云港市徐圩新区连云港石化产业基地",
+          "project": "连云港石化26万吨/年芳烃联合处理项目设备安装进入冲刺期（徐圩新区管委会2026年报道）；同园区另有亚培烯28亿元项目2026-01-08开工、长华化学58.6亿元项目一期投产，园区新装置集中期",
+          "engine": "B/C",
+          "signal_tier": "Tier 3",
+          "evidence": {
+            "facts": [
+              "徐圩新区官网2026年报道：位***新区的连云港石化26万吨/年芳烃联合处理项目正处于设备安装冲刺期",
+              "亚培烯（连云港）新材料：总***28亿元省重大项目万吨级聚烯烃和烷基芳烃项目2026-01-08开工，一期7.2亿元预计2026年底投产",
+              "长华化学二氧化碳聚醚及高性能多元醇项目（58.6亿元，一期22亿元）2026-03-22投产（徐圩新区官网）",
+              "徐圩新区全国化工园区排名第8位，盛虹石化、连云港石化、中化国际三大龙头'1+4'格局，1-5月规上工业总产值941.3亿元同比+7.2%"
+            ],
+            "inferences": [
+              "园区多家龙头装置处于安装冲刺/投产/开工期，新装置仪表配套+运维数字化需求同频（行业基准INFERENCE）",
+              "卫星化学在园区持续扩能，与盛虹同园区，可作复制性客户案例（INFERENCE）"
+            ],
+            "unknowns": [
+              "连云港石化芳烃联合项目仪表采购状态（安装冲刺期，采购可能已冻结）",
+              "亚培烯/长华化学项目仪表配置与供应商"
+            ]
+          },
+          "potential_ims_use_case": "园区复制策略：以***入经验覆盖卫星化学/亚培烯/长华化学等新装置仪表运维数字化",
+          "logic_rationale": "徐圩园区集中投产潮 → 新装置仪表配套需求密集 → 园区级复制销售策略",
+          "opportunity_stage": "Tender Monitoring（设备安装冲刺期，采购窗口收窄）",
+          "entry_timing": "LATE",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "芳烃联合处理项目设备安装冲刺期，仪表采购大概率已启动/冻结"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "FACT",
+            "note": "园区新装置集中期，运维数字化需求在投产后显现"
+          },
+          "estimated_time_window": "2027",
+          "priority": "P3",
+          "water_system_ownership": "B",
+          "incrementality_status": "New Facility Addition",
+          "source_urls": [
+            "http://www.xwxq.gov.cn/xxxq/xwzx2/content/49570cf9-e651-43a2-9315-95d1499d2405.html",
+            "http://www.xwxq.gov.cn/xxxq/xwzx2/content/f885e829-8258-4eb4-82bc-a787dd52b0b7.html"
+          ],
+          "to_verify": [
+            "连云港石化芳烃项目仪表供应商与运维数字化需求",
+            "亚培烯一期投产后的仪表运维需求",
+            "园区其他新建项目名单"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-24",
+            "new_facts_today": "连云港石化芳烃联合处理设备安装冲刺（徐圩新区官网）",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable": 2,
+            "limitations": 2,
+            "leverage": 3,
+            "total": 9
+          },
+          "pull_box": {
+            "project": "园区新装置集中期：连***化芳烃联合处理安装冲刺+亚培烯/长华化学投产 — FACT",
+            "unavoidable": "新装置必然配套仪表 — FACT；采购窗口可能已过（安装冲刺）",
+            "limitations": "头部企业仪表采购多已冻结或走集采 — UNKNOWN",
+            "leverage": "园区复制策略：盛***案例可横向扩展 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "各项目仪表采购阶段与供应商",
+            "next_validation_question": "连云港石化芳烃项目仪表供应商/运维数字化现状？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "卫星化学-连云港石化基地",
+              "owner_role": "园区龙头运营主体",
+              "evaluation": "FACT",
+              "note": "徐圩新区管委会官网报道"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "未公开"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "group_relationship": {
+              "name": "卫星化学（002648）",
+              "owner_role": "集团统筹",
+              "evaluation": "FACT",
+              "note": "卫星化学为上市公司"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商"
+            ],
+            "next_validation_action": "以盛虹切入园区后横向拓展；跟踪亚培烯一期投产与后续仪控需求"
+          },
+          "instrument_evidence": {
+            "hach_evidence": {
+              "status": "UNKNOWN",
+              "note": "未公开"
+            },
+            "key_parameters": [
+              "pH",
+              "浊度",
+              "电导率",
+              "COD"
+            ],
+            "parameters_basis": "化工工艺水质监测常规参数（行业基准INFERENCE）",
+            "instrument_quantity_hint": "26万吨芳烃联合处理装置中型点位规模（待核实）",
+            "instrument_presence": {
+              "status": "UNKNOWN",
+              "basis": "PUBLIC",
+              "note": "未公开",
+              "check_points": [
+                "安装冲刺期信息有限"
+              ],
+              "ims_implication": "当前采购窗口收窄，重点转投产后运维数字化"
+            }
+          },
+          "software_necessity": {
+            "summary": "新装置仪表配套FACT；运维数字化为投产后需求（INFERENCE）",
+            "evidence_type": "INFERENCE",
+            "evidence_items": [
+              "园区投产潮（公开报道FACT）",
+              "石化行业运维数字化趋势（公开案例）"
+            ]
+          },
+          "icp_attempts": [
+            "徐圩新区管委会官网",
+            "卫星化学公开信息",
+            "园区企业公开招聘信息（长华化学仪表工程师等岗位）"
+          ],
+          "opportunity": "连云港石化26万吨/年芳烃联合处理项目设备安装进入冲刺期（徐圩新区管委会2026年报道）；同园区另有亚培烯28亿元项目2026-01-08开工、长华化学58.6亿元项目一期投产，园区新装置集中期",
+          "time_window_basis": "园区新装置集中期，运维数字化需求在投产后显现",
+          "customer_requirement": "园区新装置集中期：连***化芳烃联合处理安装冲刺+亚培烯/长华化学投产 — FACT",
+          "operational_pain_points": "头部企业仪表采购多已冻结或走集采 — UNKNOWN",
+          "sales_summary": "园区复制策略：盛***案例可横向扩展 — INFERENCE",
+          "customer_need": "新装置必然配套仪表 — FACT；采购窗口可能已过（安装冲刺）",
+          "current_solution": "头部企业仪表采购多已冻结或走集采 — UNKNOWN",
+          "demand_hypothesis": "各项目仪表采购阶段与供应商",
+          "next_validation_questions": "以盛虹切入园区后横向拓展；跟踪亚培烯一期投产与后续仪控需求",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 徐圩新区管委会官网报道",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://www.xwxq.gov.cn/xxxq/xwzx2/content/49570cf9-e651-43a2-9315-95d1499d2405.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260924-05",
+            "lead_id": "IND-20260924-05",
+            "account_id": "ACC-IND-20260924-05",
+            "project_name": "连云港石化26万吨/年芳烃联合处理项目设备安装进入冲刺期（徐圩新区管委会2026年报道）；同园区另有亚培烯28亿元项目2026-01-08开工、长华化学58.6亿元项目一期投产，园区新装置集中期",
+            "owner": "卫星化学股份有限公司（连云港石化基地，徐圩新区）",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "园区新装置集中期：连***化芳烃联合处理安装冲刺+亚培烯/长华化学投产 — FACT"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260924-05",
+            "lead_id": "IND-20260924-05",
+            "account_name": "卫星化学股份有限公司（连云港石化基地，徐圩新区）",
+            "group_name": "",
+            "industry": "石油化工/芳烃",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-24.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "新能源／电池",
+      "date": "2026-09-24",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260924-04",
+        "company": {
+          "company_name": "江苏斯尔邦石化有限公司",
+          "location": "江苏省连云港市徐圩新区",
+          "industry": "石油化工/新能源新材料"
+        },
+        "project": {
+          "project_name": "集团姊妹厂数字化深化：丙***析'黑灯实验室'（集成87台精密分析检测设备，机械手臂替代人工）+3300吨/年丙烯酸衍生物中试项目环评（2026-07）+新材料中试基地项目环评（2026-08）+10万吨POE工业化装置推进",
+          "project_stage": "Industrial Signal（运营期数字化+在建项目）"
+        },
+        "signal": {
+          "signal_description": "集团姊妹厂数字化深化：丙***析'黑灯实验室'（集成87台精密分析检测设备，机械手臂替代人工）+3300吨/年丙烯酸衍生物中试项目环评（2026-07）+新材料中试基地项目环评（2026-08）+10万吨POE工业化装置推进",
+          "signal_date": "2026-09-24",
+          "evidence": [
+            {
+              "source_url": "http://www.xwxq.gov.cn/xxxq/mtbd/content/aa332044-8a1d-41f1-9d39-59c71e929cde.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://shenghongpec.com/gb2312/hbln/hpgs/",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://baike.baidu.com/item/江苏斯尔邦石化有限公司/1489151",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260924-04",
+          "company": "江苏斯尔邦石化有限公司",
+          "industry": "石油化工/新能源新材料",
+          "location": "江苏省连云港市徐圩新区",
+          "project": "集团姊妹厂数字化深化：丙***析'黑灯实验室'（集成87台精密分析检测设备，机械手臂替代人工）+3300吨/年丙烯酸衍生物中试项目环评（2026-07）+新材料中试基地项目环评（2026-08）+10万吨POE工业化装置推进",
+          "engine": "B/C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "新华日报2026-03-16报道：盛***产业集团丙烯腈分析'黑灯实验室'运行，集成87台精密分析检测设备，机械手臂彻底替代人工，自动化工作站实现检测全流程无人化",
+              "斯尔邦石化3300吨/年丙烯酸衍生物中试项目环境影响评价公示（2026-07-15，盛虹石化官网）",
+              "盛虹石化产业集团新材料中试基地项目环评信息公示（2026-08-04，官网）",
+              "斯尔邦石化2026年ESG报告：建*'黑灯实验室'提升检测自动化水平；POE、PETG等工业化装置投产；推进碳捕集利用、核能供汽等绿色低碳项目",
+              "丙烯腈产能104万吨/年（四套装置），2026-09国内50%以上碳纤维企业固定采购其产品；东方盛虹2026上半年净利预增987%-1195%"
+            ],
+            "inferences": [
+              "集团标准化的实验室/检测自动化投入与仪表数字化逻辑相通，在线分析仪表运维数字化存在集团复制空间（INFERENCE）",
+              "中试项目+POE扩产意味着新装置仪表配套持续存在，数字化运营一体规划（INFERENCE）",
+              "斯尔邦为集团化工新材料核心主体，同园区姊妹厂，与盛虹炼化仪控体系可能存在集团统筹（待核实）"
+            ],
+            "unknowns": [
+              "斯尔邦在线分析仪表运维数字化现状与采购规划",
+              "黑灯实验室与在线仪表运维是否联动",
+              "集团数字化平台的仪表侧覆盖"
+            ]
+          },
+          "potential_ims_use_case": "集团姊妹厂在线分析仪表运维数字化：复***炼化切入经验，覆盖丙烯腈/POE装置过程仪表与水质监测",
+          "logic_rationale": "斯尔邦检测自动化投入领先（黑灯实验室FACT）+中试/POE持续扩产 → 仪表侧数字化为自然延伸",
+          "opportunity_stage": "Industrial Signal（运营期数字化+在建项目）",
+          "entry_timing": "GOOD",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "黑灯实验室已运行+新中试项目环评在途，数字化投入窗口开放"
+          },
+          "influence_window": "MEDIUM",
+          "influence_window_evidence": {
+            "source": "FACT",
+            "note": "集团数字化投入持续但斯尔邦具体采购未公开"
+          },
+          "estimated_time_window": "2026Q4-2027Q2",
+          "priority": "P2",
+          "water_system_ownership": "B",
+          "incrementality_status": "Existing Facility Modification",
+          "source_urls": [
+            "http://www.xwxq.gov.cn/xxxq/mtbd/content/aa332044-8a1d-41f1-9d39-59c71e929cde.html",
+            "http://shenghongpec.com/gb2312/hbln/hpgs/",
+            "https://baike.baidu.com/item/江苏斯尔邦石化有限公司/1489151"
+          ],
+          "to_verify": [
+            "斯尔邦仪表运维数字化规划",
+            "黑灯实验室是否延伸至在线仪表",
+            "中试项目仪表配套"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-24",
+            "new_facts_today": "黑灯实验室公开报道+两个中试项目环评公示（均公开）",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 2,
+            "unavoidable": 2,
+            "limitations": 3,
+            "leverage": 4,
+            "total": 11
+          },
+          "pull_box": {
+            "project": "斯尔邦检测自动化深化（黑灯实验室）+中试/POE扩产 — FACT",
+            "unavoidable": "集团智改数转持续投入、检测自动化先行 — FACT，紧迫性中等",
+            "limitations": "仪表运维数字化具体规划未公开 — UNKNOWN",
+            "leverage": "斯尔邦是集团检测自动化标杆，仪表侧数字化可作为集团复制案例 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "斯尔邦在线分析仪表运维数字化规划与采购节奏",
+            "next_validation_question": "斯尔邦在线分析仪表运维由哪个部门负责？黑灯实验室之后仪表侧数字化有无计划？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "江苏斯尔邦石化有限公司",
+              "owner_role": "运营主体（东方盛虹控股子公司）",
+              "evaluation": "FACT",
+              "note": "公开报道+ESG报告确认"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "环评编制单位已公示（南京国环科技），设计院未公开"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "group_relationship": {
+              "name": "东方盛虹（000301）体系",
+              "owner_role": "集团投资/数字化统筹",
+              "evaluation": "FACT",
+              "note": "上市公司公告确认投资主体与集团归属"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商",
+              "仪控/设备管理部门"
+            ],
+            "next_validation_action": "跟踪斯尔邦中试项目环评批复；与盛虹炼化线索联动确认集团仪控统筹模式"
+          },
+          "instrument_evidence": {
+            "hach_evidence": {
+              "status": "UNKNOWN",
+              "note": "未公开"
+            },
+            "key_parameters": [
+              "pH",
+              "浊度",
+              "电导率",
+              "COD",
+              "工艺过程分析"
+            ],
+            "parameters_basis": "化工新材料工艺水质监测常规参数（行业基准INFERENCE）",
+            "instrument_quantity_hint": "丙烯腈/POE装置在线仪表点位规模中-大（待核实）",
+            "instrument_presence": {
+              "status": "UNKNOWN",
+              "basis": "PUBLIC",
+              "note": "未公开",
+              "check_points": [
+                "集团内线性核实"
+              ],
+              "ims_implication": "集团复制路径待验证"
+            }
+          },
+          "software_necessity": {
+            "summary": "检测自动化领先（黑灯实验室FACT），仪表运维数字化延伸为合理推断（INFERENCE），无公开采购证据",
+            "evidence_type": "INFERENCE",
+            "evidence_items": [
+              "黑灯实验室87台精密设备自动化（公开报道）",
+              "集团智改数转战略（FACT）"
+            ]
+          },
+          "icp_attempts": [
+            "新华日报/新华网报道",
+            "盛虹石化官网环评公示",
+            "斯尔邦ESG报告"
+          ],
+          "opportunity": "集团姊妹厂数字化深化：丙***析'黑灯实验室'（集成87台精密分析检测设备，机械手臂替代人工）+3300吨/年丙烯酸衍生物中试项目环评（2026-07）+新材料中试基地项目环评（2026-08）+10万吨POE工业化装置推进",
+          "time_window_basis": "集团数字化投入持续但斯尔邦具体采购未公开",
+          "customer_requirement": "斯尔邦检测自动化深化（黑灯实验室）+中试/POE扩产 — FACT",
+          "operational_pain_points": "仪表运维数字化具体规划未公开 — UNKNOWN",
+          "sales_summary": "斯尔邦是集团检测自动化标杆，仪表侧数字化可作为集团复制案例 — INFERENCE",
+          "customer_need": "集团智改数转持续投入、检测自动化先行 — FACT，紧迫性中等",
+          "current_solution": "仪表运维数字化具体规划未公开 — UNKNOWN",
+          "demand_hypothesis": "斯尔邦在线分析仪表运维数字化规划与采购节奏",
+          "next_validation_questions": "跟踪斯尔邦中试项目环评批复；与盛虹炼化线索联动确认集团仪控统筹模式",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 公开报道+ESG报告确认",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://www.xwxq.gov.cn/xxxq/mtbd/content/aa332044-8a1d-41f1-9d39-59c71e929cde.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260924-04",
+            "lead_id": "IND-20260924-04",
+            "account_id": "ACC-IND-20260924-04",
+            "project_name": "集团姊妹厂数字化深化：丙***析'黑灯实验室'（集成87台精密分析检测设备，机械手臂替代人工）+3300吨/年丙烯酸衍生物中试项目环评（2026-07）+新材料中试基地项目环评（2026-08）+10万吨POE工业化装置推进",
+            "owner": "江苏斯尔邦石化有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "斯尔邦检测自动化深化（黑灯实验室）+中试/POE扩产 — FACT"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260924-04",
+            "lead_id": "IND-20260924-04",
+            "account_name": "江苏斯尔邦石化有限公司",
+            "group_name": "",
+            "industry": "石油化工/新能源新材料",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-24.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-24",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260924-03",
+        "company": {
+          "company_name": "连云港虹科新材料有限公司（东方盛虹三级全资子公司）",
+          "location": "江苏省连云港市徐圩新区（国家东中西区域合作示范区）",
+          "industry": "石油化工/芳烃产业链"
+        },
+        "project": {
+          "project_name": "芳烃产业链提质增效项目：15万吨/年TDI、5万吨/年HDI、30万吨/年PC聚碳酸酯、24万吨/年双酚A、24万吨/年烧碱等共10套关键装置，预计总投资约133.30亿元（2026-04-09签署合作意向协议，投资周期未定）",
+          "project_stage": "Early（合作意向协议阶段，立项/环评筹备中）"
+        },
+        "signal": {
+          "signal_description": "芳烃产业链提质增效项目：15万吨/年TDI、5万吨/年HDI、30万吨/年PC聚碳酸酯、24万吨/年双酚A、24万吨/年烧碱等共10套关键装置，预计总投资约133.30亿元（2026-04-09签署合作意向协议，投资周期未定）",
+          "signal_date": "2026-09-24",
+          "evidence": [
+            {
+              "source_url": "https://www.stcn.com/article/detail/3741285.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://finance.ce.cn/stock/gsgdbd/202604/t20260413_2900683.shtml",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://finance.eastmoney.com/a/202604103701534050.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260924-03",
+          "company": "连云港虹科新材料有限公司（东方盛虹三级全资子公司）",
+          "industry": "石油化工/芳烃产业链",
+          "location": "江苏省连云港市徐圩新区（国家东中西区域合作示范区）",
+          "project": "芳烃产业链提质增效项目：15万吨/年TDI、5万吨/年HDI、30万吨/年PC聚碳酸酯、24万吨/年双酚A、24万吨/年烧碱等共10套关键装置，预计总投资约133.30亿元（2026-04-09签署合作意向协议，投资周期未定）",
+          "engine": "C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "东方盛虹2026-04-09公告：三***子公司连云港虹科新材料与徐圩新区管委会签署《合作意向协议书》，拟投资新建芳烃产业链提质增效项目，总投资约133.30亿元",
+              "建设内容预计包括15万吨/年TDI、5万吨/年HDI、30万吨/年PC、24万吨/年烧碱、24万吨/年双酚A等共10套关键装置，配套光气、合成气等",
+              "虹科新材料成立于2021-12-23，为东方盛虹三级全资子公司；徐圩新区管委会全程协助办理立项、安全、环保等手续",
+              "券商研报（申万宏源2026-09-01）：若***地将向芳烃产业链下游延伸，打开远期成长空间"
+            ],
+            "inferences": [
+              "10套关键装置新建，仪控/在线分析仪表（TDI/HDI/PC/双酚A工艺水质与过程分析）配套需求规模大（行业基准INFERENCE）",
+              "意向协议阶段为最早介入窗口：仪***与设计院未定，可随项目立项同步规划仪表运维数字化"
+            ],
+            "unknowns": [
+              "项目投资周期与开工时间未定",
+              "装置设计院与仪表选型（未公开）",
+              "139亿庞大投资的分期与节奏"
+            ]
+          },
+          "potential_ims_use_case": "新建10套装置仪表配套期前置锁定：过***仪表+水质在线监测+运维数字化整体方案",
+          "logic_rationale": "133.3亿元新建芳烃项目（意向协议已签）→ 10套装置仪表需求规模大 → 立项早期介入窗口",
+          "opportunity_stage": "Early（合作意向协议阶段，立项/环评筹备中）",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "2026-04意向协议签署，投资周期未定，距采购尚有窗口"
+          },
+          "influence_window": "HIGH",
+          "influence_window_evidence": {
+            "source": "FACT",
+            "note": "133.3亿元、10套装置，仪表配套体量大；但项目周期未定存在不确定性"
+          },
+          "estimated_time_window": "2027-2029",
+          "priority": "P2",
+          "water_system_ownership": "B",
+          "incrementality_status": "New Facility Addition",
+          "source_urls": [
+            "https://www.stcn.com/article/detail/3741285.html",
+            "http://finance.ce.cn/stock/gsgdbd/202604/t20260413_2900683.shtml",
+            "https://finance.eastmoney.com/a/202604103701534050.html"
+          ],
+          "to_verify": [
+            "项目立项与环评进展",
+            "设计院与EPC",
+            "仪表采购启动时间"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-24",
+            "new_facts_today": "133.3亿意向协议（东方盛虹公告，公开）",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 3,
+            "unavoidable": 2,
+            "limitations": 2,
+            "leverage": 4,
+            "total": 11
+          },
+          "pull_box": {
+            "project": "芳烃产业链提质增效项目133.3亿元/10套装置（合作意向协议）— FACT",
+            "unavoidable": "新建装置仪表配套刚性需求 — FACT；项目周期未定、紧迫性中等",
+            "limitations": "意向阶段信息有限，设计院/仪表选型未公开 — UNKNOWN",
+            "leverage": "10套装置规模大，立项早期介入可前置整体仪表运维数字化方案 — INFERENCE",
+            "evidence_quality": "MEDIUM",
+            "key_unknown": "项目推进节奏、设计院与仪表选型归属",
+            "next_validation_question": "芳烃项目是否已完成立项/环评？前期设计院定了吗？"
+          },
+          "evidence_quality": "MEDIUM",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "连云港虹科新材料有限公司",
+              "owner_role": "建设单位（东方盛虹三级全资子公司）",
+              "evaluation": "FACT",
+              "note": "上市公司公告确认"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "环评编制单位已公示（南京国环科技），设计院未公开"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "group_relationship": {
+              "name": "东方盛虹（000301）体系",
+              "owner_role": "集团投资/数字化统筹",
+              "evaluation": "FACT",
+              "note": "上市公司公告确认投资主体与集团归属"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商",
+              "仪控/设备管理部门"
+            ],
+            "next_validation_action": "跟踪徐圩新区管委会立项/环评公示；关注东方盛虹后续公告明确投资周期"
+          },
+          "instrument_evidence": {
+            "hach_evidence": {
+              "status": "UNKNOWN",
+              "note": "未公开"
+            },
+            "key_parameters": [
+              "pH",
+              "浊度",
+              "电导率",
+              "COD",
+              "工艺过程分析（视TDI/HDI/PC工艺）"
+            ],
+            "parameters_basis": "芳烃/异氰酸酯工艺水质与过程监测常规参数（行业基准INFERENCE）",
+            "instrument_quantity_hint": "10套装置在线仪表规模大（行业基准，待项目设计）",
+            "instrument_presence": {
+              "status": "UNKNOWN",
+              "basis": "PUBLIC",
+              "note": "新建项目，仪表配置未公开",
+              "check_points": [
+                "立项环评后核对"
+              ],
+              "ims_implication": "早期介入窗口，可前置规划"
+            }
+          },
+          "software_necessity": {
+            "summary": "新建10套装置仪表配套需求FACT；软件辅助仪表运维为可选前置规划（INFERENCE）",
+            "evidence_type": "INFERENCE",
+            "evidence_items": [
+              "10套装置新建（公告FACT）",
+              "集团智改数转战略（FACT）"
+            ]
+          },
+          "icp_attempts": [
+            "东方盛虹公告/证券时报",
+            "中国经济网转载",
+            "申万宏源研报"
+          ],
+          "opportunity": "芳烃产业链提质增效项目：15万吨/年TDI、5万吨/年HDI、30万吨/年PC聚碳酸酯、24万吨/年双酚A、24万吨/年烧碱等共10套关键装置，预计总投资约133.30亿元（2026-04-09签署合作意向协议，投资周期未定）",
+          "time_window_basis": "133.3亿元、10套装置，仪表配套体量大；但项目周期未定存在不确定性",
+          "customer_requirement": "芳烃产业链提质增效项目133.3亿元/10套装置（合作意向协议）— FACT",
+          "operational_pain_points": "意向阶段信息有限，设计院/仪表选型未公开 — UNKNOWN",
+          "sales_summary": "10套装置规模大，立项早期介入可前置整体仪表运维数字化方案 — INFERENCE",
+          "customer_need": "新建装置仪表配套刚性需求 — FACT；项目周期未定、紧迫性中等",
+          "current_solution": "意向阶段信息有限，设计院/仪表选型未公开 — UNKNOWN",
+          "demand_hypothesis": "项目推进节奏、设计院与仪表选型归属",
+          "next_validation_questions": "跟踪徐圩新区管委会立项/环评公示；关注东方盛虹后续公告明确投资周期",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 上市公司公告确认",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "https://www.stcn.com/article/detail/3741285.html"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260924-03",
+            "lead_id": "IND-20260924-03",
+            "account_id": "ACC-IND-20260924-03",
+            "project_name": "芳烃产业链提质增效项目：15万吨/年TDI、5万吨/年HDI、30万吨/年PC聚碳酸酯、24万吨/年双酚A、24万吨/年烧碱等共10套关键装置，预计总投资约133.30亿元（2026-04-09签署合作意向协议，投资周期未定）",
+            "owner": "连云港虹科新材料有限公司（东方盛虹三级全资子公司）",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "芳烃产业链提质增效项目133.3亿元/10套装置（合作意向协议）— FACT"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260924-03",
+            "lead_id": "IND-20260924-03",
+            "account_name": "连云港虹科新材料有限公司（东方盛虹三级全资子公司）",
+            "group_name": "",
+            "industry": "石油化工/芳烃产业链",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-24.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-24",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "IND-20260924-02",
+        "company": {
+          "company_name": "盛虹炼化（连云港）有限公司",
+          "location": "江苏省连云港市徐圩新区国家东中西区域合作示范区石化基地",
+          "industry": "石油化工/炼化一体化"
+        },
+        "project": {
+          "project_name": "延迟焦化优化改造提升项目：200万吨/年焦化原料预处理装置+30万吨/年尾渣气化单元+8000吨/年灰渣资源化单元及配套公用工程，总投资约34.55亿元，建设期2年（2026-04-02 董事会审议通过，环评重新报批公示中）",
+          "project_stage": "Early（环评重新报批公示中）"
+        },
+        "signal": {
+          "signal_description": "延迟焦化优化改造提升项目：200万吨/年焦化原料预处理装置+30万吨/年尾渣气化单元+8000吨/年灰渣资源化单元及配套公用工程，总投资约34.55亿元，建设期2年（2026-04-02 董事会审议通过，环评重新报批公示中）",
+          "signal_date": "2026-09-24",
+          "evidence": [
+            {
+              "source_url": "http://www.cnstock.com/commonDetail/664561",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://www.shenghongpec.com/gb2312/hbln/hpgs/895.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "http://www.shenghongpec.com/gb2312/hbln/hpgs/877.html",
+              "evidence_summary": "原始数据来源"
+            },
+            {
+              "source_url": "https://finance.sina.com.cn/stock/aigc/tzxm/2026-04-02/doc-inhtcnfx9383156.shtml",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "id": "IND-20260924-02",
+          "company": "盛虹炼化（连云港）有限公司",
+          "industry": "石油化工/炼化一体化",
+          "location": "江苏省连云港市徐圩新区国家东中西区域合作示范区石化基地",
+          "project": "延迟焦化优化改造提升项目：200万吨/年焦化原料预处理装置+30万吨/年尾渣气化单元+8000吨/年灰渣资源化单元及配套公用工程，总投资约34.55亿元，建设期2年（2026-04-02 董事会审议通过，环评重新报批公示中）",
+          "engine": "C",
+          "signal_tier": "Tier 2",
+          "evidence": {
+            "facts": [
+              "东方盛虹2026-04-02公告：二***子公司盛虹炼化（连云港）有限公司拟投资34.55亿元建设200万吨/年焦化原料预处理装置及相关配套设施（公告编号2026-023），建设施工期预计2年",
+              "环评重新报批第二次公示（盛虹石化官网）：一*200万吨/年渣油临氢热裂解单元+循环水场/变电所/机柜间等公辅设施；二期30万吨/年尾渣气化单元；另有8000吨/年灰渣资源化单元",
+              "项目用地28200平方米，位于连云港国家东中西区域合作示范区石化基地，建设投资约33.29亿元，自有资金+银行贷款",
+              "2026-08-13盛虹炼化原油增储项目环评第一次公示（扩建性质，南京国环科技），表明炼化主体仍在扩能布局"
+            ],
+            "inferences": [
+              "新建焦化预处理装置含机柜间、变电所等仪表配套工程，新装置仪控/在线分析仪表配置需求明确（行业基准INFERENCE）",
+              "项目处于环评公示阶段，属可影响期：设***仪表选型未定，软件侧（仪表运维数字化）亦可随新装置提前规划"
+            ],
+            "unknowns": [
+              "装置仪表配置清单与设计院（环评单位≠设计院）",
+              "在线分析仪表品牌与运维信息化前期规划（未公开）"
+            ]
+          },
+          "potential_ims_use_case": "新装置仪控配套阶段即可介入：在***仪表点位配置+运维数字化方案前置规划，避免投产后再补装",
+          "logic_rationale": "集团持续扩能（焦化改造+原油增储）+新装置仪表配套需求明确（环评公示机柜间/变电所）→ 环评公示期为切入点",
+          "opportunity_stage": "Early（环评重新报批公示中）",
+          "entry_timing": "EARLY",
+          "entry_timing_evidence": {
+            "source": "FACT",
+            "note": "2026-04公告+环评重新报批公示在途，设计/采购窗口未关闭"
+          },
+          "influence_window": "HIGH",
+          "influence_window_evidence": {
+            "source": "FACT",
+            "note": "34.55亿元新建装置，建设期2年，仪表配套采购体量大且时段集中"
+          },
+          "estimated_time_window": "2026Q4-2027Q4",
+          "priority": "P2",
+          "water_system_ownership": "B",
+          "incrementality_status": "New Facility Addition",
+          "source_urls": [
+            "http://www.cnstock.com/commonDetail/664561",
+            "http://www.shenghongpec.com/gb2312/hbln/hpgs/895.html",
+            "http://www.shenghongpec.com/gb2312/hbln/hpgs/877.html",
+            "https://finance.sina.com.cn/stock/aigc/tzxm/2026-04-02/doc-inhtcnfx9383156.shtml"
+          ],
+          "to_verify": [
+            "环评报告全文公开后核对仪表配置清单",
+            "设计院与EPC归属",
+            "新装置是否规划在线分析仪表集中运维"
+          ],
+          "continuity": {
+            "first_seen": "2026-09-24",
+            "new_facts_today": "环评重新报批公示+34.55亿投资公告（均公开）",
+            "changed": "new"
+          },
+          "qualification": "WATCH",
+          "pull_score": {
+            "project_clarity": 4,
+            "unavoidable": 3,
+            "limitations": 2,
+            "leverage": 4,
+            "total": 13
+          },
+          "pull_box": {
+            "project": "200万吨/年焦化原料预处理装置及配套工程（34.55亿元，环评重新报批公示）— FACT",
+            "unavoidable": "新建装置必须配置机柜间/变电所/仪控系统，仪表配套需求刚性 — FACT（装置建设基准）",
+            "limitations": "环评公示期设计未定型、仪表清单未公开；切入需在仪表选型冻结前 — UNKNOWN",
+            "leverage": "新装置仪表配套从设计阶段介入，iMS可提供在线分析仪表运维数字化前置规划 — INFERENCE",
+            "evidence_quality": "HIGH",
+            "key_unknown": "装置仪表配置清单、设计院与仪表选型时间表",
+            "next_validation_question": "延迟焦化改造项目当前设计院是谁？在线分析仪表选型是否已启动？"
+          },
+          "evidence_quality": "HIGH",
+          "stage3_handoff": {
+            "account_owner": {
+              "name": "盛虹炼化（连云港）有限公司",
+              "owner_role": "建设单位/投资主体",
+              "evaluation": "FACT",
+              "note": "上市公司公告+环评公示公开确认"
+            },
+            "design_institute": {
+              "name": "Unknown",
+              "owner_role": "Unknown",
+              "evaluation": "UNKNOWN",
+              "note": "环评编制单位已公示（南京国环科技），设计院未公开"
+            },
+            "epc": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "EPC未定"
+            },
+            "instrument_integrator": {
+              "name": "Unknown",
+              "owner_role": "N/A",
+              "evaluation": "UNKNOWN",
+              "note": "未确定"
+            },
+            "group_relationship": {
+              "name": "东方盛虹（000301）体系",
+              "owner_role": "集团投资/数字化统筹",
+              "evaluation": "FACT",
+              "note": "上市公司公告确认投资主体与集团归属"
+            },
+            "missing_roles": [
+              "设计院",
+              "EPC",
+              "仪表集成商",
+              "仪控/设备管理部门"
+            ],
+            "next_validation_action": "通过环评公示联系建设单位仲工（公开联系方式139****8333）核实装置仪表配置与设计院；跟踪环评报告全文公开"
+          },
+          "instrument_evidence": {
+            "hach_evidence": {
+              "status": "UNKNOWN",
+              "note": "公开信息未见哈希装机证据（需线下核实）"
+            },
+            "key_parameters": [
+              "pH",
+              "浊度",
+              "电导率",
+              "COD",
+              "含油/含硫指标（焦化装置特性）"
+            ],
+            "parameters_basis": "焦化/炼化装置在线监测常规参数（行业基准INFERENCE）",
+            "instrument_quantity_hint": "新建焦化预处理装置典型在线仪表点位10-30个（行业基准，待设计确认）",
+            "instrument_presence": {
+              "status": "UNKNOWN",
+              "basis": "PUBLIC",
+              "note": "仪表配置未公开",
+              "check_points": [
+                "环评全文公开后核对"
+              ],
+              "ims_implication": "新装置建设期介入窗口清晰"
+            }
+          },
+          "software_necessity": {
+            "summary": "新装置仪表配套需求为FACT；软件辅助仪表运维为设计阶段可选前置项（INFERENCE），采购证据暂无",
+            "evidence_type": "INFERENCE",
+            "evidence_items": [
+              "34.55亿新建装置仪表配套刚性需求（FACT）",
+              "集团智改数转战略持续（FACT）",
+              "石化行业仪表运维数字化公开案例（大庆石化等）"
+            ]
+          },
+          "icp_attempts": [
+            "上市公司公告（东方盛虹2026-023）",
+            "盛虹石化官网环评公示（895/877）",
+            "中商碳素/新浪财经转载公告"
+          ],
+          "opportunity": "延迟焦化优化改造提升项目：200万吨/年焦化原料预处理装置+30万吨/年尾渣气化单元+8000吨/年灰渣资源化单元及配套公用工程，总投资约34.55亿元，建设期2年（2026-04-02 董事会审议通过，环评重新报批公示中）",
+          "time_window_basis": "34.55亿元新建装置，建设期2年，仪表配套采购体量大且时段集中",
+          "customer_requirement": "200万吨/年焦化原料预处理装置及配套工程（34.55亿元，环评重新报批公示）— FACT",
+          "operational_pain_points": "环评公示期设计未定型、仪表清单未公开；切入需在仪表选型冻结前 — UNKNOWN",
+          "sales_summary": "新装置仪表配套从设计阶段介入，iMS可提供在线分析仪表运维数字化前置规划 — INFERENCE",
+          "customer_need": "新建装置必须配置机柜间/变电所/仪控系统，仪表配套需求刚性 — FACT（装置建设基准）",
+          "current_solution": "环评公示期设计未定型、仪表清单未公开；切入需在仪表选型冻结前 — UNKNOWN",
+          "demand_hypothesis": "装置仪表配置清单、设计院与仪表选型时间表",
+          "next_validation_questions": "通过环评公示联系建设单位仲工（公开联系方式139****8333）核实装置仪表配置与设计院；跟踪环评报告全文公开",
+          "jd_inferences": [
+            {
+              "job_title": "下游利益相关方角色（Radar stage3_handoff）",
+              "role_duties": "[业主] FACT: 上市公司公告+环评公示公开确认",
+              "software_need": "",
+              "confidence": "MEDIUM",
+              "source_url": "http://www.cnstock.com/commonDetail/664561"
+            }
+          ]
+        },
+        "enrichment_status": "sales_usable_enriched",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-IND-20260924-02",
+            "lead_id": "IND-20260924-02",
+            "account_id": "ACC-IND-20260924-02",
+            "project_name": "延迟焦化优化改造提升项目：200万吨/年焦化原料预处理装置+30万吨/年尾渣气化单元+8000吨/年灰渣资源化单元及配套公用工程，总投资约34.55亿元，建设期2年（2026-04-02 董事会审议通过，环评重新报批公示中）",
+            "owner": "盛虹炼化（连云港）有限公司",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "200万吨/年焦化原料预处理装置及配套工程（34.55亿元，环评重新报批公示）— FACT"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-IND-20260924-02",
+            "lead_id": "IND-20260924-02",
+            "account_name": "盛虹炼化（连云港）有限公司",
+            "group_name": "",
+            "industry": "石油化工/炼化一体化",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        },
+        {
+          "file": "indctx_latest_jd_2026-09-24.json",
+          "date": "2026-09-24T14:05:16+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "industrial",
+      "category": "化工／材料",
+      "date": "2026-09-24",
       "quality_score": 4,
       "quality_missing": [
         "项目与地区"
@@ -243,11 +1246,11 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -649,7 +1652,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -657,7 +1660,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -845,7 +1848,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -853,7 +1856,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -1046,7 +2049,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -1054,7 +2057,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -1254,7 +2257,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -1262,7 +2265,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -1461,7 +2464,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -1469,7 +2472,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -1662,7 +2665,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -1670,7 +2673,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -1863,7 +2866,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -1871,7 +2874,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -2064,7 +3067,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -2072,7 +3075,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -2264,7 +3267,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -2272,7 +3275,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -2465,7 +3468,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-22.json",
@@ -2473,7 +3476,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -3183,7 +4186,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -3199,7 +4202,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -3942,7 +4945,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -3958,7 +4961,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -4693,7 +5696,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -4709,7 +5712,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -5370,7 +6373,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -5386,7 +6389,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -8303,7 +9306,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -8315,7 +9318,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -8557,7 +9560,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -8569,7 +9572,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -8803,7 +9806,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -8815,7 +9818,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -9057,7 +10060,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -9069,7 +10072,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -9330,7 +10333,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -9342,7 +10345,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -9585,7 +10588,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -9597,7 +10600,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -9830,7 +10833,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -9842,7 +10845,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -10089,7 +11092,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -10101,7 +11104,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -10365,7 +11368,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -10377,7 +11380,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -10632,7 +11635,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -10644,7 +11647,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -10911,7 +11914,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -10923,7 +11926,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -11207,7 +12210,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -11219,7 +12222,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -11420,7 +12423,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -11432,7 +12435,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -11717,7 +12720,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -11729,7 +12732,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -12001,7 +13004,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -12013,7 +13016,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -12285,7 +13288,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -12297,7 +13300,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -12500,7 +13503,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -12512,7 +13515,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -12737,7 +13740,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -12749,7 +13752,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -12968,7 +13971,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -12980,7 +13983,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -13271,7 +14274,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -13283,7 +14286,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -13536,7 +14539,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -13548,7 +14551,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -13802,7 +14805,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -13814,7 +14817,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -14067,7 +15070,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -14079,7 +15082,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -14334,7 +15337,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -14346,7 +15349,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -14599,7 +15602,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-21.json",
@@ -14611,7 +15614,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         }
       ]
     },
@@ -14893,7 +15896,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -14909,7 +15912,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -15150,7 +16153,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -15166,7 +16169,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -19647,7 +20650,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -19663,7 +20666,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -19878,7 +20881,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -19894,7 +20897,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20117,7 +21120,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20133,7 +21136,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20362,7 +21365,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20378,7 +21381,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20623,7 +21626,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20639,7 +21642,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -20873,7 +21876,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -20889,7 +21892,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21101,7 +22104,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21117,7 +22120,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21395,7 +22398,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21411,7 +22414,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -21645,7 +22648,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -21661,7 +22664,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22282,7 +23285,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22298,7 +23301,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22603,7 +23606,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22619,7 +23622,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -22934,7 +23937,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -22950,7 +23953,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23213,7 +24216,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23229,7 +24232,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23522,7 +24525,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23538,7 +24541,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -23804,7 +24807,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -23820,7 +24823,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24100,7 +25103,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24116,7 +25119,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24366,7 +25369,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24382,7 +25385,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24642,7 +25645,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24658,7 +25661,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -24968,7 +25971,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -24984,7 +25987,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25272,7 +26275,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25288,7 +26291,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25495,7 +26498,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25511,7 +26514,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25714,7 +26717,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25730,7 +26733,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -25950,7 +26953,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -25966,7 +26969,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26174,7 +27177,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26190,7 +27193,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26424,7 +27427,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26440,7 +27443,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26705,7 +27708,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26721,7 +27724,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -26929,7 +27932,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -26945,7 +27948,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27133,7 +28136,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27149,7 +28152,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27396,7 +28399,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27412,7 +28415,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27669,7 +28672,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27685,7 +28688,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -27908,7 +28911,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -27924,7 +28927,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28127,7 +29130,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28143,7 +29146,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28360,7 +29363,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28376,7 +29379,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28592,7 +29595,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28608,7 +29611,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -28837,7 +29840,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -28853,7 +29856,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29128,7 +30131,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29144,7 +30147,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29405,7 +30408,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29421,7 +30424,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29705,7 +30708,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29721,7 +30724,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -29966,7 +30969,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -29982,7 +30985,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30220,7 +31223,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30236,7 +31239,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30481,7 +31484,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30497,7 +31500,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30731,7 +31734,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30747,7 +31750,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -30977,7 +31980,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -30993,7 +31996,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31228,7 +32231,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31244,7 +32247,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31448,7 +32451,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31464,7 +32467,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31674,7 +32677,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31690,7 +32693,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -31893,7 +32896,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -31909,7 +32912,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32123,7 +33126,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32139,7 +33142,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32341,7 +33344,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32357,7 +33360,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32610,7 +33613,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32626,7 +33629,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -32910,7 +33913,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -32926,7 +33929,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33180,7 +34183,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33196,7 +34199,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33406,7 +34409,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33422,7 +34425,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33608,7 +34611,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33624,7 +34627,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -33821,7 +34824,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -33837,7 +34840,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34045,7 +35048,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34061,7 +35064,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34247,7 +35250,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34263,7 +35266,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34449,7 +35452,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34465,7 +35468,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34721,7 +35724,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34737,7 +35740,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -34955,7 +35958,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -34971,7 +35974,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35188,7 +36191,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35204,7 +36207,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35445,7 +36448,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35461,7 +36464,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35718,7 +36721,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35734,7 +36737,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -35964,7 +36967,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -35980,7 +36983,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36219,7 +37222,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36235,7 +37238,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36488,7 +37491,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36504,7 +37507,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36709,7 +37712,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36725,7 +37728,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -36932,7 +37935,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -36948,7 +37951,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37172,7 +38175,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -37188,7 +38191,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37631,7 +38634,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -37647,7 +38650,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -37862,7 +38865,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -37878,7 +38881,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -38092,7 +39095,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -38108,7 +39111,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -38342,7 +39345,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -38358,7 +39361,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -38586,7 +39589,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -38602,7 +39605,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39162,7 +40165,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39178,7 +40181,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39467,7 +40470,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39483,7 +40486,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -39802,7 +40805,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -39818,7 +40821,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40267,7 +41270,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40283,7 +41286,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40657,7 +41660,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40673,7 +41676,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -40956,7 +41959,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -40972,7 +41975,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -41358,7 +42361,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -41374,7 +42377,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -42412,7 +43415,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -42428,7 +43431,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -42636,7 +43639,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -42652,7 +43655,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -42859,7 +43862,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -42875,7 +43878,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43077,7 +44080,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43093,7 +44096,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43298,7 +44301,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43314,7 +44317,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43522,7 +44525,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43538,7 +44541,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -43770,7 +44773,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -43786,7 +44789,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44000,7 +45003,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44016,7 +45019,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44229,7 +45232,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44245,7 +45248,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44458,7 +45461,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44474,7 +45477,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44700,7 +45703,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44716,7 +45719,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -44952,7 +45955,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -44968,7 +45971,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -45823,7 +46826,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -45839,7 +46842,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -46204,7 +47207,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -46220,7 +47223,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -46567,7 +47570,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -46583,7 +47586,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -46919,7 +47922,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -46935,7 +47938,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -47339,7 +48342,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -47355,7 +48358,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -47854,7 +48857,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -47870,7 +48873,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -48255,7 +49258,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -48271,7 +49274,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -48681,7 +49684,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -48697,7 +49700,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -48963,7 +49966,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -48979,7 +49982,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -49181,7 +50184,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -49197,7 +50200,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -51486,7 +52489,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -51502,7 +52505,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52216,7 +53219,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52232,7 +53235,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -52549,7 +53552,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -52565,7 +53568,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -53033,7 +54036,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -53049,7 +54052,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -53668,7 +54671,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -53684,7 +54687,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -54453,7 +55456,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -54469,7 +55472,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -54939,7 +55942,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -54955,7 +55958,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -55304,7 +56307,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -55320,7 +56323,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -55640,7 +56643,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -55656,7 +56659,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56052,7 +57055,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56068,7 +57071,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56273,7 +57276,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56289,7 +57292,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56531,7 +57534,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56547,7 +57550,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -56958,7 +57961,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -56974,7 +57977,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -57373,7 +58376,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -57389,7 +58392,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -57737,7 +58740,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -57753,7 +58756,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -58102,7 +59105,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -58118,7 +59121,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -58318,7 +59321,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -58334,7 +59337,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -58703,7 +59706,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -58719,7 +59722,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -59158,7 +60161,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -59174,7 +60177,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -59587,7 +60590,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -59603,7 +60606,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -59806,7 +60809,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -59822,7 +60825,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -60454,7 +61457,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -60470,7 +61473,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -60736,7 +61739,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -60752,7 +61755,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -62630,7 +63633,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -62646,7 +63649,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -63790,7 +64793,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -63806,7 +64809,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -64470,7 +65473,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -64486,7 +65489,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -65080,7 +66083,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -65096,7 +66099,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -67058,7 +68061,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -67074,7 +68077,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -67846,7 +68849,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -67862,7 +68865,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -68695,7 +69698,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -68711,7 +69714,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -69750,7 +70753,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -69766,7 +70769,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -69995,7 +70998,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -70011,7 +71014,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -70241,7 +71244,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -70257,7 +71260,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -70811,7 +71814,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -70827,7 +71830,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
@@ -71229,7 +72232,7 @@
         },
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_jd_2026-09-13.json",
@@ -71245,7 +72248,7 @@
         },
         {
           "file": "indctx_latest_jd_2026-09-24.json",
-          "date": "2026-09-24T13:33:27+08:00"
+          "date": "2026-09-24T14:05:16+08:00"
         },
         {
           "file": "indctx_latest_quality_2026-09-13.json",
