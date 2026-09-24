@@ -1,0 +1,88 @@
+{
+  "contract_version": "v1",
+  "lead_id": "OP-FIXTURE-G-001",
+  "vertical": "municipal",
+  "pipeline_stage": "ENRICHED",
+  "company": "Synthetic Municipal Infrastructure Bureau",
+  "source": {
+    "vertical": "municipal",
+    "source_report_id": "radar-fixture",
+    "source_signal_id": "OP-FIXTURE-G-001"
+  },
+  "evidence": {
+    "facts": [
+      "Government bureau issued RFQ for wastewater treatment upgrades"
+    ],
+    "inferences": [
+      "Infrastructure modernization initiative underway"
+    ],
+    "unknowns": [
+      "Primary decision maker contact information",
+      "Timeline for procurement"
+    ]
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-18T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-18T14:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-19T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-20T10:00:00Z"
+    },
+    {
+      "stage": "ENRICHED",
+      "entered_at": "2026-08-22T10:00:00Z",
+      "notes": "Enrichment complete; some contact roles identified but individuals unknown"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-19T09:00:00Z",
+    "confidence": "MEDIUM"
+  },
+  "enrichment": {
+    "status": "COMPLETED",
+    "company_intelligence": {
+      "legal_name": "Synthetic Municipal Infrastructure Bureau"
+    },
+    "contacts": [
+      {
+        "contact_id": "CT-FIXTURE-G-0001",
+        "name": "UNKNOWN",
+        "company": "Synthetic Municipal Infrastructure Bureau",
+        "title": "UNKNOWN",
+        "department": "Wastewater Management Division",
+        "discovered_by": [
+          "DuMate"
+        ],
+        "sources": [
+          "RFQ document"
+        ],
+        "evidence": [
+          {
+            "type": "PUBLIC_RECORD",
+            "detail": "Wastewater Management Division is responsible for equipment procurement per RFQ",
+            "source": "Government procurement portal"
+          }
+        ],
+        "commercial_relevance_score": 90,
+        "human_verified": false,
+        "verification_status": "PUBLIC_RECORD",
+        "notes": "Role confirmed (manager of Wastewater Management Division is primary decision maker), but individual person identity not yet determined. This is acceptable for a pre-sales research phase."
+      }
+    ],
+    "missing_roles": [
+      "Wastewater management division manager (name/contact required)",
+      "Finance/budget approval authority"
+    ]
+  }
+}

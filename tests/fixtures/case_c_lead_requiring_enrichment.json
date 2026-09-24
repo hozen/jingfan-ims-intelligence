@@ -1,0 +1,66 @@
+{
+  "contract_version": "v1",
+  "lead_id": "OP-FIXTURE-C-001",
+  "vertical": "municipal",
+  "pipeline_stage": "ENRICHMENT",
+  "company": "Synthetic Municipal Water Authority",
+  "source": {
+    "vertical": "municipal",
+    "source_report_id": "radar-fixture",
+    "source_signal_id": "OP-FIXTURE-C-001"
+  },
+  "evidence": {
+    "facts": [
+      "Municipal government issued tender for smart water system upgrade"
+    ],
+    "inferences": [
+      "Upgrade will likely include instrumentation and monitoring"
+    ],
+    "unknowns": [
+      "Specific technologies to be deployed",
+      "Project timeline details"
+    ]
+  },
+  "pipeline_history": [
+    {
+      "stage": "RADAR",
+      "entered_at": "2026-08-20T10:00:00Z"
+    },
+    {
+      "stage": "QUALIFICATION",
+      "entered_at": "2026-08-20T15:00:00Z"
+    },
+    {
+      "stage": "QUALIFIED",
+      "entered_at": "2026-08-21T09:00:00Z"
+    },
+    {
+      "stage": "ENRICHMENT",
+      "entered_at": "2026-08-22T10:00:00Z",
+      "notes": "Started enrichment pass"
+    }
+  ],
+  "qualification": {
+    "decision": "PASS",
+    "decided_at": "2026-08-21T09:00:00Z",
+    "confidence": "MEDIUM"
+  },
+  "enrichment": {
+    "status": "IN_PROGRESS",
+    "company_intelligence": {
+      "legal_name": "Synthetic Municipal Water Authority",
+      "location": "Jiangsu Province, China"
+    },
+    "project_intelligence": [
+      {
+        "project_id": "PRJ-OP-FIXTURE-C-001-01",
+        "name": "Smart Water System Integration 2026",
+        "status": "Tender phase"
+      }
+    ],
+    "enrichment_sources": [
+      "Government procurement portal",
+      "Industry news archive"
+    ]
+  }
+}
