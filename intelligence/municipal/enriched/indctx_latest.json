@@ -1,8 +1,8 @@
 {
  "metadata": {
   "version": "v3.3-master-consolidated",
-  "generated_date": "2026-09-23",
-  "last_update": "2026-09-23T08:52:55+08:00",
+  "generated_date": "2026-09-25",
+  "last_update": "2026-09-25T08:10:14+08:00",
   "description": "iMS Municipal Master Intelligence - Enriched Context (17 municipal leads incl. Pingdingshan, industrial content excluded per scope decision 2026-09-12)",
   "data_sources": [
    "intelligence/municipal/daily/2026-09-02.json",
@@ -17,8 +17,8 @@
    "engine": "collect+merge+apply v1",
    "note": "全量归集历史 daily 至 master；跨日合并保留 history/source_lead_ids；contacts 回填 lead.contact_ids"
   },
-  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-21; 1 added, 25 skipped, 10 pre-window)",
-  "merge_point": "2026-09-23"
+  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-23; 3 added, 19 skipped, 11 pre-window)",
+  "merge_point": "2026-09-25"
  },
  "leads": [
   {
@@ -7828,6 +7828,249 @@
    "account_ids": [
     "ACC-OPS-20260923-RAWA-001"
    ]
+  },
+  {
+   "lead_id": "OPS-20260925-WLMQ-001",
+   "original_signal": {
+    "company": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+    "opportunity": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+    "industry": "市政水务",
+    "opportunity_stage": "初步设计",
+    "priority": 72,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+    "logic": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
+    "to_verify": {
+     "customer_identity": "乌鲁木齐市自来水公司/水务集团是否为Hach客户？SFDC Account是否存在？",
+     "installed_base": "石墩子山水厂现有仪表类型/数量？是否有联网仪表？其他水厂仪表配置情况？",
+     "commercial_history": "历史销售/Opportunity？乌鲁木齐水务是否有在线仪表采购记录？",
+     "ims": "是否已有iMS？是否已有智慧水务平台？是否存在数字化扩展机会？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
+    "demand_hypothesis": "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大型水厂改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。",
+    "contact_hint": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "初步设计招标计划9月20日发布，预计9月30日正式发标。设计周期通常3-6个月，设计阶段仪表选型尚未锁定，施工招标预计2027年Q1。",
+    "source_urls": [
+     "https://ggzy.wlmq.gov.cn/ggzy/jyxx/001001/001001008/20260920/485e8cc3-52fa-41fa-bcf3-4be1081c82a2.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月20日，乌鲁木齐市水务工程建设管理中心发布石墩子山水厂改扩建工程初步设计招标计划，估算投资1620万元（设计费），资金来源为中央预算内资金及地方配套。建设内容：拆除六水厂清水池，新建20万m³/d净水工艺流程及配套设施，新建40万m³/d污泥处理系统，配套建设DN1600原水管线约7.7千米。改扩建后水厂总产能提升至40万m³/d。预计招标公告发布时间为2026年9月30日。来源：乌鲁木齐市公共资源交易中心。"
+     ],
+     "inferences": [
+      "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大型水厂改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
+     "talk_what": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
+     "why_now": "初步设计招标计划已发布但设计尚未开始（预计9月30日发标），仪表选型清单和技术规格均在设计阶段确定——此刻介入可影响技术路线"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-25",
+   "last_updated": "2026-09-25",
+   "source_lead_ids": [
+    "OPS-20260925-WLMQ-001"
+   ],
+   "source_files": [
+    "2026-09-25.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality / Multi-site Management",
+   "next_validation_questions": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
+   "history": [
+    {
+     "date": "2026-09-25",
+     "source_file": "2026-09-25.json",
+     "record_id": "OPS-20260925-WLMQ-001",
+     "name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260925-WLMQ-001"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260925-WLMQ-001"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260925-BNAN-002",
+   "original_signal": {
+    "company": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+    "opportunity": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+    "industry": "市政水务",
+    "opportunity_stage": "初步设计",
+    "priority": 63,
+    "potential_ims_use_case": "Instrument Monitoring / Multi-site Management",
+    "logic": "Customer Change: 农村水厂扩建+220km管网 → Digital Change: 设计批复明确要求传感器部署 → Operational Problem: 多节点监测+统一平台接入 → Instrument/Data Need: 是（已写入批复） → Potential iMS Use Case: Instrument Monitoring / Multi-site Management ✓逻辑链完整",
+    "to_verify": {
+     "customer_identity": "巴南区水务公司/水利局是否为Hach客户？重庆水务集团体系内？",
+     "installed_base": "巴南区现有水厂数量及仪表配置？丰盛镇当前供水设施？",
+     "commercial_history": "重庆水务集团历史销售记录？巴南区同类项目？",
+     "ims": "是否已有iMS？'统一接入实时监控平台'是否已有实施方？",
+     "account_sales": "Account Owner？重庆区域负责人？"
+    },
+    "customer_need": "Customer Change: 农村水厂扩建+220km管网 → Digital Change: 设计批复明确要求传感器部署 → Operational Problem: 多节点监测+统一平台接入 → Instrument/Data Need: 是（已写入批复） → Potential iMS Use Case: Instrument Monitoring / Multi-site Management ✓逻辑链完整",
+    "demand_hypothesis": "该项目虽规模较小（3500m³/d农村水厂），但初步设计批复中明确写入传感器部署要求——这在农村供水项目中较为少见，表明该区域对数字化监测有明确意识。220km管网+5座调蓄设施+4座增压设备的规模意味着多处监测点位。批复中'统一接入实时监控平台'的表述暗示存在或规划中的数据平台。iMS逻辑链：农村水厂扩建+管网延伸→设计已要求传感器→数据采集需求明确→Multi-site Management / Instrument Monitoring用例可建立。规模偏小降低了Score，但信号质量较高（政府批复明确写入传感器）。",
+    "contact_hint": "巴南区水利局项目科负责人；丰盛水厂运营管理方（巴南区水务公司或乡镇水司）",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": "初步设计2026年9月20日批复，施工招标预计2026年Q4-2027年Q1，传感器采购通常随施工合同或单独采购，技术规格在设计图纸阶段确定。",
+    "source_urls": [
+     "https://www.cqbn.gov.cn/zwgk_252/fdzdgknr/zdxm/pzjgxx_1/sjsp/sll/202609/t20260920_16106837.html"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月20日，重庆市巴南区水利局发布《关于巴南区二圣水厂新建工程（一标段）初步设计报告准予行政许可的决定》。工程任务：全面改善丰盛镇供水问题，水厂扩建后总规模3500m³/d，采用一体化膜处理设备。新建DN25-DN300清水输配水管网约220km，新建4座一体化无负压增压设备，5座减压调节池。批复明确要求：在主要供水节点如高位水池、调节池、局部加压设备等位置设置流量、水质监控等传感器，以便今后统一接入实时监控平台。资金来源为政府投资。"
+     ],
+     "inferences": [
+      "该项目虽规模较小（3500m³/d农村水厂），但初步设计批复中明确写入传感器部署要求——这在农村供水项目中较为少见，表明该区域对数字化监测有明确意识。220km管网+5座调蓄设施+4座增压设备的规模意味着多处监测点位。批复中'统一接入实时监控平台'的表述暗示存在或规划中的数据平台。iMS逻辑链：农村水厂扩建+管网延伸→设计已要求传感器→数据采集需求明确→Multi-site Management / Instrument Monitoring用例可建立。规模偏小降低了Score，但信号质量较高（政府批复明确写入传感器）。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "巴南区水利局项目科负责人；丰盛水厂运营管理方（巴南区水务公司或乡镇水司）",
+     "talk_what": "初步设计中传感器选型是否已细化到品牌和型号？'统一接入实时监控平台'是否已有平台方？220km管网沿线的流量/压力监测点位规划？",
+     "why_now": "初步设计刚批复，施工招标尚未启动，传感器技术规格在施工图设计阶段才最终锁定——现在可影响设备选型"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-25",
+   "last_updated": "2026-09-25",
+   "source_lead_ids": [
+    "OPS-20260925-BNAN-002"
+   ],
+   "source_files": [
+    "2026-09-25.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Multi-site Management",
+   "next_validation_questions": "初步设计中传感器选型是否已细化到品牌和型号？'统一接入实时监控平台'是否已有平台方？220km管网沿线的流量/压力监测点位规划？",
+   "history": [
+    {
+     "date": "2026-09-25",
+     "source_file": "2026-09-25.json",
+     "record_id": "OPS-20260925-BNAN-002",
+     "name": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260925-BNAN-002"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260925-BNAN-002"
+   ]
+  },
+  {
+   "lead_id": "OPS-20260925-PLLE-003",
+   "original_signal": {
+    "company": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
+    "opportunity": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
+    "industry": "市政水务",
+    "opportunity_stage": "立项",
+    "priority": 58,
+    "potential_ims_use_case": "Instrument Monitoring / Unknown",
+    "logic": "Customer Change: 新区污水管网新建 → Digital Change: 泵站需流量/液位监测 → Operational Problem: 管网运行监测 → Instrument/Data Need: 部分（泵站有需求，纯管网段有限） → Potential iMS Use Case: Instrument Monitoring（弱）",
+    "to_verify": {
+     "customer_identity": "平乐县住建局/水务公司是否为Hach客户？广西区域Hach覆盖？",
+     "installed_base": "平乐县现有污水管网和泵站仪表配置？",
+     "commercial_history": "平乐县或桂林市历史Hach采购？",
+     "ims": "是否已有iMS或智慧排水平台？",
+     "account_sales": "广西区域Account Owner？"
+    },
+    "customer_need": "Customer Change: 新区污水管网新建 → Digital Change: 泵站需流量/液位监测 → Operational Problem: 管网运行监测 → Instrument/Data Need: 部分（泵站有需求，纯管网段有限） → Potential iMS Use Case: Instrument Monitoring（弱）",
+    "demand_hypothesis": "项目处于立项阶段（建议书批复），投资3803万含管网和泵站。污水管网项目本身iMS相关性中等——管网监测（流量/液位）和泵站自动化有仪表需求，但规模较小。关键信号是'一体化污水加压泵'可能含在线监测仪表。当前处于可研编制前，技术路线和设备清单均未确定。iMS逻辑链：污水管网新建→泵站需流量/液位监测→管网需流量监测点→Instrument Monitoring用例可建立，但逻辑链偏弱（纯管网项目仪表需求有限）。",
+    "contact_hint": "平乐县住房和城乡建设局项目科；可研编制单位（尚未确定）",
+    "estimated_time_window": "6-9 months",
+    "time_window_basis": "项目建议书2026年9月批复，可研编制尚未开始，可研到初步设计通常3-6个月，到施工招标预计6-9个月。",
+    "source_urls": [
+     "http://www.pingle.gov.cn/zfxxgk/zc/bmwj/t28144542.shtml"
+    ],
+    "evidence": {
+     "facts": [
+      "2026年9月，平乐县发展和改革局批复《平乐县同乐新区污水管网建设项目建议书》（平发改投资字〔2026〕52号）。项目业主为平乐县住房和城乡建设局，建设污水管网共计13397米（DN300-DN600 HDPE管12557米+DN200镀锌加压钢管840米），新建1座13000m³/d一体化污水加压泵。投资匡算3803.62万元，资金来源为申请上级资金及地方财政配套。批复要求据此开展可行性研究报告编制。"
+     ],
+     "inferences": [
+      "项目处于立项阶段（建议书批复），投资3803万含管网和泵站。污水管网项目本身iMS相关性中等——管网监测（流量/液位）和泵站自动化有仪表需求，但规模较小。关键信号是'一体化污水加压泵'可能含在线监测仪表。当前处于可研编制前，技术路线和设备清单均未确定。iMS逻辑链：污水管网新建→泵站需流量/液位监测→管网需流量监测点→Instrument Monitoring用例可建立，但逻辑链偏弱（纯管网项目仪表需求有限）。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "平乐县住房和城乡建设局项目科；可研编制单位（尚未确定）",
+     "talk_what": "一体化污水加压泵是否含在线监测仪表选型？管网是否规划流量监测点位？可研是否纳入智慧排水/管网监测内容？",
+     "why_now": "项目建议书刚批复，可研编制尚未开始——技术路线和设备清单均在可研阶段确定"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-25",
+   "last_updated": "2026-09-25",
+   "source_lead_ids": [
+    "OPS-20260925-PLLE-003"
+   ],
+   "source_files": [
+    "2026-09-25.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Unknown",
+   "next_validation_questions": "一体化污水加压泵是否含在线监测仪表选型？管网是否规划流量监测点位？可研是否纳入智慧排水/管网监测内容？",
+   "history": [
+    {
+     "date": "2026-09-25",
+     "source_file": "2026-09-25.json",
+     "record_id": "OPS-20260925-PLLE-003",
+     "name": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-OPS-20260925-PLLE-003"
+   ],
+   "account_ids": [
+    "ACC-OPS-20260925-PLLE-003"
+   ]
   }
  ],
  "projects": [
@@ -9057,6 +9300,45 @@
     "confirmed": false,
     "description": "Multi-site Management / Instrument Health Diagnostics / Digital Operations"
    }
+  },
+  {
+   "project_id": "PRJ-OPS-20260925-WLMQ-001",
+   "lead_id": "OPS-20260925-WLMQ-001",
+   "account_id": "ACC-OPS-20260925-WLMQ-001",
+   "project_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+   "owner": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality / Multi-site Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260925-BNAN-002",
+   "lead_id": "OPS-20260925-BNAN-002",
+   "account_id": "ACC-OPS-20260925-BNAN-002",
+   "project_name": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+   "owner": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Multi-site Management"
+   }
+  },
+  {
+   "project_id": "PRJ-OPS-20260925-PLLE-003",
+   "lead_id": "OPS-20260925-PLLE-003",
+   "account_id": "ACC-OPS-20260925-PLLE-003",
+   "project_name": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
+   "owner": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Unknown"
+   }
   }
  ],
  "accounts": [
@@ -9826,6 +10108,36 @@
    "account_id": "ACC-OPS-20260923-RAWA-001",
    "lead_id": "OPS-20260923-RAWA-001",
    "account_name": "瑞安水务：公用事业一体化改革+智能装备投入+无人水厂试点（可复制数字化路径）",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260925-WLMQ-001",
+   "lead_id": "OPS-20260925-WLMQ-001",
+   "account_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260925-BNAN-002",
+   "lead_id": "OPS-20260925-BNAN-002",
+   "account_name": "重庆巴南区丰盛水厂（二圣水厂）新建工程——初步设计批复含传感器部署",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-OPS-20260925-PLLE-003",
+   "lead_id": "OPS-20260925-PLLE-003",
+   "account_name": "平乐县同乐新区污水管网建设项目——项目建议书批复（立项阶段）",
    "group_name": "",
    "industry": "市政水务",
    "plant_location": "",
@@ -13890,6 +14202,19 @@
     "2026-09-23.json"
    ],
    "notes": "automated merge of radar daily output into enriched master (window after 2026-09-21)"
+  },
+  {
+   "date": "2026-09-25",
+   "version": "radar-daily-merge",
+   "agent": "merge_radar_daily_to_enriched",
+   "action": "incremental radar daily merge",
+   "new_leads_added": 3,
+   "new_contacts_added": 0,
+   "sources": [
+    "2026-09-23.json",
+    "2026-09-25.json"
+   ],
+   "notes": "automated merge of radar daily output into enriched master (window after 2026-09-23)"
   }
  ],
  "policy_intelligence": [
