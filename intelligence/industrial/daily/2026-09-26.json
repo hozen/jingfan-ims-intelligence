@@ -1,0 +1,1045 @@
+{
+  "radar_type": "industrial",
+  "market_segment": "industrial",
+  "report_date": "2026-09-26",
+  "experiment_week": "Week 6+",
+  "scanner_summary": {
+    "engine_a_count": 0,
+    "engine_b_count": 3,
+    "engine_c_count": 5,
+    "handoff_count": 0,
+    "total_signals": 8,
+    "industry_breakdown": {
+      "半导体": 3,
+      "新能源/电池": 3,
+      "石化/化工": 1,
+      "制药": 1
+    },
+    "trigger_breakdown": {
+      "环评公示/审批": 4,
+      "项目公告/投资": 2,
+      "政策法规": 1,
+      "增资扩产": 1
+    },
+    "pull_score_distribution": {
+      "16-20": 0,
+      "11-15": 4,
+      "6-10": 4,
+      "0-5": 0
+    },
+    "search_bias_check": {
+      "early_signal_pct": "75%",
+      "pre_tender_pct": "25%",
+      "tender_pct": "0%",
+      "awarded_pct": "0%",
+      "tender_plus_awarded": "0%",
+      "pass": true
+    },
+    "priority_distribution": {
+      "P1": 0,
+      "P2": 5,
+      "P3": 3,
+      "P3-Lifecycle": 0,
+      "Tender Monitoring": 0
+    },
+    "filtered_municipal": 1,
+    "three_field_validation": "8/8 三字段完整",
+    "rejected_signals": [
+      {
+        "company": "石河子化工新材料产业园",
+        "reason": "VM#3：园区级非具体企业项目",
+        "vm_rule": "VM3"
+      },
+      {
+        "company": "金正大/贵州正磷化工",
+        "reason": "VM#1：大气为主水质弱相关",
+        "vm_rule": "VM1"
+      },
+      {
+        "company": "工业仪表换代周期（政策）",
+        "reason": "VM#3+Policy Signal降级：无具体企业载体",
+        "vm_rule": "VM3+Policy"
+      }
+    ]
+  },
+  "top_5_match": [
+    {
+      "signal_id": "IND-20260926-01",
+      "company": "华虹宏力半导体（无锡三期）",
+      "reason": "12英寸产线建设+废水处理扩建已获环评批复，仪表选型窗口（GOOD/MEDIUM）",
+      "agent_checklist": "通过中电环境确认设计院与仪表选型时间表"
+    },
+    {
+      "signal_id": "IND-20260926-02",
+      "company": "佰维存储/广东芯成汉奇（东莞三期）",
+      "reason": "45亿先进封装扩产+含氟废水/超纯水需求，建设前期（GOOD/MEDIUM）",
+      "agent_checklist": "确认水系统EPC和设计院"
+    },
+    {
+      "signal_id": "IND-20260926-03",
+      "company": "宁德时代（雅安）锂盐生产基地",
+      "reason": "环评第一次公示+十一科技为环评单位+联系人公开（EARLY/HIGH）",
+      "agent_checklist": "联系十一科技确认水系统设计进度"
+    },
+    {
+      "signal_id": "IND-20260926-04",
+      "company": "吴江经开区水质净化有限公司",
+      "reason": "半导体废水预处理线1.5万吨/日，环评编制阶段（EARLY/HIGH）",
+      "agent_checklist": "跟踪环评编制磋商结果确认设计院"
+    },
+    {
+      "signal_id": "IND-20260926-06",
+      "company": "横店集团东磁（10GWh锂电池）",
+      "reason": "19亿锂电池项目+配套污水站物化预处理，环评审批阶段（GOOD/MEDIUM）",
+      "agent_checklist": "跟踪环评批复后设计院启动"
+    }
+  ],
+  "signals": [
+    {
+      "id": "IND-20260926-01",
+      "company": "华虹宏力半导体有限公司（688347.SH/01347.HK）",
+      "industry": "半导体",
+      "location": "江苏无锡新吴区",
+      "project": "无锡三期12英寸特色工艺晶圆产线，月产能5.5万片，总投资69.5亿美元，2026年3月启动建设；废水处理扩建项目已于6月15日获环评批复",
+      "engine": "B+C",
+      "engine_detail": "Engine B（CapEx）+ Engine C（Project Trigger）",
+      "signal_tier": "Tier 1",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "evidence": {
+        "facts": [
+          "9月2日公告增资建设无锡三期，月产能5.5万片12英寸晶圆",
+          "华虹半导体制造（无锡）废水处理扩建项目6月15日获无锡市数据局环评批复（2601-320214-89-05-533828）",
+          "江苏中电创新环境科技已中标华虹无锡纯水/生产废水处理集成系统项目",
+          "HJ 945.4-2026工业园区污水集中处理设施排放标准9月1日实施"
+        ],
+        "inferences": [
+          "先进制程对超纯水需求倍增，水系统已成为产能节拍制约因素",
+          "三期产线设备安装阶段仍有仪表选型窗口"
+        ],
+        "unknowns": [
+          "三期产线水系统仪表选型是否已完成",
+          "中电环境集成系统包含哪些品牌仪表",
+          "设计院身份未公开"
+        ]
+      },
+      "potential_ims_use_case": "超纯水水质监测、废水排放合规监测、含氟废水处理效率监测",
+      "logic": "半导体制造→超纯水需求+含氟废水处理→水质仪表+iMS运维数字化需求",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "产线2026年3月启动建设，当前处于设备安装阶段"
+      },
+      "influence_window": "MEDIUM",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "纯水/废水集成系统已由中电环境中标但仪表规格可能尚未全部冻结"
+      },
+      "estimated_time_window": "2026Q4-2027Q2",
+      "priority": "P2",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://m.sohu.com/a/1078629197_122519460/",
+        "https://m.bidcenter.com.cn/news-17-423318985.html",
+        "https://m.bidizhaobiao.com/info-788147351.html",
+        "https://www.ajudaily.com/view/20260902111270235"
+      ],
+      "to_verify": [
+        "设计院身份",
+        "仪表选型时间表",
+        "中电环境集成系统仪表品牌"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "废水处理扩建项目环评批复+中电环境中标确认",
+        "changed": "new"
+      },
+      "pull_score": 15,
+      "pull_box": {
+        "P": {
+          "text": "新建12英寸特色工艺产线+废水处理扩建项目已获环评批复",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "半导体制造对超纯水是Must-have，HJ 945.4-2026新标准刚实施",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "三期扩建需新增/扩建水系统，现有厂区已有SCADA但覆盖范围待验证",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "L_leverage": {
+          "text": "iMS可监测超纯水水质、废水排放合规，但需验证现有SCADA覆盖度",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 15,
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "三期产线的水系统仪表选型是否已完成？中电环境的集成系统包含哪些品牌仪表？",
+        "next_validation_question": "三期项目的水系统设计院是谁？仪表选型清单是否已冻结？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "华虹宏力半导体有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "epc": {
+          "name": "江苏中电创新环境科技（纯水/废水集成系统已中标）",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "设计院",
+          "仪表集成商",
+          "厂务仪表负责人"
+        ],
+        "next_validation_action": "通过中电环境或无锡市数据局环评批复文件确认设计院与仪表选型时间表"
+      }
+    },
+    {
+      "id": "IND-20260926-02",
+      "company": "深圳佰维存储科技股份有限公司（688525.SH）/广东芯成汉奇半导体技术有限公司",
+      "industry": "半导体",
+      "location": "广东东莞松山湖高新区",
+      "project": "晶圆级先进封测制造项目三期，总投资约45亿元（固定资产40亿元），不新增用地在原项目基础上扩产",
+      "engine": "B+C",
+      "engine_detail": "Engine B（CapEx）+ Engine C（Project Trigger）",
+      "signal_tier": "Tier 1",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "evidence": {
+        "facts": [
+          "9月22日公告与东莞松山湖管委会签订三期合作协议，总投资45亿元",
+          "项目覆盖2.5D/RDL/Fan-in/Fan-out等先进封装，2026年底月产能5000片，2027年底10000片/月",
+          "佰维存储厂务招聘显示已有UPW超纯水系统和废水处理系统（酸碱/含氟/研磨/有机废水）岗位",
+          "HJ 945.4-2026新标准9月1日实施"
+        ],
+        "inferences": [
+          "三期扩产将带来新增水系统需求，含氟废水处理是关键合规环节",
+          "先进封装对超纯水依赖度极高"
+        ],
+        "unknowns": [
+          "三期扩产的新增水系统规模",
+          "是否沿用一二期水系统供应商",
+          "水系统EPC和设计院未公开"
+        ]
+      },
+      "potential_ims_use_case": "超纯水水质监测、含氟废水排放合规监测、废水处理效率监测",
+      "logic": "先进封装扩产→超纯水+含氟废水需求→水质仪表+iMS运维数字化需求",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "项目刚签约（9/22），建设前期"
+      },
+      "influence_window": "MEDIUM",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "不新增用地在原基础上扩产，设备安装阶段有仪表选型窗口"
+      },
+      "estimated_time_window": "2026Q4-2029Q4",
+      "priority": "P2",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://m.sohu.com/a/1079829994_122519460/",
+        "https://www.cls.cn/detail/2490401",
+        "https://m.jobui.com/company/13246012/salary/j/changwu/"
+      ],
+      "to_verify": [
+        "水系统EPC",
+        "设计院",
+        "仪表选型清单"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "三期45亿投资公告+厂务水系统岗位确认",
+        "changed": "new"
+      },
+      "pull_score": 14,
+      "pull_box": {
+        "P": {
+          "text": "增资45亿扩建晶圆级先进封测产线",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "先进封装对超纯水依赖极高，含氟废水必须达标",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "已有厂务团队管理UPW和废水处理系统",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "L_leverage": {
+          "text": "iMS可监测超纯水/含氟废水水质，但仪表选型通常由水系统EPC统筹",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 14,
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "三期扩产的新增水系统规模？是否沿用一二期水系统供应商？",
+        "next_validation_question": "三期项目的水系统设计是否已启动？沿用哪个EPC？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "佰维存储/广东芯成汉奇",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "通过佰维存储厂务招聘信息或投资者关系渠道确认水系统EPC和设计院"
+      }
+    },
+    {
+      "id": "IND-20260926-03",
+      "company": "宁德时代（雅安）新材料科技有限公司（宁德时代300750全资子公司）",
+      "industry": "新能源/锂电材料",
+      "location": "四川雅安经济开发区永兴工业区",
+      "project": "年产约4万吨碳酸锂、3万吨磷酸二氢锂及13万吨元明粉，总投资14亿元，占地约350亩",
+      "engine": "C",
+      "engine_detail": "Engine C（Project Trigger：项目备案/环评第一次公示）",
+      "signal_tier": "Tier 1",
+      "opportunity_stage": "Industrial Signal",
+      "evidence": {
+        "facts": [
+          "9月17日雅安经开区发布环评第一次公示",
+          "环评单位为信息产业电子第十一设计研究院（十一科技）",
+          "联系人刘帅15181050698，邮箱liushuai06@CATL.com",
+          "总投资14亿元，占地约350亩"
+        ],
+        "inferences": [
+          "锂盐生产属高盐高废水工艺，废水排放合规是硬约束"
+        ],
+        "unknowns": [
+          "项目尚在环评第一次公示，工艺废水方案未定",
+          "建设周期和预计投产时间未披露",
+          "水系统设计方案未知"
+        ]
+      },
+      "potential_ims_use_case": "生产废水水质监测、盐水废水排放合规监测",
+      "logic": "锂盐生产→高盐高废水→废水排放合规→水质仪表+iMS需求",
+      "entry_timing": "EARLY",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评第一次公示阶段，方案完全未冻结"
+      },
+      "influence_window": "HIGH",
+      "influence_window_evidence": {
+        "source": "FACT",
+        "note": "环评第一次公示阶段，方案和规格完全尚未冻结"
+      },
+      "estimated_time_window": "2027-2028",
+      "priority": "P2",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.cpnn.com.cn/news/hg/202609/t20260918_1916250_wap.html",
+        "https://finance.sina.com.cn/jjxw/2026-09-17/doc-iniscqyc0335280.shtml",
+        "https://www.yaan.gov.cn/search.html?q=生态&page=7"
+      ],
+      "to_verify": [
+        "工艺废水类型",
+        "水系统设计方案",
+        "十一科技是否负责水系统设计"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "环评第一次公示+十一科技为环评单位+联系人公开",
+        "changed": "new"
+      },
+      "pull_score": 10,
+      "pull_box": {
+        "P": {
+          "text": "新建年产4万吨碳酸锂+3万吨磷酸二氢锂生产线",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "锂盐生产废水排放合规是硬约束",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "环评刚第一次公示，现有解决方案未知",
+          "confidence": "LOW",
+          "evidence_label": "UNKNOWN"
+        },
+        "L_leverage": {
+          "text": "iMS可监测生产废水水质，但锂盐行业水质监测需求强度待验证",
+          "confidence": "LOW",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 10,
+        "evidence_quality": "LOW",
+        "key_unknown": "锂盐生产的具体工艺废水类型和处理方案？",
+        "next_validation_question": "项目水系统设计何时启动？十一科技是否负责水系统设计？"
+      },
+      "evidence_quality": "LOW",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "宁德时代（雅安）新材料科技有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "信息产业电子第十一设计研究院（十一科技）",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "联系十一科技确认水系统设计进度和仪表选型窗口；联系人刘帅15181050698"
+      }
+    },
+    {
+      "id": "IND-20260926-04",
+      "company": "苏州市吴江经开区水质净化有限公司",
+      "industry": "半导体/工业废水处理",
+      "location": "江苏苏州吴江经开区",
+      "project": "水质净化厂新增半导体废水预处理线，新建日处理工业废水1.5万吨",
+      "engine": "B",
+      "engine_detail": "Engine B（CapEx：新建工业废水处理设施）",
+      "signal_tier": "Tier 1",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "evidence": {
+        "facts": [
+          "9月16日发布环评编制竞争性磋商公告",
+          "9月17日发布施工资格预审公告",
+          "HJ 945.4-2026工业园区污水集中处理设施排放标准9月1日实施",
+          "吴江经开区是半导体产业集聚区"
+        ],
+        "inferences": [
+          "半导体废水分质处理（含氟/含铜/有机）需要精细水质监测",
+          "园区集中处理设施需要进出水水质监测"
+        ],
+        "unknowns": [
+          "半导体废水预处理线的工艺设计和水质监测点位配置",
+          "环评编制单位待确定",
+          "施工EPC待确定"
+        ]
+      },
+      "potential_ims_use_case": "废水处理进出水水质监测、半导体废水分质处理监测",
+      "logic": "半导体园区废水集中处理→分质处理需求→水质仪表+iMS需求",
+      "entry_timing": "EARLY",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评编制磋商阶段，方案未冻结"
+      },
+      "influence_window": "HIGH",
+      "influence_window_evidence": {
+        "source": "FACT",
+        "note": "环评编制阶段，方案和规格尚未冻结"
+      },
+      "estimated_time_window": "2027-2028",
+      "priority": "P2",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.wujiang.gov.cn/zgwj/xezbxx/202609/3cc7cc1aef264cd6a35f92b364118792.shtml",
+        "http://jsggzy.jszwfw.gov.cn/jyxx/003001/003001001/20260917/a1b9cb7e-1c59-4d59-adb5-e0a7caa24f64.html"
+      ],
+      "to_verify": [
+        "环评编制单位",
+        "施工EPC",
+        "工艺设计方案"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "环评编制磋商+施工资格预审公告",
+        "changed": "new"
+      },
+      "pull_score": 11,
+      "pull_box": {
+        "P": {
+          "text": "新增半导体废水预处理线，日处理1.5万吨",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "HJ 945.4-2026新标准刚实施，园区集中处理设施必须升级",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "园区集中处理设施通常已有SCADA，但半导体废水精细监测可能不足",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "L_leverage": {
+          "text": "iMS可监测废水处理各环节水质，但园区设施通常已有自动化系统",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 11,
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "半导体废水预处理线的工艺设计和水质监测点位配置？",
+        "next_validation_question": "环评编制完成后，水处理工艺设计是否包含在线水质仪表？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "苏州市吴江经开区水质净化有限公司",
+          "owner_role": "建设单位",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "跟踪环评编制磋商结果，确认设计院和工艺方案"
+      }
+    },
+    {
+      "id": "IND-20260926-05",
+      "company": "百奥泰生物药业（广州）有限公司（百奥泰688177.SH）",
+      "industry": "制药/生物制药",
+      "location": "广东广州",
+      "project": "百奥泰永和创新产业基地一期，扩建西林瓶冻干制剂（ADC）生产线从150万瓶/年到480万瓶/年",
+      "engine": "C",
+      "engine_detail": "Engine C（Project Trigger：环评第一次公示）",
+      "signal_tier": "Tier 2",
+      "opportunity_stage": "Industrial Signal",
+      "evidence": {
+        "facts": [
+          "9月7日发布环评第一次公示",
+          "涉及生产废水（器具清洗、包装容器清洗），排入永和水质净化厂",
+          "环评单位为广州市灏瀚环保科技有限公司",
+          "扩建ADC冻干制剂生产线至480万瓶/年"
+        ],
+        "inferences": [
+          "生物制药废水需预处理达标后排入市政污水管网"
+        ],
+        "unknowns": [
+          "项目是否配套自建污水处理站",
+          "扩建后废水量增加多少",
+          "现有解决方案未知"
+        ]
+      },
+      "potential_ims_use_case": "制药废水水质监测、废水排放合规监测",
+      "logic": "生物制药扩产→生产废水增加→废水排放合规→水质仪表需求",
+      "entry_timing": "EARLY",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评第一次公示阶段"
+      },
+      "influence_window": "HIGH",
+      "influence_window_evidence": {
+        "source": "FACT",
+        "note": "环评第一次公示阶段，方案未冻结"
+      },
+      "estimated_time_window": "2027-2028",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://www.bio-thera.com/col_24/1473.html"
+      ],
+      "to_verify": [
+        "是否配套自建污水处理站",
+        "废水量增量",
+        "水系统设计"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "环评第一次公示+ADC生产线扩建",
+        "changed": "new"
+      },
+      "pull_score": 8,
+      "pull_box": {
+        "P": {
+          "text": "扩建ADC冻干制剂生产线至480万瓶/年",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "制药废水排放合规要求",
+          "confidence": "MEDIUM",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "现有解决方案未知",
+          "confidence": "LOW",
+          "evidence_label": "UNKNOWN"
+        },
+        "L_leverage": {
+          "text": "iMS可监测制药废水水质，但需求强度中等",
+          "confidence": "LOW",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 8,
+        "evidence_quality": "LOW",
+        "key_unknown": "项目是否配套自建污水处理站？",
+        "next_validation_question": "扩建后废水量增加多少？是否需要新增在线监测？"
+      },
+      "evidence_quality": "LOW",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "百奥泰生物药业（广州）有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "广州市灏瀚环保科技（环评单位）",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "跟踪环评进度，确认是否配套自建污水处理站"
+      }
+    },
+    {
+      "id": "IND-20260926-06",
+      "company": "横店集团东磁股份有限公司（002056.SZ）",
+      "industry": "新能源/锂电池",
+      "location": "浙江金华东阳横店镇",
+      "project": "年产10GWh全极耳新型高效锂电池项目，总投资19亿元，环保投资665万元",
+      "engine": "B",
+      "engine_detail": "Engine B（CapEx：新建锂电池产线）",
+      "signal_tier": "Tier 2",
+      "opportunity_stage": "Potential Industrial Opportunity",
+      "evidence": {
+        "facts": [
+          "9月15日金华市生态环境局东阳分局发布环评审批公示",
+          "项目配套污水站物化预处理，后排入光伏园区综合污水处理站",
+          "环评单位为金华市环科环境技术有限公司",
+          "总投资19亿元，环保投资665万元"
+        ],
+        "inferences": [
+          "锂电池生产涉及NMP废水、清洗废水，水质监测有需求"
+        ],
+        "unknowns": [
+          "污水站物化预处理的设计方案和监测点位配置",
+          "水系统EPC未公开"
+        ]
+      },
+      "potential_ims_use_case": "废水处理进出水水质监测、NMP废水处理监测",
+      "logic": "锂电池生产→NMP/清洗废水→废水处理合规→水质仪表需求",
+      "entry_timing": "GOOD",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "环评审批阶段，项目处于设计/建设前期"
+      },
+      "influence_window": "MEDIUM",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "环评刚审批，水系统设计可能尚未启动"
+      },
+      "estimated_time_window": "2027-2028",
+      "priority": "P2",
+      "water_system_ownership": "A",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "http://www.dongyang.gov.cn/col/col1229326206/art/2026/art_4cb7ccfce6d54cefac39cee73adfa1ca.html",
+        "https://app.myzaker.com/news/article.php?pk=6ab65a77b15ec00c21158618"
+      ],
+      "to_verify": [
+        "污水站工艺设计",
+        "水系统EPC",
+        "监测点位配置"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "环评审批公示+污水站物化预处理确认",
+        "changed": "new"
+      },
+      "pull_score": 11,
+      "pull_box": {
+        "P": {
+          "text": "新建10GWh锂电池产线+配套污水站物化预处理",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "锂电池废水排放合规要求",
+          "confidence": "MEDIUM",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "配套污水站物化预处理，但监测覆盖度待验证",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "L_leverage": {
+          "text": "iMS可监测废水水质，但锂电池行业水质监测需求弱于半导体",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 11,
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "污水站物化预处理的设计方案和监测点位配置？",
+        "next_validation_question": "环评批复后水系统设计何时启动？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "横店集团东磁股份有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "金华市环科环境技术（环评单位）",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "跟踪环评批复后设计院启动情况，确认污水站工艺设计"
+      }
+    },
+    {
+      "id": "IND-20260926-07",
+      "company": "淄博鑫泰石化有限公司",
+      "industry": "石化/化工",
+      "location": "山东淄博凤凰镇",
+      "project": "260万吨/年深度脱芳烃装置产品优化调整项目",
+      "engine": "B",
+      "engine_detail": "Engine B（CapEx：石化装置技改）",
+      "signal_tier": "Tier 2",
+      "opportunity_stage": "Industrial Signal",
+      "evidence": {
+        "facts": [
+          "山东省生态环境厅9月17日批复",
+          "项目涉及敬仲污水处理厂进水水质要求",
+          "须健全完善废气、废水、土壤和地下水监测管理体系"
+        ],
+        "inferences": [
+          "石化行业通常已有完善的DCS/SCADA系统",
+          "项目已批复进入设计/施工阶段"
+        ],
+        "unknowns": [
+          "具体水系统仪表配置",
+          "现有监测系统覆盖度"
+        ]
+      },
+      "potential_ims_use_case": "污水处理进出水水质监测、排放合规监测",
+      "logic": "石化装置技改→废水处理要求→监测管理体系→水质仪表需求（弱）",
+      "entry_timing": "LATE",
+      "entry_timing_evidence": {
+        "source": "FACT",
+        "note": "省厅已批复，进入设计/施工阶段"
+      },
+      "influence_window": "LOW",
+      "influence_window_evidence": {
+        "source": "INFERENCE",
+        "note": "省厅已批复，方案基本已定，只能参与已形成采购"
+      },
+      "estimated_time_window": "2026Q4-2027",
+      "priority": "P3",
+      "water_system_ownership": "B",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "http://xxgk.sdein.gov.cn/zfwj/lhs/202609/t20260918_4995075.html"
+      ],
+      "to_verify": [
+        "水系统仪表配置",
+        "现有SCADA覆盖度"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "省厅批复+监测管理体系要求",
+        "changed": "new"
+      },
+      "pull_score": 10,
+      "pull_box": {
+        "P": {
+          "text": "260万吨/年深度脱芳烃装置产品优化调整，省厅9月17日批复",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "石化工业排放标准合规，监测管理体系要求",
+          "confidence": "MEDIUM",
+          "evidence_label": "FACT"
+        },
+        "L_limitations": {
+          "text": "项目涉及敬仲污水处理厂进水水质要求",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "L_leverage": {
+          "text": "iMS可监测污水处理进出水水质，但石化行业通常已有完善的DCS/SCADA",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "pull_score": 10,
+        "evidence_quality": "MEDIUM",
+        "key_unknown": "具体水系统仪表配置？现有SCADA覆盖度？",
+        "next_validation_question": "项目水系统设计是否已完成？仪表采购清单是否已定？"
+      },
+      "evidence_quality": "MEDIUM",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "淄博鑫泰石化有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "通过省厅批复文件确认设计院和EPC"
+      }
+    },
+    {
+      "id": "IND-20260926-08",
+      "company": "内蒙古翔福新能源有限公司（中国旭阳集团子公司）",
+      "industry": "新能源/锂电负极材料",
+      "location": "内蒙古",
+      "project": "旭阳增资翔福新能源，已建8万吨+在建20万吨一体化产能，石墨化工序属高废水",
+      "engine": "C",
+      "engine_detail": "Engine C（Organization/Investment Trigger）",
+      "signal_tier": "Tier 3",
+      "opportunity_stage": "Industrial Signal",
+      "evidence": {
+        "facts": [
+          "9月23日旭阳集团与翔福新能源签署增资协议",
+          "已建成8万吨一体化产能（石墨化约10万吨），在建20万吨",
+          "石墨化工序属典型高耗能高废水工序"
+        ],
+        "inferences": [
+          "负极材料一体化扩产可能带来废水处理需求"
+        ],
+        "unknowns": [
+          "无具体水系统建设证据",
+          "无环评公示信息",
+          "水处理方案完全未知"
+        ]
+      },
+      "potential_ims_use_case": "石墨化废水处理水质监测（待验证）",
+      "logic": "负极材料扩产→石墨化高废水→废水处理需求（待验证）",
+      "entry_timing": "UNKNOWN",
+      "entry_timing_evidence": {
+        "source": "UNKNOWN",
+        "note": "无环评或项目设计信息"
+      },
+      "influence_window": "NONE",
+      "influence_window_evidence": {
+        "source": "UNKNOWN",
+        "note": "无水系统建设证据，无法判断影响窗口"
+      },
+      "estimated_time_window": "Unknown",
+      "priority": "P3",
+      "water_system_ownership": "D",
+      "incrementality_status": "unknown",
+      "source_urls": [
+        "https://m.sohu.com/a/1080362941_122519460/"
+      ],
+      "to_verify": [
+        "是否有环评公示",
+        "水系统建设计划",
+        "废水类型和规模"
+      ],
+      "continuity": {
+        "first_seen": "2026-09-26",
+        "new_facts_today": "旭阳增资翔福新能源公告",
+        "changed": "new"
+      },
+      "pull_score": 7,
+      "pull_box": {
+        "P": {
+          "text": "旭阳增资翔福新能源，已建8万吨+在建20万吨一体化产能",
+          "confidence": "HIGH",
+          "evidence_label": "FACT"
+        },
+        "U": {
+          "text": "石墨化工序属典型高耗能高废水工序",
+          "confidence": "MEDIUM",
+          "evidence_label": "INFERENCE"
+        },
+        "L_limitations": {
+          "text": "无具体水系统建设证据",
+          "confidence": "LOW",
+          "evidence_label": "UNKNOWN"
+        },
+        "L_leverage": {
+          "text": "iMS可监测石墨化废水水质，但需求强度完全待验证",
+          "confidence": "LOW",
+          "evidence_label": "UNKNOWN"
+        },
+        "pull_score": 7,
+        "evidence_quality": "LOW",
+        "key_unknown": "是否有环评公示？水系统建设计划？",
+        "next_validation_question": "翔福新能源在建20万吨产能的环评是否已公示？"
+      },
+      "evidence_quality": "LOW",
+      "stage3_handoff": {
+        "account_owner": {
+          "name": "内蒙古翔福新能源有限公司",
+          "owner_role": "项目建设方",
+          "evaluation": "FACT",
+          "note": ""
+        },
+        "design_institute": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "epc": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "instrument_integrator": {
+          "name": "Unknown",
+          "evaluation": "UNKNOWN",
+          "note": ""
+        },
+        "missing_roles": [
+          "设计院",
+          "EPC",
+          "仪表集成商"
+        ],
+        "next_validation_action": "搜索翔福新能源环评公示信息，确认水系统建设计划"
+      }
+    }
+  ],
+  "market_background": {
+    "ecological_environment_code": "《生态环境法典》2026年8月15日施行，重点排污单位概念整合入排污许可重点管理",
+    "new_standards": "HJ 945.4-2026工业园区污水集中处理设施排放标准9月1日实施；GB 4287-2026纺织工业水污染物排放标准9月1日实施",
+    "instrument_replacement": "工信部工业设备更新专项行动，化工等重点行业仪表数字化改造，存量替换市场超420亿元",
+    "policy_signal_note": "政策/标准类信号归入Market Background，不作为独立线索"
+  },
+  "source_effectiveness": {
+    "government_websites": "高：环评公示/审批公示提供具体项目、建设单位、环评单位等关键信息",
+    "company_announcements": "高：上交所/深交所公告提供投资规模、产能规划等FACT级证据",
+    "industry_media": "中：行业媒体提供水处理需求推断但可信度较低",
+    "recruitment_info": "中：厂务招聘信息可佐证水系统岗位存在但非直接项目证据"
+  },
+  "experiment_observations": {
+    "municipal_vs_industrial_differentiation": "本次扫描过滤1条市政信号（湖北汉川市城区污水处理厂EPC）。工业信号与市政信号边界清晰：工业信号聚焦具体企业/工厂的水系统需求，市政信号为城区污水处理厂/供水管网项目",
+    "demand_learning_summary": "半导体行业'新建Fab→超纯水+含氟废水→合规驱动'需求模式再次确认。HJ 945.4-2026新标准是重要forcing function。宁德时代雅安项目联系人完全公开是罕见的高质量Lead。",
+    "repeatable_demand_signals": [
+      {
+        "pattern": "半导体Fab新建/扩建→超纯水系统+含氟废水处理→合规驱动→水质仪表+iMS需求",
+        "evidence_count": 3,
+        "examples": [
+          "华虹无锡三期",
+          "佰维存储东莞三期",
+          "吴江经开区半导体废水预处理"
+        ]
+      },
+      {
+        "pattern": "环评公示→水系统设计窗口→仪表选型机会",
+        "evidence_count": 4,
+        "examples": [
+          "宁德时代雅安",
+          "百奥泰广州",
+          "横店东磁东阳",
+          "吴江经开区"
+        ]
+      }
+    ]
+  }
+}
