@@ -133,7 +133,20 @@
         "next_validation_action": "确认杭州临江高新技术产业开发区新材料产业园项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）"
+      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）",
+      "group_software_evidence": {
+        "group_entity": "杭州临江高新技术产业开发区新材料产业园（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "杭州临江高新技术产业开发区新材料产业园（petrochemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-002",
@@ -242,7 +255,20 @@
         "next_validation_action": "确认湛江市聚鑫新能源有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "湛江市聚鑫新能源有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "8月24-28日湛江市生态环境局坡头分局拟批准年产9万吨锂电池负极材料智能化改扩建项目"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "湛江市聚鑫新能源有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-003",
@@ -351,7 +377,20 @@
         "next_validation_action": "确认山东先声再明生物制药有限公司/先声药业集团项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "山东先声再明生物制药有限公司/先声药业集团（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "山东先声再明生物制药有限公司/先声药业集团（pharmaceutical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-004",
@@ -464,7 +503,23 @@
         "next_validation_action": "确认福建省工业企业(固定污染源自动监控)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "福建省工业企业(固定污染源自动监控)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "福建省修订出台《福建省固定污染源自动监控管理办法》，以省政府令形式公布",
+          "排污单位是自动监测设备正常运行和数据质量的第一责任人",
+          "纳入自动监控名单的排污单位必须装设备、联网、验收备案",
+          "委托第三方运维的，企业仍需监督管理，运维方发现篡改数据须报告"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "福建省工业企业(固定污染源自动监控) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-005",
@@ -575,7 +630,20 @@
         "next_validation_action": "确认扬州祖名豆制食品有限公司/祖名股份项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "opportunity_stage=Completed-Too Late（项目已完工/窗口已过）"
+      "status_reason": "opportunity_stage=Completed-Too Late（项目已完工/窗口已过）",
+      "group_software_evidence": {
+        "group_entity": "扬州祖名豆制食品有限公司/祖名股份（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "扬州祖名豆制食品有限公司/祖名股份（food_beverage）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-006",
@@ -663,7 +731,20 @@
         "next_validation_action": "确认烟台市蓬莱经济开发区管委会项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "烟台市蓬莱经济开发区管委会（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "烟台市蓬莱经济开发区管委会（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-007",
@@ -751,7 +832,20 @@
         "next_validation_action": "确认四川省盈达锂电新材料有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "四川省盈达锂电新材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "四川省盈达锂电新材料有限公司（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-008",
@@ -839,7 +933,20 @@
         "next_validation_action": "确认黄石市大冶市81家排污许可重点管理单位项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "黄石市大冶市81家排污许可重点管理单位（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "黄石市大冶市81家排污许可重点管理单位（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-009",
@@ -927,7 +1034,20 @@
         "next_validation_action": "确认宁夏4家试点工业园区排污单位项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "宁夏4家试点工业园区排污单位（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宁夏4家试点工业园区排污单位（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-010",
@@ -1015,7 +1135,20 @@
         "next_validation_action": "确认万华化学(600309.SH)/万华(滨州)新能源项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "万华化学(600309.SH)/万华(滨州)新能源（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "万华化学(600309.SH)/万华(滨州)新能源（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-011",
@@ -1103,7 +1236,20 @@
         "next_validation_action": "确认顺德工业(江苏)/台湾顺德工业集团(2351.TW)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "顺德工业(江苏)/台湾顺德工业集团(2351.TW)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "顺德工业(江苏)/台湾顺德工业集团(2351.TW)（semiconductor）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-012",
@@ -1213,7 +1359,23 @@
         "next_validation_action": "确认立鼎材料科技(四川)有限公司(中创新航全资子公司)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "中创新航（CALB，港股03931.HK）全资子公司立鼎材料科技（四川）",
+        "group_software_facts": [
+          "本轮未检索到中创新航/立鼎材料集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [
+          "33.6亿磷酸铁锂材料项目（含纯水站、污水处理站）处于环评第一次公示——设计/采购均未启动，是介入技术规格最早窗口；动力电池材料企业废水处理对在线监测（COD/氨氮/氟/重金属）依赖度高"
+        ],
+        "group_software_unknowns": [
+          "中创新航工厂水系统数字化与仪表管理现状（公开无证据，需Company Agent）",
+          "项目设计院与水系统供应商（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-013",
@@ -1318,7 +1480,20 @@
         "next_validation_action": "确认兰州佛慈制药股份有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "兰州佛慈制药股份有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "兰州佛慈制药股份有限公司（制药）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-014",
@@ -1406,7 +1581,20 @@
         "next_validation_action": "确认全国工业企业(新版排污许可证)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国工业企业(新版排污许可证)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国工业企业(新版排污许可证)（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-015",
@@ -1515,7 +1703,20 @@
         "next_validation_action": "确认监利市城发农业投资有限公司/朱河工业园区项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "监利市城发农业投资有限公司/朱河工业园区（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "监利市城发农业投资有限公司/朱河工业园区（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-016",
@@ -1603,7 +1804,20 @@
         "next_validation_action": "确认霍尔果斯兵团分区/新疆宏远建设集团项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "霍尔果斯兵团分区/新疆宏远建设集团（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "霍尔果斯兵团分区/新疆宏远建设集团（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-017",
@@ -1691,7 +1905,20 @@
         "next_validation_action": "确认泰州市永昌化工项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "泰州市永昌化工（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "泰州市永昌化工（petrochemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-018",
@@ -1779,7 +2006,20 @@
         "next_validation_action": "确认江苏省工业企业(自动监控)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "江苏省工业企业(自动监控)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "江苏省工业企业(自动监控)（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-019",
@@ -1867,7 +2107,20 @@
         "next_validation_action": "确认全国工业排污单位(生态环境部通知)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国工业排污单位(生态环境部通知)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国工业排污单位(生态环境部通知)（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-020",
@@ -1955,7 +2208,20 @@
         "next_validation_action": "确认广东省工业企业项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "广东省工业企业（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "广东省工业企业（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-021",
@@ -2043,7 +2309,20 @@
         "next_validation_action": "确认河南正佳能源环保/河南达利食品项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "河南正佳能源环保/河南达利食品（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "河南正佳能源环保/河南达利食品（cross_industry）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-022",
@@ -2131,7 +2410,20 @@
         "next_validation_action": "确认上海新阳半导体材料(300236.SZ)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "上海新阳半导体材料(300236.SZ)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "上海新阳半导体材料(300236.SZ)（semiconductor）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-023",
@@ -2219,7 +2511,20 @@
         "next_validation_action": "确认宁德时代/宜春时代新能源矿业(300750.SZ)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "宁德时代/宜春时代新能源矿业(300750.SZ)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宁德时代/宜春时代新能源矿业(300750.SZ)（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-024",
@@ -2307,7 +2612,20 @@
         "next_validation_action": "确认亿纬锂能(300014.SZ)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "亿纬锂能(300014.SZ)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "亿纬锂能(300014.SZ)（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-025",
@@ -2435,7 +2753,20 @@
         "next_validation_action": "确认茂名创能烯碳科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "茂名创能烯碳科技有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "茂名创能烯碳科技有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-026",
@@ -2523,7 +2854,20 @@
         "next_validation_action": "确认吉林经开区化工园区项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "吉林经开区化工园区（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "吉林经开区化工园区（petrochemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-027",
@@ -2611,7 +2955,20 @@
         "next_validation_action": "确认扬州晶新微电子项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "扬州晶新微电子（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "扬州晶新微电子（semiconductor）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-028",
@@ -2699,7 +3056,20 @@
         "next_validation_action": "确认广东依诺聚合物科技项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "广东依诺聚合物科技（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "广东依诺聚合物科技（petrochemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-029",
@@ -2809,7 +3179,21 @@
         "next_validation_action": "确认无锡芯卓湖光半导体有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "无锡芯卓湖光半导体有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "无锡市数据局锡数环许[2025]6033号批复12英寸射频芯片扩产项目",
+          "环评要求：排水系统雨污分流，工艺废水经超滤系统处理后回用"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "无锡芯卓湖光半导体有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-030",
@@ -2915,7 +3299,20 @@
         "next_validation_action": "确认安徽昀钐半导体材料有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "安徽昀钐半导体材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "安徽昀钐半导体材料有限公司（semiconductor）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-031",
@@ -3023,7 +3420,20 @@
         "next_validation_action": "确认贵安新区凯金新能源科技有限公司（广东凯金新能源全资子公司）项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "贵安新区凯金新能源科技有限公司（广东凯金新能源全资子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "贵安新区凯金新能源科技有限公司（广东凯金新能源全资子公司）（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-032",
@@ -3130,7 +3540,20 @@
         "next_validation_action": "确认常州合全药业有限公司（药明康德子公司）项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "常州合全药业有限公司（药明康德子公司）（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "项目含470吨/年中试平台+30吨/年研发中心改扩建"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "常州合全药业有限公司（药明康德子公司） 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-033",
@@ -3235,7 +3658,20 @@
         "next_validation_action": "确认苏州二叶制药有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "苏州二叶制药有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "苏州二叶制药有限公司（pharma）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-034",
@@ -3340,7 +3776,20 @@
         "next_validation_action": "确认常州制药厂有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "常州制药厂有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "常州制药厂有限公司（pharma）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-035",
@@ -3450,7 +3899,22 @@
         "next_validation_action": "确认沙湾市商务和工业信息化局项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "沙湾市商务和工业信息化局（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "含: 出水在线监测间(30.36m2), 气浮+加药间, 调节池+事故池",
+          "招标人: 沙湾市商务和工业信息化局",
+          "建设内容包括：调节池+事故池、深化处理装配式一体化装置、中水回用池+接触消毒池、出水在线监测间、气浮+加药间等"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "沙湾市商务和工业信息化局 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-036",
@@ -3557,7 +4021,20 @@
         "next_validation_action": "确认甘肃酒泉化工园区（项目主体待确认）项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "甘肃酒泉化工园区（项目主体待确认）（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "2027年Q4完成全部建设、系统联调及环保验收，投入试运行"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "甘肃酒泉化工园区（项目主体待确认） 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-037",
@@ -3666,7 +4143,23 @@
         "next_validation_action": "确认乌兰察布市安装自动监控设备排污单位项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "乌兰察布市安装自动监控设备排污单位（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "乌兰察布市生态环境局8月31日发布致全市安装自动监控设备排污单位的一封信",
+          "要求：重点管理排污单位按期完成自动监测设备安装、调试、验收及联网",
+          "要求：在废水废气采样点位、监测站房等关键区域安装视频监控设备",
+          "引用法规：2026年1月1日《生态环境监测条例》、8月15日《生态环境法典》"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "乌兰察布市安装自动监控设备排污单位 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-038",
@@ -3774,7 +4267,21 @@
         "next_validation_action": "确认湖北嘉鱼经济开发区管理委员会项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "湖北嘉鱼经济开发区管理委员会（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "配套建设厂区自控系统、智慧水务系统",
+          "含进水在线监测间和出水在线监测间"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "湖北嘉鱼经济开发区管理委员会 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-039",
@@ -3877,7 +4384,28 @@
         "next_validation_action": "确认广州粤芯半导体技术有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "粤芯半导体技术股份有限公司（广州，与市政 OPP-2026-09-16-004 同主体）",
+        "group_software_facts": [
+          "副总裁李海明公开表述：粤芯'已经实现数字化、智能化与高度自动化生产管理'【粤芯官网】",
+          "四期启动定调'以数字升级为蝶变'战略转型【广州市政府门户】"
+        ],
+        "group_software_inferences": [
+          "四期纯废水系统（废硫酸处理系统包）采购中（2026-08-25结果公告），属于设备安装调试期——纯废水在线监测仪表随之采购；软件层切入点弱，iMS 半导体场景适用性需现场验证",
+          "三期+四期多厂（3座）统一管理：仪表数据统一管理需求随投产放大"
+        ],
+        "group_software_unknowns": [
+          "纯废水/超纯水在线仪表管理与厂务平台（FMS/SCADA）现状（公开无证据）",
+          "现有仪表品牌与联网架构（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [
+          "https://www.gz.gov.cn/ysgz/xwdt/ysdt/content/mpost_10659902.html",
+          "https://www.cansemitech.com/?p=916"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-040",
@@ -3980,7 +4508,31 @@
         "next_validation_action": "确认中国石油长庆石化分公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "中国石油天然气集团有限公司（长庆石化分公司；集团数字化依托昆仑数智）",
+        "group_software_facts": [
+          "集团实施'数智石油'战略：信息化补强、数字化赋能、智能化发展三大工程；'数智中国石油'初步建成，生产运营平台完成试点建设，智能油田/智能炼厂推进【中国石油官网】",
+          "昆仑数智（集团级ISV）：MES V2.0、ERP V2.0、储气库智能云平台、数据湖等集团级产品，支撑炼化等核心业务7×24【公开报道2026-09】",
+          "兰州石化（同集团）入选国务院国资委'国有企业数字化转型试点企业'；华北石化2026-09-22启动数字化转型建设项目（生产/工艺/能源/设备4领域，立体智能巡检体系）【中石油/搜狐】",
+          "中国石油已完成10家试点单位全部场景建设，行业大模型首批通过国家备案【中国石油】"
+        ],
+        "group_software_inferences": [
+          "集团层面'数智石油+智能炼厂'战略下，长庆石化含盐污水零排放项目（可研技术选商中，昆仑工程拟成交）将按集团数字化规范建设——水质在线监测仪表数据接入集团生产运营平台/数据湖是方向性要求",
+          "中石油体系对国产化/自主可控（昆仑数智）要求高，iMS 切入需评估与集团平台及信创环境的兼容性"
+        ],
+        "group_software_unknowns": [
+          "长庆石化污水零排放项目在线仪表清单与数据接口规范（公开无证据，需Company Agent）",
+          "中石油体系是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.cnpc.com.cn/cnpc/sykjcx/kjycx.shtml",
+          "https://m.chinadevelopment.com.cn/checklist.php?s=index%2Fdetail%2Fid%2F2016987",
+          "https://m.sohu.com/a/1080741565_121124571/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-041",
@@ -4083,7 +4635,29 @@
         "next_validation_action": "确认中国石油兰州石化分公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "中国石油天然气集团有限公司（兰州石化分公司）",
+        "group_software_facts": [
+          "同集团 IND-LIVE-040：'数智石油'战略、数智中国石油初步建成、生产运营平台试点、智能炼厂【中国石油官网】",
+          "兰州石化入选国务院国资委'国有企业数字化转型试点企业'【中国石油】",
+          "'兰州石化方案'（品牌价值密码报道）由集团在内炼化企业全面推广【中国石油品牌报道】"
+        ],
+        "group_software_inferences": [
+          "兰州石化本就处于集团数字化转型试点前列，炼油污水达标升级改造EPC（1.75亿，两级化学氧化+脱氮+生化）的在线监测/自控系统预计按'智能炼厂'标准建设，仪表数据管理层有 iMS 空间",
+          "EPC已进入执行期（2026Q4-2027Q3），技术规格可能已由EPC总包锁定，介入窗口偏后"
+        ],
+        "group_software_unknowns": [
+          "兰州石化本厂现有仪表管理软件/平台（公开无证据）",
+          "EPC总包是否已锁定自控与在线仪表供应商（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.cnpc.com.cn/cnpc/sykjcx/kjycx.shtml",
+          "http://m.toutiao.com/group/7637723278114570762/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-042",
@@ -4186,7 +4760,20 @@
         "next_validation_action": "确认郑州半导体硅片企业(建设单位待确认)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "郑州半导体硅片企业(建设单位待确认)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "郑州半导体硅片企业(建设单位待确认)（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-043",
@@ -4309,7 +4896,20 @@
         "next_validation_action": "确认中捷产业园区石化工业园(节能国祯+麦王环境+山东圣立创联合体中标)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）"
+      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）",
+      "group_software_evidence": {
+        "group_entity": "中捷产业园区石化工业园(节能国祯+麦王环境+山东圣立创联合体中标)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "中捷产业园区石化工业园(节能国祯+麦王环境+山东圣立创联合体中标)（petrochemical/chemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-044",
@@ -4413,7 +5013,20 @@
         "next_validation_action": "确认宜城经济开发区管委会项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "宜城经济开发区管委会（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宜城经济开发区管委会（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-045",
@@ -4517,7 +5130,20 @@
         "next_validation_action": "确认藤县中和基础设施投资有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "藤县中和基础设施投资有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "藤县中和基础设施投资有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-046",
@@ -4623,7 +5249,22 @@
         "next_validation_action": "确认全国实行排污许可重点管理的企业事业单位项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国实行排污许可重点管理的企业事业单位（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "第184条: 重点管理排污单位必须自动监测设备安装/联网/运维/数据异常处置",
+          "明确16种自动监测违法情形",
+          "专项领域强制监测: 化工园区/工业园区污水集中处理/排放工业有毒有害水污染物等"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国实行排污许可重点管理的企业事业单位 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-047",
@@ -4726,7 +5367,21 @@
         "next_validation_action": "确认中国石化仪征化纤有限责任公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "中国石化仪征化纤有限责任公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "2026-08-09 招标结果公告(中国石化物资电子招标投标平台)",
+          "招标平台: bidding.epec.com (中石化电子采购)"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "中国石化仪征化纤有限责任公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-048",
@@ -4829,7 +5484,20 @@
         "next_validation_action": "确认孝感澴楚新能源投资有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "孝感澴楚新能源投资有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "招标内容: 制浆/涂布/卷绕/注液/NMP回收等生产设备, 无水系统设备"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "孝感澴楚新能源投资有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-049",
@@ -4932,7 +5600,20 @@
         "next_validation_action": "确认楚能新能源(襄阳)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "楚能新能源(襄阳)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "楚能新能源(襄阳)（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-050",
@@ -5035,7 +5716,20 @@
         "next_validation_action": "确认力合厚浦科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "力合厚浦科技有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "力合厚浦科技有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-051",
@@ -5150,7 +5844,21 @@
         "next_validation_action": "确认康乃尔化学工业股份有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "康乃尔化学工业股份有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "吉林市生态环境局2026年5月29日现场检查发现4月3-6日自动监测数据连续4日超标异常",
+          "企业已发现数据异常但未依法及时报告"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "康乃尔化学工业股份有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-052",
@@ -5261,7 +5969,20 @@
         "next_validation_action": "确认山东鼎皓制药项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "山东鼎皓制药（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "山东鼎皓制药（pharma）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-053",
@@ -5372,7 +6093,26 @@
         "next_validation_action": "确认建投准能(施耐德电气实施)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "晋能控股集团（建投准能电厂）＋施耐德电气（数字化实施方）",
+        "group_software_facts": [
+          "施耐德电气为建投准能提供一体化智慧电厂方案（全流程数字化+远程运维）【信号evidence已有】"
+        ],
+        "group_software_inferences": [
+          "电力客户已由施耐德实施智慧电厂——数字化底座存在但侧重DCS/能效；电厂水处理（脱硫废水等）在线仪表管理或未纳入，iMS 可作为电厂水系统仪表健康层",
+          "需确认智慧电厂平台是否覆盖水处理仪表的设备健康管理"
+        ],
+        "group_software_unknowns": [
+          "智慧电厂方案的水处理仪表覆盖范围（公开无证据）",
+          "电厂现有水质在线仪表品牌（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "IND-LIVE-053 信号evidence"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-054",
@@ -5484,7 +6224,20 @@
         "next_validation_action": "确认金溪斯普瑞药业有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "金溪斯普瑞药业有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "金溪斯普瑞药业有限公司（pharma）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-055",
@@ -5592,7 +6345,20 @@
         "next_validation_action": "确认大开热电2x350MW项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "大开热电2x350MW（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "2x350MW机组2012年投运, 新建ZLD系统"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "大开热电2x350MW 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-056",
@@ -5698,7 +6464,20 @@
         "next_validation_action": "确认50GWh储能电池工厂项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "50GWh储能电池工厂（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "50GWh储能电池工厂（battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-057",
@@ -5803,7 +6582,20 @@
         "next_validation_action": "确认全南工业园污水处理一期项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全南工业园污水处理一期（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全南工业园污水处理一期（industrial_park）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-058",
@@ -5904,7 +6696,20 @@
         "next_validation_action": "确认石狮鸿山三期1x1000MW项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "qual=REJECT（未通过资格审查）"
+      "status_reason": "qual=REJECT（未通过资格审查）",
+      "group_software_evidence": {
+        "group_entity": "石狮鸿山三期1x1000MW（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "石狮鸿山三期1x1000MW（power）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-059",
@@ -6005,7 +6810,20 @@
         "next_validation_action": "确认大庆炼化含磷废水设施升级项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "qual=REJECT（未通过资格审查）"
+      "status_reason": "qual=REJECT（未通过资格审查）",
+      "group_software_evidence": {
+        "group_entity": "大庆炼化含磷废水设施升级（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "大庆炼化含磷废水设施升级（petrochemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-060",
@@ -6106,7 +6924,20 @@
         "next_validation_action": "确认铜陵化工园区污水厂自行监测项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "qual=REJECT（未通过资格审查）"
+      "status_reason": "qual=REJECT（未通过资格审查）",
+      "group_software_evidence": {
+        "group_entity": "铜陵化工园区污水厂自行监测（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "预算14.76万元, 范围: 废水/雨水/地下水监测, 要求CMA认证"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "铜陵化工园区污水厂自行监测 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-061",
@@ -6207,7 +7038,20 @@
         "next_validation_action": "确认菲达环保废水系统采购项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "qual=REJECT（未通过资格审查）"
+      "status_reason": "qual=REJECT（未通过资格审查）",
+      "group_software_evidence": {
+        "group_entity": "菲达环保废水系统采购（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "菲达环保废水系统采购（equipment）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-062",
@@ -6331,7 +7175,23 @@
         "next_validation_action": "确认四川省排污单位(全省范围)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "四川省排污单位(全省范围)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "2026-09-06央视财经频道曝光生态环境监测技术服务机构监测数据造假问题",
+          "要求:排污单位关键监测数据使用符合标准规范的设备,关键数据与生态环境部门联网",
+          "要求:排污许可重点管理单位主要监测点位须安装视频监控并联网",
+          "行动依据:《中华人民共和国生态环境法典》《生态环境监测条例》"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "四川省排污单位(全省范围) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-063",
@@ -6468,7 +7328,20 @@
         "next_validation_action": "确认先进半导体材料(安徽)有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "先进半导体材料(安徽)有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "先进半导体材料(安徽)有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-064",
@@ -6586,7 +7459,20 @@
         "next_validation_action": "确认灿盛制药(淄博)有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "灿盛制药(淄博)有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "灿盛制药(淄博)有限公司（pharma）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-065",
@@ -6704,7 +7590,21 @@
         "next_validation_action": "确认启东盖天力药业有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "启东盖天力药业有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "现有1号生产废水处理系统:调节池+混凝沉淀+接触氧化+二沉+排放,150t/d",
+          "现有2号生产废水处理系统:调节池+混凝沉淀+厌氧+一级/二级接触氧化+MBR+排放,200t/d"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "启东盖天力药业有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-066",
@@ -6824,7 +7724,20 @@
         "next_validation_action": "确认云南解化绿源化工有限公司(云南省煤炭产业集团/云南能投集团)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）"
+      "status_reason": "水系统相关EPC/特许经营已中标签约（新建采购窗口关闭，转Installed Base跟踪）",
+      "group_software_evidence": {
+        "group_entity": "云南解化绿源化工有限公司(云南省煤炭产业集团/云南能投集团)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "云南解化绿源化工有限公司(云南省煤炭产业集团/云南能投集团)（petrochemical/chemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-067",
@@ -6938,7 +7851,20 @@
         "next_validation_action": "确认国能长源荆门发电有限公司(科环集团国能水务南京分公司)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "closed",
-      "status_reason": "qual=REJECT（未通过资格审查）"
+      "status_reason": "qual=REJECT（未通过资格审查）",
+      "group_software_evidence": {
+        "group_entity": "国能长源荆门发电有限公司(科环集团国能水务南京分公司)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "第一中标候选人南京双灵瑞电力自动化系统有限公司,报价203万元"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "国能长源荆门发电有限公司(科环集团国能水务南京分公司) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-068",
@@ -7059,7 +7985,22 @@
         "next_validation_action": "确认苏州市相城区漕湖街道办事处(苏相合作区)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "苏州市相城区漕湖街道办事处(苏相合作区)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "新建工业废水预处理系统总处理能力约7000立方米/天",
+          "含重金属、氟化物废水预处理系统处理能力约6000立方米/天",
+          "难生化降解废水预处理系统处理能力约1000立方米/天"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "苏州市相城区漕湖街道办事处(苏相合作区) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-069",
@@ -7179,7 +8120,20 @@
         "next_validation_action": "确认中国石化北京燕山分公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "中国石化北京燕山分公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "采购在线水质分析系统含COD和氨氮分析仪"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "中国石化北京燕山分公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-070",
@@ -7300,7 +8254,20 @@
         "next_validation_action": "确认全国工业园区(政策驱动)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国工业园区(政策驱动)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "需连接企业排水、分质预处理、集中处理、监测预警、风险溯源和再生水利用"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国工业园区(政策驱动) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-071",
@@ -7437,7 +8404,23 @@
         "next_validation_action": "确认湖北兴友新能源科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "湖北兴友新能源科技有限公司（湖北宜昌，磷酸铁锂）",
+        "group_software_facts": [
+          "本轮未检索到兴友新能源集团层面公开软件工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [
+          "20万吨磷酸铁锂（一期7.5万吨）环评首次公示（2026-09-02）——设计阶段早期，水处理（含氟废水）在线监测需求明确，可早期介入"
+        ],
+        "group_software_unknowns": [
+          "母公司/集团信息化现状（公开无证据）",
+          "水系统设计与仪表选型单位（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-072",
@@ -7557,7 +8540,20 @@
         "next_validation_action": "确认宜宾首城工业集团有限公司(储能产业园)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "宜宾首城工业集团有限公司(储能产业园)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宜宾首城工业集团有限公司(储能产业园)（new_energy_battery）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-073",
@@ -7676,7 +8672,20 @@
         "next_validation_action": "确认全国食品/屠宰/酒类制造企业(政策驱动)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国食品/屠宰/酒类制造企业(政策驱动)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国食品/屠宰/酒类制造企业(政策驱动)（food_beverage）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-074",
@@ -7797,7 +8806,20 @@
         "next_validation_action": "确认全国石化/火电/锅炉/汽车制造企业(政策驱动)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国石化/火电/锅炉/汽车制造企业(政策驱动)（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "涉及自行监测、环境管理台账和执行报告等技术内容"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国石化/火电/锅炉/汽车制造企业(政策驱动) 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-075",
@@ -7916,7 +8938,20 @@
         "next_validation_action": "确认全国电镀/金属表面处理企业(政策驱动)项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "全国电镀/金属表面处理企业(政策驱动)（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "全国电镀/金属表面处理企业(政策驱动)（electroplating）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-076",
@@ -8035,7 +9070,20 @@
         "next_validation_action": "确认湖北祥云(集团)化工股份有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "湖北祥云(集团)化工股份有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "湖北祥云(集团)化工股份有限公司（petrochemical_chemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-077",
@@ -8153,7 +9201,20 @@
         "next_validation_action": "确认福建省福化鲁华新材料有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "福建省福化鲁华新材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "福建省福化鲁华新材料有限公司（petrochemical_chemical）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-078",
@@ -8264,7 +9325,20 @@
         "next_validation_action": "确认东明石化集团项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "东明石化集团（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "东明石化集团（石化化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-079",
@@ -8373,7 +9447,20 @@
         "next_validation_action": "确认高美可科技(惠州)有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "高美可科技(惠州)有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "高美可科技(惠州)有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-080",
@@ -8482,7 +9569,20 @@
         "next_validation_action": "确认云南洽洽老魔坊魔芋生物科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "云南洽洽老魔坊魔芋生物科技有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "云南洽洽老魔坊魔芋生物科技有限公司（食品饮料）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-081",
@@ -8591,7 +9691,20 @@
         "next_validation_action": "确认江苏宏邦化工科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "江苏宏邦化工科技有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "江苏宏邦化工科技有限公司（石化化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-082",
@@ -8701,7 +9814,21 @@
         "next_validation_action": "确认武安市宝烨煤焦化工业有限公司 / 裕华钢铁有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "武安市宝烨煤焦化工业有限公司 / 裕华钢铁有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "全市589个在线监测排口拉网式排查，建立异常数据闭环管理机制",
+          "重点核查钢铁、焦化、水泥、电力四大行业脱硫脱硝除尘设施运行和在线监测数据真实性"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "武安市宝烨煤焦化工业有限公司 / 裕华钢铁有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-083",
@@ -8835,7 +9962,23 @@
         "next_validation_action": "确认贵州圣钘新材料有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "贵州圣钘新材料有限公司（含氟材料，注册资本背景待核）",
+        "group_software_facts": [
+          "本轮未检索到圣钘新材料集团层面公开软件工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [
+          "7万吨含氟材料（一期2.5万吨锂电池含氟溶剂）环评首次公示（2026-09-09）——含氟废水处理对在线监测与数据合规要求高，24个月建设期，介入窗口宽"
+        ],
+        "group_software_unknowns": [
+          "股东集团/化工园区数字化平台现状（公开无证据）",
+          "水处理工艺与在线监测配置（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-084",
@@ -8965,7 +10108,20 @@
         "next_validation_action": "确认苏州市吴江经开区水质净化有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "苏州市吴江经开区水质净化有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "苏州市吴江经开区水质净化有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-085",
@@ -9095,7 +10251,20 @@
         "next_validation_action": "确认宜章志存新材料有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "宜章志存新材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宜章志存新材料有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-086",
@@ -9227,7 +10396,27 @@
         "next_validation_action": "确认云天化集团项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "云天化集团（云南国资化工集团）",
+        "group_software_facts": [
+          "云天化集团全面推进'智改数转网联'；云南云天化信息科技公司入选全国首批制造业数字化转型促进中心建设主体（云南省唯一）【信号evidence已有】",
+          "云南天安化工智控中心集中控制30套大型生产装置【信号evidence已有】"
+        ],
+        "group_software_inferences": [
+          "集团数字化转型已实体化（信息科技公司+智控中心集中控制30套装置），在线监测/预测性维护/智能安全环保系统是其数字化清单（信号名即是）——iMS 的仪表健康诊断与集中控制体系存在对接空间",
+          "集中控制30套装置=典型多站点管理场景，与 iMS Multi-site 用例直接对应"
+        ],
+        "group_software_unknowns": [
+          "智控中心与在线仪表层的数据链路/平台（公开无证据）",
+          "是否已有仪表健康管理模块（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "IND-LIVE-086 信号evidence（智改数转网联公开报道）"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-087",
@@ -9356,7 +10545,20 @@
         "next_validation_action": "确认沧州彩客锂能有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "沧州彩客锂能有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "沧州彩客锂能有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-088",
@@ -9484,7 +10686,20 @@
         "next_validation_action": "确认江西陆丰新能源科技发展有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "江西陆丰新能源科技发展有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "江西陆丰新能源科技发展有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-089",
@@ -9611,7 +10826,20 @@
         "next_validation_action": "确认常德宏杉新能源科技有限公司项目联系人及当前进展, 查找设计院/EPC信息"
       },
       "current_status": "active",
-      "status_reason": "线索仍有效，建议持续跟踪"
+      "status_reason": "线索仍有效，建议持续跟踪",
+      "group_software_evidence": {
+        "group_entity": "常德宏杉新能源科技有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "常德宏杉新能源科技有限公司（新能源/电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-090",
@@ -9786,7 +11014,20 @@
         "next_validation_action": "联系宿迁市生态环境局（0527-84396253）或企业核实项目工艺与设计院；推动环评报告全文公开后查水系统方案"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "宿迁镭明半导体设备有限公司（苏州镭明激光科技子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宿迁镭明半导体设备有限公司（苏州镭明激光科技子公司）（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-091",
@@ -9956,7 +11197,20 @@
         "next_validation_action": "访问清江浦区华清西路1号厂区或通过环评报告表获取废水系统供应商信息；询问投产计划"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "淮安东煦电子材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "淮安东煦电子材料有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-092",
@@ -10131,7 +11385,20 @@
         "next_validation_action": "联系顾主任/侯工确认项目设计院与进度；索取环评报告书全文获取监测点位表"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "定边县产业园区管理委员会（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "定边县产业园区管理委员会（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-093",
@@ -10303,7 +11570,20 @@
         "next_validation_action": "通过环评拟审批公示获取全本，确认厂内预处理装置规模/工艺与设计院"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "泰兴怡达化学有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "泰兴怡达化学有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-094",
@@ -10471,7 +11751,20 @@
         "next_validation_action": "检索滨化废盐项目环评批复全文，确认盐水精制与废水系统设计单位"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "滨化集团股份有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "滨化集团股份有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-095",
@@ -10646,7 +11939,20 @@
         "next_validation_action": "通过清朗达技术协议确认仪表品牌；调研厂区安防自控改造范围是否含水务数据管理"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "长电科技(宿迁)有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "长电科技(宿迁)有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-096",
@@ -10826,7 +12132,21 @@
         "next_validation_action": "联系杨旭确认二期污水站规划；通过一期竣工环保验收报告获取现有在线监测配置与仪表品牌"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "重庆新宙邦新材料有限公司（新宙邦300037全资子公司）（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "上市公司互动平台2026-05-07回应：'高标准建设污水处理站、废气处理设施（RTO等）、在线监测系统等污染物防治设施'（FACT-巨潮互动易）",
+          "集团在惠/南平/宜昌/荆门持续招聘环保工程师/EHS工程师，JD包含'项目污水站安装管理跟进和调试''环境监测、环保数据、资料的上报'（FACT-招聘平台）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "重庆新宙邦新材料有限公司（新宙邦300037全资子公司） 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-097",
@@ -11007,7 +12327,20 @@
         "next_validation_action": "检索兰花煤化工废水零排放BOO招标公告确认中标方；查环评批复全文获取监测要求"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "山西兰花煤化工有限责任公司（兰花科创600123控股）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "山西兰花煤化工有限责任公司（兰花科创600123控股）（煤化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-098",
@@ -11166,7 +12499,20 @@
         "next_validation_action": "确认古雷项目EPC合同范围与仪表供应商；判断与古雷石化基地的关联"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "国电投远达水务有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "国电投远达水务有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-099",
@@ -11333,7 +12679,20 @@
         "next_validation_action": "调研古雷石化水处理装置现有监测配置与运维模式；结合园区排海监测维保招标接触运维服务商"
       },
       "current_status": "active",
-      "status_reason": "今日新增线索，待手工验证"
+      "status_reason": "今日新增线索，待手工验证",
+      "group_software_evidence": {
+        "group_entity": "福建古雷石化有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "古雷石化基地配套2026-2029年排海管道水质在线监测设备运行维护项目（漳州市古雷水务发展有限公司，预算95万元）（FACT-招采公告）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "福建古雷石化有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-100",
@@ -11488,7 +12847,28 @@
         "next_validation_action": "基于公开渠道核实盛虹在线分析仪表运维现状与数字化投入规划；关注集团采购平台公开信号"
       },
       "current_status": "active",
-      "status_reason": "盛虹石化数字化战略持续投入+行业仪表运维数字化趋势，属可跟进的工业信号线索（基于公开信息）"
+      "status_reason": "盛虹石化数字化战略持续投入+行业仪表运维数字化趋势，属可跟进的工业信号线索（基于公开信息）",
+      "group_software_evidence": {
+        "group_entity": "盛虹石化产业集团（东方盛虹000301旗下，盛虹炼化+斯尔邦等姊妹公司）",
+        "group_software_facts": [
+          "盛虹炼化1600万吨炼化一体化智能工厂获评2025年江苏省先进级智能工厂；盛虹石化建成设备健康预测性维护平台、自动化分析实验室，构建AI+大数据+物联网数字化体系【信号evidence已有】",
+          "姊妹厂斯尔邦石化'黑灯实验室'运行：集成87台精密分析检测设备，机械手臂替代人工，检测全流程无人化【新华日报2026-03-16】"
+        ],
+        "group_software_inferences": [
+          "盛虹集团数字化投入密集（智能工厂+设备健康平台+黑灯实验室），仪表数据是大化工数字底座核心——iMS 可与盛虹设备健康平台互补（多品牌在线仪表数据质量/健康诊断）",
+          "集团已有'设备健康预测性维护平台'：iMS 需差异化定位为'在线分析仪表专用健康管理+数据质量'，并核对是否重复建设"
+        ],
+        "group_software_unknowns": [
+          "盛虹设备健康预测性维护平台是否已覆盖在线水质/环保仪表（公开无证据）",
+          "平台技术栈与第三方仪表兼容性（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "IND-LIVE-100 信号evidence（江苏省智能工厂评选）",
+          "新华日报黑灯实验室报道"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-101",
@@ -11623,7 +13003,20 @@
         "next_validation_action": "跟踪徐圩新区管委会立项/环评公示；关注东方盛虹后续公告明确投资周期"
       },
       "current_status": "active",
-      "status_reason": "虹科新材料芳烃提质增效项目133.3亿元/10套装置，合作意向协议阶段"
+      "status_reason": "虹科新材料芳烃提质增效项目133.3亿元/10套装置，合作意向协议阶段",
+      "group_software_evidence": {
+        "group_entity": "连云港虹科新材料有限公司（东方盛虹三级全资子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "连云港虹科新材料有限公司（东方盛虹三级全资子公司）（石油化工/芳烃产业链）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-102",
@@ -11760,7 +13153,26 @@
         "next_validation_action": "跟踪斯尔邦中试项目环评批复；与盛虹炼化线索联动确认集团仪控统筹模式"
       },
       "current_status": "active",
-      "status_reason": "斯尔邦黑灯实验室+中试扩产，集团检测自动化向仪表侧延伸"
+      "status_reason": "斯尔邦黑灯实验室+中试扩产，集团检测自动化向仪表侧延伸",
+      "group_software_evidence": {
+        "group_entity": "盛虹石化产业集团（斯尔邦石化姊妹厂）",
+        "group_software_facts": [
+          "斯尔邦丙烯腈分析'黑灯实验室'：集成87台精密分析检测设备，机械手臂彻底替代人工，自动化工作站全流程无人化【新华日报2026-03-16】"
+        ],
+        "group_software_inferences": [
+          "集团'黑灯实验室'证明其在检测自动化/无人化上的投入意愿强，机器人+数据平台模式或将复制到在线仪表层——iMS 可作为在线仪表'无人值守健康管理'延伸",
+          "3300吨/年丙烯酸衍生物中试项目（2026-07环评）含新增在线监测需求"
+        ],
+        "group_software_unknowns": [
+          "黑灯实验室是否连入在线水质仪表数据（公开无证据）",
+          "集团统一设备管理平台是否覆盖仪表（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "新华日报2026-03-16黑灯实验室报道"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-LIVE-103",
@@ -11892,7 +13304,20 @@
         "next_validation_action": "以盛虹切入园区后横向拓展；跟踪亚培烯一期投产与后续仪控需求"
       },
       "current_status": "active",
-      "status_reason": "徐圩园区新装置集中期（连云港石化芳烃联合安装冲刺等），园区复制窗口"
+      "status_reason": "徐圩园区新装置集中期（连云港石化芳烃联合安装冲刺等），园区复制窗口",
+      "group_software_evidence": {
+        "group_entity": "卫星化学股份有限公司（连云港石化基地，徐圩新区）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "卫星化学股份有限公司（连云港石化基地，徐圩新区）（石油化工/芳烃）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "market_background": [

@@ -168,7 +168,34 @@
       "sector": "municipal-industrial",
       "logic_chain_check_status": "WEAK",
       "first_seen": "2026-09-13",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-001",
@@ -213,7 +240,35 @@
       "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-14-001)",
       "first_seen": "2026-09-14",
       "last_seen": "2026-09-14",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "上海城投水务（集团）有限公司（迎宾水厂由城投水务投资建设；建设单位：上海浦东新区自来水有限公司，属城投水务体系）",
+        "group_software_facts": [
+          "城投水务集团2024十件大事：'数据驱动的超大城市智慧水务管理解决方案'获第六届工业互联网大赛'最具应用价值奖'；获上海国企首张数据资产登记凭证【城投水务官方】",
+          "2025 上海排水管理体制改革+城投水务数智化排水一体化运维：感知布设→问题诊断→数据资产→主动干预，'五个统一'【2026上海水业热点论坛，杨一烽】",
+          "城投水务首创污水处理厂'海陆空'立体化机器人智能巡检体系（轮式/四足/无人机/无人船+AI视频识别平台，人工巡检工时下降50%）【上海国资委官网】",
+          "2026世界人工智能大会：'以人工智能赋能上海水务高质量发展'（城投水务主题）；2026计划新增10项机器人应用场景+10处推广点【城投水务官网】",
+          "山科智能中标9936万元上海城投水务2026-2027非全电子水表集采（无磁远传水表，供水计量数据远传）【山科智能公告】",
+          "迎宾水厂：深度处理工艺（预臭氧+臭氧+生物活性炭），一期20万m³/d，2023-06开工，2025-11-20并网通水；市供水调度监测中心2026-03赴厂调研【上海市住建委/市水务局】"
+        ],
+        "group_software_inferences": [
+          "城投水务数字化底座已成熟（数据资产凭证+智慧水务方案获奖+机器人巡检），迎宾水厂作为新并网制水厂，仪表数据必然纳入集团供水调度/数据管理体系——iMS 的仪表数据质量与健康管理可作为集团平台之下的数据层承接",
+          "深度处理工艺（臭氧+活性炭）对浊度/颗粒物/余氯等在线参数与仪表可靠性要求更高，仪表健康诊断需求成立"
+        ],
+        "group_software_unknowns": [
+          "城投水务集团现有智慧水务平台是否兼容第三方仪表数据接入（公开无证据）",
+          "迎宾水厂现有在线仪表品牌/数量/联网状态（公开无证据，需Company Agent）",
+          "浦东新区自来水有限公司组织架构调整后的数字化归属（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://zjw.sh.gov.cn/gzdt/20230627/61ac8cf3e7ce4c97a85dfe1dac9a3a42.html",
+          "https://swj.sh.gov.cn/shsgsddjczx-xwzx/20260316/953ee381cd244e608efda8bc15b521d4.html",
+          "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260604/26dbc651d083492fad4fea47a0b16f3a.html",
+          "https://www.afzhan.com/news/detail/111829.html"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "合肥水务集团排水管网全面接管7236km+250座泵站-管理规模扩展",
@@ -262,7 +317,33 @@
       ],
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "topic_tag": "排水管网"
+      "topic_tag": "排水管网",
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团（2024-08-30成立，水务一体化'投建管运'国资集团）",
+        "group_software_facts": [
+          "合肥水务集团官网确认'智慧水务平台建设'（王连贵调研时提出）【合肥水务集团官方】",
+          "智慧调度指挥平台：1305个压力监测点+766台水质在线检测仪+10个一级分区DMA【合肥水务官方公开资料】",
+          "自主开发铝铁智慧加药系统【合肥水务官方公开资料】",
+          "供水GIS'一张图'数字化管理模式【合肥水务官方公开资料】",
+          "2026-08公开报道'从1.0迈向2.0 解锁合肥智慧水厂密码'（智慧水厂迭代升级）【合肥水务官网新闻，需点开核实细节】",
+          "西部组团净水二厂：设备全生命周期管理系统+AI视频巡检+电力智能分析；工艺与设备数据自动采集率100%、核心设备远程控制率88.3%、设备预测性维护命中率93%（enriched lead已有）【人民网/合肥水务】"
+        ],
+        "group_software_inferences": [
+          "集团数字化成熟度高（766台水质在线检测仪已入平台），2026年底全面接管区级7236km管网+250座泵站后，站点数阶跃→多站点仪表/设备统一管理需求强化，iMS Multi-site/Asset Use Case有现实数据底座",
+          "已有仪表在线检测规模大，仪表健康诊断、数据质量管理、预测性维护缺口是 iMS 落点"
+        ],
+        "group_software_unknowns": [
+          "集团智慧水务平台底层架构是否兼容第三方仪表数据接入（公开无证据）",
+          "排水管网/泵站新增设施在线仪表配置与联网计划（公开无证据）",
+          "设备全生命周期管理系统是否含仪表健康诊断模块（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.hfwater.cn/",
+          "https://www.hfwater.cn/index.php?title=首页&action=info"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-001",
@@ -307,7 +388,31 @@
       "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-16-001)",
       "first_seen": "2026-09-16",
       "last_seen": "2026-09-16",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "万家寨水务控股集团有限公司（山西省级千亿水务国企，注册资本100亿、资产931亿、176家成员企业）",
+        "group_software_facts": [
+          "集团自研与在建：数字孪生万家寨平台、水情水调自动化系统【公开报道】",
+          "全资子公司万家寨数科（山西万家寨数字科技有限公司）：集团数字水务原创技术中枢，与普天科技签署战略合作协议【公开报道】",
+          "生态公司（山西水控生态环境产业有限公司）2026-09在太原能源低碳发展论坛发布'泽卫士·管道监测技术'+'泽探·管道检测技术'两项数智化成果【2026太原低碳论坛】",
+          "引黄水务调度集控系统国产化改造：实现'数字值班员'智能调度软件，组态运维时长节省50%【公开报道】"
+        ],
+        "group_software_inferences": [
+          "集团已进入自主数字化技术研发阶段（数科公司+自有监测技术），实质投入加速——多水厂/多工程统一管理与设备资产管理是集团规模下的自然需求",
+          "集团自研侧重管网/引调水侧（泽卫士/数字值班员），水厂污水厂层面的仪表健康管理/数据质量或为空白，iMS 有机会以互补角色切入"
+        ],
+        "group_software_unknowns": [
+          "集团数字资产平台是否已覆盖水厂/污水厂仪表数据管理层（公开无证据）",
+          "数科公司技术栈与第三方仪表兼容性（公开无证据）",
+          "新管理层（董事长郭建文/总经理常建忠）上任后的具体数字化路线图（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.shanxi.gov.cn/",
+          "https://baijiahao.baidu.com/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-002",
@@ -352,7 +457,32 @@
       "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-14-002)",
       "first_seen": "2026-09-14",
       "last_seen": "2026-09-14",
-      "topic_tag": "二次供水"
+      "topic_tag": "二次供水",
+      "group_software_evidence": {
+        "group_entity": "平顶山发展投资控股集团（平顶山自来水二次供水有限公司母公司）＋合作方河南智慧水务股份有限公司",
+        "group_software_facts": [
+          "平顶山自来水二次供水有限公司与河南智慧水务股份有限公司2026-09-09签署战略合作框架协议：聚焦二次供水数字化、智慧化升级，组建联合事业部【平顶山日报】",
+          "母公司平顶山市自来水有限公司：5座水厂、日供水51万m³、已建成'智慧水务一体化管理平台'；2026（2025）上半年实现GIS系统、流量监控、二供泵房管理与智慧水务平台的全面融合【平顶山日报2025-07】",
+          "平水二供公司：泵房智能化数据监控平台等6项专利；2024年做法入选住建部漏损治理可复制政策机制清单全国推广【公开资料/住建部】",
+          "河南智慧水务：参与《智慧污水处理厂全生命周期管理平台技术标准》技术咨询服务（2026-08-26结果公告）【企查查/公开公告】"
+        ],
+        "group_software_inferences": [
+          "母公司智慧水务平台已建成并与二供泵房管理融合，211座泵房+11.5万户的二供数字化升级=平台下的仪表数据层扩容，iMS 可作为多站点仪表统一接入/健康诊断层",
+          "河南智慧水务作为软件合作方进入，但泵房在线水质仪表（余氯/浊度）数据采集与质量控制具体方案未定——iMS 可在二供仪表层定义阶段介入"
+        ],
+        "group_software_unknowns": [
+          "母公司'智慧水务一体化管理平台'是否支持第三方仪表数据接入（公开无证据）",
+          "河南智慧水务平台技术栈与仪表兼容范围（公开无证据）",
+          "211座泵房现有在线仪表品牌/数量/联网状态（公开无证据，需Company Agent）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+          "http://epaper.pdsxww.com/pdsrb/html/2025-07/17/content_467153.htm",
+          "https://yshj.fgw.henan.gov.cn/fbwx/56142.jhtml"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260925-WLMQ-001",
@@ -366,7 +496,7 @@
       "logic_chain_check": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
       "logic_chain_check_status": "通过",
       "action_triad": {
-        "find_who": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
+        "find_who": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门；乌鲁木齐水业科技信息技术有限公司（集团科技子公司，信息化/测漏/仪表接口人）",
         "talk_what": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
         "why_now": "初步设计招标计划已发布但设计尚未开始（预计9月30日发标），仪表选型清单和技术规格均在设计阶段确定——此刻介入可影响技术路线"
       },
@@ -374,7 +504,7 @@
         "customer_identity": "乌鲁木齐市自来水公司/水务集团是否为Hach客户？SFDC Account是否存在？",
         "installed_base": "石墩子山水厂现有仪表类型/数量？是否有联网仪表？其他水厂仪表配置情况？",
         "commercial_history": "历史销售/Opportunity？乌鲁木齐水务是否有在线仪表采购记录？",
-        "ims": "是否已有iMS？是否已有智慧水务平台？是否存在数字化扩展机会？",
+        "ims": "是否已有iMS？是否已有智慧水务平台？是否存在数字化扩展机会？；集团智慧水务平台底层架构是否兼容第三方仪表数据接入？科信公司19项软著是否含仪器管理类？集团是否已有同类仪器管理软件？",
         "account_sales": "Account Owner？Regional Owner？当前客户关系？"
       },
       "score": 72,
@@ -400,7 +530,36 @@
       "trigger_type": "Project Trigger",
       "sector": "municipal",
       "topic_tag": "智慧水厂",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "乌鲁木齐水业投资发展集团有限公司（石墩子山水厂隶属；2023-11-22由水业集团与昆仑环保整合，市国资委监管，注册资本100亿；全资科技子公司：乌鲁木齐水业科技信息技术有限公司）",
+        "group_software_facts": [
+          "原水业集团已有《智慧水务平台》，2024-06用友网络中标本平台在水投集团全级次运维覆盖及服务升级（成交175万元）【招标成交公示】",
+          "2026-06智慧水务-供水管网模型体系项目招标：覆盖全集团供水管线，六大核心场景（管网压力/运行管理/应急处置/DMA漏损管控/科学调度/水质管理），二标段40台减压阀自动化升级统一接入集团智能远控系统【招标公告，乌市水务企采】",
+          "科信公司（集团全资科技子公司）：19项软件著作权、与成都川力智能联合申请\"基于四倍频解码的管网流量监测方法及系统\"专利（2026-09授权）、2020年在新装水表上加装远程数据传输设备（数字化信息化第一步）、完成7个水厂73个点位视频监控接入【百度百科/专利公开/新疆水协】",
+          "市委副书记2024-06调研石墩子山水厂，明确要求\"水厂向数字化、无人化转型升级\"【中国水协官网】",
+          "集团\"四化一体\"战略含\"智慧水务一体化\"；中国工业报报道集团\"三维探索推进新型工业化\"（筑牢数字化根基+水务特色AI场景矩阵+能源管控智慧化+供水管网控漏实践）【乌鲁木齐市政府官网/中国工业报】"
+        ],
+        "group_software_inferences": [
+          "集团已建智慧水务平台+集团智能远控系统：改扩建新增仪表数据必然要接入集团平台体系，多品牌/多站点仪表的数据质量与健康管理成为平台之下的\"数据底座\"空白层——iMS（Instrument Monitoring / Data Quality / Multi-site Management）正对应此层",
+          "集团层面明确\"水厂向数字化、无人化转型升级\"，对在线仪表数据的完整性、自动化与远程运维需求成立，iMS是承接该需求的软件层选项",
+          "初步设计阶段技术规格未冻结：可在仪表选型时同步预留数据接口与平台接入要求，iMS理念有机会在设计阶段即被纳入"
+        ],
+        "group_software_unknowns": [
+          "集团智慧水务平台底层架构是否兼容第三方仪表数据接入？（公开无证据）",
+          "石墩子山水厂现有仪表品牌/数量/联网状态？（公开无证据，需Company Agent）",
+          "科信公司19项软著中是否含仪器管理/数据质量类软件？（公开未逐一核实）",
+          "集团是否已采购同类仪表管理软件？（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.wlmq.gov.cn/wlmqs/c119333/202509/c3772100e8f84d33a6b2f207cb6bc27a.shtml",
+          "https://www.gxxszb.com/Html/2295761.html",
+          "https://cuwa.org.cn/category/zonghexinwen/23264.html",
+          "https://www.cuwa.org.cn/guoneizixun/9753.html"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-003",
@@ -448,7 +607,35 @@
       "logic_chain_check_status": "PASS",
       "first_seen": "2026-09-11",
       "last_seen": "2026-09-11",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "重庆水务集团股份有限公司（重庆水务环境集团体系，全国最大水务运营商之一，约81%重庆污水处理市场份额）",
+        "group_software_facts": [
+          "重庆水务大数据平台：全国水务行业第一个对企业经营数据全覆盖的大数据云平台，覆盖自来水厂/污水厂140余座、二次供水设施1000余套、指标数据10万余个【重庆市政府网/华龙网】",
+          "累计建成30座智能厂、323套24小时在线监测设备，并接入重庆市数字化城市运行和治理中心【重庆市政府网2024-08】",
+          "智慧水务入选数字重庆建设第二批AI+综合场景清单；'AI赋能污水厂智能化低碳转型'入选全市优秀AI应用场景案例；重点设施数字化接入率提升至60%，污水厂电耗/碳源/絮凝剂分别下降10.5%/39.4%/26.7%【重庆国资委2026】",
+          "下属重庆远通电子技术开发有限公司（信息化子公司）开展'基于信创国产化平台的智慧水务组态监控及数据分析软件研发'【重庆水务集团招标平台2025-06】",
+          "大九污水厂西彭车间新增出水在线监测仪表采购——明确要求仪表数据上传集团大数据平台（2026-09-18信号已确认）",
+          "环投集团永川试点AI智能监测系统：人工值守→AI自动报警，3分钟响应【2026-09-18信号已确认】"
+        ],
+        "group_software_inferences": [
+          "集团大数据平台已建成并明确要求在线监测仪表数据上传平台——iMS(Instrument Monitoring/Data Quality/Instrument Health Diagnostics)的现实需求直接成立，且平台正在扩容仪表接入",
+          "信创国产化方向（远通电子信创SCADA/组态监控）提示：集团对自主可控软件有偏好，iMS 需评估信创兼容性/国产化适配",
+          "数百座水厂污水厂多站点集中管理+产销差15.36%，仪表数据质量与健康诊断是经营提效抓手"
+        ],
+        "group_software_unknowns": [
+          "集团大数据平台底层架构是否兼容第三方仪表数据接入？接入协议/标准？（公开无证据）",
+          "323套在线监测设备的仪表品牌构成与联网率？（公开无证据，需Company Agent）",
+          "大数据平台是否已含仪表健康诊断/资产管理模块？（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.cq.gov.cn/zt/szzqjs/fwgpzsh/lqbm/202408/t20240820_13528269.html",
+          "https://gzw.cq.gov.cn/gqdj/202608/t20260806_15899671_wap.html",
+          "https://www.cqswjt.cn/cms/channel/xmgg5xj/27976.htm"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-002",
@@ -496,7 +683,23 @@
       "logic_chain_check_status": "PASS",
       "first_seen": "2026-09-11",
       "last_seen": "2026-09-11",
-      "topic_tag": "污水厂提标新建"
+      "topic_tag": "污水厂提标新建",
+      "group_software_evidence": {
+        "group_entity": "江苏润民环境集团有限公司（运河港产业园洋北污水厂项目采购人）",
+        "group_software_facts": [
+          "本轮未检索到润民环境集团层面公开软件工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [
+          "工业污水提标改造含自控与在线监测配套，项目提标后需更严格在线监测（氟/重金属/COD等）；设计周期仅30天，设计单位入场后选型窗口快速收窄"
+        ],
+        "group_software_unknowns": [
+          "润民环境集团信息化与智慧水务平台现状（公开无证据）",
+          "项目自控系统集成商与仪表清单（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-001",
@@ -547,7 +750,25 @@
       ],
       "first_seen": "2026-09-11",
       "last_seen": "2026-09-11",
-      "topic_tag": "污水厂提标新建"
+      "topic_tag": "污水厂提标新建",
+      "group_software_evidence": {
+        "group_entity": "新疆生产建设兵团第三师（师市发改发[2026]389号，政府投资类项目）",
+        "group_software_facts": [
+          "项目招标内容明确含'智慧化系统优化升级'+自控设备更新（项目层面数字建设内容，非集团既有平台）【招标公告】"
+        ],
+        "group_software_inferences": [
+          "2万m³/d改造项目'智慧化系统优化升级'明确列入——在线监测点位设计/自控架构/仪表选型未冻结，处于影响设计输入最佳窗口；改造项目存在存量仪表→仪表健康诊断与多品牌兼容价值更高"
+        ],
+        "group_software_unknowns": [
+          "兵团第三师水务数字化整体情况（公开无证据）",
+          "项目智慧化系统与集团/师市平台的关系（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "招标公告（兵团公共资源交易平台）"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-SYNY-001",
@@ -593,7 +814,33 @@
       "trigger_type": "Account",
       "sector": "municipal",
       "logic_chain_check_status": "MEDIUM",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "沈阳水务集团有限公司（市属国企，供水+排水一体化）",
+        "group_software_facts": [
+          "2026-01-21 沈阳水务集团与软通动力签署战略合作：以国产鸿蒙操作系统为技术底座打造全新城市智慧水务平台【软通动力官网/沈阳日报】",
+          "2026-09-14 三川智慧副总裁钱龙、软通动力高级副总裁吴江赴沈阳水务三方座谈：围绕供水漏损精细化管控、鸿蒙水表适配改造、水务数据资产化开发、水务国产化数智化深度磋商【新浪/搜狐】",
+          "2026-09-22 沈阳水务集团与沈阳移动签署战略合作（辽宁移动道义IDC中心）：水务5G专网、AI+水务运营体系、数据价值共享机制【公开报道】",
+          "集团党委副书记郭正学公开表态'数智化转型是水务行业高质量发展的核心抓手，沈阳水务集团正全力推进智慧水务体系建设'【2026-09-14座谈】"
+        ],
+        "group_software_inferences": [
+          "集团智慧水务平台技术底座已明确走鸿蒙生态+国产化路线（软通动力承建），但合作聚焦水表（终端）与漏损，在线水质监测仪表的数据质量/健康管理环节仍可能有 iMS 接入空间",
+          "三方合作刚起步（常态化机制刚明确），仪表数据层标准尚未锁定——具备'在定义阶段介入'的窗口（6-9个月）",
+          "鸿蒙+国产化路线下，iMS 需评估国产化适配与软通平台接口兼容性"
+        ],
+        "group_software_unknowns": [
+          "软通动力鸿蒙水务平台是否已覆盖在线水质监测仪表管理？（公开无证据）",
+          "沈阳水务现有在线水质仪表品牌/数量/联网状态？（公开无证据，需Company Agent）",
+          "三川智慧平台与软通平台的边界/分工？（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.isoftstone.com/zh-cn/htmls/news/20260206/2019650085420625920.html",
+          "https://finance.sina.com.cn/roll/2026-09-15/doc-inirxatu6899336.shtml.md",
+          "http://m.toutiao.com/group/7598356561202889270/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-CXTC-004",
@@ -639,7 +886,32 @@
       "trigger_type": "Project",
       "sector": "semiconductor",
       "logic_chain_check_status": "MEDIUM",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "长鑫科技集团股份有限公司（长鑫存储，合肥）",
+        "group_software_facts": [
+          "2026-09-20 世界制造业大会：长鑫科技宣布第五代DRAM技术平台正式量产（11.95纳米有源区半间距，24GB LPDDR5X已量产）【公开报道】",
+          "2026-07 央视报道：长鑫科技合肥一期/二期产能利用率95.73%，厂区南侧扩建施工中【央视/证券时报】",
+          "上海新晶圆厂已启动设备招标程序；正考虑北京亦庄第二座12英寸晶圆厂；2026年底月产能预计提升至约35万片【2026-09信号已确认】",
+          "募集资金总投资345亿元（科创板上市募投）【公开披露】"
+        ],
+        "group_software_inferences": [
+          "晶圆厂超纯水系统是核心工艺配套，扩产（上海新厂+亦庄第二座）持续释放超纯水/废水在线监测仪表需求——仪表必然存在，软件层机会需验证",
+          "半导体行业厂务系统（FMS/SCADA）通常由设备工程部门管控，数字化管理需求与水务行业不同——iMS 关联需现场验证（逻辑链中等）",
+          "亦庄第二座仍处'正考虑'阶段（>9个月窗口），若以'新厂仪表数据层标准'概念介入可提前布局"
+        ],
+        "group_software_unknowns": [
+          "长鑫现有超纯水/废水在线仪表管理软件平台（半导体厂务系统）现状？（公开无证据）",
+          "上海新厂设备招标中水系统仪表包的技术规格？（公开无证据，需Company Agent）",
+          "半导体场景仪表管理决策链（工艺工程师/设备工程师/厂务）？（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [
+          "https://finance.cctv.com/2026/07/27/ARTIJnkm3aqZ0PvT1kEHxO2R260727.shtml",
+          "http://dohurd.ah.gov.cn/site/tpl/10081?prjNum=3401232601060101&rowguid=79581f367197fdc4237a22efd00a57e8"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-004",
@@ -690,7 +962,23 @@
       ],
       "first_seen": "2026-09-11",
       "last_seen": "2026-09-11",
-      "topic_tag": "污水厂提标新建"
+      "topic_tag": "污水厂提标新建",
+      "group_software_evidence": {
+        "group_entity": "灵山县灵广土地整治开发有限公司（项目招标人）",
+        "group_software_facts": [
+          "本轮未检索到灵广公司集团层面公开软件工作证据（县级平台公司）"
+        ],
+        "group_software_inferences": [
+          "新建1万m³/d污水厂明确含'仪表间'+在线监测设计；新建项目可在数字化设计阶段植入'平台预留第三方仪表接口'形成县级标杆"
+        ],
+        "group_software_unknowns": [
+          "灵广公司信息化现状（公开无证据）",
+          "项目智慧平台设计委托情况（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-DQSY-002",
@@ -736,7 +1024,33 @@
       "trigger_type": "Account",
       "sector": "municipal",
       "logic_chain_check_status": "MEDIUM",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "大运河（北京）水务建设投资管理有限公司（北京副中心水务投资主体）＋华立股份(603038)/华芯数科(北京)",
+        "group_software_facts": [
+          "2026-09-17 北京绿色发展论坛：华立股份与大运河(北京)水务签署战略合作协议——超滤膜绿色净水工艺+智慧水务数字化平台为核心技术，华立负责智慧水务数字化平台开发，计划打造北京副中心示范标杆并复制推广【上海证券报/证券时报】",
+          "华立股份自研'磐石数智化AI水务平台'：24小时水质在线监测、设备运行优化、故障预警及远程无人值守运维，覆盖水厂智能管控、管网智慧运维、全域运营管理【财联社/投资者关系记录】",
+          "华立股份2026上半年智慧水务业务收入2.01亿元，同比增长67%，毛利率40%+【投资者关系记录】",
+          "华立股份拥有'膜材料+膜组件+智能装备+智慧水务平台+全周期运维'全产业链交付能力【公开披露】"
+        ],
+        "group_software_inferences": [
+          "华立股份自身是智慧水务平台提供商（磐石平台）——iMS 需定位为互补而非竞争：多品牌在线仪表统一接入/数据质量层/第三方仪表健康诊断",
+          "合作刚签约（2026-09-17），华芯数科刚注册落地，平台开发范围与技术路线尚未锁定——仪表数据层标准定义期窗口存在（>9个月）",
+          "北京副中心若形成示范样板将向京津冀及全国复制，早期嵌入技术规格的杠杆价值高"
+        ],
+        "group_software_unknowns": [
+          "华立'磐石'平台是否支持第三方仪表数据接入？现有客户中使用第三方仪表比例？（公开无证据）",
+          "大运河水务现有数字化基础与仪表装机？（公开无证据）",
+          "平台开发由华立全部自研还是引入合作方？（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "http://www.cnstock.com/commonDetail/792174",
+          "https://www.stcn.com/article/detail/4190900.html",
+          "https://www.cls.cn/detail/xk/bbae9a16c53cc1b2d459744272c46e17"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260909-004",
@@ -786,7 +1100,26 @@
       ],
       "first_seen": "2026-09-09",
       "last_seen": "2026-09-09",
-      "topic_tag": "污水厂提标新建"
+      "topic_tag": "污水厂提标新建",
+      "group_software_evidence": {
+        "group_entity": "兴宁产业园区管委会/梅州市级平台（业主单位以招标文件为准）",
+        "group_software_facts": [
+          "项目将'污水厂信息化建设'列为独立建设内容：构建智能AI专家系统+安防系统，搭建含智能控制、实时监测与远程运维的'智慧厂站运营管控平台'【项目可研/招标计划】"
+        ],
+        "group_software_inferences": [
+          "项目明确'信息化建设+智慧厂站运营管控平台'同步建设——仪表层与数字平台层需对接，iMS 可作为仪表数据采集/监控/诊断层接入智慧厂站平台；AI专家系统说明客户认可'数据→模型→决策'",
+          "1.44亿规模含新建1万m³/d工业污水厂+1万m³/d生活污水厂改造，双线模式进出水在线监测仪表需求明确"
+        ],
+        "group_software_unknowns": [
+          "园区/业主层面已有智慧平台或集团信息化现状（公开无证据）",
+          "智慧厂站平台由谁承建、架构如何（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "兴宁产业园区污水处理厂智慧化升级改造工程公开资料"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-003",
@@ -831,7 +1164,28 @@
       "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-16-003)",
       "first_seen": "2026-09-16",
       "last_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "中芯国际（中芯京城为中芯国际+大基金二期+北京亦庄合资 12 英寸厂）",
+        "group_software_facts": [
+          "中芯京城 12 英寸 28nm 级产线，2020-12 注册、一期已量产【中芯国际ESG/产品公告】",
+          "二期用地成交：总投资不低于500亿元【财联社2026-09-12】",
+          "中芯天津西青项目采用(AI监控系统实时检测缺陷，先进工艺节点试点)【公开报道】"
+        ],
+        "group_software_inferences": [
+          "12英寸晶圆厂超纯水（UPW）系统需在线监测TOC/电导率/pH——新建厂为全新仪表采购；但半导体行业仪表管理多由工艺/设备工程师负责，iMS 数字化管理需求需验证",
+          "二期500亿体量叠加全国12寸扩产潮，纯水在线监测仪表市场空间大，但软件层切入点不确定"
+        ],
+        "group_software_unknowns": [
+          "厂务/水系统在线仪表管理平台现状（半导体行业多自建或OEM，公开无证据）",
+          "现有仪表品牌与联网状态（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [
+          "https://www.smics.com/uploads/abc.pdf"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢",
@@ -880,7 +1234,33 @@
       ],
       "first_seen": "2026-09-02",
       "last_seen": "2026-09-02",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "首创环保集团（北京首创生态环保集团股份有限公司，上市水务环保龙头）",
+        "group_software_facts": [
+          "2026半年报：将37座老旧污水处理厂分批注入新成立的'智水运营科技平台'，统一接入AIoT智慧水务中枢，从'工程驱动'转向'运营驱动'【行业报道/半年报】",
+          "自研 WEAM 生态智慧运营平台、ASMART®污水厂模型智控系统（已升级3.0）、AI视频智能预警系统【环博会/新华网】",
+          "Capital-CREATE®好氧颗粒污泥技术产品发布（2025-09），构建'垂直智能AGENT库'；大气监测站点大模型系统已正式上线【中证网】",
+          "2026碳中和大会展示：ASMART系统以生物建模+AI为核心，实现污水厂工艺运行优化和智慧控制【新华网/全联环境商会】"
+        ],
+        "group_software_inferences": [
+          "首创已自建完整智慧运营技术栈（WEAM+ASMART+AIoT中枢），iMS 切入需验证'智水运营科技平台'是否覆盖在线水质仪表健康诊断与数据质量——若未覆盖则有明确空间",
+          "37座老旧污水厂统一接入中枢=多站点仪表统一管理场景集中爆发，仪表资产管理是运营平台天然组成部分",
+          "首创自研平台能力强大，iMS 更可能是'仪表专用数据层'补充或平台内模块而非替代"
+        ],
+        "group_software_unknowns": [
+          "智水运营科技平台是否含仪表资产管理/健康诊断模块？（公开无证据）",
+          "平台由自研还是与外部伙伴共建？（公开无证据）",
+          "37座污水厂现有仪表的品牌构成与联网状态？（公开无证据，需Company Agent）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.sohu.com/a/1069653438_122066679",
+          "https://www.cenews.com.cn/news.html?aid=1778495",
+          "https://www.cs.com.cn/ssgs/gsxw/202509/t20250918_6513507.html"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260907-003",
@@ -929,7 +1309,25 @@
       ],
       "first_seen": "2026-09-07",
       "last_seen": "2026-09-07",
-      "topic_tag": "农村供水"
+      "topic_tag": "农村供水",
+      "group_software_evidence": {
+        "group_entity": "淮安自来水有限公司（集中建设单位）＋清江浦区农业农村和水利局（实施单位）",
+        "group_software_facts": [
+          "本轮未检索到淮安自来水集团层面公开软件工作证据；项目明确配备'分区计量水表及在线监测等设备'，目标'专业化、集约化水务运营管理'【初步设计批复】"
+        ],
+        "group_software_inferences": [
+          "923.85km管网+23559个水表+在线监测分散站点→'专业化、集约化'运营管理直接指向多站点集中管理；在线监测设备集中管理是 iMS 核心价值点"
+        ],
+        "group_software_unknowns": [
+          "淮安自来水数字化平台现状与在线监测接入架构（公开无证据）",
+          "项目在线监测设备清单与品牌（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "淮安市清江浦区农业农村和水利局初步设计批复"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-005",
@@ -1056,7 +1454,30 @@
       ],
       "first_seen": "2026-09-11",
       "last_seen": "2026-09-11",
-      "topic_tag": "二次供水"
+      "topic_tag": "二次供水",
+      "group_software_evidence": {
+        "group_entity": "平顶山发展投资控股集团（母公司）＋河南智慧水务股份有限公司（合作方）",
+        "group_software_facts": [
+          "与河南智慧水务签署战略合作框架（2026-09-09），组建联合事业部推进泵房智慧升级、数字化规划、高企培育及智慧水务产品研发【平顶山日报】",
+          "母公司市自来水公司已建成'智慧水务一体化管理平台'，实现GIS、流量监控、二供泵房管理与平台全面融合【平顶山日报2025-07】",
+          "平水二供拥有泵房智能化数据监控平台等6项专利【公开资料】"
+        ],
+        "group_software_inferences": [
+          "集团平台+二供泵房监控平台融合完成，211座泵房智慧化升级=多站点仪表数据层扩容，iMS（余氯/浊度在线监测仪表的健康诊断+数据质量）具有直接逻辑",
+          "二次供水水质安全管控是新《供水条例》法定考核项→在线仪表部署与数据可用性为刚需"
+        ],
+        "group_software_unknowns": [
+          "母公司平台是否兼容第三方仪表接入（公开无证据）",
+          "联合事业部技术路线与平台选型（公开无证据）",
+          "211座泵房现有仪表品牌/数量/联网状态（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "http://epaper.pdsxww.com/pdsrb/html/2026-09/10/content_501736.htm",
+          "http://epaper.pdsxww.com/pdsrb/html/2025-07/17/content_467153.htm"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260925-BNAN-002",
@@ -1104,7 +1525,25 @@
       "trigger_type": "Project Trigger",
       "sector": "municipal",
       "topic_tag": "农村供水",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "重庆市巴南区人民政府（水利局批复，政府投资项目）",
+        "group_software_facts": [
+          "初步设计批复明确要求：在主要供水节点（高位水池/调节池/局部加压设备）设置流量、水质监控传感器，'以便今后统一接入实时监控平台'【巴南区水利局行政许可】"
+        ],
+        "group_software_inferences": [
+          "批复中明确'统一接入实时监控平台'——说明存在或规划中的数据平台；220km管网+5座调蓄+4座增压=多处监测点位，Multi-site 用例成立；传感器部署写入政府批复为强信号"
+        ],
+        "group_software_unknowns": [
+          "'实时监控平台'是区级/市级/第三方平台（公开无证据）",
+          "传感器品牌与接入协议（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "重庆市巴南区水利局《关于巴南区二圣水厂新建工程（一标段）初步设计报告准予行政许可的决定》"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-003",
@@ -1149,7 +1588,25 @@
       "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-14-003)",
       "first_seen": "2026-09-14",
       "last_seen": "2026-09-14",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "南阳市住建局（政府项目库）",
+        "group_software_facts": [
+          "南阳市地下管网升级列入'十五五'国家重点工程（全国改造77万公里），2026年专项支持资金1600亿元，重点投向含'智慧监测'【南阳市政府】"
+        ],
+        "group_software_inferences": [
+          "智慧监测被明确列入六大网（含）。政策资金落地+项目库建立→管网在线监测点位需求后置形成；iMS 关联需经'管网监测→水质/流量仪表→多站点管理'链条，中间层级较多"
+        ],
+        "group_software_unknowns": [
+          "南阳市水务集团/管网公司数字化平台现状（公开无证据）",
+          "项目库具体子项与仪表配置（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://nanyang.gov.cn/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-004",
@@ -1194,7 +1651,29 @@
       "enrichment_pointer": "见stage3_enrichments[3] (OPP-2026-09-16-004)",
       "first_seen": "2026-09-16",
       "last_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "粤芯半导体技术股份有限公司（广州，12英寸特色工艺）",
+        "group_software_facts": [
+          "副总裁李海明公开表述：粤芯'已经实现数字化、智能化与高度自动化生产管理'【粤芯官网/新闻通气会】",
+          "四期启动定调'以数字升级为蝶变'（巩固模拟特色工艺+数字升级战略）【广州市政府门户】",
+          "2026-09-15披露招股书，拟募资75亿（含三期产能建设）【官方披露】"
+        ],
+        "group_software_inferences": [
+          "粤芯数字化/自动化管理已有表述，但属于泛化的生产制造数字化；水系统（纯水/废水）在线监测仪表管理软件层面公开证据弱——iMS 半导体场景适用性需现场验证（产线工程师管理惯性）",
+          "四期2029年底建成、三期2026Q4达产，多厂（3座）统一管理需求随投产放大"
+        ],
+        "group_software_unknowns": [
+          "水系统/超纯水在线仪表管理与厂务平台（FMS/SCADA）现状（公开无证据）",
+          "现有/规划仪表品牌与联网架构（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [
+          "https://www.gz.gov.cn/ysgz/xwdt/ysdt/content/mpost_10659902.html",
+          "https://www.cansemitech.com/?p=916"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260925-PLLE-003",
@@ -1242,7 +1721,24 @@
       "trigger_type": "Project Trigger",
       "sector": "municipal",
       "topic_tag": "排水管网",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "平乐县住房和城乡建设局（政府投资项目）",
+        "group_software_facts": [
+          "项目建议书批复（平发改投资字〔2026〕52号）——纯管网+一体化污水加压泵项目，无智慧化/平台建设内容"
+        ],
+        "group_software_inferences": [
+          "项目含1座13000m³/d一体化污水加压泵（可能含在线流量/液位监测），但管网项目仪表需求有限——iMS 关联偏弱，属低优先级"
+        ],
+        "group_software_unknowns": [
+          "加压泵在线监测配置（公开无证据）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [
+          "平乐县发改局批复公告"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPP-2026-09-18-001",
@@ -1289,7 +1785,25 @@
         "changed": false
       },
       "enrichment_pointer": "ENR-20260918-001",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "旺苍县水务建设发展有限公司（业主）＋广元市旺苍生态环境局（受理环评）",
+        "group_software_facts": [
+          "项目名称明确含'智慧水务'建设内容（水厂提标改造+智慧水务一期）【旺苍生态环境局环评受理公示】"
+        ],
+        "group_software_inferences": [
+          "'智慧水务'写入项目名称→在线监测/平台建设是项目显性内容；可研/环评阶段技术路线未冻结，iMS 可早期介入平台仪表层设计"
+        ],
+        "group_software_unknowns": [
+          "旺苍县水务建设发展有限公司信息化现状（公开无证据）",
+          "'智慧水务'具体范围与承建方（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "广元市旺苍生态环境局环评受理公示"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPP-2026-09-18-001",
@@ -1336,7 +1850,25 @@
         "changed": false
       },
       "enrichment_pointer": "ENR-20260918-001",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "旺苍县水务建设发展有限公司（业主）＋广元市旺苍生态环境局（受理环评）",
+        "group_software_facts": [
+          "项目名称明确含'智慧水务'建设内容（水厂提标改造+智慧水务一期）【旺苍生态环境局环评受理公示】"
+        ],
+        "group_software_inferences": [
+          "'智慧水务'写入项目名称→在线监测/平台建设是项目显性内容；可研/环评阶段技术路线未冻结，iMS 可早期介入平台仪表层设计"
+        ],
+        "group_software_unknowns": [
+          "旺苍县水务建设发展有限公司信息化现状（公开无证据）",
+          "'智慧水务'具体范围与承建方（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "广元市旺苍生态环境局环评受理公示"
+        ],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "background_monitoring": [
@@ -1353,7 +1885,18 @@
       "sector": "municipal-industrial",
       "background_monitoring_note": "Stage Gate：施工准备阶段设计已冻结，从opportunities[]移出（2026-09-13）",
       "first_seen": "2026-09-13-snapshot",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "威立雅科学城环保科技(广州)有限公司（合资公司，威立雅×科学城广州投资集团）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "天津泰达威立雅2026年度服务采购（检测技术服务外包/设备设施维保管理服务/污泥处置/药剂采购）",
@@ -1368,7 +1911,18 @@
       "sector": "municipal",
       "background_monitoring_note": "Stage Gate：已进入采购阶段，从opportunities[]移出（2026-09-13）",
       "first_seen": "2026-09-13-snapshot",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "天津泰达威立雅水务有限公司 / 天津泰达新水源科技开发有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "乌鲁木齐河东威立雅（威立雅59%控股）运营数字化",
@@ -1383,7 +1937,18 @@
       "sector": "municipal",
       "background_monitoring_note": "证据不足待验证（2026-09-13），暂不入opportunities[]",
       "first_seen": "2026-09-13-snapshot",
-      "topic_tag": "智慧水厂"
+      "topic_tag": "智慧水厂",
+      "group_software_evidence": {
+        "group_entity": "乌鲁木齐河东威立雅水务有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "合肥水务集团设备全生命周期管理系统与多站点资产管理",
@@ -1419,7 +1984,18 @@
         }
       },
       "first_seen": "2026-09-02",
-      "topic_tag": "排水管网"
+      "topic_tag": "排水管网",
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团水务一体化改革两周年（2024年8月30日挂牌）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "联合水务×腾讯云战略合作共建'水务大脑'",
@@ -1455,7 +2031,18 @@
         }
       },
       "first_seen": "2026-09-02",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年8月27日，江苏联合水务科技股份有限公司(603291)与腾讯云计算(北京)有限责任公司在（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "郴州某区域智慧水务建设项目-521套在线仪表大规模部署",
@@ -1491,7 +2078,18 @@
         }
       },
       "first_seen": "2026-09-02",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "湖南省郴州某区域智慧水务建设项目招标公告已发布（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "普安县水务一体化智慧水务及配套工程EPC总承包",
@@ -1527,7 +2125,18 @@
         }
       },
       "first_seen": "2026-09-02",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "贵州省黔西南布依族苗族自治州普安县水务一体化建设项目(智慧水务及配套工程)设计、采购、施工EPC总承（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "怀远县全域供水数字化改造提升项目EPC-智慧监测体系建设工程",
@@ -1563,7 +2172,18 @@
         }
       },
       "first_seen": "2026-09-04",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年9月2日，怀远县禹众水务有限公司发布EPC招标公告（BB2026HYGCZ0521），合同（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "西安第四第五再生水厂智慧化改造设计项目-全维度智慧化升级",
@@ -1599,7 +2219,18 @@
         }
       },
       "first_seen": "2026-09-04",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年9月1日，西安净水处理有限责任公司发布招标公告（HRZBXA2026-JS-02），对第四（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "华虹宏力无锡三期12英寸晶圆代工产线建设-超纯水系统仪表需求",
@@ -1635,7 +2266,18 @@
         }
       },
       "first_seen": "2026-09-04",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年9月1日，华虹宏力（688347.SH/01347.HK）公告，联合无锡锡虹国芯二期、华芯（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "鄞州区污水处理设施在线水质监测系统运维管理-多站点仪表运维外包",
@@ -1671,7 +2313,18 @@
         }
       },
       "first_seen": "2026-09-04",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年8月28日发布招标公告，2026年鄞州区污水处理设施在线水质监测系统运维管理项目，预算27（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "邛崃市城区污水处理厂智慧水务软件开发采购",
@@ -1706,7 +2359,18 @@
         }
       },
       "first_seen": "2026-09-07",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "中国电建市政公司中标邛崃市城区污水处理厂及配套管网工程(第二批)设计-施工总承包项目，新建7万m3/（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "华虹半导体Fab9B扩建(时间线更新)",
@@ -1741,7 +2405,18 @@
         }
       },
       "first_seen": "2026-09-07",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "华虹半导体2026Q1业绩显示：Fab9A预计2026年Q3达满产，Fab9B已于2026年3月开工（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "天津北辰区二次供水设施改造工程(2.44亿/120个泵房)",
@@ -1776,7 +2451,18 @@
         }
       },
       "first_seen": "2026-09-07",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "天津市北辰区居民住宅二次供水设施改造工程，总投资2.44亿元(自筹40%+中央资金60%)，招标人为（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "明溪县城区污水管网设施在线监测建设项目",
@@ -1811,7 +2497,18 @@
         }
       },
       "first_seen": "2026-09-09",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "明溪县住房和城乡建设局委托中宏源建设管理有限公司于2026年9月3日发布公开招标公告(项目编号[35（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "华虹宏力Fab9B扩建(增资41.7亿美元确认)",
@@ -1846,7 +2543,18 @@
         }
       },
       "first_seen": "2026-09-09",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "2026年9月1日晚，华虹宏力发布公告，公司及全资子公司上海华虹宏力拟联合无锡锡虹国芯二期、华芯鼎新（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "清江浦区农村供水提升改造项目(初步设计已批复)",
@@ -1881,7 +2589,18 @@
         }
       },
       "first_seen": "2026-09-09",
-      "topic_tag": "农村供水"
+      "topic_tag": "农村供水",
+      "group_software_evidence": {
+        "group_entity": "淮安市清江浦区农村供水提升改造项目初步设计于2026年7月15日获区发改委批复，7月13日区财政局完（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "夹江县青衣水厂扩建工程(二阶段)智慧水务采购项目",
@@ -1901,7 +2620,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "广东省基础工程集团有限公司（招标人/EPC）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "定远县盐化工业园工业污水处理厂提标改造项目(1.9亿EPC)",
@@ -1921,7 +2651,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "定远县（安徽滁州）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "邛崃市城区污水处理厂智慧水务软件开发采购（7万m3/d新建）",
@@ -1941,7 +2682,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "中国电建市政公司（EPC总包）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "坪山区智慧水务运营服务项目",
@@ -1961,7 +2713,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "深圳市坪山区（政府采购）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "梅州城区供水管网漏损治理和老化更新改造项目(二期)三标段设备采购",
@@ -1981,7 +2744,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "梅州市（广东省政府采购）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "慈湖高新区地下管网更新改造-中橡大道污水管网改造项目(EPC)",
@@ -2001,7 +2775,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "马鞍山北城建设投资有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "孝感市孝南区古城和火车站片区供水管网漏损及二次供水老化更新改造项目",
@@ -2021,7 +2806,18 @@
         "note": "v3.5 行业归属字段补充"
       },
       "first_seen": "2026-09-11",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "孝感市孝南区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "武穴三利水厂扩建及新建供水管网工程EPC",
@@ -2033,7 +2829,18 @@
       "key_date": "中标公告2026-09-07，中标价1.17亿元",
       "trace_value": "设计院和EPC总包方信息可用于下一个同类项目提前布局",
       "first_seen": "2026-09-14",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "武穴市三利制水有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "赣州赣县区第三水厂管网工程",
@@ -2045,7 +2852,18 @@
       "key_date": "招标公告2026-09，总投资1.9亿元",
       "trace_value": "赣县区乡投发展集团为区域供水平台，后续水厂主体工程招标可关注",
       "first_seen": "2026-09-14",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "赣州市赣县区乡投发展集团有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "重庆綦江区易旱区域供水保障工程（一期+二期）",
@@ -2057,7 +2875,18 @@
       "key_date": "招标公告2026-09-07",
       "trace_value": "綦南给排水为綦江区主要供水企业，含在线监测设施，后续运维阶段可关注仪表管理需求",
       "first_seen": "2026-09-14",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "重庆市綦南给排水有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "乌鲁木齐水资源配置工程智慧建管系统",
@@ -2069,7 +2898,18 @@
       "key_date": "中标候选人公示2026-09-11至09-14",
       "trace_value": "科荣软件为智慧水务信息化领域活跃企业，其项目业绩可作为设计院生态参考",
       "first_seen": "2026-09-14",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "乌鲁木齐市水资源配置工程项目建设单位（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "中交水利贵港供水项目智慧水务管理系统",
@@ -2081,7 +2921,18 @@
       "key_date": "招标公告2026-09-11，约400km供水管网",
       "trace_value": "中交水利为央企背景，农村供水智慧水务平台含物联网统一接入，后续运维阶段仪表数据接入需求可关注",
       "first_seen": "2026-09-14",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "中交水利电力工程有限公司/贵港市港南区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "江安县北城片区供水项目勘察设计",
@@ -2091,7 +2942,18 @@
       "key_date": "2026-09-09",
       "trace_value": "设计单位确定后可追溯下一个同类项目",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "江安县（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "随县农村供水保障工程(一期)EPC",
@@ -2101,7 +2963,18 @@
       "key_date": "2026-09-01定标",
       "trace_value": "EPC联合体含设计院",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "随县水利和湖泊局（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "阜康市四工河片区农村供水设计",
@@ -2111,7 +2984,18 @@
       "key_date": "2026-09-10公示",
       "trace_value": "设计院确定",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "阜康市（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "黎川县城区供水管网+智能设备升级EPC",
@@ -2121,7 +3005,18 @@
       "key_date": "2026-09-14公示",
       "trace_value": "EPC含智能设备升级和智慧水务工程",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "黎川县水利建设投资开发有限责任公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "重庆排水大九污水厂西彭车间在线监测仪表",
@@ -2131,7 +3026,18 @@
       "key_date": "2026-09-11询比采购",
       "trace_value": "在线监测仪表采购，可追溯仪表品牌偏好",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "重庆市排水有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "滨海园区污水水质在线监测运维项目",
@@ -2141,7 +3047,18 @@
       "key_date": "2026-09-15磋商",
       "trace_value": "在线监测运维项目",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "滨海园区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "合肥水务集团排水泵站运维服务",
@@ -2151,7 +3068,18 @@
       "key_date": "2026-08-27招标",
       "trace_value": "泵站运维含设备维修人员配备",
       "first_seen": "2026-09-16",
-      "topic_tag": "排水管网"
+      "topic_tag": "排水管网",
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "乌鲁木齐水资源配置工程信息化I标",
@@ -2161,7 +3089,18 @@
       "key_date": "2026-09-11公示",
       "trace_value": "智慧建管系统，可追溯系统集成商",
       "first_seen": "2026-09-16",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "乌鲁木齐市（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "包头市大青山水源净水厂建设工程",
@@ -2176,7 +3115,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：已开工阶段，设计已冻结，从opportunities[]排除(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "包头市水务（集团）有限公司所属包头市供水有限责任公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "随县农村供水保障工程（一期）EPC",
@@ -2191,7 +3141,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：已定标阶段，转入background_monitoring(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "随州市水务集团（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "全椒县供排水一体化项目—2026年供水管道新建与改造项目",
@@ -2206,7 +3167,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：招标阶段，转入background_monitoring(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "全椒县水务有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "重庆水务集团大九污水处理厂西彭车间新增出水在线监测仪表项目",
@@ -2221,7 +3193,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：采购阶段，转入background_monitoring(2026-09-18)。但关键事实(仪表数据上传集团大数据平台)更新至strategic_accounts和opportunities中的重庆水务条目。",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "重庆市排水有限公司（重庆水务环境控股集团旗下）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "包头市大青山水源净水厂建设工程",
@@ -2236,7 +3219,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：已开工阶段，设计已冻结，从opportunities[]排除(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "包头市水务（集团）有限公司所属包头市供水有限责任公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "随县农村供水保障工程（一期）EPC",
@@ -2251,7 +3245,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：已定标阶段，转入background_monitoring(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "随州市水务集团（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "全椒县供排水一体化项目—2026年供水管道新建与改造项目",
@@ -2266,7 +3271,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：招标阶段，转入background_monitoring(2026-09-18)",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "全椒县水务有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "重庆水务集团大九污水处理厂西彭车间新增出水在线监测仪表项目",
@@ -2281,7 +3297,18 @@
       "sector": "municipal",
       "first_seen": "2026-09-18",
       "background_monitoring_note": "Stage Gate：采购阶段，转入background_monitoring(2026-09-18)。但关键事实(仪表数据上传集团大数据平台)更新至strategic_accounts和opportunities中的重庆水务条目。",
-      "topic_tag": "供水管网改造"
+      "topic_tag": "供水管网改造",
+      "group_software_evidence": {
+        "group_entity": "重庆市排水有限公司（重庆水务环境控股集团旗下）（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "湖北汉川市城区污水处理厂及配套管网建设项目一期EPC",
@@ -2292,7 +3319,18 @@
       "feasibility_unit": "汉川市发展和改革局",
       "key_dates": "2026-09-15资审公告，计划开工2026-10-30",
       "trace_value": "4.49亿EPC项目，出水准Ⅲ类，追溯设计院和EPC方为下一个同类项目布局",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "湖北汉银环保产业发展有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "湖南石首市南片区污水管网提升工程EPC",
@@ -2303,7 +3341,18 @@
       "feasibility_unit": "待定",
       "key_dates": "2026-09-16资审公告，计划开工2026-11-20",
       "trace_value": "1.21亿管网改造EPC，64.4km管道+3座泵站",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "石首市相关部门（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "四川彭山经济开发区工业污水处理厂扩容提升项目",
@@ -2314,7 +3363,18 @@
       "feasibility_unit": "待定",
       "key_dates": "2026-09-13招标计划公告",
       "trace_value": "6300万工业污水扩容，出水准Ⅲ类，追溯设计院为下一个工业园区污水项目",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "四川彭山经济开发区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "四川乐山嘉州新建污水处理厂项目(施工)",
@@ -2325,7 +3385,18 @@
       "feasibility_unit": "待定",
       "key_dates": "2026-09-18评标结果公示",
       "trace_value": "6500万施工标，追溯设计院和可研单位",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "乐山市市中区城市建设投资发展集团（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "武汉武昌供水分公司设备更新及系统调试项目",
@@ -2336,7 +3407,18 @@
       "feasibility_unit": "待定",
       "key_dates": "2026-09-15比选公告，截止9/23",
       "trace_value": "设备更新项目，追溯仪表类型和品牌偏好",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "武汉市水务集团武昌供水分公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "汉川市城区污水处理厂及配套管网建设项目一期EPC",
@@ -2351,7 +3433,18 @@
       "sector": "municipal",
       "background_monitoring_note": "EPC资审阶段，设计+施工+采购一体化招标，仪表选型将随EPC合同锁定",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "湖北汉银环保产业发展有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "河北丛台东污水处理厂扩建改造工程总承包",
@@ -2366,7 +3459,18 @@
       "sector": "municipal",
       "background_monitoring_note": "EPC招标阶段",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "邯郸市亦翔市政工程有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "武汉白浒供水厂厂网一体化项目EPC",
@@ -2381,7 +3485,18 @@
       "sector": "municipal",
       "background_monitoring_note": "评标结果已公示，设计+施工已锁定",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "武汉白浒供水有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "湖北监利工业污水处理厂扩建EPC",
@@ -2396,7 +3511,18 @@
       "sector": "industrial",
       "background_monitoring_note": "评标结果已公示",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "朱河工业园区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "新疆霍尔果斯兵团污水处理厂提质增效EPC",
@@ -2411,7 +3537,18 @@
       "sector": "municipal",
       "background_monitoring_note": "中标候选人已公示",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "霍尔果斯兵团分区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "怀远县全域供水数字化改造提升项目EPC",
@@ -2426,7 +3563,18 @@
       "sector": "municipal",
       "background_monitoring_note": "EPC招标阶段，含数字化内容但选型已接近锁定",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "怀远县禹众水务有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "荣昌区北部片区中心水厂建设工程（智慧水务）",
@@ -2441,7 +3589,18 @@
       "sector": "municipal",
       "background_monitoring_note": "智慧水务标段招标阶段",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "重庆兴荣弘禹水利开发有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "许昌市中心城区雨污水管网功能提升项目（含智慧水务管理系统）",
@@ -2456,7 +3615,18 @@
       "sector": "municipal",
       "background_monitoring_note": "EPC招标阶段，含智慧水务内容但选型随合同锁定",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "许昌建投交通发展有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "乐山嘉州新饮品产业园区新建污水处理厂",
@@ -2471,7 +3641,18 @@
       "sector": "industrial",
       "background_monitoring_note": "施工评标公示阶段",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "乐山市市中区城市建设投资发展集团（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "凯里市洗马河流域污水管网更新改造工程勘察设计",
@@ -2486,7 +3667,18 @@
       "sector": "municipal",
       "background_monitoring_note": "设计阶段已锁定",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "凯里市（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "石首市南片区污水管网提升工程EPC",
@@ -2501,7 +3693,18 @@
       "sector": "municipal",
       "background_monitoring_note": "EPC资审阶段",
       "first_seen": "2026-09-23",
-      "topic_tag": "其他"
+      "topic_tag": "其他",
+      "group_software_evidence": {
+        "group_entity": "石首市（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "荣昌区北部片区中心水厂建设工程（智慧水务系统集成）",
@@ -2515,7 +3718,18 @@
       "trace_value": "智慧水务水厂系统集成项目，含物联网平台+在线仪表，下一个同类项目可提前对接设计院",
       "topic_tag": "智慧水厂",
       "source_url": "https://www.cqggzy.com/searchDetail/92f97c51-bc3c-47e7-8780-201228d88ea7",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "重庆市荣昌区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "西安市自来水公司供水管网压力优化、分区计量及漏损治理工程",
@@ -2529,7 +3743,18 @@
       "trace_value": "大型管网在线监测设备采购项目，含压力/水质/流量多类型仪表——下一个同类项目可关注西安水务设备选型偏好",
       "topic_tag": "供水管网改造",
       "source_url": "https://news.sohu.com/a/1078963205_122742221",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "西安市自来水有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "红岩污水处理厂网改扩建工程（扩容6万吨/d）勘察招标",
@@ -2543,7 +3768,18 @@
       "trace_value": "污水厂扩容项目，勘察阶段说明设计即将启动——可追踪设计院选型",
       "topic_tag": "污水厂提标新建",
       "source_url": "https://ggzyjy.sc.gov.cn/jyxx/002001/002001001/20260920/90414f4d-6703-414b-b974-8a1ee68172ed.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "成都市新津环境投资集团有限公司（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "黄田污水处理厂扩建及配套管网工程",
@@ -2557,7 +3793,18 @@
       "trace_value": "污水厂扩建+管网，环评通过后可研/设计即将启动",
       "topic_tag": "污水厂提标新建",
       "source_url": "https://www.yj.gov.cn/col/col1229264238/art/2026/art_c11b594789e64fe298020db470aac7d9.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "永嘉县（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "房县城关片区污水管网更新建设项目（EPC总承包）",
@@ -2571,7 +3818,18 @@
       "trace_value": "大型管网EPC项目，1.6亿投资——可追踪EPC方选型偏好",
       "topic_tag": "排水管网",
       "source_url": "https://www.hbbidcloud.cn/hubei/zbwjtqgs/20260922/f1007f63-7b3a-4f36-b889-179b59feb00e.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "房县住房和城乡建设局（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "吉林市污水管线维修升级改造工程",
@@ -2585,7 +3843,18 @@
       "trace_value": "污水管线改造，初步设计已批复——设计院已确定为正道设计，可对接给排水专业",
       "topic_tag": "排水管网",
       "source_url": "http://xxgk.jlcity.gov.cn/gzbm/fgw_2/xbgkml/202609/t20260922_1337915.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "吉林市住房和城乡建设局（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "烈山区污水管网及设施更新改造工程（勘察设计采购）",
@@ -2599,7 +3868,18 @@
       "trace_value": "管网修复改造项目，规模适中——可追踪设计单位给排水专业选型",
       "topic_tag": "排水管网",
       "source_url": "https://www.lieshan.gov.cn/xwzx/tzgg/60927009.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "淮北市烈山区（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "普定县山塘水库河流安全智慧监测系统采购",
@@ -2613,7 +3893,18 @@
       "trace_value": "智慧监测系统采购，以视频监控为主——非iMS直接相关但可了解普定县水务数字化需求",
       "topic_tag": "水利信息化",
       "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260920_27362740.htm",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "普定县水务局（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "2026年区建管委徐汇智慧水务信息化平台数据支撑系统运维服务",
@@ -2627,7 +3918,18 @@
       "trace_value": "智慧水务平台运维——可了解徐汇区平台架构和仪表接入情况",
       "topic_tag": "智慧水厂",
       "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/gzgg/202609/t20260922_27379788.htm",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "上海市徐汇区城市网格化综合管理中心（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "黄石市污水处理设施更新改造工程（5270万）",
@@ -2641,7 +3943,18 @@
       "trace_value": "存量设施设备更新——可了解更新后仪表配置及运维模式",
       "topic_tag": "污水厂提标新建",
       "source_url": "http://cgw.huangshi.gov.cn/gzdt/cgxw/202609/t20260920_1360811.html",
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-25",
+      "group_software_evidence": {
+        "group_entity": "黄石市城管委（招标/采购阶段，集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作未逐条检索，发布前须按GSE v1.0补齐（FACT/INFERENCE/UNKNOWN）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "industry_triggers": [

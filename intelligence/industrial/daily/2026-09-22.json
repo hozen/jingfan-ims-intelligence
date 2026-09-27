@@ -222,7 +222,20 @@
           "无JD/招标/环评软件条款公开证据（UNKNOWN）"
         ]
       },
-      "icp_attempts": []
+      "icp_attempts": [],
+      "group_software_evidence": {
+        "group_entity": "宿迁镭明半导体设备有限公司（苏州镭明激光科技子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宿迁镭明半导体设备有限公司（苏州镭明激光科技子公司）（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-02",
@@ -365,7 +378,20 @@
       },
       "icp_attempts": [
         "计划引入AI视觉检测+低碳清洗工艺（信息化倾向，INFERENCE-媒体报道）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "淮安东煦电子材料有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "淮安东煦电子材料有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-03",
@@ -512,7 +538,20 @@
           "园区污水厂运营需日报/台账/预警（行业基准INFERENCE）"
         ]
       },
-      "icp_attempts": []
+      "icp_attempts": [],
+      "group_software_evidence": {
+        "group_entity": "定边县产业园区管理委员会（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "定边县产业园区管理委员会（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-04",
@@ -656,7 +695,20 @@
           "排污许可执行报告/台账要求（Fact）"
         ]
       },
-      "icp_attempts": []
+      "icp_attempts": [],
+      "group_software_evidence": {
+        "group_entity": "泰兴怡达化学有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "泰兴怡达化学有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-05",
@@ -798,7 +850,20 @@
           "无软件条款公开证据（UNKNOWN）"
         ]
       },
-      "icp_attempts": []
+      "icp_attempts": [],
+      "group_software_evidence": {
+        "group_entity": "滨化集团股份有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "滨化集团股份有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-06",
@@ -944,7 +1009,20 @@
         "55m³/h回用系统交钥匙招标（含调试/培训/资料移交）",
         "9/1厂区安防自控改造采购（厂级数字化推进）",
         "近期招聘'环保专员'（6千以下，11天前，无线索级水处理专岗）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "长电科技(宿迁)有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "长电科技(宿迁)有限公司（半导体/电子）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-07",
@@ -1095,7 +1173,21 @@
         "一期污水站+在线监测建成并验收（FACT）",
         "集团持续设置环保数据上报岗（FACT-JD）",
         "EHS能碳岗收集集团污染物排放数据（FACT-JD）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "重庆新宙邦新材料有限公司（新宙邦300037全资子公司）（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "上市公司互动平台2026-05-07回应：'高标准建设污水处理站、废气处理设施（RTO等）、在线监测系统等污染物防治设施'（FACT-巨潮互动易）",
+          "集团在惠/南平/宜昌/荆门持续招聘环保工程师/EHS工程师，JD包含'项目污水站安装管理跟进和调试''环境监测、环保数据、资料的上报'（FACT-招聘平台）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "重庆新宙邦新材料有限公司（新宙邦300037全资子公司） 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-08",
@@ -1247,7 +1339,20 @@
       "icp_attempts": [
         "全厂废水零排放技术改造+BOO模式引入（FACT）",
         "技改期间部分产能停产（FACT-公告，显示决心）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "山西兰花煤化工有限责任公司（兰花科创600123控股）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "山西兰花煤化工有限责任公司（兰花科创600123控股）（煤化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-09",
@@ -1381,7 +1486,20 @@
         "evidence_type": "UNKNOWN",
         "evidence_items": []
       },
-      "icp_attempts": []
+      "icp_attempts": [],
+      "group_software_evidence": {
+        "group_entity": "国电投远达水务有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "国电投远达水务有限公司（石化/化工）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "IND-20260922-10",
@@ -1522,7 +1640,20 @@
       },
       "icp_attempts": [
         "膜元件利旧改造（降本增效主动优化）（FACT）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "福建古雷石化有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "古雷石化基地配套2026-2029年排海管道水质在线监测设备运行维护项目（漳州市古雷水务发展有限公司，预算95万元）（FACT-招采公告）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "福建古雷石化有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "market_background": [

@@ -66,6 +66,14 @@ Radar 1 检出范围显式扩展：中国政府采购网采购意向公开专区
 
 不得访问或使用 Hach 内部数据（CRM/SFDC/Installed Base/Customer Master/Account Owner/客户等级/历史销售/Pipeline/Win-Loss/服务合同/内部联系人/内部装机数量/内部收入）。这些只能作为 to_verify[] 交给 Company Agent。
 
+# 集团软件证据核查 v1.0（2026-09-27 用户评审确认，强制，优先级最高）
+
+规则全文见 `intelligence/docs/Group_Software_Evidence_Check_v1.0.md`（仓库内共享规范，工业/市政共用）。核心要求：
+- 每条 Opportunity（及有追踪价值的 background_monitoring 条目）必须新增 `group_software_evidence` 结构：group_entity / group_software_facts[]（带来源）/ group_software_inferences[] / group_software_unknowns[] / ims_link_strength（DIRECT|INDIRECT|NO_EVIDENCE）/ evidence_sources[] / checked_at。
+- 用户原话要义：线索不能只停留在"项目需要水质仪表 → iMS 可建立"的推理，必须查清**集团/母公司在软件方面做过哪些公开工作**（平台建设/软件采购/自研软著专利/公开发表/试点尝试等），用集团层面公开事实支撑 iMS 关联判断。
+- 下游使用：Qualification Card 以 group_software_evidence 作为 iMS 实证层；action_triad.find_who 新增集团信息化/数字化部门与科技子公司接口人；to_verify.ims 纳入 group_software_unknowns。
+- 发布前 QC 增加：每条 Opportunity 含 group_software_evidence 且 ims_link_strength 非空，缺失即任务未完成。
+
 # GITHUB INTERFACE（v3.4 更新，v3.4.2 延续）
 
 仓库：hozen/jingfan-ims-intelligence

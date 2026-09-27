@@ -210,6 +210,20 @@
           "厂务仪表负责人"
         ],
         "next_validation_action": "通过中电环境或无锡市数据局环评批复文件确认设计院与仪表选型时间表"
+      },
+      "group_software_evidence": {
+        "group_entity": "华虹宏力半导体有限公司（688347.SH/01347.HK）（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "华虹半导体制造（无锡）废水处理扩建项目6月15日获无锡市数据局环评批复（2601-320214-89-05-533828）",
+          "江苏中电创新环境科技已中标华虹无锡纯水/生产废水处理集成系统项目"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "华虹宏力半导体有限公司（688347.SH/01347.HK） 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -326,6 +340,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "通过佰维存储厂务招聘信息或投资者关系渠道确认水系统EPC和设计院"
+      },
+      "group_software_evidence": {
+        "group_entity": "深圳佰维存储科技股份有限公司（688525.SH）/广东芯成汉奇半导体技术有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "佰维存储厂务招聘显示已有UPW超纯水系统和废水处理系统（酸碱/含氟/研磨/有机废水）岗位"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "深圳佰维存储科技股份有限公司（688525.SH）/广东芯成汉奇半导体技术有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -440,6 +467,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "联系十一科技确认水系统设计进度和仪表选型窗口；联系人刘帅15181050698"
+      },
+      "group_software_evidence": {
+        "group_entity": "宁德时代（雅安）新材料科技有限公司（宁德时代300750全资子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "宁德时代（雅安）新材料科技有限公司（宁德时代300750全资子公司）（新能源/锂电材料）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -555,6 +595,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "跟踪环评编制磋商结果，确认设计院和工艺方案"
+      },
+      "group_software_evidence": {
+        "group_entity": "苏州市吴江经开区水质净化有限公司（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "苏州市吴江经开区水质净化有限公司（半导体/工业废水处理）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -667,6 +720,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "跟踪环评进度，确认是否配套自建污水处理站"
+      },
+      "group_software_evidence": {
+        "group_entity": "百奥泰生物药业（广州）有限公司（百奥泰688177.SH）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "百奥泰生物药业（广州）有限公司（百奥泰688177.SH）（制药/生物制药）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -779,6 +845,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "跟踪环评批复后设计院启动情况，确认污水站工艺设计"
+      },
+      "group_software_evidence": {
+        "group_entity": "横店集团东磁股份有限公司（002056.SZ）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "横店集团东磁股份有限公司（002056.SZ）（新能源/锂电池）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -890,6 +969,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "通过省厅批复文件确认设计院和EPC"
+      },
+      "group_software_evidence": {
+        "group_entity": "淄博鑫泰石化有限公司（集团软件证据以信号evidence已有facts为准）",
+        "group_software_facts": [
+          "须健全完善废气、废水、土壤和地下水监测管理体系"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "淄博鑫泰石化有限公司 集团层面是否有统一软件/仪表管理平台（公开无证据，需Company Agent按GSE v1.0补充）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     },
     {
@@ -1002,6 +1094,19 @@
           "仪表集成商"
         ],
         "next_validation_action": "搜索翔福新能源环评公示信息，确认水系统建设计划"
+      },
+      "group_software_evidence": {
+        "group_entity": "内蒙古翔福新能源有限公司（中国旭阳集团子公司）（集团软件情况待Company Agent核实）",
+        "group_software_facts": [
+          "本轮未检索到该公司集团层面公开软件平台工作证据（公开无证据）"
+        ],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "内蒙古翔福新能源有限公司（中国旭阳集团子公司）（新能源/锂电负极材料）集团数字化/仪表管理软件现状（公开无证据，需Company Agent补充核查）"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
       }
     }
   ],
