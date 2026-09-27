@@ -144,7 +144,18 @@
       "logic_chain_check_status": "WEAK",
       "v35_revision_note": [
         "v3.5 逻辑链门：status=WEAK，按升级E 应 score 封顶 60；原 v3.4 评分 68 保留为历史值，下轮运行将按封顶执行"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "第三师图木舒克市城市污水处理厂一期提升改造项目（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-002",
@@ -189,7 +200,18 @@
       "enrichment_pointer": "stage3_enrichments[] -> OPS-20260911-V33-002",
       "trigger_type": "Project",
       "sector": "municipal",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-003",
@@ -234,7 +256,18 @@
       "enrichment_pointer": "stage3_enrichments[] -> OPS-20260911-V33-003",
       "trigger_type": "Account",
       "sector": "municipal",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-004",
@@ -282,7 +315,18 @@
       "logic_chain_check_status": "WEAK",
       "v35_revision_note": [
         "v3.5 逻辑链门：status=WEAK，按升级E 应 score 封顶 60；原 v3.4 评分 66 保留为历史值，下轮运行将按封顶执行"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "灵山县十里污水处理厂及配套管网工程（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-005",
@@ -406,7 +450,18 @@
       ],
       "v35_revision_note": [
         "v3.6修订(2026-09-12)：新增industry/region/customer_entity/contacts字段；合作方名称按平顶山日报(2026-09-10)官方口径修正为\"河南智慧水务股份有限公司\"；联系人按公开报道/工商信息补齐(6人)，电话仅公司级热线0375-2830000为已验证，个人电话无公开信息。"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "background_monitoring": [

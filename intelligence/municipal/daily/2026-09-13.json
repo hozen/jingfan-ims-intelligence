@@ -143,7 +143,34 @@
       "enrichment_pointer": "ENR-20260913-VEOL-001",
       "trigger_type": "Account",
       "sector": "municipal-industrial",
-      "logic_chain_check_status": "WEAK"
+      "logic_chain_check_status": "WEAK",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-002",
@@ -188,7 +215,34 @@
       "enrichment_pointer": "ENR-20260913-VEOL-002",
       "trigger_type": "Account",
       "sector": "municipal",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-003",
@@ -233,7 +287,34 @@
       "enrichment_pointer": "ENR-20260913-VEOL-003",
       "trigger_type": "Account",
       "sector": "cross",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-004",
@@ -278,7 +359,34 @@
       "enrichment_pointer": "ENR-20260913-VEOL-004",
       "trigger_type": "Account",
       "sector": "municipal",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-005",
@@ -323,7 +431,34 @@
       "enrichment_pointer": "ENR-20260913-VEOL-005",
       "trigger_type": "Account",
       "sector": "municipal-industrial",
-      "logic_chain_check_status": "PASS"
+      "logic_chain_check_status": "PASS",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "background_monitoring": [
@@ -488,8 +623,26 @@
     "search_scope": "威立雅(中国)环境服务有限公司及下属全部在华项目公司（威立雅官网、公众号、水业年会分享、政府公告、招标平台、行业媒体）",
     "search_date": "2026-09-13",
     "run_note": "威立雅中国战略客户专题：10轮websearch，重点覆盖运营数字化尝试与问题（王雪峰/孙坚伟/津滨智慧管网）、新建/改造项目（广州联油三期/铜陵提标/泰达招标）、集团战略（顾丽华/数智化招聘）；全部为公开信息",
-    "radars_active": ["Radar 1: Project Trigger", "Radar 2: Account Trigger", "Radar 3: Existing Instrument Need", "Radar 4: Policy/Regulation/Funding", "Radar 5: Design Institute/EPC/SI", "Radar 6: Competitive Dynamics"],
-    "sources_used": ["威立雅官网 veolia.cn", "国际在线广东频道 gd.cri.cn", "广州生态环境局政府官网", "净水技术公众号（王雪峰署名文章）", "同花顺财经（供水论坛报道）", "千里马招标网（泰达采购）", "百度百科/企查查（铜陵/乌鲁木齐公司档案）", "施耐德官网客户案例", "北极星环保/中国水网", "常州市住建局官网"]
+    "radars_active": [
+      "Radar 1: Project Trigger",
+      "Radar 2: Account Trigger",
+      "Radar 3: Existing Instrument Need",
+      "Radar 4: Policy/Regulation/Funding",
+      "Radar 5: Design Institute/EPC/SI",
+      "Radar 6: Competitive Dynamics"
+    ],
+    "sources_used": [
+      "威立雅官网 veolia.cn",
+      "国际在线广东频道 gd.cri.cn",
+      "广州生态环境局政府官网",
+      "净水技术公众号（王雪峰署名文章）",
+      "同花顺财经（供水论坛报道）",
+      "千里马招标网（泰达采购）",
+      "百度百科/企查查（铜陵/乌鲁木齐公司档案）",
+      "施耐德官网客户案例",
+      "北极星环保/中国水网",
+      "常州市住建局官网"
+    ]
   },
   "disclaimer": "本报告所有信息均来自公开互联网。Public Signal Score不等于Hach Opportunity Score。DuMate负责发现公开信号，Company Agent负责内部数据验证。不得使用Hach内部数据作为已确认的评分输入。",
   "qc_checklist": {

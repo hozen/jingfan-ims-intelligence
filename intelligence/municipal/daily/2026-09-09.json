@@ -77,7 +77,18 @@
       },
       "v35_revision_note": [
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "industry_triggers": [

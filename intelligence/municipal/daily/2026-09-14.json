@@ -2,7 +2,6 @@
   "report_date": "2026-09-14",
   "report_type": "iMS GTM Public Signal Radar v3.4",
   "generated_at": "2026-09-14T08:07:27+08:00",
-
   "stage1_summary": {
     "scanned_at": "2026-09-14T08:07:27+08:00",
     "radar_coverage": [
@@ -17,7 +16,6 @@
     "total_scanned": 32,
     "valid_triggers": 8
   },
-
   "stage2_qualifications": [
     {
       "candidate_id": "CAND-001",
@@ -104,18 +102,37 @@
       "score_if_applicable": null
     }
   ],
-
   "stage3_enrichments": [
     {
       "opportunity_id": "OPP-2026-09-14-001",
       "customer_background": "上海浦东新区自来水有限公司，浦东新区主要供水企业，上海水投（集团）旗下。区域地位：上海最大行政区供水服务商。母公司上海城投水务（集团）未直接上市。",
       "project_background": "迎宾水厂（一期）新建工程，实为川沙城镇水厂迁建。2026年9月10日设计方案总平面图调整公示。建设地点：浦东新区川沙新镇。资金来源未公开，预算金额未公开。",
       "related_parties": [
-        {"role": "建设单位", "name": "上海浦东新区自来水有限公司", "info": "公开信息"},
-        {"role": "审批单位", "name": "上海市浦东新区规划和自然资源局", "info": "公开信息"},
-        {"role": "设计单位", "name": "未公开", "info": "需Company Agent确认"},
-        {"role": "EPC", "name": "未确定", "info": "设计阶段"},
-        {"role": "资金来源方", "name": "未公开", "info": "需Company Agent确认"}
+        {
+          "role": "建设单位",
+          "name": "上海浦东新区自来水有限公司",
+          "info": "公开信息"
+        },
+        {
+          "role": "审批单位",
+          "name": "上海市浦东新区规划和自然资源局",
+          "info": "公开信息"
+        },
+        {
+          "role": "设计单位",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        },
+        {
+          "role": "EPC",
+          "name": "未确定",
+          "info": "设计阶段"
+        },
+        {
+          "role": "资金来源方",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        }
       ],
       "public_history": [
         "川沙城镇水厂迁建为既有项目延续",
@@ -124,7 +141,10 @@
       ],
       "market_context": "上海市水务行业处于存量升级阶段，新建水厂较少。迎宾水厂新建为区域内少有的新建水厂项目。上海城投水务集团已有智慧水务平台部署。",
       "enrichment_sources": [
-        {"url": "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html", "date": "2026-09-10"}
+        {
+          "url": "https://www.pudong.gov.cn/zwgk/14523.gkml_ywl_gsxx_sjfags/2026/253/359897.html",
+          "date": "2026-09-10"
+        }
       ],
       "enrichment_confidence": "中"
     },
@@ -133,10 +153,26 @@
       "customer_background": "平顶山自来水二次供水有限公司，平顶山市二次供水专业化运营平台。接管泵房211座，服务居民11.5万户，覆盖人口约35万人。母公司：平顶山市自来水有限公司。总经理：代德山。",
       "project_background": "战略合作框架协议2026年9月9日签署。合作方：河南智慧水务公司。合作内容：泵房智慧升级、数字化规划、智慧水务产品研发。双方将组建联合事业部。项目预算/资金来源未公开。",
       "related_parties": [
-        {"role": "客户方", "name": "平顶山自来水二次供水有限公司", "info": "总经理代德山（公开报道）"},
-        {"role": "合作方", "name": "河南智慧水务公司", "info": "数字化技术提供方"},
-        {"role": "母公司", "name": "平顶山市自来水有限公司", "info": "公开报道提及"},
-        {"role": "政府主管部门", "name": "未公开", "info": "需Company Agent确认"}
+        {
+          "role": "客户方",
+          "name": "平顶山自来水二次供水有限公司",
+          "info": "总经理代德山（公开报道）"
+        },
+        {
+          "role": "合作方",
+          "name": "河南智慧水务公司",
+          "info": "数字化技术提供方"
+        },
+        {
+          "role": "母公司",
+          "name": "平顶山市自来水有限公司",
+          "info": "公开报道提及"
+        },
+        {
+          "role": "政府主管部门",
+          "name": "未公开",
+          "info": "需Company Agent确认"
+        }
       ],
       "public_history": [
         "二次供水统建统管已有多年运维经验",
@@ -145,7 +181,10 @@
       ],
       "market_context": "全国二次供水行业正经历数字化转型期。行业新规对水质安全、运维管护提出更高标准。二次供水泵房分散管理是行业普遍痛点。平顶山案例具有中部地级市代表性。",
       "enrichment_sources": [
-        {"url": "https://baijiahao.baidu.com/s?id=1875927833954203215", "date": "2026-09-09"}
+        {
+          "url": "https://baijiahao.baidu.com/s?id=1875927833954203215",
+          "date": "2026-09-09"
+        }
       ],
       "enrichment_confidence": "中"
     },
@@ -154,10 +193,26 @@
       "customer_background": "南阳市住建局。南阳市为河南省地级市，中心城区人口约100万。南阳市水务集团/供水公司具体信息未在本次搜索中确认。区域地位：河南省第三大城市。",
       "project_background": "2026年9月9日召开地下管网项目谋划储备座谈会。政策背景：城市地下管网升级为国家重点工程，十五五期间全国改造77万公里。2026年地下管网专项支持资金1600亿元。南阳市正在建立四级梯次项目库，划分12个流域治理片区。具体项目/预算/工期均未确定。",
       "related_parties": [
-        {"role": "召集方", "name": "南阳市住建局", "info": "公开信息"},
-        {"role": "参会方", "name": "中心城区相关部门", "info": "公开信息"},
-        {"role": "设计院/EPC", "name": "未确定", "info": "谋划阶段"},
-        {"role": "资金来源", "name": "国债、专项债等", "info": "政策明确"}
+        {
+          "role": "召集方",
+          "name": "南阳市住建局",
+          "info": "公开信息"
+        },
+        {
+          "role": "参会方",
+          "name": "中心城区相关部门",
+          "info": "公开信息"
+        },
+        {
+          "role": "设计院/EPC",
+          "name": "未确定",
+          "info": "谋划阶段"
+        },
+        {
+          "role": "资金来源",
+          "name": "国债、专项债等",
+          "info": "政策明确"
+        }
       ],
       "public_history": [
         "南阳市水务系统公开项目记录有限",
@@ -166,12 +221,14 @@
       ],
       "market_context": "全国管网更新进入加速期。2026年地下管网专项支持资金1600亿元。重点投向排水、供水、燃气、综合管廊、智慧监测。六张网政策是全国性机会窗口。管网台账不清、分级管养割裂是普遍短板。",
       "enrichment_sources": [
-        {"url": "https://m.nanyang.gov.cn/2026/09-09/1432795.html", "date": "2026-09-09"}
+        {
+          "url": "https://m.nanyang.gov.cn/2026/09-09/1432795.html",
+          "date": "2026-09-09"
+        }
       ],
       "enrichment_confidence": "低"
     }
   ],
-
   "scanner_summary": {
     "scan_date": "2026-09-14",
     "radars_executed": 6,
@@ -181,7 +238,6 @@
     "background_monitoring_count": 5,
     "rejected_signals_count": 4
   },
-
   "top_5_match": [
     {
       "name": "迎宾水厂（一期）新建工程（川沙城镇水厂迁建工程）",
@@ -237,7 +293,6 @@
       ]
     }
   ],
-
   "opportunities": [
     {
       "opportunity_id": "OPP-2026-09-14-001",
@@ -279,7 +334,18 @@
         "new_facts_today": "设计方案总平面图调整公示",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-14-001)"
+      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-14-001)",
+      "group_software_evidence": {
+        "group_entity": "上海浦东迎宾水厂（一期）新建工程（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-002",
@@ -321,7 +387,18 @@
         "new_facts_today": "战略合作框架协议签署",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-14-002)"
+      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-14-002)",
+      "group_software_evidence": {
+        "group_entity": "平顶山二次供水数字化转型战略合作（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-003",
@@ -363,10 +440,20 @@
         "new_facts_today": "地下管网项目谋划储备座谈会召开",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-14-003)"
+      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-14-003)",
+      "group_software_evidence": {
+        "group_entity": "南阳六张网地下管网战略规划（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
-
   "background_monitoring": [
     {
       "name": "武穴三利水厂扩建及新建供水管网工程EPC",
@@ -419,7 +506,6 @@
       "trace_value": "中交水利为央企背景，农村供水智慧水务平台含物联网统一接入，后续运维阶段仪表数据接入需求可关注"
     }
   ],
-
   "industry_triggers": [
     {
       "name": "重庆农村饮水质量提升专项行动",
@@ -446,7 +532,6 @@
       "date": "2026年"
     }
   ],
-
   "ecosystem_triggers": [
     {
       "name": "全联环境商会推动AI+环境标准体系",
@@ -470,7 +555,6 @@
       "date": "2026-09-11"
     }
   ],
-
   "policy_triggers": [
     {
       "name": "城市地下管网升级为国家重点工程",
@@ -497,7 +581,6 @@
       "date": "2026年"
     }
   ],
-
   "competitive_triggers": [
     {
       "name": "艺康（Ecolab）加速布局半导体超纯水",
@@ -524,7 +607,6 @@
       "date": "2026-09"
     }
   ],
-
   "strategic_accounts": [
     {
       "name": "万家寨水务控股集团（山西）",
@@ -545,22 +627,37 @@
       "date": "2026-09-13"
     }
   ],
-
   "rejected_signals": [
-    {"name": "青岛崂山水厂AI智慧系统", "reason": "已上线运行，非新项目，无介入窗口"},
-    {"name": "茂名滨海水投分布式光伏项目", "reason": "核心为光伏发电非水务数字化，无iMS需求"},
-    {"name": "广州花都水压波动通知", "reason": "设备故障抢修通知，非项目信号"},
-    {"name": "通用行业趋势报告", "reason": "无具体客户/项目/行动三要素，仅为背景参考"}
+    {
+      "name": "青岛崂山水厂AI智慧系统",
+      "reason": "已上线运行，非新项目，无介入窗口"
+    },
+    {
+      "name": "茂名滨海水投分布式光伏项目",
+      "reason": "核心为光伏发电非水务数字化，无iMS需求"
+    },
+    {
+      "name": "广州花都水压波动通知",
+      "reason": "设备故障抢修通知，非项目信号"
+    },
+    {
+      "name": "通用行业趋势报告",
+      "reason": "无具体客户/项目/行动三要素，仅为背景参考"
+    }
   ],
-
   "data_source": {
     "search_engine": "websearch",
     "search_date": "2026-09-14",
     "queries_executed": 9,
-    "sources_accessed": ["政府官网", "公共资源交易平台", "行业媒体", "企业公告", "百度百科"],
+    "sources_accessed": [
+      "政府官网",
+      "公共资源交易平台",
+      "行业媒体",
+      "企业公告",
+      "百度百科"
+    ],
     "scan_coverage": "全国（重点覆盖上海/重庆/河南/新疆/湖北/广西/山东等）"
   },
-
   "qc_checklist": {
     "all_public_info": true,
     "facts_and_judgment_separated": true,
@@ -581,6 +678,5 @@
     "no_latest_json_generated": true,
     "md_report_generated": true
   },
-
   "disclaimer": "本报告仅基于公开互联网信息编制，不包含任何Hach内部数据。所有to_verify字段需Company Agent使用内部系统验证。Public Signal Score不等于Hach Opportunity Score。"
 }

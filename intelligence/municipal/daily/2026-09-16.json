@@ -433,7 +433,18 @@
         "new_facts_today": "新任总经理9/7正式就位",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-16-001)"
+      "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-16-001)",
+      "group_software_evidence": {
+        "group_entity": "万家寨水务控股集团新管理层+数字化转型窗口（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-002",
@@ -475,7 +486,18 @@
         "new_facts_today": "庐阳区9/3签约移交",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-16-002)"
+      "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-16-002)",
+      "group_software_evidence": {
+        "group_entity": "合肥排水一体化改革-区级排水设施统一运维（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-003",
@@ -517,7 +539,18 @@
         "new_facts_today": "二期用地成交",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-16-003)"
+      "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-16-003)",
+      "group_software_evidence": {
+        "group_entity": "中芯京城二期-500亿12英寸晶圆厂新建（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-004",
@@ -559,7 +592,18 @@
         "new_facts_today": "首次纳入雷达扫描",
         "changed": false
       },
-      "enrichment_pointer": "见stage3_enrichments[3] (OPP-2026-09-16-004)"
+      "enrichment_pointer": "见stage3_enrichments[3] (OPP-2026-09-16-004)",
+      "group_software_evidence": {
+        "group_entity": "粤芯半导体四期-252亿12英寸晶圆厂扩建（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "industry_triggers": [

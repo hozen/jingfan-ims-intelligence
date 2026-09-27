@@ -77,7 +77,18 @@
       },
       "v35_revision_note": [
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
-      ]
+      ],
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团排水管网全面接管7236km+250座泵站-管理规模扩展（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "industry_triggers": [

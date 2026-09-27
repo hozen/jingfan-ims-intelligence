@@ -151,7 +151,34 @@
       "trigger_type": "Account",
       "sector": "municipal-industrial",
       "logic_chain_check_status": "WEAK",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-002",
@@ -197,7 +224,34 @@
       "trigger_type": "Account",
       "sector": "municipal",
       "logic_chain_check_status": "PASS",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-001",
@@ -241,7 +295,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-14-001)",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-14"
+      "last_seen": "2026-09-14",
+      "group_software_evidence": {
+        "group_entity": "上海浦东迎宾水厂（一期）新建工程（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "合肥水务集团排水管网全面接管7236km+250座泵站-管理规模扩展",
@@ -289,7 +354,18 @@
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
       ],
       "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04"
+      "last_seen": "2026-09-04",
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团排水管网全面接管7236km+250座泵站-管理规模扩展（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-001",
@@ -333,7 +409,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[0] (OPP-2026-09-16-001)",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-16",
+      "group_software_evidence": {
+        "group_entity": "万家寨水务控股集团新管理层+数字化转型窗口（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-003",
@@ -379,7 +466,34 @@
       "trigger_type": "Account",
       "sector": "cross",
       "logic_chain_check_status": "PASS",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-002",
@@ -423,7 +537,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-14-002)",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-14"
+      "last_seen": "2026-09-14",
+      "group_software_evidence": {
+        "group_entity": "平顶山二次供水数字化转型战略合作（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-004",
@@ -469,7 +594,34 @@
       "trigger_type": "Account",
       "sector": "municipal",
       "logic_chain_check_status": "PASS",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-002",
@@ -513,7 +665,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[1] (OPP-2026-09-16-002)",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-16",
+      "group_software_evidence": {
+        "group_entity": "合肥排水一体化改革-区级排水设施统一运维（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260913-VEOL-005",
@@ -559,7 +722,34 @@
       "trigger_type": "Account",
       "sector": "municipal-industrial",
       "logic_chain_check_status": "PASS",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "group_software_evidence": {
+        "group_entity": "威立雅集团（Veolia，全球水务/固废巨头，AQUAVISTA® 数字化服务是集团级产品）+ 科学城(广州)投资集团（合资方）",
+        "group_software_facts": [
+          "威立雅集团官方产品 AQUAVISTA® 数字化服务：四大模块 Portal / Insight / Assist / Plant，面向水厂与污水厂运行数字化【Veolia 官网】",
+          "2026 上海环博会（第27届）威立雅展台展示数字化平台与本土创新（机器狗、生成式AI落地）【Veolia 中国官网】",
+          "威立雅无锡工厂 MES 智能监测平台（本土数字化实践）【Veolia 中国官网/CEO中国行报道】",
+          "津滨威立雅(天津)智慧管网系统：感知层/网络层/平台层/应用层四层架构，智能水表覆盖率72.84%【公开报道】",
+          "上海浦东威立雅：2003年引入管网GIS，同步引进水力模型与SCADA；现使用PAMS运维现场管理系统；居家桥水厂'Talk To My Plant'系统即将上线；2025-04申请'一种自来水厂智慧调度系统'发明专利（CN119990707A）【上观新闻/企查查/上海证券报】"
+        ],
+        "group_software_inferences": [
+          "威立雅集团已有成熟自研数字化体系（AQUAVISTA/居家桥智慧调度），新合资公司储备项目大概率沿用集团数字化标准——iMS 需以'仪表数据质量层、多品牌仪表统一接入'差异化切入，或以伙伴身份对接集团平台",
+          "合资公司第一个项目（联油三期零碳项目）已进入施工准备，设计基本冻结；同批次储备项目（高品质回用水/SAF/电池回收/工业废水再生）承接提前量，若在这些项目定义期嵌入'仪表数据层'标准，可在招标时自然进入技术规格"
+        ],
+        "group_software_unknowns": [
+          "威立雅·科学城合资公司自身的数字化平台选型/部署状态（公开无证据）",
+          "AQUAVISTA 在中国本土水务项目的实际部署案例与第三方仪表兼容性（公开无证据）",
+          "威立雅集团现有项目是否已有同类仪表管理软件在役（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.veolia.cn/zh/媒体/新闻/2025年威立雅集团ceo深度中国行，锚定本土绿色未来",
+          "https://www.veolia.cn/zh/媒体/新闻/上海浦东威立雅自来水有限公司成立20周年",
+          "https://m.qixin.com/patent/65991e93-e91a-4240-bcf5-b3594266325d",
+          "http://m.toutiao.com/group/7387602568467317275/"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-002",
@@ -606,7 +796,18 @@
       "sector": "municipal",
       "logic_chain_check_status": "PASS",
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11"
+      "last_seen": "2026-09-11",
+      "group_software_evidence": {
+        "group_entity": "运河港产业园-洋北污水处理厂提标改造工程（工业污水）（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-001",
@@ -656,7 +857,18 @@
         "v3.5 逻辑链门：status=WEAK，按升级E 应 score 封顶 60；原 v3.4 评分 68 保留为历史值，下轮运行将按封顶执行"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11"
+      "last_seen": "2026-09-11",
+      "group_software_evidence": {
+        "group_entity": "第三师图木舒克市城市污水处理厂一期提升改造项目（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-003",
@@ -703,7 +915,18 @@
       "sector": "municipal",
       "logic_chain_check_status": "PASS",
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11"
+      "last_seen": "2026-09-11",
+      "group_software_evidence": {
+        "group_entity": "重庆水务集团-存量提质+数字赋能战略转向（连续追踪）（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-004",
@@ -753,7 +976,18 @@
         "v3.5 逻辑链门：status=WEAK，按升级E 应 score 封顶 60；原 v3.4 评分 66 保留为历史值，下轮运行将按封顶执行"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11"
+      "last_seen": "2026-09-11",
+      "group_software_evidence": {
+        "group_entity": "灵山县十里污水处理厂及配套管网工程（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260909-004",
@@ -802,7 +1036,18 @@
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
       ],
       "first_seen": "2026-09-09",
-      "last_seen": "2026-09-09"
+      "last_seen": "2026-09-09",
+      "group_software_evidence": {
+        "group_entity": "兴宁产业园区污水处理厂智慧化升级改造工程(1.44亿)（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "name": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢",
@@ -850,7 +1095,18 @@
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
       ],
       "first_seen": "2026-09-02",
-      "last_seen": "2026-09-02"
+      "last_seen": "2026-09-02",
+      "group_software_evidence": {
+        "group_entity": "首创环保战略转型'智水运营科技平台'—37座污水厂注入AIoT中枢（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260907-003",
@@ -898,7 +1154,18 @@
         "v3.5 修订补充 action_triad（基于公开事实构造，未经 Company Agent 验证）"
       ],
       "first_seen": "2026-09-07",
-      "last_seen": "2026-09-07"
+      "last_seen": "2026-09-07",
+      "group_software_evidence": {
+        "group_entity": "清江浦区农村供水提升改造项目(初步设计已批复)（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260911-V33-005",
@@ -1024,7 +1291,18 @@
         "v3.6修订(2026-09-12)：新增industry/region/customer_entity/contacts字段；合作方名称按平顶山日报(2026-09-10)官方口径修正为\"河南智慧水务股份有限公司\"；联系人按公开报道/工商信息补齐(6人)，电话仅公司级热线0375-2830000为已验证，个人电话无公开信息。"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11"
+      "last_seen": "2026-09-11",
+      "group_software_evidence": {
+        "group_entity": "平顶山自来水二次供水-河南智慧水务战略合作（211座泵房智慧化）（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-003",
@@ -1068,7 +1346,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-16-003)",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-16",
+      "group_software_evidence": {
+        "group_entity": "中芯京城二期-500亿12英寸晶圆厂新建（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-14-003",
@@ -1112,7 +1401,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[2] (OPP-2026-09-14-003)",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-14"
+      "last_seen": "2026-09-14",
+      "group_software_evidence": {
+        "group_entity": "南阳六张网地下管网战略规划（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "opportunity_id": "OPP-2026-09-16-004",
@@ -1156,7 +1456,18 @@
       },
       "enrichment_pointer": "见stage3_enrichments[3] (OPP-2026-09-16-004)",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-16",
+      "group_software_evidence": {
+        "group_entity": "粤芯半导体四期-252亿12英寸晶圆厂扩建（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPP-2026-09-18-001",
@@ -1202,7 +1513,18 @@
         "new_facts_today": "无新事实",
         "changed": false
       },
-      "enrichment_pointer": "ENR-20260918-001"
+      "enrichment_pointer": "ENR-20260918-001",
+      "group_software_evidence": {
+        "group_entity": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPP-2026-09-18-001",
@@ -1248,7 +1570,18 @@
         "new_facts_today": "无新事实",
         "changed": false
       },
-      "enrichment_pointer": "ENR-20260918-001"
+      "enrichment_pointer": "ENR-20260918-001",
+      "group_software_evidence": {
+        "group_entity": "旺苍县自来水厂提标改造及智慧水务建设项目（一期）（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-SYNY-001",
@@ -1293,7 +1626,18 @@
       "enrichment_pointer": "ENR-20260921-SYNY-001",
       "trigger_type": "Account",
       "sector": "municipal",
-      "logic_chain_check_status": "MEDIUM"
+      "logic_chain_check_status": "MEDIUM",
+      "group_software_evidence": {
+        "group_entity": "沈阳水务集团×三川智慧×软通动力：鸿蒙智慧水务生态共建+漏损管控+水表迭代（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-DQSY-002",
@@ -1338,7 +1682,18 @@
       "enrichment_pointer": "ENR-20260921-DQSY-002",
       "trigger_type": "Account",
       "sector": "municipal",
-      "logic_chain_check_status": "MEDIUM"
+      "logic_chain_check_status": "MEDIUM",
+      "group_software_evidence": {
+        "group_entity": "华立股份×大运河水务：北京副中心绿色智慧水务战略合作（超滤膜+数字化平台）（集团软件情况以项目数字化内容为准）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件平台公开工作待按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-WCSW-003",
@@ -1383,7 +1738,33 @@
       "enrichment_pointer": "ENR-20260921-WCSW-003",
       "trigger_type": "Project",
       "sector": "municipal",
-      "logic_chain_check_status": "STRONG"
+      "logic_chain_check_status": "STRONG",
+      "group_software_evidence": {
+        "group_entity": "合肥水务集团（2024-08-30成立，水务一体化'投建管运'国资集团）",
+        "group_software_facts": [
+          "合肥水务集团官网确认'智慧水务平台建设'（王连贵调研时提出）【合肥水务集团官方】",
+          "智慧调度指挥平台：1305个压力监测点+766台水质在线检测仪+10个一级分区DMA【合肥水务官方公开资料】",
+          "自主开发铝铁智慧加药系统【合肥水务官方公开资料】",
+          "供水GIS'一张图'数字化管理模式【合肥水务官方公开资料】",
+          "2026-08公开报道'从1.0迈向2.0 解锁合肥智慧水厂密码'（智慧水厂迭代升级）【合肥水务官网新闻，需点开核实细节】",
+          "西部组团净水二厂：设备全生命周期管理系统+AI视频巡检+电力智能分析；工艺与设备数据自动采集率100%、核心设备远程控制率88.3%、设备预测性维护命中率93%（enriched lead已有）【人民网/合肥水务】"
+        ],
+        "group_software_inferences": [
+          "集团数字化成熟度高（766台水质在线检测仪已入平台），2026年底全面接管区级7236km管网+250座泵站后，站点数阶跃→多站点仪表/设备统一管理需求强化，iMS Multi-site/Asset Use Case有现实数据底座",
+          "已有仪表在线检测规模大，仪表健康诊断、数据质量管理、预测性维护缺口是 iMS 落点"
+        ],
+        "group_software_unknowns": [
+          "集团智慧水务平台底层架构是否兼容第三方仪表数据接入（公开无证据）",
+          "排水管网/泵站新增设施在线仪表配置与联网计划（公开无证据）",
+          "设备全生命周期管理系统是否含仪表健康诊断模块（公开无证据）"
+        ],
+        "ims_link_strength": "INDIRECT",
+        "evidence_sources": [
+          "https://www.hfwater.cn/",
+          "https://www.hfwater.cn/index.php?title=首页&action=info"
+        ],
+        "checked_at": "2026-09-27"
+      }
     },
     {
       "id": "OPS-20260921-CXTC-004",
@@ -1428,7 +1809,18 @@
       "enrichment_pointer": "ENR-20260921-CXTC-004",
       "trigger_type": "Project",
       "sector": "semiconductor",
-      "logic_chain_check_status": "MEDIUM"
+      "logic_chain_check_status": "MEDIUM",
+      "group_software_evidence": {
+        "group_entity": "长鑫科技第五代DRAM量产+上海新晶圆厂设备招标启动+北京亦庄第二座12英寸规划（集团软件情况待Company Agent按GSE v1.0核查）",
+        "group_software_facts": [],
+        "group_software_inferences": [],
+        "group_software_unknowns": [
+          "集团层面软件公开工作未逐条检索，发布前须按GSE v1.0补齐"
+        ],
+        "ims_link_strength": "NO_EVIDENCE",
+        "evidence_sources": [],
+        "checked_at": "2026-09-27"
+      }
     }
   ],
   "background_monitoring": [
