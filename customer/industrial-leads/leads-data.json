@@ -1,6 +1,146 @@
 {
   "leads": [
     {
+      "segment": "municipal",
+      "category": "供水／二次供水",
+      "date": "2026-09-27",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "OPS-20260925-WLMQ-001",
+        "company": {
+          "company_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+          "location": null,
+          "industry": "市政水务"
+        },
+        "project": {
+          "project_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+          "project_stage": "初步设计"
+        },
+        "signal": {
+          "signal_description": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+          "signal_date": "2026-09-27",
+          "evidence": [
+            {
+              "source_url": "https://ggzy.wlmq.gov.cn/ggzy/jyxx/001001/001001008/20260920/485e8cc3-52fa-41fa-bcf3-4be1081c82a2.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+          "opportunity": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+          "industry": "市政水务",
+          "opportunity_stage": "初步设计",
+          "priority": 72,
+          "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
+          "logic": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
+          "to_verify": {
+            "customer_identity": "乌鲁木齐市自来水公司/水务集团是否为Hach客户？SFDC Account是否存在？",
+            "installed_base": "石墩子山水厂现有仪表类型/数量？是否有联网仪表？其他水厂仪表配置情况？",
+            "commercial_history": "历史销售/Opportunity？乌鲁木齐水务是否有在线仪表采购记录？",
+            "ims": "是否已有iMS？是否已有智慧水务平台？是否存在数字化扩展机会？",
+            "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+          },
+          "customer_need": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
+          "demand_hypothesis": "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大***改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。",
+          "contact_hint": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "初步设计招标计划9月20日发布，预计9月30日正式发标。设计周期通常3-6个月，设计阶段仪表选型尚未锁定，施工招标预计2027年Q1。",
+          "source_urls": [
+            "https://ggzy.wlmq.gov.cn/ggzy/jyxx/001001/001001008/20260920/485e8cc3-52fa-41fa-bcf3-4be1081c82a2.html"
+          ],
+          "evidence": {
+            "facts": [
+              "2026年9月20日，乌鲁木齐市水务工程建设管理中心发布石墩子山水厂改扩建工程初步设计招标计划，估算投资1620万元（设计费），资金来源为中央预算内资金及地方配套。建设内容：拆***厂清水池，新建20万m³/d净水工艺流程及配套设施，新建40万m³/d污泥处理系统，配套建设DN1600原水管线约7.7千米。改扩建后水厂总产能提升至40万m³/d。预计招标公告发布时间为2026年9月30日。来源：乌***市公共资源交易中心。"
+            ],
+            "inferences": [
+              "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大***改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。"
+            ],
+            "unknowns": []
+          },
+          "action_triad": {
+            "find_who": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
+            "talk_what": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
+            "why_now": "初步设计招标计划已发布但设计尚未开始（预计9月30日发标），仪表选型清单和技术规格均在设计阶段确定——此刻介入可影响技术路线"
+          },
+          "enrichment": {},
+          "group_software_evidence": {
+            "group_entity": "乌鲁木齐水业投资发展集团有限公司（石墩子山水厂隶属；2023-11-22由水业集团与昆仑环保整合，市国资委监管，注册资本100亿；全资科技子公司：乌***水业科技信息技术有限公司）",
+            "group_software_facts": [
+              "原水业集团已有《智慧水务平台》，2024-06用友网络中标本平台在水投集团全级次运维覆盖及服务升级（成交175万元）【招标成交公示】",
+              "2026-06智慧水务-供水管网模型体系项目招标：覆***团供水管线，六大核心场景（管网压力/运行管理/应急处置/DMA漏损管控/科学调度/水质管理），二标段40台减压阀自动化升级统一接入集团智能远控系统【招标公告，乌市水务企采】",
+              "科信公司（集团全资科技子公司）：19项软件著作权、与成都川力智能联合申请\"基于四倍频解码的管网流量监测方法及系统\"专利（2026-09授权）、2020年在新装水表上加装远程数据传输设备（数字化信息化第一步）、完成7个水厂73个点位视频监控接入【百度百科/专利公开/新疆水协】",
+              "市委副书记2024-06调研石墩子山水厂，明确要求\"水厂向数字化、无人化转型升级\"【中国水协官网】",
+              "集团\"四化一体\"战略含\"智慧水务一体化\"；中国工业报报道集团\"三维探索推进新型工业化\"（筑牢数字化根基+水务特色AI场景矩阵+能源管控智慧化+供水管网控漏实践）【乌鲁木齐市政府官网/中国工业报】"
+            ],
+            "group_software_inferences": [
+              "集团已建智慧水务平台+集团智能远控系统：改***增仪表数据必然要接入集团平台体系，多品牌/多站点仪表的数据质量与健康管理成为平台之下的\"数据底座\"空白层——iMS（Instrument Monitoring / Data Quality / Multi-site Management）正对应此层",
+              "集团层面明确\"水厂向数字化、无人化转型升级\"，对在线仪表数据的完整性、自动化与远程运维需求成立，iMS是承接该需求的软件层选项",
+              "初步设计阶段技术规格未冻结：可***选型时同步预留数据接口与平台接入要求，iMS理念有机会在设计阶段即被纳入"
+            ],
+            "group_software_unknowns": [
+              "集团智慧水务平台底层架构是否兼容第三方仪表数据接入？（公开无证据）",
+              "石墩子山水厂现有仪表品牌/数量/联网状态？（公开无证据，需Company Agent）",
+              "科信公司19项软著中是否含仪器管理/数据质量类软件？（公开未逐一核实）",
+              "集团是否已采购同类仪表管理软件？（公开无证据）"
+            ],
+            "ims_link_strength": "INDIRECT",
+            "evidence_sources": [
+              "https://www.wlmq.gov.cn/wlmqs/c119333/202509/c3772100e8f84d33a6b2f207cb6bc27a.shtml",
+              "https://www.gxxszb.com/Html/2295761.html",
+              "https://cuwa.org.cn/category/zonghexinwen/23264.html",
+              "https://www.cuwa.org.cn/guoneizixun/9753.html"
+            ],
+            "checked_at": "2026-09-27"
+          },
+          "customer_requirement": "Instrument Monitoring / Data Quality / Multi-site Management",
+          "next_validation_questions": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？；集团智慧水务平台是否兼容第三方仪表数据接入？科信公司软著是否含仪器管理类？",
+          "location": null
+        },
+        "enrichment_status": "consolidated_from_radar_daily",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-OPS-20260925-WLMQ-001",
+            "lead_id": "OPS-20260925-WLMQ-001",
+            "account_id": "ACC-OPS-20260925-WLMQ-001",
+            "project_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+            "owner": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "Instrument Monitoring / Data Quality / Multi-site Management"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-OPS-20260925-WLMQ-001",
+            "lead_id": "OPS-20260925-WLMQ-001",
+            "account_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
+            "group_name": "",
+            "industry": "市政水务",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-25T08:10:14+08:00"
+        }
+      ]
+    },
+    {
       "segment": "industrial",
       "category": "新能源／电池",
       "date": "2026-09-26",
@@ -1622,117 +1762,6 @@
         {
           "file": "indctx_latest_jd_2026-09-26.json",
           "date": "2026-09-26T08:11:43+08:00"
-        }
-      ]
-    },
-    {
-      "segment": "municipal",
-      "category": "供水／二次供水",
-      "date": "2026-09-25",
-      "quality_score": 5,
-      "quality_missing": [],
-      "procurement_signal": false,
-      "lead": {
-        "lead_id": "OPS-20260925-WLMQ-001",
-        "company": {
-          "company_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-          "location": null,
-          "industry": "市政水务"
-        },
-        "project": {
-          "project_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-          "project_stage": "初步设计"
-        },
-        "signal": {
-          "signal_description": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-          "signal_date": "2026-09-25",
-          "evidence": [
-            {
-              "source_url": "https://ggzy.wlmq.gov.cn/ggzy/jyxx/001001/001001008/20260920/485e8cc3-52fa-41fa-bcf3-4be1081c82a2.html",
-              "evidence_summary": "原始数据来源"
-            }
-          ]
-        }
-      },
-      "enriched_record": {
-        "original_signal": {
-          "company": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-          "opportunity": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-          "industry": "市政水务",
-          "opportunity_stage": "初步设计",
-          "priority": 72,
-          "potential_ims_use_case": "Instrument Monitoring / Data Quality / Multi-site Management",
-          "logic": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
-          "to_verify": {
-            "customer_identity": "乌鲁木齐市自来水公司/水务集团是否为Hach客户？SFDC Account是否存在？",
-            "installed_base": "石墩子山水厂现有仪表类型/数量？是否有联网仪表？其他水厂仪表配置情况？",
-            "commercial_history": "历史销售/Opportunity？乌鲁木齐水务是否有在线仪表采购记录？",
-            "ims": "是否已有iMS？是否已有智慧水务平台？是否存在数字化扩展机会？",
-            "account_sales": "Account Owner？Regional Owner？当前客户关系？"
-          },
-          "customer_need": "Customer Change: 40万m³/d大型水厂改扩建 → Digital Change: 新建净水工艺+污泥系统需全套在线仪表 → Operational Problem: 大型水厂多参数监测+数据采集+设备管理 → Instrument/Data Need: 是 → Potential iMS Use Case: Instrument Monitoring / Data Quality ✓逻辑链完整",
-          "demand_hypothesis": "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大***改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。",
-          "contact_hint": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
-          "estimated_time_window": "3-6 months",
-          "time_window_basis": "初步设计招标计划9月20日发布，预计9月30日正式发标。设计周期通常3-6个月，设计阶段仪表选型尚未锁定，施工招标预计2027年Q1。",
-          "source_urls": [
-            "https://ggzy.wlmq.gov.cn/ggzy/jyxx/001001/001001008/20260920/485e8cc3-52fa-41fa-bcf3-4be1081c82a2.html"
-          ],
-          "evidence": {
-            "facts": [
-              "2026年9月20日，乌鲁木齐市水务工程建设管理中心发布石墩子山水厂改扩建工程初步设计招标计划，估算投资1620万元（设计费），资金来源为中央预算内资金及地方配套。建设内容：拆***厂清水池，新建20万m³/d净水工艺流程及配套设施，新建40万m³/d污泥处理系统，配套建设DN1600原水管线约7.7千米。改扩建后水厂总产能提升至40万m³/d。预计招标公告发布时间为2026年9月30日。来源：乌***市公共资源交易中心。"
-            ],
-            "inferences": [
-              "石墩子山水厂是乌鲁木齐主力水厂之一，40万m³/d规模属于大型城市水厂。改扩建内容包含全新净水工艺和污泥处理系统，必然涉及大量在线水质仪表（浊度/余氯/pH/流量等）的选型与部署。当前处于初步设计招标阶段——设计单位尚未确定，仪表选型清单尚未编制，是影响技术路线和设备选型的最佳窗口。DN1600原水管线7.7km也需配套流量/压力监测。iMS逻辑链：大***改扩建→新工艺需在线仪表→多参数监测+数据采集→Instrument Monitoring / Data Quality 用例可建立。"
-            ],
-            "unknowns": []
-          },
-          "action_triad": {
-            "find_who": "乌鲁木齐市水务工程建设管理中心（招标人）项目负责人；乌鲁木齐市自来水公司设备/技术管理部门",
-            "talk_what": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
-            "why_now": "初步设计招标计划已发布但设计尚未开始（预计9月30日发标），仪表选型清单和技术规格均在设计阶段确定——此刻介入可影响技术路线"
-          },
-          "enrichment": {},
-          "customer_requirement": "Instrument Monitoring / Data Quality / Multi-site Management",
-          "next_validation_questions": "初步设计是否已包含在线水质仪表选型清单？智慧水务平台是否预留第三方仪表数据接入接口？污泥处理系统在线监测需求是否已纳入设计任务书？",
-          "location": null
-        },
-        "enrichment_status": "consolidated_from_radar_daily",
-        "record_status": "active",
-        "ims_recommendation": {},
-        "projects": [
-          {
-            "project_id": "PRJ-OPS-20260925-WLMQ-001",
-            "lead_id": "OPS-20260925-WLMQ-001",
-            "account_id": "ACC-OPS-20260925-WLMQ-001",
-            "project_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-            "owner": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-            "investment_amount": "unknown",
-            "project_status": "merged from radar daily",
-            "water_system_details": {
-              "confirmed": false,
-              "description": "Instrument Monitoring / Data Quality / Multi-site Management"
-            }
-          }
-        ],
-        "accounts": [
-          {
-            "account_id": "ACC-OPS-20260925-WLMQ-001",
-            "lead_id": "OPS-20260925-WLMQ-001",
-            "account_name": "乌鲁木齐石墩子山水厂改扩建工程（40万m³/d）初步设计",
-            "group_name": "",
-            "industry": "市政水务",
-            "plant_location": "",
-            "products": [],
-            "contact_ids": []
-          }
-        ]
-      },
-      "enriched_contacts": [],
-      "history": [
-        {
-          "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
         }
       ]
     },
