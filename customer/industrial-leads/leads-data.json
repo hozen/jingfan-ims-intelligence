@@ -3,6 +3,284 @@
     {
       "segment": "municipal",
       "category": "供水／二次供水",
+      "date": "2026-09-28",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "OPS-20260928-ZP-001",
+        "company": {
+          "company_name": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+          "location": "河南南阳市镇平县（省市未记录）",
+          "industry": "市政水务"
+        },
+        "project": {
+          "project_name": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+          "project_stage": "可研"
+        },
+        "signal": {
+          "signal_description": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+          "signal_date": "2026-09-28",
+          "evidence": [
+            {
+              "source_url": "http://www.famens.com/Bid/45158.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+          "opportunity": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+          "industry": "市政水务",
+          "opportunity_stage": "可研",
+          "priority": 62,
+          "potential_ims_use_case": "Data Quality / Multi-site Management",
+          "logic": {
+            "customer_change": "镇平县推进二次供水设施改造，覆盖水泵房、蓄水池、管网及在线监测",
+            "digital_change": "项目明确含在线监测设备和控制电柜，具备数据采集基础",
+            "operational_problem": "多座二次供水泵房分散管理，运行状态无法实时获取",
+            "instrument_need": "在线监测设备已列入采购清单，选型尚未开始",
+            "ims_use_case": "Data Quality / Multi-site Management",
+            "chain_intact": true
+          },
+          "to_verify": {
+            "customer_identity": "镇平县住建局/水务局是否为Hach客户？Salesforce Account是否存在？南阳市区域是否有Hach销售覆盖？",
+            "installed_base": "镇平县现有二次供水泵房数量？是否已有在线监测仪表？厂站数量？",
+            "commercial_history": "南阳市区域Hach历史销售记录？是否有同类二次供水项目合作经历？",
+            "ims": "镇平县是否已有iMS或类似数字化平台？是否存在多站点管理需求？",
+            "account_sales": "Account Owner？河南区域Regional Owner？当前客户关系？"
+          },
+          "customer_need": {
+            "customer_change": "镇平县推进二次供水设施改造，覆盖水泵房、蓄水池、管网及在线监测",
+            "digital_change": "项目明确含在线监测设备和控制电柜，具备数据采集基础",
+            "operational_problem": "多座二次供水泵房分散管理，运行状态无法实时获取",
+            "instrument_need": "在线监测设备已列入采购清单，选型尚未开始",
+            "ims_use_case": "Data Quality / Multi-site Management",
+            "chain_intact": true
+          },
+          "demand_hypothesis": "二次供水设施改造项目明确包含在线监测设备采购，且项目处于可研批复阶段——设计尚未开始、设备清单未冻结。从二次供水改造到在线监测数据采集再到多泵房统一管理，存在清晰的iMS逻辑链。镇平县属于南阳市下辖县，南阳市正在推进城市更新和二次供水改造，该区域类似项目将持续释放。",
+          "contact_hint": "镇平县住建局供水管理部门项目负责人（可研已批复但设计单位尚未确定，需通过住建局确认可研编制单位）；可研编制单位中给排水/自控专业负责人",
+          "estimated_time_window": "6-9 months",
+          "time_window_basis": "可研刚批复，设计尚未开始，预计四季度开工但设计阶段通常需3-6个月，仪表选型窗口在初步设计阶段",
+          "source_urls": [
+            "http://www.famens.com/Bid/45158.html"
+          ],
+          "evidence": {
+            "facts": [
+              {
+                "fact": "河南省南阳市镇平县城区二次供水设施改造及管网提升项目，可研批复阶段，预算投资3849万元，政府性投资。",
+                "source": "http://www.famens.com/Bid/45158.html",
+                "source_type": "project_tracking"
+              },
+              {
+                "fact": "建设内容含二次供水设备水泵房和蓄水池、水管网络、水处理设备、控制电柜、排污泵、消毒设备、在线监测设备。设计尚未开始，施工单位未确定。",
+                "source": "http://www.famens.com/Bid/45158.html",
+                "source_type": "project_tracking"
+              },
+              {
+                "fact": "预计2026年四季度开工，2027年四季度完工。设备来源为国内采购。",
+                "source": "http://www.famens.com/Bid/45158.html",
+                "source_type": "project_tracking"
+              }
+            ],
+            "inferences": [
+              "二次供水设施改造项目明确包含在线监测设备采购，且项目处于可研批复阶段——设计尚未开始、设备清单未冻结。从二次供水改造到在线监测数据采集再到多泵房统一管理，存在清晰的iMS逻辑链。镇平县属于南阳市下辖县，南阳市正在推进城市更新和二次供水改造，该区域类似项目将持续释放。"
+            ],
+            "unknowns": []
+          },
+          "action_triad": {
+            "find_who": "镇平县住建局供水管理部门项目负责人（可研已批复但设计单位尚未确定，需通过住建局确认可研编制单位）；可研编制单位中给排水/自控专业负责人",
+            "talk_what": "二次供水在线监测设备选型标准是什么？是否考虑建设智慧化平台统一管理多个泵房？在线监测数据是否需要上传至区级或市级监管平台？预算口径是否含在线仪表及后续运维？",
+            "why_now": "可研刚批复，设计尚未开始，在线监测设备清单尚未进入设计图纸，技术参数与品牌均未锁定。预算3849万元已确定但设备明细未固化，存在影响选型方案的空间。"
+          },
+          "enrichment": {},
+          "customer_requirement": "Data Quality / Multi-site Management",
+          "next_validation_questions": "二次供水在线监测设备选型标准是什么？是否考虑建设智慧化平台统一管理多个泵房？在线监测数据是否需要上传至区级或市级监管平台？预算口径是否含在线仪表及后续运维？",
+          "location": "河南南阳市镇平县（省市未记录）"
+        },
+        "enrichment_status": "consolidated_from_radar_daily",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-OPS-20260928-ZP-001",
+            "lead_id": "OPS-20260928-ZP-001",
+            "account_id": "ACC-OPS-20260928-ZP-001",
+            "project_name": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+            "owner": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "Data Quality / Multi-site Management"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-OPS-20260928-ZP-001",
+            "lead_id": "OPS-20260928-ZP-001",
+            "account_name": "河南南阳市镇平县二次供水设施改造及管网提升项目",
+            "group_name": "",
+            "industry": "市政水务",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-28T08:12:37+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "municipal",
+      "category": "供水／二次供水",
+      "date": "2026-09-28",
+      "quality_score": 5,
+      "quality_missing": [],
+      "procurement_signal": false,
+      "lead": {
+        "lead_id": "OPS-20260928-HQ-002",
+        "company": {
+          "company_name": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+          "location": "霍邱县（省市未记录）",
+          "industry": "市政水务"
+        },
+        "project": {
+          "project_name": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+          "project_stage": "设计"
+        },
+        "signal": {
+          "signal_description": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+          "signal_date": "2026-09-28",
+          "evidence": [
+            {
+              "source_url": "https://ggj.luan.gov.cn/jgxtong/htba/5501737.html",
+              "evidence_summary": "原始数据来源"
+            }
+          ]
+        }
+      },
+      "enriched_record": {
+        "original_signal": {
+          "company": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+          "opportunity": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+          "industry": "市政水务",
+          "opportunity_stage": "设计",
+          "priority": 65,
+          "potential_ims_use_case": "Instrument Monitoring / Digital Operations",
+          "logic": {
+            "customer_change": "霍邱县新建第三水厂，配套建设城乡供水智慧化平台",
+            "digital_change": "智慧化平台建设需要在线仪表数据采集支撑",
+            "operational_problem": "新建水厂需要从零建立仪表监测体系，与智慧化平台对接",
+            "instrument_need": "在线监测仪表选型在设计中确定，尚未进入图纸",
+            "ims_use_case": "Instrument Monitoring / Digital Operations",
+            "chain_intact": true
+          },
+          "to_verify": {
+            "customer_identity": "霍邱县水利工程建设管理处是否为Hach客户？六安区域是否有Hach销售覆盖？",
+            "installed_base": "霍邱县现有水厂数量？是否已有在线监测仪表？第三水厂设计规模多少？",
+            "commercial_history": "六安/霍邱区域Hach历史销售？是否有同类水厂新建项目合作？",
+            "ims": "霍邱县是否已有iMS或类似平台？城乡供水智慧化平台是否为新建？",
+            "account_sales": "Account Owner？安徽区域Regional Owner？"
+          },
+          "customer_need": {
+            "customer_change": "霍邱县新建第三水厂，配套建设城乡供水智慧化平台",
+            "digital_change": "智慧化平台建设需要在线仪表数据采集支撑",
+            "operational_problem": "新建水厂需要从零建立仪表监测体系，与智慧化平台对接",
+            "instrument_need": "在线监测仪表选型在设计中确定，尚未进入图纸",
+            "ims_use_case": "Instrument Monitoring / Digital Operations",
+            "chain_intact": true
+          },
+          "demand_hypothesis": "新建水厂配套智慧化平台建设项目，设计合同刚刚签订。智慧化平台需要在线监测仪表数据支撑，仪表选型在设计阶段确定。设计单位为安徽电信规划设计（通信行业背景），在仪表选型上可能需要专业建议。项目处于设计初期，是影响技术路线的最佳窗口。",
+          "contact_hint": "霍邱县水利工程建设管理处项目负责人；安徽电信规划设计有限责任公司给排水/自控专业负责人（设计单位）",
+          "estimated_time_window": "3-6 months",
+          "time_window_basis": "设计合同2026年9月20日签订，设计阶段通常3-6个月，之后进入施工招标",
+          "source_urls": [
+            "https://ggj.luan.gov.cn/jgxtong/htba/5501737.html"
+          ],
+          "evidence": {
+            "facts": [
+              {
+                "fact": "安徽省六安市霍邱县第三水厂新建工程含城乡供水智慧化平台建设，勘察设计合同于2026年9月20日公告。",
+                "source": "https://ggj.luan.gov.cn/jgxtong/htba/5501737.html",
+                "source_type": "government"
+              },
+              {
+                "fact": "合同甲方为霍邱县水利工程建设管理处，合同乙方为安徽电信规划设计有限责任公司和邯郸市水利水电勘测设计研究院，合同金额581万元。",
+                "source": "https://ggj.luan.gov.cn/jgxtong/htba/5501737.html",
+                "source_type": "government"
+              },
+              {
+                "fact": "代理机构为安徽省睿兴工程咨询有限公司。",
+                "source": "https://ggj.luan.gov.cn/jgxtong/htba/5501737.html",
+                "source_type": "government"
+              }
+            ],
+            "inferences": [
+              "新建水厂配套智慧化平台建设项目，设计合同刚刚签订。智慧化平台需要在线监测仪表数据支撑，仪表选型在设计阶段确定。设计单位为安徽电信规划设计（通信行业背景），在仪表选型上可能需要专业建议。项目处于设计初期，是影响技术路线的最佳窗口。"
+            ],
+            "unknowns": []
+          },
+          "action_triad": {
+            "find_who": "霍邱县水利工程建设管理处项目负责人；安徽电信规划设计有限责任公司给排水/自控专业负责人（设计单位）",
+            "talk_what": "智慧化平台是否支持第三方仪表数据接入？在线监测仪表选型方案是什么？水厂SCADA系统与智慧化平台的数据接口标准是什么？城乡供水智慧化平台的数据采集范围是否覆盖水源-水厂-管网全流程？",
+            "why_now": "设计合同刚签订（9/20），仪表选型尚未进入设计图纸。设计单位为通信行业背景，在仪表选型上可能需要专业建议，可在设计阶段影响技术路线。"
+          },
+          "enrichment": {},
+          "customer_requirement": "Instrument Monitoring / Digital Operations",
+          "next_validation_questions": "智慧化平台是否支持第三方仪表数据接入？在线监测仪表选型方案是什么？水厂SCADA系统与智慧化平台的数据接口标准是什么？城乡供水智慧化平台的数据采集范围是否覆盖水源-水厂-管网全流程？",
+          "location": "霍邱县（省市未记录）"
+        },
+        "enrichment_status": "consolidated_from_radar_daily",
+        "record_status": "active",
+        "ims_recommendation": {},
+        "projects": [
+          {
+            "project_id": "PRJ-OPS-20260928-HQ-002",
+            "lead_id": "OPS-20260928-HQ-002",
+            "account_id": "ACC-OPS-20260928-HQ-002",
+            "project_name": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+            "owner": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+            "investment_amount": "unknown",
+            "project_status": "merged from radar daily",
+            "water_system_details": {
+              "confirmed": false,
+              "description": "Instrument Monitoring / Digital Operations"
+            }
+          }
+        ],
+        "accounts": [
+          {
+            "account_id": "ACC-OPS-20260928-HQ-002",
+            "lead_id": "OPS-20260928-HQ-002",
+            "account_name": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+            "group_name": "",
+            "industry": "市政水务",
+            "plant_location": "",
+            "products": [],
+            "contact_ids": []
+          }
+        ]
+      },
+      "enriched_contacts": [],
+      "history": [
+        {
+          "file": "indctx_latest.json",
+          "date": "2026-09-28T08:12:37+08:00"
+        }
+      ]
+    },
+    {
+      "segment": "municipal",
+      "category": "供水／二次供水",
       "date": "2026-09-27",
       "quality_score": 5,
       "quality_missing": [],
@@ -136,7 +414,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -1994,7 +2272,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -2123,7 +2401,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -3633,7 +3911,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9059,7 +9337,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9196,7 +9474,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9333,7 +9611,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9469,7 +9747,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9607,7 +9885,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9745,7 +10023,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -9883,7 +10161,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10021,7 +10299,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10159,7 +10437,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10293,7 +10571,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10420,7 +10698,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10559,7 +10837,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10686,7 +10964,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10815,7 +11093,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -10945,7 +11223,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11074,7 +11352,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11203,7 +11481,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11336,7 +11614,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11468,7 +11746,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11590,7 +11868,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11725,7 +12003,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11854,7 +12132,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -11990,7 +12268,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -12129,7 +12407,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -20093,7 +20371,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -20425,7 +20703,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -20642,7 +20920,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -20906,7 +21184,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -21140,7 +21418,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -21370,7 +21648,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -21604,7 +21882,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -21855,7 +22133,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -22061,7 +22339,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -22286,7 +22564,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -22550,7 +22828,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -22789,7 +23067,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -23054,7 +23332,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -23352,7 +23630,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -23643,7 +23921,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -23897,7 +24175,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -24242,7 +24520,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         },
         {
           "file": "indctx_municipal_pre_20260913.json",
@@ -26818,7 +27096,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -27002,7 +27280,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -47847,7 +48125,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -48081,7 +48359,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -48286,7 +48564,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -48530,7 +48808,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -51734,7 +52012,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -51930,7 +52208,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -56125,7 +56403,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -56322,7 +56600,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -56560,7 +56838,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -56788,7 +57066,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -68161,7 +68439,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -68447,7 +68725,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -68713,7 +68991,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -68956,7 +69234,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -78886,7 +79164,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -79083,7 +79361,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     },
@@ -79280,7 +79558,7 @@
       "history": [
         {
           "file": "indctx_latest.json",
-          "date": "2026-09-25T08:10:14+08:00"
+          "date": "2026-09-28T08:12:37+08:00"
         }
       ]
     }

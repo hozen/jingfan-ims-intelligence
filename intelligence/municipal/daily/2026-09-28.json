@@ -17,7 +17,7 @@
     "new_opportunities_today": 2,
     "updated_opportunities_today": 0,
     "new_background_monitoring_today": 12,
-    "method_note": "累积快照(v3.4.2)：包含当前所有仍有效线索+全部收集数据。已失效或阶段晋级的线索移出opportunities[]并标注处置。"
+    "method_note": "v3.4.2三阶段流水线：Stage1六大雷达扫描(含采购意向专区/水司自采平台/项目审批平台) → Stage2逐条审定(Stage Gate+iMS逻辑链+action_triad+Public Signal Score) → Stage3公开信息富化"
   },
   "stage1_summary": {
     "scanned_at": "2026-09-28T08:03:48+08:00",
