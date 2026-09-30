@@ -60,6 +60,30 @@ def contacts_for(item, contacts):
             result.append(contact)
     return result
 
+_PLACEHOLDER_RES = [
+    re.compile(r"^pull\s*score[：:\s]?\d+/\d+", re.I),
+    re.compile(r"^key\s*unknown[：:]", re.I),
+    re.compile(r"^next\s*q[：:]", re.I),
+    re.compile(r"^owner[：:]", re.I),
+    re.compile(r"^(公开推断|关键未知)[：:][?？]*$"),
+]
+
+def is_placeholder(value):
+    """True when a field holds an internal-workflow artifact (PULL score
+    traces, 'Owner:' markers) instead of a usable sales fact.  These must
+    never count towards quality completeness."""
+    if not isinstance(value, str):
+        return False
+    text = value.strip()
+    if not text:
+        return False
+    if any(pat.search(text) for pat in _PLACEHOLDER_RES):
+        return True
+    # composition like "PULL Score 16/20. Key Unknown: … . Next Q: …"
+    low = text.lower()
+    return ("key unknown" in low and "next q" in low) or (
+        "pull score" in low and ("key unknown" in low or "next q" in low))
+
 def is_recorded(value):
     """Whether a sales-facing field contains a usable fact, not a placeholder."""
     if isinstance(value, list):
@@ -68,6 +92,8 @@ def is_recorded(value):
         return any(is_recorded(item) for item in value.values())
     if not isinstance(value, str):
         return bool(value)
+    if is_placeholder(value):
+        return False
     text=value.strip().lower()
     return bool(text) and not (text in {"unknown", "null", "n/a", "未记录", "未知"}
                               or text.startswith(("unknown：", "待核实")))
@@ -115,9 +141,15 @@ def completeness(signal, contacts):
         "sales_summary", "demand_hypothesis")) >= 2
     support=is_recorded(evidence.get("facts")) and is_recorded(signal.get("source_urls"))
     stage3_contacts=((signal.get("stage3_enrichment") or {}).get("contacts") or {})
+    # Real recruitment/JD evidence only: a PULL-framework inference row
+    # (topic=P_project/U_unavoidable/L_limitations/L_leverage, no job_title)
+    # is an internal score trace, not a job posting, and must never satisfy
+    # the "recruitment evidence" gate.
+    real_jd = [item for item in (signal.get("jd_inferences") or [])
+               if isinstance(item, dict) and (item.get("job_title") or item.get("role_duties") or item.get("software_need"))]
     actionability=bool(contacts) or is_recorded(stage3_contacts) or any(
         str(item.get("confidence", "")).upper() in {"HIGH", "MEDIUM"}
-        for item in signal.get("jd_inferences") or []) or is_recorded(signal.get("contact_hint"))
+        for item in real_jd) or is_recorded(signal.get("contact_hint"))
     checks=(basic, timeline, demand, support, actionability)
     return sum(checks), [label for label, ok in zip(
         ("项目与地区", "阶段与时间窗口", "需求与现状", "公开证据", "联系人或招聘证据"), checks) if not ok]

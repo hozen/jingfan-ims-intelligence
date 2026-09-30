@@ -47370,12 +47370,7 @@
         "opportunity": "30万吨/年高端碳材料项目（煅前针状焦10万吨/年），同时对现有二期污水处理单元改造（100t/h→300t/h）+ 配建中水回用单元",
         "evidence": {
           "facts": [
-            "Source: https://www.bl.gov.cn/col/col1229505487/art/2026/art_e7e54fc9a7ea43f9ab272604dc048ea3.html",
-            "P_project: 建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元",
-            "U_unavoidable: 新项目增加废水量，现有100t/h处理能力不足，必须扩容才能满足排放许可要求",
-            "L_limitations: 现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
-            "Entry timing: GOOD - 环评信息公开2026-09-28，处于环评公示阶段，项目设计阶段即将启动，污水处理改造方案尚未冻结",
-            "Influence window: HIGH - 环评公示阶段，污水处理改造方案（100→300t/h）和中水回用单元设计尚未冻结，可在设计阶段影响监测点位和仪表规格"
+            "公开披露：建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元"
           ],
           "inferences": [],
           "unknowns": []
@@ -47383,33 +47378,12 @@
         "time_window_basis": "环评公示阶段，污水处理改造方案（100→300t/h）和中水回用单元设计尚未冻结，可在设计阶段影响监测点位和仪表规格",
         "customer_need": "",
         "current_solution": "现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
-        "demand_hypothesis": "PULL Score 16/20. Key Unknown: EPC/设计院是否已确定？中水回用工艺路线？. Next Q: 改造工程的EPC或设计院是否已经确定？中水回用单元采用什么工艺路线？",
+        "demand_hypothesis": "关键未知： EPC/设计院是否已确定？中水回用工艺路线？。下一步优先核实： 改造工程的EPC或设计院是否已经确定？中水回用单元采用什么工艺路线？",
         "customer_requirement": "建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元",
         "operational_pain_points": "现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
         "sales_summary": "30万吨/年高端碳材料项目（煅前针状焦10万吨/年），同时对现有二期污水处理单元改造（100t/h→300t/h）+ 配建中水回用单元 | Entry: GOOD | Influence: HIGH | Priority: P1",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "新项目增加废水量，现有100t/h处理能力不足，必须扩容才能满足排放许可要求",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "改造设计阶段可影响在线监测仪表选型、中水回用水质监测策略、多排口监测点位优化",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 中海石油宁波大榭石化有限公司; 环评公示明确建设单位，联系人吴工0574-56777695"
+        "jd_inferences": [],
+        "contact_hint": "公开渠道可联系：联系人吴工0574-56777695"
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -47441,28 +47415,7 @@
       "sales_summary": "30万吨/年高端碳材料项目（煅前针状焦10万吨/年），同时对现有二期污水处理单元改造（100t/h→300t/h）+ 配建中水回用单元 | Entry: GOOD | Influence: HIGH | Priority: P1",
       "estimated_time_window": "3-6个月",
       "time_window_basis": "环评公示阶段，污水处理改造方案（100→300t/h）和中水回用单元设计尚未冻结，可在设计阶段影响监测点位和仪表规格",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "新项目增加废水量，现有100t/h处理能力不足，必须扩容才能满足排放许可要求",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "改造设计阶段可影响在线监测仪表选型、中水回用水质监测策略、多排口监测点位优化",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪后续工程设计阶段公告，确认设计院和EPC",
       "history": [
         {
@@ -47482,19 +47435,16 @@
       "current_solution": "现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
       "evidence": {
         "facts": [
-          "Source: https://www.bl.gov.cn/col/col1229505487/art/2026/art_e7e54fc9a7ea43f9ab272604dc048ea3.html",
-          "P_project: 建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元",
-          "U_unavoidable: 新项目增加废水量，现有100t/h处理能力不足，必须扩容才能满足排放许可要求",
-          "L_limitations: 现有污水处理单元100t/h处理能力，无法支撑新增产能废水；中水回用为新建需求",
-          "Entry timing: GOOD - 环评信息公开2026-09-28，处于环评公示阶段，项目设计阶段即将启动，污水处理改造方案尚未冻结",
-          "Influence window: HIGH - 环评公示阶段，污水处理改造方案（100→300t/h）和中水回用单元设计尚未冻结，可在设计阶段影响监测点位和仪表规格"
-        ]
+          "公开披露：建设30万吨/年高端碳材料项目，同时将二期污水处理单元从100t/h扩容到300t/h并新建中水回用单元"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 中海石油宁波大榭石化有限公司; 环评公示明确建设单位，联系人吴工0574-56777695",
+      "contact_hint": "公开渠道可联系：联系人吴工0574-56777695",
       "source_urls": [
         "https://www.bl.gov.cn/col/col1229505487/art/2026/art_e7e54fc9a7ea43f9ab272604dc048ea3.html"
       ],
-      "demand_hypothesis": "PULL Score 16/20. Key Unknown: EPC/设计院是否已确定？中水回用工艺路线？. Next Q: 改造工程的EPC或设计院是否已经确定？中水回用单元采用什么工艺路线？"
+      "demand_hypothesis": "关键未知： EPC/设计院是否已确定？中水回用工艺路线？。下一步优先核实： 改造工程的EPC或设计院是否已经确定？中水回用单元采用什么工艺路线？"
     },
     {
       "lead_id": "IND-20260929-02",
@@ -47598,12 +47548,7 @@
         "opportunity": "小鲁消费类电芯产业化项目（一、二期），年产3.5GWh消费类电芯（三元18系列+磷酸铁锂40系列），总投资6亿元，环保投资2100万元，配套100m³/d综合污水处理站",
         "evidence": {
           "facts": [
-            "Source: https://www.hbdj.gov.cn/zwgk/public/174/65169636.html",
-            "P_project: 新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站",
-            "U_unavoidable: 电池工业污染物排放标准GB30484-2013强制要求，含氟含镍废水必须预处理达标，总量指标未落实前严禁试生产",
-            "L_limitations: 新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
-            "Entry timing: GOOD - 环评批复2026-09-22，项目已备案但尚未开工建设，污水处理站设计方案可在建设前影响",
-            "Influence window: HIGH - 环评刚批复，项目尚未开工，100m³/d污水处理站含正极含镍废水、含氟电芯清洗废水预处理系统，设计尚未冻结"
+            "公开披露：新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站"
           ],
           "inferences": [],
           "unknowns": []
@@ -47611,33 +47556,12 @@
         "time_window_basis": "环评刚批复，项目尚未开工，100m³/d污水处理站含正极含镍废水、含氟电芯清洗废水预处理系统，设计尚未冻结",
         "customer_need": "",
         "current_solution": "新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
-        "demand_hypothesis": "PULL Score 15/20. Key Unknown: 污水处理站设计院是否已确定？是否需要在线监测氟化物？. Next Q: 污水处理站的设计和建设由谁负责？是否需要在线监测氟化物和镍？",
+        "demand_hypothesis": "关键未知： 污水处理站设计院是否已确定？是否需要在线监测氟化物？。下一步优先核实： 污水处理站的设计和建设由谁负责？是否需要在线监测氟化物和镍？",
         "customer_requirement": "新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站",
         "operational_pain_points": "新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
         "sales_summary": "小鲁消费类电芯产业化项目（一、二期），年产3.5GWh消费类电芯（三元18系列+磷酸铁锂40系列），总投资6亿元，环保投资2100万元，配套100m³/d综合污水处理站 | Entry: GOOD | Influence: HIGH | Priority: P2",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "电池工业污染物排放标准GB30484-2013强制要求，含氟含镍废水必须预处理达标，总量指标未落实前严禁试生产",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "设计阶段可影响在线监测点位布设（氟化物、镍、COD等）、仪表选型和数据管理架构",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 安徽小鲁新能源科技有限公司; 环评批复明确建设单位，项目代码2605-340602-04-01-604533"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -47669,28 +47593,7 @@
       "sales_summary": "小鲁消费类电芯产业化项目（一、二期），年产3.5GWh消费类电芯（三元18系列+磷酸铁锂40系列），总投资6亿元，环保投资2100万元，配套100m³/d综合污水处理站 | Entry: GOOD | Influence: HIGH | Priority: P2",
       "estimated_time_window": "3-6个月",
       "time_window_basis": "环评刚批复，项目尚未开工，100m³/d污水处理站含正极含镍废水、含氟电芯清洗废水预处理系统，设计尚未冻结",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "电池工业污染物排放标准GB30484-2013强制要求，含氟含镍废水必须预处理达标，总量指标未落实前严禁试生产",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "设计阶段可影响在线监测点位布设（氟化物、镍、COD等）、仪表选型和数据管理架构",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪项目开工公告和工程设计招标信息",
       "history": [
         {
@@ -47710,19 +47613,16 @@
       "current_solution": "新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
       "evidence": {
         "facts": [
-          "Source: https://www.hbdj.gov.cn/zwgk/public/174/65169636.html",
-          "P_project: 新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站",
-          "U_unavoidable: 电池工业污染物排放标准GB30484-2013强制要求，含氟含镍废水必须预处理达标，总量指标未落实前严禁试生产",
-          "L_limitations: 新建项目无既有水处理设施，需从零建设含氟含镍废水预处理+综合污水处理站",
-          "Entry timing: GOOD - 环评批复2026-09-22，项目已备案但尚未开工建设，污水处理站设计方案可在建设前影响",
-          "Influence window: HIGH - 环评刚批复，项目尚未开工，100m³/d污水处理站含正极含镍废水、含氟电芯清洗废水预处理系统，设计尚未冻结"
-        ]
+          "公开披露：新建3.5GWh消费类电芯生产线，含含镍正极清洗废水、含氟电芯清洗废水、NMP高浓有机废水，需配套100m³/d综合污水处理站"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 安徽小鲁新能源科技有限公司; 环评批复明确建设单位，项目代码2605-340602-04-01-604533",
+      "contact_hint": "",
       "source_urls": [
         "https://www.hbdj.gov.cn/zwgk/public/174/65169636.html"
       ],
-      "demand_hypothesis": "PULL Score 15/20. Key Unknown: 污水处理站设计院是否已确定？是否需要在线监测氟化物？. Next Q: 污水处理站的设计和建设由谁负责？是否需要在线监测氟化物和镍？"
+      "demand_hypothesis": "关键未知： 污水处理站设计院是否已确定？是否需要在线监测氟化物？。下一步优先核实： 污水处理站的设计和建设由谁负责？是否需要在线监测氟化物和镍？"
     },
     {
       "lead_id": "IND-20260929-03",
@@ -47827,12 +47727,7 @@
         "opportunity": "新建年产2019吨原料药及中间体项目（含奈必洛尔、左乙拉西坦、司维拉姆等16种产品），新征土地138.73亩，新建61010.6平方米厂房，配套新建600t/d污水站（生化调节+厌氧+两级A/O+MBR膜）",
         "evidence": {
           "facts": [
-            "Source: https://sxepb.sx.gov.cn/col/col1229459599/art/2026/art_2ae82dd0d4074a23bd3e1e3398b3af30.html",
-            "P_project: 新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水",
-            "U_unavoidable: 制药工业污染物排放标准强制要求，高盐含重金属废水必须预处理达标纳管，环评明确要求",
-            "L_limitations: 新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
-            "Entry timing: GOOD - 环评公示期2026-09-22至09-30，处于审批阶段，项目尚未开工建设，污水站设计可影响",
-            "Influence window: HIGH - 环评审批阶段，新建600t/d污水站方案含高盐含重金属废水蒸发脱盐预处理+光催化高级氧化+MBR，设计尚未冻结"
+            "公开披露：新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水"
           ],
           "inferences": [],
           "unknowns": []
@@ -47840,33 +47735,12 @@
         "time_window_basis": "环评审批阶段，新建600t/d污水站方案含高盐含重金属废水蒸发脱盐预处理+光催化高级氧化+MBR，设计尚未冻结",
         "customer_need": "",
         "current_solution": "新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
-        "demand_hypothesis": "PULL Score 15/20. Key Unknown: 污水站设计院是否已确定？MBR系统供应商？. Next Q: 600t/d污水站的设计和建设由谁负责？是否有在线监测重金属的需求？",
+        "demand_hypothesis": "关键未知： 污水站设计院是否已确定？MBR系统供应商？。下一步优先核实： 600t/d污水站的设计和建设由谁负责？是否有在线监测重金属的需求？",
         "customer_requirement": "新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水",
         "operational_pain_points": "新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
         "sales_summary": "新建年产2019吨原料药及中间体项目（含奈必洛尔、左乙拉西坦、司维拉姆等16种产品），新征土地138.73亩，新建61010.6平方米厂房，配套新建600t/d污水站（生化调节+厌氧+两级A/O+MBR膜） | Entry: GOOD | Influence: HIGH | Priority: P2",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "制药工业污染物排放标准强制要求，高盐含重金属废水必须预处理达标纳管，环评明确要求",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "设计阶段可影响在线监测点位（重金属、COD、氨氮等）、MBR出水水质监测策略",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 雅本（绍兴）药业有限公司; 环评公示明确建设单位，母公司雅本化学(300261.SZ)"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -47898,28 +47772,7 @@
       "sales_summary": "新建年产2019吨原料药及中间体项目（含奈必洛尔、左乙拉西坦、司维拉姆等16种产品），新征土地138.73亩，新建61010.6平方米厂房，配套新建600t/d污水站（生化调节+厌氧+两级A/O+MBR膜） | Entry: GOOD | Influence: HIGH | Priority: P2",
       "estimated_time_window": "3-9个月",
       "time_window_basis": "环评审批阶段，新建600t/d污水站方案含高盐含重金属废水蒸发脱盐预处理+光催化高级氧化+MBR，设计尚未冻结",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "制药工业污染物排放标准强制要求，高盐含重金属废水必须预处理达标纳管，环评明确要求",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "设计阶段可影响在线监测点位（重金属、COD、氨氮等）、MBR出水水质监测策略",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪项目审批结果和后续工程设计招标",
       "history": [
         {
@@ -47939,19 +47792,16 @@
       "current_solution": "新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
       "evidence": {
         "facts": [
-          "Source: https://sxepb.sx.gov.cn/col/col1229459599/art/2026/art_2ae82dd0d4074a23bd3e1e3398b3af30.html",
-          "P_project: 新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水",
-          "U_unavoidable: 制药工业污染物排放标准强制要求，高盐含重金属废水必须预处理达标纳管，环评明确要求",
-          "L_limitations: 新建项目无既有水处理设施，需从零建设蒸发脱盐+光催化高级氧化+MBR污水处理站",
-          "Entry timing: GOOD - 环评公示期2026-09-22至09-30，处于审批阶段，项目尚未开工建设，污水站设计可影响",
-          "Influence window: HIGH - 环评审批阶段，新建600t/d污水站方案含高盐含重金属废水蒸发脱盐预处理+光催化高级氧化+MBR，设计尚未冻结"
-        ]
+          "公开披露：新建年产2019吨原料药及中间体生产线，配套600t/d污水站处理高盐、含重金属、高沸点难生化废水"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 雅本（绍兴）药业有限公司; 环评公示明确建设单位，母公司雅本化学(300261.SZ)",
+      "contact_hint": "",
       "source_urls": [
         "https://sxepb.sx.gov.cn/col/col1229459599/art/2026/art_2ae82dd0d4074a23bd3e1e3398b3af30.html"
       ],
-      "demand_hypothesis": "PULL Score 15/20. Key Unknown: 污水站设计院是否已确定？MBR系统供应商？. Next Q: 600t/d污水站的设计和建设由谁负责？是否有在线监测重金属的需求？"
+      "demand_hypothesis": "关键未知： 污水站设计院是否已确定？MBR系统供应商？。下一步优先核实： 600t/d污水站的设计和建设由谁负责？是否有在线监测重金属的需求？"
     },
     {
       "lead_id": "IND-20260929-04",
@@ -48055,10 +47905,7 @@
         "opportunity": "60万吨/年磷石膏制酸装置超许可排放浓度被罚155.4万元+限制生产3个月，整改要求含制定整治方案、实施整改、自行或委托监测",
         "evidence": {
           "facts": [
-            "Source: https://m.nbd.com.cn/articles/2026-09-24/4591410.html",
-            "P_project: 磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测",
-            "U_unavoidable: 行政处罚强制要求，拒不改正已按日连续处罚，限制生产3个月，整改是强制义务",
-            "Entry timing: GOOD - 限制生产3个月期间需整改，当前正处于整改窗口期，监测方案可影响"
+            "公开披露：磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测"
           ],
           "inferences": [],
           "unknowns": []
@@ -48066,33 +47913,12 @@
         "time_window_basis": "整改要求含自行或委托监测，可能新增或升级在线监测设施，但具体整改方案未公开",
         "customer_need": "",
         "current_solution": "现有监测设施未能阻止超标排放，可能存在监测盲区或设备不足",
-        "demand_hypothesis": "PULL Score 14/20. Key Unknown: 整改方案是否包含在线监测升级？现有监测设施有哪些？. Next Q: 整改方案是否已经制定？是否包含在线监测设施升级？",
+        "demand_hypothesis": "关键未知： 整改方案是否包含在线监测升级？现有监测设施有哪些？。下一步优先核实： 整改方案是否已经制定？是否包含在线监测设施升级？",
         "customer_requirement": "磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测",
         "operational_pain_points": "现有监测设施未能阻止超标排放，可能存在监测盲区或设备不足",
         "sales_summary": "60万吨/年磷石膏制酸装置超许可排放浓度被罚155.4万元+限制生产3个月，整改要求含制定整治方案、实施整改、自行或委托监测 | Entry: GOOD | Influence: MEDIUM | Priority: P2",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "行政处罚强制要求，拒不改正已按日连续处罚，限制生产3个月，整改是强制义务",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "现有监测设施未能阻止超标排放，可能存在监测盲区或设备不足",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "整改窗口期可建议补充在线监测点位、升级监测能力，但需先了解现有设施状况",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 贵州正磷化工有限公司; 处罚决定书明确责任主体，母公司金正大SZ002470"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -48124,28 +47950,7 @@
       "sales_summary": "60万吨/年磷石膏制酸装置超许可排放浓度被罚155.4万元+限制生产3个月，整改要求含制定整治方案、实施整改、自行或委托监测 | Entry: GOOD | Influence: MEDIUM | Priority: P2",
       "estimated_time_window": "1-3个月",
       "time_window_basis": "整改要求含自行或委托监测，可能新增或升级在线监测设施，但具体整改方案未公开",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "行政处罚强制要求，拒不改正已按日连续处罚，限制生产3个月，整改是强制义务",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "现有监测设施未能阻止超标排放，可能存在监测盲区或设备不足",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "整改窗口期可建议补充在线监测点位、升级监测能力，但需先了解现有设施状况",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪瓮安县/黔南州生态环境局后续整改验收公告",
       "history": [
         {
@@ -48165,17 +47970,16 @@
       "current_solution": "现有监测设施未能阻止超标排放，可能存在监测盲区或设备不足",
       "evidence": {
         "facts": [
-          "Source: https://m.nbd.com.cn/articles/2026-09-24/4591410.html",
-          "P_project: 磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测",
-          "U_unavoidable: 行政处罚强制要求，拒不改正已按日连续处罚，限制生产3个月，整改是强制义务",
-          "Entry timing: GOOD - 限制生产3个月期间需整改，当前正处于整改窗口期，监测方案可影响"
-        ]
+          "公开披露：磷石膏制酸装置超标排放整改，需制定整治方案并实施整改，包括自行或委托监测"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 贵州正磷化工有限公司; 处罚决定书明确责任主体，母公司金正大SZ002470",
+      "contact_hint": "",
       "source_urls": [
         "https://m.nbd.com.cn/articles/2026-09-24/4591410.html"
       ],
-      "demand_hypothesis": "PULL Score 14/20. Key Unknown: 整改方案是否包含在线监测升级？现有监测设施有哪些？. Next Q: 整改方案是否已经制定？是否包含在线监测设施升级？"
+      "demand_hypothesis": "关键未知： 整改方案是否包含在线监测升级？现有监测设施有哪些？。下一步优先核实： 整改方案是否已经制定？是否包含在线监测设施升级？"
     },
     {
       "lead_id": "IND-20260929-05",
@@ -48280,8 +48084,7 @@
         "opportunity": "新能源废旧动力电池综合利用项目，环评征求意见稿公示中",
         "evidence": {
           "facts": [
-            "Source: http://www.tianmen.gov.cn/zwgk/bmhxzxxgkml/bm/ssthjj/zfxxgk/fdzdgknr/gysyjs/shzz/hpgzcy/202609/t20260924_6022361.shtml",
-            "Entry timing: EARLY - 环评征求意见稿公示2026-09-24，处于环评早期阶段，项目方案尚未定稿"
+            "公开披露：新能源废旧动力电池综合利用项目，具体工艺和规模待环评定稿后确认"
           ],
           "inferences": [],
           "unknowns": []
@@ -48289,33 +48092,12 @@
         "time_window_basis": "废旧电池回收利用涉及浸出/湿法工艺废水，环评阶段可影响监测方案，但具体废水工艺未确认",
         "customer_need": "",
         "current_solution": "Unknown — 新建项目，现有处理方式未确认",
-        "demand_hypothesis": "PULL Score 10/20. Key Unknown: 回收工艺是湿法还是火法？废水产生量多少？. Next Q: 废旧电池回收采用什么工艺？废水的产生量和水质特征是什么？",
+        "demand_hypothesis": "关键未知： 回收工艺是湿法还是火法？废水产生量多少？。下一步优先核实： 废旧电池回收采用什么工艺？废水的产生量和水质特征是什么？",
         "customer_requirement": "新能源废旧动力电池综合利用项目，具体工艺和规模待环评定稿后确认",
         "operational_pain_points": "Unknown — 新建项目，现有处理方式未确认",
         "sales_summary": "新能源废旧动力电池综合利用项目，环评征求意见稿公示中 | Entry: EARLY | Influence: MEDIUM | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "新能源废旧动力电池综合利用项目，具体工艺和规模待环评定稿后确认",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "废旧电池回收涉及重金属和酸碱废水，环保要求强制处理达标",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "Unknown — 新建项目，现有处理方式未确认",
-            "confidence": "LOW"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "环评阶段可影响监测方案设计，但具体leverage取决于工艺路线",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 湖北锂合环保科技有限公司; 环评公示明确建设单位"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -48347,28 +48129,7 @@
       "sales_summary": "新能源废旧动力电池综合利用项目，环评征求意见稿公示中 | Entry: EARLY | Influence: MEDIUM | Priority: P3",
       "estimated_time_window": "6-12个月",
       "time_window_basis": "废旧电池回收利用涉及浸出/湿法工艺废水，环评阶段可影响监测方案，但具体废水工艺未确认",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "新能源废旧动力电池综合利用项目，具体工艺和规模待环评定稿后确认",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "废旧电池回收涉及重金属和酸碱废水，环保要求强制处理达标",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "Unknown — 新建项目，现有处理方式未确认",
-          "confidence": "LOW"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "环评阶段可影响监测方案设计，但具体leverage取决于工艺路线",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪环评报告书征求意见稿全文，确认工艺和废水方案",
       "history": [
         {
@@ -48388,15 +48149,16 @@
       "current_solution": "Unknown — 新建项目，现有处理方式未确认",
       "evidence": {
         "facts": [
-          "Source: http://www.tianmen.gov.cn/zwgk/bmhxzxxgkml/bm/ssthjj/zfxxgk/fdzdgknr/gysyjs/shzz/hpgzcy/202609/t20260924_6022361.shtml",
-          "Entry timing: EARLY - 环评征求意见稿公示2026-09-24，处于环评早期阶段，项目方案尚未定稿"
-        ]
+          "公开披露：新能源废旧动力电池综合利用项目，具体工艺和规模待环评定稿后确认"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 湖北锂合环保科技有限公司; 环评公示明确建设单位",
+      "contact_hint": "",
       "source_urls": [
         "http://www.tianmen.gov.cn/zwgk/bmhxzxxgkml/bm/ssthjj/zfxxgk/fdzdgknr/gysyjs/shzz/hpgzcy/202609/t20260924_6022361.shtml"
       ],
-      "demand_hypothesis": "PULL Score 10/20. Key Unknown: 回收工艺是湿法还是火法？废水产生量多少？. Next Q: 废旧电池回收采用什么工艺？废水的产生量和水质特征是什么？"
+      "demand_hypothesis": "关键未知： 回收工艺是湿法还是火法？废水产生量多少？。下一步优先核实： 废旧电池回收采用什么工艺？废水的产生量和水质特征是什么？"
     },
     {
       "lead_id": "IND-20260929-06",
@@ -48499,9 +48261,7 @@
         "opportunity": "钠离子电芯及锂电池PACK组装生产项目，环评批复2026-09-18，回收NMP、喷淋废水定期交由NMP厂家回收",
         "evidence": {
           "facts": [
-            "Source: https://www.weiyuan.gov.cn/wyx/jsxmhp/202609/01243c18c97a45f784b3c79d40e1fa6f.shtml",
-            "P_project: 钠离子电芯及锂电池PACK组装生产线建设",
-            "Entry timing: GOOD - 环评批复2026-09-18，项目刚获批尚未开工"
+            "公开披露：钠离子电芯及锂电池PACK组装生产线建设"
           ],
           "inferences": [],
           "unknowns": []
@@ -48509,33 +48269,12 @@
         "time_window_basis": "PACK组装不拆解电芯，废水主要为NMP回收和喷淋废水，定期外委处理，自建水处理系统需求可能较低",
         "customer_need": "",
         "current_solution": "废水定期外委处理，可能无在线监测需求",
-        "demand_hypothesis": "PULL Score 9/20. Key Unknown: 项目是否仅PACK组装还是含电芯制造？. Next Q: 项目是否包含电芯制造环节？含氟含镍废水是否产生？",
+        "demand_hypothesis": "关键未知： 项目是否仅PACK组装还是含电芯制造？。下一步优先核实： 项目是否包含电芯制造环节？含氟含镍废水是否产生？",
         "customer_requirement": "钠离子电芯及锂电池PACK组装生产线建设",
         "operational_pain_points": "废水定期外委处理，可能无在线监测需求",
         "sales_summary": "钠离子电芯及锂电池PACK组装生产项目，环评批复2026-09-18，回收NMP、喷淋废水定期交由NMP厂家回收 | Entry: GOOD | Influence: LOW | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "钠离子电芯及锂电池PACK组装生产线建设",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "环评要求NMP回收和喷淋废水定期交厂家回收，但自建水处理系统需求可能不高",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "废水定期外委处理，可能无在线监测需求",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "如果仅PACK组装不涉及电芯制造，iMS leverage有限",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 威远康树新能源科技有限公司; 环评批复明确建设单位"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -48567,28 +48306,7 @@
       "sales_summary": "钠离子电芯及锂电池PACK组装生产项目，环评批复2026-09-18，回收NMP、喷淋废水定期交由NMP厂家回收 | Entry: GOOD | Influence: LOW | Priority: P3",
       "estimated_time_window": "6-12个月",
       "time_window_basis": "PACK组装不拆解电芯，废水主要为NMP回收和喷淋废水，定期外委处理，自建水处理系统需求可能较低",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "钠离子电芯及锂电池PACK组装生产线建设",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "环评要求NMP回收和喷淋废水定期交厂家回收，但自建水处理系统需求可能不高",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "废水定期外委处理，可能无在线监测需求",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "如果仅PACK组装不涉及电芯制造，iMS leverage有限",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "确认项目是否含电芯制造环节",
       "history": [
         {
@@ -48608,16 +48326,16 @@
       "current_solution": "废水定期外委处理，可能无在线监测需求",
       "evidence": {
         "facts": [
-          "Source: https://www.weiyuan.gov.cn/wyx/jsxmhp/202609/01243c18c97a45f784b3c79d40e1fa6f.shtml",
-          "P_project: 钠离子电芯及锂电池PACK组装生产线建设",
-          "Entry timing: GOOD - 环评批复2026-09-18，项目刚获批尚未开工"
-        ]
+          "公开披露：钠离子电芯及锂电池PACK组装生产线建设"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 威远康树新能源科技有限公司; 环评批复明确建设单位",
+      "contact_hint": "",
       "source_urls": [
         "https://www.weiyuan.gov.cn/wyx/jsxmhp/202609/01243c18c97a45f784b3c79d40e1fa6f.shtml"
       ],
-      "demand_hypothesis": "PULL Score 9/20. Key Unknown: 项目是否仅PACK组装还是含电芯制造？. Next Q: 项目是否包含电芯制造环节？含氟含镍废水是否产生？"
+      "demand_hypothesis": "关键未知： 项目是否仅PACK组装还是含电芯制造？。下一步优先核实： 项目是否包含电芯制造环节？含氟含镍废水是否产生？"
     },
     {
       "lead_id": "IND-20260929-07",
@@ -48721,10 +48439,7 @@
         "opportunity": "电子级二乙氧基甲基硅烷项目，环评批复2026-09-23，新增废水污染物排放量从洛阳市华强经济建设投资有限公司污水处理厂等量替代",
         "evidence": {
           "facts": [
-            "Source: https://sthj.ly.gov.cn/2026/09-23/1086911.html",
-            "P_project: 新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代",
-            "U_unavoidable: 环评要求废水等量替代，需落实废水处理方案",
-            "Entry timing: GOOD - 环评批复2026-09-23，项目处于审批后/建设前阶段"
+            "公开披露：新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代"
           ],
           "inferences": [],
           "unknowns": []
@@ -48732,33 +48447,12 @@
         "time_window_basis": "电子级硅烷生产涉及含酸含硅废水，废水等量替代说明需新增处理能力，但具体自建还是依托园区设施未确认",
         "customer_need": "",
         "current_solution": "Unknown — 现有废水处理方式未确认",
-        "demand_hypothesis": "PULL Score 11/20. Key Unknown: 废水处理是自建还是依托园区设施？. Next Q: 废水处理方案是自建还是依托园区集中处理？",
+        "demand_hypothesis": "关键未知： 废水处理是自建还是依托园区设施？。下一步优先核实： 废水处理方案是自建还是依托园区集中处理？",
         "customer_requirement": "新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代",
         "operational_pain_points": "Unknown — 现有废水处理方式未确认",
         "sales_summary": "电子级二乙氧基甲基硅烷项目，环评批复2026-09-23，新增废水污染物排放量从洛阳市华强经济建设投资有限公司污水处理厂等量替代 | Entry: GOOD | Influence: MEDIUM | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "环评要求废水等量替代，需落实废水处理方案",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "Unknown — 现有废水处理方式未确认",
-            "confidence": "LOW"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "如果自建废水处理设施，设计阶段可影响监测方案",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 洛阳中硅高科技有限公司; 环评批复明确建设单位"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -48790,28 +48484,7 @@
       "sales_summary": "电子级二乙氧基甲基硅烷项目，环评批复2026-09-23，新增废水污染物排放量从洛阳市华强经济建设投资有限公司污水处理厂等量替代 | Entry: GOOD | Influence: MEDIUM | Priority: P3",
       "estimated_time_window": "6-12个月",
       "time_window_basis": "电子级硅烷生产涉及含酸含硅废水，废水等量替代说明需新增处理能力，但具体自建还是依托园区设施未确认",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "环评要求废水等量替代，需落实废水处理方案",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "Unknown — 现有废水处理方式未确认",
-          "confidence": "LOW"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "如果自建废水处理设施，设计阶段可影响监测方案",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "确认废水处理方案（自建 vs 依托园区）",
       "history": [
         {
@@ -48831,17 +48504,16 @@
       "current_solution": "Unknown — 现有废水处理方式未确认",
       "evidence": {
         "facts": [
-          "Source: https://sthj.ly.gov.cn/2026/09-23/1086911.html",
-          "P_project: 新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代",
-          "U_unavoidable: 环评要求废水等量替代，需落实废水处理方案",
-          "Entry timing: GOOD - 环评批复2026-09-23，项目处于审批后/建设前阶段"
-        ]
+          "公开披露：新建电子级二乙氧基甲基硅烷生产线，废水排放量需等量替代"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 洛阳中硅高科技有限公司; 环评批复明确建设单位",
+      "contact_hint": "",
       "source_urls": [
         "https://sthj.ly.gov.cn/2026/09-23/1086911.html"
       ],
-      "demand_hypothesis": "PULL Score 11/20. Key Unknown: 废水处理是自建还是依托园区设施？. Next Q: 废水处理方案是自建还是依托园区集中处理？"
+      "demand_hypothesis": "关键未知： 废水处理是自建还是依托园区设施？。下一步优先核实： 废水处理方案是自建还是依托园区集中处理？"
     },
     {
       "lead_id": "IND-20260929-08",
@@ -48945,10 +48617,7 @@
         "opportunity": "化合物半导体孵化加速及制造基地冲刺交付，含废水处理站（含氟、含磷废水经沉淀槽和在线监测处理达标排放），超纯水系统（活性炭过滤+RO反渗透）",
         "evidence": {
           "facts": [
-            "Source: https://jxt.hubei.gov.cn/bmdt/rdjj/202609/t20260928_6023074.shtml",
-            "P_project: 化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统",
-            "U_unavoidable: 半导体含氟含磷废水必须处理达标排放，已有在线监测配置",
-            "Entry timing: LATE - 基地已冲刺交付阶段，废水处理站和在线监测已配置，主要采购窗口可能已过"
+            "公开披露：化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统"
           ],
           "inferences": [],
           "unknowns": []
@@ -48956,33 +48625,12 @@
         "time_window_basis": "基地已近完工，废水处理站和在线监测已安装；但入驻企业工艺变化时可能有新增监测需求",
         "customer_need": "",
         "current_solution": "现有在线监测可能不覆盖入驻企业新增工艺废水，或仪表品牌不是Hach",
-        "demand_hypothesis": "PULL Score 10/20. Key Unknown: 入驻企业是否需要新增监测点位？现有仪表品牌？. Next Q: 孵化基地入驻企业有多少家？是否需要新增监测点位？",
+        "demand_hypothesis": "关键未知： 入驻企业是否需要新增监测点位？现有仪表品牌？。下一步优先核实： 孵化基地入驻企业有多少家？是否需要新增监测点位？",
         "customer_requirement": "化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统",
         "operational_pain_points": "现有在线监测可能不覆盖入驻企业新增工艺废水，或仪表品牌不是Hach",
         "sales_summary": "化合物半导体孵化加速及制造基地冲刺交付，含废水处理站（含氟、含磷废水经沉淀槽和在线监测处理达标排放），超纯水系统（活性炭过滤+RO反渗透） | Entry: LATE | Influence: LOW | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "半导体含氟含磷废水必须处理达标排放，已有在线监测配置",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "现有在线监测可能不覆盖入驻企业新增工艺废水，或仪表品牌不是Hach",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "入驻企业工艺变化时可能有新增监测点位需求，或iMS运维管理需求",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 武汉光谷化合物半导体孵化基地; 报道提及基地冲刺交付，具体运营方未明确"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -49014,28 +48662,7 @@
       "sales_summary": "化合物半导体孵化加速及制造基地冲刺交付，含废水处理站（含氟、含磷废水经沉淀槽和在线监测处理达标排放），超纯水系统（活性炭过滤+RO反渗透） | Entry: LATE | Influence: LOW | Priority: P3",
       "estimated_time_window": "已进入运营期",
       "time_window_basis": "基地已近完工，废水处理站和在线监测已安装；但入驻企业工艺变化时可能有新增监测需求",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "半导体含氟含磷废水必须处理达标排放，已有在线监测配置",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "现有在线监测可能不覆盖入驻企业新增工艺废水，或仪表品牌不是Hach",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "入驻企业工艺变化时可能有新增监测点位需求，或iMS运维管理需求",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "确认孵化基地运营方和入驻企业情况",
       "history": [
         {
@@ -49055,17 +48682,16 @@
       "current_solution": "现有在线监测可能不覆盖入驻企业新增工艺废水，或仪表品牌不是Hach",
       "evidence": {
         "facts": [
-          "Source: https://jxt.hubei.gov.cn/bmdt/rdjj/202609/t20260928_6023074.shtml",
-          "P_project: 化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统",
-          "U_unavoidable: 半导体含氟含磷废水必须处理达标排放，已有在线监测配置",
-          "Entry timing: LATE - 基地已冲刺交付阶段，废水处理站和在线监测已配置，主要采购窗口可能已过"
-        ]
+          "公开披露：化合物半导体孵化基地已建成交付，含废水处理站和在线监测系统"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 武汉光谷化合物半导体孵化基地; 报道提及基地冲刺交付，具体运营方未明确",
+      "contact_hint": "",
       "source_urls": [
         "https://jxt.hubei.gov.cn/bmdt/rdjj/202609/t20260928_6023074.shtml"
       ],
-      "demand_hypothesis": "PULL Score 10/20. Key Unknown: 入驻企业是否需要新增监测点位？现有仪表品牌？. Next Q: 孵化基地入驻企业有多少家？是否需要新增监测点位？"
+      "demand_hypothesis": "关键未知： 入驻企业是否需要新增监测点位？现有仪表品牌？。下一步优先核实： 孵化基地入驻企业有多少家？是否需要新增监测点位？"
     },
     {
       "lead_id": "IND-20260929-09",
@@ -49169,9 +48795,7 @@
         "opportunity": "年产2000万只肉鸡屠宰加工技改项目，对现有屠宰生产线和污水处理站进行升级改造",
         "evidence": {
           "facts": [
-            "Source: https://sthjj.xuancheng.gov.cn/News/show/1731305.html",
-            "P_project: 屠宰生产线技改，同时升级改造污水处理站",
-            "Entry timing: GOOD - 环评公示2026-09-28至10-10，处于审批阶段，技改方案设计可影响"
+            "公开披露：屠宰生产线技改，同时升级改造污水处理站"
           ],
           "inferences": [],
           "unknowns": []
@@ -49179,33 +48803,12 @@
         "time_window_basis": "污水处理站升级改造，可能在改造时新增或更换在线监测仪表，但屠宰废水监测因子相对标准",
         "customer_need": "",
         "current_solution": "Unknown — 现有处理站问题和不足未确认",
-        "demand_hypothesis": "PULL Score 10/20. Key Unknown: 改造原因是什么？现有在线监测覆盖范围？. Next Q: 污水处理站升级改造的原因是什么？是产能扩大还是排放标准提高？",
+        "demand_hypothesis": "关键未知： 改造原因是什么？现有在线监测覆盖范围？。下一步优先核实： 污水处理站升级改造的原因是什么？是产能扩大还是排放标准提高？",
         "customer_requirement": "屠宰生产线技改，同时升级改造污水处理站",
         "operational_pain_points": "Unknown — 现有处理站问题和不足未确认",
         "sales_summary": "年产2000万只肉鸡屠宰加工技改项目，对现有屠宰生产线和污水处理站进行升级改造 | Entry: GOOD | Influence: MEDIUM | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "屠宰生产线技改，同时升级改造污水处理站",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "屠宰废水排放标准要求，处理站升级可能是产能扩大或标准提高驱动",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "Unknown — 现有处理站问题和不足未确认",
-            "confidence": "LOW"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "改造时可能更换或新增在线监测仪表，但iMS leverage取决于现有自动化水平",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 宣城市华盛食品股份有限公司; 环评公示明确建设单位"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -49237,28 +48840,7 @@
       "sales_summary": "年产2000万只肉鸡屠宰加工技改项目，对现有屠宰生产线和污水处理站进行升级改造 | Entry: GOOD | Influence: MEDIUM | Priority: P3",
       "estimated_time_window": "3-6个月",
       "time_window_basis": "污水处理站升级改造，可能在改造时新增或更换在线监测仪表，但屠宰废水监测因子相对标准",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "屠宰生产线技改，同时升级改造污水处理站",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "屠宰废水排放标准要求，处理站升级可能是产能扩大或标准提高驱动",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "Unknown — 现有处理站问题和不足未确认",
-          "confidence": "LOW"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "改造时可能更换或新增在线监测仪表，但iMS leverage取决于现有自动化水平",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪环评审批结果和改造方案",
       "history": [
         {
@@ -49278,16 +48860,16 @@
       "current_solution": "Unknown — 现有处理站问题和不足未确认",
       "evidence": {
         "facts": [
-          "Source: https://sthjj.xuancheng.gov.cn/News/show/1731305.html",
-          "P_project: 屠宰生产线技改，同时升级改造污水处理站",
-          "Entry timing: GOOD - 环评公示2026-09-28至10-10，处于审批阶段，技改方案设计可影响"
-        ]
+          "公开披露：屠宰生产线技改，同时升级改造污水处理站"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 宣城市华盛食品股份有限公司; 环评公示明确建设单位",
+      "contact_hint": "",
       "source_urls": [
         "https://sthjj.xuancheng.gov.cn/News/show/1731305.html"
       ],
-      "demand_hypothesis": "PULL Score 10/20. Key Unknown: 改造原因是什么？现有在线监测覆盖范围？. Next Q: 污水处理站升级改造的原因是什么？是产能扩大还是排放标准提高？"
+      "demand_hypothesis": "关键未知： 改造原因是什么？现有在线监测覆盖范围？。下一步优先核实： 污水处理站升级改造的原因是什么？是产能扩大还是排放标准提高？"
     },
     {
       "lead_id": "IND-20260929-10",
@@ -49390,9 +48972,7 @@
         "opportunity": "酱油生产线（三期）技术改造项目（重大变动），环评公示2026-09-23至09-30，依托现有自建污水处理站处理",
         "evidence": {
           "facts": [
-            "Source: http://www.yangjiang.gov.cn/zfxxgkml/yjssthjj/qt/ggls/content/mpost_982736.html",
-            "P_project: 酱油生产线三期技改（重大变动），依托现有污水处理站",
-            "Entry timing: GOOD - 环评公示阶段，技改方案尚未定稿"
+            "公开披露：酱油生产线三期技改（重大变动），依托现有污水处理站"
           ],
           "inferences": [],
           "unknowns": []
@@ -49400,33 +48980,12 @@
         "time_window_basis": "依托现有污水处理站处理，可能仅需要扩容或调整，在线监测需求取决于排污许可要求",
         "customer_need": "",
         "current_solution": "Unknown — 现有处理站能力是否充足未确认",
-        "demand_hypothesis": "PULL Score 8/20. Key Unknown: 三期扩产后废水是否超过现有处理站能力？. Next Q: 三期扩产后废水量是否超过现有污水处理站设计能力？",
+        "demand_hypothesis": "关键未知： 三期扩产后废水是否超过现有处理站能力？。下一步优先核实： 三期扩产后废水量是否超过现有污水处理站设计能力？",
         "customer_requirement": "酱油生产线三期技改（重大变动），依托现有污水处理站",
         "operational_pain_points": "Unknown — 现有处理站能力是否充足未确认",
         "sales_summary": "酱油生产线（三期）技术改造项目（重大变动），环评公示2026-09-23至09-30，依托现有自建污水处理站处理 | Entry: GOOD | Influence: LOW | Priority: P3",
-        "jd_inferences": [
-          {
-            "topic": "P_project",
-            "inference": "酱油生产线三期技改（重大变动），依托现有污水处理站",
-            "confidence": "HIGH"
-          },
-          {
-            "topic": "U_unavoidable",
-            "inference": "重大变动需重新环评，可能需要扩容污水处理能力",
-            "confidence": "MEDIUM"
-          },
-          {
-            "topic": "L_limitations",
-            "inference": "Unknown — 现有处理站能力是否充足未确认",
-            "confidence": "LOW"
-          },
-          {
-            "topic": "L_leverage",
-            "inference": "如果需要扩容，可影响在线监测点位和仪表选型，但iMS leverage有限",
-            "confidence": "MEDIUM"
-          }
-        ],
-        "contact_hint": "Owner: 卡夫亨氏（阳江）食品有限公司; 环评公示明确建设单位，母公司Kraft Heinz"
+        "jd_inferences": [],
+        "contact_hint": ""
       },
       "enrichment_status": "sales_usable_enriched",
       "record_status": "active",
@@ -49458,28 +49017,7 @@
       "sales_summary": "酱油生产线（三期）技术改造项目（重大变动），环评公示2026-09-23至09-30，依托现有自建污水处理站处理 | Entry: GOOD | Influence: LOW | Priority: P3",
       "estimated_time_window": "3-6个月",
       "time_window_basis": "依托现有污水处理站处理，可能仅需要扩容或调整，在线监测需求取决于排污许可要求",
-      "jd_inferences": [
-        {
-          "topic": "P_project",
-          "inference": "酱油生产线三期技改（重大变动），依托现有污水处理站",
-          "confidence": "HIGH"
-        },
-        {
-          "topic": "U_unavoidable",
-          "inference": "重大变动需重新环评，可能需要扩容污水处理能力",
-          "confidence": "MEDIUM"
-        },
-        {
-          "topic": "L_limitations",
-          "inference": "Unknown — 现有处理站能力是否充足未确认",
-          "confidence": "LOW"
-        },
-        {
-          "topic": "L_leverage",
-          "inference": "如果需要扩容，可影响在线监测点位和仪表选型，但iMS leverage有限",
-          "confidence": "MEDIUM"
-        }
-      ],
+      "jd_inferences": [],
       "next_validation_questions": "跟踪环评审批结果，确认是否需要扩容污水处理站",
       "history": [
         {
@@ -49499,16 +49037,16 @@
       "current_solution": "Unknown — 现有处理站能力是否充足未确认",
       "evidence": {
         "facts": [
-          "Source: http://www.yangjiang.gov.cn/zfxxgkml/yjssthjj/qt/ggls/content/mpost_982736.html",
-          "P_project: 酱油生产线三期技改（重大变动），依托现有污水处理站",
-          "Entry timing: GOOD - 环评公示阶段，技改方案尚未定稿"
-        ]
+          "公开披露：酱油生产线三期技改（重大变动），依托现有污水处理站"
+        ],
+        "inferences": [],
+        "unknowns": []
       },
-      "contact_hint": "Owner: 卡夫亨氏（阳江）食品有限公司; 环评公示明确建设单位，母公司Kraft Heinz",
+      "contact_hint": "",
       "source_urls": [
         "http://www.yangjiang.gov.cn/zfxxgkml/yjssthjj/qt/ggls/content/mpost_982736.html"
       ],
-      "demand_hypothesis": "PULL Score 8/20. Key Unknown: 三期扩产后废水是否超过现有处理站能力？. Next Q: 三期扩产后废水量是否超过现有污水处理站设计能力？"
+      "demand_hypothesis": "关键未知： 三期扩产后废水是否超过现有处理站能力？。下一步优先核实： 三期扩产后废水量是否超过现有污水处理站设计能力？"
     }
   ],
   "projects": [
