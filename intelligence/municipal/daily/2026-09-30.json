@@ -1,0 +1,770 @@
+{
+  "scanner_summary": {
+    "report_date": "2026-09-30",
+    "execution_time": "2026-09-30 08:10",
+    "workday": "Wednesday",
+    "version": "v3.4.2",
+    "total_scanned": 38,
+    "valid_triggers": 15,
+    "p1_count": 0,
+    "p2_count": 0,
+    "p3_count": 1,
+    "background_monitoring_count": 12,
+    "stage_gate_moved_from_opportunities": 0,
+    "industry_trigger_count": 4,
+    "ecosystem_trigger_count": 3,
+    "policy_trigger_count": 3,
+    "competitive_trigger_count": 2,
+    "strategic_account_count": 4,
+    "stage3_enrichment_count": 1,
+    "new_opportunities_today": 1,
+    "updated_opportunities_today": 0,
+    "new_background_monitoring_today": 12,
+    "method_note": "v3.4.2三阶段流水线：Stage1六大雷达+v3.4.2扩展信号源（政采意向专区/水务集团自采平台/项目审批平台）→Stage2 Stage Gate+action_triad+Public Signal Score→Stage3公开信息富化"
+  },
+  "stage1_summary": {
+    "scanned_at": "2026-09-30 08:10",
+    "radar_coverage": [
+      {
+        "radar": "Radar1-ProjectTrigger",
+        "covered": true,
+        "sources": [
+          "中国政府采购网采购意向公开专区",
+          "各省市采购意向/需求公示栏目",
+          "水务集团/城投/水司自采平台(阳光采购/电子采购)",
+          "省级投资项目在线审批监管平台",
+          "公共资源交易平台"
+        ],
+        "signals_found": 12
+      },
+      {
+        "radar": "Radar2-AccountTrigger",
+        "covered": true,
+        "sources": [
+          "水务集团官网/公众号",
+          "上市公司公告(北控水务中期报告)",
+          "行业媒体报道"
+        ],
+        "signals_found": 4
+      },
+      {
+        "radar": "Radar3-InstalledBase",
+        "covered": true,
+        "sources": [
+          "水务集团自采平台仪表维护采购",
+          "葛洲坝水务在线仪表采购公示",
+          "上海绿衍水务仪表维护公告",
+          "绵竹国润供水在线水质分析仪采购"
+        ],
+        "signals_found": 4
+      },
+      {
+        "radar": "Radar4-PolicyTrigger",
+        "covered": true,
+        "sources": [
+          "发改委31号令",
+          "广东省环保专项资金入库指南",
+          "中央预算内投资提前批通知"
+        ],
+        "signals_found": 3
+      },
+      {
+        "radar": "Radar5-DesignEPC",
+        "covered": true,
+        "sources": [
+          "公共资源交易网EPC招标/中标公示",
+          "勘察设计招标公告",
+          "行业研讨会(智慧污泥监测)"
+        ],
+        "signals_found": 3
+      },
+      {
+        "radar": "Radar6-Competitive",
+        "covered": true,
+        "sources": [
+          "E+H官网产品页",
+          "施耐德电气案例页",
+          "维美德产品介绍"
+        ],
+        "signals_found": 2
+      },
+      {
+        "radar": "政采意向公开专区",
+        "covered": true,
+        "note": "v3.4.2扩展信号源，已覆盖"
+      },
+      {
+        "radar": "水务集团自采平台",
+        "covered": true,
+        "note": "v3.4.2扩展：深圳阳光采购平台/威海水务招采/内江水务阳光采购/南京紫峰水务/福州旗山供水"
+      },
+      {
+        "radar": "省级项目审批平台",
+        "covered": true,
+        "note": "v3.4.2扩展：全国投资项目在线审批监管平台"
+      }
+    ],
+    "raw_signals_count": 38,
+    "total_scanned": 38,
+    "valid_triggers": 15
+  },
+  "stage2_qualifications": [
+    {
+      "candidate_id": "C01",
+      "name": "东方市污水处理厂三期工程",
+      "stage_gate_result": "进入opportunities",
+      "reason": "初步设计招标阶段(设计招标公告已发但设计未完成)，阶段准入通过，iMS逻辑链可建立，action_triad完整",
+      "score_if_applicable": 48
+    },
+    {
+      "candidate_id": "C02",
+      "name": "周村城区供水管网更新改造及漏损治理二期EPC",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "EPC总承包招标公告已发布(9/18)，招标阶段，需求已固化",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C03",
+      "name": "博罗县新建罗阳水厂检验监测",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "评标公示阶段(9/23)，招标已完成",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C04",
+      "name": "连云港省级农高区工业污水处理厂EPCO",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "EPCO评标三次公示(9/23)，招标阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C05",
+      "name": "池州贵池区梅里片区污水处理厂EPC+O",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "中铁四局已中标(1.15亿)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C06",
+      "name": "武汉白浒供水厂厂网一体化EPC",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "EPC中标结果公告(13.36亿)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C07",
+      "name": "仙桃市重点中心城镇污水处理厂扩建EPC",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "EPC评标结果公示，招标阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C08",
+      "name": "宜城经济开发区精细化工业园污水处理厂勘察设计",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "勘察设计评标结果公示(9/22)，设计招标已完成",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C09",
+      "name": "习水县11个乡镇生活污水提质增效勘察设计",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "勘察设计中标候选人公示(9/2)，招标阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C10",
+      "name": "葛洲坝水务温岭各水厂在线仪表及维修配件采购",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "竞价采购中选公示(9/24)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C11",
+      "name": "上海绿衍水务2026年度自控系统及仪表维护服务",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "询比采购公告(8月底发布)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C12",
+      "name": "群新水厂六水厂总铝在线水质分析仪采购",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "询比采购公告(9/28)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C13",
+      "name": "青岛水务公司2026年分区流量计加装材料采购",
+      "stage_gate_result": "转background_monitoring",
+      "reason": "公开竞价采购公告(9/23)，采购阶段",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C14",
+      "name": "甘南县农村饮用水工程管网改造(采购意向)",
+      "stage_gate_result": "排除",
+      "reason": "预算95.47万金额过小，管网改造不含在线仪表/数字化内容，iMS逻辑链断裂",
+      "score_if_applicable": null
+    },
+    {
+      "candidate_id": "C15",
+      "name": "牡丹江市山洪灾害监测预警系统设备维修养护(采购意向)",
+      "stage_gate_result": "排除",
+      "reason": "山洪灾害监测预警设备(水位站/雨量计)与iMS水务在线仪表逻辑链断裂",
+      "score_if_applicable": null
+    }
+  ],
+  "top_5_match": [
+    {
+      "name": "威立雅科学城储备项目群",
+      "trigger_type": "Project Trigger",
+      "score": 80,
+      "priority": "P2",
+      "match_reason": "战略规划阶段，储备项目群覆盖多项目类型",
+      "agent_checklist": "确认广州科学城威立雅存量仪表数量与iMS覆盖",
+      "action_triad": {
+        "find_who": "威立雅科学城环保科技设备管理负责人",
+        "talk_what": "储备项目群中哪些项目含在线监测仪表需求",
+        "why_now": "战略规划阶段，需求定义尚未固化"
+      }
+    },
+    {
+      "name": "上海浦东迎宾水厂新建",
+      "trigger_type": "Project Trigger",
+      "score": 78,
+      "priority": "P2",
+      "match_reason": "初步设计阶段，40万m³/d新建水厂",
+      "agent_checklist": "确认设计单位是否为上海市政院",
+      "action_triad": {
+        "find_who": "上海市政院给排水总工/自控专业负责人",
+        "talk_what": "在线仪表选型方案是否已进入设计图纸",
+        "why_now": "初步设计阶段，仪表选型尚未冻结"
+      }
+    },
+    {
+      "name": "合肥水务集团排水管网7236km接管",
+      "trigger_type": "Account Trigger",
+      "score": 76,
+      "priority": "P2",
+      "match_reason": "战略规划，管理规模扩展驱动数字化需求",
+      "agent_checklist": "确认合肥水务集团数字化部门建设进展",
+      "action_triad": {
+        "find_who": "合肥水务集团设备管理部/数字化部负责人",
+        "talk_what": "排水管网全面接管后多站点仪表管理方案",
+        "why_now": "管理规模刚扩展，数字化方案在规划中"
+      }
+    },
+    {
+      "name": "万家寨水务数字化转型",
+      "trigger_type": "Account Trigger",
+      "score": 76,
+      "priority": "P2",
+      "match_reason": "新管理层+数字化转型窗口",
+      "agent_checklist": "确认万家寨水务集团数字化项目进展",
+      "action_triad": {
+        "find_who": "万家寨水务控股集团数字化/信息化部门负责人",
+        "talk_what": "数字化转型是否包含在线仪表数据采集与资产管理",
+        "why_now": "新管理层上任，数字化战略正在制定"
+      }
+    },
+    {
+      "name": "平顶山二次供水数字化转型",
+      "trigger_type": "Account Trigger",
+      "score": 73,
+      "priority": "P3",
+      "match_reason": "方案阶段，211座泵房智慧化",
+      "agent_checklist": "确认平顶山自来水与三川智慧合作范围",
+      "action_triad": {
+        "find_who": "平顶山自来水公司设备管理/信息化负责人",
+        "talk_what": "二次供水泵房在线监测仪表选型标准",
+        "why_now": "方案阶段，设备选型尚未锁定"
+      }
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "MUNI-2026-09-30-001",
+      "name": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+      "trigger_type": "Project Trigger",
+      "public_facts": "海南省东方市污水处理厂三期工程，东方市水务局为招标人。现状总规模5万m³/d（一期生活污水2.5万+二期工业废水2.5万），本次扩建生活污水处理工程规模2.5万m³/d，扩建后总规模7.5万m³/d。主要建设内容：新建改良A2O生化池、中间提升泵池及高效沉淀池、活性砂滤池、次氯酸钠消毒及巴氏计量池、污泥脱水间和污泥资源化车间、除臭系统、鼓风机房等。审批文号：东审政投〔2026〕18号。2026年9月23日发布初步设计及概算编制招标公告（招标控制价336.09万）和勘察招标公告（控制价108.33万）。资金来源：财政100%。勘察投标截止2026-10-15。",
+      "ai_judgment": "污水厂三期扩建新建全套处理构筑物（A2O生化池、高效沉淀池、活性砂滤池），新建构筑物必然需要配套在线水质监测仪表（进出水COD/氨氮/总磷/SS/pH/DO等）。初步设计招标刚发布（9/23），设计尚未开始，仪表选型完全未锁定。从污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理，iMS逻辑链完整。海南属环保监管趋严地区，在线监测需求明确。",
+      "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+      "opportunity_stage": "初步设计",
+      "estimated_time_window": "3-6 months",
+      "logic_chain_check": "✅ 污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理/数据质量",
+      "action_triad": {
+        "find_who": "东方市水务局项目主管部门负责人；初步设计中标单位（待定，招标中）给排水/自控专业负责人；代理机构广西众联工程项目管理有限公司",
+        "talk_what": "三期扩建进出水在线监测仪表选型方案？是否考虑第三方仪表数据接入智慧水务平台？在线监测点位覆盖哪些工艺段？环保监管对在线监测频率有何要求？",
+        "why_now": "初步设计招标刚发布(9/23)，设计尚未开始，仪表选型完全未进入设计图纸。勘察招标同步进行中(截止10/15)，项目处于技术路线定义窗口期"
+      },
+      "to_verify": {
+        "customer_identity": "东方市水务局是否为Hach客户？Salesforce Account是否存在？",
+        "installed_base": "东方市污水处理厂现有在线仪表类型/数量？一二期是否已有Hach仪表？",
+        "commercial_history": "历史销售/Opportunity？是否有服务合同？",
+        "ims": "是否已有iMS？东方市污水处理厂是否已有数字化平台？",
+        "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+      },
+      "score": 48,
+      "score_breakdown": {
+        "signal_strength": 6,
+        "ims_relevance": 7,
+        "project_customer_stage": 8,
+        "timing": 7,
+        "scale": 5,
+        "ecosystem_influence": 4,
+        "evidence_quality": 6
+      },
+      "confidence": "中",
+      "source_url": "https://ggzy.hainan.gov.cn/ggzy/dfggzy/GGjxzbgs1/293049.jhtml",
+      "source_type": "政府招标公告",
+      "continuity": {
+        "first_seen": "2026-09-30",
+        "new_facts_today": "初步设计及勘察招标公告发布",
+        "changed": true
+      },
+      "enrichment_pointer": "见 3.5.1 富化包",
+      "topic_tag": "污水厂提标新建"
+    }
+  ],
+  "stage3_enrichments": [
+    {
+      "opportunity_id": "MUNI-2026-09-30-001",
+      "customer_background": "东方市水务局为海南省东方市水行政主管部门，负责全市水务设施建设与管理。东方市污水处理厂现状总规模5万m³/d（一期生活污水2.5万+二期工业废水2.5万），服务八所镇及东方工业园区。属海南西部工业重镇，化工产业集中。公开信息显示该厂已运营多年，本次为首次大规模扩建。",
+      "project_background": "审批文号：东审政投〔2026〕18号。资金来源：财政100%。初步设计招标控制价336.09万元，勘察招标控制价108.33万元。建设内容含A2O生化池、高效沉淀池、活性砂滤池、消毒池、污泥脱水间、除臭系统等全套构筑物。勘察投标截止2026-10-15。设计要求达到施工图深度。",
+      "related_parties": [
+        {
+          "role": "业主",
+          "name": "东方市水务局",
+          "note": "公开信息"
+        },
+        {
+          "role": "初步设计代理",
+          "name": "广西众联工程项目管理有限公司",
+          "note": "招标公告公开"
+        },
+        {
+          "role": "勘察代理",
+          "name": "海南智力建设项目管理有限公司",
+          "note": "招标公告公开"
+        },
+        {
+          "role": "设计单位",
+          "name": "待定（招标中）",
+          "note": "需具备工程设计市政行业排水工程专业乙级及以上资质"
+        },
+        {
+          "role": "勘察单位",
+          "name": "待定（招标中）",
+          "note": "需具备岩土工程+工程测量专业乙级及以上资质"
+        }
+      ],
+      "public_history": [
+        "东方市污水处理厂一二期已运营，公开信息未显示此前在线仪表大规模采购记录",
+        "海南省环保监管趋严，多地污水厂已加装在线监测"
+      ],
+      "market_context": "海南省水务一体化推进中，东方市为海南西部中心城市，工业园区废水处理需求增长。海南自贸港建设带动基础设施投资。环保部对海南生态保护要求严格，在线监测需求明确。",
+      "enrichment_sources": [
+        {
+          "url": "https://ggzy.hainan.gov.cn/ggzy/dfggzy/GGjxzbgs1/293049.jhtml",
+          "date": "2026-09-23",
+          "note": "初步设计招标公告"
+        },
+        {
+          "url": "https://ggzy.hainan.gov.cn/ggzy/dfggzy/GGjxzbgs1/293067.jhtml",
+          "date": "2026-09-23",
+          "note": "勘察招标公告"
+        },
+        {
+          "url": "https://www.bidcenter.com.cn/njrl/riliNjdateils-3-2138568.html",
+          "date": "2026-09",
+          "note": "项目信息汇总"
+        }
+      ],
+      "enrichment_confidence": "中"
+    }
+  ],
+  "background_monitoring": [
+    {
+      "name": "周村城区供水管网更新改造及漏损治理二期工程EPC",
+      "customer": "淄博金海水务发展有限公司",
+      "region": "山东淄博",
+      "investment": "2.07亿元",
+      "stage": "EPC招标",
+      "epc": "待定（招标中）",
+      "design_institute": "待定",
+      "feasibility_unit": "未公开",
+      "key_dates": "EPC招标9/18发布，监理招标9/24发布，10/23开工",
+      "trace_value": "含智能物联感知设备+智慧水网管理平台，可追溯仪表选型与智慧平台集成商",
+      "topic_tag": "供水管网改造",
+      "win_result": null
+    },
+    {
+      "name": "博罗县新建罗阳水厂检验监测（试验检测）",
+      "customer": "博罗县（惠州水务集团）",
+      "region": "广东惠州",
+      "investment": "未公开",
+      "stage": "评标公示",
+      "epc": "待定",
+      "design_institute": "待定",
+      "feasibility_unit": "未公开",
+      "key_dates": "评标公示9/23，投资项目代码2506-441322-04-01-479275",
+      "trace_value": "新建水厂检测服务采购，可追溯水厂设计单位与在线监测需求",
+      "topic_tag": "智慧水厂",
+      "win_result": null
+    },
+    {
+      "name": "连云港省级农高区工业污水处理厂EPCO",
+      "customer": "连云港省级农高区",
+      "region": "江苏连云港",
+      "investment": "1.21亿",
+      "stage": "EPCO三次公示",
+      "epc": "中冶华天南京(第一候选人被取消)",
+      "design_institute": "中冶华天南京",
+      "feasibility_unit": "未公开",
+      "key_dates": "7/2招标→8/4评标→9/4二次→9/23三次公示",
+      "trace_value": "工业污水处理EPCO，可追溯设计单位与在线监测选型",
+      "topic_tag": "污水厂提标新建",
+      "win_result": {
+        "project_name": "连云港省级农高区工业污水处理厂EPCO",
+        "win_bidder": "待定（第一候选人被取消，重评中）",
+        "win_amount": "约1.01亿",
+        "win_announce_date": "2026-09-23",
+        "technology_intel": "Bardenpho工艺+高效沉淀池+消毒",
+        "source_url": "https://www.sohu.com/a/1081225135_121123737"
+      }
+    },
+    {
+      "name": "池州贵池区梅里片区污水处理厂EPC+O",
+      "customer": "池州贵池区",
+      "region": "安徽池州",
+      "investment": "1.15亿(总投资1.4亿)",
+      "stage": "EPC+O中标",
+      "epc": "中铁四局联合体",
+      "design_institute": "中铁四局",
+      "feasibility_unit": "未公开",
+      "key_dates": "9/25中标报道",
+      "trace_value": "2万m³/d新建污水厂EPC+O，可追溯设计单位与仪表选型",
+      "topic_tag": "污水厂提标新建",
+      "win_result": {
+        "project_name": "池州贵池区梅里片区污水处理厂EPC+O",
+        "win_bidder": "中铁四局联合体",
+        "win_amount": "1.15亿元",
+        "win_announce_date": "2026-09-25",
+        "technology_intel": "EPC+O模式，2万m³/d新建",
+        "source_url": "https://www.sohu.com/a/1080661897_121123737"
+      }
+    },
+    {
+      "name": "武汉白浒供水厂厂网一体化EPC",
+      "customer": "武汉市水务建设工程有限公司",
+      "region": "湖北武汉",
+      "investment": "13.36亿",
+      "stage": "EPC中标",
+      "epc": "武汉市水务建设工程+上海路桥+上海市政院+武汉市政院+武汉建工+武汉誉城道桥联合体",
+      "design_institute": "上海市政工程设计研究总院+武汉市政工程设计研究院",
+      "feasibility_unit": "未公开",
+      "key_dates": "9/20评标公示，9/26中标",
+      "trace_value": "40万m³/d供水厂厂网一体化，设计单位含上海市政院+武汉市政院，可追溯仪表选型",
+      "topic_tag": "智慧水厂",
+      "win_result": {
+        "project_name": "武汉白浒供水厂厂网一体化EPC",
+        "win_bidder": "武汉市水务建设工程+上海路桥+上海市政院等联合体",
+        "win_amount": "13.36亿元",
+        "win_announce_date": "2026-09-26",
+        "technology_intel": "40万m³/d，6个子项，EPC交钥匙",
+        "source_url": "https://www.sohu.com/a/1081977498_121123737"
+      }
+    },
+    {
+      "name": "仙桃市重点中心城镇污水处理厂扩建EPC",
+      "customer": "仙桃市",
+      "region": "湖北仙桃",
+      "investment": "1.29亿",
+      "stage": "EPC评标公示",
+      "epc": "待定",
+      "design_institute": "待定",
+      "feasibility_unit": "未公开",
+      "key_dates": "9/26评标公示",
+      "trace_value": "3座污水厂扩建8000吨/d+管网40km，可追溯设计单位",
+      "topic_tag": "污水厂提标新建",
+      "win_result": null
+    },
+    {
+      "name": "宜城经济开发区精细化工业园污水处理厂勘察设计",
+      "customer": "宜城经济开发区管委会",
+      "region": "湖北襄阳宜城",
+      "investment": "未公开",
+      "stage": "勘察设计评标公示",
+      "epc": "待定",
+      "design_institute": "待定（9/22评标）",
+      "feasibility_unit": "未公开",
+      "key_dates": "9/22评标",
+      "trace_value": "工业污水处理厂勘察设计，可追溯设计单位与在线监测选型",
+      "topic_tag": "污水厂提标新建",
+      "win_result": null
+    },
+    {
+      "name": "习水县11个乡镇生活污水提质增效勘察设计",
+      "customer": "习水县供排水管理服务中心",
+      "region": "贵州遵义",
+      "investment": "288万(设计费)",
+      "stage": "勘察设计中标公示",
+      "epc": "苏邑设计集团(第一候选人)",
+      "design_institute": "苏邑设计集团有限公司",
+      "feasibility_unit": "未公开",
+      "key_dates": "9/2开标",
+      "trace_value": "11个乡镇污水提质增效，设计单位苏邑设计，可追溯仪表选型",
+      "topic_tag": "排水管网",
+      "win_result": {
+        "project_name": "习水县11个乡镇生活污水提质增效勘察设计",
+        "win_bidder": "苏邑设计集团有限公司",
+        "win_amount": "288.12万元",
+        "win_announce_date": "2026-09-02",
+        "technology_intel": "市政行业甲级，90日历天",
+        "source_url": "https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=1262951002974326784"
+      }
+    },
+    {
+      "name": "葛洲坝水务温岭各水厂在线仪表及维修配件采购",
+      "customer": "葛洲坝水务温岭有限公司/葛洲坝水务(台州)有限公司",
+      "region": "浙江台州温岭",
+      "investment": "未公开",
+      "stage": "竞价采购中选",
+      "epc": "N/A",
+      "design_institute": "N/A",
+      "feasibility_unit": "N/A",
+      "key_dates": "8/31开标，9/24中选公示",
+      "trace_value": "葛洲坝水务在线仪表集中采购，可追溯仪表品牌偏好与竞对情报",
+      "topic_tag": "其他",
+      "win_result": null
+    },
+    {
+      "name": "上海绿衍水务2026年度自控系统及仪表维护服务",
+      "customer": "上海绿衍水务有限公司（鸿同创水务科技采购）",
+      "region": "上海",
+      "investment": "38万元",
+      "stage": "询比采购",
+      "epc": "N/A",
+      "design_institute": "N/A",
+      "feasibility_unit": "N/A",
+      "key_dates": "采购公告发布中",
+      "trace_value": "水厂自控系统+在线仪表日常维护(含校准/检定)，可追溯仪表维护外包模式与竞对",
+      "topic_tag": "其他",
+      "win_result": null
+    },
+    {
+      "name": "绵竹国润供水群新水厂六水厂总铝在线水质分析仪采购",
+      "customer": "绵竹国润供水有限公司",
+      "region": "四川绵竹",
+      "investment": "未公开",
+      "stage": "询比采购(第二次)",
+      "epc": "N/A",
+      "design_institute": "N/A",
+      "feasibility_unit": "N/A",
+      "key_dates": "9/28报名，10/9询比",
+      "trace_value": "3台总铝在线水质分析仪+12个月运维，可追溯铝在线仪表品牌偏好",
+      "topic_tag": "智慧水厂",
+      "win_result": null
+    },
+    {
+      "name": "青岛水务公司2026年分区流量计加装材料采购",
+      "customer": "青岛西海岸公用事业集团水务有限公司",
+      "region": "山东青岛",
+      "investment": "2.7万(材料)",
+      "stage": "公开竞价采购",
+      "epc": "N/A",
+      "design_institute": "N/A",
+      "feasibility_unit": "N/A",
+      "key_dates": "9/23报名，9/29截标",
+      "trace_value": "分区流量计加装，可追溯分区计量设备选型与供应商",
+      "topic_tag": "供水管网改造",
+      "win_result": null
+    }
+  ],
+  "industry_triggers": [
+    {
+      "name": "北控水务2026年中期业绩：1,210座水厂运营，42.6M吨/d设计能力",
+      "type": "Industry",
+      "description": "北控水务(00371.HK)2026中期报告：运营1,210座水厂及乡镇污水处理设施（966座污水+169座自来水+74座再生水+1座海水淡化），总设计能力42.6M吨/d，污水处理19.8M吨/d，再生水2.7M吨/d。期内新增24.4K吨/d，退出642K吨/d。",
+      "ims_relevance": "大规模多水厂运营集团，仪表资产管理与多站点管理需求明确",
+      "source": "https://stock.stockstar.com/RB2026092500004770.shtml"
+    },
+    {
+      "name": "济南水务集团90周年：28座水厂6946km管网272万m³/d供水能力",
+      "type": "Industry",
+      "description": "济南水务集团9/29举行90周年成果展示会。28座水厂、44座加压站、6946km管网、272万m³/d供水能力，覆盖1500km²。五级水质管控体系+A级水质检测中心(360余项CMA认证)。凤凰路/南康/旅游路/东湖等现代化水厂建设推进。",
+      "ims_relevance": "多水厂+大规模管网运营，仪表数量多，资产管理和数据质量需求明确",
+      "source": "https://baijiahao.baidu.com/s?id=1877657253432270657"
+    },
+    {
+      "name": "郑州水务4+32+N智慧水务体系：高新区管网压力水质流量24小时动态监测",
+      "type": "Industry",
+      "description": "郑州水务集团4+32+N智慧水务体系，高新区管网压力/水质/流量24小时动态监测、智能预警与精准调度。226个小区码上办全覆盖。推进全市供水一体化一张网改革，南北互通东西互济。",
+      "ims_relevance": "已建成智慧水务体系含在线监测，仪表数据采集与多站点管理需求明确",
+      "source": "https://baijiahao.baidu.com/s?id=1877631588020617555"
+    },
+    {
+      "name": "2026城市供水行业市场规模预计突破3500亿，二次供水+智慧水务占40%增量",
+      "type": "Industry",
+      "description": "2026年城市供水基础设施建设市场规模预计突破3500亿元，二次供水设施标准化改造及智慧水务系统建设贡献近40%增量，年复合增长率8.5%。老旧管网改造完成十四五目标80%+，二三线城市管网漏损率仍12-15%。",
+      "ims_relevance": "市场规模增长驱动在线仪表与数字化需求，漏损管控推升在线监测需求",
+      "source": "https://max.book118.com/html/2026/0922/8065053047010130.shtm"
+    }
+  ],
+  "ecosystem_triggers": [
+    {
+      "name": "维美德(Valmet)智慧污泥监测研讨会：从监测到控制全流程在线测量",
+      "type": "Ecosystem",
+      "description": "9/16日泽国际举办智慧污泥监测研讨会，芬兰维美德展示Valmet DNA DCS+第四代Valmet TS在线总固体浓度测量(微波原理0-50%)+LS/DS/HS系列+SDO污泥脱水优化控制系统。覆盖初沉池到干污泥全流程。",
+      "ims_relevance": "维美德进入污泥处理在线测量+DCS控制闭环，与iMS仪表健康诊断存在交叉",
+      "source": "https://www.sohu.com/a/1081739851_121124372"
+    },
+    {
+      "name": "施耐德电气×昆明通用水务数字化调度平台",
+      "type": "Ecosystem",
+      "description": "施耐德电气联手昆明通用水务打造数字化调度平台，实现高效可持续发展。水行业全集成解决方案覆盖智慧水务。",
+      "ims_relevance": "施耐德进入水务数字化平台层，与iMS数据采集层存在互补/竞争关系",
+      "source": "https://www.schneider-electric.cn/zh/work/campaign/case-study/local/kunming-water-affairs/"
+    },
+    {
+      "name": "明日城市·上海大会：泰国北大年市政府与中国鲁尔物联签水资源安全监测+AI预警备忘录",
+      "type": "Ecosystem",
+      "description": "9/22-26明日城市·上海大会，泰国北大年市政府与中国鲁尔物联签署《城市水资源安全监测+AI预警系统建设合作备忘录》。大会列出160余项城市发展需求含智慧水务。",
+      "ims_relevance": "鲁尔物联进入水资源安全监测+AI预警领域，国际项目值得关注",
+      "source": "https://baijiahao.baidu.com/s?id=1877656153941021326"
+    }
+  ],
+  "policy_triggers": [
+    {
+      "name": "发改委31号令：节能审查+碳排放评价合并，十五五从能耗双控转碳排放双控",
+      "type": "Policy",
+      "description": "国家发改委31号令《固定资产投资项目节能审查和碳排放评价办法》落地。碳排放评价嵌入节能审查全流程，节能审查意见是项目开工必备前置要件。年煤耗≥1000吨项目纳入审查。一套报告两项评价一并出具意见。",
+      "demand_type": "产生仪表需求（能耗/碳排放在线监测仪表需求增加）",
+      "source": "https://zhuanlan.zhihu.com/p/2086110303058764450"
+    },
+    {
+      "name": "广东省省级生态环境保护专项资金项目入库指南(2026年版)",
+      "type": "Policy",
+      "description": "广东省生态环境厅9/22发布2026年版入库指南，资金跟着项目走，未入库项目原则上不安排省级资金。要求可量化可衡量可考核性指标。",
+      "demand_type": "产生仪表需求（环保监测项目需在线仪表支撑数据考核）",
+      "source": "https://mp.weixin.qq.com/s?__biz=MjM5NzI5NTc0MQ=="
+    },
+    {
+      "name": "2027年中央预算内投资提前批申报节奏前移",
+      "type": "Policy",
+      "description": "长春经开区9/9发布通知，2027年卫生领域中央预算内提前批次10月组织申报，要求年底必须开工、9/25前完成可研批复。申报节奏明显前移。",
+      "demand_type": "产生iMS需求（项目前移加速可研/设计阶段仪表选型窗口缩短）",
+      "source": "https://news.sohu.com/a/1079912589_121227303"
+    }
+  ],
+  "competitive_triggers": [
+    {
+      "name": "E+H水务解决方案持续推广：Liquiline多参数变送器+Memosens数字技术+资产管理监测",
+      "type": "Competitive",
+      "description": "E+H官网持续推广水务行业解决方案：Liquiline多参数变送器(单台8参数)、Memosens数字传感器预标定、Asset Health监测(Mobile Client+Edge Devices+Gateways)。覆盖饮用水水质监测、废水监测、脱氮工艺、资产管理全链条。",
+      "ims_relevance": "E+H正在构建仪表→数据→诊断→资产管理完整闭环，与iMS价值空间直接竞争",
+      "source": "https://www.endress.com.cn/zh/industries/process-solutions/wastewater-monitoring-systems-for-industrial-effluent"
+    },
+    {
+      "name": "维美德(Valmet)污泥处理在线测量+DCS控制产品组合进入中国",
+      "type": "Competitive",
+      "description": "芬兰维美德通过日泽国际在华推广污泥处理在线测量产品组合(Valmet DNA DCS+TS/LS/DS/HS浓度测量+SDO优化控制)，9/16智慧污泥监测研讨会面向半导体/电子/食品/化工/造纸/水处理客户。",
+      "ims_relevance": "维美德进入污泥在线测量+控制闭环，与iMS仪表健康诊断在污泥处理场景交叉",
+      "source": "https://www.sohu.com/a/1081739851_121124372"
+    }
+  ],
+  "strategic_accounts": [
+    {
+      "name": "北控水务集团",
+      "first_seen": "2026-09-02",
+      "continuity": "连续追踪",
+      "new_facts_today": "2026中期报告发布：1,210座水厂运营，42.6M吨/d设计能力，委托营运退出642K吨/d",
+      "note": "多水厂大规模运营，仪表资产管理需求持续"
+    },
+    {
+      "name": "济南水务集团",
+      "first_seen": "2026-09-11",
+      "continuity": "连续追踪",
+      "new_facts_today": "90周年成果展示会(9/29)：28座水厂6946km管网272万m³/d，五级水质管控+A级检测中心(360项CMA)",
+      "note": "多水厂+大规模管网，仪表数量多"
+    },
+    {
+      "name": "郑州水务集团",
+      "first_seen": "2026-09-16",
+      "continuity": "连续追踪",
+      "new_facts_today": "4+32+N智慧水务体系成果：高新区管网24小时动态监测，全市供水一体化一张网改革推进",
+      "note": "已建智慧水务体系，仪表数据采集需求明确"
+    },
+    {
+      "name": "新疆河润科技(新疆水利发展投资集团下属)",
+      "first_seen": "2026-09-30",
+      "continuity": "首次发现",
+      "new_facts_today": "2026年第三批公开招聘，公司聚焦智慧水务/智慧水利/国产化产品三大方向，拥有新疆智慧水务工程技术研究中心，科改企业+专精特新小巨人",
+      "note": "新疆水务科技领军企业，智慧水务全链条服务能力"
+    }
+  ],
+  "rejected_signals": [
+    {
+      "name": "甘南县农村饮用水工程东阳镇和平村管网改造(采购意向)",
+      "reason": "预算95.47万金额过小，管网改造不含在线仪表/数字化内容，iMS逻辑链断裂（Customer Change→Digital Change断裂）",
+      "source": "https://heilongjiang.okcis.cn/oeQ7kLAvs3r.bn"
+    },
+    {
+      "name": "牡丹江市山洪灾害监测预警系统设备维修养护(采购意向)",
+      "reason": "山洪灾害监测预警设备(水位站/雨量计)与iMS水务在线仪表逻辑链断裂，属水利防灾非水务监测",
+      "source": "https://www.qianlima.com/bid-633987795.html"
+    }
+  ],
+  "data_source": {
+    "scanning_date": "2026-09-30",
+    "sources": [
+      "中国政府采购网",
+      "各省市公共资源交易网",
+      "河南省政府采购网",
+      "海南公共资源交易网",
+      "淄博公共资源交易网",
+      "惠州公共资源交易网",
+      "贵州公共资源交易网",
+      "湖北公共资源交易网",
+      "深圳阳光采购平台",
+      "okcis.cn",
+      "千里马招标网",
+      "bidcenter.com.cn",
+      "北极星环保网",
+      "百度百家号",
+      "Endress+Hauser官网",
+      "施耐德电气官网",
+      "知乎",
+      "人人网文档库",
+      "book118.com"
+    ],
+    "scanning_method": "websearch+webfetch公开互联网扫描"
+  },
+  "disclaimer": "本报告全部来自公开互联网信息，不包含Hach内部数据（CRM/SFDC/Installed Base等）。内部数据验证由Company Agent完成。Signal != Opportunity；Public Signal Score != Hach Opportunity Score。",
+  "qc_checklist": {
+    "all_from_public_sources": true,
+    "facts_and_ai_separated": true,
+    "no_internal_data_as_fact": true,
+    "no_unsupported_numbers": true,
+    "ims_relevance_checked": true,
+    "ims_use_case_or_unknown": true,
+    "time_window_provided": true,
+    "action_triad_complete": true,
+    "stage_gate_applied": true,
+    "procurement_intent_stage_applied": true,
+    "opportunity_stage_enum_respected": true,
+    "list_separation_respected": true,
+    "win_result_update_checked": true,
+    "keyword_drift_checked": true,
+    "company_agent_verify_questions": true,
+    "no_duplicate_signals": true,
+    "no_news_as_opportunity": true,
+    "no_padded_p2p3": true,
+    "schema_preserved": true,
+    "three_stage_complete": true,
+    "latest_json_updated": true,
+    "md_report_generated": true,
+    "keyword_drift_notes": "今日新增措辞：智能物联感知设备(周村项目)、总铝在线水质分析仪(绵竹国润)、智慧水网管理平台(周村)。建议回填Stage1检索词表。"
+  }
+}

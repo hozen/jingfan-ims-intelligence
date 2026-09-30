@@ -1,8 +1,8 @@
 {
  "metadata": {
   "version": "v3.3-master-consolidated",
-  "generated_date": "2026-09-28",
-  "last_update": "2026-09-28T08:12:37+08:00",
+  "generated_date": "2026-09-30",
+  "last_update": "2026-09-30T08:19:37+08:00",
   "description": "iMS Municipal Master Intelligence - Enriched Context (17 municipal leads incl. Pingdingshan, industrial content excluded per scope decision 2026-09-12)",
   "data_sources": [
    "intelligence/municipal/daily/2026-09-02.json",
@@ -17,8 +17,8 @@
    "engine": "collect+merge+apply v1",
    "note": "全量归集历史 daily 至 master；跨日合并保留 history/source_lead_ids；contacts 回填 lead.contact_ids"
   },
-  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-25; 2 added, 22 skipped, 12 pre-window)",
-  "merge_point": "2026-09-28"
+  "note": "merge_radar_daily_to_enriched: incremental radar daily merge (window after 2026-09-28; 1 added, 0 skipped, 13 pre-window)",
+  "merge_point": "2026-09-30"
  },
  "leads": [
   {
@@ -10001,6 +10001,87 @@
    "account_ids": [
     "ACC-OPS-20260928-HQ-002"
    ]
+  },
+  {
+   "lead_id": "MUNI-2026-09-30-001",
+   "original_signal": {
+    "company": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+    "opportunity": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+    "industry": "市政水务",
+    "opportunity_stage": "初步设计",
+    "priority": 48,
+    "potential_ims_use_case": "Instrument Monitoring / Data Quality",
+    "logic": "✅ 污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理/数据质量",
+    "to_verify": {
+     "customer_identity": "东方市水务局是否为Hach客户？Salesforce Account是否存在？",
+     "installed_base": "东方市污水处理厂现有在线仪表类型/数量？一二期是否已有Hach仪表？",
+     "commercial_history": "历史销售/Opportunity？是否有服务合同？",
+     "ims": "是否已有iMS？东方市污水处理厂是否已有数字化平台？",
+     "account_sales": "Account Owner？Regional Owner？当前客户关系？"
+    },
+    "customer_need": "✅ 污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理/数据质量",
+    "demand_hypothesis": "污水厂三期扩建新建全套处理构筑物（A2O生化池、高效沉淀池、活性砂滤池），新建构筑物必然需要配套在线水质监测仪表（进出水COD/氨氮/总磷/SS/pH/DO等）。初步设计招标刚发布（9/23），设计尚未开始，仪表选型完全未锁定。从污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理，iMS逻辑链完整。海南属环保监管趋严地区，在线监测需求明确。",
+    "contact_hint": "东方市水务局项目主管部门负责人；初步设计中标单位（待定，招标中）给排水/自控专业负责人；代理机构广西众联工程项目管理有限公司",
+    "estimated_time_window": "3-6 months",
+    "time_window_basis": null,
+    "source_urls": [
+     "https://ggzy.hainan.gov.cn/ggzy/dfggzy/GGjxzbgs1/293049.jhtml"
+    ],
+    "evidence": {
+     "facts": [
+      "海南省东方市污水处理厂三期工程，东方市水务局为招标人。现状总规模5万m³/d（一期生活污水2.5万+二期工业废水2.5万），本次扩建生活污水处理工程规模2.5万m³/d，扩建后总规模7.5万m³/d。主要建设内容：新建改良A2O生化池、中间提升泵池及高效沉淀池、活性砂滤池、次氯酸钠消毒及巴氏计量池、污泥脱水间和污泥资源化车间、除臭系统、鼓风机房等。审批文号：东审政投〔2026〕18号。2026年9月23日发布初步设计及概算编制招标公告（招标控制价336.09万）和勘察招标公告（控制价108.33万）。资金来源：财政100%。勘察投标截止2026-10-15。"
+     ],
+     "inferences": [
+      "污水厂三期扩建新建全套处理构筑物（A2O生化池、高效沉淀池、活性砂滤池），新建构筑物必然需要配套在线水质监测仪表（进出水COD/氨氮/总磷/SS/pH/DO等）。初步设计招标刚发布（9/23），设计尚未开始，仪表选型完全未锁定。从污水厂扩建→新建处理构筑物→在线水质监测仪表需求→数据采集→仪表健康管理，iMS逻辑链完整。海南属环保监管趋严地区，在线监测需求明确。"
+     ],
+     "unknowns": []
+    },
+    "action_triad": {
+     "find_who": "东方市水务局项目主管部门负责人；初步设计中标单位（待定，招标中）给排水/自控专业负责人；代理机构广西众联工程项目管理有限公司",
+     "talk_what": "三期扩建进出水在线监测仪表选型方案？是否考虑第三方仪表数据接入智慧水务平台？在线监测点位覆盖哪些工艺段？环保监管对在线监测频率有何要求？",
+     "why_now": "初步设计招标刚发布(9/23)，设计尚未开始，仪表选型完全未进入设计图纸。勘察招标同步进行中(截止10/15)，项目处于技术路线定义窗口期"
+    },
+    "enrichment": {}
+   },
+   "enrichment_status": "consolidated_from_radar_daily",
+   "record_status": "active",
+   "status": "active",
+   "status_reason": "Radar daily merged by merge_radar_daily_to_enriched",
+   "first_seen": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_lead_ids": [
+    "MUNI-2026-09-30-001"
+   ],
+   "source_files": [
+    "2026-09-30.json"
+   ],
+   "segments": [
+    "municipal"
+   ],
+   "region_raw": [
+    ""
+   ],
+   "industry_raw": [
+    "市政水务"
+   ],
+   "location": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+   "industry": "市政水务",
+   "customer_requirement": "Instrument Monitoring / Data Quality",
+   "next_validation_questions": "三期扩建进出水在线监测仪表选型方案？是否考虑第三方仪表数据接入智慧水务平台？在线监测点位覆盖哪些工艺段？环保监管对在线监测频率有何要求？",
+   "history": [
+    {
+     "date": "2026-09-30",
+     "source_file": "2026-09-30.json",
+     "record_id": "MUNI-2026-09-30-001",
+     "name": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）"
+    }
+   ],
+   "project_ids": [
+    "PRJ-MUNI-2026-09-30-001"
+   ],
+   "account_ids": [
+    "ACC-MUNI-2026-09-30-001"
+   ]
   }
  ],
  "projects": [
@@ -11295,6 +11376,19 @@
     "confirmed": false,
     "description": "Instrument Monitoring / Digital Operations"
    }
+  },
+  {
+   "project_id": "PRJ-MUNI-2026-09-30-001",
+   "lead_id": "MUNI-2026-09-30-001",
+   "account_id": "ACC-MUNI-2026-09-30-001",
+   "project_name": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+   "owner": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
+   "investment_amount": "unknown",
+   "project_status": "merged from radar daily",
+   "water_system_details": {
+    "confirmed": false,
+    "description": "Instrument Monitoring / Data Quality"
+   }
   }
  ],
  "accounts": [
@@ -12114,6 +12208,16 @@
    "account_id": "ACC-OPS-20260928-HQ-002",
    "lead_id": "OPS-20260928-HQ-002",
    "account_name": "霍邱县第三水厂新建工程-城乡供水智慧化平台建设项目",
+   "group_name": "",
+   "industry": "市政水务",
+   "plant_location": "",
+   "products": [],
+   "contact_ids": []
+  },
+  {
+   "account_id": "ACC-MUNI-2026-09-30-001",
+   "lead_id": "MUNI-2026-09-30-001",
+   "account_name": "东方市污水处理厂三期工程（扩建2.5万m³/d生活污水，总规模7.5万m³/d）",
    "group_name": "",
    "industry": "市政水务",
    "plant_location": "",
@@ -16204,6 +16308,19 @@
     "2026-09-28.json"
    ],
    "notes": "automated merge of radar daily output into enriched master (window after 2026-09-25)"
+  },
+  {
+   "date": "2026-09-30",
+   "version": "radar-daily-merge",
+   "agent": "merge_radar_daily_to_enriched",
+   "action": "incremental radar daily merge",
+   "new_leads_added": 1,
+   "new_contacts_added": 0,
+   "sources": [
+    "2026-09-28.json",
+    "2026-09-30.json"
+   ],
+   "notes": "automated merge of radar daily output into enriched master (window after 2026-09-28)"
   }
  ],
  "policy_intelligence": [
