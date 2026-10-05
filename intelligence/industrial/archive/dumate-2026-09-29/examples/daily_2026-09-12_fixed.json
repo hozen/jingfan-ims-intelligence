@@ -1,0 +1,1262 @@
+{
+ "radar_type": "industrial",
+ "market_segment": "industrial",
+ "report_date": "2026-09-12",
+ "experiment_week": 5,
+ "scanner_summary": {
+  "engine_a_count": 5,
+  "engine_b_count": 5,
+  "total_signals": 10,
+  "industry_breakdown": {
+   "semiconductor_electronics": 1,
+   "new_energy_battery": 2,
+   "petrochemical_chemical": 3,
+   "food_beverage": 2,
+   "cross_industrial_park": 1,
+   "pharmaceutical": 0,
+   "electroplating": 1
+  },
+  "trigger_distribution": {
+   "new_regulation_standard": 4,
+   "permit_revision": 1,
+   "new_wastewater_facility": 2,
+   "expansion_with_water_system": 2,
+   "tender_instrumentation": 1
+  },
+  "source_distribution": {
+   "government_official": 7,
+   "industry_media": 2,
+   "tender_platform": 1
+  },
+  "early_vs_late": {
+   "early_trigger": 5,
+   "planning_design": 3,
+   "tender_procurement": 1,
+   "execution_construction": 1
+  },
+  "pull_score_distribution": {
+   "14_20_strong": 2,
+   "11_15_promising": 4,
+   "6_10_weak": 4
+  },
+  "priority_distribution": {
+   "P1": 0,
+   "P2": 6,
+   "P3": 4
+  },
+  "repeatable_demand_signals": [
+   {
+    "pattern": "regulatory_driven_monitoring_upgrade",
+    "description": "Multiple industries facing new/updated national standards requiring enhanced water monitoring",
+    "instances": 4,
+    "evidence_strength": "MEDIUM"
+   },
+   {
+    "pattern": "industrial_park_wastewater_specialization",
+    "description": "Parks building dedicated industrial wastewater treatment with heavy metal/fluoride capability",
+    "instances": 2,
+    "evidence_strength": "MEDIUM"
+   }
+  ]
+ },
+ "top_5_match": [
+  {
+   "id": "IND-20260912-01",
+   "company": "苏州相城区漕湖街道(苏相合作区)",
+   "agent_checklist": [
+    "确认项目是否进入设计/招标阶段",
+    "识别园区内半导体/电子企业名单",
+    "了解水系统EPC中标方和仪表采购渠道",
+    "确认重金属/氟化物监测点数量和位置"
+   ]
+  },
+  {
+   "id": "IND-20260912-02",
+   "company": "中国石化燕山分公司",
+   "agent_checklist": [
+    "跟踪招标结果(9月23日开标)",
+    "了解现有SCADA/DCS系统架构",
+    "确认是否计划扩展至其他监测点",
+    "了解Hach installed base情况"
+   ]
+  },
+  {
+   "id": "IND-20260912-03",
+   "company": "全国工业园区(一园一策政策)",
+   "agent_checklist": [
+    "识别需制定排放标准的重点园区",
+    "了解园区自行监测现状",
+    "确认园区是否已有在线监测系统"
+   ]
+  },
+  {
+   "id": "IND-20260912-04",
+   "company": "湖北兴友新能源(兴发集团)",
+   "agent_checklist": [
+    "确认一期环评水系统设计细节",
+    "了解磷酸铁锂废水特征污染物",
+    "识别EPC/设计院",
+    "确认建设时间表"
+   ]
+  },
+  {
+   "id": "IND-20260912-05",
+   "company": "宜宾首城工业集团(储能产业园)",
+   "agent_checklist": [
+    "确认污水处理厂设计规模和工艺",
+    "了解园区入驻企业类型",
+    "确认监测要求(镍钴锰氟化物)",
+    "识别建设和运营方"
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "id": "IND-20260912-01",
+   "company": "苏州市相城区漕湖街道办事处(苏相合作区)",
+   "industry": "semiconductor_electronics",
+   "location": "江苏苏州相城区漕湖街道",
+   "opportunity": "工业污水分质处理设施及配套管网建设工程",
+   "signal_tier": "Tier 1",
+   "engine": "B",
+   "evidence": {
+    "facts": [
+     "新建工业废水预处理系统总处理能力约7000立方米/天",
+     "含重金属、氟化物废水预处理系统处理能力约6000立方米/天",
+     "难生化降解废水预处理系统处理能力约1000立方米/天",
+     "配套建设专用污水管网总长度约14.1千米",
+     "总投资13422.18万元,拟申请中央环境资金约13000万元",
+     "施工周期约2年,公示期2026年9月7日至9月16日"
+    ],
+    "inferences": [
+     "含重金属/氟化物废水特征指向半导体/电子制造企业集中区域",
+     "中央环境资金申请表明项目已被纳入国家环保优先序列",
+     "分质处理设计表明园区存在不同类型工业废水排放企业"
+    ],
+    "unknowns": [
+     "具体入园企业名单和废水排放量",
+     "EPC中标方和仪表采购方案",
+     "Hach installed base情况",
+     "监测点数量和位置规划"
+    ]
+   },
+   "potential_ims_use_case": "工业废水分质处理过程监测、重金属/氟化物在线监测、园区污水管网水质监控、合规数据管理",
+   "logic": "新建工业废水处理设施 → 多类型水质监测需求 → 在线分析仪+数据管理 → iMS可整合多监测点数据形成园区级水质管理",
+   "opportunity_stage": "Potential Industrial Opportunity",
+   "project_stage": "Planning-Feasibility",
+   "estimated_time_window": "2026Q4-2028Q4(2年施工期)",
+   "priority": "P2",
+   "water_system_ownership": "A-客户自建自营",
+   "incrementality_status": "New Facility",
+   "source_urls": [
+    "http://www.sipac.gov.cn/sxhzq/zwgk/202609/18906d33a62d40b387818aca794c836d.shtml"
+   ],
+   "to_verify": [
+    "项目是否已进入设计/招标阶段",
+    "园区内半导体/电子企业具体名单",
+    "水系统EPC承包商和仪表采购渠道",
+    "重金属/氟化物在线监测需求的具体仪表数量"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 4,
+    "unavoidable": 4,
+    "existing_limitation": 3,
+    "ims_leverage": 3,
+    "total": 14,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "园区新建工业污水分质处理设施,含重金属/氟化物和难降解废水两套预处理系统(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "中央环境资金已申请,环保督察整改驱动,园区必须建设(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "现有园区可能缺乏专业重金属/氟化物处理能力,工业废水与生活污水混排(INFERENCE)",
+    "l_confidence": "MEDIUM",
+    "l_leverage": "iMS可整合多监测点数据,实现园区级水质实时监控和合规管理(INFERENCE)",
+    "l_leverage_confidence": "MEDIUM",
+    "key_unknown": "具体入园企业名单和废水排放特征",
+    "next_validation_question": "园区内主要排放含重金属/氟化物废水的企业有哪些?目前的废水处理方式是什么?"
+   },
+   "evidence_quality": "HIGH",
+   "influence_window": "HIGH",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "环评公示期(2026-09-07至09-16),技术规格未冻结,建议在设计冻结前介入"
+   },
+   "entry_timing": "EARLY",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "Planning-Feasibility阶段,刚进入公示,距离设计/招标尚有窗口"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "苏州市相城区漕湖街道办事处(苏相合作区)",
+     "owner_role": "A-建设单位/采购主体",
+     "evaluation": "FACT",
+     "note": "环评公示建设单位,公示期联系人可获取"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息,需通过公示渠道确认"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "EPC中标方未公示"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "设计院(环保工艺设计)",
+     "水系统EPC承包商",
+     "仪表集成商",
+     "园区内重点排污企业环保负责人"
+    ],
+    "next_validation_action": "通过环评公示渠道联系漕湖街道项目办,确认设计院与EPC入围情况,在技术规格冻结前植入水质监测与数据管理概念"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-02",
+   "company": "中国石化北京燕山分公司",
+   "industry": "petrochemical_chemical",
+   "location": "北京",
+   "opportunity": "厂区环保水质检测能力提升与规范性建设项目-在线水质分析系统",
+   "signal_tier": "Tier 1",
+   "engine": "A",
+   "evidence": {
+    "facts": [
+     "招标公告发布于2026年9月9日,投标截止2026年9月23日",
+     "采购在线水质分析系统含COD和氨氮分析仪",
+     "规格:隔爆型,温度范围-30至30度,精度正负2%FS",
+     "需提供中国环境保护产品认证证书(CEP)",
+     "资金来源:非国有资金占主导地位"
+    ],
+    "inferences": [
+     "燕山石化主动提升水质监测能力,可能与HJ 853-2026石化排污许可新规相关",
+     "隔爆型要求表明监测点在防爆区域",
+     "采购单套系统,可能是试点或补充监测点"
+    ],
+    "unknowns": [
+     "现有在线水质监测系统覆盖范围",
+     "是否计划扩展至更多监测点",
+     "现有SCADA/DCS集成情况",
+     "Hach installed base情况"
+    ]
+   },
+   "potential_ims_use_case": "在线水质监测数据集成、环保合规数据管理、监测设备状态监控",
+   "logic": "合规驱动 → 水质监测能力提升 → 在线分析仪采购 → 数据管理和合规需求 → iMS潜在价值",
+   "opportunity_stage": "Potential Industrial Opportunity",
+   "project_stage": "Tender",
+   "estimated_time_window": "2026Q4(招标后安装调试)",
+   "priority": "P2",
+   "water_system_ownership": "D-Unknown",
+   "incrementality_status": "New Monitoring Points",
+   "source_urls": [
+    "https://m.zbytb.com/25-0-69635094-1.html"
+   ],
+   "to_verify": [
+    "招标结果和中标方",
+    "是否计划扩展至更多监测点",
+    "现有DCS/SCADA系统架构",
+    "Hach installed base情况"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 4,
+    "unavoidable": 4,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 12,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "石化企业采购在线水质分析系统,提升环保水质检测能力(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "排污许可新规(HJ 853-2026)即将实施,企业需提升自行监测能力(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "现有监测可能不满足新规要求,需补充在线监测点(INFERENCE)",
+    "l_confidence": "MEDIUM",
+    "l_leverage": "iMS可集成在线水质数据,但企业直接采购硬件可能已有DCS/SCADA方案(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "现有SCADA/DCS系统是否已覆盖水质监测数据管理",
+    "next_validation_question": "现有在线水质监测数据是如何管理的?是否有统一的环保数据平台?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "LOW",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "招标公告已发布(09-09),规格已冻结(隔爆型+CEP认证),降级Tender Monitoring"
+   },
+   "entry_timing": "LATE",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "投标截止09-23仅11天,本轮采购窗口基本关闭,关注后续扩展"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "中国石化北京燕山分公司",
+     "owner_role": "A-采购方/招标人",
+     "evaluation": "FACT",
+     "note": "招标公告载明招标人"
+    },
+    "design_institute": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "单套设备采购,无独立设计环节"
+    },
+    "epc": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "非EPC项目"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "中标方未确定"
+    },
+    "missing_roles": [
+     "中标仪表供应商",
+     "燕山石化环保处/监测站接口人"
+    ],
+    "next_validation_action": "监控09-23投标结果与中标方;同期联系燕山石化环保处,确认是否计划扩展更多监测点(试点/批量)"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-03",
+   "company": "全国工业园区(政策驱动)",
+   "industry": "cross_industrial_park",
+   "location": "全国",
+   "opportunity": "HJ 945.4-2026工业园区一园一策水污染物排放标准导则",
+   "signal_tier": "Tier 1",
+   "engine": "A",
+   "evidence": {
+    "facts": [
+     "HJ 945.4-2026于2026年9月1日正式实施",
+     "要求园区开展企业排水和设施出水水质全分析",
+     "建立涵盖常规污染物、有毒有害水污染物和新污染物的清单",
+     "需定期开展水质全分析并动态更新",
+     "采用基本项目+其他项目框架,其他项目含综合毒性、含盐量、PFOA等",
+     "需连接企业排水、分质预处理、集中处理、监测预警、风险溯源和再生水利用"
+    ],
+    "inferences": [
+     "园区需建立或升级监测体系以满足一园一策要求",
+     "动态水质画像要求持续监测而非一次性检测",
+     "特征污染物监控可能需要新增在线监测设备"
+    ],
+    "unknowns": [
+     "各园区执行进度和优先级",
+     "园区现有监测能力差异",
+     "是否已有在线监测系统覆盖"
+    ]
+   },
+   "potential_ims_use_case": "园区级水质监测数据平台、特征污染物在线监测、动态水质画像管理、合规数据追溯",
+   "logic": "新规强制 → 园区必须建立水质画像和动态监测 → 监测设备+数据管理需求 → iMS园区级数据整合价值",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "Early Trigger",
+   "estimated_time_window": "2026Q4-2028(标准制定和设施建设周期)",
+   "priority": "P2",
+   "water_system_ownership": "D-Unknown",
+   "incrementality_status": "New Monitoring Points",
+   "source_urls": [
+    "http://www.chinadevelopment.com.cn/zxsd/2026/0910/2014812.shtml",
+    "https://www.sohu.com/a/1074159042_121730514"
+   ],
+   "to_verify": [
+    "各省市执行进度和优先园区",
+    "典型园区现有监测能力评估",
+    "园区是否已有在线监测系统",
+    "环保部门对在线监测的具体要求"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 4,
+    "existing_limitation": 3,
+    "ims_leverage": 3,
+    "total": 13,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "工业园区需制定一园一策水污染物排放标准,建立动态水质画像(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "国家强制性技术导则,9月1日起实施,园区必须执行(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "多数园区目前参考城镇标准,缺乏特征污染物监测能力(INFERENCE)",
+    "l_confidence": "MEDIUM",
+    "l_leverage": "iMS可聚合多企业多监测点数据,形成园区级动态水质画像(INFERENCE)",
+    "l_leverage_confidence": "MEDIUM",
+    "key_unknown": "各园区现有在线监测覆盖率和数据管理现状",
+    "next_validation_question": "园区目前的水质监测是如何做的?有没有统一的在线监测平台?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "HIGH",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "HJ 945.4-2026于2026-09-01刚实施,园区执行方案尚未定型"
+   },
+   "entry_timing": "EARLY",
+   "entry_timing_evidence": {
+    "source": "INFERENCE",
+    "note": "各地园区落地执行普遍滞后,多数尚未启动监测体系升级"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "全国工业园区管委会(政策执行主体)",
+     "owner_role": "C-信息网关",
+     "evaluation": "UNKNOWN",
+     "note": "具体重点园区名单未圈定,需从已识别园区切入"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "园区监测体系设计通常委托设计院/监测站"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "重点工业园区名单",
+     "园区生态环境主管部门接口人"
+    ],
+    "next_validation_action": "从本报告已识别的苏相合作区/宜宾储能产业园切入,验证园区现有在线监测覆盖与平台建设规划"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-04",
+   "company": "湖北兴友新能源科技有限公司(兴发集团)",
+   "industry": "new_energy_battery",
+   "location": "湖北宜都",
+   "opportunity": "年产20万吨电池级超高压实型磷酸铁锂材料项目(一期)含污水处理设施",
+   "signal_tier": "Tier 2",
+   "engine": "B",
+   "evidence": {
+    "facts": [
+     "规划年产20万吨,分两期,一期新建7.5万吨/年磷酸铁锂",
+     "同步配套建设空分制氮、污水处理、综合站房等公用及辅助设施",
+     "2026年9月进行第一次环评公示",
+     "母公司兴发集团已与华友钴业合作建设50万吨磷酸铁+50万吨磷酸铁锂一体化产业"
+    ],
+    "inferences": [
+     "新建生产线将产生含磷、含锂、含酸废水,需配套污水处理",
+     "一期环评公示阶段,设计阶段尚未完成",
+     "兴发集团已有磷酸铁产线运行经验,可能复用部分设计"
+    ],
+    "unknowns": [
+     "废水处理工艺和规模",
+     "EPC/设计院",
+     "建设时间表",
+     "监测要求"
+    ]
+   },
+   "potential_ims_use_case": "新建污水处理系统过程监测、磷酸铁锂废水特征污染物在线监测",
+   "logic": "新建磷酸铁锂产能 → 配套新建污水处理设施 → 水质监测需求 → iMS潜在价值",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "EIA/Approval",
+   "estimated_time_window": "2027-2028(环评后设计建设)",
+   "priority": "P2",
+   "water_system_ownership": "A-客户自建自营",
+   "incrementality_status": "New Facility",
+   "source_urls": [
+    "http://finance.sina.com.cn/roll/2026-09-10/doc-iniritau7705225.shtml"
+   ],
+   "to_verify": [
+    "一期环评报告水系统设计细节",
+    "磷酸铁锂废水特征污染物和排放标准",
+    "EPC/设计院信息",
+    "建设时间表和招标计划"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 4,
+    "unavoidable": 3,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 11,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "新建7.5万吨/年磷酸铁锂生产线,配套污水处理设施(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "新建项目必须配套环保设施,环评要求(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "新建设施,无现有workaround,但具体废水特征和工艺未知(UNKNOWN)",
+    "l_confidence": "LOW",
+    "l_leverage": "iMS可监测新建处理系统运行,但缺乏具体工艺信息(INFERENCE)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "废水处理工艺设计和监测要求",
+    "next_validation_question": "磷酸铁锂生产废水的主要污染物是什么?计划采用什么处理工艺?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "HIGH",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "2026-09第一次环评公示,设计阶段尚未完成"
+   },
+   "entry_timing": "EARLY",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "EIA/Approval阶段,污水处理设施设计未冻结"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "湖北兴友新能源科技有限公司(兴发集团)",
+     "owner_role": "A-建设单位",
+     "evaluation": "FACT",
+     "note": "环评公示建设单位"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息,环评报告可查"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "一期7.5万吨/年,EPC未公示"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "设计院(环保工艺)",
+     "EPC总承包方",
+     "环评单位"
+    ],
+    "next_validation_action": "获取一期环评报告全文确认污水设施规模与工艺,通过公示渠道联系建设单位环保负责人"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-05",
+   "company": "宜宾首城工业集团有限公司(储能产业园)",
+   "industry": "new_energy_battery",
+   "location": "四川宜宾叙州区",
+   "opportunity": "宜宾市储能产业园污水处理厂新建项目",
+   "signal_tier": "Tier 2",
+   "engine": "B",
+   "evidence": {
+    "facts": [
+     "新建工业园区污水处理厂入河排污口",
+     "排放标准含镍、钴、锰执行电池工业污染物排放标准(GB30484-2013)特别排放限值",
+     "氟化物<=1mg/L, 硫化物<=0.2mg/L",
+     "污水日排放量36.5万t/a(约1000t/d)",
+     "2026年9月受理入河排污口设置论证报告"
+    ],
+    "inferences": [
+     "园区以电池/储能企业为主,废水含电池特征污染物",
+     "入河排污口论证阶段表明处理厂即将建设或已在建",
+     "电池工业特别排放限值要求高精度在线监测"
+    ],
+    "unknowns": [
+     "污水处理厂设计规模和处理工艺",
+     "园区入驻企业具体名单",
+     "建设和运营方",
+     "在线监测系统配置"
+    ]
+   },
+   "potential_ims_use_case": "电池产业园废水特征污染物在线监测、镍钴锰氟化物合规监测、园区级水质数据管理",
+   "logic": "储能产业园 → 电池特征污染物废水 → 特别排放限值 → 高精度在线监测需求 → iMS合规数据管理",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "EIA/Approval",
+   "estimated_time_window": "2026Q4-2027(建设周期)",
+   "priority": "P3",
+   "water_system_ownership": "B-园区集中处理",
+   "incrementality_status": "New Facility",
+   "source_urls": [
+    "https://sthjj.yibin.gov.cn/xxgk/gsgg/202609/t20260909_2268017.html"
+   ],
+   "to_verify": [
+    "污水处理厂设计规模和工艺",
+    "园区入驻企业类型和排放量",
+    "在线监测系统配置要求",
+    "建设和运营方信息"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 3,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 10,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "储能产业园新建工业污水处理厂,含电池特征污染物处理(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "环保合规要求,入河排污口需论证(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "新建设施,当前园区可能无集中处理能力(INFERENCE)",
+    "l_confidence": "LOW",
+    "l_leverage": "iMS可管理多企业排放监测数据,但具体架构未知(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "污水处理厂建设进度和监测系统配置方案",
+    "next_validation_question": "园区污水处理厂是否已开始建设?计划配置哪些在线监测设备?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "MEDIUM",
+   "influence_window_evidence": {
+    "source": "INFERENCE",
+    "note": "入河排污口论证受理(09-09),建设设计或已部分开展"
+   },
+   "entry_timing": "GOOD",
+   "entry_timing_evidence": {
+    "source": "INFERENCE",
+    "note": "论证到建设启动前仍有介入窗口"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "宜宾首城工业集团有限公司(园区平台)",
+     "owner_role": "B-园区平台/建设主体",
+     "evaluation": "FACT",
+     "note": "园区平台公司,运营模式待定(园区集中处理)"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "污水厂EPC未公示"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "污水处理厂EPC/运营方",
+     "园区入驻企业环保接口人"
+    ],
+    "next_validation_action": "确认污水厂建设主体与运营模式(A/B/C/D),联系园区管委会环保部门了解在线监测配置规划"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-06",
+   "company": "全国食品/屠宰/酒类制造企业(政策驱动)",
+   "industry": "food_beverage",
+   "location": "全国",
+   "opportunity": "食品加工/屠宰/酒类三项新水污染物排放标准实施",
+   "signal_tier": "Tier 1",
+   "engine": "A",
+   "evidence": {
+    "facts": [
+     "GB 46817-2025食品加工制造业水污染物排放标准,2026年1月1日对新建企业实施",
+     "GB 13457-2025屠宰及肉类加工工业水污染物排放标准,同上",
+     "GB 19821-2025酒类制造业水污染物排放标准,同上",
+     "现有企业2028年1月1日起执行",
+     "西安等地食品企业密集,需提前排入技改预算"
+    ],
+    "inferences": [
+     "新标准通常收紧排放限值,现有设施可能无法满足",
+     "2026-2027年新建企业必须立即合规,现有企业有2年过渡期",
+     "可能需要新增在线监测设备以满足自行监测要求"
+    ],
+    "unknowns": [
+     "新标准与旧标准的具体限值差异",
+     "企业现有设施达标率",
+     "自行监测要求是否新增在线监测义务"
+    ]
+   },
+   "potential_ims_use_case": "食品行业水质在线监测、排放合规数据管理、处理设施运行监控",
+   "logic": "新排放标准 → 企业需提升处理和监测能力 → 在线监测设备需求 → iMS合规数据管理",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "Early Trigger",
+   "estimated_time_window": "2026-2028(新建企业立即执行,现有企业2028年前技改)",
+   "priority": "P2",
+   "water_system_ownership": "D-Unknown",
+   "incrementality_status": "New Monitoring Points",
+   "source_urls": [
+    "https://www.sohu.com/a/1072749275_122742221"
+   ],
+   "to_verify": [
+    "新标准自行监测要求是否新增在线监测义务",
+    "重点食品企业现有设施达标情况",
+    "地方执行力度和检查频次",
+    "食品企业集中区域"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 4,
+    "existing_limitation": 3,
+    "ims_leverage": 3,
+    "total": 13,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "食品/屠宰/酒类企业需按新国标升级水处理和监测(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "国家强制性标准,新建企业已执行,现有企业2028年前必须合规(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "现有设施可能无法满足新限值,需技改和监测升级(INFERENCE)",
+    "l_confidence": "MEDIUM",
+    "l_leverage": "iMS可管理多排放点合规数据,支持自行监测报告生成(INFERENCE)",
+    "l_leverage_confidence": "MEDIUM",
+    "key_unknown": "新标准自行监测要求是否明确要求在线监测",
+    "next_validation_question": "新标准对自行监测有什么具体要求?是否需要新增在线监测设备?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "MEDIUM",
+   "influence_window_evidence": {
+    "source": "INFERENCE",
+    "note": "新建企业已执行(2026-01-01),现有企业2028年前技改,窗口分散且充裕"
+   },
+   "entry_timing": "EARLY",
+   "entry_timing_evidence": {
+    "source": "INFERENCE",
+    "note": "多数现有企业技改尚未启动,处于方案酝酿期"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "各地食品/屠宰/酒类重点排污企业",
+     "owner_role": "D-泛在客户需先圈定",
+     "evaluation": "UNKNOWN",
+     "note": "具体名单未圈定,需先锁定重点排污单位"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "重点排污单位名单(食品/屠宰/酒类)",
+     "地方生态环境部门执行口径"
+    ],
+    "next_validation_action": "利用重点排污单位名录圈定食品/屠宰头部企业,验证自行监测要求是否新增在线监测义务"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-07",
+   "company": "全国石化/火电/锅炉/汽车制造企业(政策驱动)",
+   "industry": "petrochemical_chemical",
+   "location": "全国",
+   "opportunity": "生态环境部修订发布六项排污许可技术规范(2027年1月1日实施)",
+   "signal_tier": "Tier 1",
+   "engine": "A",
+   "evidence": {
+    "facts": [
+     "HJ 853-2026石化工业排污许可技术规范(修订)",
+     "HJ 953.1-2026火电排污许可技术规范(首次发布)",
+     "HJ 953.2-2026锅炉排污许可技术规范(修订)",
+     "HJ 971-2026汽车制造业排污许可技术规范(修订)",
+     "2026年7月31日批准,2027年1月1日实施",
+     "涉及自行监测、环境管理台账和执行报告等技术内容"
+    ],
+    "inferences": [
+     "新规可能调整自行监测要求,企业需在2027年前准备",
+     "石化行业修订删除了危险废物焚烧和锅炉内容,可能新增水污染物管理要求",
+     "火电首次发布规范,此前火电企业可能需补充自行监测能力"
+    ],
+    "unknowns": [
+     "新规与旧规的具体监测要求差异",
+     "企业现有自行监测能力达标情况",
+     "是否新增在线监测义务"
+    ]
+   },
+   "potential_ims_use_case": "自行监测数据管理、排污许可执行报告支持、在线监测数据集成",
+   "logic": "新规范 → 自行监测要求可能变化 → 企业需调整监测能力 → iMS数据管理和合规支持",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "Early Trigger",
+   "estimated_time_window": "2026Q4-2027Q1(实施前准备期)",
+   "priority": "P2",
+   "water_system_ownership": "D-Unknown",
+   "incrementality_status": "unknown",
+   "source_urls": [
+    "https://www.bzfxw.com/soft/sort055/huanbao/20260908075639b886638a.html",
+    "https://sthjj.chifeng.gov.cn/zzllms/hjyw/202609/t20260910_2816087.html"
+   ],
+   "to_verify": [
+    "新规范自行监测要求与旧规的差异",
+    "重点企业现有自行监测能力评估",
+    "是否新增在线监测义务",
+    "2027年前企业准备计划"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 4,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 11,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "企业需按新排污许可规范调整自行监测和环境管理(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "国家强制标准,2027年1月1日实施,企业必须合规(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "现有监测可能不满足新规范要求,需补充(INFERENCE)",
+    "l_confidence": "LOW",
+    "l_leverage": "iMS可支持自行监测数据管理和执行报告,但具体要求差异未知(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "新规范对自行监测和在线监测的具体要求变化",
+    "next_validation_question": "新排污许可规范对水污染物自行监测有什么新增要求?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "HIGH",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "2027-01-01实施,距生效约3.5个月,企业正处方案制定期"
+   },
+   "entry_timing": "GOOD",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "实施前准备期正是监测方案定型窗口"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "全国石化/火电/锅炉/汽车制造重点排污企业",
+     "owner_role": "D-泛在客户需先圈定",
+     "evaluation": "UNKNOWN",
+     "note": "六个规范对应行业企业,需先圈定重点名单"
+    },
+    "design_institute": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "政策合规类,无独立设计环节"
+    },
+    "epc": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "非工程项目"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "受影响行业重点企业名单",
+     "石化企业环保合规接口人"
+    ],
+    "next_validation_action": "对照新规范自行监测条款,锁定首批受影响石化/火电重点排污企业,验证在线监测新增义务"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-08",
+   "company": "全国电镀/金属表面处理企业(政策驱动)",
+   "industry": "electroplating",
+   "location": "全国",
+   "opportunity": "电镀污染物排放标准GB 21900-2023全面执行+电镀污染防治可行技术指南征求意见",
+   "signal_tier": "Tier 1",
+   "engine": "A",
+   "evidence": {
+    "facts": [
+     "新版GB 21900-2023各类重金属排放限值压缩至原标准的1/5",
+     "2026年3月生态环境部就电镀污染防治可行技术指南公开征求意见",
+     "2026年7月发布工业园区污水排放标准技术导则,开启一园一策精准管控",
+     "全国约2万家电镀企业每年排放约4亿吨含重金属废水",
+     "2026年国内金属表面处理行业总产值有望突破6000亿元"
+    ],
+    "inferences": [
+     "1/5限值收紧将迫使大量企业升级处理和监测能力",
+     "可行技术指南将明确废水污染防治技术路径",
+     "一园一策导则下电镀园区需重新评估特征污染物"
+    ],
+    "unknowns": [
+     "各地执行力度和检查频次",
+     "企业现有设施达标率",
+     "在线监测设备具体需求"
+    ]
+   },
+   "potential_ims_use_case": "重金属在线监测、电镀园区特征污染物监测、合规数据管理",
+   "logic": "排放限值收紧1/5 → 处理和监测能力必须升级 → 在线监测需求 → iMS合规管理",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "Execution",
+   "estimated_time_window": "2026-2027(标准已执行,企业技改进行中)",
+   "priority": "P2",
+   "water_system_ownership": "D-Unknown",
+   "incrementality_status": "Water System Upgrade",
+   "source_urls": [
+    "https://www.sgpjbg.com/searchtag/25967156.html"
+   ],
+   "to_verify": [
+    "重点电镀园区现有在线监测覆盖率",
+    "企业技改进度和预算",
+    "重金属在线监测设备需求量",
+    "地方检查频次和处罚案例"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 4,
+    "existing_limitation": 3,
+    "ims_leverage": 2,
+    "total": 12,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "电镀企业需按1/5收紧的重金属限值升级处理和监测(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "国家强制性标准已执行,可行技术指南即将发布(FACT)",
+    "u_confidence": "HIGH",
+    "u_classification": "Must-have",
+    "l_limitations": "多数现有设施无法满足1/5限值,需技改(INFERENCE)",
+    "l_confidence": "MEDIUM",
+    "l_leverage": "iMS可管理重金属监测数据,但电镀园区可能已有专用监测系统(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "电镀园区现有在线监测系统覆盖率和数据管理水平",
+    "next_validation_question": "贵司目前重金属废水的在线监测覆盖率是多少?数据是如何管理的?"
+   },
+   "evidence_quality": "MEDIUM",
+   "influence_window": "MEDIUM",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "标准已执行,2万家企整改持续至2027,单企窗口各异"
+   },
+   "entry_timing": "GOOD",
+   "entry_timing_evidence": {
+    "source": "INFERENCE",
+    "note": "大量企业正处在技改方案期,总体窗口未关闭"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "重点电镀园区/金属表面处理企业",
+     "owner_role": "D-泛在客户需先圈定",
+     "evaluation": "UNKNOWN",
+     "note": "全国约2万家,需按园区/集群圈定"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "电镀园区改造常委托设计院"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "重点电镀园区名单",
+     "园区环保主管接口人"
+    ],
+    "next_validation_action": "从广东/浙江/江苏重点电镀园区切入,验证重金属在线监测覆盖率与技改预算"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-09",
+   "company": "湖北祥云(集团)化工股份有限公司",
+   "industry": "petrochemical_chemical",
+   "location": "湖北黄冈",
+   "opportunity": "40万吨/年湿法净化磷酸二期项目(2026年5月开工,计划年内建成)",
+   "signal_tier": "Tier 2",
+   "engine": "B",
+   "evidence": {
+    "facts": [
+     "二期20万吨2026年5月开工,计划年内建成投产",
+     "一期20万吨已于2025年投产",
+     "采用溶剂萃取工艺生产工业及食品级净化磷酸",
+     "产品供给下游锂电磷系新材料",
+     "总投资19.3亿元"
+    ],
+    "inferences": [
+     "湿法磷酸生产产生含磷、含酸废水,需配套处理",
+     "一期已运行,二期可能扩建现有水处理系统",
+     "年内建成投产意味着施工已进入设备安装阶段"
+    ],
+    "unknowns": [
+     "二期是否扩建水处理设施",
+     "现有一期水系统监测配置",
+     "EPC/设计院",
+     "是否已有在线监测系统"
+    ]
+   },
+   "potential_ims_use_case": "湿法磷酸废水处理监测、含磷废水在线监测、扩建项目水系统监控",
+   "logic": "二期扩产 → 可能扩建水处理 → 新增监测点 → iMS潜在价值",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "Construction",
+   "estimated_time_window": "2026Q4(年内投产,设备安装中)",
+   "priority": "P3",
+   "water_system_ownership": "A-客户自建自营",
+   "incrementality_status": "Capacity Expansion",
+   "source_urls": [
+    "https://www.sohu.com/a/1073156341_121856153"
+   ],
+   "to_verify": [
+    "二期是否扩建水处理设施",
+    "现有水系统监测配置",
+    "建设进度和设备安装情况"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 3,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 10,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "二期20万吨湿法磷酸项目在建,年内投产(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "产能扩张驱动,需配套环保设施(FACT)",
+    "u_confidence": "MEDIUM",
+    "u_classification": "Should-have",
+    "l_limitations": "一期已有设施,二期可能扩建,但具体未知(UNKNOWN)",
+    "l_confidence": "LOW",
+    "l_leverage": "iMS可监测扩建后水系统,但信息不足(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "二期是否扩建水处理设施及监测配置",
+    "next_validation_question": "二期项目是否新建或扩建了污水处理设施?监测方案是什么?"
+   },
+   "evidence_quality": "LOW",
+   "influence_window": "NONE",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "已开工且计划年内投产,处于设备安装阶段,新建水系统采购窗口已过"
+   },
+   "entry_timing": "CLOSED",
+   "entry_timing_evidence": {
+    "source": "FACT",
+    "note": "重新定性为Installed Base/Lifecycle机会:一期系统维护/替换/升级"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "湖北祥云(集团)化工股份有限公司",
+     "owner_role": "A-生产运营方(转为installed base)",
+     "evaluation": "FACT",
+     "note": "二期在建,切入一期既有水系统生命周期管理"
+    },
+    "design_institute": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "新建采购窗口已过"
+    },
+    "epc": {
+     "name": "N/A",
+     "evaluation": "FACT",
+     "note": "设备安装阶段"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "一期仪表供应商未知"
+    },
+    "missing_roles": [
+     "一期水系统仪表运维接口人",
+     "环保监测站"
+    ],
+    "next_validation_action": "切入installed base:确认一期水系统仪表品牌/维护周期,提供替换/升级/数据管理方案"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  },
+  {
+   "id": "IND-20260912-10",
+   "company": "福建省福化鲁华新材料有限公司",
+   "industry": "petrochemical_chemical",
+   "location": "福建漳州古雷石化基地",
+   "opportunity": "碳五碳九分离及下游新材料项目树脂装置技改工程",
+   "signal_tier": "Tier 2",
+   "engine": "B",
+   "evidence": {
+    "facts": [
+     "DCPD树脂加氢产能从4.5万吨/年扩至6万吨/年",
+     "新增2.5万吨/年古马隆树脂产能",
+     "依托现有污水处理站(设计规模160m3/h),采用预处理+生化处理+超滤",
+     "处理达GB31571-2015和GB31572-2015标准后排入古雷开发区南部污水处理厂",
+     "2026年9月4日环评审批公示"
+    ],
+    "inferences": [
+     "依托现有污水处理站说明产能扩建未超出现有处理能力",
+     "超滤工艺表明已有较为完善的处理流程",
+     "可能需要调整监测点或增加监测频次"
+    ],
+    "unknowns": [
+     "现有污水处理站监测配置",
+     "产能扩大后废水量是否超出160m3/h设计能力",
+     "是否需要新增监测设备"
+    ]
+   },
+   "potential_ims_use_case": "石化废水处理过程监测、超滤系统运行监控、排放合规数据管理",
+   "logic": "产能技改 → 依托现有水处理 → 可能需调整监测 → iMS增量有限",
+   "opportunity_stage": "Industrial Signal",
+   "project_stage": "EIA/Approval",
+   "estimated_time_window": "2026Q4-2027(审批后实施)",
+   "priority": "P3",
+   "water_system_ownership": "A-客户自建自营",
+   "incrementality_status": "Capacity Expansion",
+   "source_urls": [
+    "http://www.zhangzhou.gov.cn/cms/html/zzsrmzf/2026-09-07/1484908882.html"
+   ],
+   "to_verify": [
+    "产能扩大后废水量是否超出160m3/h",
+    "现有监测配置和新增需求",
+    "超滤系统在线监测现状"
+   ],
+   "continuity": "first_seen",
+   "pull_score": {
+    "project_clarity": 3,
+    "unavoidable": 3,
+    "existing_limitation": 2,
+    "ims_leverage": 2,
+    "total": 10,
+    "max": 20
+   },
+   "pull_box": {
+    "p_project": "树脂装置技改扩能,依托现有污水处理站(FACT)",
+    "p_confidence": "HIGH",
+    "u_unavoidable": "环保审批要求,但依托现有设施表明紧迫性不高(FACT)",
+    "u_confidence": "MEDIUM",
+    "u_classification": "Should-have",
+    "l_limitations": "现有设施可能够用,监测可能不需要大幅调整(INFERENCE)",
+    "l_confidence": "LOW",
+    "l_leverage": "iMS增量有限,除非废水量超出设计能力(UNKNOWN)",
+    "l_leverage_confidence": "LOW",
+    "key_unknown": "产能扩大后废水量是否超出现有160m3/h设计能力",
+    "next_validation_question": "技改后废水量是否会超出现有污水处理站设计能力?是否需要新增监测点?"
+   },
+   "evidence_quality": "LOW",
+   "influence_window": "LOW",
+   "influence_window_evidence": {
+    "source": "FACT",
+    "note": "依托现有污水处理站(160m3/h),产能扩大若未超设计能力则监测调整空间有限"
+   },
+   "entry_timing": "GOOD",
+   "entry_timing_evidence": {
+    "source": "INFERENCE",
+    "note": "环评审批公示期(09-04),若需新增监测仍有窗口"
+   },
+   "stage3_handoff": {
+    "account_owner": {
+     "name": "福建省福化鲁华新材料有限公司",
+     "owner_role": "A-建设单位",
+     "evaluation": "FACT",
+     "note": "环评审批公示建设单位(漳州古雷石化基地)"
+    },
+    "design_institute": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "epc": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "技改工程EPC未公示"
+    },
+    "instrument_integrator": {
+     "name": "Unknown",
+     "evaluation": "UNKNOWN",
+     "note": "无公开信息"
+    },
+    "missing_roles": [
+     "污水处理站运行方",
+     "现有监测供应商"
+    ],
+    "next_validation_action": "验证技改后废水量是否超160m3/h设计能力与新增监测点需求,再决定投入力度"
+   },
+   "handoff_evidence_note": "所有权角色基于环评公示/招标公告FACT; 设计院/EPC/集成商无公开信息标注UNKNOWN, 属待验证项"
+  }
+ ],
+ "market_background": {
+  "policy_context": "2026年8月15日《生态环境法典》正式施行,排污许可制度全面升级。9月1日起HJ 945.4-2026工业园区一园一策导则、GB 4287-2026纺织排放标准等11项环保标准实施。六项排污许可技术规范修订将于2027年1月1日实施。",
+  "industry_context": "半导体行业:AI驱动晶圆厂加速扩张,每月新增一座晶圆厂,年耗水量可供1700万人。艺康集团收购Ovivo超纯水业务进入半导体水管理。新能源:磷酸铁锂产能持续扩张,兴发集团20万吨项目落地。电镀行业:2万家企业面临1/5限值收紧。",
+  "water_treatment_market": "2026年中国反渗透膜市场规模约210亿元,工业废水零排放释放超27亿美元需求。膜法水处理系统集成市场突破千亿元。国产化率提升至50-63.7%。"
+ },
+ "source_effectiveness": {
+  "government_official": "高效,环评公示和排污许可公告提供项目级证据",
+  "industry_media": "中等,提供行业趋势但缺乏项目细节",
+  "tender_platform": "高效,直接反映采购需求但覆盖面有限",
+  "policy_documents": "高效,提供强制力证据和实施时间表"
+ },
+ "experiment_observations": {
+  "municipal_vs_industrial_differentiation": "工业雷达聚焦企业级和园区级水系统,不覆盖市政污水处理厂和自来水公司。本次发现的苏相合作区和宜宾储能产业园属于园区级工业污水处理,符合industrial定位。",
+  "demand_learning_summary": {
+   "new_strong_pull": "苏相合作区工业污水分质处理设施(PULL 14/20)是本周最强demand evidence:中央资金已到位,环保督察驱动,含重金属/氟化物处理需求明确指向半导体/电子产业。",
+   "repeatable_pattern": "regulatory_driven_monitoring_upgrade模式持续出现:排污许可新规、排放标准收紧、一园一策导则共同构成多行业强制监测升级趋势。这是第四次在不同行业中观察到此模式。",
+   "downgraded_signals": "湖北祥云二期和福化鲁华技改因缺乏新增水系统证据而降级为P3。产能扩张不等于水系统新增,符合Week 2验证教训。",
+   "gtm_assumption_update": "政策驱动的监测升级是跨行业recurring demand signal,但iMS leverage高度依赖客户现有SCADA/DCS覆盖程度。需要更深入了解目标客户现有监测数据管理架构才能准确判断iMS增量价值。"
+  },
+  "repeatable_demand_signals": [
+   {
+    "pattern": "regulatory_driven_monitoring_upgrade",
+    "description": "新排放标准+排污许可新规+一园一策导则 → 多行业企业必须提升自行监测能力",
+    "instances_this_week": 4,
+    "total_instances": "4+(recurring)",
+    "evidence_strength": "MEDIUM"
+   },
+   {
+    "pattern": "industrial_park_wastewater_specialization",
+    "description": "工业园区建设专业工业污水处理设施,含特征污染物处理",
+    "instances_this_week": 2,
+    "total_instances": "2",
+    "evidence_strength": "MEDIUM"
+   }
+  ]
+ },
+ "search_bias_check": {
+  "tender_and_award_count": 1,
+  "total_signals": 10,
+  "ratio": 0.1,
+  "threshold": 0.5,
+  "triggered": false,
+  "note": "招标/中标类1条(IND-20260912-02),占比10%,未触发补搜Early Signal"
+ },
+ "quality_gate": {
+  "check": "销售今天知道这条线索还能影响什么?",
+  "results": {
+   "HIGH": [
+    "IND-20260912-01",
+    "IND-20260912-03",
+    "IND-20260912-04",
+    "IND-20260912-07"
+   ],
+   "MEDIUM": [
+    "IND-20260912-05",
+    "IND-20260912-06",
+    "IND-20260912-08"
+   ],
+   "LOW": [
+    "IND-20260912-02",
+    "IND-20260912-10"
+   ],
+   "NONE": [
+    "IND-20260912-09"
+   ]
+  }
+ }
+}

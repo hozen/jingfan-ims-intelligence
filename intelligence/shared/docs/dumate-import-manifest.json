@@ -1,0 +1,292 @@
+{
+  "manifest_version": "1.0",
+  "source": "DuMate radar reproducibility exports",
+  "export_date": "2026-09-29",
+  "import_date": "2026-10-06",
+  "rule": "Preserve source business and process content. For Markdown, redact DuMate task IDs and host-specific private-key paths. Source hashes refer to original archive bytes; destination hashes refer to imported bytes. Examples remain historical snapshots, not production feeds. Full memory dumps and runtime configuration are not imported.",
+  "archives": [
+    {
+      "market": "industrial",
+      "archive_name": "1-industrial_radar_agent_repro.zip",
+      "archive_sha256": "d8474bc405198a3b486bbba38a5d9c9a2e2bbe41cacb2be0b9a438e9dd0cf7b8",
+      "entries": [
+        {
+          "source_path": "README.md",
+          "sha256": "c1926ecca65f89771ee76c144a9e421d2bbfecad95db919130119270ad674b76",
+          "destination": "intelligence/industrial/docs/dumate/README.source.md",
+          "disposition": "copied",
+          "destination_sha256": "5afa2837a6a0e6e706ce66e88b7b6f03697b810af426e15c0747ddc407a33f48",
+          "redactions": [
+            {
+              "kind": "DuMate task identifier",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "agent_prompt/main_prompt_v4.1.md",
+          "sha256": "e769a4b532968be0c94b263c92d7ab8dc5120e17889bf12adf111488ba9f27ac",
+          "destination": "intelligence/industrial/docs/prompts/main_prompt_v4.1.md",
+          "disposition": "copied",
+          "destination_sha256": "67893f22f929bb113bad61ed81f77b6deb134a4a6b7b7e5e316f4fcc0a67c997",
+          "redactions": [
+            {
+              "kind": "DuMate task identifier",
+              "count": 1
+            },
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "environment/system_config_notes.md",
+          "sha256": "f3ae1bf868acab8d944c107605c19fa24dbb3612d1e0600148b2d0b598cb0229",
+          "disposition": "excluded",
+          "reason": "DuMate/Linux runtime paths, scheduler and credential setup are not portable to this repository; no secret material is imported."
+        },
+        {
+          "source_path": "examples/IND_Radar_Daily_20260922.md",
+          "sha256": "752f1491e4fb520cfe4647d572b06df3687ce75f71bef4b6a09fbfbb74470ae8",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/examples/IND_Radar_Daily_20260922.md",
+          "disposition": "copied",
+          "destination_sha256": "752f1491e4fb520cfe4647d572b06df3687ce75f71bef4b6a09fbfbb74470ae8"
+        },
+        {
+          "source_path": "examples/daily_2026-09-12_fixed.json",
+          "sha256": "5107a70226cef7cb3bfc8bb33f9453f3436d5f66249302e88fc353941cc6f93c",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/examples/daily_2026-09-12_fixed.json",
+          "disposition": "copied",
+          "destination_sha256": "5107a70226cef7cb3bfc8bb33f9453f3436d5f66249302e88fc353941cc6f93c"
+        },
+        {
+          "source_path": "examples/daily_2026-09-26.json",
+          "sha256": "192faaecb7c4eedf5f2d3b590b9eeea89776617080a5f9cf8081e1a5fbb0ae61",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/examples/daily_2026-09-26.json",
+          "disposition": "copied",
+          "destination_sha256": "192faaecb7c4eedf5f2d3b590b9eeea89776617080a5f9cf8081e1a5fbb0ae61"
+        },
+        {
+          "source_path": "examples/latest.json",
+          "sha256": "2aa1e62d1faaa065fce500d8c2f92fddff24965f1c6e224757a7fe55f6413279",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/examples/latest.json",
+          "disposition": "copied",
+          "destination_sha256": "2aa1e62d1faaa065fce500d8c2f92fddff24965f1c6e224757a7fe55f6413279"
+        },
+        {
+          "source_path": "memory_context/memory_context.md",
+          "sha256": "b3e23878dc876727740c49a8c4a5d3925e394a1768c5ea52f711007308f04817",
+          "disposition": "curated-not-copied",
+          "reason": "Full memory contains personal and commercial context. Shared, non-identifying radar rules are summarized in intelligence/shared/docs/radar-context.md."
+        },
+        {
+          "source_path": "scripts/build_industrial_pipeline_view.py",
+          "sha256": "976f5640c85243cd38fc162a5e6491a523848b44e0af5cdb5f0a6e253e2d2005",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/scripts/build_industrial_pipeline_view.py",
+          "disposition": "copied",
+          "destination_sha256": "976f5640c85243cd38fc162a5e6491a523848b44e0af5cdb5f0a6e253e2d2005"
+        },
+        {
+          "source_path": "scripts/merge_radar_daily_to_enriched.py",
+          "sha256": "3c9260f1298af435a88ba902c2c84ae886615a711f11a921e16661c8bb745e5b",
+          "destination": "intelligence/industrial/archive/dumate-2026-09-29/scripts/merge_radar_daily_to_enriched.py",
+          "disposition": "copied",
+          "destination_sha256": "3c9260f1298af435a88ba902c2c84ae886615a711f11a921e16661c8bb745e5b"
+        },
+        {
+          "source_path": "specs/Group_Software_Evidence_Check_v1.0.md",
+          "sha256": "f6b58ca8735aa3109d2c86ac00394af85efe585ba1c88fd45cbd3984a83751e8",
+          "destination": "intelligence/shared/docs/Group_Software_Evidence_Check_v1.0.md",
+          "disposition": "copied",
+          "destination_sha256": "f6b58ca8735aa3109d2c86ac00394af85efe585ba1c88fd45cbd3984a83751e8"
+        },
+        {
+          "source_path": "specs/Industrial_Radar_Spec_v1.0.md",
+          "sha256": "b19e357c62caa7e43dc3ae42c9f8f89636a88b513905153c4951b8e7ae3ba951",
+          "destination": "intelligence/industrial/docs/specs/Industrial_Radar_Spec_v1.0.md",
+          "disposition": "copied",
+          "destination_sha256": "b19e357c62caa7e43dc3ae42c9f8f89636a88b513905153c4951b8e7ae3ba951"
+        },
+        {
+          "source_path": "specs/Industrial_Radar_Spec_v2.0.md",
+          "sha256": "2c425bb84b14f3f1645210f68f88c4ce314caa2f994141e11ed3649c3d4d6db1",
+          "destination": "intelligence/industrial/docs/specs/Industrial_Radar_Spec_v2.0.md",
+          "disposition": "copied",
+          "destination_sha256": "2c425bb84b14f3f1645210f68f88c4ce314caa2f994141e11ed3649c3d4d6db1"
+        },
+        {
+          "source_path": "specs/Industrial_Radar_Spec_v3.0.md",
+          "sha256": "733c0b568c3aa8a1cc1fabb5099c756388f3c07417c21d53a16de3618fe0a7c2",
+          "destination": "intelligence/industrial/docs/specs/Industrial_Radar_Spec_v3.0.md",
+          "disposition": "copied",
+          "destination_sha256": "733c0b568c3aa8a1cc1fabb5099c756388f3c07417c21d53a16de3618fe0a7c2"
+        },
+        {
+          "source_path": "specs/Industrial_Radar_Spec_v4.0.md",
+          "sha256": "2aecde85166ccba452daff7b2501750de1842f91553b07f47f736ab078f0f27f",
+          "destination": "intelligence/industrial/docs/specs/Industrial_Radar_Spec_v4.0.md",
+          "disposition": "copied",
+          "destination_sha256": "2aecde85166ccba452daff7b2501750de1842f91553b07f47f736ab078f0f27f"
+        },
+        {
+          "source_path": "specs/PULL_Qualification_v1.md",
+          "sha256": "d4df62ed6074553ee37d99b9952afb0a69416186d630c272cf7f2fc15c4f0fa4",
+          "destination": "intelligence/industrial/docs/specs/PULL_Qualification_v1.md",
+          "disposition": "copied",
+          "destination_sha256": "d4df62ed6074553ee37d99b9952afb0a69416186d630c272cf7f2fc15c4f0fa4"
+        },
+        {
+          "source_path": "specs/VM_Qualification_Rules_v1.md",
+          "sha256": "af59d5d20b50c60e2e61fd2ccc3052308c4e877ab7dfd825c9ffd5bbff2c4314",
+          "destination": "intelligence/industrial/docs/specs/VM_Qualification_Rules_v1.md",
+          "disposition": "copied",
+          "destination_sha256": "af59d5d20b50c60e2e61fd2ccc3052308c4e877ab7dfd825c9ffd5bbff2c4314"
+        }
+      ]
+    },
+    {
+      "market": "municipal",
+      "archive_name": "2-municipal_radar_agent_repro.zip",
+      "archive_sha256": "2ddc8e3a49592913540ff2c9e3533377fdedc601e9010832fa563fe874c656f1",
+      "entries": [
+        {
+          "source_path": "municipal_radar_agent_repro/README.md",
+          "sha256": "c69f7a0cbd83523e6d9fcc437f080ea471bd392bf54513bdf576736cba75e107",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/README.source.md",
+          "disposition": "copied",
+          "destination_sha256": "b8afaf2af273c5c26638c7f153319b0d0d0a13fd011cc0cabfb0501bdf6da24c",
+          "redactions": [
+            {
+              "kind": "DuMate task identifier",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/agent_prompt/main_prompt_v3.4.2.md",
+          "sha256": "9b9c949a79188bbbd775024f6546cba8c80ee5172c570898ea19b016395647cb",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/agent_prompt/main_prompt_v3.4.2.md",
+          "disposition": "copied",
+          "destination_sha256": "eb3c49d9e7059112e6467130fe403fa9cc0689b737984468a7831320a0aa3b35",
+          "redactions": [
+            {
+              "kind": "DuMate task identifier",
+              "count": 1
+            },
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/environment/system_config_notes.md",
+          "sha256": "28f7048c67db1b359ca39a43f95895750ccc5eaa46848599b8f5b6c357d4f5a7",
+          "disposition": "excluded",
+          "reason": "DuMate/Linux runtime paths, scheduler and credential setup are not portable to this repository; no secret material is imported."
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/examples/daily_2026-09-28.json",
+          "sha256": "4435291ec310e7d32a74fdb4dd57de6155351df584a53551f0f6fb16ff30feda",
+          "destination": "intelligence/municipal/archive/dumate-2026-09-29/examples/daily_2026-09-28.json",
+          "disposition": "copied",
+          "destination_sha256": "4435291ec310e7d32a74fdb4dd57de6155351df584a53551f0f6fb16ff30feda"
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/examples/latest.json",
+          "sha256": "b268e363b9d04f43f3250f91b7e77b1364dcd1d42d024c8e518a3164680c7143",
+          "destination": "intelligence/municipal/archive/dumate-2026-09-29/examples/latest.json",
+          "disposition": "copied",
+          "destination_sha256": "b268e363b9d04f43f3250f91b7e77b1364dcd1d42d024c8e518a3164680c7143"
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/examples/report_2026-09-28.md",
+          "sha256": "0b3a6474dccdeeccea3e434f646e78549e4d9d1bd4ba59eaed580e382892549e",
+          "destination": "intelligence/municipal/archive/dumate-2026-09-29/examples/report_2026-09-28.md",
+          "disposition": "copied",
+          "destination_sha256": "0b3a6474dccdeeccea3e434f646e78549e4d9d1bd4ba59eaed580e382892549e"
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/memory_context/memory_context.md",
+          "sha256": "8997bc6e87707238d4f6f8c00138cc3110f1cb5fab882ab62e6dec8aefbc91e1",
+          "disposition": "curated-not-copied",
+          "reason": "Full memory contains personal and commercial context. Shared, non-identifying radar rules are summarized in intelligence/shared/docs/radar-context.md."
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/scripts/merge_radar_daily_to_enriched.py",
+          "sha256": "3c9260f1298af435a88ba902c2c84ae886615a711f11a921e16661c8bb745e5b",
+          "destination": "intelligence/municipal/archive/dumate-2026-09-29/scripts/merge_radar_daily_to_enriched.py",
+          "disposition": "copied",
+          "destination_sha256": "3c9260f1298af435a88ba902c2c84ae886615a711f11a921e16661c8bb745e5b"
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/Group_Software_Evidence_Check_v1.0.md",
+          "sha256": "f6b58ca8735aa3109d2c86ac00394af85efe585ba1c88fd45cbd3984a83751e8",
+          "destination": "intelligence/shared/docs/Group_Software_Evidence_Check_v1.0.md",
+          "disposition": "duplicate-source",
+          "reason": "Byte-identical common rule imported once from the industrial archive."
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/README_版本谱系.md",
+          "sha256": "ba046b5b74ac3c9da50cfe4f247f78264f0239255bad0bc2093f0ab9e4b89237",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/specs/README_versions.md",
+          "disposition": "copied",
+          "destination_sha256": "ba046b5b74ac3c9da50cfe4f247f78264f0239255bad0bc2093f0ab9e4b89237"
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.3.md",
+          "sha256": "ed1ed067d13b6ed17c6badcd2089f29541e17c460fdafefe85625599a955081c",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.3.md",
+          "disposition": "copied",
+          "destination_sha256": "eefdb77be4f718e5d470ccb435e89107b7f2c657853cc573a291d0254e6d62ba",
+          "redactions": [
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4.2.md",
+          "sha256": "34e0430492dd3012b4fc866a94f6f7ff2882cc763ec7fc532e9c44a9cbcbfe35",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4.2.md",
+          "disposition": "copied",
+          "destination_sha256": "cf9a5a26807f8f829e8c9c65f18089fb63e1e0c856db82a96c570029704256cf",
+          "redactions": [
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4.md",
+          "sha256": "e0540c5cc2d4e8e351d6e9caa53b2478b5865467357fea7287bcc49784a384eb",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4.md",
+          "disposition": "copied",
+          "destination_sha256": "b056b86de967361580d88f931432910b406fd63b9e53e636d9b866e9e2503b73",
+          "redactions": [
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source_path": "municipal_radar_agent_repro/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4_latest_20260917.md",
+          "sha256": "4f7862701777431e0f59f18bf0b174986b66e5105d7cb2afc54925aaec51d548",
+          "destination": "intelligence/municipal/docs/archive/dumate-2026-09-29/specs/iMS_GTM_Public_Signal_Radar_prompt_v3.4_latest_20260917.md",
+          "disposition": "copied",
+          "destination_sha256": "ad720311d09ffc619332d08df302f5627a064cf5ce93747986945ba25d2a5035",
+          "redactions": [
+            {
+              "kind": "host-specific private key path",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
